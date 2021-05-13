@@ -5,6 +5,11 @@ const fs = require('fs');
 const md5 = require('md5');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
 
+const CONFIGURATION_FILE = 'configuration.json';
+const REVISION_FILE = 'revision.json';
+const METADATA_FILE = 'metadata.json';
+const FILTERS_METADATA_FILE = 'filters.json';
+
 /**
  * Sync reads file content
  *
@@ -94,23 +99,22 @@ const replaceExpires = function (expires) {
 };
 
 const readHostlistConfiguration = function (filterDir) {
-  const configurationFile = path.join(filterDir, 'configuration.json');
-  return JSON.parse(fs.readFileSync(configurationFile));
+  const configurationFile = path.join(filterDir, CONFIGURATION_FILE);
+  return JSON.parse(readFile(configurationFile));
 }
 
 async function build() {
 
-  const allFiltersDir = path.join(__dirname, '../filters');
+  const filtersDir = path.join(__dirname, '../filters');
   const assetsDir = path.join(__dirname, '../assets');
   const tagsDir = path.join(__dirname, '../tags');
 
-  const singleFilterDirs = listDirs(allFiltersDir);
-
   const filtersMetadata = [];
 
-  for (const filterDir of singleFilterDirs) {
+  const filterDirs = listDirs(filtersDir);
+  for (const filterDir of filterDirs) {
 
-    const metadata = JSON.parse(readFile(path.join(filterDir, 'metadata.json')));
+    const metadata = JSON.parse(readFile(path.join(filterDir, METADATA_FILE)));
 
     // compiles the hostlist using provided configuration
     const hostlistConfiguration = readHostlistConfiguration(filterDir);
@@ -118,7 +122,7 @@ async function build() {
 
     // calculates hash and updates revision
     const hash = calculateRevisionHash(hostlistCompiled);
-    const revisionFile = path.join(filterDir, 'revision.json');
+    const revisionFile = path.join(filterDir, REVISION_FILE);
     const currentRevision = JSON.parse(readFile(revisionFile)) || {};
     const newRevision = makeRevision(currentRevision, hash);
     writeFile(revisionFile, JSON.stringify(newRevision, null, '\t'));
@@ -126,8 +130,11 @@ async function build() {
     // Rewrites filter if it's actually changed
     let filterName = `filter_${metadata.filterId}.txt`;
     if (currentRevision.hash !== hash) {
-      const filterFile = path.join(assetsDir, filterName);
-      writeFile(filterFile, hostlistCompiled.join('\n'));
+      const assertsFilterFile = path.join(assetsDir, filterName);
+      const filterFile = path.join(filterDir, 'filter.txt');
+      let content = hostlistCompiled.join('\n');
+      writeFile(assertsFilterFile, content);
+      writeFile(filterFile, content);
     }
 
     const downloadUrl = `https://hostlists.adtidy.org/${filterName}`; // TODO: define
@@ -157,10 +164,10 @@ async function build() {
   }
 
   // copy tags as is
-  const tagsMetadata = JSON.parse(readFile(path.join(tagsDir, 'metadata.json')));
+  const tagsMetadata = JSON.parse(readFile(path.join(tagsDir, METADATA_FILE)));
 
   // writes the populated metadata for all filters, tags, etc
-  const filtersMetadataFile = path.join(assetsDir, 'filters.json');
+  const filtersMetadataFile = path.join(assetsDir, FILTERS_METADATA_FILE);
   writeFile(filtersMetadataFile, JSON.stringify({filters: filtersMetadata, tags: tagsMetadata}, null, '\t'));
 }
 
