@@ -73,6 +73,26 @@ const calculateRevisionHash = function (compiled) {
   return Buffer.from(md5(data, {asString: true})).toString('base64').trim();
 }
 
+/**
+ * Parses "Expires" field and converts it to seconds
+ *
+ * @param expires
+ */
+const replaceExpires = function (expires) {
+  if (expires) {
+    if (expires.indexOf('day') > 0) {
+      expires = parseInt(expires, 10) * 24 * 60 * 60;
+    } else if (expires.indexOf('hour') > 0) {
+      expires = parseInt(expires, 10) * 60 * 60;
+    }
+    if (Number.isNaN(expires)) {
+      // Default
+      expires = 86400;
+    }
+  }
+  return expires || 86400;
+};
+
 const readHostlistConfiguration = function (filterDir) {
   const configurationFile = path.join(filterDir, 'configuration.json');
   return JSON.parse(fs.readFileSync(configurationFile));
@@ -126,6 +146,8 @@ async function build() {
       description: metadata.description,
       tags: metadata.tags,
       homepage: metadata.homepage,
+      expires: replaceExpires(metadata.expires),
+      displayNumber: metadata.displayNumber,
       downloadUrl: downloadUrl,
       sourceUrl: sourceUrl,
       timeAdded: metadata.timeAdded,
