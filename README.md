@@ -20,7 +20,7 @@
 
     ```json
     {
-      "filterId": 15,
+      "filterId": 1,
       "name": "AdGuard DNS filter",
       "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
       "timeAdded": 1404115015843,
