@@ -1,17 +1,30 @@
 {
 	"filters": [
 		{
-			"filterId": 15,
+			"filterId": 1,
 			"name": "AdGuard DNS filter",
 			"description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
-			"tags": [],
+			"tags": [
+				"problematic",
+				"purpose:ads",
+				"purpose:privacy",
+				"reference:101",
+				"reference:2",
+				"reference:3",
+				"reference:11",
+				"reference:107",
+				"reference:118",
+				"reference:102",
+				"reference:13",
+				"reference:16"
+			],
 			"homepage": "https://kb.adguard.com/general/adguard-ad-filters",
 			"expires": 345600,
-			"displayNumber": 3,
-			"downloadUrl": "https://hostlists.adtidy.org/filter_15.txt",
+			"displayNumber": 1,
+			"downloadUrl": "https://hostlists.adtidy.org/filter_1.txt",
 			"sourceUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
 			"timeAdded": 1404115015843,
-			"timeUpdated": 1620919876515
+			"timeUpdated": 1620990589008
 		}
 	],
 	"tags": [
