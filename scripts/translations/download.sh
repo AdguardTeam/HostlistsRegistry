@@ -36,4 +36,35 @@ do
     rm converted.json
 done
 
+for locale in "${locales[@]}"
+do
+    echo "Download filters.json for $locale locale"
+    curl "${SERVICE_URL}download?format=strings&language=${locale}&filename=hostlists.json&project=filters-registry" -o messages.json
+
+    destinationLocale=$locale
+    if [ "$locale" = "zh_CN" ]; then
+        echo "Change $locale destination dir to zh"
+        destinationLocale=zh
+    fi
+
+    echo "Parsing filters.json for $locale locale for filters.json"
+    node converter.js import messages.json $locale converted.json "filter."
+
+    echo "Moving filters.json for $locale locale to $workDir/locales/$destinationLocale/"
+    cp -f converted.json $workDir/locales/$destinationLocale/filters.json
+
+    if [ "$locale" = "es" ]; then
+        echo "Copying filters.json for es locale"
+        cp -f converted.json $workDir/locales/es_ES/filters.json
+    fi
+
+    if [ "$locale" = "pt" ]; then
+        echo "Copying filters.json for pt_PT locale"
+        cp -f converted.json $workDir/locales/pt/filters.json
+    fi
+
+    rm messages.json
+    rm converted.json
+done
+
 echo "Import finished"
