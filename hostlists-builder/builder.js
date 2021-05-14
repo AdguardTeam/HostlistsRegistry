@@ -8,7 +8,9 @@ const hostlistCompiler = require('@adguard/hostlist-compiler');
 const CONFIGURATION_FILE = 'configuration.json';
 const REVISION_FILE = 'revision.json';
 const METADATA_FILE = 'metadata.json';
+
 const FILTERS_METADATA_FILE = 'filters.json';
+const FILTERS_I18N_METADATA_FILE = 'filters_i18n.json';
 
 /**
  * Sync reads file content
@@ -103,11 +105,78 @@ const readHostlistConfiguration = function (filterDir) {
   return JSON.parse(readFile(configurationFile));
 }
 
+/**
+ * Parses object info
+ * Splits string {mask}{id}.{message} like "filter.1.name" etc.
+ *
+ * @param string
+ * @param mask
+ * @returns {{id: *, message: *}}
+ */
+const parseInfo = (string, mask) => {
+  const searchIndex = string.indexOf(mask) + mask.length;
+  return {
+    id: string.substring(searchIndex, string.indexOf('.', searchIndex)),
+    message: string.substring(string.lastIndexOf('.') + 1),
+  };
+};
+
+/**
+ * Loads localizations
+ *
+ * @param dir
+ */
+const loadLocales = function (dir) {
+
+  const result = {
+    tags: {},
+    filters: {},
+  };
+
+  const localeDirs = listDirs(dir);
+  for (const localeDir of localeDirs) {
+
+    const locale = path.basename(localeDir);
+
+    const items = [{
+      file: path.join(localeDir, 'tags.json'),
+      prefix: 'tag.',
+      propName: 'tags'
+    }, {
+      file: path.join(localeDir, 'filters.json'),
+      prefix: 'filter.',
+      propName: 'filters'
+    }];
+
+    for (let item of items) {
+      const messagesJson = JSON.parse(readFile(item.file));
+      if (messagesJson) {
+        for (const message of messagesJson) {
+          for (const property of Object.keys(message)) {
+            const info = parseInfo(property, item.prefix);
+            if (!info || !info.id) {
+              continue;
+            }
+            const {id} = info;
+            const propName = item.propName;
+            result[propName][id] = result[propName][id] || {};
+            result[propName][id][locale] = result[propName][id][locale] || {};
+            result[propName][id][locale][info.message] = message[property];
+          }
+        }
+      }
+    }
+  }
+
+  return result;
+};
+
 async function build() {
 
   const filtersDir = path.join(__dirname, '../filters');
   const assetsDir = path.join(__dirname, '../assets');
   const tagsDir = path.join(__dirname, '../tags');
+  const localesDir = path.join(filtersDir, '../locales');
 
   const filtersMetadata = [];
 
@@ -169,6 +238,15 @@ async function build() {
   // writes the populated metadata for all filters, tags, etc
   const filtersMetadataFile = path.join(assetsDir, FILTERS_METADATA_FILE);
   writeFile(filtersMetadataFile, JSON.stringify({filters: filtersMetadata, tags: tagsMetadata}, null, '\t'));
+
+  // writes localizations for all filters, tags, etc
+  const localizations = loadLocales(localesDir);
+  const filtersI18nFile = path.join(assetsDir, FILTERS_I18N_METADATA_FILE);
+  const i18nMetadata = {
+    tags: localizations.tags,
+    filters: localizations.filters,
+  };
+  writeFile(filtersI18nFile, JSON.stringify(i18nMetadata, null, '\t'));
 }
 
 module.exports = {
