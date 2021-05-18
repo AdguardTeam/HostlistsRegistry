@@ -1,7 +1,7 @@
 name: Build Hostlists Registry
 
 on:
-  push
+  push:
   workflow_dispatch:
     inputs:
       name:
