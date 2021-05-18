@@ -76,7 +76,6 @@ Possible tags:
 
 ## How to build
 
-In the `hostlists-builder` directory:
 ```
 yarn install
 ```
