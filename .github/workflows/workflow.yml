@@ -26,3 +26,9 @@ jobs:
       - name: node
         run: |
           TLS=insecure node index.js
+      
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}          
+          branch: 'initial'
