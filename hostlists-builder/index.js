@@ -5,6 +5,8 @@ const fs = require('fs');
 const md5 = require('md5');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
 
+const HOSTLISTS_URL = 'https://atropnikov.github.io/HostlistsRegistry/assets';
+
 const CONFIGURATION_FILE = 'configuration.json';
 const REVISION_FILE = 'revision.json';
 const METADATA_FILE = 'metadata.json';
@@ -201,7 +203,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
       writeFile(filterFile, content);
     }
 
-    const downloadUrl = `https://hostlists.adtidy.org/${filterName}`; // TODO: define
+    const downloadUrl = `${HOSTLISTS_URL}/${filterName}`;
 
     let sourceUrl;
     if (hostlistConfiguration.sources.length === 1) {
