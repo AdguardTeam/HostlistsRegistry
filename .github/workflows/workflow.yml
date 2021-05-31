@@ -3,7 +3,7 @@ name: Build Hostlists Registry
 on:
   push:
     branches:
-      main
+    - main
   schedule:
     - cron:  '0 * * * *'
 
