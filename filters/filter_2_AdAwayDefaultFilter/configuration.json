@@ -1,0 +1,22 @@
+{
+  "name": "AdAway Default Blocklist",
+  "description": "AdAway is an open source ad blocker for Android using the hosts file.",
+  "homepage": "https://github.com/AdAway/adaway.github.io/",
+  "license": "GPLv3",
+  "sources": [
+    {
+      "name": "AdAway Default Blocklist",
+      "source": "https://adaway.org/hosts.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress",
+    "RemoveComments"
+  ]
+}
