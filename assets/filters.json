@@ -25,6 +25,38 @@
 			"sourceUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
 			"timeAdded": 1404115015843,
 			"timeUpdated": 1622639600965
+		},
+		{
+			"filterId": 2,
+			"name": "AdAway Default Blocklist",
+			"description": "AdAway is an open source ad blocker for Android using the hosts file.",
+			"tags": [
+				"purpose:ads",
+				"purpose:privacy"
+			],
+			"homepage": "https://github.com/AdAway/adaway.github.io/",
+			"expires": 345600,
+			"displayNumber": 2,
+			"downloadUrl": "https://atropnikov.github.io/HostlistsRegistry/assets/filter_2.txt",
+			"sourceUrl": "https://adaway.org/hosts.txt",
+			"timeAdded": 1622639343000,
+			"timeUpdated": 1622639679928
+		},
+		{
+			"filterId": 3,
+			"name": "Peter Lowe's List",
+			"description": "Blocking with ad server and tracking server hostnames.",
+			"tags": [
+				"problematic",
+				"purpose:ads"
+			],
+			"homepage": "https://pgl.yoyo.org/adservers/",
+			"expires": 345600,
+			"displayNumber": 3,
+			"downloadUrl": "https://atropnikov.github.io/HostlistsRegistry/assets/filter_3.txt",
+			"sourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+			"timeAdded": 1622639343000,
+			"timeUpdated": 1622639680970
 		}
 	],
 	"tags": [
