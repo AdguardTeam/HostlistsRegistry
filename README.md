@@ -6,7 +6,8 @@
 
   Filter metadata. Includes name, description, etc.
 
-    * `filterId` — unique filter identifier (integer)
+    * `filterId` — unique human-readable filter identifier (string)
+    * `id` - unique internal filter identifier (integer)
     * `name` — filter name; can be localized
     * `description` — filter description
     * `timeAdded` — time when this filter was added to the registry; milliseconds since January 1, 1970; you can exec `new Date().getTime()` in the browser console to get the current time
@@ -20,7 +21,8 @@
 
     ```json
     {
-      "filterId": 1,
+      "filterId": "adguard_dns_filter",
+      "id": 1,
       "name": "AdGuard DNS filter",
       "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
       "timeAdded": 1404115015843,

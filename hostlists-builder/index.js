@@ -194,7 +194,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     writeFile(revisionFile, JSON.stringify(newRevision, null, '\t'));
 
     // Rewrites filter if it's actually changed
-    let filterName = `filter_${metadata.filterId}.txt`;
+    let filterName = `filter_${metadata.id}.txt`;
     if (currentRevision.hash !== hash) {
       const assertsFilterFile = path.join(assetsDir, filterName);
       const filterFile = path.join(filterDir, 'filter.txt');
