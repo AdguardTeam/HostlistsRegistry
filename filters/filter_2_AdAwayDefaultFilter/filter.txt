@@ -3,7 +3,7 @@
 ! Description: AdAway is an open source ad blocker for Android using the hosts file.
 ! Homepage: https://github.com/AdAway/adaway.github.io/
 ! License: GPLv3
-! Last modified: 2021-08-28T01:52:35.497Z
+! Last modified: 2021-08-29T04:21:54.119Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -137,6 +137,8 @@
 ||track.accesstrade.vn^
 
 ||tags.acmeaom.com^
+
+||activemetering.com^
 
 ||as.ad-brix.com^
 ||campaign.ad-brix.com^
@@ -885,6 +887,11 @@
 ||events.aerserv.com^
 ||prod-ads.aerserv.com^
 
+||metrics.aetn.com^
+
+||pulse.svod.aetnd.com^
+||insights.vip.aetnd.com^
+
 ||track.afcpatrk.com^
 
 ||cdn.go.affec.tv^
@@ -1114,6 +1121,8 @@
 ||analytics-collector-28944298.us-east-1.elb.amazonaws.com^
 
 ||audience-164723144.us-east-1.elb.amazonaws.com^
+
+||detailed-ad-logger-load-balancer-561104410.us-east-1.elb.amazonaws.com^
 
 ||engagement-bus-prod-713264365.us-east-1.elb.amazonaws.com^
 
@@ -2170,18 +2179,7 @@
 
 ||contineljs.com^
 
-||cws.conviva.com^
-||cws-cctv.conviva.com^
-||cws-eu.conviva.com^
-||cws-hulu.conviva.com^
-||cws-iad1.conviva.com^
-||cws-iad4.conviva.com^
-||cws-sjc2.conviva.com^
-||cws-us-east.conviva.com^
-||cws-usw2.conviva.com^
-||dl.conviva.com^
-||vrl.m.conviva.com^
-||pings.conviva.com^
+||conviva.com^
 
 ||geoip.cookieyes.com^
 
@@ -3224,6 +3222,8 @@
 
 ||howdoesin.net^
 
+||hrzn-nxt.com^
+
 ||hs-analytics.net^
 
 ||analytics.htmedia.in^
@@ -3296,6 +3296,9 @@
 ||server.idreams.pl^
 
 ||d.ifengimg.com^
+
+||adlog.ifood.tv^
+||log.ifood.tv^
 
 ||igaworks.com^
 
@@ -3389,6 +3392,8 @@
 ||secure-us.imrworldwide.com^
 ||static.imrworldwide.com^
 ||uaid-linkage.imrworldwide.com^
+
+||imtwjwoasak.com^
 
 ||imwx.com^
 
@@ -3604,7 +3609,7 @@
 
 ||banners.isoftmarketing.com^
 
-||pt.ispot.tv^
+||ispot.tv^
 
 ||api.iterable.com^
 ||assets.iterable.com^
@@ -3926,6 +3931,8 @@
 
 ||tracking.lg.com^
 
+||us.ibs.lgappstv.com^
+
 ||b-code.liadm.com^
 
 ||snap.licdn.com^
@@ -3994,6 +4001,8 @@
 ||updater.lionmobi.com^
 
 ||tracking.listhub.net^
+
+||litix.io^
 
 ||player.stats.live-video.net^
 
@@ -4818,6 +4827,8 @@
 
 ||wpm.neustar.biz^
 
+||newrelic.com^
+
 ||us.tags.newscgp.com^
 
 ||nex8.net^
@@ -5493,6 +5504,8 @@
 
 ||client.rave-api.com^
 
+||ravm.tv^
+
 ||sdk-h5-cdn.rayjoy.com^
 
 ||rayjump.com^
@@ -5597,6 +5610,10 @@
 ||metrics.roblox.com^
 
 ||analytics.rogersmedia.com^
+
+||p.ads.roku.com^
+||austin.logs.roku.com^
+||scribe.logs.roku.com^
 
 ||roosterfirework.com^
 
@@ -5788,6 +5805,8 @@
 
 ||api.segment.io^
 ||cdn.segment.io^
+
+||segmentapis.com^
 
 ||cdn.segmentify.com^
 ||dce1.segmentify.com^
@@ -6114,26 +6133,9 @@
 ||aka.spotxcdn.com^
 ||cdn.spotxcdn.com^
 
-||den01-event.spotxchange.com^
-||den01-search.spotxchange.com^
-||event.spotxchange.com^
-||iad02-event.spotxchange.com^
-||iad02-search.spotxchange.com^
-||search.spotxchange.com^
-||sin01-event.spotxchange.com^
-||sin01-search.spotxchange.com^
+||spotxchange.com^
 
-||bc-ssb-iad.springserve.com^
-||cdn.springserve.com^
-||datplus.springserve.com^
-||morgdog.springserve.com^
-||sps.springserve.com^
-||sync.springserve.com^
-||vid.springserve.com^
-||vid-io.springserve.com^
-||vid-io-iad.springserve.com^
-||vid-io-sin.springserve.com^
-||vpaid.springserve.com^
+||springserve.com^
 
 ||sprout-ad.com^
 
@@ -6483,6 +6485,8 @@
 
 ||thrtle.com^
 
+||tidaltv.com^
+
 ||registration.tiltingpoint.io^
 ||utctime.tiltingpoint.io^
 
@@ -6626,15 +6630,7 @@
 
 ||marketing.tunity.com^
 
-||ad.turn.com^
-||cdns.turn.com^
-||d-sjc2.turn.com^
-||img.turn.com^
-||presentation-ams1.turn.com^
-||presentation-hkg1.turn.com^
-||presentation-sjc2.turn.com^
-||r.turn.com^
-||sd.turn.com^
+||turn.com^
 
 ||api.tusdk.com^
 ||m.tusdk.com^
@@ -6891,6 +6887,8 @@
 ||wserver.vidazoo.com^
 
 ||ads.videoadex.com^
+
+||videoamp.com^
 
 ||ads-secure.videohub.tv^
 ||adserver.videohub.tv^
