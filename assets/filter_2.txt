@@ -3,7 +3,7 @@
 ! Description: AdAway is an open source ad blocker for Android using the hosts file.
 ! Homepage: https://github.com/AdAway/adaway.github.io/
 ! License: GPLv3
-! Last modified: 2021-11-04T20:18:26.726Z
+! Last modified: 2021-11-09T17:23:20.502Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -298,7 +298,8 @@
 
 ||banners.adfox.net^
 
-||adfox.ru^
+||ads.adfox.ru^
+||banners.adfox.ru^
 
 ||adfurikun.jp^
 
@@ -356,13 +357,8 @@
 ||fraud.adjoe.zone^
 ||prod.adjoe.zone^
 
-||adjust.com^
-
-||adjust.io^
-
-||app.adjust.net.in^
-
-||app.adjust.world^
+||s2s.adjust.com^
+||ulink.adjust.com^
 
 ||dsp-uswest.adkernel.com^
 ||static-rtb.adkernel.com^
@@ -657,8 +653,6 @@
 ||adstune.com^
 
 ||adsunflower.com^
-
-||adswizz.com^
 
 ||adsymptotic.com^
 
@@ -1131,7 +1125,6 @@
 
 ||signals.ampiri.com^
 
-||analytics.amplitude.com^
 ||api.amplitude.com^
 ||api2.amplitude.com^
 ||cdn.amplitude.com^
@@ -2676,17 +2669,6 @@
 ||cdn-channels-pixel.ex.co^
 
 ||tp-emea.exactag.com^
-
-||inbox.exacttarget.com^
-||mc.exacttarget.com^
-||mta.exacttarget.com^
-||s1.exacttarget.com^
-||s10.exacttarget.com^
-||s11.exacttarget.com^
-||s4.exacttarget.com^
-||s6.exacttarget.com^
-||s7.exacttarget.com^
-||virt.exacttarget.com^
 
 ||exacttargetapis.com^
 
@@ -5726,7 +5708,7 @@
 
 ||execution-use.ci360.sas.com^
 
-||sascdn.com^
+||ak-ns.sascdn.com^
 
 ||track.saygames.io^
 
@@ -5746,7 +5728,11 @@
 ||collector.scopely.io^
 ||sdk.scopely.io^
 
-||scorecardresearch.com^
+||b.scorecardresearch.com^
+||bs.scorecardresearch.com^
+||end.scorecardresearch.com^
+||sb.scorecardresearch.com^
+||udm.scorecardresearch.com^
 
 ||block.scroll.com^
 ||connect.scroll.com^
@@ -6613,8 +6599,6 @@
 ||preferences.truste.com^
 ||privacy-policy.truste.com^
 
-||sealserver.trustwave.com^
-
 ||sofia.trustx.org^
 
 ||cdn.tsyndicate.com^
@@ -6671,7 +6655,6 @@
 ||ads.twitter.com^
 ||ads-api.twitter.com^
 ||ads-bidder-api.twitter.com^
-||analytics.twitter.com^
 
 ||p.typekit.net^
 
