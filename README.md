@@ -84,7 +84,7 @@ Possible tags:
 
     * `id` — unique human-readable service identifier (string)
     * `name` — service name (string)
-    * `rules` - list of domains. Domain represented by rule (list of strings)
+    * `rules` - list of rules (list of strings)
     * `icon_svg` - svg icon (string)
 
     <details>
