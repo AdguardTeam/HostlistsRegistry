@@ -3,7 +3,7 @@
 ! Description: AdAway is an open source ad blocker for Android using the hosts file.
 ! Homepage: https://github.com/AdAway/adaway.github.io/
 ! License: GPLv3
-! Last modified: 2021-11-15T18:17:21.516Z
+! Last modified: 2021-11-23T05:15:55.043Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -28,6 +28,7 @@
 
 ||s0.2mdn.net^
 
+||cms-xch-chicago.33across.com^
 ||ssc.33across.com^
 
 ||360in.com^
@@ -146,6 +147,8 @@
 
 ||activemetering.com^
 
+||ums.acuityplatform.com^
+
 ||as.ad-brix.com^
 ||campaign.ad-brix.com^
 ||config.ad-brix.com^
@@ -256,10 +259,7 @@
 ||api.addthis.com^
 ||api-public.addthis.com^
 ||cw.addthis.com^
-||e.dlx.addthis.com^
-||m.dlx.addthis.com^
-||p.dlx.addthis.com^
-||x.dlx.addthis.com^
+||dlx.addthis.com^
 ||edge.addthis.com^
 ||m.addthis.com^
 ||q.addthis.com^
@@ -357,9 +357,12 @@
 ||fraud.adjoe.zone^
 ||prod.adjoe.zone^
 
+||app.adjust.com^
 ||s2s.adjust.com^
 ||ulink.adjust.com^
+||view.adjust.com^
 
+||dsp.adkernel.com^
 ||dsp-uswest.adkernel.com^
 ||static-rtb.adkernel.com^
 ||sync.adkernel.com^
@@ -402,6 +405,8 @@
 ||js13.adlooxtracking.com^
 ||js14.adlooxtracking.com^
 ||js15.adlooxtracking.com^
+
+||cs.admanmedia.com^
 
 ||async01.admantx.com^
 ||euasync01.admantx.com^
@@ -730,6 +735,8 @@
 ||adups.com^
 
 ||f.aduwant.com^
+
+||nep.advangelists.com^
 
 ||cdn.advanseads.com^
 ||count.advanseads.com^
@@ -1484,6 +1491,8 @@
 
 ||cdn.avazutracking.net^
 
+||ads.avct.cloud^
+
 ||avocarrot.com^
 
 ||crosspromotion-us.avosapps.us^
@@ -1533,6 +1542,7 @@
 
 ||bayctrk.com^
 
+||network.bazaarvoice.com^
 ||apps.nexus.bazaarvoice.com^
 ||analytics-static.ugc.bazaarvoice.com^
 
@@ -1578,14 +1588,13 @@
 ||bidgear.com^
 
 ||media.bidr.io^
-||event.prod.bidr.io^
-||match.prod.bidr.io^
-||segment.prod.bidr.io^
+||prod.bidr.io^
 ||stinger-ad.bidr.io^
 
 ||bidsopt.com^
 
 ||gce-or.bidswitch.net^
+||gce-sc.bidswitch.net^
 ||grid.bidswitch.net^
 ||sandbox.bidswitch.net^
 ||x.bidswitch.net^
@@ -1675,9 +1684,11 @@
 
 ||client-analytics.braintreegateway.com^
 
-||adservices.brandcdn.com^
-
 ||branch.io^
+
+||dmp.brand-display.com^
+
+||adservices.brandcdn.com^
 
 ||cdn.brandmetrics.com^
 
@@ -2052,6 +2063,8 @@
 
 ||noclick.connexity.com^
 
+||pxl.connexity.net^
+
 ||mgr.consensu.org^
 ||vendorlist.consensu.org^
 
@@ -2132,6 +2145,8 @@
 
 ||ads.creative-serving.com^
 
+||creativecdn.com^
+
 ||crispadvertising.com^
 
 ||criteo.com^
@@ -2193,6 +2208,8 @@
 ||databerries.com^
 
 ||tracker.databrain.com^
+
+||logs.datadoghq.com^
 
 ||media.datahc.com^
 ||redirect.datahc.com^
@@ -2360,15 +2377,7 @@
 ||ad-emea.doubleclick.net^
 ||ff.doubleclick.net^
 ||fls.doubleclick.net^
-||adx.g.doubleclick.net^
-||bid.g.doubleclick.net^
-||cm.g.doubleclick.net^
-||googleads.g.doubleclick.net^
-||googleads4.g.doubleclick.net^
-||pubads.g.doubleclick.net^
-||securepubads.g.doubleclick.net^
-||stats.g.doubleclick.net^
-||survey.g.doubleclick.net^
+||g.doubleclick.net^
 ||g0.doubleclick.net^
 ||g1.doubleclick.net^
 ||g2.doubleclick.net^
@@ -2672,6 +2681,7 @@
 ||load-apne1.exelator.com^
 ||load77.exelator.com^
 ||loada.exelator.com^
+||loadm.exelator.com^
 ||loadr.exelator.com^
 ||loadus.exelator.com^
 ||ssl.exelator.com^
@@ -2688,6 +2698,8 @@
 ||cdn1.extremereach.io^
 ||cdn2.extremereach.io^
 ||vast.extremereach.io^
+
+||ps.eyeota.net^
 
 ||mcs.eyereturn.com^
 ||orion.eyereturn.com^
@@ -2831,6 +2843,7 @@
 
 ||adm.fwmrm.net^
 ||ads.aws.fwmrm.net^
+||v.fwmrm.net^
 
 ||api.fyber.com^
 ||api-rewarded-video.fyber.com^
@@ -2979,12 +2992,25 @@
 
 ||secure.gooddata.com^
 
+||www.google-analytics.com^
+
 ||ads.google.com^
 ||adservice.google.com^
 ||crashlytics2.l.google.com^
 ||s0-2mdn-net.l.google.com^
 
+||www.googleadservices.com^
+
 ||static.googleadsserving.cn^
+
+||crashlyticsreports-pa.googleapis.com^
+
+||pagead2.googlesyndication.com^
+||tpc.googlesyndication.com^
+
+||www.googletagmanager.com^
+
+||www.googletagservices.com^
 
 ||displayads-formats.googleusercontent.com^
 
@@ -3018,6 +3044,8 @@
 ||api.growthpush.com^
 
 ||hearst.gscontxt.net^
+
+||csi.gstatic.com^
 
 ||phar.gu-web.net^
 
@@ -3181,6 +3209,8 @@
 
 ||id1.cn^
 
+||id5-sync.com^
+
 ||a.idio.co^
 ||api.idio.co^
 ||i.idio.co^
@@ -3208,7 +3238,7 @@
 ||open.phone.igexin.com^
 ||talk.igexin.com^
 
-||10870841.collect.igodigital.com^
+||collect.igodigital.com^
 
 ||wass.ihsmarkit.com^
 
@@ -3260,6 +3290,8 @@
 ||ct.impactradius.com^
 ||customtraffic.impactradius.com^
 ||partners-hotwire-com.impactradius.com^
+
+||impression.link^
 
 ||cdn-gl.imrworldwide.com^
 ||cloudapi.imrworldwide.com^
@@ -3560,6 +3592,8 @@
 
 ||sis.jpush.io^
 
+||cdn.jsdelivr.net^
+
 ||c.jsrdn.com^
 ||s.jsrdn.com^
 
@@ -3805,6 +3839,7 @@
 ||tracking.lg.com^
 
 ||b-code.liadm.com^
+||i.liadm.com^
 ||p.liadm.com^
 ||rp.liadm.com^
 ||rp4.liadm.com^
@@ -4015,6 +4050,8 @@
 
 ||marketgid.com^
 
+||device.marketingcloudapis.com^
+
 ||ab-mknodepub.marketo.com^
 ||abrtp1.marketo.com^
 ||abrtp1-cdn.marketo.com^
@@ -4190,6 +4227,7 @@
 ||contextual.media.net^
 ||cs.media.net^
 ||forbes.media.net^
+||hblg.media.net^
 ||hbx.media.net^
 ||lg3.media.net^
 ||mycdn.media.net^
@@ -4687,6 +4725,8 @@
 
 ||wpm.neustar.biz^
 
+||mobile-collector.newrelic.com^
+
 ||www.newsbreak.com^
 
 ||us.tags.newscgp.com^
@@ -4748,6 +4788,8 @@
 
 ||cdn.o333o.com^
 
+||aws.oath.cloud^
+
 ||consent.cmp.oath.com^
 ||service.cmp.oath.com^
 
@@ -4786,26 +4828,9 @@
 
 ||upload.omnivirt.com^
 
-||espn.hb.omtrdc.net^
-||foxnews.hb.omtrdc.net^
-||gannett.hb.omtrdc.net^
-||hulu.hb.omtrdc.net^
-||allstate.sc.omtrdc.net^
-||audible.sc.omtrdc.net^
-||fox.com.ssl.d2.sc.omtrdc.net^
-||philipslighting.d3.sc.omtrdc.net^
-||dsg.sc.omtrdc.net^
-||abcnews.tt.omtrdc.net^
-||allstate.tt.omtrdc.net^
-||audible.tt.omtrdc.net^
-||cdn.tt.omtrdc.net^
-||consumerinfo.tt.omtrdc.net^
-||fcanafta.tt.omtrdc.net^
-||foxnews.tt.omtrdc.net^
-||mboxedge17.tt.omtrdc.net^
-||mboxedge28.tt.omtrdc.net^
-||southwestairlines.tt.omtrdc.net^
-||verizontelecom.tt.omtrdc.net^
+||hb.omtrdc.net^
+||sc.omtrdc.net^
+||tt.omtrdc.net^
 
 ||pixel.onaudience.com^
 
@@ -4858,6 +4883,9 @@
 
 ||update.openx.com^
 
+||rtb.openx.net^
+||us-u.openx.net^
+
 ||adx.ads.oppomobile.com^
 ||bdapi.ads.oppomobile.com^
 ||bjdata.ads.oppomobile.com^
@@ -4875,6 +4903,7 @@
 
 ||api.optimizely.com^
 ||app.optimizely.com^
+||logx.optimizely.com^
 ||events.mobile.optimizely.com^
 
 ||origin.optimost.io^
@@ -4987,7 +5016,7 @@
 ||api.parsely.com^
 ||cdn.parsely.com^
 ||p1.parsely.com^
-||srv.pixel.parsely.com^
+||pixel.parsely.com^
 ||static.parsely.com^
 
 ||b.stats.paypal.com^
@@ -5063,6 +5092,8 @@
 ||ads.pinger.com^
 ||cf-ads.pinger.com^
 
+||s.pinimg.com^
+
 ||v8.analytics.pinsightmedia.com^
 ||cm.pinsightmedia.com^
 ||fusion-files-cf.pinsightmedia.com^
@@ -5073,6 +5104,7 @@
 
 ||ads.pinterest.com^
 ||analytics.pinterest.com^
+||ct.pinterest.com^
 ||log.pinterest.com^
 ||trk.pinterest.com^
 
@@ -5724,6 +5756,8 @@
 
 ||api.sentiance.com^
 
+||ingest.sentry.io^
+
 ||servebom.com^
 
 ||m.servedby-buysellads.com^
@@ -5842,6 +5876,8 @@
 
 ||sitemaji.com^
 
+||pixel-sync.sitescout.com^
+
 ||assistjs.skimresources.com^
 ||go.skimresources.com^
 ||i.skimresources.com^
@@ -5886,6 +5922,7 @@
 ||itx5.smartadserver.com^
 ||itx5-secure.smartadserver.com^
 ||na.smartadserver.com^
+||prg.smartadserver.com^
 ||prg3429.smartadserver.com^
 ||prg8.smartadserver.com^
 ||prga.smartadserver.com^
@@ -5917,6 +5954,7 @@
 ||ww2951.smartadserver.com^
 ||ww3050.smartadserver.com^
 ||ww3232.smartadserver.com^
+||www9.smartadserver.com^
 
 ||smartclip.net^
 
@@ -6053,10 +6091,7 @@
 ||cdn.stackadapt.com^
 ||evm1.stackadapt.com^
 ||evm2.stackadapt.com^
-||east.srv.stackadapt.com^
-||sync.srv.stackadapt.com^
-||tags.srv.stackadapt.com^
-||uw.srv.stackadapt.com^
+||srv.stackadapt.com^
 
 ||ads-lfi3olnec7fr.stackpathdns.com^
 ||analytics-wildtangent-yfdbl8gzl.stackpathdns.com^
@@ -6150,6 +6185,7 @@
 
 ||events.tabmo.io^
 
+||15.taboola.com^
 ||am-match.taboola.com^
 ||am-sync.taboola.com^
 ||am-trc-events.taboola.com^
@@ -6347,6 +6383,7 @@
 
 ||ad-cdn.technoratimedia.com^
 ||prebid.technoratimedia.com^
+||sync.technoratimedia.com^
 
 ||error-collector.ted.com^
 ||metrics.ted.com^
@@ -6397,6 +6434,8 @@
 ||thrtle.com^
 
 ||tidaltv.com^
+
+||analytics.tiktok.com^
 
 ||registration.tiltingpoint.io^
 ||utctime.tiltingpoint.io^
@@ -6575,6 +6614,10 @@
 ||ads.twitter.com^
 ||ads-api.twitter.com^
 ||ads-bidder-api.twitter.com^
+||analytics.twitter.com^
+||platform.twitter.com^
+
+||de.tynt.com^
 
 ||p.typekit.net^
 
@@ -6952,6 +6995,7 @@
 
 ||ads.w55c.net^
 ||i.w55c.net^
+||pm.w55c.net^
 ||tags.w55c.net^
 
 ||smetrics.walgreens.com^
@@ -7238,6 +7282,7 @@
 
 ||zplayer-trk.zdn.vn^
 
+||b1sync.zemanta.com^
 ||images2.zemanta.com^
 
 ||analytics.zendesk.com^
@@ -7246,6 +7291,9 @@
 ||mxvp-feature-toggle-prod-1.zenmxapps.com^
 ||online-prod.zenmxapps.com^
 ||tracking-server-prod-1.zenmxapps.com^
+
+||mwzeom.zeotap.com^
+||spl.zeotap.com^
 
 ||bms.zeptolab.com^
 
