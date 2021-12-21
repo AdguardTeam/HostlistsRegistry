@@ -38,21 +38,30 @@ const writeFile = function (path, data) {
 };
 
 /**
- * Lists directories in the base dir
+ * Lists directories in the base directory.
+ * @param {String} baseDir - base directory
+ * @returns {*}
+ */
+const listDirs = function (baseDir) {
+  return fs.readdirSync(baseDir)
+    .filter(file => fs.statSync(path.join(baseDir, file)).isDirectory())
+    .map(file => path.join(baseDir, file));
+}
+
+/**
+ * Lists directories with filters metadata in the base dir
  * @param baseDir Base directory
  * @return {*}
  */
-const listDirs = function (baseDir) {
-  const childDirs = fs.readdirSync(baseDir)
-    .filter(file => fs.statSync(path.join(baseDir, file)).isDirectory());
+ const listFiltersDirs = function (baseDir) {
+  const childDirs = listDirs(baseDir);
 
   let filterDirs = [];
   for (let dir of childDirs) {
-    const dirPath = path.join(baseDir, dir);
-    if (fs.existsSync(path.join(dirPath, CONFIGURATION_FILE))) {
-      filterDirs.push(dirPath);
+    if (fs.existsSync(path.join(dir, 'configuration.json'))) {
+      filterDirs.push(dir);
     } else {
-      filterDirs = filterDirs.concat(listDirs(dirPath));
+      filterDirs = filterDirs.concat(listFiltersDirs(dir));
     }
   }
   return filterDirs;
@@ -187,7 +196,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
 
   const filtersMetadata = [];
 
-  const filterDirs = listDirs(filtersDir);
+  const filterDirs = listFiltersDirs(filtersDir);
   for (const filterDir of filterDirs) {
 
     const metadata = JSON.parse(readFile(path.join(filterDir, METADATA_FILE)));
