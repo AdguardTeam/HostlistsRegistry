@@ -1,0 +1,21 @@
+{
+  "name": "Dandelion Sprout's Game Console Adblock List",
+  "description": "Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home.",
+  "homepage": "https://github.com/DandelionSprout/adfilt",
+  "sources": [
+    {
+      "name": "Dandelion Sprout's Game Console Adblock List",
+      "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress",
+    "RemoveComments"
+  ]
+}

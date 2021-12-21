@@ -1,0 +1,21 @@
+{
+  "name": "Peter Lowe's List",
+  "description": "Filter that blocks ads, trackers, and other nasty things.",
+  "homepage": "https://pgl.yoyo.org/adservers/",
+  "sources": [
+    {
+      "name": "Peter Lowe's List",
+      "source": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress",
+    "RemoveComments"
+  ]
+}

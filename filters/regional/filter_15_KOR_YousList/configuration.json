@@ -1,0 +1,19 @@
+{
+  "name": "KOR: YousList",
+  "description": "Block filter for advertisements, mainly on Korean sites.",
+  "homepage": "https://github.com/yous/YousList",
+  "sources": [
+    {
+      "name": "YousList",
+      "source": "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments"
+  ]
+}

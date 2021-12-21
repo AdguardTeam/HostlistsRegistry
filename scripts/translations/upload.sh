@@ -3,8 +3,7 @@ SERVICE_URL="https://twosky.adtidy.org/api/v1/"
 workDir=../..
 locales=("en")
 
-for locale in "${locales[@]}"
-do
+for locale in "${locales[@]}"; do
     echo "Moving tags.json for $locale locale"
     cp -f $workDir/locales/$locale/tags.json messages.json
 
@@ -18,8 +17,7 @@ do
     rm tags.json
 done
 
-for locale in "${locales[@]}"
-do
+for locale in "${locales[@]}"; do
     echo "Moving filters.json for $locale locale"
     cp -f $workDir/locales/$locale/filters.json messages.json
 

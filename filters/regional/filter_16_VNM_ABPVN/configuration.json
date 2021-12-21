@@ -1,0 +1,19 @@
+{
+  "name": "VNM: ABPVN List",
+  "description": "Adblock filter list for Vietnamese.",
+  "homepage": "http://abpvn.com/",
+  "sources": [
+    {
+      "name": "ABPVN List",
+      "source": "https://abpvn.com/android/abpvn.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments"
+  ]
+}

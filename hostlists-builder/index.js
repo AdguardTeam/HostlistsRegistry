@@ -5,7 +5,7 @@ const fs = require('fs');
 const md5 = require('md5');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
 
-const HOSTLISTS_URL = 'https://atropnikov.github.io/HostlistsRegistry/assets';
+const HOSTLISTS_URL = 'https://adguardteam.github.io/HostlistsRegistry/assets';
 
 const CONFIGURATION_FILE = 'configuration.json';
 const REVISION_FILE = 'revision.json';
@@ -24,7 +24,7 @@ const readFile = function (path) {
   if (!fs.existsSync(path)) {
     return null;
   }
-  return fs.readFileSync(path, {encoding: 'utf-8'});
+  return fs.readFileSync(path, { encoding: 'utf-8' });
 };
 
 /**
@@ -43,9 +43,19 @@ const writeFile = function (path, data) {
  * @return {*}
  */
 const listDirs = function (baseDir) {
-  return fs.readdirSync(baseDir)
-  .filter(file => fs.statSync(path.join(baseDir, file)).isDirectory())
-  .map(file => path.join(baseDir, file));
+  const childDirs = fs.readdirSync(baseDir)
+    .filter(file => fs.statSync(path.join(baseDir, file)).isDirectory());
+
+  let filterDirs = [];
+  for (let dir of childDirs) {
+    const dirPath = path.join(baseDir, dir);
+    if (fs.existsSync(path.join(dirPath, CONFIGURATION_FILE))) {
+      filterDirs.push(dirPath);
+    } else {
+      filterDirs = filterDirs.concat(listDirs(dirPath));
+    }
+  }
+  return filterDirs;
 }
 
 /**
@@ -79,7 +89,7 @@ const makeRevision = function (currentRevision, hash) {
  */
 const calculateRevisionHash = function (compiled) {
   const data = compiled.filter(s => !s.startsWith('! Last modified:')).join('\n');
-  return Buffer.from(md5(data, {asString: true})).toString('base64').trim();
+  return Buffer.from(md5(data, { asString: true })).toString('base64').trim();
 }
 
 /**
@@ -159,7 +169,7 @@ const loadLocales = function (dir) {
             if (!info || !info.id) {
               continue;
             }
-            const {id} = info;
+            const { id } = info;
             const propName = item.propName;
             result[propName][id] = result[propName][id] || {};
             result[propName][id][locale] = result[propName][id][locale] || {};
@@ -234,7 +244,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
 
   // writes the populated metadata for all filters, tags, etc
   const filtersMetadataFile = path.join(assetsDir, FILTERS_METADATA_FILE);
-  writeFile(filtersMetadataFile, JSON.stringify({filters: filtersMetadata, tags: tagsMetadata}, null, '\t'));
+  writeFile(filtersMetadataFile, JSON.stringify({ filters: filtersMetadata, tags: tagsMetadata }, null, '\t'));
 
   // writes localizations for all filters, tags, etc
   const localizations = loadLocales(localesDir);

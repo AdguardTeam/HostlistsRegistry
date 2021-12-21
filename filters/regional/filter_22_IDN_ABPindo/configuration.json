@@ -1,0 +1,20 @@
+{
+  "name": "IDN: ABPindo",
+  "description": "ABPindo is an additional filter to complement EasyList to block annoying ads on Indonesian and Malaysian language sites.",
+  "homepage": "https://github.com/ABPindo/indonesianadblockrules",
+  "sources": [
+    {
+      "name": "ABPindo",
+      "source": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/abpindo.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress",
+    "RemoveComments"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Dan Pollock's List",
+  "description": "Blocks certain pop-up traps, prevents user tracking, blocks most advertising.",
+  "homepage": "https://someonewhocares.org/",
+  "sources": [
+    {
+      "name": "Dan Pollock's List",
+      "source": "https://someonewhocares.org/hosts/zero/hosts",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments"
+  ]
+}

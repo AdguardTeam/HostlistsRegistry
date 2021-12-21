@@ -1,0 +1,21 @@
+{
+  "name": "Online Malicious URL Blocklist",
+  "description": "A blocklist of malicious websites that are being used for malware distribution, based on the Database dump of Abuse.ch URLhaus.",
+  "homepage": "https://gitlab.com/curben/urlhaus-filter",
+  "sources": [
+    {
+      "name": "Online Malicious URL Blocklist",
+      "source": "https://curben.gitlab.io/malware-filter/urlhaus-filter-agh-online.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress",
+    "RemoveComments"
+  ]
+}

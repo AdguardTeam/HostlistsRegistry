@@ -1,0 +1,19 @@
+{
+  "name": "SWE: Frellwit's Swedish Hosts File",
+  "description": "Aims to get rid of ads, tracking, scams & badware on (mostly) Swedish websites.",
+  "homepage": "https://github.com/lassekongo83/Frellwits-filter-lists/",
+  "sources": [
+    {
+      "name": "Frellwit's Swedish Hosts File",
+      "source": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments"
+  ]
+}

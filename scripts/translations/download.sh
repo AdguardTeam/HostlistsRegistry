@@ -3,8 +3,7 @@ SERVICE_URL="https://twosky.adtidy.org/api/v1/"
 workDir=../..
 locales=("en" "ru" "ar" "bg" "ca" "zh_CN" "zh_TW" "hr" "da" "nl" "fi" "fr" "de" "he" "hu" "id" "it" "ja" "ko" "no" "fa" "pl" "pt" "pt_BR" "pt_PT" "sr" "sk" "es" "sv" "tr" "uk" "vi" "be" "sl")
 
-for locale in "${locales[@]}"
-do
+for locale in "${locales[@]}"; do
     echo "Download tags.json for $locale locale"
     curl "${SERVICE_URL}download?format=strings&language=${locale}&filename=tags.json&project=filters-registry" -o messages.json
 
@@ -36,8 +35,7 @@ do
     rm converted.json
 done
 
-for locale in "${locales[@]}"
-do
+for locale in "${locales[@]}"; do
     echo "Download filters.json for $locale locale"
     curl "${SERVICE_URL}download?format=strings&language=${locale}&filename=hostlists.json&project=filters-registry" -o messages.json
 

@@ -1,0 +1,19 @@
+{
+  "name": "ITA: Filtri-DNS",
+  "description": "Tentative hosts file for Italian sites created from Easylist Italy and ADB X Files.",
+  "homepage": "https://filtri-dns.ga/",
+  "sources": [
+    {
+      "name": "Filtri-DNS",
+      "source": "https://filtri-dns.ga/filtri.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "MKD: Macedonian Pi-hole Blocklist",
+  "description": "This is a list to block unwanted domains that serve ads on Macedonian websites.",
+  "homepage": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
+  "sources": [
+    {
+      "name": "Macedonian Pi-hole Blocklist",
+      "source": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "RemoveComments"
+  ]
+}

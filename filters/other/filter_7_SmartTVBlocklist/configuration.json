@@ -1,0 +1,21 @@
+{
+  "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
+  "description": "This is a blocklist to block smart-TVs sending metadata back home, sometimes with the added benefit of blocking interface ads for apps and movie services.",
+  "homepage": "https://github.com/DandelionSprout/adfilt",
+  "sources": [
+    {
+      "name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
+      "source": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress",
+    "RemoveComments"
+  ]
+}
