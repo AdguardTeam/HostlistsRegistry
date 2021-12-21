@@ -8,6 +8,7 @@
   },
   "scripts": {
     "compose": "node index.js",
+    "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "cd scripts/translations ; ./download.sh",
     "locales:upload": "cd scripts/translations ; ./upload.sh"
   }

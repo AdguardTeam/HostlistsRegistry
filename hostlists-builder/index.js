@@ -152,11 +152,11 @@ const loadLocales = function (dir) {
 
     const items = [{
       file: path.join(localeDir, 'tags.json'),
-      prefix: 'tag.',
+      prefix: 'hostlisttag.',
       propName: 'tags'
     }, {
       file: path.join(localeDir, 'filters.json'),
-      prefix: 'filter.',
+      prefix: 'hostlist.',
       propName: 'filters'
     }];
 

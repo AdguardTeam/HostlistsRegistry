@@ -16,7 +16,7 @@ for locale in "${locales[@]}"; do
     mkdir -p $workDir/locales/$destinationLocale
 
     echo "Parsing tags.json for $locale locale for tags.json"
-    node converter.js import messages.json $locale converted.json "tag."
+    node converter.js import messages.json $locale converted.json "hostlisttag."
 
     echo "Moving tags.json for $locale locale to $workDir/locales/$destinationLocale/"
     cp -f converted.json $workDir/locales/$destinationLocale/tags.json
@@ -46,7 +46,7 @@ for locale in "${locales[@]}"; do
     fi
 
     echo "Parsing filters.json for $locale locale for filters.json"
-    node converter.js import messages.json $locale converted.json "filter."
+    node converter.js import messages.json $locale converted.json "hostlist."
 
     echo "Moving filters.json for $locale locale to $workDir/locales/$destinationLocale/"
     cp -f converted.json $workDir/locales/$destinationLocale/filters.json

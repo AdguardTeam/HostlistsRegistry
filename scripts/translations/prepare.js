@@ -44,8 +44,8 @@ for (let filter of filters) {
     const description = filter.description;
     const filterTags = filter.tags;
 
-    const filterNameKey = `filter.${id}.name`;
-    const filterDescriptionKey = `filter.${id}.description`;
+    const filterNameKey = `hostlist.${id}.name`;
+    const filterDescriptionKey = `hostlist.${id}.description`;
     let found = false;
 
     for (let filterLocale of filtersBaseLanguage) {
@@ -70,11 +70,11 @@ for (let filter of filters) {
             throw new Error(`Cannot find tag metadata ${tag}, fix it in ${TAGS_FILE}`);
         }
 
-        const tagNameKey = `tag.${tagMeta.id}.name`;
-        const tagDescriptionKey = `tag.${tagMeta.id}.description`;
+        const tagNameKey = `hostlisttag.${tagMeta.tagId}.name`;
+        const tagDescriptionKey = `hostlisttag.${tagMeta.tagId}.description`;
         let found = false;
 
-        for (let tagLocale in tagsBaseLanguage) {
+        for (let tagLocale of tagsBaseLanguage) {
             if (tagNameKey in tagLocale) {
                 found = true;
                 break;
@@ -85,6 +85,7 @@ for (let filter of filters) {
             const tagLocale = {};
             tagLocale[tagNameKey] = `TODO: name for tag ${tagMeta.keyword}`;
             tagLocale[tagDescriptionKey] = `TODO: description for tag ${tagMeta.keyword}`;
+            tagsBaseLanguage.push(tagLocale);
         }
     }
 }
