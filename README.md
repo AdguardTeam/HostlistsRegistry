@@ -5,6 +5,7 @@
 - [Filters Metadata](#filters-meta)
 - [Services Metadata](#services-meta)
 - [How to Build](#how-to-build)
+- [Localizations](#localizations)
 
 This repository contains the known hosts blocklists that are made available to the users of AdGuard products ([AdGuard DNS](https://adguard-dns.com/), [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome), etc).
 
@@ -153,3 +154,23 @@ yarn run compose
 ```
 
 The build result can be found in the `assets` directory.
+
+## <a id="localizations"></a> Localizations
+
+Blocklist names, descriptions, and tags' names are translated via [crowdin](https://crowdin.com/project/adguard-applications/en#/miscellaneous/hostlists-registry).
+
+`/locales` contains translations for filters, groups, and tags.
+
+Base language strings:
+
+- `locales/en/filters.json`
+- `locales/en/tags.json`
+
+In order to prepare these files run `yarn run locales:prepare`.
+This script will scan filters meta and add filters names, descriptions, and tags meta to the base language files.
+
+- Prepare: `yarn run locales:prepare`.
+  This script will scan filters meta and add filters names, descriptions, and tags meta to the base language files.
+
+- Upload base language strings: `yarn run locales:upload`
+- Download translations: `yarn run locales:download`

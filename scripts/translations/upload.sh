@@ -11,7 +11,7 @@ for locale in "${locales[@]}"; do
     node converter.js export messages.json $locale tags.json
 
     echo "Uploading tags.json for $locale locale"
-    curl -XPOST "${SERVICE_URL}upload" -F "format=json" -F "language=${locale}" -F "filename=tags.json" -F "project=filters-registry" -F "file=@./tags.json"
+    curl -XPOST "${SERVICE_URL}upload" -F "format=json" -F "language=${locale}" -F "filename=tags.json" -F "project=hostlists-registry" -F "file=@./tags.json"
 
     rm messages.json
     rm tags.json
@@ -25,7 +25,7 @@ for locale in "${locales[@]}"; do
     node converter.js export messages.json $locale filters.json
 
     echo "Uploading filters.json for $locale locale"
-    curl -XPOST "${SERVICE_URL}upload" -F "format=json" -F "language=${locale}" -F "filename=hostlists.json" -F "project=filters-registry" -F "file=@./filters.json"
+    curl -XPOST "${SERVICE_URL}upload" -F "format=json" -F "language=${locale}" -F "filename=hostlists.json" -F "project=hostlists-registry" -F "file=@./filters.json"
 
     rm messages.json
     rm filters.json

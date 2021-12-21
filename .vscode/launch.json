@@ -7,11 +7,20 @@
         {
             "type": "pwa-node",
             "request": "launch",
-            "name": "Launch Program",
+            "name": "Run Compose",
             "skipFiles": [
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}/index.js"
+        },
+        {
+            "type": "pwa-node",
+            "request": "launch",
+            "name": "Run Prepare Localization",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}/scripts/translations/prepare.js"
         }
     ]
 }

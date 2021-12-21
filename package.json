@@ -7,6 +7,8 @@
     "adguard-hostlists-builder": "./hostlists-builder/"
   },
   "scripts": {
-    "compose": "node index.js"
+    "compose": "node index.js",
+    "locales:download": "cd scripts/translations ; ./download.sh",
+    "locales:upload": "cd scripts/translations ; ./upload.sh"
   }
 }
