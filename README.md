@@ -1,13 +1,19 @@
 # AdGuard Host Lists Registry
 
 - [What Blocklists Can Be Added Here](#what-blocklists)
+- [Where Blocklists Are Published](#published)
 - [Filters Metadata](#filters-meta)
 - [Services Metadata](#services-meta)
 - [How to Build](#how-to-build)
 
 This repository contains the known hosts blocklists that are made available to the users of AdGuard products ([AdGuard DNS](https://adguard-dns.com/), [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome), etc).
 
-These blocklists are automatically [converted](https://github.com/AdguardTeam/HostlistCompiler) to the rules format that AdGuard product understand better.
+Some of these blocklists are automatically [converted](https://github.com/AdguardTeam/HostlistCompiler) to the rules format that AdGuard product understand better.
+
+## <a id="published"></a> Where Blocklists Are Published
+
+- [`filters.json`](https://adguardteam.github.io/HostlistsRegistry/assets/filters.json) contains all the blocklists added to the repo. `downloadURL` is the location of the re-hosted blocklist.
+- [`services.json`](https://adguardteam.github.io/HostlistsRegistry/assets/services.json) is the meta-data of "Web Services". This is a part of the parental control functionality of AdGuard Home and AdGuard DNS.
 
 ## <a id="what-blocklists"></a> What Blocklists Can Be Added Here
 
