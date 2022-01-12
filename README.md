@@ -169,8 +169,5 @@ Base language strings:
 In order to prepare these files run `yarn run locales:prepare`.
 This script will scan filters meta and add filters names, descriptions, and tags meta to the base language files.
 
-- Prepare: `yarn run locales:prepare`.
-  This script will scan filters meta and add filters names, descriptions, and tags meta to the base language files.
-
 - Upload base language strings: `yarn run locales:upload`
 - Download translations: `yarn run locales:download`
