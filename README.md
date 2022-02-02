@@ -4,6 +4,7 @@
 - [Where Blocklists Are Published](#published)
 - [Filters Metadata](#filters-meta)
 - [Services Metadata](#services-meta)
+- [Safe Search Filters](#safe-search)
 - [How to Build](#how-to-build)
 - [Localizations](#localizations)
 
@@ -140,6 +141,17 @@ Possible tags:
   ```
 
     </details>
+
+## <a id="safe-search"></a> Safe Search Filters
+
+- [`engines_safe_search.txt`](https://adguardteam.github.io/HostlistsRegistry/assets/engines_safe_search.txt) contains a set of rules to enforce Safe Search in the following searching engines:
+  - Bing
+  - DuckDuckGo
+  - Google
+  - Pixabay
+  - Yandex
+
+- [`youtube_safe_search.txt`](https://adguardteam.github.io/HostlistsRegistry/assets/youtube_safe_search.txt) contains a set of rules to enforce Safe Search and hide comments on YouTube.
 
 ## <a id="how-to-build"></a> How to Build
 
