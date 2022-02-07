@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (for AdGuard Home, and for AdGuard for Android/Windows' DNS filtering).
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-01-29T08:20:59.893Z
+! Last modified: 2022-02-07T14:17:14.405Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -98,6 +98,8 @@
 ! https://dlldownloads.com/xlive-dll/
 ! ¤¤¤ "Driver" download sites that instead download PUP tools ¤¤¤
 ||driver-soft.com^
+||outbyte.com^
+||testedforyou.net^
 ! ¤¤¤ PC Reviver ¤¤¤
 ! ¤¤¤ FixMyPC ¤¤¤
 ! ¤¤¤ "DLL Helper" ¤¤¤
@@ -1803,6 +1805,20 @@
 ||discorde-nitre.xyz^
 ! https://github.com/blocklistproject/Lists/issues/613#issuecomment-1018499340
 ||e-giftnitro.com^
+! https://github.com/AdguardTeam/AdguardFilters/issues/108571
+||ston-app.com^
+||valida-acesso.com^
+! fake human verification scam
+! start form - reported for abuse
+
+||techhubtools.com^
+||reward4spot.com^
+||iget4free.com^
+||d13nu0oomnx5ti.cloudfront.net^
+||dgu9g3a2kzqx2.cloudfront.net^
+||d13pxqgp3ixdbh.cloudfront.net^
+! https://www.pcgamingwiki.com/w/index.php?title=Call_of_Duty:_Modern_Warfare_3&curid=30&diff=1226727&oldid=1206970
+||crashfixes.com^
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
