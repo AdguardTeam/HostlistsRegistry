@@ -2,7 +2,7 @@
 ! Title: VNM: ABPVN List
 ! Description: Adblock filter list for Vietnamese.
 ! Homepage: http://abpvn.com/
-! Last modified: 2022-03-02T09:05:15.928Z
+! Last modified: 2022-03-12T16:05:22.974Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -833,6 +833,8 @@
 0.0.0.0 optimize.google.com
 0.0.0.0 googleoptimize.com
 0.0.0.0 www.googleoptimize.com
+0.0.0.0 androidtvchannels-pa.googleapis.com
+0.0.0.0 androidtvwatsonfe-pa.googleapis.com
 0.0.0.0 clientmetrics-pa.googleapis.com
 0.0.0.0 clouderrorreporting.googleapis.com
 0.0.0.0 crashlyticsreports-pa.googleapis.com
@@ -1117,6 +1119,10 @@
 0.0.0.0 m.yap.yahoo.com
 0.0.0.0 us.ads.yap.yahoo.com
 0.0.0.0 ard.yahoo.co.jp
+0.0.0.0 b90.yahoo.co.jp
+0.0.0.0 b92.yahoo.co.jp
+0.0.0.0 b94.yahoo.co.jp
+0.0.0.0 b97.yahoo.co.jp
 0.0.0.0 dsb.yahoo.co.jp
 0.0.0.0 logql.yahoo.co.jp
 0.0.0.0 ov.yahoo.co.jp
@@ -1143,6 +1149,7 @@
 0.0.0.0 ads-api.twitter.com
 0.0.0.0 ads-bidder-api.twitter.com
 0.0.0.0 ads.twitter.com
+0.0.0.0 analytics.twitter.com
 0.0.0.0 ads-twitter.com
 0.0.0.0 static.ads-twitter.com
 0.0.0.0 adeventtracker.spotify.com
@@ -5482,6 +5489,7 @@
 0.0.0.0 gdn.socdm.com
 0.0.0.0 imobile.socdm.com
 0.0.0.0 rubicon.socdm.com
+0.0.0.0 sf.nazs.socdm.com
 0.0.0.0 socdm.com
 0.0.0.0 tg.dr.socdm.com
 0.0.0.0 a.exdynsrv.com
@@ -5722,28 +5730,6 @@
 0.0.0.0 wxapi.growingio.com
 0.0.0.0 images.taxel.jp
 0.0.0.0 taxel.jp
-0.0.0.0 acv.ladsp.com
-0.0.0.0 asr.ladsp.com
-0.0.0.0 asrftp4.ladsp.com
-0.0.0.0 asrp.ladsp.com
-0.0.0.0 cd.ladsp.com
-0.0.0.0 cr-pall.ladsp.com
-0.0.0.0 dad.ladsp.com
-0.0.0.0 ecr.ladsp.com
-0.0.0.0 ecrp.ladsp.com
-0.0.0.0 ladsp.com
-0.0.0.0 native.ladsp.com
-0.0.0.0 pb.ladsp.com
-0.0.0.0 px.ladsp.com
-0.0.0.0 px-r.ladsp.com
-0.0.0.0 px-ya.ladsp.com
-0.0.0.0 sc.ladsp.com
-0.0.0.0 service.ladsp.com
-0.0.0.0 sf.ladsp.com
-0.0.0.0 tag.ladsp.com
-0.0.0.0 tt.ladsp.com
-0.0.0.0 um.ladsp.com
-0.0.0.0 vast.ladsp.com
 0.0.0.0 acs.adtdp.com
 0.0.0.0 ad.amanad.adtdp.com
 0.0.0.0 ad.as.amanad.adtdp.com
@@ -7928,6 +7914,10 @@
 0.0.0.0 sdk.iad-05.braze.com
 0.0.0.0 sdk.iad-06.braze.com
 0.0.0.0 sdk.iad-08.braze.com
+0.0.0.0 belgikanst.iad-03.braze.com
+0.0.0.0 gaspra.iad-03.braze.com
+0.0.0.0 rest.iad-03.braze.com
+0.0.0.0 serpens.iad-01.braze.com
 0.0.0.0 ua.zenadservices.net
 0.0.0.0 www.zenadservices.net
 0.0.0.0 zenadservices.net
@@ -8485,6 +8475,8 @@
 0.0.0.0 i.bestcontentfood.top
 0.0.0.0 ad.naver.com
 0.0.0.0 adlog.shopping.naver.com
+0.0.0.0 gfp.veta.naver.com
+0.0.0.0 veta.naver.com
 0.0.0.0 api.ematicsolutions.com
 0.0.0.0 ematicsolutions.com
 0.0.0.0 www.ematicsolutions.com
@@ -9482,6 +9474,51 @@
 0.0.0.0 rtb.adwmg.com
 0.0.0.0 vastb.adwmg.com
 0.0.0.0 www.adwmg.com
+0.0.0.0 protagcdn.com
+0.0.0.0 x.protagcdn.com
+0.0.0.0 y.protagcdn.com
+0.0.0.0 crs-event.line.me
+0.0.0.0 crs-hometab-event.line.me
+0.0.0.0 tr.line.me
+0.0.0.0 torimochi.line-apps.com
+0.0.0.0 uts-front.line-apps.com
+0.0.0.0 nelo2-col.linecorp.com
+0.0.0.0 getdomain.woodpeckerlog.com
+0.0.0.0 open.woodpeckerlog.com
+0.0.0.0 report.woodpeckerlog.com
+0.0.0.0 woodpeckerlog.com
+0.0.0.0 datacollector-dra.dt.hicloud.com
+0.0.0.0 events-dra.op.hicloud.com
+0.0.0.0 logbak.hicloud.com
+0.0.0.0 logservice-dra.platform.hicloud.com
+0.0.0.0 logservice.hicloud.com
+0.0.0.0 metrics-dra.dt.hicloud.com
+0.0.0.0 cdn.yourwebbars.com
+0.0.0.0 yourwebbars.com
+0.0.0.0 cdn.cquotient.com
+0.0.0.0 cquotient.com
+0.0.0.0 e.cquotient.com
+0.0.0.0 p.cquotient.com
+0.0.0.0 r.cquotient.com
+0.0.0.0 pulsar.xlisting.jp
+0.0.0.0 xlisting.jp
+0.0.0.0 cdn.d2-apps.net
+0.0.0.0 d2-apps.net
+0.0.0.0 pp.d2-apps.net
+0.0.0.0 sync.d2-apps.net
+0.0.0.0 cdn.smartnews-ads.com
+0.0.0.0 i.smartnews-ads.com
+0.0.0.0 smartnews-ads.com
+0.0.0.0 cd.ladsp.jp
+0.0.0.0 cr-p22000.ladsp.jp
+0.0.0.0 cr-p3.ladsp.jp
+0.0.0.0 cr-p31.ladsp.jp
+0.0.0.0 cr-p35.ladsp.jp
+0.0.0.0 ladsp.jp
+0.0.0.0 tag.ladsp.jp
+0.0.0.0 cd.ladsp.com
+0.0.0.0 cr-pall.ladsp.com
+0.0.0.0 ladsp.com
 0.0.0.0 adtimaserver.vn
 0.0.0.0 api.adtimaserver.vn
 0.0.0.0 log.adtimaserver.vn
@@ -10784,6 +10821,7 @@
 0.0.0.0 adx.xtv.vn
 0.0.0.0 affiliate.k4.tinhte.vn
 0.0.0.0 ailamtrieuphu.com
+0.0.0.0 aj2393.online
 0.0.0.0 ak9.6895588.com
 0.0.0.0 an.dongphim.net
 0.0.0.0 an.xemvtv.net
@@ -10936,6 +10974,7 @@
 0.0.0.0 analytics.explus.vn
 0.0.0.0 analytics.hub-js.com
 0.0.0.0 analytics.mfocus.vn
+0.0.0.0 analytics.molistar.com
 0.0.0.0 analytics.moneycat.vn
 0.0.0.0 analytics.nhattao.com
 0.0.0.0 analytics.rever.vn
@@ -11082,6 +11121,7 @@
 0.0.0.0 thongke.24h.com.vn
 0.0.0.0 thongke.baotintuc.vn
 0.0.0.0 thongke.opencps.vn
+0.0.0.0 thongke.vui.vn
 0.0.0.0 thongke99.baogiaothong.vn
 0.0.0.0 tr.topdevvn.com
 0.0.0.0 track-srv.vietnamnet.vn
@@ -11189,6 +11229,7 @@
 0.0.0.0 thegioididong.me
 0.0.0.0 thseaeing.fun
 0.0.0.0 ucesreferre.club
+0.0.0.0 vietnammoi.biz
 0.0.0.0 vongquay-pubgmobilevn-zing.com
 0.0.0.0 vongquaymienphi.net
 0.0.0.0 www.facebookz.co
@@ -11227,6 +11268,7 @@
 0.0.0.0 4wnet.com
 0.0.0.0 520click.com
 0.0.0.0 5advertise.com
+0.0.0.0 5toft8or7on8tt.com
 0.0.0.0 7c0616849b.com
 0.0.0.0 999.money
 0.0.0.0 9gg23.com
@@ -12260,6 +12302,7 @@
 0.0.0.0 awempire.com
 0.0.0.0 aweprt.com
 0.0.0.0 awfulporetroys.casa
+0.0.0.0 awigglespouter.cam
 0.0.0.0 awzbijw.com
 0.0.0.0 axdsz.pro
 0.0.0.0 axiomaticalley.com
@@ -12794,6 +12837,7 @@
 0.0.0.0 d3ou4areduq72f.cloudfront.net
 0.0.0.0 d3v3bqdndm4erx.cloudfront.net
 0.0.0.0 da-ads.com
+0.0.0.0 dacmaiss.com
 0.0.0.0 dads.wedobest.com.cn
 0.0.0.0 dadsimz.com
 0.0.0.0 dadslims.com
@@ -12816,6 +12860,7 @@
 0.0.0.0 de17a.com
 0.0.0.0 deadpantruck.com
 0.0.0.0 dealdotcom.com
+0.0.0.0 dealtsowbite.com
 0.0.0.0 deanmediagroup.com
 0.0.0.0 debadu.com
 0.0.0.0 debonairway.com
@@ -13066,6 +13111,7 @@
 0.0.0.0 facilitategrandfather.com
 0.0.0.0 factoryaudioherd.com
 0.0.0.0 fadedprofit.com
+0.0.0.0 fadingamendable.com
 0.0.0.0 fadverdirect.com
 0.0.0.0 fagywalu.pro
 0.0.0.0 faidoud.com
@@ -13589,6 +13635,7 @@
 0.0.0.0 lightcushion.com
 0.0.0.0 lightningcast.net
 0.0.0.0 lightspeedcash.com
+0.0.0.0 likedstring.com
 0.0.0.0 lilureem.com
 0.0.0.0 limeclassycaption.com
 0.0.0.0 link-booster.de
@@ -14400,6 +14447,7 @@
 0.0.0.0 retargeter.com
 0.0.0.0 retargetly.com
 0.0.0.0 rev2pub.com
+0.0.0.0 revealoverheadearth.com
 0.0.0.0 revengemeantjackpot.com
 0.0.0.0 revenue.net
 0.0.0.0 revenuedirect.com
@@ -14547,6 +14595,7 @@
 0.0.0.0 shinystat.it
 0.0.0.0 shlyapajhd2kle8pnc09.com
 0.0.0.0 shndrktrk.com
+0.0.0.0 shoagooy.net
 0.0.0.0 shofteph.com
 0.0.0.0 shoppingads.com
 0.0.0.0 shopzilla.com
@@ -14563,6 +14612,7 @@
 0.0.0.0 simplycast.com
 0.0.0.0 sincerebuffalo.com
 0.0.0.0 sinefight-skinesia.com
+0.0.0.0 sinewedretore.casa
 0.0.0.0 sinoa.com
 0.0.0.0 sistacked.com
 0.0.0.0 sitedataprocessing.com
@@ -14762,6 +14812,7 @@
 0.0.0.0 t.myvisualiq.net
 0.0.0.0 t7z.cupid.iqiyi.com
 0.0.0.0 tacoda.net
+0.0.0.0 tacticmarshannouncing.com
 0.0.0.0 tagbom.com
 0.0.0.0 tagmngrs.com
 0.0.0.0 tagular.com
@@ -15727,6 +15778,8 @@
 0.0.0.0 monu.delivery
 0.0.0.0 mousestats.com
 0.0.0.0 movestone.net
+0.0.0.0 msg-intl.qy.net
+0.0.0.0 msg.qy.net
 0.0.0.0 mybbc-analytics.files.bbci.co.uk
 0.0.0.0 netcore.co.in
 0.0.0.0 newlog.lilithgame.com
@@ -15761,6 +15814,7 @@
 0.0.0.0 plausible.io
 0.0.0.0 play.leadzutw.com
 0.0.0.0 playtomic.com
+0.0.0.0 poole-collector-prod.n3twork.com
 0.0.0.0 popupmaker.com
 0.0.0.0 presage.io
 0.0.0.0 promotionengine.com
