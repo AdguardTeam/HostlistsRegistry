@@ -1,0 +1,20 @@
+{
+  "name": "The NoTracking blocklist",
+  "description": "The NoTracking blocklist is a DNS based filter list for blocking ads, malware, phising and other online garbage.",
+  "homepage": "https://github.com/notracking/hosts-blocklists",
+  "sources": [
+    {
+      "name": "The NoTracking blocklist",
+      "source": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
