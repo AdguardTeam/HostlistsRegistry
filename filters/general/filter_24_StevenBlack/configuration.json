@@ -1,0 +1,18 @@
+{
+  "name": "Steven Black's List",
+  "description": "Unified hosts file with base extensions (fakenews + gambling + porn).",
+  "homepage": "https://github.com/StevenBlack/hosts",
+  "sources": [
+    {
+      "name": "Steven Black's List",
+      "source": "https://raw.githubusercontent.com/StevenBlack/hosts/master/alternates/fakenews-gambling-porn/hosts",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate"
+  ]
+}
