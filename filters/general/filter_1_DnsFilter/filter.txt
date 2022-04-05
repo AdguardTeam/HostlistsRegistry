@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: Filter composed from several other filters (English filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2022-04-05T06:05:48.288Z
+! Last modified: 2022-04-05T12:06:09.138Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-04-05T06:01:30.365Z
+! Last modified: 2022-04-05T12:01:29.964Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -22076,6 +22076,7 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||taplytics.com^
 ||event-stream.spot.im^
 ||1ee085aa-4c05-43a8-a4fe-fafedbedd062.xyz^
 ||track.swaptrap.live^
@@ -22140,7 +22141,6 @@ vkcdnservice.appspot.com^
 ||track.nopaperforms.com^
 ||track.91app.io^
 ||cdn.teleportapi.com^
-||api.rollbar.com^
 ||fouanalytics.com^
 ||analitits.com^
 ||rtxpx-a.akamaihd.net^
@@ -26422,6 +26422,9 @@ vkcdnservice.appspot.com^
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/344
 ! Disabled in DNS filter
 !
+||ts.delfi.lt^
+||metrics.beyondwords.io^
+||launcher.spot.im^
 ||api.data.ciceksepeti.com^
 ||wlog.tmon.co.kr^
 ||analytics.appservice.tech^
@@ -29476,7 +29479,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||tagmngrs.com^
 ||tagstaticx.com^
 ||tapad.app^
-||taplytics.com^
 ||taskanalytics.com^
 ||tercept.com^
 ||testin.cn^
@@ -30479,7 +30481,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||mediametrics.mpsa.com^
 ||metering.pagesuite.com^
 ||metrics.api.drift.com^
-||metrics.beyondwords.io^
 ||metrics.ctvdigital.net^
 ||metrics.getvitals.io^
 ||metrics.pico.tools^
@@ -37850,9 +37851,9 @@ charlestownwyllie.oaklawnnonantum.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 05 Apr 2022 10:15 UTC+7
-! Version: 2204051015
-! Blocked: 1.107 rules
+! Last modified: 05 Apr 2022 14:31 UTC+7
+! Version: 2204051431
+! Blocked: 1.111 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
 !
@@ -37946,6 +37947,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||mediaz.vn^
 ||mediazcorp.com^
 ||mepuzz.com^
+||metaconex.io^
 ||metrics.coccoc.com^
 ||mobilead.vn^
 ||mobio.vn^
@@ -38258,7 +38260,9 @@ charlestownwyllie.oaklawnnonantum.com^
 ||ai.thanhnien.vn^
 ||alexajstrack.com^
 ||analytic.baodantoc.vn^
+||analytic.vnanet.vn^
 ||analytics.admon.com.vn^
+||analytics.aita.gov.vn^
 ||analytics.bkav.com^
 ||analytics.bkav.com.vn^
 ||analytics.diamondstarfinancial.com.vn^
@@ -38796,6 +38800,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||vnloto.vip^
 ||vnq8.bet^
 ||vnq8.com^
+||vnq8.net^
 ||vua1004.club^
 ||vua1005.club^
 ||vuabai9.com^
@@ -38915,6 +38920,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||00-gov.cn^
 ||000123456789.site^
 ||0024aaaa.com^
+||govchaozhou.cn^
 ||008844.cc^
 ||00xvppy.cn^
 ||01fen.com^
