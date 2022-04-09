@@ -1,0 +1,18 @@
+{
+  "name": "MangaOpt - Hosts rules",
+  "description": "Block Manga",
+  "homepage": "https://raw.githubusercontent.com/cracksecu/pihole/master/list.txt",
+  "sources": [
+    {
+      "name": "MangaOpt - Hosts rules",
+      "source": "https://raw.githubusercontent.com/cracksecu/pihole/master/list.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate"
+  ]
+}
