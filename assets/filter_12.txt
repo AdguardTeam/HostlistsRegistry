@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (for AdGuard Home, and for AdGuard for Android/Windows' DNS filtering).
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-04-24T02:32:52.903Z
+! Last modified: 2022-05-03T14:09:28.573Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -1817,7 +1817,7 @@
 ||waystriling.com^
 ||upload-4ever.com^
 ||worldcoolfeed.com^
-! Fake discord nitro 
+! Fake Discord Nitro 
 
 ||lucymods.com^
 ||gluegames.xyz^
@@ -1860,6 +1860,9 @@
 ||198.199.120.251^
 
 
+! https://www.telia.no/kundeservice/mobil/malware-flubot-android/
+!+ NOT_OPTIMIZED
+/^https?://(www\.)?[a-z0-9-]{1,}\.[a-z]{2,17}/[a-z0-9]/\?[a-z0-9.-]{8,}$/
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
