@@ -1,0 +1,15 @@
+{
+  "name": "Stalkerware Indicators List",
+  "description": "Stalkerware indicators of compromise for Android and iOS.",
+  "homepage": "https://github.com/Te-k/stalkerware-indicators",
+  "sources": [
+    {
+      "name": "Stalkerware Indicators List",
+      "source": "https://github.com/Te-k/stalkerware-indicators/blob/master/generated/hosts",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ]
+}
