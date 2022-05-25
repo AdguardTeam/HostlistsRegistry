@@ -1,0 +1,20 @@
+{
+  "name": "Energized Spark",
+  "description": "A list of domains that serve ads, tracking scripts and malware from multiple reputable sources.",
+  "homepage": "https://energized.pro/",
+  "sources": [
+    {
+      "name": "Energized Spark",
+      "source": "https://block.energized.pro/spark/formats/filter",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
