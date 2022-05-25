@@ -90,5 +90,5 @@ for (let filter of filters) {
     }
 }
 
-fs.writeFileSync(FILTERS_FILE, JSON.stringify(filtersBaseLanguage, 0, 4));
-fs.writeFileSync(TAGS_FILE, JSON.stringify(tagsBaseLanguage, 0, 4));
+fs.writeFileSync(FILTERS_FILE, JSON.stringify(filtersBaseLanguage, 0, '\t'));
+fs.writeFileSync(TAGS_FILE, JSON.stringify(tagsBaseLanguage, 0, '\t'));

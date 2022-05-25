@@ -1,0 +1,20 @@
+{
+  "name": "1Hosts (Lite)",
+  "description": "Safeguard your device(s) against pesky ads, trackers, and malware.",
+  "homepage": "https://badmojr.github.io/1Hosts/",
+  "sources": [
+    {
+      "name": "1Hosts (Lite)",
+      "source": "https://badmojr.gitlab.io/1hosts/Lite/hosts.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
