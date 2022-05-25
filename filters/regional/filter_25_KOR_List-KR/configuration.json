@@ -1,0 +1,29 @@
+{
+  "name": "KOR: List-KR DNS",
+  "description": "A DNS version of List-KR, a filter for websites in Korean language.",
+  "homepage": "https://github.com/List-KR/List-KR",
+  "sources": [
+    {
+      "name": "List-KR adservice.txt",
+      "source": "https://raw.githubusercontent.com/List-KR/List-KR/master/filters-share/adservice.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    },
+    {
+      "name": "List-KR adservice_firstparty.txt",
+      "source": "https://raw.githubusercontent.com/List-KR/List-KR/master/filters-share/adservice_firstparty.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
