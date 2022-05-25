@@ -1,0 +1,20 @@
+{
+  "name": "OISD Blocklist Full",
+  "description": "Blocks ads/trackers and prioritizes functionality over blocking.",
+  "homepage": "https://oisd.nl/",
+  "sources": [
+    {
+      "name": "OISD Blocklist Full",
+      "source": "https://abp.oisd.nl/",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
