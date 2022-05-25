@@ -228,7 +228,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     if (hostlistConfiguration.sources.length === 1) {
       sourceUrl = hostlistConfiguration.sources[0].source;
     } else {
-      // TODO:
+      sourceUrl = metadata.homepage;
     }
 
     // populates metadata for filter
