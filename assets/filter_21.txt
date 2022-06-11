@@ -2,7 +2,7 @@
 ! Title: CHN: anti-AD
 ! Description: List for blocking ads in the Chinese region. Aims at privacy protection.
 ! Homepage: https://anti-ad.net/
-! Last modified: 2022-06-10T19:05:15.035Z
+! Last modified: 2022-06-11T15:06:02.067Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -11,11 +11,11 @@
 ! Source: https://anti-ad.net/easylist.txt
 !
 !Title: anti-AD
-!Version: 20220611024418
+!Version: 20220611223306
 !Homepage: https://github.com/privacy-protection-tools/anti-AD
 !!!note! If you are using "AdGuard", please load https://anti-ad.net/adguard.txt
 !!!This list only applies to "AdGuard Home".
-!Total lines: 51604
+!Total lines: 51607
 @@||ad-maven.com^
 @@||ad.azure.com^
 @@||ad.ext.azure.com^
@@ -79,6 +79,7 @@
 @@||api.browser.miui.com^
 @@||pixel.prime.amazon.dev^
 @@||track.landmarkglobal.com^
+@@||microsoftazuresponsorships.com^
 @@||ads.alafish.cn^
 @@||ads.amazon^
 @@||ads.cs.washington.edu^
@@ -1311,7 +1312,6 @@
 ||37mnm.com^
 ||37pk49.com^
 ||37see.com^
-||37signals.com^
 ||image.37wan.cn^
 ||37wan.com^
 ||37xs.net^
@@ -4890,7 +4890,6 @@
 ||ttjx-online.cn-hangzhou.log.aliyuncs.com^
 ||xz-development.oss-cn-beijing.aliyuncs.com^
 ||sspmiaoshuo.cn-hangzhou.log.aliyuncs.com^
-||arms-retcode.aliyuncs.com^
 ||aliyuncss.com^
 ||aliyune.xyz^
 ||aliyunf.xyz^
@@ -14590,7 +14589,6 @@
 ||douthosh.net^
 ||t.douyaobuy.com^
 ||tt.douyaobuy.com^
-||msg.douyu.com^
 ||wan.douyu.com^
 ||club-img.douyucdn.cn^
 ||cs-op.douyucdn.cn^
@@ -29210,8 +29208,11 @@
 ||stats.mituyu.com^
 ||gg.miued.com^
 ||ccc.sys.miui.com^
-||browser.miui.com^
+||hd.browser.miui.com^
+||httpdns.browser.miui.com^
 ||logupdate.avlyun.sec.miui.com^
+||nav.browser.miui.com^
+||r.browser.miui.com^
 ||sa.api.intl.miui.com^
 ||adinfo.ra1.xlmc.sec.miui.com^
 ||adv.sec.intl.miui.com^
@@ -29222,9 +29223,12 @@
 ||calopenupdate.comm.miui.com^
 ||etl.xlmc.sec.miui.com^
 ||fb.xk.miui.com^
+||hot.browser.miui.com^
 ||info.sec.miui.com^
 ||metok.sys.miui.com^
 ||proxy.sec.miui.com^
+||reader.browser.miui.com^
+||security.browser.miui.com^
 ||hot.browser.intl.miui.com^
 ||activity.browser.intl.miui.com^
 ||api.brs.intl.miui.com^
@@ -40876,7 +40880,6 @@
 ||stackattacka.com^
 ||stats.stackingthebricks.com^
 ||trackla.stackla.com^
-||stackpathdns.com^
 ||stats.stacks.org^
 ||bdzcck.stadiumgoods.com^
 ||cn1.stadiumgoods.com^
