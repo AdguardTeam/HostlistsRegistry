@@ -2,7 +2,7 @@
 ! Title: CHN: AdRules DNS List
 ! Description: List for blocking ads in the Chinese region
 ! Homepage: https://github.com/Cats-Team/AdRules
-! Last modified: 2022-07-10T15:05:42.922Z
+! Last modified: 2022-07-10T16:05:34.851Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -10,14 +10,14 @@
 ! Source name: AdRules DNS List
 ! Source: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 !
-! Checksum: 8pYf4MTr762aQ4vk9STU9w
+! Checksum: 5QVHZFfUaoMSoa4j2l0gQw
 ! Title: AdRules DNS List
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by Cats-Team
 ! Expires: 8 Hours
 ! Description: The DNS Filters
-! Version: 2022-07-10 23:00:40(GMT+8) 
-! Total count: 89920
+! Version: 2022-07-10 23:52:51(GMT+8) 
+! Total count: 89974
 *.001union.com
 *.00oo00.com
 *.0594003.com
@@ -547,7 +547,8 @@
 epochtimes
 fc-.cdn.bcebos.com
 go-mpulse
-local
+||*.wap.xsbiquge.com^
+||*serror*.wo.com.cn^
 ||0.code.cotsta.ru^
 ||00-gov.cn^
 ||000.gaysexe.free.fr^
@@ -1450,6 +1451,7 @@ local
 ||200ps.com^
 ||200stran.ru^
 ||200summit.com^
+||201*.myhard.com^
 ||201071.com^
 ||2012.8684.com^
 ||2012ui.com^
@@ -3230,6 +3232,7 @@ local
 ||7z66.com^
 ||7zip.fr^
 ||7znpl4sa.top^
+||8*.tianya.cn^
 ||8.jrj.com^
 ||80055404.vtt^
 ||801.tianya.cn^
@@ -3820,6 +3823,7 @@ local
 ||PAKpolice.com^
 ||Question2Answer.com^
 ||USApolice.com^
+||a*.chajiaotong.com^
 ||a-5.info^
 ||a-ads.com^
 ||a-affiliate.net^
@@ -4913,6 +4917,9 @@ local
 ||abwhyag.com^
 ||abyamaskor.com^
 ||abz.com^
+||ac*.786ip.com^
+||ac*.faxingchina.com^
+||ac*.pingguolv.com^
 ||ac-3.mix.tokyo^
 ||ac.86huoche.com^
 ||ac.acadomia.fr^
@@ -4962,11 +4969,13 @@ local
 ||acceptancecedehumorous.com^
 ||acceptiongere.site^
 ||acces.streaming-direct.co^
+||access*.tpns.tencent.com^
 ||access-analyze.org^
 ||access-mc.com^
 ||access.acspubs.org^
 ||access.gfpornmovies.com^
 ||access.njherald.com^
+||access.pangolin-sdk-toutiao-*.com^
 ||access.sunpower.com^
 ||access1.tpns.tencent.com^
 ||accessfreevpn.com^
@@ -6546,6 +6555,7 @@ local
 ||adhslx.com^
 ||adhub.ru^
 ||adhunter.media^
+||adi*.cnool.net^
 ||adi.bigmir.net^
 ||adi.cnool.net^
 ||adi2007.cnool.net^
@@ -7247,6 +7257,8 @@ local
 ||adru.net^
 ||adrun.ru^
 ||adrunnr.com^
+||ads*-normal*.zijieapi.com^
+||ads*-normal-hl.zijieapi.com^
 ||ads-816899299.ap-southeast-1.elb.amazonaws.com^
 ||ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com^
 ||ads-api.playfun.vn^
@@ -7711,7 +7723,6 @@ local
 ||ads.livenation.com^
 ||ads.livetv314.me^
 ||ads.lmmob.com^
-||ads.localhost.net.ar^
 ||ads.lordlucky.com^
 ||ads.lycos.com^
 ||ads.ma7.tv^
@@ -9125,7 +9136,6 @@ local
 ||advancedmactools.com^
 ||advancedreefaquarium.com^
 ||advancedtracker.appspot.com^
-||advancelocal-adapter-image-uploads.s3.amazonaws.com^
 ||advancenative.com^
 ||advancepak.com^
 ||advancets.org^
@@ -9626,6 +9636,7 @@ local
 ||afdyfxfrwbfy.com^
 ||afefw.com^
 ||afenx.top^
+||aff*.kolektiva.net^
 ||aff-handler.com^
 ||aff-jp.dxlive.com^
 ||aff-online.com^
@@ -11365,7 +11376,6 @@ local
 ||analytics.livesense.marketing^
 ||analytics.livestream.com^
 ||analytics.lk.api.ditto.com^
-||analytics.locallogic.co^
 ||analytics.loop-cloud.de^
 ||analytics.lunge.de^
 ||analytics.mail-corp.com^
@@ -11992,6 +12002,8 @@ local
 ||aoyou3.top^
 ||aoyou4.top^
 ||aoyuegc.cn^
+||ap*.jj20.com^
+||ap*.pl520.com^
 ||ap-srv.net^
 ||ap.delfi.ee^
 ||ap.dongqiudi.com^
@@ -12042,6 +12054,7 @@ local
 ||api-05.com^
 ||api-2-0.spot.im^
 ||api-a.op-mobile.opera.com^
+||api-access.pangolin-sdk-toutiao-*.com^
 ||api-ad-data.kajicam.com^
 ||api-ad.kajicam.com^
 ||api-ads.tiantianqutao.com^
@@ -12186,7 +12199,6 @@ local
 ||api.limbik.com^
 ||api.linkgist.com^
 ||api.linkz.net^
-||api.locallogic.co^
 ||api.locately.com^
 ||api.locuslabs.com^
 ||api.logpartition.com^
@@ -12213,7 +12225,6 @@ local
 ||api.newsfeed.intl.miui.com^
 ||api.ning.com^
 ||api.nobeta.com.br^
-||api.omnilocal.ai^
 ||api.oneaudience.com^
 ||api.optnmnstr.com^
 ||api.ozui.vn^
@@ -13312,6 +13323,7 @@ local
 ||asymyvhmwyyop.com^
 ||async-px-eu.dynamicyield.com^
 ||async-px.dynamicyield.com^
+||at*.doubanio.com^
 ||at-adserver.alltop.com^
 ||at-cddc.actu-juridique.fr^
 ||at-img1.tdimg.com^
@@ -13898,6 +13910,7 @@ local
 ||awxqiujkhrf.top^
 ||awyys.com^
 ||awzbijw.com^
+||ax.*.ifeng.com^
 ||ax.120ask.com^
 ||ax.ggfeng.com^
 ||ax.idg.se^
@@ -15179,6 +15192,7 @@ local
 ||bcvcrdr.xyz^
 ||bcvideod.com^
 ||bcxamyjtnzuf.com^
+||bd*-ys.km.com^
 ||bd-js.baixing.net^
 ||bd-s.baixing.net^
 ||bd.ahsrst.cn^
@@ -15250,6 +15264,7 @@ local
 ||bdcode.qinglm.com^
 ||bdcode.youke.com^
 ||bdcode1.haodou.com^
+||bdcpro*.techweb.com.cn^
 ||bdd.hainan.net^
 ||bddm.999d.com^
 ||bdds.jeuxvideo.com^
@@ -15290,6 +15305,7 @@ local
 ||bdjs.ylq.com^
 ||bdjs1.ixiumei.com^
 ||bdkuth.smartbuyglasses.co.uk^
+||bdlm*.hc360.com^
 ||bdlm.120askimages.com^
 ||bdlm1.hc360.com^
 ||bdlmggcs1.familydoctor.com.cn^
@@ -16374,6 +16390,7 @@ local
 ||bizua.com^
 ||bizx.info^
 ||bizzclick.com^
+||bj*.9669.cn^
 ||bj-bytsk.com^
 ||bj04.com^
 ||bj1110.online^
@@ -18882,6 +18899,7 @@ local
 ||carutinv.com^
 ||carvemyname.com^
 ||carvyre.com^
+||cas.*.criteo.com^
 ||cas.cluep.com^
 ||casabevenule.com^
 ||casalemedia.com.edgekey.net^
@@ -19351,7 +19369,6 @@ local
 ||cdn.klasseo.com^
 ||cdn.komentary.aol.com^
 ||cdn.livechatinc.com^
-||cdn.locallogic.co^
 ||cdn.lodeo.io^
 ||cdn.malokacha.club^
 ||cdn.maropost.com^
@@ -21738,6 +21755,7 @@ local
 ||collect-ap2.attraqt.io^
 ||collect-eu.attraqt.io^
 ||collect-test.arabam.com^
+||collect.*.miui.com^
 ||collect.adback.co^
 ||collect.adplogger.no^
 ||collect.adsorb.com^
@@ -21774,6 +21792,8 @@ local
 ||collectionslairdeck.com^
 ||collectionspriestcardiac.com^
 ||collective-media.net^
+||collector-*.px-client.net^
+||collector-*.tvsquared.com^
 ||collector-analytics.efigence.com^
 ||collector-api.99designs.com^
 ||collector-axa.cloud.ca.com^
@@ -24121,6 +24141,9 @@ local
 ||czyiming.club^
 ||czyzd.xyz^
 ||czzdf.com^
+||d*.ruiwen.com^
+||d*.wanzhuang.com^
+||d*.xinshipu.com^
 ||d-1.co^
 ||d-agency.net^
 ||d-bi.fr^
@@ -27130,6 +27153,9 @@ local
 ||dlzjdesign.com^
 ||dlzm790g.com^
 ||dlzxjk.cn^
+||dm*.ppzuowen.com^
+||dm*.yxlady.com^
+||dm-*.toutiao.com^
 ||dm-event.net^
 ||dm-hl.toutiao.com^
 ||dm.17xuexiba.com^
@@ -27250,6 +27276,7 @@ local
 ||dmzj.hxltad.com^
 ||dmzjmp.com^
 ||dmzls.safe-installation.com^
+||dn*.ixinwei.com^
 ||dn-growing.qbox.me^
 ||dn.msmstatic.com^
 ||dn0qt3r0xannq.cloudfront.net^
@@ -31662,6 +31689,7 @@ local
 ||fankwmgxe.com^
 ||fanli.in^
 ||fannonglairin.com^
+||fanpingbi*.gaokao.com^
 ||fanplayr.com^
 ||fanqianbb.com^
 ||fans.bestvogue.com^
@@ -32194,7 +32222,6 @@ local
 ||ff.nsg.org.ua^
 ||ff.qichetansuo.com^
 ||ff.xue163.net^
-||ff00127.0.0.10ip6-localnet^
 ||ff00127.0.0.10ip6-mcastprefix^
 ||ff02127.0.0.11ip6-allnodes^
 ||ff02127.0.0.12ip6-allrouters^
@@ -33183,6 +33210,7 @@ local
 ||fpaux.net^
 ||fpavx.net^
 ||fpaxu.net^
+||fpb*.51edu.com^
 ||fpb.51edu.com^
 ||fpb.mn586.com^
 ||fpb.sohu.com^
@@ -33953,9 +33981,9 @@ local
 ||fzygcof.cn^
 ||fzz.cloud.1234507.com^
 ||fzz.shgqjr.com^
+||g*.biqugetv.com^
 ||g-cash.biz^
 ||g-day.design^
-||g-localdevice.biz^
 ||g-statistic.com^
 ||g-stats.openhost.es^
 ||g.163.com^
@@ -34538,6 +34566,7 @@ local
 ||gcs1.cn^
 ||gcugfwxmcmmr.com^
 ||gcuter.ru^
+||gcw*.2liang.cn^
 ||gcwdq.com^
 ||gcxjczooe.com^
 ||gd.cnhange.cn^
@@ -35022,6 +35051,7 @@ local
 ||gfwiygrvi.xyz^
 ||gfx.infomine.com^
 ||gfxa.sheetmusicplus.com^
+||gg*.miguvideo.com^
 ||gg.0598yu.com^
 ||gg.074tu.com^
 ||gg.463tu.com^
@@ -39516,6 +39546,7 @@ local
 ||iabargentina.com.ar^
 ||iabusprivacy.pmc.com^
 ||iacpromotion.s3.amazonaws.com^
+||iad-*.blaze.com^
 ||iad.anm.co.uk^
 ||iad.apple.com^
 ||iad0ssl.pcauto.com.cn^
@@ -40444,6 +40475,8 @@ local
 ||improvisemountdiscard.com^
 ||impruads.com^
 ||imprudenceenergy.com^
+||impservice*.yodao.com^
+||impservice*.youdao.com^
 ||impservice-test.dictapp.youdao.com^
 ||impservice.chnl.youdao.com^
 ||impservice.dict.youdao.com^
@@ -42153,6 +42186,7 @@ local
 ||j94.cc^
 ||j9j6l.top^
 ||j9wp6.cn^
+||ja*.gamersky.com^
 ||ja.chushou.tv^
 ||ja.gamersky.com^
 ||ja.stmzzs.com^
@@ -43130,6 +43164,7 @@ local
 ||jrs2igoimq.ru^
 ||jrsa.net^
 ||jrvdga.com^
+||js*.abolezi.com^
 ||js-1.pchome.net^
 ||js-ad.a.yximgs.com^
 ||js-apac-ss.ysm.yahoo.com^
@@ -46724,6 +46759,7 @@ local
 ||liveupdt.com^
 ||liveviewer.ez.no^
 ||livew.l.qq.com^
+||liveweb*.msstatic.com^
 ||livewebstats.dk^
 ||livewell.net^
 ||livewidget.net^
@@ -46962,22 +46998,13 @@ local
 ||loc88.fun^
 ||loc89.fun^
 ||loc89.vip^
-||local-analytics.uberinternal.com^
 ||local-hot-dates.com^
 ||local.hniux.cn^
-||local.service.doh.domain^
-||local.tampabay.com^
 ||localadbuy.com^
 ||localads-statistics.maps.me^
 ||localbeige.club^
-||localchomped.com^
 ||localedgemedia.com^
 ||localesaftaba.com^
-||localhost.localdomain^
-||locallyjackson.com^
-||locallyrivalliberal.com^
-||localmantra.com^
-||localmediabuying.com^
 ||localnetwork.uop^
 ||localpoint.ch^
 ||localsearch24.co.uk^
@@ -47032,7 +47059,11 @@ local
 ||loftsbaacad.com^
 ||loftygreater.com^
 ||loftyplunder.com^
+||log*-normal-lq.toutiaoapi.com^
+||log*.ku6.com^
+||log-*.previewnetworks.com^
 ||log-api.aillis.net^
+||log-api.pangolin-sdk-toutiao-*.com^
 ||log-collector.shopee.vn^
 ||log-collector.svctr.zynga.com^
 ||log-collectors-73517960.us-east-1.elb.amazonaws.com^
@@ -49678,6 +49709,7 @@ local
 ||mcdmetrics.aaa.com^
 ||mcdncoiw.com^
 ||mcdnmv.com^
+||mcdp-*.outbrain.com^
 ||mcdupe.com^
 ||mcetbd.com^
 ||mcfarland.cn^
@@ -50388,7 +50420,6 @@ local
 ||merchant-businesses.com^
 ||merchenta.com^
 ||mercialtaver.club^
-||merciless.localstars.com^
 ||merciselyancies.site^
 ||mercuras.com^
 ||mercury-sdk.snssdk.com^
@@ -56997,6 +57028,7 @@ local
 ||ozwjhdler.com^
 ||ozwvd.com^
 ||ozyawn.com^
+||p*-ad-sign.byteimg.com^
 ||p-advg.com^
 ||p-analytics.life^
 ||p-behacdn.ksmobile.net^
@@ -58681,6 +58713,7 @@ local
 ||ping-dot-acp-magento.appspot.com^
 ||ping-fast.com^
 ||ping-traffic.info^
+||ping.*.sogou.com^
 ||ping.acc.sogou.com^
 ||ping.cavelab.dev^
 ||ping.cloud.tencent.com^
@@ -59502,6 +59535,7 @@ local
 ||polarbyte.com^
 ||polarcdn-pentos.com^
 ||polarcdn-terrax.com^
+||polaris*-normal-lq.zijieapi.com^
 ||polaris3-normal-lq.zijieapi.com^
 ||polarmobile.com^
 ||pole.6rooms.com^
@@ -65218,6 +65252,8 @@ local
 ||rzviy.com^
 ||rzxlszy.vip^
 ||rzypgzojdan.com^
+||s*-fe-scm.pglstatp-toutiao.com^
+||s*a.pstatp.com^
 ||s-39.predictvideo.com^
 ||s-adx.op-mobile.opera.com^
 ||s-adzone.com^
@@ -65668,6 +65704,7 @@ local
 ||salviamugwort.space^
 ||salync.com^
 ||salzwerk.viessmann.de^
+||sam*.baby-kingdom.com^
 ||sam.msn.com^
 ||sam4m.com^
 ||samaclub.com^
@@ -65681,6 +65718,7 @@ local
 ||sambaads.com^
 ||samboc.com^
 ||samc.frankly.ch^
+||same*.stockstar.com^
 ||same.chinadaily.com.cn^
 ||same.eastmoney.com^
 ||same.jrj.com.cn^
@@ -66928,6 +66966,7 @@ local
 ||selfservicefabricdisdain.com^
 ||selfsurveys.com^
 ||selfswayjay.com^
+||sell*.etlong.com^
 ||sell1.etlong.com^
 ||sellaction.net^
 ||sellebrity.com^
@@ -66989,6 +67028,7 @@ local
 ||sensationaleducate.com^
 ||sensationdetermined.com^
 ||sensationescalator.com^
+||sense-*.tapdb.net^
 ||sensenetworks.com^
 ||sensible-ads.com^
 ||sensiblemisery.com^
@@ -67299,6 +67339,8 @@ local
 ||seyfwl.interia.pl^
 ||sezvc.com^
 ||sezwho.com^
+||sf*-be-pack.pglstatp-toutiao.com^
+||sf*-fe-tos.pglstatp-toutiao.com^
 ||sf-ifc.cn^
 ||sf14g.com^
 ||sf9yvla26s5t.com^
@@ -71466,6 +71508,7 @@ local
 ||stat-well.com^
 ||stat-y.xywy.com^
 ||stat-z.xywy.com^
+||stat.*.v-56.com^
 ||stat.1688.com^
 ||stat.24liveplus.com^
 ||stat.360safe.com^
@@ -71646,6 +71689,7 @@ local
 ||statgw.devtodev.com^
 ||stathat.com^
 ||stathound.com^
+||static*.365inews.com^
 ||static-addtoany-com.cdn.ampproject.org^
 ||static-ads.akamaized.net^
 ||static-ads.zaloapp.com^
@@ -71696,14 +71740,12 @@ local
 ||static.l3.cdn.adsucks.com^
 ||static.leadpages.net^
 ||static.linkz.net^
-||static.locallogic.co^
 ||static.map.bdimg.com^
 ||static.masoffer.net^
 ||static.meijiacun.com^
 ||static.mntzm.com^
 ||static.mobilemonkey.com^
 ||static.mvot.vn^
-||static.omnilocal.ai^
 ||static.oroll.com^
 ||static.pgyer.com^
 ||static.polarcdn.com^
@@ -71801,6 +71843,7 @@ local
 ||statowl.com^
 ||statpipe.ru^
 ||statredpic.ru^
+||stats-*.p2pnow.ru^
 ||stats-a.maxthon.com^
 ||stats-bq.stylight.net^
 ||stats-dc1.frz.io^
@@ -72399,6 +72442,7 @@ local
 ||stats1.tune.pk^
 ||stats1.wpmudev.com^
 ||stats1x1.kapaza.be^
+||stats2.*.fdnames.com^
 ||stats2.agilecrm.com^
 ||stats2.algo.at^
 ||stats2.arstechnica.com^
@@ -74517,6 +74561,7 @@ local
 ||targetedtopic.com^
 ||targeterra.info^
 ||targetfuel.com^
+||targeting.*.arcpublishing.com^
 ||targeting.api.drift.com^
 ||targeting.influencemobile.com^
 ||targeting.nzme.arcpublishing.com^
@@ -76613,6 +76658,7 @@ local
 ||toughopponent.com^
 ||toughvolume.com^
 ||touglesy.net^
+||toujing*.top^
 ||toujing4.top^
 ||toujing5.top^
 ||toujing7.top^
@@ -77506,6 +77552,7 @@ local
 ||trackeame.com^
 ||trackedlink.net^
 ||trackedweb.net^
+||tracker*.qcloud.com^
 ||tracker-api.my.com^
 ||tracker-id.cdiscount.com^
 ||tracker-mw-zlivestream.zapps.vn^
@@ -77633,6 +77680,7 @@ local
 ||tracking-service.glority.com^
 ||tracking-user-behavior.meeyland.com^
 ||tracking-web.smobgame.com^
+||tracking.*.miui.com^
 ||tracking.10e20.com^
 ||tracking.3ds.com^
 ||tracking.aapa.org^
@@ -78362,6 +78410,7 @@ local
 ||transfto.com^
 ||transientdeteriorate.com^
 ||transientspecialowl.com^
+||transit*.wslog.chinanetcenter.com^
 ||transit1.wslog.chinanetcenter.com^
 ||transit2.wslog.chinanetcenter.com^
 ||transiz.ru^
@@ -79540,6 +79589,7 @@ local
 ||ubvsjh.pointtown.com^
 ||ubxqerc.cn^
 ||ubxvdx.accuweather.com^
+||uc*.atobo.com^
 ||uc-ap.yodo1api.com^
 ||uc.haoyunyuan.cc^
 ||uc.xddi.ru^
@@ -80056,6 +80106,7 @@ local
 ||uninua.com^
 ||uninvitedenvious.com^
 ||unioch.com^
+||union*.365inews.com^
 ||union-wifi.com^
 ||union.56.com^
 ||union.6.cn^
@@ -80822,6 +80873,7 @@ local
 ||uzttnr.com^
 ||uzxkuwalnjp.com^
 ||uzyid.cn^
+||v*-be-pack.pglstatp-toutiao.com^
 ||v-collector.dp.aws.charter.com^
 ||v-pack.net^
 ||v-support.free.bg^
@@ -87384,6 +87436,7 @@ local
 ||y900.greenwichtime.com^
 ||y9062t.cn^
 ||y96q29a1fo.com^
+||ya*.dwstatic.com^
 ||ya-counter.ru^
 ||ya-yue.xyz^
 ||ya.vteplom.ru^
@@ -88251,6 +88304,7 @@ local
 ||youthfulnoise.com^
 ||youtome.xyz^
 ||youtuba.com^
+||youtube.local^
 ||youtube2top.com^
 ||youtubecenter.net^
 ||youtubepremiumuk.com^
