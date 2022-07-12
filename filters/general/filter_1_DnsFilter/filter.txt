@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2022-07-12T06:07:50.394Z
+! Last modified: 2022-07-12T07:05:11.048Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-07-12T06:02:16.224Z
+! Last modified: 2022-07-12T06:21:33.915Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -34,6 +34,7 @@
 !
 !
 !
+||premiumdata.org^
 ||akutapro.com^
 ||familialsimulation.com^
 ||hisxeywwpquys.top^
@@ -2435,6 +2436,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||d3t3bxixsojwre.cloudfront.net^
 ||dn0qt3r0xannq.cloudfront.net^
 ||champagne.futurecdn.net^
 ||d2juccxzu13rax.cloudfront.net^
@@ -20173,7 +20175,6 @@ vkcdnservice.appspot.com^
 ||cryptotraffic.xyz^
 ||ctenetwork.com^
 ||ctrhub.com^
-||ctrip.com^
 ||ctrmanager.com^
 ||ctxtfl.com^
 ||cubics.com^
@@ -39540,6 +39541,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||gndunbix.rest^
 ||yelmlrq.cn^
 ||666683.xyz^
+||uwdspsh.cn^
 ||000123456789.online^
 ||000123456789.site^
 ||000123456789.space^
@@ -47096,6 +47098,8 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/992
+@@||public-cis.exponea.com^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/977
 @@||anwb.webpower.eu^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121419
