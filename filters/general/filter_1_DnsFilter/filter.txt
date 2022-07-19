@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2022-07-19T00:25:14.610Z
+! Last modified: 2022-07-19T06:07:11.502Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-07-19T00:02:23.560Z
+! Last modified: 2022-07-19T06:03:11.747Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -22246,6 +22246,7 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||d2hrivdxn8ekm8.cloudfront.net^
 ||track.cmcassets.com^
 ||pix.pub^
 ||yext-pixel.com^
@@ -26651,6 +26652,8 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain
 |piwik.
 !
+||analytics.webflow.com^
+||thongke.24h.com.vn^
 ||w-api.baomoi.com^
 ||za.baomoi.com^
 ||log.baomoi.com^
@@ -38297,7 +38300,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||sv-api-event.headlines.pw^
 ||ta.toprework.vn^
 ||tagging-qadkfoj6ha-as.a.run.app^
-||thongke.24h.com.vn^
 ||thongke.arttimes.vn^
 ||thongke.baotintuc.vn^
 ||thongke.bookingcare.vn^
