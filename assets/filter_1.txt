@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2022-07-20T06:05:40.895Z
+! Last modified: 2022-07-20T12:06:49.589Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-07-20T06:01:06.204Z
+! Last modified: 2022-07-20T12:01:20.782Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -22288,6 +22288,8 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||cookie.sync.usonar.jp^
+||pt.appirits.com^
 ||d2hrivdxn8ekm8.cloudfront.net^
 ||track.cmcassets.com^
 ||pix.pub^
@@ -26694,6 +26696,7 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain
 |piwik.
 !
+||collector.github.com^
 ||logs.unchecky.com^
 ||logging.e-himart.co.kr^
 ||weblog.e-himart.co.kr^
@@ -32150,7 +32153,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||ad-beacon-v01.uliza.jp^
 ||analyzer51.fc2.com^
 ||bvr.snva.jp^
-||cookie.sync.usonar.jp^
 ||counter2.blog.livedoor.com^
 ||imgstat.ameba.jp^
 ||ip2c.landscape.co.jp^
@@ -36105,6 +36107,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
 !
+||betcdn.biz^
 ||bursavitrinresim.xyz^
 ||sosinyo.xyz^
 ||cplayer.pw^
@@ -39614,6 +39617,9 @@ charlestownwyllie.oaklawnnonantum.com^
 ||cqdalqx.cn^
 ||neno.ink^
 ||rizlhvb.cn^
+||mnuy56.site^
+||p7lvj09f.shop^
+||igtqora.cn^
 ||000123456789.online^
 ||000123456789.site^
 ||000123456789.space^
