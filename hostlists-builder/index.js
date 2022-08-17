@@ -12,6 +12,7 @@ const REVISION_FILE = 'revision.json';
 const METADATA_FILE = 'metadata.json';
 
 const FILTERS_METADATA_FILE = 'filters.json';
+const FILTERS_METADATA_DEV_FILE = "filters-dev.json";
 const FILTERS_I18N_METADATA_FILE = 'filters_i18n.json';
 
 /**
@@ -195,6 +196,7 @@ const loadLocales = function (dir) {
 async function build(filtersDir, tagsDir, localesDir, assetsDir) {
 
   const filtersMetadata = [];
+  const filtersMetadataDev = [];
 
   const filterDirs = listFiltersDirs(filtersDir);
   for (const filterDir of filterDirs) {
@@ -245,15 +247,22 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
       timeAdded: metadata.timeAdded,
       timeUpdated: newRevision.timeUpdated,
     };
-    filtersMetadata.push(filterMetadata);
+    if (metadata.environment === "prod") {
+      filtersMetadata.push(filterMetadata);
+    }
+    filtersMetadataDev.push(filtersMetadataDev);
   }
 
   // copy tags as is
   const tagsMetadata = JSON.parse(readFile(path.join(tagsDir, METADATA_FILE)));
 
-  // writes the populated metadata for all filters, tags, etc
+  // writes the populated metadata for all filters, tags, etc that are marked as "prod"
   const filtersMetadataFile = path.join(assetsDir, FILTERS_METADATA_FILE);
   writeFile(filtersMetadataFile, JSON.stringify({ filters: filtersMetadata, tags: tagsMetadata }, null, '\t'));
+
+  // writes the metadata for all filters, tags, etc that are marked as "dev"
+  const filtersMetadataDevFile = path.join(assetsDir, FILTERS_METADATA_DEV_FILE);
+  writeFile(filtersMetadataDevFile, JSON.stringify({ filters: filtersMetadataDev, tags: tagsMetadata }, null, '\t'));
 
   // writes localizations for all filters, tags, etc
   const localizations = loadLocales(localesDir);

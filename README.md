@@ -54,6 +54,7 @@ Some of these blocklists are automatically [converted](https://github.com/Adguar
   - `homepage` — filter website/homepage
   - `expires` — filter's default expiration period
   - `displayNumber` — this number is used when AdGuard sorts available filters (GUI)
+  - `environment` - either `dev` or `prod`. Only `prod` lists are available in AdGuard DNS.
   - `tags` — a list of [tags](#tags)
 
     <details>
@@ -69,6 +70,7 @@ Some of these blocklists are automatically [converted](https://github.com/Adguar
     "homepage": "https://kb.adguard.com/general/adguard-ad-filters",
     "expires": "4 days",
     "displayNumber": 3,
+    "environment": "prod",
     "tags": []
   }
   ```
