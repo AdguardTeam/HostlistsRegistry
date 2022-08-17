@@ -13,7 +13,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
 			"sourceUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
 			"timeAdded": 1404115015843,
-			"timeUpdated": 1660734309367
+			"timeUpdated": 1660734424282
 		},
 		{
 			"filterId": "1hosts_lite",
@@ -43,14 +43,15 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
 			"sourceUrl": "https://abp.oisd.nl/",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1660730726896
+			"timeUpdated": 1660734431664
 		},
 		{
 			"filterId": "energized_spark",
 			"name": "Energized Spark",
 			"description": "List for blocking ads, tracking scripts and malware",
 			"tags": [
-				"purpose:general"
+				"purpose:general",
+				"problematic"
 			],
 			"homepage": "https://energized.pro/",
 			"expires": 345600,
@@ -58,7 +59,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_28.txt",
 			"sourceUrl": "https://block.energized.pro/spark/formats/filter",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1660734317807
+			"timeUpdated": 1660734434122
 		},
 		{
 			"filterId": "adway_default_blocklist",
@@ -88,7 +89,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
 			"sourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1660734319045
+			"timeUpdated": 1660734435008
 		},
 		{
 			"filterId": "dan_pollocks_list",
@@ -524,6 +525,10 @@
 		{
 			"tagId": 110,
 			"keyword": "lang:tr"
+		},
+		{
+			"tagId": 111,
+			"keyword": "problematic"
 		}
 	]
 }
