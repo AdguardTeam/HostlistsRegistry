@@ -77,6 +77,36 @@
 			"timeUpdated": 1657433192513
 		},
 		{
+			"filterId": "notracking_hosts_blocklists",
+			"name": "The NoTracking blocklist",
+			"description": "The NoTracking blocklist is a DNS based filter list for blocking ads, malware, phising and other online garbage.",
+			"tags": [
+				"purpose:general"
+			],
+			"homepage": "https://github.com/notracking/hosts-blocklists",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_32.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/notracking/hosts-blocklists/master/adblock/adblock.txt",
+			"timeAdded": 1660743805268,
+			"timeUpdated": 1660745535092
+		},
+		{
+			"filterId": "steven_blacks_list",
+			"name": "Steven Black's List",
+			"description": "Unified hosts file with base extensions (fakenews + gambling + porn).",
+			"tags": [
+				"purpose:general"
+			],
+			"homepage": "https://github.com/StevenBlack/hosts",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+			"timeAdded": 1660743805268,
+			"timeUpdated": 1660745536259
+		},
+		{
 			"filterId": "peter_lowe_list",
 			"name": "Peter Lowe's Blocklist",
 			"description": "Blocklist with hostnames of ad and tracking servers",
@@ -264,19 +294,19 @@
 		},
 		{
 			"filterId": "IRN_unwanted_iranian_domains",
-			"name": "IRN: Unwanted Iranian domains",
-			"description": "List of categorized undesired hosts",
+			"name": "IRN: PersianBlocker list",
+			"description": "Optimal and extensive list for blocking ads and trackers on Persian language sites",
 			"tags": [
 				"purpose:regional",
 				"lang:ir"
 			],
-			"homepage": "https://github.com/DRSDavidSoft/additional-hosts",
+			"homepage": "https://github.com/MasterKia/PersianBlocker",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_19.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/unwanted-iranian.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
 			"timeAdded": 1622639343000,
-			"timeUpdated": 1660680344526
+			"timeUpdated": 1660745541651
 		},
 		{
 			"filterId": "MKD_macedonian_pi_hole_blocklist",
@@ -433,6 +463,21 @@
 			"sourceUrl": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt",
 			"timeAdded": 1622639343000,
 			"timeUpdated": 1660742397877
+		},
+		{
+			"filterId": "staklerware_indicators_list",
+			"name": "Stalkerware Indicators List",
+			"description": "Indicators of compromise on Stalkerware applications for Android and iOS.",
+			"tags": [
+				"purpose:security"
+			],
+			"homepage": "https://github.com/AssoEchap/stalkerware-indicators",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
+			"timeAdded": 1660743805268,
+			"timeUpdated": 1660745545534
 		},
 		{
 			"filterId": "nocoin_filter_list",
