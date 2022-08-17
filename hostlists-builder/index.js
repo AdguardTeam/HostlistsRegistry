@@ -250,7 +250,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     if (metadata.environment === "prod") {
       filtersMetadata.push(filterMetadata);
     }
-    filtersMetadataDev.push(filtersMetadataDev);
+    filtersMetadataDev.push(filterMetadata);
   }
 
   // copy tags as is
