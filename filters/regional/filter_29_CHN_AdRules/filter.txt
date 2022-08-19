@@ -2,7 +2,7 @@
 ! Title: CHN: AdRules DNS List
 ! Description: List for blocking ads in the Chinese region
 ! Homepage: https://github.com/Cats-Team/AdRules
-! Last modified: 2022-08-19T10:05:48.866Z
+! Last modified: 2022-08-19T12:07:30.424Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -10,14 +10,14 @@
 ! Source name: AdRules DNS List
 ! Source: https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt
 !
-! Checksum: RrZVIdOgAs7RNuDLGx0Wdw
+! Checksum: fZyfUgyammWjIjJl3ll9xg
 ! Title: AdRules DNS List
 ! Homepage: https://github.com/Cats-Team/AdRules
 ! Powerd by Cats-Team
 ! Expires: 12 Hours
 ! Description: The DNS Filters
-! Version: 2022-08-19 18:00:07(GMT+8) 
-! Total count: 84686
+! Version: 2022-08-19 19:59:09(GMT+8) 
+! Total count: 84685
 @@||amos.alicdn.com^
 @@||api.yjllq.com^
 @@||bkimg.cdn.bcebos.com^
@@ -59853,7 +59853,6 @@
 ||register.cinematrix.net^
 ||register.dnv.com^
 ||register.silverscreen.cc^
-||register.xmpush.xiaomi.com^
 ||registered-spotters-build.com^
 ||registeredbabbledrive.com^
 ||registeredsethey.com^
@@ -84704,82 +84703,3 @@
 ||zzz7.52896368.com^
 ||zzznews.ru^
 ||zzzzz4.52896368.com^
-/^(.+[_.-])?adse?rv(er?|ice)?s?[0-9]*[_.-]/
-/^(.+[_.-])?telemetry[_.-]/
-/^adim(age|g)s?[0-9]*[_.-]/
-/^adtrack(er|ing)?[0-9]*[_.-]/
-/^advert(s|is(ing|ements?))?[0-9]*[_.-]/
-/^aff(iliat(es?|ion))?[_.-]/
-/^analytics?[_.-]/
-/^banners?[_.-]/
-/^beacons?[0-9]*[_.-]/
-/^count(ers?)?[0-9]*[_.-]/
-/^mads\./
-/^pixels?[-.]/
-/^stat(s|istics)?[0-9]*[_.-]/
-/(ads|logs|cloudservices).roku.com$/
-/^([a-z0-9]+[.])*(ads|captive|cloudservices|logs)\.roku\.co/
-/([A-Za-z0-9.-]*\.)?clicks\.beap\.bc\.yahoo\.com/
-/([A-Za-z0-9.-]*\.)?secure\.footprint\.net/
-/([A-Za-z0-9.-]*\.)?match\.com/
-/([A-Za-z0-9.-]*\.)?clicks\.beap\.bc\.yahoo(\.\w{2}\.\w{2}|\.\w{2 ,4})/
-/([A-Za-z0-9.-]*\.)?sitescout(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?appnexus(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?evidon(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?mediamath(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?scorecardresearch(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?doubleclick(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?flashtalking(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?turn(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?mathtag(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?googlesyndication(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?s\.yimg\.com/cv/ae/us/audience/
-/([A-Za-z0-9.-]*\.)?clicks\.beap/
-/([A-Za-z0-9.-]*\.)?.doubleclick(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?yieldmanager(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?w55c(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?adnxs(\.\w{2}\.\w{2}|\.\w{2,4})/
-/([A-Za-z0-9.-]*\.)?advertising\.com/
-/([A-Za-z0-9.-]*\.)?evidon\.com/
-/([A-Za-z0-9.-]*\.)?scorecardresearch\.com/
-/([A-Za-z0-9.-]*\.)?flashtalking\.com/
-/([A-Za-z0-9.-]*\.)?turn\.com/
-/([A-Za-z0-9.-]*\.)?mathtag\.com/
-/([A-Za-z0-9.-]*\.)?surveylink/
-/([A-Za-z0-9.-]*\.)?info\.yahoo\.com/
-/([A-Za-z0-9.-]*\.)?ads\.yahoo\.com/
-/([A-Za-z0-9.-]*\.)?global\.ard\.yahoo\.com/
-/((^)|(.))metric./
-/((^)|(.))telemetry./
-/((^)|(.))analytic./
-/((^)|(.))adchoice./
-/((^)|(.))adsdk./
-/((^)|(.))adserv./
-/((^)|(.))tracking./
-/(^|\.)buffpanel\.com$/
-/(^|\.)bugsnag\.com$/
-/(^|\.)redshell\.io$/
-/(^|\.)treasuredata\.com$/
-/(^|\.)unityads(|\.co)\.com$/
-/((^)|(.))trkmenowapptwtree((^)|(.))/
-/((^)|(.))events./
-/((^)|(.))smaato./
-/((^)|(.))mopub./
-/((^)|(.))app-measurement((^)|(.))/
-/((^)|(.))nexage((^)|(.))/
-/((^)|(.))crashlytics((^)|(.))/
-/((^)|(.))scorecardresearch((^)|(.))/
-/((^)|(.))trackmenowsitn((^)|(.))/
-/((^)|(.))trackmenow*/
-/((^)|(.))trkmenow*/
-/((^)|(.))insightexpressai((^)|(.))/
-/((^)|(.))adnxs./
-/((^)|(.))svr-algorix./
-/((^)|(.))imrworldwide((^)|(.))/
-/((^)|(.))doubleclick((^)|(.))/
-/((^)|(.))trackscale./
-/(\.?)redfast\./
-
-
-
-
