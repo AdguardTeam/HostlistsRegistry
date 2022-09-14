@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-09-05T04:40:14.722Z
+! Last modified: 2022-09-14T11:05:27.066Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -1977,6 +1977,7 @@
 ||telemetry-urs-microsoft.com^
 ||top-captcharesolver.
 ||winrar-desktop.com^
+
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121544
 ||trafredirtds.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121772
@@ -2360,6 +2361,7 @@
 ||z-prize.icu^
 ||zfcurqe.art^
 ||zuginmw.art^
+
 ||85.17.31.152^
 ||95.211.26.202^
 ! https://kommunikasjon.ntb.no/pressemelding/power-advarer-mot-sms-svindel?publisherId=17847615&releaseId=17937583
@@ -2377,6 +2379,7 @@
 ||wznp.link^
 ||158.247.212.220^
 ||165.227.168.212^
+
 ! https://dinside.dagbladet.no/mobil/ikke-la-deg-friste/76730599
 ||k-yw.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/125285
@@ -2651,6 +2654,9 @@
 ||147.135.253.55^
 ! https://github.com/uBlockOrigin/uAssets/issues/14569 → https://www.virustotal.com/gui/url/b819586938326577d759d8024abe3e0e6de1c853d6b67824daf6f613fba0f63b/detection (https://app.any.run/tasks/5914a712-1a73-4432-b89a-ca0627a24ade)
 ||bnbdeal.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/129414
+!+ NOT_OPTIMIZED
+/^http://imgblaze.net/[a-z0-9]{6}$/
 
 
 ! ——— Standard malware that I stumbled upon on my own ———
@@ -7476,7 +7482,9 @@
 ||192.243.59.12^
 ||192.243.59.13^
 ||192.243.59.20^
+
 /^(https?://)?192\.243\.59\.[0-9]{1,3}($|/)/
+
 ! rule34hentai.net when uBlock Filters and AdGuard Base are turned off
 ||eivbjsegbino.com^
 ||mczahprdql.com^
