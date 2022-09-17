@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-09-14T11:05:27.066Z
+! Last modified: 2022-09-17T16:05:51.153Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -173,10 +173,10 @@
 ||witkey.com^
 
 ! ——— Browser extension store entries for notoriously poor or malicious adblocker forks ———
-! Note: Currently the entries only work properly on AdGuard for Windows/Mac, due to what seems to be limitations placed on browser extensions.
-
+! Note: Currently the Chrome Web Store entries only work properly for Chrome users on AdGuard for Windows/Mac, due to limitations placed on browser extensions; see https://github.com/gorhill/uBlock/wiki/Privileged-Pages
 ! Chrome Web Store
 ! Mozilla Add-ons
+! These entries can be used in Firefox with regular browser extensions (uBO|AdGuard Browser Extension|ABP) by opening about:config, removing the "addons.mozilla.com" part from "extensions.webextensions.restrictedDomains", and then creating a new string called "privacy.resistFingerprinting.block_mozAddonManager" (That exact capitalisation must be used) set to (Boolean) true.
 ! Homepages
 ||adblock.biz^
 ||the1adblocker.com^
