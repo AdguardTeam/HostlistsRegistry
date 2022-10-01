@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-09-20T01:36:30.206Z
+! Last modified: 2022-10-01T13:18:45.661Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -1598,27 +1598,26 @@
 /(^|\.|://)d[il]sc(or|ro)ds?-?n[il]tro[.-].*/
 ||discord-nltro.
 ||discord-app.
-||discord-promo
+||discord-promo*
 ||dlscord.
 ||dlscord-app.
 /(^|\.|://)gifts?-?discord\..*/
-||steamcommin
-||steamcommm
-||steamcommn
-||steamcommunet
+||steamcommin*
+||steamcommm*
+||steamcommn*
+||steamcommunet*
 ||steamcommunitty.
 ||steamcommunnity.
 ||steamcommunty.
-||steamcommuunity.
-||steamcommuu
-||steamcommyn
-||steamcomnu
-||steamcomrn
-||steamconnu
-||steancomm
-||steanncomu
+||steamcommuu*
+||steamcommyn*
+||steamcomnu*
+||steamcomrn*
+||steamconnu*
+||steancomm*
+||steanncomu*
 ||discord-glft.
-||discordnitrogift
+||discordnitrogift*
 ||gift-nitro.
 ! https://www.virustotal.com/gui/file/4293c1d8574dc87c58360d6bac3daa182f64f7785c9d41da5e0741d2b1817fc7/community
 ||39.65.72.211^
@@ -1875,7 +1874,7 @@
 ||splendid-fallacious-anaconda.glitch.me^
 ! https://www.virustotal.com/gui/file/9d40ae0439ddc594b2cf64e21ad0fdea9bb440524298e3a6bcfcc1fb417f1ed2/relations
 ||91.240.118.172^
-! "press allow to continue"
+! "Press Allow to continue"
 ||kuyhaa-mee.com^
 ||waystriling.com^
 ||upload-4ever.com^
@@ -7556,7 +7555,6 @@
 ||discorcl-air.xyz^
 ||discorclnitro.ru^
 ||discord*.gifts^
-||discord-app.net^
 ||discord-give.
 ||discord-nitro-gift.
 ||discord-nitro.
@@ -7574,7 +7572,6 @@
 ||discrod.ru^
 ||discrodnitro.ru^
 ||disrcod.gifts^
-||dlscord.ink^
 ||dotagift*.xyz^
 ||dragon-black.net.ru^
 ||ecnhasports.ru^
@@ -7699,23 +7696,10 @@
 ||steamcommunlity.ru^
 ||steamcommunniity.ru^
 ||steamcommunytiy.ru^
-||steamcommyniti.ru^
-||steamcommyniti.xyz^
-||steamcommynitu.com^
-||steamcommynuti.ru^
-||steamcommynutiy.ru^
-||steamcommynyti.ru^
 ||steamcomnmrunity.online^
 ||steamcomnmrunity.ru^
 ||steamcomnnuity.com^
-||steamcomnunily.co^
-||steamcomnunitiy.ru^
-||steamcomnunnity.com^
-||steamcomnunnity.
-||steamcomnurity.xyz^
 ||steamcomnynlity.ru^
-||steamcomrnuniti.ru^
-||steamcomrnyniti.ru^
 ||steamcomrrnunity.ru^
 ||steamcomumunty.com^
 ||steamcomuniiity.com^
@@ -8874,6 +8858,9 @@
 ! https://get.adobe.com/no/reader/
 ! Gigabyte APP Center (which use sneaky tricks to install a Norton 360 trial period; May require «AdGuard for Windows»)
 
+
+! ——— Carried over from "Anti-'Asset Flip Shovelware' List" in response to Microsoft Store's non-existent quality control ———
+! All legitimate Pac-Man games would use "pac-man" links with a dash
 
 
 
