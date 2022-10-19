@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-10-01T13:18:45.661Z
+! Last modified: 2022-10-19T00:31:17.919Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -81,6 +81,7 @@
 ||qasirgame.com^
 ||willyousurvive.com^
 ||underthegarden.com^
+||fileplanet.com^
 
 ! ——— IQ test sites that make you waste heaps of time by taking the test, and then try to charge you to see the results. ———
 ||funeducation.com^
@@ -2089,13 +2090,11 @@
 ||888starz-3b.bet^
 ||acjovut.cyou^
 ||aebeiw.cyou^
-||aerocarrier.sbs^
 ||affbf6epr.com^
 ||affil-parners.com^
 ||afrangl.com^
 ||afrkotdr.com^
 ||afrmaps.com^
-||agrimony.sbs^
 ||ahcgkwj.cyou^
 ||aix-delivery.icu^
 ||alfpyf.cyou^
@@ -2113,7 +2112,6 @@
 ||bahisbet.live^
 ||bahisbet24.com^
 ||ballerspin.com^
-||barbarian.sbs^
 ||bb-delivery.icu^
 ||bcojuck.art^
 ||betwinner-ua.com^
@@ -2135,7 +2133,6 @@
 ||cfnfmb.cyou^
 ||click4fun.icu^
 ||clicklucky.icu^
-||conformation.sbs^
 ||connection-update.site^
 ||cpae65ir.cyou^
 ||cqzgfjjvz.com^
@@ -2143,10 +2140,8 @@
 ||deliv-s.icu^
 ||deliv-x.icu^
 ||deliv.icu^
-||detonation.sbs^
 ||dhdkgbm.cyou^
 ||disk-fire-dom-wall.red^
-||distillery.sbs^
 ||diw65ucvq.art^
 ||dmkounjqn.com^
 ||do-sy6lna.cyou^
@@ -2656,6 +2651,9 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/129414
 !+ NOT_OPTIMIZED
 /^http://imgblaze.net/[a-z0-9]{6}$/
+! https://github.com/AdguardTeam/AdguardFilters/issues/131156
+||146.19.169.98^
+||146.19.169.99^
 
 
 ! ——— Standard malware that I stumbled upon on my own ———
@@ -8746,6 +8744,7 @@
 ! Spambot posts on Tumblr (19/09/2022)
 ! https://scambiofigu.forumcommunity.net/?t=57482915
 ||scambiofigu.net^
+! Only links to another site's (APKPure) APKs, yet tries to promote its own browser extension on the alleged download pages, which comes across as suspicious
 ! Other
 ||foxsportnetwork.com^
 ||pksauniversity.com^
@@ -8755,6 +8754,12 @@
 ||greaterfiledownload.com^
 ||vlcmediadownload.com^
 ||quiremuken.xyz^
+||sexy-egirls-leaked.com^
+||file2share.co^
+||erothots.co^
+||only2leaked.co^
+||only4leaked.co^
+||thotsbay-leaked.com^
 
 ! ——— Horrendously bad copypasted Android rooting "guides" (often with fake titles) that bricked two of my phones ———
 ! Most of the guides haven't even accounted for how modern phones have replaced the recovery environment with an extra boot environment, leading to very critical Fastboot commands not working and/or bricking the phone.
