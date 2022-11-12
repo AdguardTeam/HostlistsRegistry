@@ -10,6 +10,7 @@ const HOSTLISTS_URL = 'https://adguardteam.github.io/HostlistsRegistry/assets';
 const CONFIGURATION_FILE = 'configuration.json';
 const REVISION_FILE = 'revision.json';
 const METADATA_FILE = 'metadata.json';
+const SERVICES_FILE = 'services.json';
 
 const FILTERS_METADATA_FILE = 'filters.json';
 const FILTERS_METADATA_DEV_FILE = "filters-dev.json";
@@ -193,6 +194,40 @@ const loadLocales = function (dir) {
   return result;
 };
 
+/**
+ * Returns an array of objects containing the following fields;
+ * "domain": <string>,
+ * "version": <string>,
+ * "description": <string>,
+ * "languages": Array<string> - containing ISO 639-1 language codes (en, fr, de),
+ * "region": <string>,
+ * "categories": Array<string> - A lit
+ * "proxied_thumbnail": <string>,
+ * "total_users": <int>,
+ * "last_week_users": <int>,
+ * "approval_required": <boolean>,
+ * "language": <string> - containing ISO 639-1 language code (en, fr, de),,
+ * "category": <string>
+ *
+ * @returns {Promise<Array>}
+ */
+const mastodonServerList = async function () {
+  /**
+   *
+   * @type {Promise<Response>}
+   */
+  let servers = await (await fetch('https://api.joinmastodon.org/servers')).json();
+
+  // Separately add the two Instances by Mastodon GmbH themselves.
+  servers.push({
+    domain: "mastodon.social"
+  }, {
+    domain: "mastodon.online"
+  });
+
+  return servers;
+}
+
 async function build(filtersDir, tagsDir, localesDir, assetsDir) {
 
   const filtersMetadata = [];
@@ -252,6 +287,25 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     }
     filtersMetadataDev.push(filterMetadata);
   }
+
+  // Build Mastodon dynamic server list
+  let servicesJson = JSON.parse(readFile(path.join(assetsDir, SERVICES_FILE)));
+
+  const result = (await mastodonServerList());
+  const mastodonRules = result.map((element) => {
+    return `||${element.domain}^`
+  });
+
+  // Write Mastodon dynamic server list to service.json
+  servicesJson.blocked_services = servicesJson.blocked_services.map((element)  => {
+    if(element.id === 'mastodon') {
+      element.rules = mastodonRules;
+    }
+    return element;
+  });
+
+  const servicesFile = path.join(assetsDir, SERVICES_FILE);
+  writeFile(servicesFile, JSON.stringify(servicesJson, undefined, 2));
 
   // copy tags as is
   const tagsMetadata = JSON.parse(readFile(path.join(tagsDir, METADATA_FILE)));
