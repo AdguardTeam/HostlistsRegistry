@@ -4,6 +4,7 @@ const path = require('path');
 const fs = require('fs');
 const md5 = require('md5');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
+const mastodonServerlistCompiler = require('adguard-hostlists-builder/mastodon');
 
 const HOSTLISTS_URL = 'https://adguardteam.github.io/HostlistsRegistry/assets';
 
@@ -194,40 +195,6 @@ const loadLocales = function (dir) {
   return result;
 };
 
-/**
- * Returns an array of objects containing the following fields;
- * "domain": <string>,
- * "version": <string>,
- * "description": <string>,
- * "languages": Array<string> - containing ISO 639-1 language codes (en, fr, de),
- * "region": <string>,
- * "categories": Array<string> - A lit
- * "proxied_thumbnail": <string>,
- * "total_users": <int>,
- * "last_week_users": <int>,
- * "approval_required": <boolean>,
- * "language": <string> - containing ISO 639-1 language code (en, fr, de),,
- * "category": <string>
- *
- * @returns {Promise<Array>}
- */
-const mastodonServerList = async function () {
-  /**
-   *
-   * @type {Promise<Response>}
-   */
-  let servers = await (await fetch('https://api.joinmastodon.org/servers')).json();
-
-  // Separately add the two Instances by Mastodon GmbH themselves.
-  servers.push({
-    domain: "mastodon.social"
-  }, {
-    domain: "mastodon.online"
-  });
-
-  return servers;
-}
-
 async function build(filtersDir, tagsDir, localesDir, assetsDir) {
 
   const filtersMetadata = [];
@@ -289,23 +256,26 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
   }
 
   // Build Mastodon dynamic server list
-  let servicesJson = JSON.parse(readFile(path.join(assetsDir, SERVICES_FILE)));
+  let services = JSON.parse(readFile(path.join(assetsDir, SERVICES_FILE)));
+  const mastodonServers = await mastodonServerlistCompiler();
 
-  const result = (await mastodonServerList());
-  const mastodonRules = result.map((element) => {
-    return `||${element.domain}^`
-  });
+  const mastodonIndex = services.blocked_services
+    .findIndex((el) => {
+      return el.id === 'mastodon';
+    });
+
+  if (mastodonIndex == -1) {
+    throw Error("Mastodon service not found")
+  }
+
+  // Set Mastodon server list to be blocked
+  const mastodonService = services.blocked_services[mastodonIndex];
+  mastodonService.rules = mastodonServers;
+  services.blocked_services[mastodonIndex] = mastodonService;
 
   // Write Mastodon dynamic server list to service.json
-  servicesJson.blocked_services = servicesJson.blocked_services.map((element)  => {
-    if(element.id === 'mastodon') {
-      element.rules = mastodonRules;
-    }
-    return element;
-  });
-
   const servicesFile = path.join(assetsDir, SERVICES_FILE);
-  writeFile(servicesFile, JSON.stringify(servicesJson, undefined, 2));
+  writeFile(servicesFile, JSON.stringify(services, undefined, 2));
 
   // copy tags as is
   const tagsMetadata = JSON.parse(readFile(path.join(tagsDir, METADATA_FILE)));
