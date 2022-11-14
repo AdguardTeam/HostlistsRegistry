@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2022-11-14T06:06:30.265Z
+! Last modified: 2022-11-14T12:08:16.429Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-11-14T06:01:04.546Z
+! Last modified: 2022-11-14T12:01:20.836Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -34,6 +34,8 @@
 !
 !
 !
+||push-sdk.net^
+||anzu.io^
 ||compulsionspotsbeacon.com^
 ||searchmarquis.com^
 ||tegronews.com^
@@ -14801,7 +14803,6 @@ vkcdnservice.appspot.com^
 ||notifypicture.info^
 ||notifysrv.com^
 ||notionnalisent.xyz^
-||notix.io^
 ||notorietycheerypositively.com^
 ||noucoush.net^
 ||nougacoush.com^
@@ -30287,6 +30288,7 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||events.data.microsoft.com^
 ||prd-collector-platform.ex.co^
 ||pixel.ex.co^
 ||ad*.ettoday.net^
@@ -32588,7 +32590,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||direct-collect.dy-api.com^
 ||direct-collect.dy-api.eu^
 ||api.telemetry.watchabc.go.com^
-||browser.events.data.microsoft.com^
 ||analytics.rover.io^
 ||events-collector-api.viacom.tech^
 ||pipe.aria.microsoft.com^
@@ -33905,6 +33906,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||notify.solutions^
 ||notiks.io^
 ||notiksio.com^
+||notix.io^
 ||olgtex.com^
 ||on-push.com^
 ||onepush.app^
@@ -41836,9 +41838,9 @@ charlestownwyllie.oaklawnnonantum.com^
 !
 ! Title: hostsVN
 ! Description: The filter contains ad and tracking networks in Vietnam.
-! Last modified: 13 Nov 2022 17:45 UTC+7
-! Version: 2211131745
-! Blocked: 1.551 rules
+! Last modified: 14 Nov 2022 16:31 UTC+7
+! Version: 2211141631
+! Blocked: 1.552 rules
 ! Expires: 1 days (update frequency)
 ! Homepage: https://bigdargon.github.io/hostsVN/
 !
@@ -42378,6 +42380,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||i99908.com^
 ||i9bet102.com^
 ||i9bet109.com^
+||i9bet111.com^
 ||i9bet444.com^
 ||i9bet5.com^
 ||ibet889.com^
@@ -43417,6 +43420,9 @@ charlestownwyllie.oaklawnnonantum.com^
 ||fkjdz.cyou^
 ||clvkg.xyz^
 ||lihuan.store^
+||bvwxfok.cn^
+||chengduda.top^
+||kba8i.icu^
 ||001adafg.xyz^
 ||0024aaaa.com^
 ||004fsdljasd.xyz^
