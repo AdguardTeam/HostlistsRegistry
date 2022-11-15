@@ -4,12 +4,14 @@ const path = require('path');
 const fs = require('fs');
 const md5 = require('md5');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
+const mastodonServerlistCompiler = require('adguard-hostlists-builder/mastodon');
 
 const HOSTLISTS_URL = 'https://adguardteam.github.io/HostlistsRegistry/assets';
 
 const CONFIGURATION_FILE = 'configuration.json';
 const REVISION_FILE = 'revision.json';
 const METADATA_FILE = 'metadata.json';
+const SERVICES_FILE = 'services.json';
 
 const FILTERS_METADATA_FILE = 'filters.json';
 const FILTERS_METADATA_DEV_FILE = "filters-dev.json";
@@ -252,6 +254,28 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     }
     filtersMetadataDev.push(filterMetadata);
   }
+
+  // Build Mastodon dynamic server list
+  let services = JSON.parse(readFile(path.join(assetsDir, SERVICES_FILE)));
+  const mastodonServers = await mastodonServerlistCompiler();
+
+  const mastodonIndex = services.blocked_services
+    .findIndex((el) => {
+      return el.id === 'mastodon';
+    });
+
+  if (mastodonIndex == -1) {
+    throw Error("Mastodon service not found")
+  }
+
+  // Set Mastodon server list to be blocked
+  const mastodonService = services.blocked_services[mastodonIndex];
+  mastodonService.rules = mastodonServers;
+  services.blocked_services[mastodonIndex] = mastodonService;
+
+  // Write Mastodon dynamic server list to service.json
+  const servicesFile = path.join(assetsDir, SERVICES_FILE);
+  writeFile(servicesFile, JSON.stringify(services, undefined, 2));
 
   // copy tags as is
   const tagsMetadata = JSON.parse(readFile(path.join(tagsDir, METADATA_FILE)));
