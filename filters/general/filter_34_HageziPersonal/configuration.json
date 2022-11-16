@@ -1,0 +1,20 @@
+{
+  "name": "HaGeZi Personal Black & White",
+  "description": "An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi Personal Black & White",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal-blackwhite.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
