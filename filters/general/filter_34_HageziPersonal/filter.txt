@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-11-25T15:05:18.404Z
+! Last modified: 2022-11-26T00:19:17.046Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: An extension for known blocklists, my personal black and whitelist. Blocks ads, trackers, native device trackers, badware and more. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
-! Last modified: 2022-11-25T14:55:00.188Z
+! Last modified: 2022-11-25T23:30:08.125Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -28,8 +28,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 25 Nov 2022 14:51 UTC
-! Version: 2022.1125.1451.31
+! Last modified: 25 Nov 2022 23:26 UTC
+! Version: 2022.1125.2326.41
 ! Syntax: AdBlock
 ! Domains: 7661
 !
@@ -750,7 +750,7 @@
 ||live-tfs-omnilytics.azurewebsites.net^
 ||tella-adservice.azurewebsites.net^
 ||hosts.vggwebsitetrackingprod.azurewebsites.net^
-||b-cdn.net^
+||affiliatable1.b-cdn.net^
 ||est-mta.b2b-mail.net^
 ||b52.vip^
 ||t.ba-content.de^
@@ -9529,6 +9529,19 @@
 
 ! Manage kmail lists
 @@|static.klaviyo.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/72
+@@|manli.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/73
+@@|cdn.reamaze.com^
+
+! Chromecast functionality of Disney+ Hotstar app
+@@|79423.analytics.edgekey.net^
+@@|e2725.g.akamaiedge.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/74
+@@|b-cdn.net^
 
 !
 ! Source name: HaGeZi's Referral White-/Allowlist
