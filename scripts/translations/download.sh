@@ -1,5 +1,5 @@
 #!/bin/bash
-SERVICE_URL="https://twosky.adtidy.org/api/v1/"
+SERVICE_URL="https://twosky.int.agrd.dev/api/v1/"
 workDir=../..
 locales=("en" "ru" "ar" "bg" "ca" "zh_CN" "zh_TW" "hr" "da" "nl" "fi" "fr" "de" "he" "hu" "id" "it" "ja" "ko" "no" "fa" "pl" "pt" "pt_BR" "pt_PT" "sr" "sk" "es" "sv" "tr" "uk" "vi" "be" "sl")
 
