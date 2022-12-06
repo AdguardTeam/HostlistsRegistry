@@ -1,0 +1,20 @@
+{
+    "name": "No Google",
+    "description": "Completely blocks all Google-related domains (including YouTube).",
+    "homepage": "https://github.com/nickspaargaren/no-google",
+    "sources": [
+        {
+            "name": "No Google",
+            "source": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
