@@ -18,7 +18,7 @@
 		{
 			"filterId": "1hosts_lite",
 			"name": "1Hosts (Lite)",
-			"description": "List for blocking pesky ads, trackers, and malware",
+			"description": "List for blocking pesky ads, trackers, and malware. Balanced version: set & forget, doesn't hamper user experience.",
 			"tags": [
 				"purpose:general"
 			],
@@ -28,7 +28,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
 			"sourceUrl": "https://badmojr.gitlab.io/1hosts/Lite/adblock.txt",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1670299521130
+			"timeUpdated": 1670339465115
 		},
 		{
 			"filterId": "oisd_full",
@@ -122,6 +122,21 @@
 			"timeUpdated": 1670335859974
 		},
 		{
+			"filterId": "1hosts_mini",
+			"name": "1Hosts (mini)",
+			"description": "List for blocking pesky ads, trackers, and malware. Lenient version: unblocks a number of ads & trackers for in-app rewards, anti-AdBlock, etc.",
+			"tags": [
+				"purpose:general"
+			],
+			"homepage": "https://badmojr.github.io/1Hosts/",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_38.txt",
+			"sourceUrl": "https://badmojr.gitlab.io/1hosts/mini/adblock.txt",
+			"timeAdded": 1640082678993,
+			"timeUpdated": 1670339476914
+		},
+		{
 			"filterId": "peter_lowe_list",
 			"name": "Peter Lowe's Blocklist",
 			"description": "Blocklist with hostnames of ad and tracking servers",
@@ -180,6 +195,21 @@
 			"sourceUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
 			"timeAdded": 1622639343000,
 			"timeUpdated": 1653580350384
+		},
+		{
+			"filterId": "no_google",
+			"name": "No Google",
+			"description": "Completely blocks all Google-related domains (including YouTube).",
+			"tags": [
+				"purpose:other"
+			],
+			"homepage": "https://github.com/nickspaargaren/no-google",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt",
+			"timeAdded": 1667987017479,
+			"timeUpdated": 1670339480466
 		},
 		{
 			"filterId": "dandelion_sprouts_game_console_adblock_list",
