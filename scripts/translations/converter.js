@@ -5,7 +5,7 @@
  *
  * @type {{importFile, exportFile}}
  */
-const converter = (() => {
+ const converter = (() => {
   'use strict';
 
   const fs = require('fs');
@@ -74,9 +74,13 @@ const converter = (() => {
         item = {};
       }
 
-      item[info.message] = json[p].message;
-
-      map.set(info.id, item);
+      const message = json[p].message;
+      if (message) {
+        item[info.message] = message;
+        map.set(info.id, item);
+      } else {
+        console.warn(`Warning: message is empty for key: ${p}`);
+      }
     }
 
     const result = [];

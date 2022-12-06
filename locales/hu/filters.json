@@ -1,39 +1,39 @@
 [
 	{
 		"hostlist.1.name": "AdGuard DNS szűrő",
-		"hostlist.1.description": "Szűrő, amely több más szűrő (AdGuard Alap szűrő, Közösségi Média szűrő, Követés Elleni szűrő, Mobil Reklám szűrő, EasyList és EasyPrivacy) egyesítéséből áll, kifejezetten leegyszerűsítve, hogy minél inkább kompatibilis legyen a DNS szintű hirdetésblokkolással."
+		"hostlist.1.description": "A lista több szűrőből áll (AdGuard Alap szűrő, Social Media szűrő, Tracking Protection szűrő, Mobile Ads szűrő, EasyList és EasyPrivacy), és kifejezetten le van egyszerűsítve annak érdekében, hogy kompatibilis legyen a DNS-szintű hirdetésblokkolással"
 	},
 	{
 		"hostlist.2.name": "AdAway alapértelmezett tiltólista",
-		"hostlist.2.description": "Az AdAway egy nyílt forráskódú hirdetésblokkoló Androidhoz, amely a hosts fájlt használja."
+		"hostlist.2.description": "Nyílt forráskódú hirdetésblokkoló Androidhoz a hosts fájl segítségével"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
-		"hostlist.3.description": "Hirdetési kiszolgáló és nyomkövető kiszolgáló hostnévvel történő blokkolás."
+		"hostlist.3.description": "Blokkolólista a hirdetési és nyomkövető szerverek hostneveivel"
 	},
 	{
 		"hostlist.4.name": "Dan Pollock listája",
-		"hostlist.4.description": "Blokkol bizonyos felugró ablakcsapdákat, megakadályozza a felhasználó nyomon követését, blokkolja a legtöbb reklámot."
+		"hostlist.4.description": "Lista a hirdetések blokkolásához és a felhasználói nyomkövetés megakadályozásához"
 	},
 	{
 		"hostlist.5.name": "OISD alap tiltólista",
-		"hostlist.5.description": "Blokkolja a hirdetéseket/nyomkövetőket, és a funkcionalitást helyezi előtérbe a blokkolással szemben."
+		"hostlist.5.description": "Lista a hirdetések és nyomkövetők blokkolásához. A funkcionalitást helyezi előtérbe a blokkolással szemben."
 	},
 	{
 		"hostlist.23.name": "WindowsSpyBlocker - Kémkedés elleni hoszt szabályok",
-		"hostlist.23.description": "Kémkedés és nyomkövetés tiltása Windows rendszerekben."
+		"hostlist.23.description": "Lista a kémkedés és nyomkövetés blokkolásához Windows rendszeren"
 	},
 	{
 		"hostlist.6.name": "Dandelion Sprout játékkonzolokhoz készült hirdetésblokkoló listája",
-		"hostlist.6.description": "Hasonlóan az AdGuard Home és a Pi-hole listákhoz, amelyek blokkolják a hirdetéseket az okostévéken, itt egy próbálkozás, hogy ugyanez lehetővé váljon az AdGuard Home szolgáltatással rendelkező videojáték konzoloknál."
+		"hostlist.6.description": "AdGuard Home-ot használó videojáték-konzolok reklámjainak blokkolására szolgáló lista"
 	},
 	{
 		"hostlist.7.name": "Perflyst és a Dandelion Sprout Smart-TV tiltólistája",
-		"hostlist.7.description": "Ez egy olyan tiltólista, amely megakadályozza, hogy az okostévék metaadatokat \"küldjenek haza\", néha azzal az előnnyel, hogy blokkolja az alkalmazások és filmszolgáltatások felületein megjelenő hirdetéseket is."
+		"hostlist.7.description": "Lista, amely megakadályozza, hogy az okostévék metaadatokat küldjenek a gyártónak, valamint blokkolja az alkalmazásokban és filmszolgáltatásokban megjelenő hirdetéseket is"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprout északi szűrője",
-		"hostlist.13.description": "Dandelion Sprout északi szűrője (AdGuard Home-hoz, valamint Androidos és Windowsos AdGuard verziók DNS szűréséhez)."
+		"hostlist.13.description": "Dandelion Sprout's Nordic Filters (DNS-szűrés az AdGuard Home, AdGuard for Android és AdGuard for Windows alkalmazásokban)"
 	},
 	{
 		"hostlist.14.name": "POL: Lengyel szűrők a Pi hole-hoz",
@@ -41,54 +41,102 @@
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
-		"hostlist.15.description": "Tiltólista hirdetések ellen, főleg a koreai oldalakon."
+		"hostlist.15.description": "Lista a hirdetések blokkolásához elsősorban koreai webhelyeken"
 	},
 	{
 		"hostlist.16.name": "VNM: ABPVN Lista",
-		"hostlist.16.description": "Adblock szűrőlista vietnami nyelvhez."
+		"hostlist.16.description": "Lista a vietnámi weboldalakon megjelenő hirdetések blokkolásához"
 	},
 	{
 		"hostlist.17.name": "SWE: Frellwit svéd hosztfájlja",
-		"hostlist.17.description": "Célja, hogy megszabaduljon a hirdetésektől, nyomkövetéstől, átverésektől és a rosszindulatú szoftverektől (többnyire) a svéd webhelyeken."
+		"hostlist.17.description": "Lista a hirdetések blokkolásához, a nyomon követéshez, a csalásokhoz és a rosszindulatú programokhoz, főleg svéd webhelyeken"
 	},
 	{
 		"hostlist.18.name": "ITA: Filtri-DNS",
-		"hostlist.18.description": "Az EasyList Italy és az ADB X Files alapján létrehozott ideiglenes hosts fájl az olasz oldalakhoz."
+		"hostlist.18.description": "Lista a hirdetések letiltásához olasz webhelyeken az Easylist Italy és az ADB X Files alapján"
 	},
 	{
-		"hostlist.19.name": "IRN: Nem kívánt iráni domainek",
-		"hostlist.19.description": "Kategorizálatlan, nemkívánatos hosztnevek."
+		"hostlist.19.name": "IRN: PersianBlocker lista",
+		"hostlist.19.description": "Optimális és kiterjedt lista a hirdetések és nyomkövetők blokkolásához perzsa nyelvű webhelyeken"
 	},
 	{
 		"hostlist.20.name": "MKD: Macedón Pi-hole tiltólista",
-		"hostlist.20.description": "Ez a lista olyan nem kívánatos domainek blokkolására szolgál, amelyek hirdetéseket jelenítenek meg a macedón weboldalakon."
+		"hostlist.20.description": "Lista a macedón webhelyeken megjelenő hirdetések letiltásához"
 	},
 	{
 		"hostlist.21.name": "CHN: anti-AD",
-		"hostlist.21.description": "Elkötelezett az iránt, hogy a kínai régió legmagasabb találati arányú hirdetésszűrő listája legyen, pontos hirdetésblokkolást és adatvédelmet biztosítva."
+		"hostlist.21.description": "Lista a hirdetések blokkolásához a kínai régióban. Célja a magánélet védelme."
 	},
 	{
 		"hostlist.22.name": "IDN: ABPindo",
-		"hostlist.22.description": "Az ABPindo egy kiegészítő szűrő az EasyList kiegészítéseként, amely blokkolja az indonéz és maláj nyelvű oldalakon megjelenő zavaró hirdetéseket."
+		"hostlist.22.description": "Az EasyList kiegészítő szűrője az indonéz és malajziai weboldalakon megjelenő hirdetések blokkolásához"
 	},
 	{
 		"hostlist.10.name": "DurableNapkin átverések elleni listája",
-		"hostlist.10.description": "Egy tiltólista, amely megvédi a felhasználókat a megbízhatatlan webhelyekkel szemben."
+		"hostlist.10.description": "Lista a megbízhatatlan webhelyek blokkolásához"
 	},
 	{
-		"hostlist.11.name": "Rosszindulatú URL-ek tiltólistája",
-		"hostlist.11.description": "Kártékony programok terjesztésére használt rosszindulatú webhelyek tiltólistája, amely az Abuse.ch URLhaus adatbázis kivonatán alapul."
+		"hostlist.11.name": "Rosszindulatú URL-ek tiltólistája (URLHaus)",
+		"hostlist.11.description": "Rosszindulatú weboldalak blokklistája az Abuse.ch URLhaus adatbázisának dumpja alapján"
 	},
 	{
 		"hostlist.12.name": "Dandelion Sprout kártevők elleni listája",
-		"hostlist.12.description": "Dandelion Sprout kártevők (malware) elleni szűrője (AdGuard Home-hoz, valamint Androidos és Windowsos AdGuard verziók DNS szűréséhez)."
+		"hostlist.12.description": "Dandelion Sprout anti-malware listája (az AdGuard Home és az AdGuard for Android/Windows DNS-szűréséhez)."
 	},
 	{
 		"hostlist.8.name": "NoCoin szűrőlista",
-		"hostlist.8.description": "Ez egy adblock lista a böngészőalapú kriptobányászat blokkolására."
+		"hostlist.8.description": "Lista a böngészőalapú kriptobányászat blokkolásához"
 	},
 	{
 		"hostlist.9.name": "A feltört malware weboldalak nagy listája",
-		"hostlist.9.description": "A rosszindulatú szoftverekkel, zsarolóprogramokkal vagy trójaiakkal feltört webhelyek listája."
+		"hostlist.9.description": "Rosszindulatú szoftverekkel, zsarolóprogramokkal vagy trójaiakkal feltört webhelyek listája"
+	},
+	{
+		"hostlist.24.name": "1Hosts (Lite)",
+		"hostlist.24.description": "Lista a bosszantó hirdetések, nyomkövetők és rosszindulatú programok blokkolásához"
+	},
+	{
+		"hostlist.25.name": "KOR: List-KR DNS",
+		"hostlist.25.description": "A List-KR DNS verziója, egy szűrő a koreai nyelvű weboldalakhoz"
+	},
+	{
+		"hostlist.26.name": "TUR: turk-adlist",
+		"hostlist.26.description": "Lista a hirdetések és zavaró elemek blokkolásához török webhelyeken"
+	},
+	{
+		"hostlist.27.name": "OISD Blocklist Full",
+		"hostlist.27.description": "Lista a hirdetések és nyomkövetők blokkolásához. A funkcionalitást helyezi előtérbe a blokkolással szemben. A hibás blokkolás esélye nagyobb, mint az OISD Blocklist alapváltozatában."
+	},
+	{
+		"hostlist.28.name": "Energized Spark",
+		"hostlist.28.description": "Hirdetések, nyomkövető szkriptek és rosszindulatú programok blokkolására szolgáló lista"
+	},
+	{
+		"hostlist.29.name": "CHN: AdRules DNS-lista",
+		"hostlist.29.description": "Lista a hirdetések blokkolásához a kínai régióban"
+	},
+	{
+		"hostlist.30.name": "Adathalász URL tiltólista (PhishTank és OpenPhish)",
+		"hostlist.30.description": "Adathalász webhelyek tiltólistája PhishTank és OpenPhish listák alapján"
+	},
+	{
+		"hostlist.32.name": "A NoTracking tiltólista",
+		"hostlist.32.description": "A NoTracking tiltólista egy DNS-alapú szűrőlista a hirdetések, rosszindulatú programok, phising és egyéb online szemét blokkolására."
+	},
+	{
+		"hostlist.33.name": "Steven Black listája",
+		"hostlist.33.description": "Egységesített hosts fájl alap kiegészítésekkel (fakenews + gambling + pornó)."
+	},
+	{
+		"hostlist.31.name": "Stalkerware kereső lista",
+		"hostlist.31.description": "Android-on és iOS-en keresi stalkerware alkalmazások jeleit."
+	},
+	{
+		"hostlist.34.name": "HaGeZi Personal Black & White",
+		"hostlist.34.description": "A meglévő blokklisták kiterjesztése, az én személyes fekete és fehér listám. Feloldja a hamis pozitív és a hivatkozási domainek blokkolását."
+	},
+	{
+		"hostlist.35.name": "HUN: Hufilter",
+		"hostlist.35.description": "Lengyel szűrők a Pi hole-hoz."
 	}
 ]

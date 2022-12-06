@@ -1,7 +1,7 @@
 [
 	{
 		"hostlist.1.name": "Filtr AdGuard DNS",
-		"hostlist.1.description": "Filtr złożony z kilku innych filtrów (Podstawowy filtr AdGuard, Filtr mediów społecznościowych, Filtr elementów szpiegujących, Filtr reklam mobilnych, EasyList i EasyPrivacy), który został uproszczony dla lepszej zgodności z blokowaniem reklam na poziomie DNS."
+		"hostlist.1.description": "Lista złożona z kilku filtrów (filtr AdGuard Base, filtr Social Media, filtr Tracking Protection, filtr Mobile Ads, EasyList i EasyPrivacy) i uproszczona specjalnie po to, aby była lepiej kompatybilna z blokowaniem reklam na poziomie DNS"
 	},
 	{
 		"hostlist.2.name": "Domyślna lista blokowania AdAway",
@@ -13,7 +13,7 @@
 	},
 	{
 		"hostlist.4.name": "Dan Pollock's List",
-		"hostlist.4.description": "Blokuje niektóre wyskakujące okienka, zapobiega śledzeniu użytkowników, blokuje większość reklam."
+		"hostlist.4.description": "Lista do blokowania reklam i zapobiegania śledzeniu użytkowników"
 	},
 	{
 		"hostlist.5.name": "OISD Blocklist Basic",
@@ -25,11 +25,11 @@
 	},
 	{
 		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
-		"hostlist.6.description": "Podobnie jak teraz są listy dla AdGuard Home i Pi-hole do blokowania reklam na smart TV, oto moja próba zrobienia tego samego dla konsol do gier wideo z AdGuard Home."
+		"hostlist.6.description": "Lista do blokowania reklam na konsolach do gier wideo, które korzystają z AdGuard Home"
 	},
 	{
 		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
-		"hostlist.7.description": "Jest to lista blokad do blokowania Smart-TV wysyłających metadane z powrotem do domu, czasami z dodatkową korzyścią blokowania reklam interfejsu dla aplikacji i usług filmowych."
+		"hostlist.7.description": "Lista do uniemożliwienia inteligentnym telewizorom wysyłania metadanych do sprzedawcy oraz do blokowania reklam w aplikacjach i serwisach filmowych"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
@@ -56,16 +56,16 @@
 		"hostlist.18.description": "Wstępny plik hostów dla włoskich witryn utworzony z Easylist Italy i ADB X Files."
 	},
 	{
-		"hostlist.19.name": "IRN: Unwanted Iranian domains",
+		"hostlist.19.name": "IRN: PersianBlocker list",
 		"hostlist.19.description": "Lista skategoryzowanych niepożądanych hostów."
 	},
 	{
 		"hostlist.20.name": "MKD: Macedonian Pi-hole Blocklist",
-		"hostlist.20.description": "To jest lista do blokowania niechcianych domen, które wyświetlają reklamy w witrynach macedońskich."
+		"hostlist.20.description": "Lista do blokowania reklam na macedońskich stronach internetowych"
 	},
 	{
 		"hostlist.21.name": "CHN: anti-AD",
-		"hostlist.21.description": "Zobowiązuje się do bycia najwyższym wskaźnikiem trafień listy filtrowania reklam w regionie Chin, osiągając precyzyjne blokowanie reklam i ochronę prywatności."
+		"hostlist.21.description": "Lista do blokowania reklam w regionie chińskim. Ma na celu ochronę prywatności."
 	},
 	{
 		"hostlist.22.name": "IDN: ABPindo",
@@ -76,8 +76,8 @@
 		"hostlist.10.description": "Lista blokad chroniąca użytkowników przed niezaufanymi witrynami."
 	},
 	{
-		"hostlist.11.name": "Online Malicious URL Blocklist",
-		"hostlist.11.description": "Lista blokowania złośliwych witryn internetowych, które są wykorzystywane do dystrybucji złośliwego oprogramowania, oparta na zrzucie bazy danych z Abuse.ch URLhaus."
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Lista blokowa złośliwych stron internetowych na podstawie zrzutu bazy danych URLhaus Abuse.ch"
 	},
 	{
 		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
@@ -85,10 +85,58 @@
 	},
 	{
 		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": "Jest to lista blokad reklam, która blokuje wydobywanie kryptowaluty za pomocą przeglądarki."
+		"hostlist.8.description": "Lista do blokowania wydobycia kryptowalut w przeglądarce"
 	},
 	{
 		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
-		"hostlist.9.description": "Lista stron internetowych, które zostały zhakowane przy użyciu złośliwego oprogramowania, oprogramowania ransomware lub trojanów."
+		"hostlist.9.description": "Lista stron internetowych, które zostały zhakowane złośliwym oprogramowaniem, ransomware lub trojanami"
+	},
+	{
+		"hostlist.24.name": "1Hosts (Lite)",
+		"hostlist.24.description": "Lista do blokowania uciążliwych reklam, trackerów i złośliwego oprogramowania"
+	},
+	{
+		"hostlist.25.name": "KOR: DNS List-KR",
+		"hostlist.25.description": "Wersja DNS List-KR, filtra dla witryn w języku koreańskim."
+	},
+	{
+		"hostlist.26.name": "TUR: turk-adlist",
+		"hostlist.26.description": "Lista serwerów reklam do blokowania reklam i irytujących elementów dla tureckich witryn."
+	},
+	{
+		"hostlist.27.name": "OISD Blocklist Full",
+		"hostlist.27.description": "Blokuje reklamy i śledzenie i stawia funkcjonalność ponad blokowaniem. W porównaniu z podstawową wersją, szanse na wyniki fałszywie dodatnie są większe."
+	},
+	{
+		"hostlist.28.name": "Energized Spark",
+		"hostlist.28.description": "Lista domen, które pokazują reklamy, skrypty śledzące i malware z wielu renomowanych źródeł."
+	},
+	{
+		"hostlist.29.name": "CHN: AdRules DNS List",
+		"hostlist.29.description": "Lista do blokowania reklam w regionie chińskim"
+	},
+	{
+		"hostlist.30.name": "Phishing URL Blocklist (PhishTank i OpenPhish)",
+		"hostlist.30.description": "Lista blokowanych stron phishingowych na podstawie list PhishTank i OpenPhish."
+	},
+	{
+		"hostlist.32.name": "The NoTracking blocklist",
+		"hostlist.32.description": "Lista blokowania NoTracking to oparta na DNS lista filtrów do blokowania reklam, złośliwego oprogramowania, phishingu i innych internetowych niepożądanych rzeczy."
+	},
+	{
+		"hostlist.33.name": "Steven Black's List",
+		"hostlist.33.description": "Ujednolicony plik hosts z rozszerzeniami podstawowymi (fakenews + gambling + porn)."
+	},
+	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "Wskaźniki kompromisu w aplikacjach Stalkerware na Androida i iOS."
+	},
+	{
+		"hostlist.34.name": "HaGeZi Personal Black & White",
+		"hostlist.34.description": "Rozszerzenie dla istniejących blocklist, moja osobista czarna i biała lista. Odblokowuje fałszywe pozytywy i domeny odsyłające."
+	},
+	{
+		"hostlist.35.name": "HUN: Hufilter",
+		"hostlist.35.description": "Polish filters for Pi hole."
 	}
 ]

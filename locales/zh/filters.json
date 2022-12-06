@@ -1,39 +1,39 @@
 [
 	{
 		"hostlist.1.name": "AdGuard DNS 过滤器",
-		"hostlist.1.description": "此过滤器由其他几个过滤器（AdGuard 基础过滤器、社交媒体过滤器、防跟踪保护过滤器、移动广告过滤器、EasyList 和 EasyPrivacy）组成，并经过简化，以便更好地与 DNS 级别的广告拦截兼容。"
+		"hostlist.1.description": "列表由多个过滤器（AdGuard 基础过滤器、社交媒体过滤器、跟踪保护过滤器、移动广告过滤器、EasyList 和 EasyPrivacy）组成，并专门优化以更好地兼容 DNS 级广告拦截"
 	},
 	{
 		"hostlist.2.name": "AdAway Default Blocklist",
-		"hostlist.2.description": "AdAway 是使用 host 文件的 Android 开源广告拦截器。"
+		"hostlist.2.description": "是使用 host 文件的 Android 开源广告拦截器"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
-		"hostlist.3.description": "使用广告服务器和跟踪服务器主机名进行阻止。"
+		"hostlist.3.description": "广告和跟踪服务器主机名的黑名单"
 	},
 	{
 		"hostlist.4.name": "Dan Pollock's List",
-		"hostlist.4.description": "阻止某些弹出式陷阱，阻止用户跟踪，阻止大多数广告。"
+		"hostlist.4.description": "拦截广告和用户跟踪器的列表"
 	},
 	{
 		"hostlist.5.name": "OISD Blocklist Basic",
-		"hostlist.5.description": "阻止广告/跟踪器并优先考虑功能而不是阻止。"
+		"hostlist.5.description": "用于拦截广告和跟踪器的列表。功能优先于拦截。"
 	},
 	{
 		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
-		"hostlist.23.description": "在 Windows 上阻止间谍和跟踪。"
+		"hostlist.23.description": "在 Windows 上拦截间谍软件和跟踪"
 	},
 	{
 		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
-		"hostlist.6.description": "就像现在有 AdGuard Home 和 Pi-hole 列表来阻止智能电视上的广告一样，这是我尝试对带有 AdGuard Home 的视频游戏机做同样的事情。"
+		"hostlist.6.description": "在使用 AdGuard Home 的视频游戏机上屏蔽广告的列表"
 	},
 	{
 		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
-		"hostlist.7.description": "这是一个阻止智能电视将元数据发送回家的阻止列表，有时还具有阻止应用程序和电影服务的界面广告的额外好处。"
+		"hostlist.7.description": "防止元数据被发送到智能电视制造商，并拦截应用程序和电影服务中广告的列表"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
-		"hostlist.13.description": "Dandelion Sprout 的 Nordic 过滤器（用于 AdGuard Home 和 AdGuard for Android/Windows 的 DNS 过滤）。"
+		"hostlist.13.description": "Dandelion Sprout's Nordic Filters 过滤器（用于 AdGuard Home 和 AdGuard Android/Windows版 的 DNS 过滤）。"
 	},
 	{
 		"hostlist.14.name": "POL: Polish filters for Pi hole",
@@ -41,11 +41,11 @@
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
-		"hostlist.15.description": "用于韩国网站上广告拦截的过滤器。"
+		"hostlist.15.description": "用于韩国网站上广告拦截的列表"
 	},
 	{
 		"hostlist.16.name": "VNM: ABPVN List",
-		"hostlist.16.description": "用于越南语的 Adblock 过滤列表。"
+		"hostlist.16.description": "用于越南语网站上广告拦截的列表"
 	},
 	{
 		"hostlist.17.name": "SWE: Frellwit's Swedish Hosts File",
@@ -53,42 +53,90 @@
 	},
 	{
 		"hostlist.18.name": "ITA: Filtri-DNS",
-		"hostlist.18.description": "在 Easylist Italy 和 ADB X Files 上创建的意大利网站的暂定主机文件。"
+		"hostlist.18.description": "旨在拦截基于 Easylist Italy 和 ADB X Files 的意大利网站上的广告的列表。"
 	},
 	{
-		"hostlist.19.name": "IRN: Unwanted Iranian domains",
-		"hostlist.19.description": "不受欢迎的主机列表。"
+		"hostlist.19.name": "IRN: PersianBlocker list",
+		"hostlist.19.description": "用于拦截波斯语网站上的广告和跟踪器的最佳且广泛的列表"
 	},
 	{
 		"hostlist.20.name": "MKD: Macedonian Pi-hole Blocklist",
-		"hostlist.20.description": "这是在马其顿网站上阻止访问托管广告的网域的拦截列表。"
+		"hostlist.20.description": "用于马其顿语网站上广告拦截的列表"
 	},
 	{
 		"hostlist.21.name": "CHN: anti-AD",
-		"hostlist.21.description": "致力于成为中国地区点击率最高的广告过滤列表，实现精准的广告拦截和隐私保护。"
+		"hostlist.21.description": "在中国地区拦截广告的列表。旨在保护用户隐私。"
 	},
 	{
 		"hostlist.22.name": "IDN: ABPindo",
-		"hostlist.22.description": "ABPindo 是补充 EasyList 的附加过滤器，可阻止印度尼西亚语和马来西亚语网站上的烦人广告。"
+		"hostlist.22.description": "与 EasyList 互补的过滤器，用于拦截印度尼西亚和马来西亚网站上的广告"
 	},
 	{
 		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
-		"hostlist.10.description": "防止用户访问不可靠网站的拦截列表。"
+		"hostlist.10.description": "拦截不可信网站的列表"
 	},
 	{
-		"hostlist.11.name": "Online Malicious URL Blocklist",
-		"hostlist.11.description": "基于 Abuse.ch URLhaus 的数据库转储的恶意网站拦截列表。"
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "基于 Abuse.ch URLhaus 的数据库转储的恶意网站的黑名单"
 	},
 	{
 		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
-		"hostlist.12.description": "Dandelion Sprout 的 Anti-Malware 列表（用于 AdGuard Home 和 AdGuard for Android/Windows 的 DNS 过滤）。"
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List（用于 AdGuard Home 和 AdGuard Android/Windows 版的 DNS 过滤）。"
 	},
 	{
 		"hostlist.8.name": "NoCoin 过滤列表",
-		"hostlist.8.description": "这是一个广告拦截列表，用于阻止基于浏览器的加密货币开采。"
+		"hostlist.8.description": "拦截基于浏览器的加密挖掘的列表"
 	},
 	{
 		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
 		"hostlist.9.description": "一个被恶意软件、勒索软件或木马病毒入侵的网站列表。"
+	},
+	{
+		"hostlist.24.name": "1Hosts (Lite)",
+		"hostlist.24.description": "阻止讨厌的广告、跟踪器和恶意软件的列表"
+	},
+	{
+		"hostlist.25.name": "KOR: List-KR DNS",
+		"hostlist.25.description": "List-KR 的 DNS 版本，用于韩语网站的过滤器"
+	},
+	{
+		"hostlist.26.name": "TUR: turk-adlist",
+		"hostlist.26.description": "土耳其语网站上拦截广告和烦人元素的列表"
+	},
+	{
+		"hostlist.27.name": "OISD Blocklist Full",
+		"hostlist.27.description": "拦截广告和跟踪器的列表。功能优先于拦截。错误屏蔽的可能性高于 OISD 黑名单的基本版本。"
+	},
+	{
+		"hostlist.28.name": "Energized Spark",
+		"hostlist.28.description": "阻止广告、跟踪脚本和恶意软件的列表"
+	},
+	{
+		"hostlist.29.name": "CHN: AdRules DNS List",
+		"hostlist.29.description": "拦截基于中文区广告的列表"
+	},
+	{
+		"hostlist.30.name": "Phishing URL Blocklist（PhishTank 和 OpenPhish）",
+		"hostlist.30.description": "基于 PhishTank 和 OpenPhish 列表的网络钓鱼网站黑名单"
+	},
+	{
+		"hostlist.32.name": "The NoTracking blocklist",
+		"hostlist.32.description": "The NoTracking blocklist 是一个基于 DNS 的过滤名单，用于拦截广告、恶意软件、网络诈骗和其他在线威胁。"
+	},
+	{
+		"hostlist.33.name": "Steven Black's List",
+		"hostlist.33.description": "具有基本扩展（假新闻+赌博+色情）的统一主机文件。"
+	},
+	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "安卓和 iOS 系统的 Stalkerware 应用程序使用指标。"
+	},
+	{
+		"hostlist.34.name": "HaGeZi Personal Black & White",
+		"hostlist.34.description": "现有黑名单的扩展，用户个人黑名单和白名单。解除对误报和转介域的封锁。"
+	},
+	{
+		"hostlist.35.name": "HUN: Hufilter",
+		"hostlist.35.description": "用于 Pi hole 的波兰过滤器"
 	}
 ]

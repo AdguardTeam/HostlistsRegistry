@@ -1,94 +1,142 @@
 [
 	{
 		"hostlist.1.name": "Penyaring nama domain yang disederhanakan AdGuard",
-		"hostlist.1.description": "Penyaring terdiri atas beberapa penyaring lainnya (AdGuard Base filter, Social media filter, Spyware filter, Mobile ads filter, EasyList and EasyPrivacy) dan disederhanakan secara khusus agar lebih kompatibel dengan pemblokiran iklan tingkat DNS."
+		"hostlist.1.description": "Daftar terdiri dari beberapa filter (Filter Dasar AdGuard, Filter Media Sosial, Filter Perlindungan Pelacakan, Filter Iklan Seluler, EasyList dan EasyPrivacy) dan disederhanakan secara khusus agar lebih kompatibel dengan pemblokiran iklan tingkat DNS"
 	},
 	{
-		"hostlist.2.name": "",
-		"hostlist.2.description": ""
+		"hostlist.2.name": "AdAway Default Blocklist",
+		"hostlist.2.description": "AdAway adalah pemblokir iklan sumber terbuka untuk Android menggunakan fail host."
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
-		"hostlist.3.description": ""
+		"hostlist.3.description": "Memblokir menggunakan hostname server iklan dan server pelacakan."
 	},
 	{
-		"hostlist.4.name": "",
-		"hostlist.4.description": ""
+		"hostlist.4.name": "Dan Pollock's List",
+		"hostlist.4.description": "Daftar untuk memblokir iklan dan mencegah pelacakan pengguna"
 	},
 	{
-		"hostlist.5.name": "",
-		"hostlist.5.description": ""
+		"hostlist.5.name": "OISD Blocklist Basic",
+		"hostlist.5.description": "Memblokir iklan/pelacak dan memprioritaskan fungsi di atas pemblokiran."
 	},
 	{
-		"hostlist.23.name": "",
-		"hostlist.23.description": ""
+		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
+		"hostlist.23.description": "Memblokir pengintip dan pelacakan pada Windows."
 	},
 	{
-		"hostlist.6.name": "",
-		"hostlist.6.description": ""
+		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
+		"hostlist.6.description": "Seperti terdapatnya daftar untuk AdGuard Home dan Pi-hole hingga pemblokiran iklan di smart-TV saat ini, berikut usaha saya menggunakan konsol gim video dengan AdGuard Home."
 	},
 	{
-		"hostlist.7.name": "",
-		"hostlist.7.description": ""
+		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
+		"hostlist.7.description": "Ini adalah daftar blokir untuk memblokir smart TV dari mengirimkan metadatanya kembali, terkadang disertai tambahan keuntungan untuk memblokir antarmuka iklan pada layanan aplikasi dan film."
 	},
 	{
-		"hostlist.13.name": "",
-		"hostlist.13.description": ""
+		"hostlist.13.name": "NOR: Dandelion Sprout nordiske filtre",
+		"hostlist.13.description": "Dandelion Sprout's Nordic Filters (untuk AdGuard Home, dan untuk AdGuard pada penyaringan DNS Android/Windows)."
 	},
 	{
-		"hostlist.14.name": "",
-		"hostlist.14.description": ""
+		"hostlist.14.name": "POL: Polish filters for Pi hole",
+		"hostlist.14.description": "Penyaring Polish untuk Pi hole."
 	},
 	{
-		"hostlist.15.name": "",
-		"hostlist.15.description": ""
+		"hostlist.15.name": "KOR: YousList",
+		"hostlist.15.description": "Memblokir penyaringan untuk iklan, terutama pada situs asal Korea."
 	},
 	{
-		"hostlist.16.name": "",
-		"hostlist.16.description": ""
+		"hostlist.16.name": "VNM: ABPVN List",
+		"hostlist.16.description": "Daftar penyaringan pemblokir iklan untuk warga Vietnam."
 	},
 	{
-		"hostlist.17.name": "",
-		"hostlist.17.description": ""
+		"hostlist.17.name": "SWE: Frellwit's Swedish Hosts File",
+		"hostlist.17.description": "Bertujuan untuk menghilangkan iklan, pelacakan, scam & badware (terutama) pada situs berbahasa Swedia."
 	},
 	{
-		"hostlist.18.name": "",
-		"hostlist.18.description": ""
+		"hostlist.18.name": "ITA: Filtri-DNS",
+		"hostlist.18.description": "Fail host tentatif untuk situs berbahasa Italia dibuat dari EasyList Italy dan ADB X Files."
 	},
 	{
-		"hostlist.19.name": "",
-		"hostlist.19.description": ""
+		"hostlist.19.name": "IRN: PersianBlocker list",
+		"hostlist.19.description": "Daftar optimal dan ekstensif untuk memblokir iklan dan pelacak di situs berbahasa Persia"
 	},
 	{
-		"hostlist.20.name": "",
-		"hostlist.20.description": ""
+		"hostlist.20.name": "MKD: Macedonian Pi-hole Blocklist",
+		"hostlist.20.description": "Berikut adalah daftar untuk memblokir domain tak diinginkan yang melayani iklan ke situs web asal Makedonia."
 	},
 	{
-		"hostlist.21.name": "",
-		"hostlist.21.description": ""
+		"hostlist.21.name": "CHN: anti-AD",
+		"hostlist.21.description": "Daftar untuk memblokir iklan di wilayah Cina. Bertujuan untuk perlindungan privasi."
 	},
 	{
-		"hostlist.22.name": "",
-		"hostlist.22.description": ""
+		"hostlist.22.name": "IDN: ABPindo",
+		"hostlist.22.description": "Filter pelengkap untuk EasyList untuk memblokir iklan di situs web Indonesia dan Malaysia"
 	},
 	{
-		"hostlist.10.name": "",
-		"hostlist.10.description": ""
+		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
+		"hostlist.10.description": "Daftar untuk memblokir situs web yang tidak dapat dipercaya"
 	},
 	{
-		"hostlist.11.name": "Online Malicious URL Blocklist",
-		"hostlist.11.description": ""
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Daftar blokir situs web berbahaya yang digunakan untuk distribusi malware, berdasakan buangan basis data Abuse.ch URLhaus."
 	},
 	{
-		"hostlist.12.name": "",
-		"hostlist.12.description": ""
+		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (untuk AdGuard Home, dan untuk adGuard pada penyaringan DNS Android/Windows)."
 	},
 	{
 		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": ""
+		"hostlist.8.description": "Berikut adalah daftar pemblokir iklan untuk memblokir penambangan kripto berbasis peramban."
 	},
 	{
-		"hostlist.9.name": "",
-		"hostlist.9.description": ""
+		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
+		"hostlist.9.description": "Daftar situs-situs web yang dibajak oleh malware, ransomware atau trojan."
+	},
+	{
+		"hostlist.24.name": "1Hosts (Lite)",
+		"hostlist.24.description": "Daftar untuk memblokir iklan, pelacak, dan malware yang mengganggu"
+	},
+	{
+		"hostlist.25.name": "KOR: List-KR DNS",
+		"hostlist.25.description": "Versi DNS dari List-KR, filter untuk situs web dalam bahasa Korea"
+	},
+	{
+		"hostlist.26.name": "TUR: turk-adlist",
+		"hostlist.26.description": "Daftar untuk memblokir iklan dan elemen yang mengganggu di situs web Turki"
+	},
+	{
+		"hostlist.27.name": "OISD Blocklist Full",
+		"hostlist.27.description": "Daftar untuk memblokir iklan dan pelacak. Memprioritaskan fungsionalitas daripada pemblokiran. Kemungkinan pemblokiran yang salah lebih tinggi daripada di versi dasar Daftar Blokir OISD."
+	},
+	{
+		"hostlist.28.name": "Energized Spark",
+		"hostlist.28.description": "Daftar untuk memblokir iklan, skrip pelacakan, dan malware"
+	},
+	{
+		"hostlist.29.name": "CHN: AdRules DNS List",
+		"hostlist.29.description": "Daftar untuk memblokir iklan di wilayah Cina"
+	},
+	{
+		"hostlist.30.name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
+		"hostlist.30.description": "Daftar blokir situs web phishing, berdasarkan daftar PhishTank dan OpenPhish"
+	},
+	{
+		"hostlist.32.name": "The NoTracking blocklist",
+		"hostlist.32.description": "Daftar blokir NoTracking adalah daftar filter berbasis DNS untuk memblokir iklan, malware, phishing, dan sampah online lainnya."
+	},
+	{
+		"hostlist.33.name": "Steven Black's List",
+		"hostlist.33.description": "File host terpadu dengan ekstensi dasar (berita palsu + perjudian + porno)."
+	},
+	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "Indikator kompromi pada aplikasi Stalkerware untuk Android dan iOS."
+	},
+	{
+		"hostlist.34.name": "HaGeZi Personal Black & White",
+		"hostlist.34.description": "Ekstensi untuk daftar blokir yang ada, daftar hitam dan putih pribadi saya. Buka blokir positif palsu dan domain rujukan."
+	},
+	{
+		"hostlist.35.name": "HUN: Hufilter",
+		"hostlist.35.description": "Penyaring Polish untuk Pi hole."
 	}
 ]

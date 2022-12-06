@@ -1,94 +1,142 @@
 [
 	{
 		"hostlist.1.name": "DNS-фільтр AdGuard",
-		"hostlist.1.description": "Фільтр, який складається з декількох інших фільтрів (Основного, Віджетів соцмереж, Захисту від стеження, Мобільної реклами, EasyList і EasyPrivacy) і певним чином спрощений задля кращої сумісності з блокуванням реклами на рівні DNS."
+		"hostlist.1.description": "Список складається з декількох фільтрів (фільтр AdGuard Base, фільтр соціальних мереж, фільтр захисту від відстеження, фільтр мобільних оголошень, EasyList та EasyPrivacy) і спрощений спеціально для кращої сумісності з блокуванням реклами на рівні DNS"
 	},
 	{
-		"hostlist.2.name": "",
-		"hostlist.2.description": ""
+		"hostlist.2.name": "AdAway Default Blocklist",
+		"hostlist.2.description": "Блокувальник реклами з відкритим вихідним кодом для Android за допомогою файлу hosts"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
-		"hostlist.3.description": ""
+		"hostlist.3.description": "Блокування за допомогою сервера оголошень і відстеження імен вузлів сервера."
 	},
 	{
-		"hostlist.4.name": "",
-		"hostlist.4.description": ""
+		"hostlist.4.name": "Dan Pollock's List",
+		"hostlist.4.description": "Список для блокування реклами та запобігання відстеження користувачів"
 	},
 	{
-		"hostlist.5.name": "",
-		"hostlist.5.description": ""
+		"hostlist.5.name": "OISD Blocklist Basic",
+		"hostlist.5.description": "Список для блокування реклами та трекерів. Пріоритет функціональності над блокуванням."
 	},
 	{
-		"hostlist.23.name": "",
-		"hostlist.23.description": ""
+		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
+		"hostlist.23.description": "Список для блокування шпигунства і стеження в Windows"
 	},
 	{
-		"hostlist.6.name": "",
-		"hostlist.6.description": ""
+		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
+		"hostlist.6.description": "Список для блокування реклами на відеоігрових приставках, які використовують AdGuard Home"
 	},
 	{
-		"hostlist.7.name": "",
-		"hostlist.7.description": ""
+		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
+		"hostlist.7.description": "Список для заборони смарт-телевізорам надсилати метадані продавцю, а також для блокування реклами в додатках і кіносервісах"
 	},
 	{
-		"hostlist.13.name": "",
-		"hostlist.13.description": ""
+		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
+		"hostlist.13.description": "Dandelion Sprout's Nordic Filters (для AdGuard Home або для DNS-захисту в AdGuard для Android/Windows/Mac)."
 	},
 	{
-		"hostlist.14.name": "",
-		"hostlist.14.description": ""
+		"hostlist.14.name": "POL: Polish filters for Pi hole",
+		"hostlist.14.description": "Polish filters for Pi hole."
 	},
 	{
-		"hostlist.15.name": "",
-		"hostlist.15.description": ""
+		"hostlist.15.name": "KOR: YousList",
+		"hostlist.15.description": "Блок-фільтр для реклами, в основному на корейських сайтах."
 	},
 	{
-		"hostlist.16.name": "",
-		"hostlist.16.description": ""
+		"hostlist.16.name": "VNM: ABPVN List",
+		"hostlist.16.description": "Список фільтрів Adblock для в'єтнамської мови."
 	},
 	{
-		"hostlist.17.name": "",
-		"hostlist.17.description": ""
+		"hostlist.17.name": "SWE: Frellwit's Swedish Hosts File",
+		"hostlist.17.description": "Список для блокування реклами, відстеження, шахрайства та шкідливого програмного забезпечення переважно на шведських веб-сайтах"
 	},
 	{
-		"hostlist.18.name": "",
-		"hostlist.18.description": ""
+		"hostlist.18.name": "ITA: Filtri-DNS",
+		"hostlist.18.description": "Пробний фільтр вузлів для італійських сайтів, створених з фільтрів EasyList Italy та ADB X Files."
 	},
 	{
-		"hostlist.19.name": "",
-		"hostlist.19.description": ""
+		"hostlist.19.name": "IRN: PersianBlocker list",
+		"hostlist.19.description": "Оптимальний і великий список для блокування реклами і трекерів на перськомовних сайтах"
 	},
 	{
-		"hostlist.20.name": "",
-		"hostlist.20.description": ""
+		"hostlist.20.name": "MKD: Macedonian Pi-hole Blocklist",
+		"hostlist.20.description": "Список для блокування реклами на македонських сайтах"
 	},
 	{
-		"hostlist.21.name": "",
-		"hostlist.21.description": ""
+		"hostlist.21.name": "CHN: anti-AD",
+		"hostlist.21.description": "Список для блокування реклами в китайському регіоні. Спрямований на захист приватності."
 	},
 	{
-		"hostlist.22.name": "",
-		"hostlist.22.description": ""
+		"hostlist.22.name": "IDN: ABPindo",
+		"hostlist.22.description": "Фільтр на додаток до EasyList для блокування реклами на індонезійських та малайзійських сайтах"
 	},
 	{
-		"hostlist.10.name": "",
-		"hostlist.10.description": ""
+		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
+		"hostlist.10.description": "Список для блокування ненадійних сайтів"
 	},
 	{
-		"hostlist.11.name": "Online Malicious URL Blocklist",
-		"hostlist.11.description": ""
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Блокування шкідливих сайтів на основі дампу бази даних Abuse.ch URLhaus"
 	},
 	{
-		"hostlist.12.name": "",
-		"hostlist.12.description": ""
+		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (для AdGuard Home або для DNS-захисту в AdGuard для Android/Windows/Mac)."
 	},
 	{
 		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": ""
+		"hostlist.8.description": "Це список adblock для блокування крипто-майнінгу на основі браузера."
 	},
 	{
-		"hostlist.9.name": "",
-		"hostlist.9.description": ""
+		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
+		"hostlist.9.description": "Список вебсайтів, які зламані шкідливими програмами, програмами-вимагачами або троянами"
+	},
+	{
+		"hostlist.24.name": "1Hosts (Lite)",
+		"hostlist.24.description": "Список для блокування настирливої реклами, трекерів та шкідливих програм"
+	},
+	{
+		"hostlist.25.name": "KOR: List-KR DNS",
+		"hostlist.25.description": "DNS-версія List-KR, фільтр для сайтів корейською мовою"
+	},
+	{
+		"hostlist.26.name": "TUR: turk-adlist",
+		"hostlist.26.description": "Список для блокування реклами та настирливих елементів на турецьких сайтах"
+	},
+	{
+		"hostlist.27.name": "OISD Blocklist Full",
+		"hostlist.27.description": "Список для блокування реклами та трекерів. Віддає перевагу функціональності перед блокуванням. Імовірність помилкового блокування вища, ніж у базовій версії OISD Blocklist."
+	},
+	{
+		"hostlist.28.name": "Energized Spark",
+		"hostlist.28.description": "Список для блокування реклами, скриптів відстеження та шкідливих програм"
+	},
+	{
+		"hostlist.29.name": "CHN: AdRules DNS List",
+		"hostlist.29.description": "Список для блокування оголошень в китайському регіоні"
+	},
+	{
+		"hostlist.30.name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
+		"hostlist.30.description": "Блокування фішингових сайтів на основі списків PhishTank та OpenPhish"
+	},
+	{
+		"hostlist.32.name": "The NoTracking blocklist",
+		"hostlist.32.description": "Список блокування NoTracking — це список фільтрів на основі DNS для блокування реклами, зловмисного програмного забезпечення, фішингу та іншого онлайн-сміття."
+	},
+	{
+		"hostlist.33.name": "Steven Black's List",
+		"hostlist.33.description": "Єдиний файл hosts з базовими розширеннями (fakenews + gambling + porn)."
+	},
+	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "Індикатори компрометації додатків Stalkerware для Android та iOS."
+	},
+	{
+		"hostlist.34.name": "HaGeZi Personal Black & White",
+		"hostlist.34.description": "Розширення для існуючих блок-листів, мій особистий чорний і білий список. Розблоковує помилкові спрацьовування та реферальні домени."
+	},
+	{
+		"hostlist.35.name": "HUN: Hufilter",
+		"hostlist.35.description": "Polish filters for Pi hole."
 	}
 ]
