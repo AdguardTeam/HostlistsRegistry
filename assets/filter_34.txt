@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-08T18:40:27.184Z
+! Last modified: 2022-12-08T20:05:41.348Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 08 Dez 2022 18:11 UTC
-! Version: 2022.1208.1811.08
+! Last modified: 08 Dez 2022 19:29 UTC
+! Version: 2022.1208.1929.03
 ! Syntax: AdBlock
-! Domains: 21591
+! Domains: 21561
 !
 ||000webhost.com^
 ||000webhostapp.com^
@@ -5750,18 +5750,32 @@
 ||mit.db.com^
 ||wtk.db.com^
 ||cs02-pps-drcn.dbankcdn.com^
-||dbankcloud.cn^
-||dbankcloud.ru^
+||ubacollect-drcn.cloud.dbankcloud.cn^
+||metrics-dre.data.dbankcloud.cn^
+||metrics1.data.dbankcloud.cn^
 ||dnkeeper.dbankcloud.com^
 ||ad-dra.dt.dbankcloud.com^
 ||ad-dre.dt.dbankcloud.com^
 ||ad-drru.dt.dbankcloud.com^
+||datacollector-dra.dt.dbankcloud.cn^
+||datacollector-drcn.dt.dbankcloud.cn^
+||datacollector-dre.dt.dbankcloud.cn^
+||datacollector-drru.dt.dbankcloud.ru^
 ||hisearch-dra.dt.dbankcloud.com^
+||metrics.dt.dbankcloud.cn^
+||metrics-dra.dt.dbankcloud.cn^
+||metrics1-drcn.dt.dbankcloud.cn^
+||metrics5.dt.dbankcloud.ru^
 ||grs.dbankcloud.asia^
+||grs.dbankcloud.cn^
 ||grs.dbankcloud.com^
 ||adx-dra.op.dbankcloud.com^
+||adx-drcn.op.dbankcloud.cn^
 ||adx-dre.op.dbankcloud.com^
 ||adx-drru.op.dbankcloud.com^
+||dnkeeper.platform.dbankcloud.cn^
+||grs.platform.dbankcloud.ru^
+||logservice-dre.platform.dbankcloud.cn^
 ||openlocation-drcn.platform.dbankcloud.com^
 ||analytics.dbdigi.com^
 ||dblks.net^
@@ -10537,51 +10551,7 @@
 ||impressionmonster.com^
 ||improvedigital.com^
 ||imr.sk^
-||audit.imrworldwide.com^
-||bee.imrworldwide.com^
-||cloudapi.imrworldwide.com^
-||cm.imrworldwide.com^
-||dar.imrworldwide.com^
-||darnuid.imrworldwide.com^
-||errors.imrworldwide.com^
-||eu-cloudapi.imrworldwide.com^
-||eu-uaid-linkage.imrworldwide.com^
-||events.imrworldwide.com^
-||global.imrworldwide.com^
-||nmcsync.imrworldwide.com^
-||npdredinuid.imrworldwide.com^
-||nuid.imrworldwide.com^
-||priv-policy.imrworldwide.com^
-||redinuid.imrworldwide.com^
-||sdk.imrworldwide.com^
-||secure-ap-southeast-1.imrworldwide.com^
-||secure-asts.imrworldwide.com^
-||secure-au.imrworldwide.com^
-||secure-cert.imrworldwide.com^
-||secure-cz.imrworldwide.com^
-||secure-dcr.imrworldwide.com^
-||secure-dcr-cert.imrworldwide.com^
-||secure-drm.imrworldwide.com^
-||secure-eu.imrworldwide.com^
-||secure-gg.imrworldwide.com^
-||secure-gl.imrworldwide.com^
-||secure-it.imrworldwide.com^
-||secure-nz.imrworldwide.com^
-||secure-pl.imrworldwide.com^
-||secure-proxy.imrworldwide.com^
-||secure-sdk.imrworldwide.com^
-||secure-sg.imrworldwide.com^
-||secure-sts-prod.imrworldwide.com^
-||secure-sw.imrworldwide.com^
-||secure-uk.imrworldwide.com^
-||secure-us.imrworldwide.com^
-||secure-us-east-1.imrworldwide.com^
-||secure-us-east-2.imrworldwide.com^
-||trk.snt.imrworldwide.com^
-||trk133-useast1.snt.imrworldwide.com^
-||vwrap.snt.imrworldwide.com^
-||vwrap-entry.snt.imrworldwide.com^
-||uaid-linkage.imrworldwide.com^
+||imrworldwide.com^
 ||imtmp.net^
 ||imtwjwoasak.com^
 ||tmcontent.imvu.com^
@@ -21619,10 +21589,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 08 Dez 2022 18:07 UTC
-! Version: 2022.1208.1807.25
+! Last modified: 08 Dez 2022 19:25 UTC
+! Version: 2022.1208.1925.22
 ! Syntax: AdBlock
-! Domains: 5992
+! Domains: 5985
 !
 ||willhaben.at.04300.id^
 ||11trikots.com^
@@ -23919,9 +23889,7 @@
 ||hauser-personal.de^
 ||haushalt-deals.net^
 ||haushalt-depot.de^
-||haushalt-holtkemper.de^
 ||haushalt-jansen.net^
-||haushalt-schuhmann.com^
 ||haushalt-xxl.de^
 ||haushaltskoenig.de^
 ||haushaltsreich.de^
@@ -23931,7 +23899,6 @@
 ||hausprodukte.store^
 ||haustechnik-muenchen.de^
 ||haustierbedarf-friedman.com^
-||haveivtax.shop^
 ||hawaiird.com^
 ||hawalili.de^
 ||haweyltd.com^
@@ -23943,7 +23910,6 @@
 ||health-socks.de^
 ||healthbenefitsf.com^
 ||healthcarebanker.com^
-||healthde.de^
 ||healthfirst.at^
 ||healthful-pills.com^
 ||heaokshop.com^
@@ -23952,7 +23918,6 @@
 ||hederich-co.de^
 ||heidecker-rollergang.de^
 ||heidekrause.de^
-||heidelore-kluge.de^
 ||heike-store.com^
 ||heimatrad.de^
 ||heimfroh.com^
@@ -23966,14 +23931,12 @@
 ||helikon-filme.de^
 ||helix-sports.de^
 ||hellolasana.de^
-||hellorolexwatch.com^
 ||hellostella.de^
 ||hells-kitchen-ink.de^
 ||hellyhansendeutschland.com^
 ||hellymoon.de^
 ||helperlo24.de^
 ||helpthebees.net^
-||helsky.de^
 ||hemstedt-handel.de^
 ||henlenhebe.com^
 ||hennac.com^
@@ -27824,7 +27787,7 @@
 @@|googleapis.com^
 @@|gstatic.com^
 @@|gvt1.com^
-@@|gvt2.com^
+! gvt2.com
 @@|gvt3.com^
 @@|imasdk.googleapis.com^
 @@|instantmessaging-pa.googleapis.com^
@@ -27847,6 +27810,11 @@
 @@|yt3.ggpht.com^
 ! Not used for tracking, metrics, analytics
 @@||metric.gstatic.com^
+
+! Huawei
+@@|dbankcloud.cn^
+@@|dbankcloud.ru^
+@@|dbankcloud.com^
 
 ! Microsoft
 ! https://docs.microsoft.com/en-us/windows/privacy/manage-windows-11-endpoints
@@ -27871,6 +27839,7 @@
 @@|arc.msn.com^
 @@|assets.activity.windows.com^
 @@|atm-settingsfe-prod-geo*.trafficmanager.net^
+@@|c.msn.com^
 @@|c.office.com^
 @@|continuum.dds.microsoft.com^
 @@|cs.dds.microsoft.com^
@@ -29003,9 +28972,6 @@
 ! REWE online Prospekt
 @@|content-media.bonial.biz^
 
-! Fix Office Forms
-@@|c.msn.com^
-
 ! General support chat
 ! https://github.com/hagezi/dns-blocklists/issues/40
 @@||intercom.io^
@@ -29522,10 +29488,10 @@
 ! Epic Games Launcher
 @@|eulatracking-public-service-*.ol.epicgames.com^
 
-! Chick-Fil-A App 
+! Chick-Fil-A App
 @@||tmetrix.my.chick-fil-a.com^
 
-! Imgur 
+! Imgur
 @@|js.media-lab.ai^
 
 ! Men's Health videos
