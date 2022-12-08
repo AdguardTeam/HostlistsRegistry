@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2022-12-08T12:07:00.780Z
+! Last modified: 2022-12-08T18:05:27.562Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2022-12-08T12:01:22.711Z
+! Last modified: 2022-12-08T18:01:14.827Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -878,7 +878,6 @@
 ||ppcnt.us^
 ||ppcnt.eu^
 ||ppcnt.co^
-||1571627030.rsc.cdn77.org^
 ||terrasdsdstd.com^
 ||snessubsets.pro^
 ||ftd.agency^
@@ -1610,10 +1609,6 @@
 ||st1.bhol.co.il^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19323
 ||pijama.*.elasticbeanstalk.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/64374
-||partner.pocketing.tv^
-! https://github.com/AdguardTeam/AdguardFilters/issues/21316
-! https://github.com/AdguardTeam/AdguardFilters/issues/19658
 ||ap.delfi.ee^
 ||ado.delfi.ee^
 !
@@ -27178,6 +27173,8 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||eventtracking.hubapi.com^
+||traffic.wdc.center^
 ||evnt.iol.it^
 ||frog.editorx.com^
 ||e.metarouter.io^
@@ -30583,6 +30580,7 @@ vkcdnservice.appspot.com^
 ! More info: https://getadmiral.com/products/measure
 ! Add same rules to the Admiral section of Annoyances filter
 !
+||restrainstorm.com^
 ||sugarfriction.com^
 ||fortunatemark.com^
 ||threetruck.com^
@@ -41257,7 +41255,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ://r.reklam*.com^
 ://say.ac^
 ||venediktaciri.com^
-||1686607364.rsc.cdn77.org^
 ||aadserving.com^
 ||acxdyn.com^
 ||ad*.bilgin.pro^
@@ -44112,6 +44109,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||ceu5.icu^
 ||chengduda.top^
 ||cichiji.top^
+||cjkl.online^
 ||clvkg.xyz^
 ||clw99.mobi^
 ||crleii.xyz^
@@ -44160,6 +44158,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||gdugga.com^
 ||gfqfjau.cn^
 ||gfxjjpo.cn^
+||ggsdogn.cn^
 ||gkcmei.xyz^
 ||gknybkl.cn^
 ||gkofzfi.cn^
@@ -44173,6 +44172,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||h12h.fun^
 ||h6cp.icu^
 ||hbcl.ltd^
+||hhgxbxk.cn^
 ||hjgrc.xyz^
 ||hmgzhqe.cn^
 ||hnws.xyz^
@@ -44182,6 +44182,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||hsypwju.cn^
 ||htkk1.top^
 ||htkk2.top^
+||huilianji.com^
 ||hxapafn.cn^
 ||i46.xyz^
 ||i7x3.fun^
@@ -44214,6 +44215,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||kapsmnd.cyou^
 ||kba8i.icu^
 ||kcmomkn.cn^
+||kdegznb.cn^
 ||kjanfwss.xyz^
 ||kjcvw.xyz^
 ||kjhxw.xyz^
@@ -44273,6 +44275,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||ocive.xyz^
 ||odfykc.cn^
 ||oehhq.xyz^
+||oehwv.xyz^
 ||ofqldv.cn^
 ||oicvvnm.cn^
 ||oivgqnt.cn^
@@ -44303,7 +44306,9 @@ charlestownwyllie.oaklawnnonantum.com^
 ||qfgfpi.cn^
 ||qganilgly.cyou^
 ||qiangqi.shop^
+||qibmrq.xyz^
 ||qicewar.cn^
+||qingfeng.homes^
 ||qlzjwgb.cn^
 ||qmpkoiv.cn^
 ||qowg.top^
@@ -44399,6 +44404,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||txnwq.xyz^
 ||tzngisyi.xyz^
 ||u09.xyz^
+||u1885.com^
 ||uav6d52c.cn^
 ||ubln.top^
 ||uibqwl.xyz^
@@ -44427,6 +44433,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||wgpsfdg.cn^
 ||whqxj.xyz^
 ||whrc.xyz^
+||wmgocya.cn^
 ||wocexaa.cn^
 ||wotmvdc.cn^
 ||wpozwh.com^
@@ -44447,6 +44454,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||xlhnkpw.cn^
 ||xpdjsd.cn^
 ||xqcjfcb.cn^
+||xtzx.xyz^
 ||xwdsp.com^
 ||y88m2.top^
 ||yangliu.ink^
@@ -44472,19 +44480,10 @@ charlestownwyllie.oaklawnnonantum.com^
 ||zjai.xyz^
 ||zjttaqx.cn^
 ||zjws.xyz^
+||zk6.me^
 ||zvxwvny.cn^
 ||zw2b9.cn^
 ||zzngisyq.xyz^
-||ggsdogn.cn^
-||hhgxbxk.cn^
-||qingfeng.homes^
-||qibmrq.xyz^
-||xtzx.xyz^
-||oehwv.xyz^
-||cjkl.online^
-||kdegznb.cn^
-||wmgocya.cn^
-||huilianji.com^
 ||001adafg.xyz^
 ||0024aaaa.com^
 ||004fsdljasd.xyz^
