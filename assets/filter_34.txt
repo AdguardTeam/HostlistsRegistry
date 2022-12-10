@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-10T01:33:28.326Z
+! Last modified: 2022-12-10T06:06:35.442Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -3926,7 +3926,6 @@
 ||pdmsmrt.chevrolet.com^
 ||chewsrompedhemp.com^
 ||email-sendgrid-deep-linking.chewy.com^
-||chia.net^
 ||affiliate.chiaki.vn^
 ||clicker.chiaki.vn^
 ||smetrics.chicagobusiness.com^
@@ -9866,9 +9865,6 @@
 ||iyfnz.com^
 ||iyfubh.com^
 ||data-c849cc593c.iz.de^
-||xtrapath1.izatcloud.net^
-||xtrapath2.izatcloud.net^
-||xtrapath3.izatcloud.net^
 ||izea.com^
 ||izenda.com^
 ||izlenzi.com^
@@ -27750,6 +27746,12 @@
 
 ! Adult site
 @@|fapcat.com^
+
+! Optimized mobile GPS Data - Google
+@@|xtrapath*.izatcloud.net^
+
+! Chia blockchain
+@@|chia.net^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
