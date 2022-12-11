@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-11T21:05:02.935Z
+! Last modified: 2022-12-11T22:05:34.104Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -21793,6 +21793,20 @@
 ||zzotrack.com^
 ||zzux.com^
 ||zzzsleepisnicezzz.art^
+
+! Title: HaGeZi's Personal AdGuard Wildcard Rules
+! Description: My personal wildcard rules for AdGuard Home / AdGuard DNS
+! Homepage: https://github.com/hagezi/dns-blocklists
+! Issues: https://github.com/hagezi/dns-blocklists/issues
+! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
+! Expires: Updated regularly
+! Syntax: AdGuard
+
+! TikTok Fingerprinting
+||log*.tiktokv.com^
+||rtlog*.tiktokv.com^
+||xlog*.tiktokv.com^
+||mon*.tiktokv.com^
 
 ! Title: HaGeZi's Fake DNS Blocklist
 ! Description: Protects against internet scams, traps & fakes! Blocks fake stores, -news, -science, -streaming, rip-offs, cost traps and co.
