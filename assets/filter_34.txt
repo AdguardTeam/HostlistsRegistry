@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-11T16:05:34.734Z
+! Last modified: 2022-12-11T21:05:02.935Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 11 Dez 2022 15:43 UTC
-! Version: 2022.1211.1543.45
+! Last modified: 11 Dez 2022 20:30 UTC
+! Version: 2022.1211.2030.29
 ! Syntax: AdBlock
-! Domains: 21773
+! Domains: 21772
 !
 ||000webhostapp.com^
 ||00px.net^
@@ -2149,8 +2149,7 @@
 ||appcpi.net^
 ||mantis-prod-reach.cdn.appdomain.cloud^
 ||cf.appdsp.mobi^
-||api.appdynamics.com^
-||saas.appdynamics.com^
+||appdynamics.com^
 ||trk.apperol.com^
 ||appflood.com^
 ||tenant-content.apm.appfolio-analytics.com^
@@ -29853,6 +29852,14 @@
 ! Portal news
 @@|ac24horas.com^
 @@|www.ac24horas.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/99
+@@|uber.space^
+@@|www.uber.space^
+
+! Xiaomi - filter download gallery editor
+@@|f*.market.xiaomi.com^
+@@|f*.market.mi-img.com^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
