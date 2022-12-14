@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-14T01:33:49.730Z
+! Last modified: 2022-12-14T04:05:39.985Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15003,7 +15003,6 @@
 ||d.mradx.net^
 ||d0.mradx.net^
 ||m.mradx.net^
-||r.mradx.net^
 ||r0.mradx.net^
 ||smetrics.mrappliance.com^
 ||mrbasic.com^
@@ -15509,7 +15508,6 @@
 ||pages.netbase.com^
 ||netcatx.com^
 ||netcomics.com^
-||netcoresmartech.com^
 ||analytics.netdirector.auto^
 ||data-9dc3fcd9b4.netdoktor.de^
 ||data-fbb8842b89.netdoktor.de^
@@ -32479,6 +32477,13 @@
 ! Matomo Software
 @@|matomo.org^
 @@|www.matomo.org^
+
+! cgv.vn - Can't choose seats when booking
+@@|netcoresmartech.com^
+@@|www.netcoresmartech.com^
+
+! Images on mail.ru
+@@|r.mradx.net^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
