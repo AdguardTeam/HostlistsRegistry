@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-15T09:05:29.186Z
+! Last modified: 2022-12-15T13:09:40.545Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 15 Dez 2022 08:37 UTC
-! Version: 2022.1215.0837.28
+! Last modified: 15 Dez 2022 12:49 UTC
+! Version: 2022.1215.1249.36
 ! Syntax: AdBlock
-! Domains: 25058
+! Domains: 25071
 !
 ||000webhostapp.com^
 ||004809f9da.com^
@@ -5531,6 +5531,7 @@
 ||smetrics.sainsburysbank.co.uk^
 ||salesfire.co.uk^
 ||cookie-bar.salessquad.co.uk^
+||samsbusinesssolutions.co.uk^
 ||analytics.santander.co.uk^
 ||events.santander.co.uk^
 ||smetrics.santander.co.uk^
@@ -5866,6 +5867,7 @@
 ||smetrics.sbs.com.au^
 ||discover-metrics.cloud.seek.com.au^
 ||tracking.engineering.cloud.seek.com.au^
+||sfimcdnupdate.sf-tech.com.cn^
 ||shopconvert.com.br^
 ||log-collector.shopee.com.br^
 ||log-collector.shopee.com.my^
@@ -6049,6 +6051,7 @@
 ||comssite.com^
 ||analytics.comunio.de^
 ||con.com^
+||conanca.org^
 ||conary-invered.com^
 ||conative.de^
 ||conative.network^
@@ -6736,6 +6739,7 @@
 ||openlocation-drcn.platform.dbankcloud.com^
 ||dblks.net^
 ||dbmail.com^
+||dboshipping.com^
 ||dc-storm.com^
 ||dc-tag.jp^
 ||dad-api.dcard.tw^
@@ -8638,6 +8642,7 @@
 ||chstats01.eedition.net^
 ||web.care.eehealth.org^
 ||eehuzaih.com^
+||eema.org^
 ||eeongous.com^
 ||eephaush.com^
 ||eezegrip.net^
@@ -8739,6 +8744,7 @@
 ||elevensports.club^
 ||elitechnology.com^
 ||elitegadgetinsider.com^
+||elitescredits.com^
 ||data-aebdc1adf0.elle.de^
 ||res.elle.fr^
 ||info.ellevationeducation.com^
@@ -11658,6 +11664,7 @@
 ||hs-analytics.com^
 ||hs-analytics.net^
 ||hs-banner.com^
+||js.hs-scripts.com^
 ||js-eu1.hs-scripts.com^
 ||info.hsabank.com^
 ||hsadspixel.net^
@@ -14931,6 +14938,7 @@
 ||mixi.media^
 ||mixmarket.biz^
 ||api.mixpanel.com^
+||api-eu.mixpanel.com^
 ||api-js.mixpanel.com^
 ||api-secure.mixpanel.com^
 ||decide.mixpanel.com^
@@ -16575,6 +16583,7 @@
 ||nzz.d3.sc.omtrdc.net^
 ||philipslighting.d3.sc.omtrdc.net^
 ||deutschebahn.sc.omtrdc.net^
+||iqdigitalmediamarketinggmbh.sc.omtrdc.net^
 ||kroger.sc.omtrdc.net^
 ||nbcstreaming.sc.omtrdc.net^
 ||nbcume.sc.omtrdc.net^
@@ -20491,7 +20500,9 @@
 ||p.sug.so.com^
 ||tracking.eloq.soa.org^
 ||soaheeme.net^
+||soapfighters.com^
 ||sobakenchmaphk.com^
+||sobrecontexto.com^
 ||iuryhk.soccer.com^
 ||socdm.com^
 ||social.com^
@@ -22426,6 +22437,7 @@
 ||truesearches.net^
 ||truex.com^
 ||truffle.bid^
+||truffle.one^
 ||trugaze.io^
 ||sstats.truist.com^
 ||smetric.trulia.com^
@@ -24424,6 +24436,7 @@
 ||nats.xing.com^
 ||stan.xing.com^
 ||a2.xinhuanet.com^
+||xintiandinicaragua.com^
 ||xiti.com^
 ||xiusebf1.com^
 ||free.xjs.lol^
@@ -31079,7 +31092,8 @@
 @@|instagram.com^
 @@|www.instagram.com^
 @@|lm.facebook.com^
-@@|mqtt-*.facebook.com^
+@@|mqtt*.facebook.com^
+@@|msgr*.facebook.com^
 @@|platform.instagram.com^
 @@|scontent-*.xx.fbcdn.net^
 @@|star*.facebook.com^
@@ -31118,6 +31132,7 @@
 @@|apis.google.com^
 @@|appsbackup-pa.clients6.google.com^
 @@|appsbackup-pa.googleapis.com^
+@@|calendar.google.com^
 @@|clients*.google.com^
 @@|clientservices.googleapis.com^
 @@|commondatastorage.googleapis.com^
@@ -31158,6 +31173,7 @@
 @@|optimizationguide-pa.googleapis.com^
 @@|padlet-uploads.storage.googleapis.com^
 @@|people-pa.googleapis.com^
+@@|pki-goog.l.google.com^
 @@|play.google.com^
 @@|playmoviesdfe-pa.googleapis.com^
 @@|redirector.googlevideo.com^
@@ -31166,12 +31182,15 @@
 @@|semanticlocation-pa.googleapis.com^
 @@|sites.google.com^
 @@|suggestqueries.google.com^
+@@|suggestqueries.l.google.com^
 @@|supl.google.com^
 @@|support.google.com^
 @@|telephonyspamprotect-pa.googleapis.com^
 @@|userlocation.googleapis.com^
 @@|video-stats.l.google.com^
+@@|youtube-ui.l.google.com^
 @@|yt3.ggpht.com^
+
 ! Not used for tracking, metrics, analytics
 @@||metric.gstatic.com^
 
