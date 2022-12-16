@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-16T21:05:24.826Z
+! Last modified: 2022-12-16T23:05:23.722Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15863,7 +15863,6 @@
 ||pluto.r.powuta.com^
 ||pozitron.com^
 ||ppcnt.pro^
-||ppcprotect.com^
 ||mx0a-00191d01.pphosted.com^
 ||mx0a-0021cb01.pphosted.com^
 ||api.afdback.ppsimg.com^
@@ -22700,6 +22699,7 @@
 
 ! Ads
 ||*met-vgwort-de.cdn.ampproject.org^
+||cdn.scarabresearch.com^
 
 ! Amazon Device Metrics
 ||device-metrics-*.amazon.com^
@@ -30996,6 +30996,13 @@
 ! provides reference material such as word definitions to legal terminology
 @@|nolo.com^
 @@|www.nolo.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/107
+@@|monitor.ppcprotect.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/107
+@@|ppcprotect.com^
+@@|www.ppcprotect.com^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
