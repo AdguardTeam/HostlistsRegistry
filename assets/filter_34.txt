@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-16T01:31:57.984Z
+! Last modified: 2022-12-16T05:05:25.802Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -17343,7 +17343,6 @@
 ||secure.pass8heal.com^
 ||images.passendo.com^
 ||passfixx.com^
-||passion.io^
 ||passtechusa.com^
 ||password-update.com^
 ||passwordssaturatepebble.com^
@@ -33551,6 +33550,10 @@
 ! legal shop
 @@|hockerty.de^
 @@|www.hockerty.de^
+
+! https://github.com/StevenBlack/hosts/issues/2174
+@@|passion.io^
+@@|www.passion.io^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
