@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-16T05:05:25.802Z
+! Last modified: 2022-12-16T08:06:15.536Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -3990,7 +3990,6 @@
 ||bongacash.com^
 ||bongdadem.net^
 ||bonginoads.com^
-||bonialconnect.com^
 ||tracking.bonn.de^
 ||bonne-terre-data-layer.com^
 ||tracking.bonnier.news^
@@ -33554,6 +33553,14 @@
 ! https://github.com/StevenBlack/hosts/issues/2174
 @@|passion.io^
 @@|www.passion.io^
+
+! provides reference material such as word definitions to legal terminology
+@@|nolo.com^
+@@|www.nolo.com^
+
+! REWE Prospekt
+@@|bonialconnect.com^
+@@|www.bonialconnect.com^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
