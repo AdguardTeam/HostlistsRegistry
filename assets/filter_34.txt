@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-18T08:07:13.223Z
+! Last modified: 2022-12-18T13:06:41.005Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -12325,7 +12325,6 @@
 ||libring.com^
 ||licasd.com^
 ||snap.licdn.com^
-||metrics.lidl.com^
 ||create.lidstatic.com^
 ||lifeabsolution.com^
 ||sourcepoint.lifehacker.com^
@@ -30266,7 +30265,7 @@
 @@|hugedomains.com^
 @@|www.hugedomains.com^
 
-! Videos on huffpost.com
+! Videos on huffpost.com adn other sites
 @@|capi.connatix.com^
 @@|cd.connatix.com^
 @@|cds.connatix.com^
@@ -31569,6 +31568,9 @@
 
 ! required to use Space Pool mobile app
 @@|api-mainnet.pool.space^
+
+! required for LIDL login
+@@|metrics.lidl.com^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
