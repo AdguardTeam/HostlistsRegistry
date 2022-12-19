@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-18T20:05:25.300Z
+! Last modified: 2022-12-19T01:32:10.542Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 18 Dez 2022 19:29 UTC
-! Version: 2022.1218.1929.48
+! Last modified: 19 Dez 2022 00:20 UTC
+! Version: 2022.1219.0020.20
 ! Syntax: AdBlock
-! Domains: 23791
+! Domains: 23792
 !
 ||000webhostapp.com^
 ||004809f9da.com^
@@ -2845,6 +2845,7 @@
 ||awprt.com^
 ||tracker.awr.im^
 ||awrcaverybrstuktdybstr.com^
+||te.ip-prod.aws-cbc.cloud^
 ||track.ip-prod.aws-cbc.cloud^
 ||gdpr-banner.awsmpsa.com^
 ||awstats.cloud^
@@ -3513,6 +3514,7 @@
 ||bitmedia.io^
 ||bitmedianetwork.com^
 ||analytics-ingress-global.bitmovin.com^
+||licensing.bitmovin.com^
 ||bitonclick.com^
 ||cod.bitrec.com^
 ||analytics.bitrix.info^
@@ -7127,7 +7129,6 @@
 ||async-px.dynamicyield.com^
 ||async-px-eu.dynamicyield.com^
 ||cdn.dynamicyield.com^
-||cdn-eu.dynamicyield.com^
 ||em.dynamicyield.com^
 ||px.dynamicyield.com^
 ||px-eu.dynamicyield.com^
@@ -23107,10 +23108,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 18 Dez 2022 19:36 UTC
-! Version: 2022.1218.1936.27
+! Last modified: 18 Dez 2022 23:55 UTC
+! Version: 2022.1218.2355.00
 ! Syntax: AdBlock
-! Domains: 5877
+! Domains: 5875
 !
 ||willhaben.at.04300.id^
 ||11trikots.com^
@@ -26656,7 +26657,6 @@
 ||moonsoy.com^
 ||morbidtales.de^
 ||moreclothes.store^
-||moredates.com^
 ||mosano.de^
 ||mosessions.com^
 ||mosetravel.de^
@@ -30404,7 +30404,7 @@
 !+ googletagmanager.com
 
 ! Site layout on https://www.mybestbrands.de/
-! cdn*.dynamicyield.com
+@@|cdn-eu.dynamicyield.com^
 
 ! Breaks site layout on MyDirtyHobby
 @@||mdhcdn.com^
@@ -31016,8 +31016,9 @@
 ! CDN - Breaks https://academic.oup.com/comjnl/article-abstract/62/8/1106/5298776?login=false
 @@|oup.silverchair-cdn.com^
 
-! Edeka Marktsuche
+! Edeka Marktsuche / Cookies
 @@|cdn.tagcommander.com^
+@@|cdn.trustcommander.net^
 
 ! ORF TVThek App stucks on loading
 @@|at-config.sensic.net^
@@ -31037,7 +31038,7 @@
 ! Yandex Single Sign On
 @@||passport.yandex.ru^
 
-!  MX server for Yandex.Mail
+! MX server for Yandex.Mail
 @@|mx.yandex.ru^
 
 ! Yandex breaking
@@ -31133,11 +31134,12 @@
 @@|recommender*.scarabresearch.com^
 @@|images.cdn.scarabresearch.com^
 
-! Brekas paypal pay process on some german shopping sites
+! Breaks paypal pay process on some german shopping sites
 @@|*paypal*.siteintercept.qualtrics.com^
 
 ! Aim Lab aimlab.gg passwort reset
 @@|ct.sendgrid.net^
+
 ! Code examples in R
 @@|stat.ethz.ch^
 
