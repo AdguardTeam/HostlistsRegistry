@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-12-07T09:05:44.143Z
+! Last modified: 2022-12-20T02:23:35.535Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -10,6 +10,13 @@
 ! Source name: Dandelion Sprout's Anti-Malware List
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
+! https://github.com/DandelionSprout/adfilt/issues/659
+||*.discount^
+! Experimental attempt to cover a few hardcore spam ASNs
+
+
+
+
 
 
 ! ——— Attempted removal of Google search result entries that lead to the above top-level domains (Advanced adblockers only) ———
@@ -118,6 +125,7 @@
 ! https://www.windowsdispatch.com/fix-system-restore-0x81000203-error-code/
 ! https://dlldownloads.com/xlive-dll/
 ! https://windowsreport.com/find-remove-duplicate-files-windows-10/
+! https://windowsreport.com/how-to-update-roblox/ (08/12/2022)
 ! https://appuals.com/pr-connect-reset-error/
 ! ¤¤¤ "Driver" download sites that instead download PUP tools ¤¤¤
 ||driver-soft.com^
@@ -2037,6 +2045,7 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/123544
 ||saferedirects.xyz^
 ||online-guard.com^
+
 ! https://twitter.com/iam_py_test/status/1545164642346930176
 ||amazon-security-info.lnk.to^
 ||verif-caseid9871-verizonrview.com^
@@ -4776,6 +4785,206 @@
 ||139.45.197.239^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136390
 ||glthub.
+! https://app.any.run/tasks/67907c11-6877-4c38-932f-2cf09ee4e434
+||adblock-chrome.net^
+! https://github.com/AdguardTeam/AdguardFilters/issues/137635
+||aaolh.icu^
+||aboqs.icu^
+||acukl.icu^
+||adbom.icu^
+||adevc.xyz^
+||afegvuaaj.icu^
+||agidd.icu^
+||agsuxel.icu^
+||agvuviemj.icu^
+||ahxerao.icu^
+||alexaqolt.icu^
+||alobpu.icu^
+||amkuz.icu^
+||anemucn.icu^
+||asfokal.xyz^
+||asofofd.icu^
+||aspeiyt.icu^
+||awatm.icu^
+||ayuci.xyz^
+||ayxow.icu^
+||bodoji.xyz^
+||boexat.icu^
+||boutus.icu^
+||cecoer.sbs^
+||celihutal.icu^
+||cemec.xyz^
+||ciamzi.icu^
+||cieloqjai.icu^
+||cigov.icu^
+||coitefwoy.xyz^
+||cosiv.icu^
+||dovuuf.icu^
+||duekro.icu^
+||ebesmadub.icu^
+||ecemz.icu^
+||edrekee.icu^
+||efropu.icu^
+||eftote.xyz^
+||ehgum.xyz^
+||ehhop.icu^
+||ehwiwix.icu^
+||emadey.xyz^
+||enuvze.icu^
+||enwad.icu^
+||eqaxad.icu^
+||eqquafe.xyz^
+||equjb.xyz^
+||ercemiq.icu^
+||erwiyek.icu^
+||esbukoj.icu^
+||etodsicet.icu^
+||evabayabg.xyz^
+||evoyy.icu^
+||exnuv.icu^
+||exujurdic.icu^
+||ezkid.icu^
+||feiqs.icu^
+||fiocujm.icu^
+||fumob.icu^
+||fuuriheyd.xyz^
+||gijiive.icu^
+||gubogej.icu^
+||homeer.icu^
+||huizonebi.xyz^
+||igtayow.xyz^
+||igulat.icu^
+||iguvuj.icu^
+||ihdoarm.xyz^
+||ihsaer.icu^
+||imibped.xyz^
+||inizunn.xyz^
+||iqolja.icu^
+||itunw.icu^
+||iwigiti.icu^
+||iyuwusiwl.icu^
+||izehmipad.xyz^
+||izqiuq.icu^
+||izxiarb.xyz^
+||jaevkamav.icu^
+||japaz.icu^
+||jeakencoj.icu^
+||jeife.icu^
+||jiedus.icu^
+||jiuhfi.icu^
+||joquk.icu^
+||kioypone.icu^
+||kodaafokp.xyz^
+||kouqm.xyz^
+||kuheyoivs.xyz^
+||laimi.icu^
+||laujajv.icu^
+||leanxio.xyz^
+||lepoavxad.icu^
+||losik.icu^
+||luuyegi.icu^
+||mamel.icu^
+||miuqf.xyz^
+||moacahl.xyz^
+||muoxx.icu^
+||naafmuf.icu^
+||neliiht.icu^
+||ocilirt.icu^
+||oclac.icu^
+||ocwejudoy.cfd^
+||ofujg.icu^
+||ofzub.icu^
+||ohhoom.icu^
+||ohpiolexi.icu^
+||ojihifr.xyz^
+||ojudh.icu^
+||okibeff.xyz^
+||olciweoxo.xyz^
+||omdivaisg.icu^
+||opudm.icu^
+||oqikk.icu^
+||oqrumeen.icu^
+||orafukz.xyz^
+||osayb.icu^
+||osekv.xyz^
+||otgamautm.icu^
+||otucxiixa.xyz^
+||ovirobis.icu^
+||oxcxoyh.icu^
+||oxesetf.xyz^
+||oygfazokb.xyz^
+||oyomuv.icu^
+||peqipuah.icu^
+||peroguukg.xyz^
+||pesaocapv.icu^
+||pixameqae.icu^
+||poita.icu^
+||poqep.icu^
+||puodaqi.icu^
+||qeipyoigg.icu^
+||qoqeerx.icu^
+||radiw.icu^
+||ralaw.icu^
+||ramifuf.icu^
+||rauchen.icu^
+||roubn.icu^
+||rouludv.icu^
+||saitg.icu^
+||sigfewhom.icu^
+||siiwafami.xyz^
+||soeyv.xyz^
+||suxot.xyz^
+||tetuuxap.icu^
+||tiinepe.icu^
+||tuacmegeq.icu^
+||ublerok.icu^
+||ubsualmux.icu^
+||ubteipt.icu^
+||udegkud.icu^
+||ufeqve.xyz^
+||uffaiduch.icu^
+||uggfzaj.icu^
+||ugxuwi.icu^
+||uhemedexi.xyz^
+||uhonb.xyz^
+||ujihsaruv.icu^
+||ujqafeuxp.xyz^
+||uligwun.icu^
+||umexesong.xyz^
+||umojsiu.icu^
+||upsawam.icu^
+||uqukkia.icu^
+||uriks.xyz^
+||uszow.icu^
+||utonirn.icu^
+||uvlitiu.icu^
+||uwaxofs.xyz^
+||uwrah.icu^
+||uxobx.xyz^
+||uymaeq.icu^
+||vaublos.icu^
+||vayamuegn.icu^
+||veena.icu^
+||vovig.icu^
+||vuojmiopv.icu^
+||vusat.icu^
+||wehiqes.xyz^
+||wenooycem.icu^
+||weuxl.icu^
+||wezirol.icu^
+||woyagui.icu^
+||wuixgev.icu^
+||xaxuxexal.icu^
+||xoliugz.icu^
+||yeyeno.icu^
+||yuenxaop.xyz^
+||yugfvan.icu^
+||yugiidv.xyz^
+||zaolutd.icu^
+||zigaahm.icu^
+||44.228.230.225^
+||50.112.124.170^
+||100.20.104.229^
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
