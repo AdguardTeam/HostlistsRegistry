@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2022-12-20T02:23:35.535Z
+! Last modified: 2022-12-21T00:18:06.834Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -10,8 +10,17 @@
 ! Source name: Dandelion Sprout's Anti-Malware List
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
+! International topical domains that have consistently horrendous scores on watchlists of bad TLDs, and whose use for legit purposes is practically non-existent.
+||*.loan^
+||*.gdn^
+||*.bid^
+||*.ooo^
+! https://github.com/AdguardTeam/AdguardFilters/issues/131156
+||*.sbs^
 ! https://github.com/DandelionSprout/adfilt/issues/659
 ||*.discount^
+! https://github.com/AdguardTeam/AdguardFilters/issues/137635
+||*.cfd^
 ! Experimental attempt to cover a few hardcore spam ASNs
 
 
@@ -1987,6 +1996,10 @@
 ||top-captcharesolver.
 ||winrar-desktop.com^
 
+/^46\.161\.27\.[0-9]{1,3}$/
+/^78\.128\.112\.[0-9]{1,3}$/
+/^179\.60\.146\.[0-9]{1,3}$/
+
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121544
 ||trafredirtds.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121772
@@ -2366,6 +2379,15 @@
 ||zfcurqe.art^
 ||zuginmw.art^
 
+/^178\.253\.[0-7]\.[0-9]{1,3}$/
+/^178\.253\.14\.[0-9]{1,3}$/
+/^178\.253\.15\.[0-9]{1,3}$/
+/^178\.253\.2[0145]\[0-9]{1,3}$/
+/^178\.253\.3[04-7]\.[0-9]{1,3}$/
+/^178\.253\.46\.[0-9]{1,3}$/
+/^178\.253\.47\.[0-9]{1,3}$/
+/^178\.253\.54\.[0-9]{1,3}$/
+
 ||85.17.31.152^
 ||95.211.26.202^
 ! https://kommunikasjon.ntb.no/pressemelding/power-advarer-mot-sms-svindel?publisherId=17847615&releaseId=17937583
@@ -2383,6 +2405,9 @@
 ||wznp.link^
 ||158.247.212.220^
 ||165.227.168.212^
+
+! https://www.reddit.com/r/engrish/comments/w6u4uy/received_this_text_message_yesterday_i_am_very/
+/^162\.241\.115\.[0-9]{1,3}$/
 
 ! https://dinside.dagbladet.no/mobil/ikke-la-deg-friste/76730599
 ||k-yw.com^
@@ -9811,6 +9836,7 @@
 ||192.243.59.20^
 
 /^(https?://)?192\.243\.59\.[0-9]{1,3}($|/)/
+/^192\.243\.59\.[0-9]{1,3}$/
 
 ! rule34hentai.net when uBlock Filters and AdGuard Base are turned off
 ||eivbjsegbino.com^
@@ -10103,6 +10129,21 @@
 ||194.226.139.7^
 ||95.181.157.36^
 ||95.181.172.204^
+
+/^194\.226\.139\.[0-9]{1,3}$/
+! AS209813 (https://github.com/AdguardTeam/AdguardFilters/issues/114618#issuecomment-1100702530; currently specific to tools that support CIDR blocking)
+/^5\.8\.67\.[0-9]{1,3}$/
+/^5\.101\.45\.[0-9]{1,3}$/
+/^5\.188\.178\.[0-9]{1,3}$/
+/^5\.188\.200\.[0-9]{1,3}$/
+/^5\.188\.203\.[0-9]{1,3}$/
+/^5\.189\.217\.[0-9]{1,3}$/
+/^5\.189\.252\.[0-9]{1,3}$/
+/^46\.148\.113\.[0-9]{1,3}$/
+/^46\.148\.114\.[0-9]{1,3}$/
+/^46\.161\.31\.[0-9]{1,3}$/
+/^91\.243\.41\.[0-9]{1,3}$/
+/^91\.243\.42\.[0-9]{1,3}$/
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/120349
 ||prerogativebritishdial.com^
