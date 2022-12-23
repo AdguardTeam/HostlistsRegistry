@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-23T01:33:31.073Z
+! Last modified: 2022-12-23T11:05:07.819Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -32216,6 +32216,9 @@
 
 ! Images in various mails, e.g. Doktoronline
 @@||msdp1.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/119
+@@|cdn-116.anonfiles.com^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
