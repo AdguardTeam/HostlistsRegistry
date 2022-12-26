@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-26T18:05:48.466Z
+! Last modified: 2022-12-26T20:05:31.329Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 26 Dez 2022 18:03 UTC
-! Version: 2022.1226.1803.00
+! Last modified: 26 Dez 2022 19:57 UTC
+! Version: 2022.1226.1957.03
 ! Syntax: AdBlock
-! Domains: 23374
+! Domains: 23373
 !
 ||004809f9da.com^
 ||00px.net^
@@ -9417,7 +9417,6 @@
 ||federatedml-pa.googleapis.com^
 ||firebaselogging.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
-||growth-pa.googleapis.com^
 ||rhui.googlecloud.com^
 ||googlecommerce.com^
 ||googleinfo.se^
@@ -22616,7 +22615,8 @@
 ! Amazon Sponsored Ads (firetv)
 ||aviary.amazon.*^
 
-! Analytics / Tracker
+! Analytics / Tracker / Privacy
+||cdn-*.onetrust.com^
 ||demdex.net^
 ||iocnt.de^
 ||iocnt.net^
@@ -22644,6 +22644,7 @@
 ! Microsft Telemetry
 ||*telemetry.officeapps.live.com^
 ||events*.data.microsoft.com^
+||events*.data.trafficmanager.net^
 ||events*.data.msn.*^
 ||telemetry*.microsoft.com^
 ||vortex*.data.microsoft.com^
@@ -22675,13 +22676,18 @@
 ||xlog*.byteoversea.com^
 ||mon*.tiktokv.com^
 ||mon*.byteoversea.com^
+||mcs*.tiktok.com^
+||mcs*.tiktokv.com^
+||mssdk*.tiktok.com^
+||mssdk*.tiktokv.com^
+||mssdk*.byteoversea.com^
 ||gecko*.tiktokv.com^
 ||gecko*.byteoversea.com^
 ||frontier*.tiktokv.com^
 ||frontier*.byteoversea.com^
 ||pitaya*.tiktokv.com^
 
-! Video Ads
+! Video Ads / Tracking
 
 ! Title: HaGeZi's Fake DNS Blocklist
 ! Description: Protects against internet scams, traps & fakes! Blocks fake stores, -news, -science, -streaming, rip-offs, cost traps and co.
@@ -28786,6 +28792,7 @@
 @@|www.google.de^
 @@|googleapis.com^
 @@|www.googleapis.com^
+@@|growth-pa.googleapis.com^
 @@|gsacollections-pa.googleapis.com^
 @@|gstatic.com^
 @@|www.gstatic.com^
