@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-26T10:05:19.073Z
+! Last modified: 2022-12-26T16:05:49.353Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -29367,8 +29367,11 @@
 @@|production-cmp.isgprivacy.cbsi.com^
 
 ! Videos on 9news.com.au
-! *.api.brightcove.com
-@@|edge.api.brightcove.com^
+@@||api.brightcove.com^
+! edge.api.brightcove.com
+
+! Sky Sport
+! edge-auth.api.brightcove.com
 
 ! domain reseller
 @@|afternic.com^
@@ -30801,6 +30804,16 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/122
 @@||performfeeds.com^
+
+! Breaks LinkedIn
+@@||cdx.cedexis.net^
+
+! TSB Bank mobile banking app
+@@|check2.tsb.co.uk^
+@@|h-tsb.online-metrix.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/127
+@@|tracking.post.japanpost.jp^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
