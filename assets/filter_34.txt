@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2022-12-28T14:05:07.560Z
+! Last modified: 2022-12-28T21:05:02.733Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 28 Dez 2022 13:53 UTC
-! Version: 2022.1228.1353.12
+! Last modified: 28 Dez 2022 20:44 UTC
+! Version: 2022.1228.2044.40
 ! Syntax: AdBlock
-! Domains: 25107
+! Domains: 25147
 !
 ||004809f9da.com^
 ||00px.net^
@@ -2416,6 +2416,7 @@
 ||sdk.appbrain.com^
 ||appcelerator.com^
 ||appcelerator.net^
+||in.appcenter.ms^
 ||appclick.co^
 ||appcloudbox.net^
 ||appcloudgoal.com^
@@ -2564,6 +2565,7 @@
 ||apptjmp.com^
 ||apptornado.com^
 ||apptospace.com^
+||apptrace.com^
 ||apptracker.stream^
 ||tracking.apptrackerlink.com^
 ||appyet.com^
@@ -3070,6 +3072,7 @@
 ||backmerriment.com^
 ||backority.ir^
 ||backtory.com^
+||events.backtrace.io^
 ||backup-helper.com^
 ||backup-leader.com^
 ||backup-simple.com^
@@ -9979,6 +9982,7 @@
 ||fcmatch.google.com^
 ||fundingchoices.google.com^
 ||fundingchoicesmessages.google.com^
+||crashlytics2.l.google.com^
 ||pagead-googlehosted.l.google.com^
 ||ssl-google-analytics.l.google.com^
 ||static-doubleclick-net.l.google.com^
@@ -13059,6 +13063,7 @@
 ||smetrics.loewshotels.com^
 ||activate.loft.com^
 ||smetrics.loft.com^
+||api.loganalytics.io^
 ||logbor.com^
 ||logdown.com^
 ||logentries.com^
@@ -14320,6 +14325,7 @@
 ||monkeysloveyou.com^
 ||monkquestion.com^
 ||eulerian.monoprix.fr^
+||sny.monosnap.com^
 ||monotonoustuneunderestimate.com^
 ||smetrics.monsanto.com^
 ||monsido.com^
@@ -15901,6 +15907,7 @@
 ||track.opentable.com^
 ||track.opentable.de^
 ||tracking.opentable.com^
+||opentelemetry.io^
 ||opentracker.net^
 ||openx.com^
 ||openx.net^
@@ -17329,7 +17336,7 @@
 ||qchannel04.cn^
 ||qcinternal.io^
 ||qclk.net^
-||ios.bugly.qcloud.com^
+||bugly.qcloud.com^
 ||log.qvb.qcloud.com^
 ||qebuvi.xyz^
 ||qertentin.com^
@@ -17719,7 +17726,7 @@
 ||hb-t5u9.raps.ravm.tv^
 ||smetrics.ray-ban.com^
 ||sshhfy.ray-ban.com^
-||cdn.raygun.io^
+||raygun.io^
 ||rayjump.com^
 ||yfepff.raymourflanigan.com^
 ||razdvabm.com^
@@ -19275,6 +19282,7 @@
 ||adservice.sigmob.cn^
 ||dc.sigmob.cn^
 ||signalayer.com^
+||cdn.signalfx.com^
 ||community.service.signalr.net^
 ||significantoperativeclearance.com^
 ||www.assets.dialogue.signify.com^
@@ -22534,6 +22542,7 @@
 ||widget.cdn.vidyome.com^
 ||stats.vidyome.com^
 ||vieldeold.xyz^
+||sentry.vieon.vn^
 ||vieon-tracking.vieon.vn^
 ||ad.vietbao.vn^
 ||vietdorje.com^
@@ -23802,6 +23811,7 @@
 ||adsdk.yandex.ru^
 ||an.yandex.ru^
 ||appmetrica.yandex.net^
+||crash-reports.browser.yandex.net^
 ||browser-updater.yandex.net^
 ||bs.yandex.ru^
 ||bs-meta.yandex.ru^
@@ -24322,8 +24332,18 @@
 ! Ads
 ||*met-vgwort-de.cdn.ampproject.org^
 ||cdn.scarabresearch.com^
+||pijama.*.elasticbeanstalk.com^
+||adserver.*.yahoodns.net^
+||production-adserver-*.amazonaws.com^
+
+! Amazon Shopping
+||assoc-amazon.
+||amazon-adsystem.com^
+||unagi*.amazon.
+||mads*.amazon.
 
 ! Amazon Device Metrics
+||mobileanalytics.*.amazonaws.com^
 ||device-metrics-*.amazon.com^
 ! ||dxz5jxhrrzigf.cloudfront.net^
 ! ||web.diagnostic.networking.aws.dev^
@@ -24332,7 +24352,7 @@
 ||*telemetry.insights.video.a2z.com^
 
 ! Amazon Sponsored Ads (firetv)
-||aviary.amazon.*^
+||aviary.amazon.
 
 ! Analytics / Tracker / Privacy
 ||cdn-*.onetrust.com^
@@ -24343,6 +24363,10 @@
 ||*track.bild.de^
 ||track*.sevensenders.com^
 ||logentries.com^$important
+||collector-*.px-cloud.net^
+||collector-*.pxchk.net^
+||collector-*.px-cdn.net^
+||collector-*.perimeterx.net^
 
 ! Apple
 ||*analytics-events.apple.com^
@@ -24382,21 +24406,27 @@
 
 ! Smart TV
 ||log*.vewd.com^
+||collector-*.tvsquared.com^
 
 ! TikTok Fingerprinting
 ||analytics*.tiktok.com^
 ||ads*.tiktok.com^
 ||log*.tiktok.com^
 ||log*.tiktokv.com^
+||log*.snssdk.com^
 ||log*.byteoversea.com^
+||rtc-log*.tiktokv.com^
 ||rtlog*.tiktokv.com^
+||rtlog*.snssdk.com^
 ||rtlog*.byteoversea.com^
 ||xlog*.tiktokv.com^
+||xlog*.snssdk.com^
 ||xlog*.byteoversea.com^
 ||mon*.tiktokv.com^
 ||mon*.byteoversea.com^
 ||mcs*.tiktok.com^
 ||mcs*.tiktokv.com^
+||mcs*.snssdk.com^
 ||mssdk*.tiktok.com^
 ||mssdk*.tiktokv.com^
 ||mssdk*.byteoversea.com^
@@ -24405,6 +24435,7 @@
 ||frontier*.tiktokv.com^
 ||frontier*.byteoversea.com^
 ||pitaya*.tiktokv.com^
+||ib.snssdk.com^
 
 ! Video Ads / Tracking
 
@@ -30237,59 +30268,6 @@
 ! https://github.com/Perflyst/PiHoleBlocklist/issues/138
 @@|mas-ext.amazon.com^
 
-! Amazon Shopping
-@@||images-amazon.com^
-@@|aax*.amazon-adsystem.com^
-@@|aax*.amazon.co.uk^
-@@|aax*.amazon.com^
-@@|aax*.amazon.com.be^
-@@|aax*.amazon.de^
-@@|aax*.amazon.es^
-@@|aax*.amazon.fr^
-@@|aax*.amazon.in^
-@@|aax*.amazon.it^
-@@|c.amazon-adsystem.com^
-@@|dp-gw-*.amazon.com^
-@@|fls-*.amazon-adsystem.com^
-@@|fls-*.amazon.ae^
-@@|fls-*.amazon.ca^
-@@|fls-*.amazon.cn^
-@@|fls-*.amazon.co.jp^
-@@|fls-*.amazon.co.uk^
-@@|fls-*.amazon.com^
-@@|fls-*.amazon.com.au^
-@@|fls-*.amazon.com.be^
-@@|fls-*.amazon.com.br^
-@@|fls-*.amazon.com.mx^
-@@|fls-*.amazon.de^
-@@|fls-*.amazon.es^
-@@|fls-*.amazon.fr^
-@@|fls-*.amazon.in^
-@@|fls-*.amazon.it^
-@@|fls-*.amazon.nl^
-@@|fls-*.amazon.sa^
-@@|fls-*.amazon.se^
-@@|fls-*.amazon.sg^
-@@|rcm-*.amazon.com^
-@@|rcm-*.amazon.de^
-@@|unagi-*.amazon.com^
-@@|unagi.amazon.cn^
-@@|unagi.amazon.co.jp^
-@@|unagi.amazon.co.uk^
-@@|unagi.amazon.com^
-@@|unagi.amazon.com.au^
-@@|unagi.amazon.com.be^
-@@|unagi.amazon.com.br^
-@@|unagi.amazon.de^
-@@|unagi.amazon.es^
-@@|unagi.amazon.fr^
-@@|unagi.amazon.in^
-@@|unagi.amazon.it^
-! CNAME fls-*.amazon.com
-@@||forester.a2z.com^
-! gateway.prod.*.forester.a2z.com
-! endpoint.prod.*.forester.a2z.com
-
 ! Amazon Video
 @@||aiv-cdn.net^
 @@||aiv-cdn.net.c.footprint.net^
@@ -32692,7 +32670,6 @@
 @@||adfoc.us^
 @@||adj.st^
 @@||affiliatefuture.com^
-@@||amazon-adsystem.com^
 @@||anrdoezrs.net^
 @@||apmebf.com^
 @@||app.link^
@@ -32736,6 +32713,7 @@
 @@||pntrack.com^
 @@||postaffiliatepro.com^
 @@||prf.hn^
+@@||pxf.io^
 @@||qksrv.net^
 @@||rebrandlydomain.com^
 @@||redirect.at^
@@ -32764,9 +32742,17 @@
 @@||goto.algolia.com^
 @@||s.click.aliexpress.com^
 @@||aax-*-retail-direct.amazon.com^
-@@||amazon-adsystem.amazon.com^
+@@||aax-eu.amazon.ae^
+@@||aax-eu.amazon.de^
+@@||aax-eu.amazon.es^
+@@||aax-eu.amazon.fr^
+@@||aax-eu.amazon.in^
+@@||aax-eu.amazon.it^
+@@||aax-eu.amazon.nl^
+@@||aax-eu.amazon.sa^
+@@||aax-eu.amazon.se^
+@@||aax-fe.amazon.sg^
 @@||assoc-redirect.amazon.com^
-@@||aax-*-retail-direct.amazon-adsystem.com^
 @@||click.member.americanexpress.com^
 @@||www.anrdoezrs.net^
 @@||prism.app-us1.com^
@@ -32795,6 +32781,8 @@
 @@||cse3.chausport.com^
 @@||monitor.clickcease.com^
 @@||readdle.cmail20.com^
+@@||aax-eu.amazon.co.uk^
+@@||aax-fe.amazon.co.jp^
 @@||adservice.google.co.ao^
 @@||adservice.google.co.bw^
 @@||adservice.google.co.ck^
@@ -32821,6 +32809,8 @@
 @@||adservice.google.co.zm^
 @@||adservice.google.co.zw^
 @@||k.cocooncenter.com^
+@@||aax-eu.amazon.com.tr^
+@@||aax-fe.amazon.com.au^
 @@||adservice.google.com.af^
 @@||adservice.google.com.ag^
 @@||adservice.google.com.ai^
