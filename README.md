@@ -55,6 +55,7 @@ Some of these blocklists are automatically [converted](https://github.com/Adguar
   - `expires` — filter's default expiration period
   - `displayNumber` — this number is used when AdGuard sorts available filters (GUI)
   - `environment` - either `dev` or `prod`. Only `prod` lists are available in AdGuard DNS.
+  - `disabled` - if set to `true`, the blocklist won't be updated.
   - `tags` — a list of [tags](#tags)
 
     <details>

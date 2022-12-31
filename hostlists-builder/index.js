@@ -56,7 +56,7 @@ const listDirs = function (baseDir) {
  * @param baseDir Base directory
  * @return {*}
  */
- const listFiltersDirs = function (baseDir) {
+const listFiltersDirs = function (baseDir) {
   const childDirs = listDirs(baseDir);
 
   let filterDirs = [];
@@ -79,7 +79,6 @@ const listDirs = function (baseDir) {
  * @returns {{timeUpdated: number, hash: String}}
  */
 const makeRevision = function (currentRevision, hash) {
-
   const result = {
     timeUpdated: new Date().getTime(),
     hash,
@@ -151,7 +150,6 @@ const parseInfo = (string, mask) => {
  * @param dir
  */
 const loadLocales = function (dir) {
-
   const result = {
     tags: {},
     filters: {},
@@ -196,34 +194,45 @@ const loadLocales = function (dir) {
 };
 
 async function build(filtersDir, tagsDir, localesDir, assetsDir) {
-
   const filtersMetadata = [];
   const filtersMetadataDev = [];
 
   const filterDirs = listFiltersDirs(filtersDir);
   for (const filterDir of filterDirs) {
-
     const metadata = JSON.parse(readFile(path.join(filterDir, METADATA_FILE)));
 
-    // compiles the hostlist using provided configuration
-    const hostlistConfiguration = readHostlistConfiguration(filterDir);
-    const hostlistCompiled = await hostlistCompiler(hostlistConfiguration);
-
-    // calculates hash and updates revision
-    const hash = calculateRevisionHash(hostlistCompiled);
+    // Reads the current revision information.
     const revisionFile = path.join(filterDir, REVISION_FILE);
-    const currentRevision = JSON.parse(readFile(revisionFile)) || {};
-    const newRevision = makeRevision(currentRevision, hash);
-    writeFile(revisionFile, JSON.stringify(newRevision, null, '\t'));
+    const currentRevision = JSON.parse(readFile(revisionFile)) || { timeUpdated: new Date().getTime() };
+    let timeUpdated = currentRevision.timeUpdated;
 
-    // Rewrites filter if it's actually changed
-    let filterName = `filter_${metadata.id}.txt`;
-    if (currentRevision.hash !== hash) {
-      const assertsFilterFile = path.join(assetsDir, filterName);
-      const filterFile = path.join(filterDir, 'filter.txt');
-      let content = hostlistCompiled.join('\n');
-      writeFile(assertsFilterFile, content);
-      writeFile(filterFile, content);
+    // Compiles the hostlist using provided configuration.
+    const hostlistConfiguration = readHostlistConfiguration(filterDir);
+    const filterName = `filter_${metadata.id}.txt`;
+
+    // If the hostlist is disabled, do not attempt to download it, just use the
+    // existing one.
+    if (!metadata.disabled) {
+      try {
+        const hostlistCompiled = await hostlistCompiler(hostlistConfiguration);
+        const hash = calculateRevisionHash(hostlistCompiled);
+
+        // Rewrites the filter if it's actually changed.
+
+        if (currentRevision.hash !== hash) {
+          const newRevision = makeRevision(currentRevision, hash);
+          const assetsFilterFile = path.join(assetsDir, filterName);
+          const filterFile = path.join(filterDir, 'filter.txt');
+          let content = hostlistCompiled.join('\n');
+
+          timeUpdated = newRevision.timeUpdated;
+          writeFile(revisionFile, JSON.stringify(newRevision, null, '\t'));
+          writeFile(assetsFilterFile, content);
+          writeFile(filterFile, content);
+        }
+      } catch (ex) {
+        throw new Error(`Failed to compile ${metadata.id}: ${ex}`);
+      }
     }
 
     const downloadUrl = `${HOSTLISTS_URL}/${filterName}`;
@@ -247,7 +256,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
       downloadUrl: downloadUrl,
       sourceUrl: sourceUrl,
       timeAdded: metadata.timeAdded,
-      timeUpdated: newRevision.timeUpdated,
+      timeUpdated: timeUpdated,
     };
     if (metadata.environment === "prod") {
       filtersMetadata.push(filterMetadata);
