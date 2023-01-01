@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-01T01:33:49.716Z
+! Last modified: 2023-01-01T08:06:40.225Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -4761,7 +4761,6 @@
 ||cbdatatracker.com^
 ||cbmiocw.com^
 ||smetrics.cbn.com^
-||cbox.ws^
 ||saa.cbs.com^
 ||at.cbsi.com^
 ||ads.play.cbsi.video^
@@ -34291,6 +34290,16 @@
 
 ! verifying student status in YT Music or YT
 @@||sheerid.net^
+
+! Image sharing
+@@|i.imgci.com^
+
+! blocks espncricinfo's cricket statistics
+@@|stats.espncricinfo.com^
+
+! embedded widget chat service
+@@|cbox.ws^
+@@|www.cbox.ws^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
