@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-03T01:32:44.102Z
+! Last modified: 2023-01-03T16:05:27.452Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16363,7 +16363,6 @@
 ||tenjin.com^
 ||tenjin.io^
 ||tenmax.io^
-||tenping.kr^
 ||tensagesic.com^
 ||tentaculos.net^
 ||tenthfloorliving.com^
@@ -27677,6 +27676,10 @@
 ! Banggood App
 @@|banggood.com^
 @@|www.banggood.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/144
+@@|tenping.kr^
+@@|www.tenping.kr^
 
 ! Title: HaGeZi's White-/Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
