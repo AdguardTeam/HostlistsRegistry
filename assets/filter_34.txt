@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-02T22:05:28.157Z
+! Last modified: 2023-01-03T01:32:44.102Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -16,10 +16,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 02 Jan 2023 21:12 UTC
-! Version: 2023.0102.2112.42
+! Last modified: 03 Jan 2023 00:33 UTC
+! Version: 2023.0103.0033.27
 ! Syntax: AdBlock
-! Domains: 20281
+! Domains: 20320
 !
 ||00go.com^
 ||00px.net^
@@ -541,8 +541,10 @@
 ||accaii.com^
 ||accdab.net^
 ||accedenonre.xyz^
-||accengage.com^
 ||accengage.net^
+||api.accengage.com^
+||mobilecrm.accengage.com^
+||pingapi.accengage.com^
 ||somni.accenture.com^
 ||trackingmms.accenture.com^
 ||acceptww.com^
@@ -589,7 +591,9 @@
 ||activemetering.com^
 ||activeoptimization.com^
 ||prod-data-energon.infra-ext.activision.com^
-||actonservice.com^
+||a44320.actonservice.com^
+||msufcu.actonservice.com^
+||towerfcu.actonservice.com^
 ||actonsoftware.com^
 ||actuallyhierarchyjudgement.com^
 ||a.actualno.com^
@@ -1230,6 +1234,7 @@
 ||uac.advertising.com^
 ||advertising-cdn.com^
 ||advertnative.com^
+||advertronic.io^
 ||advertserve.com^
 ||advertur.ru^
 ||adserver.adverty.com^
@@ -3182,7 +3187,7 @@
 ||us1-sdk.bluedot.io^
 ||blueduckredapple.com^
 ||gtrack.bluegazette.com^
-||bluehornet.com^
+||echo4.bluehornet.com^
 ||bluekai.com^
 ||blueknow.com^
 ||dnsseed.bluematt.me^
@@ -3283,7 +3288,6 @@
 ||geoip.boredpanda.com^
 ||boriskink.com^
 ||borofez.com^
-||borrelioseweb.de^
 ||borrowdefeat.com^
 ||borrowedculture.com^
 ||smetrics.boscovs.com^
@@ -4218,7 +4222,9 @@
 ||log.cmbchina.com^
 ||track.cmcassets.com^
 ||cmclean.club^
-||cmcm.com^
+||lcf.cmplay.cmcm.com^
+||magic.cmcm.com^
+||tileswan.cmcm.com^
 ||cmcore.com^
 ||cmdspassets.com^
 ||appconfig.cmgdigital.com^
@@ -6859,7 +6865,10 @@
 ||tracking-collector.site.flexispot.com^
 ||flexlinks.com^
 ||flexlinkspro.com^
-||fling.com^
+||cachemd.fling.com^
+||cachep.fling.com^
+||promos.fling.com^
+||push-ord.fling.com^
 ||flingo.tv^
 ||ad.flipboard.com^
 ||api.flipdesk.jp^
@@ -8870,7 +8879,7 @@
 ||secure.informaction.com^
 ||widgets.informars.com^
 ||informationvine.com^
-||informer.com^
+||hits.informer.com^
 ||call.inforsea.com^
 ||pixel.inforsea.com^
 ||infox.sg^
@@ -14514,7 +14523,15 @@
 ||prderrordumphsm.samsungcloudsolution.com^
 ||diagmon-policy.samsungdm.com^
 ||diagmon-serviceapi.samsungdm.com^
-||samsungelectronics.com^
+||apu.samsungelectronics.com^
+||bpu.samsungelectronics.com^
+||cpu.samsungelectronics.com^
+||dpu.samsungelectronics.com^
+||kpu.samsungelectronics.com^
+||upu.samsungelectronics.com^
+||xpu.samsungelectronics.com^
+||ypu.samsungelectronics.com^
+||zpu.samsungelectronics.com^
 ||data-private.samsunghealth.com^
 ||shealth-analytics-api.samsunghealth.com^
 ||analytics-api.samsunghealthcn.com^
@@ -15372,7 +15389,25 @@
 ||log.snow.me^
 ||snowads.net^
 ||snowmiracles.com^
-||snplow.net^
+||ca-lapresse-main.collector.snplow.net^
+||com-asanarebel-main.collector.snplow.net^
+||com-baublebar-prod1.collector.snplow.net^
+||com-bvaauctions-main.collector.snplow.net^
+||com-egoditor-prod1.collector.snplow.net^
+||com-getbento-prod1.collector.snplow.net^
+||com-intellum-prod1.collector.snplow.net^
+||com-marketwise-prod1.collector.snplow.net^
+||com-secretescapes.collector.snplow.net^
+||com-smugmug-prod1.collector.snplow.net^
+||com-sunandsandsports-main.collector.snplow.net^
+||com-thebigwillow-prod1.collector.snplow.net^
+||com-upday-main.collector.snplow.net^
+||com-vonq-main.collector.snplow.net^
+||de-makerist-main.collector.snplow.net^
+||io-candivore-prod1.collector.snplow.net^
+||io-webware-prod1.collector.snplow.net^
+||ly-bit-prod1.collector.snplow.net^
+||nl-rtl-prod1.collector.snplow.net^
 ||snrbox.com^
 ||abtest-ch.snssdk.com^
 ||bds.snssdk.com^
@@ -17870,7 +17905,10 @@
 ||voyance.net^
 ||voyeurhouse.com^
 ||vozito.net^
-||vpadn.com^
+||dailymotion-cs.vpadn.com^
+||ids-dmp.vpadn.com^
+||m.vpadn.com^
+||tw-api.vpadn.com^
 ||vpdcp.com^
 ||core-api-frontendlogger.front.vpgrp.net^
 ||vpixrlkggv.com^
@@ -18618,6 +18656,7 @@
 ||y-track.com^
 ||y0utube.life^
 ||y0utube.services^
+||t.y8.com^
 ||y8z5nv0slz06vj2k5vh6akv7dj2c8aj62zhj2v7zj8vp0zq7fj2gf4mv6zsb.me^
 ||yabidos.com^
 ||yadro.ru^
@@ -19225,10 +19264,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 01 Jan 2023 14:35 UTC
-! Version: 2023.0101.1435.39
+! Last modified: 02 Jan 2023 23:54 UTC
+! Version: 2023.0102.2354.42
 ! Syntax: AdBlock
-! Domains: 5860
+! Domains: 5858
 !
 ||willhaben.at.04300.id^
 ||11trikots.com^
@@ -19915,6 +19954,7 @@
 ||boomjoo.co^
 ||bootsclearanus.com^
 ||bootsdeutschland.com^
+||borrelioseweb.de^
 ||bosch-futter.de^
 ||bossfactoryofficial.de^
 ||bossfactorysusa.net^
@@ -21183,7 +21223,6 @@
 ||foxflix.de^
 ||foxrm.fr^
 ||foxusenet.de^
-||foxxum.com^
 ||fpctsc.com^
 ||fpjollet.com^
 ||fr-c.de^
@@ -21966,6 +22005,7 @@
 ||julhouse.shop^
 ||julireh.com^
 ||jur-werbung.de^
+||juretro.com^
 ||justasitsounds.com^
 ||justclothes.club^
 ||justhdfilme.com^
@@ -22083,7 +22123,6 @@
 ||kinomax.me^
 ||kinoplay.de^
 ||kinostream.org^
-||kinox.su^
 ||kinox-deutsch.com^
 ||kinozeit.net^
 ||kinzokusteel.com^
@@ -22775,7 +22814,6 @@
 ||moonsoy.com^
 ||morbidtales.de^
 ||moreclothes.store^
-||moredates.com^
 ||mosano.de^
 ||mosessions.com^
 ||mosetravel.de^
@@ -24172,6 +24210,7 @@
 ||supersocken.de^
 ||supersofabezug.com^
 ||supertigers.de^
+||suplsan.com^
 ||supmestar.com^
 ||supportfortross.org^
 ||supr.com^
@@ -24672,7 +24711,6 @@
 ||vesinhhoatam.com^
 ||vespin24.de^
 ||vetola.de^
-||vevor.de^
 ||vfcsnc.shop^
 ||vgr8.com^
 ||viagrafuerfrauen.com^
