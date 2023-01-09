@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-01-09T06:05:55.469Z
+! Last modified: 2023-01-09T08:06:01.222Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,9 +15,9 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-01-09T06:01:14.507Z
+! Last modified: 2023-01-09T08:04:03.699Z
 !
-! Compiled by @adguard/hostlist-compiler v1.0.12
+! Compiled by @adguard/hostlist-compiler v1.0.15
 !
 !
 ! Source name: AdGuard Base filter ad servers
@@ -27947,6 +27947,7 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||mtm.walls.io^
 ||analytics.slidesai.io^
 ||idat.production.ippen.space^
 ||p-events.ivideosmart.com^
@@ -30840,7 +30841,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||trackclicks.info^
 ||trkbc.com^
 ||truffle.bid^
-||trust-provider.com^
 ||tryzens-analytics.com^
 ||turboeagle.co^
 ||turbolion.io^
