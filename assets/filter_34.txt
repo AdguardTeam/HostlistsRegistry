@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-09T20:05:54.053Z
+! Last modified: 2023-01-09T22:05:21.175Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -10,8 +10,8 @@
 ! Source name: HaGeZi Personal Black & White
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/personal-blackwhite.txt
 !
-! Title: HaGeZi's Personal AdGuard Wildcard Rules for Black & White list
-! Description: My personal wildcard rules to optimize the Black & White list for AdGuard DNS.
+! Title: HaGeZi's Personal AdGuard Rules for Black & White list
+! Description: My personal Black & White rules for AdGuard DNS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
@@ -19,9 +19,6 @@
 ! Syntax: AdGuard
 
 ! Adblock-Detection
-! Videos Sat1, Pro7 and others
-||zomap.de^
-@@||swankyrule.zomap.de^
 ! Bild.de, Sport1 and others
 ||tiqcdn.com^
 @@||tags.tiqcdn.com^
@@ -123,6 +120,7 @@
 ||technical-service.net^
 @@||te.technical-service.net^
 ||track*.sevensenders.com^
+||uptain.de^
 ||f-log*.grammarly.io^
 ||app-analytics*.huami.com^
 ||log-collector.shopee.*^
@@ -154,7 +152,7 @@
 ||sentry.io^
 
 ! Google
-||analytics.google.com^
+||*.analytics.google.com^
 ||*google-analytics.l.google.com^
 ||androidtvchannels-pa.googleapis.com^
 ||androidtvwatsonfe-pa.googleapis.com^
@@ -171,7 +169,8 @@
 @@||adservice.google.*^
 ||googleoptimize.com^
 ||googlesyndication.com^
-@@||googletagmanager.com^
+||googletagmanager.com^
+@@||www.googletagmanager.com^
 @@||www-googletagmanager.l.google.com^
 ||googletagservices.com^
 ||pagead-googlehosted.l.google.com^
@@ -293,10 +292,13 @@
 @@||glomex.com^
 ||smartclip.net^
 ||videostep.com^
+||zomap.de^
+@@||lush-clouds.zomap.de^
+@@||swankyrule.zomap.de^
 
 ! --------------------------
 
-! iocnt
+! iocnt - counteract whitelisting of CNAME relay-client-c03.iocnt.net for rtl.de
 
 ||data-*.24hamburg.de^
 ||data-*.aachener-zeitung.de^
@@ -485,10 +487,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 09 Jan 2023 19:11 UTC
-! Version: 2023.0109.1911.33
+! Last modified: 09 Jan 2023 21:51 UTC
+! Version: 2023.0109.2151.16
 ! Syntax: AdBlock
-! Domains: 22411
+! Domains: 22442
 !
 ||00px.net^
 ||021jf.com^
@@ -8152,7 +8154,39 @@
 ||explosiondisco.com^
 ||expmediadirect1.com^
 ||expocaptcha.top^
-||exponea.com^
+||ada-api.exponea.com^
+||amway-api.exponea.com^
+||api.exponea.com^
+||api-bho.exponea.com^
+||api-bho-boohooman.exponea.com^
+||api-bho-debenhams-co-uk.exponea.com^
+||api-bho-nastygal.exponea.com^
+||api-cis.exponea.com^
+||ctl-api.exponea.com^
+||custom-api.exponea.com^
+||eu1.exponea.com^
+||exp-framework.exponea.com^
+||exp-riverisland-com.exponea.com^
+||fcg-api.exponea.com^
+||ftspecialist.exponea.com^
+||gnt-api.exponea.com^
+||hoff-api.exponea.com^
+||mallgroup-api.exponea.com^
+||nay-api.exponea.com^
+||network.exponea.com^
+||notino-api.exponea.com^
+||nxi-api.exponea.com^
+||ozon-api.exponea.com^
+||pan-api.exponea.com^
+||pan-cdn.exponea.com^
+||raisin-api.exponea.com^
+||ri-api.exponea.com^
+||ri-cdn.exponea.com^
+||rozetka-api.exponea.com^
+||sdk-tracing.exponea.com^
+||uk.exponea.com^
+||us.exponea.com^
+||cdn.us1.exponea.com^
 ||exponential.com^
 ||expos-investor.com^
 ||exposebox.com^
@@ -20873,7 +20907,6 @@
 ||upskittyan.com^
 ||upsnap.com^
 ||upswingmethyl.com^
-||uptain.de^
 ||uptilt.com^
 ||rum.uptime.com^
 ||uptimecdn.com^
@@ -28867,8 +28900,7 @@
 @@||aiv-cdn.net.c.footprint.net^
 @@||aiv-delivery.net^
 @@||amazonvideo.com^
-@@||atv-ext-*.amazon.com^
-@@||atv-ext.amazon.com^
+@@||atv-ext*.amazon.com^
 @@||atv-ps.amazon.com^
 @@||primevideo.com^
 @@||pv-cdn.net^
@@ -29158,6 +29190,7 @@
 @@|youtubei.googleapis.com^
 @@|yt3.ggpht.com^
 ! Breaks site layouts, videos and more on some sites
+@@||googletagmanager.com^
 ! googletagservices.com
 ! www.googletagservices.com
 ! Not used for tracking, metrics, analytics
@@ -30781,10 +30814,6 @@
 @@|lowendbox.com^
 @@|www.lowendbox.com^
 
-! PerimeterX (HUMAN Security) is an application security and anti fraud solution
-@@||perimeterx.net^
-@@||px-cloud.net^
-
 ! platform for interactive content
 @@|view.genial.ly^
 
@@ -31399,6 +31428,9 @@
 ! https://github.com/hagezi/dns-blocklists/issues/178
 @@|assets.rebelmouse.io^
 @@|assets.rbl.ms^
+
+! Links in mails from Peek & Cloppenburg and others
+@@|puc-cdn.exponea.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
