@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-11T16:09:25.034Z
+! Last modified: 2023-01-11T17:07:41.555Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -308,10 +308,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 11 Jan 2023 15:32 UTC
-! Version: 2023.0111.1532.44
+! Last modified: 11 Jan 2023 16:37 UTC
+! Version: 2023.0111.1637.06
 ! Syntax: AdBlock
-! Domains: 23175
+! Domains: 23178
 !
 ||00px.net^
 ||021jf.com^
@@ -18353,8 +18353,11 @@
 ||seewhy.com^
 ||seeyoufarm.com^
 ||sefsdvc.com^
-||segment.com^
 ||segment.io^
+||app.segment.com^
+||cdn-settings.segment.com^
+||idsync.segment.com^
+||profiles.segment.com^
 ||segmentapis.com^
 ||sponsor.segmentfault.com^
 ||stats.segmentfault.net^
@@ -31875,6 +31878,9 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/189
 @@|s.deepl.com^
+
+! Navigation on various sites - fender.com
+@@|cdn.segment.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
