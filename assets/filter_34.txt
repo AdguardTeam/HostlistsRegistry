@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-10T19:05:19.139Z
+! Last modified: 2023-01-11T00:20:01.641Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -78,6 +78,7 @@
 |metrics.*^
 |metric.*^
 @@||metric.gstatic.com^
+|piwik.*^
 |smetrics.*^
 |smetric.*^
 |telemetry.*^
@@ -491,10 +492,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 10 Jan 2023 18:05 UTC
-! Version: 2023.0110.1805.35
+! Last modified: 11 Jan 2023 00:08 UTC
+! Version: 2023.0111.0008.04
 ! Syntax: AdBlock
-! Domains: 22882
+! Domains: 22966
 !
 ||00px.net^
 ||021jf.com^
@@ -1901,7 +1902,6 @@
 ||advanseads.com^
 ||images2.advanstar.com^
 ||advwebtracking.advantech.com^
-||piwik.advantic.de^
 ||advarkads.com^
 ||advconversion.com^
 ||adventive.com^
@@ -2151,7 +2151,6 @@
 ||aiactiv.io^
 ||aiclk.com^
 ||aidata.io^
-||piwik.pentaho.aidcvt.com^
 ||secure.aiea6gaza.com^
 ||aieov.com^
 ||www-172.aig.com^
@@ -3017,7 +3016,6 @@
 ||arabrcp.org^
 ||aralego.com^
 ||aralego.net^
-||piwik.arbeiterkammer.at^
 ||rtb-useast.arbigo.com^
 ||arc.io^
 ||perso.aws.arc.pub^
@@ -3244,7 +3242,6 @@
 ||ausoafab.net^
 ||austrainy.com^
 ||somni.australia.com^
-||piwik.auswaertiges-amt.de^
 ||autchoog.net^
 ||dpf.authorize.net^
 ||verify.authorize.net^
@@ -4134,7 +4131,6 @@
 ||blpsearch.com^
 ||bluadz.com^
 ||blubroid.de^
-||piwik.blue.pl^
 ||blue360media.com^
 ||blueadss.com^
 ||stats.bluebillywig.com^
@@ -4571,7 +4567,6 @@
 ||bytesabbreviation.com^
 ||bytogeticr.com^
 ||as.bz-berlin.de^
-||piwik.bzga.de^
 ||logger.bzu.kr^
 ||xnbwsp.c-and-a.com^
 ||cdid.c-ctrip.com^
@@ -6075,7 +6070,6 @@
 ||stat.zol.com.cn^
 ||p.zol-img.com.cn^
 ||pic.zol-img.com.cn^
-||piwik.com-online.com^
 ||s.com2us.net^
 ||app.comagic.ru^
 ||tracker.comagic.ru^
@@ -6619,7 +6613,6 @@
 ||content-thumbnail.cxpublic.com^
 ||stats.cyanogenmod.org^
 ||cybba.solutions^
-||piwik.cyber.mil^
 ||ipify10.cyberflat.info^
 ||ipify11.cyberflat.info^
 ||ipify21.cyberflat.info^
@@ -7217,7 +7210,6 @@
 ||events-logs.doctolib.com^
 ||doctorlogic.com^
 ||doctorpost.net^
-||piwik.documentfoundation.org^
 ||track.docusign.com^
 ||doczj.com^
 ||eventstream.dodopizza.com^
@@ -7466,7 +7458,6 @@
 ||dtiserv.com^
 ||dtiserv2.com^
 ||dtmpub.com^
-||piwik.dtnr.nl^
 ||dtrck.net^
 ||t.dtscdn.com^
 ||dtscout.com^
@@ -9132,7 +9123,6 @@
 ||hap2.gabmixer.com^
 ||gaconnector.com^
 ||gacraft.jp^
-||piwik.gadatatracking.com^
 ||gadget-edge.com^
 ||gadgetgine.xyz^
 ||gadscc.xyz^
@@ -10128,7 +10118,6 @@
 ||adsp.haberturk.com^
 ||log.haberturk.com^
 ||haccessonlineforms.com^
-||piwik.hacon.de^
 ||had.su^
 ||secu.hagerty.com^
 ||secu.hagertyagent.com^
@@ -10614,7 +10603,6 @@
 ||hovercd.com^
 ||hoverwatch.com^
 ||howdoesin.net^
-||piwik.howtomoodle.com^
 ||log-upload-os.hoyoverse.com^
 ||hoyukoda.cloud^
 ||hoyukoda.lol^
@@ -11535,7 +11523,6 @@
 ||tom.itv.com^
 ||itvalleynews.com^
 ||itweepinbelltor.com^
-||piwik.itzbund.de^
 ||ads.iu.edu^
 ||hits-i.iubenda.com^
 ||iuqerfsodp9ifjaposdfjhgosurijfaewrwergwea.com^
@@ -16073,7 +16060,109 @@
 ||pisism.com^
 ||sstats.pitchfork.com^
 ||t.pittsburghpanthers.com^
-||piwik.pro^
+||acs.piwik.pro^
+||adac.piwik.pro^
+||adesso-group.piwik.pro^
+||airbus.piwik.pro^
+||alsac2.piwik.pro^
+||annefrank.piwik.pro^
+||aptar.piwik.pro^
+||ari.piwik.pro^
+||arkema.piwik.pro^
+||arrow.piwik.pro^
+||arvalglobal.piwik.pro^
+||auchan.piwik.pro^
+||bmcanalytics.piwik.pro^
+||bpi.piwik.pro^
+||cbs.piwik.pro^
+||childrens.piwik.pro^
+||cms.piwik.pro^
+||com-on.piwik.pro^
+||condenast.piwik.pro^
+||containers.piwik.pro^
+||covea.piwik.pro^
+||cuf-pt.piwik.pro^
+||cultuurconnect.piwik.pro^
+||de-central-1.piwik.pro^
+||de-west-central-1.piwik.pro^
+||dealerspike-prod.piwik.pro^
+||dedalus.piwik.pro^
+||deutschland-de.piwik.pro^
+||dfv.piwik.pro^
+||dim.piwik.pro^
+||dynamosoftware.piwik.pro^
+||eib.piwik.pro^
+||elsalg.piwik.pro^
+||emmi.piwik.pro^
+||erst.piwik.pro^
+||eu-west-1.piwik.pro^
+||evershedssutherland.piwik.pro^
+||fahrsicherheit-bbr.piwik.pro^
+||fitchconnect.piwik.pro^
+||gbnews.piwik.pro^
+||geogebra.piwik.pro^
+||greatbritishchefs.piwik.pro^
+||hetcak.piwik.pro^
+||iddinkgroup.piwik.pro^
+||igus.piwik.pro^
+||imperva.piwik.pro^
+||johnsmanville.piwik.pro^
+||kadasterbv.piwik.pro^
+||koeppeldirect.piwik.pro^
+||koop.piwik.pro^
+||livechat.piwik.pro^
+||londonsneakerschool.piwik.pro^
+||lutech-group.piwik.pro^
+||masterworks.piwik.pro^
+||mgb.piwik.pro^
+||moserholding.piwik.pro^
+||mountsinai.piwik.pro^
+||myviewboard.piwik.pro^
+||navistar.piwik.pro^
+||netdriven.piwik.pro^
+||newell.piwik.pro^
+||nyp.piwik.pro^
+||ons.piwik.pro^
+||opanalytics.piwik.pro^
+||paycargo.piwik.pro^
+||pgim.piwik.pro^
+||phc.piwik.pro^
+||pp-core-gwc.piwik.pro^
+||pp-public-p-euw.piwik.pro^
+||pp-public-p-gwc.piwik.pro^
+||pp-public-p-swe.piwik.pro^
+||pp-public-p-use.piwik.pro^
+||public-p-swe2.piwik.pro^
+||roche.piwik.pro^
+||rxreedpop.piwik.pro^
+||sana-commerce.piwik.pro^
+||sanomalearning.piwik.pro^
+||sbp2022.piwik.pro^
+||seer.piwik.pro^
+||shawbrook.piwik.pro^
+||smartetailing.piwik.pro^
+||sonova.piwik.pro^
+||sportradar.piwik.pro^
+||sram.piwik.pro^
+||success.piwik.pro^
+||svb.piwik.pro^
+||swissreextranet.piwik.pro^
+||tecdoc.piwik.pro^
+||teladoc-private.piwik.pro^
+||testo.piwik.pro^
+||thelink.piwik.pro^
+||tlscontact.piwik.pro^
+||traverssmith-ts.piwik.pro^
+||us-east-1.piwik.pro^
+||uu.piwik.pro^
+||uwhealth.piwik.pro^
+||viewsonic.piwik.pro^
+||vvaa.piwik.pro^
+||wsa.piwik.pro^
+||www.piwik.pro^
+||zf-aftermarket.piwik.pro^
+||zf-friedrichshafen.piwik.pro^
+||zta.piwik.pro^
 ||piwikpro.com^
 ||pix.pub^
 ||pix-cdn.org^
@@ -18122,7 +18211,6 @@
 ||gtrack.scientistplus.com^
 ||sciniphruffin.com^
 ||scintillatingsilver.com^
-||piwik.scivantage.com^
 ||tagger.ope.scmp.com^
 ||os.scmpacdn.com^
 ||scmplayer.net^
@@ -19690,7 +19778,6 @@
 ||c.swiftpage.marketing^
 ||cc.swiftype.com^
 ||swinity.com^
-||piwik.swipejobs.com^
 ||at.swisscom.ch^
 ||r7s.scl.swisscom.ch^
 ||so.swisscom.ch^
@@ -20247,7 +20334,6 @@
 ||marketing.thepalmbeaches.com^
 ||adpai.thepaper.cn^
 ||theporndudes.xyz^
-||piwik.thepropertyjungle.com^
 ||theprotecto.com^
 ||theproxy.ws^
 ||thequin.ai^
@@ -22619,7 +22705,6 @@
 ||wsod.com^
 ||pushlog.wsoft.ru^
 ||scorecard.wspisp.net^
-||piwik.wsws.org^
 ||wt-safetag.com^
 ||wtg-ads.com^
 ||wtggkyjh.org^
@@ -23385,10 +23470,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 10 Jan 2023 13:19 UTC
-! Version: 2023.0110.1319.04
+! Last modified: 10 Jan 2023 23:26 UTC
+! Version: 2023.0110.2326.36
 ! Syntax: AdBlock
-! Domains: 5800
+! Domains: 5772
 !
 ||willhaben.at.04300.id^
 ||11trikots.com^
@@ -25866,7 +25951,6 @@
 ||ikarus-flugdienst.de^
 ||ilamparas.com^
 ||ilamparas.de^
-||now.illegalstore.xyz^
 ||politics.illegalstore.xyz^
 ||similarly.illegalstore.xyz^
 ||wind.illegalstore.xyz^
@@ -26950,7 +27034,6 @@
 ||neecoco.com^
 ||nemphilist.com^
 ||nenerotor.com^
-||neo-electro.com^
 ||neo-electronics.com^
 ||neobosen.com^
 ||neogames.eu^
@@ -26980,12 +27063,9 @@
 ||neva-sharm.ru^
 ||nevermindshoes.com^
 ||new-promotions24.com^
-||newbalancesaleschuhe.de^
 ||de.newchic.com^
 ||newgadgetst.com^
 ||newland-travel.com^
-||nexet.xyz^
-||nexsource.de^
 ||ney-net.de^
 ||nfawcy.top^
 ||nflxshop.com^
@@ -26993,7 +27073,6 @@
 ||ngadgetrig.shop^
 ||nger.de^
 ||nicdampier.com^
-||nicdiamond.de^
 ||nicefreedating.com^
 ||nichespares.com^
 ||nicheten.com^
@@ -27014,7 +27093,6 @@
 ||ninelife.de^
 ||ninelife.eu^
 ||ninewestosterreich.com^
-||ninewestschuhdeutschland.com^
 ||ninjagamers.de^
 ||ninoplay.de^
 ||ninthcit.de^
@@ -27042,8 +27120,6 @@
 ||nobulosterreich.me^
 ||nohrak.com^
 ||nolimitsound.de^
-||noobwatch03.io^
-||nooranenonen.com^
 ||nootica.de^
 ||shop.nordic-electronics.de^
 ||nordiccoastgames.de^
@@ -27051,7 +27127,6 @@
 ||nordsee-hooksiel.de^
 ||nordvian.com^
 ||norfolkhotels24.com^
-||norion.xyz^
 ||normado.com^
 ||normandy-omaha.fr^
 ||northern-transport.net^
@@ -27069,7 +27144,6 @@
 ||novaflix.de^
 ||novagamers.net^
 ||novelbuys.com^
-||novirastore.com^
 ||noweight.de^
 ||nowflix.de^
 ||nowistherevolution.com^
@@ -27078,7 +27152,6 @@
 ||ntxmickeymantle.com^
 ||nuerahha.com^
 ||numerr.com^
-||nunuwax.top^
 ||nur-uhren.de^
 ||nurbest.com^
 ||nuxxu.de^
@@ -27098,7 +27171,6 @@
 ||oclegends.org^
 ||odenkik.com^
 ||odyssey-labs.com^
-||oexpel.com^
 ||ofenbau-torgelow.de^
 ||official-lighton.com^
 ||official-watch.com^
@@ -27118,8 +27190,6 @@
 ||ohnesorge-fachhandel.com^
 ||ohpera.at^
 ||ojbega.com^
-||ojormf.top^
-||oketofit.com^
 ||okjordans.com^
 ||okomia.com^
 ||okonjoseph.com^
@@ -27130,7 +27200,6 @@
 ||oliflix.de^
 ||olivegardenhouses.de^
 ||oliver-schwarzer-shop.de^
-||olixie.com^
 ||olssonbrands.com^
 ||omegafxoptions.com^
 ||omertabike.com^
@@ -27139,7 +27208,6 @@
 ||elegant.onebysales.com^
 ||onecozyday.com^
 ||oneflix.de^
-||oneist.xyz^
 ||onepolaroid.com^
 ||onesystems.de^
 ||onkel-nolte.de^
@@ -27160,12 +27228,9 @@
 ||onward.store^
 ||onyx-versand.de^
 ||oolongtime.com^
-||oonadish.com^
-||openedijti.com^
 ||openuplife.com^
 ||optic-dias.ru^
 ||optimafx.net^
-||oqianlege.top^
 ||orajalifei.com^
 ||ordernow24.de^
 ||ordritnow.com^
@@ -27181,11 +27246,9 @@
 ||orzsay.com^
 ||oscara.de^
 ||osecrobotics.com^
-||osteoar.xyz^
 ||ostergartenhermesdorf.de^
 ||osterreichschuheonlineshop.com^
 ||otto-angebote.de^
-||ottosdeutschland.de^
 ||ouraltis.de^
 ||ourclothes.club^
 ||ourjewellery.club^
@@ -27200,7 +27263,6 @@
 ||outletcowboy.com^
 ||outletuggoutletuk.com^
 ||outsidelife.club^
-||ovalball.com^
 ||ovhpharam.eu^
 ||ovura-store.com^
 ||owbuyteer.top^
@@ -27212,12 +27274,9 @@
 ||page-rangers.de^
 ||pajardeutschland.de^
 ||paketmann.de^
-||palakkadinsight.com^
-||palashcryptotrading.com^
 ||palima-maschinenhandel.de^
 ||palladiumbootsosterreich.com^
 ||pamminger-reisen.de^
-||pamule.com^
 ||panamajackschweiz.com^
 ||panamajackwien.at^
 ||pandoracharmsausverkauf.de^
@@ -27233,7 +27292,6 @@
 ||de2.parazax.com^
 ||parfumly.com^
 ||partnerimwald.ch^
-||partsm.top^
 ||partykiste-undorf.de^
 ||passamera.de^
 ||passion-fotos.de^
@@ -27242,7 +27300,6 @@
 ||pawppithouse.com^
 ||paxosgloballogistics.com^
 ||payback-ltd.com^
-||payice.xyz^
 ||pbglab.it^
 ||pc-akku.at^
 ||pcpartsvendor.com^
