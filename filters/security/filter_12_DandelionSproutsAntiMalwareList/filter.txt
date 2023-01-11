@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2023-01-03T18:06:24.778Z
+! Last modified: 2023-01-11T03:05:39.614Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -26,6 +26,8 @@
 
 
 
+! https://github.com/AdguardTeam/AdguardFilters/issues/139667
+/\.(live|buzz)/.*&[a-z]{1,3}=[a-zA-Z0-9%]{250,}/
 
 
 ! ——— Attempted removal of Google search result entries that lead to the above top-level domains (Advanced adblockers only) ———
@@ -5023,6 +5025,25 @@
 ||52.24.156.12^
 ||52.25.6.134^
 ||100.20.13.49^
+! https://github.com/AdguardTeam/AdguardFilters/issues/139667
+||sintiwent.buzz^
+||sawsupportquiet.buzz^
+||yepsimmen.live^
+||rememberespeciallyturn.buzz^
+||thoseverbmuch.buzz^
+||crymanbee.buzz^
+||wantledwife.buzz^
+||catabovewinter.buzz^
+||goldmesoil.live^
+||againstbarsolution.buzz^
+||spacesharpone.buzz^
+||legenergybreak.buzz^
+||asreadmeat.buzz^
+||pointcookship.buzz^
+||pointladydear.buzz^
+||51.68.87.229^
+||f9dle.skin^
+||kilpa2017.fi^
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
@@ -11183,7 +11204,6 @@
 ||nothingcreasesame.buzz^
 ||paperplacemix.buzz^
 ||owlbusystar.buzz^
-||sintiwent.buzz^
 ||suddentravelseven.buzz^
 ||morningslaveamong.buzz^
 ||rapgirljar.buzz^
@@ -11199,14 +11219,12 @@
 ||captainnationnatural.buzz^
 ||educationfailall.buzz^
 ||motherrequiretown.buzz^
-||sawsupportquiet.buzz^
 ||dadmoneyover.buzz^
 ||aideftlive.buzz^
 ||dayslare.buzz^
 ||biocoldwalk.buzz^
 ||cowholdwind.buzz^
 ||thirdoccuralso.buzz^
-||yepsimmen.live^
 ||lacviewdata.buzz^
 ||compareindicatehat.buzz^
 ||diemotowe.buzz^
@@ -11262,13 +11280,10 @@
 ||realnuapt.live^
 ||guessagreecard.buzz^
 ||subjectgentlewrong.buzz^
-||rememberespeciallyturn.buzz^
 ||dualaebird.live^
 ||edpartknow.buzz^
 ||pickmasterspoke.buzz^
-||thoseverbmuch.buzz^
 ||considerwordwin.buzz^
-||crymanbee.buzz^
 ||orpointmove.buzz^
 ||hateinkthus.live^
 ||dividejoinnecessary.buzz^
@@ -11283,13 +11298,11 @@
 ||somefearquestion.buzz^
 ||poseedgebody.buzz^
 ||exdrawroom.buzz^
-||wantledwife.buzz^
 ||thinkingfastdns.com^
 ||standshopso.buzz^
 ||innshetar.buzz^
 ||inchenlog.buzz^
 ||airlegweather.buzz^
-||catabovewinter.buzz^
 ||printsegmentmatch.buzz^
 ||iggridesic.live^
 ||boytodcamp.buzz^
@@ -11332,7 +11345,6 @@
 ||wakelistwhat.buzz^
 ||moviequitewomen.buzz^
 ||oipastfire.live^
-||againstbarsolution.buzz^
 ||rollsubstancewomen.buzz^
 ||truezerofilm.buzz^
 ||fineegoburn.buzz^
@@ -11347,7 +11359,6 @@
 ||womenstoneagain.buzz^
 ||syllablecryfail.buzz^
 ||slipweway.buzz^
-||spacesharpone.buzz^
 ||halllegharm.live^
 ||satsakenap.live^
 ||jumpcropdrew.buzz^
@@ -11385,8 +11396,6 @@
 ||evethinnor.buzz^
 ||yepureet.buzz^
 ||ironspasick.live^
-||legenergybreak.buzz^
-||asreadmeat.buzz^
 ||biztomjean.live^
 ||patteaes.buzz^
 ||andhewonder.buzz^
@@ -11414,7 +11423,6 @@
 ||dyecoolpage.buzz^
 ||gonebudfeel.buzz^
 ||coolsoonjoin.buzz^
-||pointcookship.buzz^
 ||maxlawjet.buzz^
 ||wifeyouhave.buzz^
 ||writeunderfree.buzz^
@@ -11436,7 +11444,6 @@
 ||orapplethree.buzz^
 ||pothisheld.buzz^
 ||wronggooddiscuss.buzz^
-||pointladydear.buzz^
 ||wrongmusthope.buzz^
 ||treatroundposition.buzz^
 ||bluedadcollect.buzz^
