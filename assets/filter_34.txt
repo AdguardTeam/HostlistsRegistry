@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-11T15:09:02.857Z
+! Last modified: 2023-01-11T16:09:25.034Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -37,7 +37,6 @@
 ||adsymptotic.com^
 ||adnxs-simple.com^
 ||adnxs.com^
-||adwised.com^
 ||production-adserver-*.amazonaws.com^
 ||cdn.scarabresearch.com^
 ||iad*.dotomi.com^
@@ -309,8 +308,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 11 Jan 2023 14:53 UTC
-! Version: 2023.0111.1453.59
+! Last modified: 11 Jan 2023 15:32 UTC
+! Version: 2023.0111.1532.44
 ! Syntax: AdBlock
 ! Domains: 23175
 !
@@ -1789,6 +1788,7 @@
 ||fpa-events.adweek.com^
 ||adwile.com^
 ||adwise.bg^
+||adwised.com^
 ||adwisedfs.com^
 ||adwmg.com^
 ||data.adwombat.com^
@@ -6720,7 +6720,6 @@
 ||deep.bi^
 ||deep-content.io^
 ||deepintent.com^
-||s.deepl.com^
 ||deer-bed-wind.com^
 ||somni.deere.com^
 ||default-search.net^
@@ -31873,6 +31872,9 @@
 ! News website in Italy
 @@|shalom.it^
 @@|www.shalom.it^
+
+! https://github.com/hagezi/dns-blocklists/issues/189
+@@|s.deepl.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
