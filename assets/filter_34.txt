@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-13T12:06:51.944Z
+! Last modified: 2023-01-13T15:05:53.898Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -87,6 +87,8 @@
 ||*track.bild.de^
 ||analytics-*.yinzcam.com^
 ||appdynamics.com^
+||appsflyer.com^
+@@||customlinks.appsflyer.com^
 ||branch.io^
 ||braze.com^
 ||braze.eu^
@@ -98,6 +100,7 @@
 ||collector-*.pxchk.net^
 ||delivery.consentmanager.net^
 ||*-tracking.goodgamestudios.com^
+||go-mpulse.net^
 ||hotjar.com^
 ||iocnt.de^
 ||iocnt.net^
@@ -303,6 +306,7 @@
 @@||swankyrule.zomap.de^
 ||nmrodam.com^
 @@||damoh.schneevonmorgen.com^
+||imrworldwide.com^
 
 ! Title: HaGeZi's Personal DNS Blocklist for Black & White list
 ! Description: My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!
@@ -310,10 +314,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 13 Jan 2023 12:06 UTC
-! Version: 2023.0113.1206.04
+! Last modified: 13 Jan 2023 14:42 UTC
+! Version: 2023.0113.1442.56
 ! Syntax: AdBlock
-! Domains: 23788
+! Domains: 23752
 !
 ||00px.net^
 ||021jf.com^
@@ -2811,41 +2815,6 @@
 ||appsdt.com^
 ||appsee.com^
 ||appserver-ap.com^
-||adrevenue.appsflyer.com^
-||api.appsflyer.com^
-||api2.appsflyer.com^
-||ars.appsflyer.com^
-||attr.appsflyer.com^
-||banner.appsflyer.com^
-||cdn.appsflyer.com^
-||cdnappicons.appsflyer.com^
-||conversions.appsflyer.com^
-||creatives-cdn.appsflyer.com^
-||dev.appsflyer.com^
-||dls2s.appsflyer.com^
-||dlsdk.appsflyer.com^
-||dynamic-config-api.appsflyer.com^
-||events.appsflyer.com^
-||experience.appsflyer.com^
-||fvalid.appsflyer.com^
-||gcd-s2s.appsflyer.com^
-||gcdsdk.appsflyer.com^
-||hq1.appsflyer.com^
-||impression.appsflyer.com^
-||inapps.appsflyer.com^
-||launches.appsflyer.com^
-||monitorsdk.appsflyer.com^
-||onelink.appsflyer.com^
-||onelinksmartscript.appsflyer.com^
-||register.appsflyer.com^
-||sdk.appsflyer.com^
-||sdk-services.appsflyer.com^
-||c2s.sdkless.appsflyer.com^
-||skadsdk.appsflyer.com^
-||track.appsflyer.com^
-||validate.appsflyer.com^
-||wa.appsflyer.com^
-||websdk.appsflyer.com^
 ||appsflyersdk.com^
 ||appsgeyser.com^
 ||cdn.appsmav.com^
@@ -9871,10 +9840,6 @@
 ||api.telemetry.watchabc.go.com^
 ||go-go.tech^
 ||go-green.ae^
-||c.go-mpulse.net^
-||reporting.go-mpulse.net^
-||s.go-mpulse.net^
-||s2.go-mpulse.net^
 ||go-push.ru^
 ||go1news.biz^
 ||go2.global^
@@ -10034,6 +9999,7 @@
 ||t.gopack.com^
 ||gopeerclick.com^
 ||vip.gophersport.com^
+||goplayhere.com^
 ||t.gopsusports.com^
 ||telem.sre.gopuff.com^
 ||static.goqubit.com^
@@ -11251,7 +11217,6 @@
 ||improvedigital.com^
 ||imptestrm.com^
 ||imr.sk^
-||imrworldwide.com^
 ||imtmp.net^
 ||imtwjwoasak.com^
 ||tmcontent.imvu.com^
@@ -18312,6 +18277,7 @@
 ||rtbsystem.org^
 ||rtclx.com^
 ||rtk.io^
+||collect.rtl.lu^
 ||streamingerror.rtl.de^
 ||tracking.rtl.de^
 ||rtmark.net^
@@ -19631,6 +19597,7 @@
 ||soficatan.site^
 ||sofinpushpile.com^
 ||soflopxl.com^
+||s.sofoot.com^
 ||mediams.mb.softbank.jp^
 ||tracker.softcube.com^
 ||tracker.softgarden.de^
@@ -22904,6 +22871,7 @@
 ||webwave.dev^
 ||webwiseforradio.com^
 ||goload.wecloud.io^
+||rtb.wedeo.ru^
 ||wednesdaynaked.com^
 ||wedolook.com^
 ||weednewspro.com^
@@ -30298,7 +30266,7 @@
 
 ! Videos on 9news.com.au
 @@||api.brightcove.com^
-! edge.api.brightcove.com
+@@|edge.api.brightcove.com^
 
 ! Sky Sport
 ! edge-auth.api.brightcove.com
@@ -32003,7 +31971,6 @@
 @@||prism.app-us1.com^
 @@||click.appcast.io^
 @@||c.apple.com^
-@@||customlinks.appsflyer.com^
 @@||ad.atdmt.com^
 @@||clicks.aweber.com^
 @@||www.awin1.com^
