@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-13T08:06:00.310Z
+! Last modified: 2023-01-13T12:06:51.944Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -310,8 +310,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 13 Jan 2023 07:21 UTC
-! Version: 2023.0113.0721.31
+! Last modified: 13 Jan 2023 12:06 UTC
+! Version: 2023.0113.1206.04
 ! Syntax: AdBlock
 ! Domains: 23788
 !
@@ -30125,7 +30125,7 @@
 ! https://github.com/badmojr/1Hosts/issues/553
 @@|api.revenuecat.com^
 
-! HP Smart App - Installation wizard not loading (fixed)
+! HP Smart App - Installation wizard not loading
 @@|mobilesdk-*.kampyle.com^
 
 ! https://github.com/AdAway/adaway.github.io/issues/309
@@ -30364,11 +30364,6 @@
 @@|c-ctrip.com^
 @@|www.c-ctrip.com^
 
-! Videos on digitaltrends.com
-! !!! Will not be unblocked, the domain is used for ads/tracking and is quite common !!!
-! pub.doubleverify.com
-! securepubads.g.doubleclick.net
-
 ! Breaks site layout fastpic.org
 @@|static.fastpic.org^
 
@@ -30479,10 +30474,6 @@
 @@|player.avplayer.com^
 @@|play.aniview.com^
 
-! Videos on nhl.com
-! !!! Will not be unblocked, the domain is used for ads/tracking and is quite common !!!
-! pubads.g.doubleclick.net
-
 ! Breakls site layout on nnmclub.to
 @@|nnmstatic.win^
 @@|www.nnmstatic.win^
@@ -30520,10 +30511,6 @@
 ! Qoo10 Shop
 @@|qoo10.sg^
 @@|www.qoo10.sg^
-
-! https://github.com/hagezi/dns-blocklists/issues/27
-! Breaks Pizzahut AU - seems to be fixes on site!
-! js.sentry-cdn.com
 
 ! Qt
 @@|qt.io^
@@ -30777,11 +30764,6 @@
 ! cdn1-s-ha-e15.mdhcdn.com
 ! cdn1-s-ha-e17t.mdhcdn.com
 ! cdn1-s-ha-e18.mdhcdn.com
-
-! Videos on moviepilot.de
-! !!! Will not be unblocked, the domains are used for ads/tracking and are quite common !!!
-! cdn.lib.getjad.io
-! securepubads.g.doubleclick.net
 
 ! CDN for Amazon JP
 @@|dtioykqj1u8de.cloudfront.net^
@@ -31928,6 +31910,10 @@
 
 ! Breaks site layout on maxmind.com - https://github.com/hagezi/dns-blocklists/issues/198
 @@|static.maxmind.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/202
+@@|mindvalley.com^
+@@|www.mindvalley.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
