@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-15T00:21:54.814Z
+! Last modified: 2023-01-15T08:05:53.434Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -18,40 +18,38 @@
 ! Expires: Updated regularly
 ! Syntax: AdGuard
 
-! Adblock-Detection
-! Bild.de, Sport1 and others
-||tiqcdn.com^
-@@||tags.tiqcdn.com^
-@@||www.asadcdn.com^
-
 ! Adobe
 ||demdex.net^
+! Videos on WOW / Sky Ticket / Hulu / ...
 @@||dpm.demdex.net^
 
 ! Ads
 ||*adcloud-*.everesttech.net^
 ||*met-vgwort-de.cdn.ampproject.org^
-||adsafeprotected.com^
-||adsymptotic.com^
 ||adnxs-simple.com^
 ||adnxs.com^
-||production-adserver-*.amazonaws.com^
-||cxense.com^
-||cdn.scarabresearch.com^
-||iad*.dotomi.com^
-||pijama.*.elasticbeanstalk.com^
+||adsafeprotected.com^
 ||adserver.*.yahoodns.net^
+||adsymptotic.com^
+||cdn.scarabresearch.com^
+||cxense.com^
+||iad*.dotomi.com^
+||iad-*.appboy.com^
+||pijama.*.elasticbeanstalk.com^
+||production-adserver-*.amazonaws.com^
+||rtbimp-loadbalancer-*.amazonaws.com^
 
 ! Amazon Shopping
-||advertising.amazon.*^
 ||amazon-adsystem.com^
-@@||c.amazon-adsystem.com^
+! Amazon referral links
 @@||aax-*-retail-direct.amazon-adsystem.com^
 @@||aax-*-retail-direct.amazon.com^
 @@||aax-eu.amazon.*^
 @@||aax-fe.amazon.*^
-||assoc-amazon.*^
 @@||assoc-redirect.amazon.*^
+@@||c.amazon-adsystem.com^
+||advertising.amazon.*^
+||assoc-amazon.*^
 ||fls*.amazon.*^
 ||mads*.amazon.*^
 ||unagi*.amazon.*^
@@ -76,6 +74,7 @@
 |sanalytic.*^
 |metrics.*^
 |metric.*^
+! Not used for tracking, metrics, analytics
 @@||metric.gstatic.com^
 |piwik.*^
 |smetrics.*^
@@ -88,12 +87,14 @@
 ||analytics-*.yinzcam.com^
 ||appdynamics.com^
 ||appsflyer.com^
+! Referral links
 @@||customlinks.appsflyer.com^
 ||branch.io^
 ||braze.com^
 ||braze.eu^
 ||cquotient.com^
 ||cdn-*.onetrust.com^
+||logger-*.dailymotion.com^
 ||collector-*.perimeterx.net^
 ||collector-*.px-cdn.net^
 ||collector-*.px-cloud.net^
@@ -104,6 +105,7 @@
 ||hotjar.com^
 ||iocnt.de^
 ||iocnt.net^
+! Videos on rtl.de
 @@||rtl-relay.iocnt.net^
 @@||data-*.rtl.de^
 ||ioam.de^
@@ -120,10 +122,12 @@
 ||scorecardresearch.com^
 ||sidekickopen*.com^
 ||split.io^
+! Affects various apps
 @@||auth.split.io^
 @@||cdn.split.io^
 @@||sdk.split.io^
 ||technical-service.net^
+! n-tv.de livestream
 @@||te.technical-service.net^
 ||track*.sevensenders.com^
 ||uptain.de^
@@ -132,11 +136,16 @@
 ||log-collector.shopee.*^
 ||analytics*.clickdimensions.com^
 ||siteintercept.qualtrics.com^
+! Beaks paypal pay process on some german shopping sites
 @@||*paypal*.siteintercept.qualtrics.com^
 ||wt-eu02.net^
 ||wurfl.io^
 ||xiti.com^
 ||mc.yandex.ru^
+||tiqcdn.com^
+! Adblock-Detection: Bild.de, Sport1 and others
+@@||tags.tiqcdn.com^
+@@||www.asadcdn.com^
 
 ! Apple
 ||*analytics-events.apple.com^
@@ -173,11 +182,13 @@
 ||g.doubleclick.net^
 ||google-analytics.com^
 ||googleadservices.com^
+! Google Search referral links
 @@||www.googleadservices.com^
 @@||adservice.google.*^
 ||googleoptimize.com^
 ||googlesyndication.com^
 ||googletagmanager.com^
+! Breaks site layouts, videos and more on some sites
 @@||www.googletagmanager.com^
 @@||www-googletagmanager.l.google.com^
 ||googletagservices.com^
@@ -186,8 +197,10 @@
 
 ! Huawei
 ||ad-*.dbankcloud.*^
+||ad-*.dbankedge.*^
 ||ad-*.hicloud.com^
 ||adx-*.dbankcloud.*^
+||adx-*.dbankedge.*^
 ||adx-*.hicloud.com^
 ||datacollector-*.dbankcloud.*^
 ||datacollector-*.hicloud.com^
@@ -205,8 +218,10 @@
 ! Microsoft Telemetry
 ||*telemetry.officeapps.live.com^
 ||events*.data.microsoft.com^
+! Office 365 Apps and Services
 @@||browser.events.data.microsoft.com^
 @@||self.events.data.microsoft.com^
+! Windows / Xbox-Achievments
 @@||*v10.events.data.microsoft.com^
 @@||*v20.events.data.microsoft.com^
 ||events*.data.msn.*^
@@ -214,6 +229,7 @@
 ||pipe.aria.microsoft.com^
 ||telemetry*.microsoft.com^
 ||vortex*.data.microsoft.com^
+! Windows / Xbox-Achievments
 @@||*v10.vortex-win.data.microsoft.com^
 @@||*v20.vortex-win.data.microsoft.com^
 ||watson*.microsoft.com^
@@ -251,6 +267,7 @@
 
 ! Smart TV
 ||alphonso.tv^
+||collect*.myhomescreen.tv^
 ||collector-*.tvsquared.com^
 ||flingo.tv^
 ||log*.vewd.com^
@@ -258,7 +275,6 @@
 ||tvping.com^
 ||tvtelemetrie.com^
 ||tvtelemetrie.de^
-||collect*.myhomescreen.tv^
 ||usage*.myhomescreen.tv^
 
 ! TikTok Fingerprinting
@@ -293,19 +309,19 @@
 ! Xiaomi
 ||t*.a.market.xiaomi.com^
 
-! Videos
+! Videos - @@: Unbreak Videoplayback on various sites
 ||2mdn.net^
 @@||s0-2mdn-net.l.google.com^
 @@||s0.2mdn.net^
+@@||damoh.schneevonmorgen.com^
 @@||glomex.com^
+||imrworldwide.com^
+||nmrodam.com^
 ||smartclip.net^
 ||videostep.com^
 ||zomap.de^
 @@||lush-clouds.zomap.de^
 @@||swankyrule.zomap.de^
-||nmrodam.com^
-@@||damoh.schneevonmorgen.com^
-||imrworldwide.com^
 
 ! Title: HaGeZi's Personal DNS Blocklist for Black & White list
 ! Description: My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!
@@ -313,8 +329,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 15 Jan 2023 00:09 UTC
-! Version: 2023.0115.0009.48
+! Last modified: 15 Jan 2023 07:37 UTC
+! Version: 2023.0115.0737.11
 ! Syntax: AdBlock
 ! Domains: 20815
 !
@@ -28935,6 +28951,10 @@
 
 ! LinkedIn Content
 @@|snap.licdn.com^
+
+! Ukrainian streaming service
+@@|sweet.tv^
+@@|www.sweet.tv^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
