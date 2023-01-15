@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-15T11:05:26.909Z
+! Last modified: 2023-01-15T16:05:26.185Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -22,6 +22,8 @@
 ||demdex.net^
 ! Videos on WOW / Sky Ticket / Hulu / ...
 @@||dpm.demdex.net^
+! Break a lot, add it to your personal blacklist and whitelist what you need.
+! ||omtrdc.net^
 
 ! Ads
 |ads.*^
@@ -35,6 +37,9 @@
 @@||ads.twitter.com^
 ! Videos on lavoixdunord.fr
 @@||ads.videoadex.com^
+||*-adkviewtrackingtagserver.*.elasticbeanstalk.com^
+||*-ads.aimatch.com^
+||*-adserver-*.*.elasticbeanstalk.com^
 ||*adcloud-*.everesttech.net^
 ||*met-vgwort-de.cdn.ampproject.org^
 ||adnxs-simple.com^
@@ -42,17 +47,38 @@
 ||adsafeprotected.com^
 ||adserver.*.yahoodns.net^
 ||adsymptotic.com^
+||adtd.douglas.*^
+||adtima-*.zascdn.*^
+||advertising-*.dpgmedia.cloud^
+||adzxplore.com^
 ||cdn.scarabresearch.com^
 ||cxense.com^
 ||iad*.dotomi.com^
 ||iad-*.appboy.com^
-||pijama.*.elasticbeanstalk.com^
-||production-adserver-*.amazonaws.com^
-||rtbimp-loadbalancer-*.amazonaws.com^
 ||notads.*.xyz^
-||adzxplore.com^
-||*-ads.aimatch.com^
+||pijama.*.elasticbeanstalk.com^
 ||programmatics.net^
+||taboola.com^
+||wxadserve.xyz^
+
+! Amazon AWS
+||*-adserver-*.amazonaws.com^
+||*-analytics-*.amazonaws.com^
+||*-beacon-*.amazonaws.com^
+||*-loggers-*.amazonaws.com^
+||*-telemetry-*.amazonaws.com^
+||adktracking-*.amazonaws.com^
+||adn-tktracking-*.amazonaws.com^
+||ads-*.amazonaws.com^
+||adserver-*.amazonaws.com^
+||adservingvpc-*.amazonaws.com^
+||adsk-*.amazonaws.com^
+||beaconserver-*.amazonaws.com^
+||log-collectors-*.amazonaws.com^
+||popadex-*.amazonaws.com^
+||rtbimp-loadbalancer-*.amazonaws.com^
+||tracking-*.amazonaws.com^
+||wildcard-ads-*.amazonaws.com^
 
 ! Amazon Shopping
 ||amazon-adsystem.com^
@@ -134,6 +160,7 @@
 @@||tracking.s24.com^
 @@||tracking.truthfinder.com^
 @@||tracking.ubisoft.com^
+|gtrack.*^
 |trk.*^
 ! Mainly referral links
 @@||trk.klclick*.com^
@@ -211,9 +238,20 @@
 ||cookietagmanager.net^
 ||*-telemetry-*.tradingview.com^^
 ||piwik.pro^
+||logs.datadoghq.com^
+||webcache*.datareporter.eu^
+||direct-collect.dy-api.*^
+||*analytics*.echostarbeta.com^
+||analytics.edgekey.net^
+! Videos on mtv.fi
+@@||ma135-r.analytics.edgekey.net^
+! Chromecast functionality of Disney+ Hotstar app
+@@||79423.analytics.edgekey.net^
+||collector.xhamster.*^
 
 ! Apple
 ||*analytics-events.apple.com^
+||*analytics-events.news.apple-dns.net^
 ||*feedbackws.icloud.com^
 ||*metrics.apple.com^
 ||*metrics.mzstatic.com^
@@ -282,6 +320,11 @@
 
 ! Marketing
 ||1mm.fr^
+||dotomi.com^
+! Referral links
+@@||cj.dotomi.com^
+! Google Shopping
+@@||ams*-usadmm-ds.dotomi.com
 
 ! Microsoft Telemetry
 ||*telemetry.officeapps.live.com^
@@ -328,6 +371,7 @@
 ||mycleverpush.com^
 
 ! Shitty hosts
+||ad*.on.cc^
 ||load*.biz^
 ||news-*.cc^
 ||news-*.pw^
@@ -346,6 +390,10 @@
 ||usage*.myhomescreen.tv^
 
 ! TikTok Fingerprinting
+||*-ad.byteoversea.com^
+||*-mcs.byteoversea.com^
+||*-mon-*.bytegsdk.com^
+||*-mon-*.byteoversea.com^
 ||ads*.tiktok.com^
 ||analytics*.tiktok.com^
 ||frontier*.byteoversea.com^
@@ -353,7 +401,8 @@
 ||gecko*.byteoversea.com^
 ||gecko*.tiktokv.com^
 ||ib.snssdk.com^
-||log*.byteoversea.com^
+||log*.bytegsdk.com^
+||log*.byteoversea.*^
 ||log*.snssdk.com^
 ||log*.tiktok.com^
 ||log*.tiktokv.com^
@@ -395,12 +444,12 @@
 @@||swankyrule.zomap.de^
 ||hit.gemius.pl^
 ! Videos on different PL pages
+@@||adocean-pl.hit.gemius.pl^
+@@||gapl.hit.gemius.pl^
+@@||idm.hit.gemius.pl^
+@@||pro.hit.gemius.pl^
 @@||spl.hit.gemius.pl^
 @@||str.hit.gemius.pl^
-@@||pro.hit.gemius.pl^
-@@||gapl.hit.gemius.pl^
-@@||adocean-pl.hit.gemius.pl^
-@@||idm.hit.gemius.pl^
 
 ! Title: HaGeZi's Personal DNS Blocklist for Black & White list
 ! Description: My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!
@@ -408,10 +457,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 15 Jan 2023 10:30 UTC
-! Version: 2023.0115.1030.10
+! Last modified: 15 Jan 2023 15:23 UTC
+! Version: 2023.0115.1523.33
 ! Syntax: AdBlock
-! Domains: 19278
+! Domains: 19005
 !
 ||00px.net^
 ||021jf.com^
@@ -562,7 +611,6 @@
 ||24.com^
 ||24-sportnews.com^
 ||247-inc.net^
-||gtrack.247mirror.com^
 ||247realmedia.com^
 ||saa.247sports.com^
 ||24click.top^
@@ -637,7 +685,6 @@
 ||360yield-basic.com^
 ||362728tdg.com^
 ||365dmp.com^
-||gtrack.365economist.com^
 ||adssettings.365scores.com^
 ||dhn-ads-api.365scores.com^
 ||39slxu3bw.ru^
@@ -2133,51 +2180,20 @@
 ||uedata.amazon.com^
 ||ws.amazon.com^
 ||cloudfront-labs.amazonaws.com^
-||ads-api-new-2052271615.ap-northeast-1.elb.amazonaws.com^
-||adserver-1277986481.ap-northeast-1.elb.amazonaws.com^
 ||ad-server-lb-294150285.ap-southeast-1.elb.amazonaws.com^
-||ads-816899299.ap-southeast-1.elb.amazonaws.com^
 ||rw-yieldmo-com-1673518954.ap-southeast-1.elb.amazonaws.com^
-||uplynk-beacon-1914127361.ap-southeast-1.elb.amazonaws.com^
-||adservingvpc-1239633584.eu-west-1.elb.amazonaws.com^
-||beaconserver-ce-vpc0-1537565064.eu-west-1.elb.amazonaws.com^
 ||prod-dem-collector-elb-611025824.eu-west-1.elb.amazonaws.com^
-||adktracking-1671721947.eu-west-3.elb.amazonaws.com^
-||adn-tktracking-virginia-621472495.us-east-1.elb.amazonaws.com^
-||adserver-2084671375.us-east-1.elb.amazonaws.com^
-||adserver-vpc-alb-0-2072243822.us-east-1.elb.amazonaws.com^
-||adserver-vpc-alb-1-2048135467.us-east-1.elb.amazonaws.com^
-||adserver-vpc-alb-2-1898430250.us-east-1.elb.amazonaws.com^
-||adsk-pnxproxy-prd-1753980530.us-east-1.elb.amazonaws.com^
 ||audience-164723144.us-east-1.elb.amazonaws.com^
 ||external-api-alb-1377050814.us-east-1.elb.amazonaws.com^
 ||externals-1953518744.us-east-1.elb.amazonaws.com^
-||log-collectors-73517960.us-east-1.elb.amazonaws.com^
-||lynx-prod-beacon-alb-498367235.us-east-1.elb.amazonaws.com^
-||popadex-1919430815.us-east-1.elb.amazonaws.com^
-||prod-ash-beacon-1960876484.us-east-1.elb.amazonaws.com^
 ||rpc-tapjoy-com-lb-1378811527.us-east-1.elb.amazonaws.com^
 ||tapjoy-com-lb-vpc-332546193.us-east-1.elb.amazonaws.com^
-||tracking-1611167402.us-east-1.elb.amazonaws.com^
 ||vast2-dual-124287323.us-east-1.elb.amazonaws.com^
-||wildcard-ads-new-1653986885.us-east-1.elb.amazonaws.com^
-||ads-b-480313385.us-west-1.elb.amazonaws.com^
-||ads-c-1854119718.us-west-1.elb.amazonaws.com^
-||adserver-vpc-alb-0-2075095491.us-west-2.elb.amazonaws.com^
-||adserver-vpc-alb-1-725730730.us-west-2.elb.amazonaws.com^
-||adserver-vpc-alb-2-553366957.us-west-2.elb.amazonaws.com^
-||adserver-vpc-alb-3-578630024.us-west-2.elb.amazonaws.com^
-||beaconserver-ce-vpc0-1909323404.us-west-2.elb.amazonaws.com^
 ||dco-jads-727222375.us-west-2.elb.amazonaws.com^
-||prod-pdx-beacon-1406086907.us-west-2.elb.amazonaws.com^
 ||rw-yieldmo-com-1857737650.us-west-2.elb.amazonaws.com^
-||wildcard-ads-448740142.us-west-2.elb.amazonaws.com^
-||huq-query-loggers-europe-west1-32ef7f4bbf54ce27.elb.eu-west-1.amazonaws.com^
-||prod-ew1-telemetry-cs-bucket.s3.eu-west-1.amazonaws.com^
 ||phd.amazonaws.cn^
 ||admarvel.s3.amazonaws.com^
 ||advancelocal-adapter-image-uploads.s3.amazonaws.com^
-||alexa-mobile-analytics-configuration-prod.s3.amazonaws.com^
 ||amd-athena-rs-install-logs.s3.amazonaws.com^
 ||ams-pageview-public.s3.amazonaws.com^
 ||atlasox.s3.amazonaws.com^
@@ -2208,12 +2224,10 @@
 ||surveygizmobeacon.s3.amazonaws.com^
 ||syncplusconfig.s3.amazonaws.com^
 ||twitter-badges.s3.amazonaws.com^
-||later-analytics-reports.s3-accelerate.amazonaws.com^
 ||flipdish-cookie-consent.s3-eu-west-1.amazonaws.com^
 ||inneractive-assets.s3-eu-west-1.amazonaws.com^
 ||lb-static-content.s3-us-west-2.amazonaws.com^
 ||trafficfuelpixel.s3-us-west-2.amazonaws.com^
-||huq-query-loggers-california-3cec807da3e9dc0d.elb.us-west-1.amazonaws.com^
 ||global.cmcs.service.amazonsilk.com^
 ||api.mediation.amberweather.com^
 ||aqi.wd.amberweather.com^
@@ -2453,10 +2467,6 @@
 ||iad.apple.com^
 ||iadcontent.apple.com^
 ||autolinkmaker.itunes.apple.com^
-||books-analytics-events.news.apple-dns.net^
-||notes-analytics-events.news.apple-dns.net^
-||stocks-analytics-events.news.apple-dns.net^
-||weather-analytics-events.news.apple-dns.net^
 ||apple-net.com^
 ||apple-pie.in^
 ||apple-tradein-support-online.com^
@@ -2764,7 +2774,6 @@
 ||automizely-analytics.com^
 ||s.autopilotapp.com^
 ||api.autopilothq.com^
-||gtrack.news.autos101.com^
 ||stats.autoscout24.ch^
 ||svoywu.autoscout24.de^
 ||tracer.autoscout24.ch^
@@ -3528,7 +3537,6 @@
 ||globalconfig.bluedot.io^
 ||us1-sdk.bluedot.io^
 ||blueduckredapple.com^
-||gtrack.bluegazette.com^
 ||echo4.bluehornet.com^
 ||images.go.bluejacketslink.com^
 ||bluekai.com^
@@ -3866,7 +3874,6 @@
 ||cdn-s2s.buysellads.net^
 ||cdn4.buysellads.net^
 ||buyvenoms.com^
-||gtrack.buzzerilla.com^
 ||pixiedust.buzzfeed.com^
 ||rt.buzzni.com^
 ||buzzonclick.com^
@@ -3892,17 +3899,9 @@
 ||dm.bytedance.com^
 ||mssdk-bu.bytedance.com^
 ||bytefence.com^
-||gpm-mon-sg.bytegsdk.com^
-||log-sg.bytegsdk.com^
-||gpm-mon-sg.byteoversea.com^
-||log-tiktok.byteoversea.net^
-||maliva-mcs.byteoversea.com^
-||p16-ad.byteoversea.com^
-||sgali-mcs.byteoversea.com^
 ||tnc16-alisg.byteoversea.com^
 ||tnc16-useast1a.byteoversea.com^
 ||ug-sg.byteoversea.com^
-||v16-ad.byteoversea.com^
 ||bytesabbreviation.com^
 ||bytogeticr.com^
 ||as.bz-berlin.de^
@@ -5682,7 +5681,6 @@
 ||rp.dadafarada.com^
 ||daggerclip.com^
 ||newlog.daidoanket.vn^
-||gtrack.dailybee.com^
 ||dailyblogzz.com^
 ||dailyfeature.net^
 ||pbs.dailyhunt.in^
@@ -5704,7 +5702,6 @@
 ||danbo.org^
 ||dantbritingd.club^
 ||dapperfloor.com^
-||dappshelpdeskcenter.com^
 ||darghinruskin.com^
 ||dariolunus.com^
 ||dark-reader.com^
@@ -5727,17 +5724,11 @@
 ||datacoral.io^
 ||datacygnal.io^
 ||logs.datadoghq.eu^
-||browser-http-intake.logs.datadoghq.com^
-||mobile-http-intake.logs.datadoghq.com^
-||public-trace-http-intake.logs.datadoghq.com^
-||rum-http-intake.logs.datadoghq.com^
 ||api-sdk.datadome.co^
 ||datafeedfile.com^
 ||media.datahc.com^
 ||datamilk.app^
 ||datamind.ru^
-||webcache.datareporter.eu^
-||webcache-eu.datareporter.eu^
 ||dataroid.com^
 ||iam.datasavannah.com^
 ||datasign.co^
@@ -6180,7 +6171,6 @@
 ||pnsen.dolphin-browser.com^
 ||vcen.dolphin-browser.com^
 ||domainanalyticsapi.com^
-||ti.domainforlite.com^
 ||xml.domains-traffic.com^
 ||domdex.com^
 ||mon.domdog.io^
@@ -6213,62 +6203,6 @@
 ||dotcom10.info^
 ||dotmetrics.net^
 ||dotnxdomain.net^
-||33across-match.dotomi.com^
-||adobe-sync.dotomi.com^
-||afp.dotomi.com^
-||amazon-tam-match.dotomi.com^
-||ams-usadmm.dotomi.com^
-||ams01-login.dotomi.com^
-||ams01-usadmm.dotomi.com^
-||ams02-login.dotomi.com^
-||ams02-usadmm.dotomi.com^
-||aol-match.dotomi.com^
-||apnx-match.dotomi.com^
-||bluekai-sync.dotomi.com^
-||casale-match.dotomi.com^
-||cpe.dotomi.com^
-||dclk-match.dotomi.com^
-||districtm-match.dotomi.com^
-||dp-sync.dotomi.com^
-||eyeota-match.dotomi.com^
-||kargo-match.dotomi.com^
-||medianet-match.dotomi.com^
-||mediaplex-match.dotomi.com^
-||msg.dotomi.com^
-||openx2-match.dotomi.com^
-||prebid-match.dotomi.com^
-||pubmatic-match.dotomi.com^
-||pulsepoint-match.dotomi.com^
-||purch-match.dotomi.com^
-||rubicon-match.dotomi.com^
-||s-usweb.dotomi.com^
-||sjc-usadmm.dotomi.com^
-||sjc-usadmm-ds.dotomi.com^
-||sjc01-login.dotomi.com^
-||sjc01-usadmm.dotomi.com^
-||sjc02-login.dotomi.com^
-||sjc02-usadmm.dotomi.com^
-||sjc03-login.dotomi.com^
-||sjc03-usadmm.dotomi.com^
-||sjc04-login.dotomi.com^
-||sjc04-usadmm.dotomi.com^
-||sjc05-login.dotomi.com^
-||sjc05-usadmm.dotomi.com^
-||sjc06-login.dotomi.com^
-||sjc06-usadmm.dotomi.com^
-||sjc07-login.dotomi.com^
-||sjc07-usadmm.dotomi.com^
-||smaato-match.dotomi.com^
-||spotx-match.dotomi.com^
-||stx-match.dotomi.com^
-||synacor-match.dotomi.com^
-||tpt.dotomi.com^
-||tremor-match.dotomi.com^
-||triplelift-match.dotomi.com^
-||tubemogul-sync.dotomi.com^
-||usadmm.dotomi.com^
-||usadmm-ds.dotomi.com^
-||usweb.dotomi.com^
 ||dotzup.com^
 ||erebor.douban.com^
 ||at3.doubanio.com^
@@ -6289,11 +6223,6 @@
 ||cdn.engine.phn.doublepimp.com^
 ||doubleverify.com^
 ||doubtdrawer.com^
-||adtd.douglas.at^
-||adtd.douglas.de^
-||adtd.douglas.it^
-||adtd.douglas.nl^
-||adtd.douglas.pl^
 ||doumob.com^
 ||msg.douyu.com^
 ||wan.douyu.com^
@@ -6321,8 +6250,6 @@
 ||ad.doyouad.com^
 ||cdn.doyouad.com^
 ||ping.dozuki.com^
-||advertising-cdn.dpgmedia.cloud^
-||advertising-module.api.dpgmedia.cloud^
 ||c.dpgmedia.net^
 ||sp.dpgmedia.net^
 ||beak.bigdata.dpgmmservices.nl^
@@ -6449,8 +6376,6 @@
 ||tls.dxsvr.com^
 ||u.dxsvr.com^
 ||fumiad.dxys.pro^
-||direct-collect.dy-api.com^
-||direct-collect.dy-api.eu^
 ||dychinapha.com^
 ||dogus-ads-cdn.dygdigital.com^
 ||dygassets.dygdigital.com^
@@ -6512,7 +6437,6 @@
 ||creative.eagllwin.com^
 ||h5.eagllwin.com^
 ||eakalra.ru^
-||eaqxkwdbr.com^
 ||eargentssep.one^
 ||early-birds.io^
 ||earn-bitcoins.net^
@@ -6581,9 +6505,6 @@
 ||events.engager.ecbsn.com^
 ||sts.eccmp.com^
 ||ecdtrk.com^
-||stbanalytics.echostarbeta.com^
-||stbanalyticschy.echostarbeta.com^
-||stbanalyticspvm.echostarbeta.com^
 ||eclick.vn^
 ||eclkmpbn.com^
 ||ecn5.com^
@@ -6600,17 +6521,6 @@
 ||t.ecupirates.com^
 ||ecustomeropinions.com^
 ||wareneingang.edeka.de^
-||ma1169-r.analytics.edgekey.net^
-||ma1275-r.analytics.edgekey.net^
-||ma140-r.analytics.edgekey.net^
-||ma1498-r.analytics.edgekey.net^
-||ma1540-r.analytics.edgekey.net^
-||ma193-r.analytics.edgekey.net^
-||ma312-r.analytics.edgekey.net^
-||ma479-r.analytics.edgekey.net^
-||ma562-r.analytics.edgekey.net^
-||ma788-r.analytics.edgekey.net^
-||ma80-r.analytics.edgekey.net^
 ||cdn-inner-active.edgekey.net^
 ||aaxads.com.edgekey.net^
 ||ds-api-public.addthis.com.edgekey.net^
@@ -6621,7 +6531,6 @@
 ||aniview.com.edgekey.net^
 ||betrad.com.edgekey.net^
 ||bkrtx.com.edgekey.net^
-||log.byteoversea.com.edgekey.net^
 ||convertexperiments.com.edgekey.net^
 ||doubleverify.com.edgekey.net^
 ||flashtalking.com.edgekey.net^
@@ -6741,9 +6650,7 @@
 ||elabs5.com^
 ||elastic-data.fr^
 ||elasticad.net^
-||production-adkviewtrackingtagserver.ap-northeast-1.elasticbeanstalk.com^
 ||bejeweled-skies-prod.elasticbeanstalk.com^
-||tp-rtb-adserver-eu.eu-west-1.elasticbeanstalk.com^
 ||fusion-iad-dev-clogs-eqbrmmvphc.elasticbeanstalk.com^
 ||kerio-push-gateway-prod.elasticbeanstalk.com^
 ||mgd-adengine.elasticbeanstalk.com^
@@ -7459,7 +7366,6 @@
 ||startrekk.flaconi.de^
 ||flagcounter.com^
 ||flairadscpc.com^
-||gtrack.flamingoof.com^
 ||flash.cn^
 ||flashb.id^
 ||flashinbust.com^
@@ -7788,7 +7694,6 @@
 ||sw88.fxnetworks.com^
 ||fyber.com^
 ||adserving.fyi-marketing.com^
-||fyleejyhfo.com^
 ||fywkuzp.ru^
 ||fyxm.net^
 ||fzlnk.com^
@@ -8505,7 +8410,6 @@
 ||gtmjs.com^
 ||gtoonfd.com^
 ||gtplnd.com^
-||w.gtrconf.info^
 ||gtrsqer.com^
 ||gtrxlnd2.com^
 ||gtrxlnd4.com^
@@ -8836,7 +8740,6 @@
 ||hintonjour.xyz^
 ||hip-97166b.com^
 ||hippieestreat.com^
-||gtrack.hipporeport.com^
 ||hippostravois.store^
 ||hiprofitnetworks.com^
 ||at.hiredhepper.com^
@@ -8857,7 +8760,6 @@
 ||histcleaner.com^
 ||historap.ru^
 ||historicalbeam.com^
-||gtrack.historictalk.com^
 ||sourcepoint-mms.history.com^
 ||historyhide.com^
 ||hisurnhuh.com^
@@ -8925,7 +8827,6 @@
 ||swasc.homedepot.com^
 ||homepage-web.com^
 ||adimages.homestore.com^
-||gtrack.hometalk.com^
 ||tc2.hometogo.net^
 ||somt.honda.com^
 ||honeyplaybox.com^
@@ -9998,7 +9899,6 @@
 ||stats.justpaste.it^
 ||justpremium.com^
 ||justservingfiles.net^
-||gtrack.juststarz.com^
 ||justuno.com^
 ||sentry.justwatch.com^
 ||widget.justwatch.com^
@@ -10303,8 +10203,6 @@
 ||ad.kubiserves.icu^
 ||elqtrack.kubotausa.com^
 ||frontend-helper.kucoin.com^
-||gtrack.kueez.com^
-||gtrack.kueez.net^
 ||kughouft.net^
 ||adserviceretry.kugou.com^
 ||adsfile.bssdlbig.kugou.com^
@@ -10577,6 +10475,7 @@
 ||lgrarcosbann.club^
 ||lgsmartad.com^
 ||aic.cdpbeacon.lgtvcommon.com^
+||lgu-services.com^
 ||lgypegis.xyz^
 ||lhamad.gq^
 ||lhinsights.com^
@@ -11300,7 +11199,6 @@
 ||strack.mentor.com^
 ||mentseconom.xyz^
 ||meo257na3rch.com^
-||meoprugeugxd.com^
 ||mepuzz.com^
 ||mercadoclics.com^
 ||events.mercadolibre.com^
@@ -12727,25 +12625,6 @@
 ||omniture.com^
 ||cdn.omnivirt.com^
 ||omoonsih.net^
-||hb.omtrdc.net^
-||crain.d1.sc.omtrdc.net^
-||newjobs.d1.sc.omtrdc.net^
-||siemens.d1.sc.omtrdc.net^
-||royalmail.com.ssl.d1.sc.omtrdc.net^
-||amazonwebservices.d2.sc.omtrdc.net^
-||daimlerag.d2.sc.omtrdc.net^
-||truevalue.d2.sc.omtrdc.net^
-||1und1internetag.d3.sc.omtrdc.net^
-||centricabritishgas.d3.sc.omtrdc.net^
-||nzz.d3.sc.omtrdc.net^
-||iqdigitalmediamarketinggmbh.sc.omtrdc.net^
-||rewedigital.sc.omtrdc.net^
-||geico.com.ssl.sc.omtrdc.net^
-||tt.omtrdc.net^
-||ad4.on.cc^
-||ad5.on.cc^
-||ad6.on.cc^
-||ad7.on.cc^
 ||ip7prksb2muxvmmh25t6rxl2te0tfulc.lambda-url.eu-west-1.on.aws^
 ||on2url.com^
 ||onaudience.com^
@@ -12879,7 +12758,6 @@
 ||opinionlab.com^
 ||opmnstr.com^
 ||fzgpzp.opodo.de^
-||gtrack.opossumsauce.com^
 ||opoxv.com^
 ||conff.dc.oppomobile.com^
 ||stat.dc.oppomobile.com^
@@ -13140,7 +13018,6 @@
 ||parchedsofa.com^
 ||cdn.pardot.com^
 ||pare.work^
-||gtrack.parentmood.com^
 ||parkingcrew.net^
 ||parklogic.com^
 ||ablink.mail.parkmobile.io^
@@ -13923,7 +13800,6 @@
 ||isl.punchh.com^
 ||punosy.best^
 ||punyplant.com^
-||gtrack.puppylychee.com^
 ||assets.purch.com^
 ||t.purduesports.com^
 ||response.pure360.com^
@@ -14143,7 +14019,6 @@
 ||a.quora.com^
 ||q.quora.com^
 ||quotes.com^
-||qusatjrywywfx.com^
 ||zhcxvk.qvc.com^
 ||iadctest.qwapi.com^
 ||qwerfdx.com^
@@ -14168,9 +14043,6 @@
 ||raac33.net^
 ||rabbitrifle.com^
 ||saa.rachaelrayshow.com^
-||d7d3cf2e81d293050033-3dfc0615b0fd7b49143049256703bfce.ssl.cf1.rackcdn.com^
-||dc4d4996bc86498d8959-7dc0216bc6cc2f4ed239035dfc17235b.r83.cf3.rackcdn.com^
-||dcdd29eaa743c493e732-7dc0216bc6cc2f4ed239035dfc17235b.ssl.cf3.rackcdn.com^
 ||api.radar.io^
 ||hcjpbc.radaronline.com^
 ||radarurl.com^
@@ -14298,7 +14170,6 @@
 ||marketing.realcomm.com^
 ||realgamess.com^
 ||reallifecam.com^
-||gtrack.reallifediy.com^
 ||reallyfreegeoip.org^
 ||data.madridista-free.realmadrid.com^
 ||iot-logser.realme.com^
@@ -14601,7 +14472,6 @@
 ||rigedelip92.xyz^
 ||righteouscrayon.com^
 ||rightfulfall.com^
-||gtrack.rightlivin.com^
 ||tag.rightmessage.com^
 ||rigi9bury.com^
 ||rigill.com^
@@ -14684,7 +14554,6 @@
 ||t.rolltide.com^
 ||views.romaniatv.net^
 ||romanlighting.cn^
-||gtrack.romanticfeed.com^
 ||romivapsi.com^
 ||feedback.cn.ronghub.com^
 ||stats.cn.ronghub.com^
@@ -15069,7 +14938,6 @@
 ||sp-consent.schwarzwaelder-bote.de^
 ||wer.schwarzwaelder-bote.de^
 ||detnmz.sciencing.com^
-||gtrack.scientistplus.com^
 ||event.scimo.io^
 ||sciniphruffin.com^
 ||scintillatingsilver.com^
@@ -15477,7 +15345,6 @@
 ||showroomlogic.com^
 ||shrillspoon.com^
 ||shrinkearn.com^
-||gtrack.shrinkplus.com^
 ||shrinktheweb.com^
 ||shroughtened.com^
 ||shukriya90.com^
@@ -16495,65 +16362,6 @@
 ||tabloidquantitycosts.com^
 ||tabmo.io^
 ||tabookbusines.info^
-||15.taboola.com^
-||am-match.taboola.com^
-||am-sync.taboola.com^
-||am-trc-events.taboola.com^
-||am-vid-events.taboola.com^
-||am-wf.taboola.com^
-||api.taboola.com^
-||beacon.taboola.com^
-||c2.taboola.com^
-||c3.taboola.com^
-||cdn.taboola.com^
-||cds.taboola.com^
-||ch-match.taboola.com^
-||ch-sync.taboola.com^
-||ch-vid-events.taboola.com^
-||ch-wf.taboola.com^
-||hk-match.taboola.com^
-||hk-sync.taboola.com^
-||hk-vid-events.taboola.com^
-||hk-wf.taboola.com^
-||images-dl.taboola.com^
-||impr.taboola.com^
-||imprammp.taboola.com^
-||imprchmp.taboola.com^
-||imprhkmp.taboola.com^
-||imprlatbmp.taboola.com^
-||imprnjmp.taboola.com^
-||imprsgmp.taboola.com^
-||la-match.taboola.com^
-||la-sync.taboola.com^
-||la-trc-events.taboola.com^
-||la-vid-events.taboola.com^
-||la-wf.taboola.com^
-||match.taboola.com^
-||mb.taboola.com^
-||nr.taboola.com^
-||nr-events.taboola.com^
-||opps.taboola.com^
-||pips.taboola.com^
-||popup.taboola.com^
-||resources.taboola.com^
-||sg-match.taboola.com^
-||sg-sync.taboola.com^
-||sg-trc-events.taboola.com^
-||sg-vid-events.taboola.com^
-||sg-wf.taboola.com^
-||sync.taboola.com^
-||sync-t1.taboola.com^
-||trc.taboola.com^
-||trc-events.taboola.com^
-||us-match.taboola.com^
-||us-sync.taboola.com^
-||us-vid-events.taboola.com^
-||us-wf.taboola.com^
-||vidanalytics.taboola.com^
-||vidstat.taboola.com^
-||vidstatb.taboola.com^
-||vidutils.taboola.com^
-||wf.taboola.com^
 ||taboolasyndication.com^
 ||tabsearch.net^
 ||activate.tacdn.com^
@@ -16696,7 +16504,6 @@
 ||taskanalytics.com^
 ||taskbarsystem.com^
 ||tastelesstrucks.com^
-||gtrack.tastyarea.com^
 ||tatersbilobed.com^
 ||tatleadlam.live^
 ||tatpek.com^
@@ -16875,12 +16682,10 @@
 ||news.thedailyrecord.com^
 ||thediseasetracker.com^
 ||thedoccloud.com^
-||gtrack.theecofeed.com^
 ||thefacux.com^
 ||thefatherofsalmon.com^
 ||thefilter.com^
 ||thefontzone.com^
-||gtrack.thefunpost.com^
 ||theglossonline.com^
 ||thegobrowser.com^
 ||thegoodplan.ovh^
@@ -16891,7 +16696,6 @@
 ||blue.thehill.com^
 ||f775.thehour.com^
 ||userexperience.thehut.net^
-||gtrack.theiwise.com^
 ||tls.thelibrarystore.com^
 ||a.thelocal.com^
 ||themightytrucker.com^
@@ -17334,7 +17138,6 @@
 ||travelsmarter.net^
 ||media.travelzoo.com^
 ||traversedlp.com^
-||gtrack.travlerz.com^
 ||secure.tray0bury.com^
 ||trazk.com^
 ||collect.trbo.com^
@@ -18271,7 +18074,6 @@
 ||efficiency.visma.com^
 ||visors-airminal.com^
 ||visto1.net^
-||gtrack.visualchase.com^
 ||visualdna.com^
 ||visualrevenue.com^
 ||dacdn.visualwebsiteoptimizer.com^
@@ -18432,7 +18234,6 @@
 ||w1sercher.biz^
 ||w3counter.com^
 ||w55c.net^
-||gtrack.wackojaco.com^
 ||content.wacom.com^
 ||waeshana.com^
 ||waicaiwhosha.com^
@@ -18994,8 +18795,6 @@
 ||wwserch41.biz^
 ||wwsercher.biz^
 ||www-paypal.us^
-||rtb-apac.wxadserve.xyz^
-||rtb-useast.wxadserve.xyz^
 ||wxhiojortldjyegtkx.bid^
 ||wxseedslpi.com^
 ||wydfghjjh.live^
@@ -19038,8 +18837,6 @@
 ||xenn.io^
 ||tracker.xgen.dev^
 ||cnt.xhamster.com^
-||collector.xhamster.com^
-||collector.xhamster.desi^
 ||gga.xhamster.com^
 ||collector.xhamster2.com^
 ||veih8bee.xhcdn.com^
@@ -19358,7 +19155,6 @@
 ||yoginsnorland.com^
 ||yoifjfbzrkcz.com^
 ||yokeeroud.com^
-||yokjcfblpe.com^
 ||pixel.yola.com^
 ||sdk.yolanda.hk^
 ||yomedia.vn^
@@ -19393,22 +19189,6 @@
 ||ydpushserver.youdao.com^
 ||log.yex.youdao.com^
 ||yougotacheck.com^
-||yk-ssp.ad.youku.com^
-||adx-open-service.youku.com^
-||atm.youku.com^
-||cad.youku.com^
-||ems.youku.com^
-||iyes.youku.com^
-||lstat.youku.com^
-||push.m.youku.com^
-||orange-dc.youku.com^
-||pcapp-data-collect.youku.com^
-||playlog.youku.com^
-||sealine.youku.com^
-||un-acs.youku.com^
-||adashx.ut.youku.com^
-||h-adashx.ut.youku.com^
-||ykad-data.youku.com^
 ||ea.youmaker.com^
 ||data.younow.com^
 ||your-notice.com^
@@ -19503,10 +19283,6 @@
 ||qw.zaremamynah.com^
 ||zarget.com^
 ||zarpop.com^
-||adtima-common.zascdn.me^
-||adtima-media.zascdn.me^
-||adtima-static.zascdn.me^
-||adtima-video.zascdn.me^
 ||zatnoh.com^
 ||applog.zaycev.net^
 ||rttr2.zaycev.net^
@@ -27614,7 +27390,6 @@
 @@||click.dji.com^
 @@||email.docker.com^
 @@||postsign.docusign.com^
-@@||cj.dotomi.com^
 @@||ad.doubleclick.net^
 @@||dart.l.doubleclick.net^
 @@||pagead.l.doubleclick.net^
