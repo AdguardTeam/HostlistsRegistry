@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-16T13:10:15.797Z
+! Last modified: 2023-01-16T17:05:18.744Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -78,6 +78,7 @@
 ||popadex-*.amazonaws.com^
 ||rtbimp-loadbalancer-*.amazonaws.com^
 ||tracking-*.amazonaws.com^
+||webanalytics-*.amazonaws.com^
 ||wildcard-ads-*.amazonaws.com^
 
 ! Amazon Shopping
@@ -362,7 +363,8 @@
 ! Netflix
 ||beacon*.netflix.net^
 ||customerevents*.netflix.com^
-||ichnaea*.netflix.com^
+! Prevents Netflix from continuing to play videos where you stopped or paused them.
+@@||ichnaea*.netflix.com^
 
 ! Popups
 ||7e1e8f3eba.com^
@@ -458,8 +460,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 16 Jan 2023 13:05 UTC
-! Version: 2023.0116.1305.23
+! Last modified: 16 Jan 2023 16:55 UTC
+! Version: 2023.0116.1655.37
 ! Syntax: AdBlock
 ! Domains: 19375
 !
@@ -27927,6 +27929,9 @@
 @@||pdc.micloud.xiaomi.net^
 @@||phonecallapi.micloud.xiaomi.net^
 @@||smsapi.micloud.xiaomi.net^
+
+! Prevents Netflix from continuing to play videos where you stopped or paused them
+@@|ichnaea*.netflix.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
