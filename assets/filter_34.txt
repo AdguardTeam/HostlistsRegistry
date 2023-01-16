@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-16T17:05:18.744Z
+! Last modified: 2023-01-16T19:05:11.948Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -42,13 +42,32 @@
 ||*-adserver-*.*.elasticbeanstalk.com^
 ||*adcloud-*.everesttech.net^
 ||*met-vgwort-de.cdn.ampproject.org^
+||adform.com^
+||adform.net^
+||adjust.com^
+! Referral/Redirect
+@@||app.adjust.com^
+@@||ulink.adjust.com^
+||adjust.net.in^
+! Referral/Redirect
+@@||app.adjust.net.in^
+||adjust.io^
+||adjust.world^
 ||adnxs-simple.com^
 ||adnxs.com^
+||adocean.pl^
+! Video streams and content on various websites
+@@||ing.adocean.pl^
+@@||myao.adocean.pl^
+@@||tvn*.adocean.pl^
 ||adsafeprotected.com^
 ||adserver.*.yahoodns.net^
 ||adsymptotic.com^
 ||adtd.douglas.*^
 ||adtima-*.zascdn.*^
+||advertising.com^
+! Redirects engadget.com / huffpost.com
+@@||guce.advertising.com^
 ||advertising-*.dpgmedia.cloud^
 ||adzxplore.com^
 ||cdn.scarabresearch.com^
@@ -71,6 +90,7 @@
 ||adn-tktracking-*.amazonaws.com^
 ||ads-*.amazonaws.com^
 ||adserver-*.amazonaws.com^
+||ad-server-*.amazonaws.com^
 ||adservingvpc-*.amazonaws.com^
 ||adsk-*.amazonaws.com^
 ||beaconserver-*.amazonaws.com^
@@ -250,6 +270,14 @@
 ! Chromecast functionality of Disney+ Hotstar app
 @@||79423.analytics.edgekey.net^
 ||collector.xhamster.*^
+||*-analytics.appspot.com^
+||tracker-*.appspot.com^
+||browser-intake-datadoghq.*^
+||tagcommander.com^
+! Search on edeka.de
+@@||cdn.tagcommander.com^
+! Redirect
+@@||redirect*.tagcommander.com^
 
 ! Apple
 ||*analytics-events.apple.com^
@@ -363,7 +391,7 @@
 ! Netflix
 ||beacon*.netflix.net^
 ||customerevents*.netflix.com^
-! Prevents Netflix from continuing to play videos where you stopped or paused them.
+! Prevents Netflix from continuing to play videos where you stopped or paused them
 @@||ichnaea*.netflix.com^
 
 ! Popups
@@ -453,6 +481,13 @@
 @@||pro.hit.gemius.pl^
 @@||spl.hit.gemius.pl^
 @@||str.hit.gemius.pl^
+||aniview.com^
+! Videos on nationalreview.com amt other sites
+@@||play.aniview.com^
+||cws*.conviva.com^
+||videoplaza.tv^
+! Videos on mtv.fi
+@@||fi-mtv*.videoplaza.tv^
 
 ! Title: HaGeZi's Personal DNS Blocklist for Black & White list
 ! Description: My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!
@@ -460,10 +495,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 16 Jan 2023 16:55 UTC
-! Version: 2023.0116.1655.37
+! Last modified: 16 Jan 2023 18:41 UTC
+! Version: 2023.0116.1841.33
 ! Syntax: AdBlock
-! Domains: 19375
+! Domains: 19276
 !
 ||00px.net^
 ||021jf.com^
@@ -551,6 +586,8 @@
 ||clientlog.music.163.com^
 ||clientlog3.music.163.com^
 ||nex.163.com^
+||dl.reg.163.com^
+||fl.reg.163.com^
 ||temp.163.com^
 ||yaolu.yuedu.163.com^
 ||ac.dun.163yun.com^
@@ -770,6 +807,7 @@
 ||5336767ccc.com^
 ||53kf.com^
 ||54kefu.net^
+||28670a8abe.5566a2431c.com^
 ||55labs.com^
 ||56txs4.com^
 ||573569djd.com^
@@ -803,10 +841,12 @@
 ||adserver.71i.de^
 ||76236osm1.ru^
 ||7654.com^
+||270f0a3c95.76a9e2d7ca.com^
 ||tracker.77player.xyz^
 ||78dfvv.com^
 ||79xmz3lmss.com^
 ||7ca78m3csgbrid7ge.com^
+||790d5944bd.7d1f2e00ed.com^
 ||7k7k.com^
 ||xc.7msport.com^
 ||vz.7vid.net^
@@ -833,6 +873,8 @@
 ||890m.com^
 ||897263tqs.com^
 ||899h3.xyz^
+||561c43bdf5.89d1a36653.com^
+||6e0b56d5cd.8c7fbd53fb.com^
 ||8d7hhh8x.com^
 ||8digits.com^
 ||8le8le.com^
@@ -850,6 +892,7 @@
 ||collector-api.99designs.com^
 ||9apps.com^
 ||9appsinstall.com^
+||mt.9gag.com^
 ||mxpl.9gag.com^
 ||privacy-api.9gag.com^
 ||rlog.9gag.com^
@@ -1206,26 +1249,6 @@
 ||adfly.vn^
 ||xml.adflyer.media^
 ||adforgames.com^
-||adform.com^
-||a2.adform.net^
-||adx.adform.net^
-||adx2.adform.net^
-||adx3.adform.net^
-||asia.adform.net^
-||c1.adform.net^
-||cm.adform.net^
-||cm2.adform.net^
-||cm3.adform.net^
-||dmp.adform.net^
-||hm.adform.net^
-||istrp.adform.net^
-||jstrp.adform.net^
-||nstrp.adform.net^
-||s1.adform.net^
-||s2.adform.net^
-||server.adform.net^
-||track-eu.adform.net^
-||track-us.adform.net^
 ||adformdsp.net^
 ||banners.adfox.net^
 ||banners.adfox.ru^
@@ -1271,19 +1294,6 @@
 ||3d23226076bcb8f95d5b55ead6023369.adjns.com^
 ||fraud.adjoe.zone^
 ||prod.adjoe.zone^
-||adjust.io^
-||adjust.world^
-||api.adjust.com^
-||cdn.adjust.com^
-||dash.adjust.com^
-||eu.adjust.com^
-||s2s.adjust.com^
-||subscription.adjust.com^
-||tr.adjust.com^
-||ulink.adjust.com^
-||unbotify.adjust.com^
-||us.adjust.com^
-||view.adjust.com^
 ||adjust-net.jp^
 ||adk2.com^
 ||adkaora.space^
@@ -1371,8 +1381,6 @@
 ||adnxs.net^
 ||adnxtr.com^
 ||adnz.co^
-||c00.adobe.com^
-||cc-api-data.adobe.io^
 ||cimage.adobe.com^
 ||geo.adobe.com^
 ||sstats.adobe.com^
@@ -1385,38 +1393,6 @@
 ||ablink.mail.adobespark.com^
 ||adobetag.com^
 ||adobetarget.com^
-||alt.adocean.pl^
-||aripaee.adocean.pl^
-||b92rs.adocean.pl^
-||bg.adocean.pl^
-||bggde.adocean.pl^
-||blitzbg.adocean.pl^
-||cz.adocean.pl^
-||edipresse.adocean.pl^
-||gemhu.adocean.pl^
-||gpl.adocean.pl^
-||hrgde.adocean.pl^
-||hugde.adocean.pl^
-||indexhu.adocean.pl^
-||lv.adocean.pl^
-||mkkeepaneyegde.adocean.pl^
-||my.adocean.pl^
-||pracuj.adocean.pl^
-||ringierrs.adocean.pl^
-||ro.adocean.pl^
-||rogde.adocean.pl^
-||rs.adocean.pl^
-||rsgde.adocean.pl^
-||si.adocean.pl^
-||sigde.adocean.pl^
-||sk.adocean.pl^
-||skgde.adocean.pl^
-||thinkdigitalro.adocean.pl^
-||trgde.adocean.pl^
-||tvn.adocean.pl^
-||tvn2.adocean.pl^
-||vbbg.adocean.pl^
-||webgroundbg.adocean.pl^
 ||adoftheyear.com^
 ||filter.adokutcontextual.com^
 ||xml.adokutcontextual.com^
@@ -1461,6 +1437,7 @@
 ||adpredictive.com^
 ||adpresenter.de^
 ||delta.adprime.com^
+||adprimemedia.net^
 ||adprofits.ru^
 ||adpushup.com^
 ||adpxl.co^
@@ -1694,15 +1671,6 @@
 ||advertica-cdn.com^
 ||advertica-cdn2.com^
 ||adverticum.net^
-||ace.advertising.com^
-||adaptv.advertising.com^
-||adtech.advertising.com^
-||cmp.advertising.com^
-||pixel.advertising.com^
-||smrtpxl.advertising.com^
-||sp.advertising.com^
-||ssp.advertising.com^
-||uac.advertising.com^
 ||advertising-cdn.com^
 ||advertizmenttoyou.com^
 ||advertnative.com^
@@ -1824,6 +1792,7 @@
 ||afgr1.com^
 ||t.afi-b.com^
 ||afilo.pl^
+||oa.afishamedia.net^
 ||rtb-useast-v4.afkwa.com^
 ||rtb-uswest-v4.afkwa.com^
 ||rtb2-useast.afkwa.com^
@@ -1993,9 +1962,6 @@
 ||pub.akadigital.vn^
 ||track-eu.adformnet.akadns.net^
 ||innovid.com.akadns.net^
-||asimov-win.settings.data.microsoft.com.akadns.net^
-||vortex.data.microsoft.com.akadns.net^
-||watson.data.microsoft.com.akadns.net^
 ||jadserve.postrelease.com.akadns.net^
 ||stickyadstv.com.akadns.net^
 ||tidaltv.com.akadns.net^
@@ -2215,7 +2181,6 @@
 ||uedata.amazon.com^
 ||ws.amazon.com^
 ||cloudfront-labs.amazonaws.com^
-||ad-server-lb-294150285.ap-southeast-1.elb.amazonaws.com^
 ||rw-yieldmo-com-1673518954.ap-southeast-1.elb.amazonaws.com^
 ||prod-dem-collector-elb-611025824.eu-west-1.elb.amazonaws.com^
 ||audience-164723144.us-east-1.elb.amazonaws.com^
@@ -2364,27 +2329,6 @@
 ||anicli.click^
 ||logs.animaapp.com^
 ||animesuge.to^
-||cdn3.aniview.com^
-||data4.aniview.com^
-||go1.aniview.com^
-||gov.aniview.com^
-||observe.aniview.com^
-||owserv.aniview.com^
-||pbs.aniview.com^
-||player.aniview.com^
-||premiumsrv.aniview.com^
-||s2s.aniview.com^
-||sync.aniview.com^
-||tg1.aniview.com^
-||track1.aniview.com^
-||update.aniview.com^
-||vast.aniview.com^
-||wlgo1.aniview.com^
-||wlplay.aniview.com^
-||wlplayer.aniview.com^
-||wltg1.aniview.com^
-||wltrack.aniview.com^
-||wlvast.aniview.com^
 ||anmdalmzidp.com^
 ||log.anninhthudo.vn^
 ||annoyedairport.com^
@@ -2548,22 +2492,18 @@
 ||ga-beacon.appspot.com^
 ||geoapi123.appspot.com^
 ||geotargetly-1a441.appspot.com^
-||goo-access-analytics.appspot.com^
 ||i-cmg-amlg-prod.appspot.com^
 ||ima3vpaid.appspot.com^
 ||is-tracking-pixel-api-prod.appspot.com^
-||literally-analytics.appspot.com^
 ||musculahq.appspot.com^
 ||ohm-dot-hackster-io.appspot.com^
 ||optimeeze.appspot.com^
 ||ping-dot-acp-magento.appspot.com^
 ||ready-chat.appspot.com^
-||sc-analytics.appspot.com^
 ||screentimelabs.appspot.com^
 ||snapabug.appspot.com^
 ||tap-nexus.appspot.com^
 ||tc-bic.appspot.com^
-||tracker-dot-optimeeze.appspot.com^
 ||triggeredmail.appspot.com^
 ||apptap.com^
 ||apptds.com^
@@ -3034,6 +2974,7 @@
 ||feed-image.baidu.com^
 ||p.gdown.baidu.com^
 ||goutong.baidu.com^
+||gsp0.baidu.com^
 ||gsp1.baidu.com^
 ||hijack.baidu.com^
 ||hm.baidu.com^
@@ -3591,6 +3532,7 @@
 ||blondhoverhesitation.com^
 ||lk.blondsuptree.com^
 ||adserver.bloodhorse.com^
+||mobile-tracking.bloomberg.com^
 ||personalization.bloomberg.com^
 ||s.cadent.bloomberglaw.com^
 ||marketing.bloomingtonmn.org^
@@ -3687,6 +3629,7 @@
 ||by.bollore-logistics.com^
 ||bolt8snap.com^
 ||boltorg.ru^
+||bomboms.xyz^
 ||bombora.com^
 ||bonad.io^
 ||sstats.bonappetit.com^
@@ -3856,8 +3799,6 @@
 ||browsee.io^
 ||browseprotect.co^
 ||browser-games.xyz^
-||browser-intake-datadoghq.com^
-||browser-intake-datadoghq.eu^
 ||browser-update.org^
 ||browserdog.com^
 ||browsersearch.co^
@@ -4018,6 +3959,7 @@
 ||c212.net^
 ||mine.c3pool.com^
 ||c3tag.com^
+||22aa4458dc.c42f556ff8.com^
 ||c8xwor.com^
 ||hit.c97.org^
 ||collector-axa.cloud.ca.com^
@@ -4166,7 +4108,6 @@
 ||tags.catapultx.com^
 ||cataractencroach.com^
 ||catchtheclick.com^
-||cathrynhawkecpa.com^
 ||cathyimmediates.xyz^
 ||catscanty.com^
 ||catschickens.com^
@@ -4417,6 +4358,7 @@
 ||ad-js.chip.de^
 ||kzsicw.chip.de^
 ||rt.chip.de^
+||tags.chip.de^
 ||service.chip-secured-download.de^
 ||chip2gift.com^
 ||chipeets.com^
@@ -5457,11 +5399,6 @@
 ||f.convertkit.com^
 ||converto.io^
 ||convertro.com^
-||cws.conviva.com^
-||cws-hulu.conviva.com^
-||cws-iad4.conviva.com^
-||cws-us-east.conviva.com^
-||cws-usw2.conviva.com^
 ||vrl.m.conviva.com^
 ||pings.conviva.com^
 ||convrse.media^
@@ -5754,7 +5691,6 @@
 ||trck.cyberport.de^
 ||cylenceprotect.com^
 ||openapi.cymera.com^
-||cynicalspireheroism.com^
 ||cyseal.cyveillance.com^
 ||czilladx.com^
 ||chatbot-cdn.czso.cz^
@@ -5809,7 +5745,6 @@
 ||dark-reader.com^
 ||darkestfertil.com^
 ||darkhero.org^
-||darknet.bg^
 ||stats.darkreader.app^
 ||dartonim.com^
 ||dnsseed.bitcoin.dashjr.org^
@@ -5892,6 +5827,7 @@
 ||dcmn.io^
 ||ddaqwhdlhor.com^
 ||yssads.ddc.com^
+||d4992efcb4.ddefa70ec0.com^
 ||ddhjxakewpp.com^
 ||bgitopazdowntown.ddireal.vn^
 ||puz.ddjiayou.cn^
@@ -6063,7 +5999,6 @@
 ||dewrain.life^
 ||dewrain.site^
 ||dewrain.world^
-||dexacoin.net^
 ||sourcepoint.dexerto.com^
 ||dexpredict.com^
 ||dextrotrading.com^
@@ -6407,6 +6342,7 @@
 ||driversupport.com^
 ||driverupdate.net^
 ||webanalytics.drk-blutspende.de^
+||drmrtrk.com^
 ||counter.drom.ru^
 ||drongostetch.com^
 ||heap.drop.com^
@@ -6621,7 +6557,6 @@
 ||ebesucher.de^
 ||ebjvu.cn^
 ||br.ac.ebookers.fi^
-||ebqabavhnlplbry.com^
 ||ebrokerpartner.pl^
 ||ebslgpmkmj.com^
 ||pipe-collect.ebu.io^
@@ -6758,7 +6693,6 @@
 ||ehealthcaresolutions.com^
 ||ehealthynews.online^
 ||ehgum.xyz^
-||ehievjutfrhp.xyz^
 ||ehojam.com^
 ||detnmz.ehow.com^
 ||logger.eigene.io^
@@ -6836,6 +6770,7 @@
 ||data.emb-api.com^
 ||embi-media.com^
 ||ssl.o.emedicinehealth.com^
+||emeritus-analytics.io^
 ||emerse.com^
 ||emetriq.de^
 ||emeu0circ.com^
@@ -6939,6 +6874,7 @@
 ||esearchvision.com^
 ||stats.esecured.net^
 ||ssitecat.eset.com^
+||esganalytics.io^
 ||eshkol.io^
 ||eshouloo.net^
 ||eskimi.com^
@@ -7359,6 +7295,7 @@
 ||felzfr.xyz^
 ||femin.online^
 ||feneteko.com^
+||castatic.fengkongcloud.com^
 ||cloudconf.fengkongcloud.com^
 ||fp-it.fengkongcloud.com^
 ||static.fengkongcloud.com^
@@ -7553,7 +7490,6 @@
 ||xml.flurryad.com^
 ||statistics.flurrydata.com^
 ||flurrylimmu.com^
-||flusjacufaslrr.com^
 ||flux-cdn.com^
 ||flx1.com^
 ||k3vzn.flx10.com^
@@ -8846,7 +8782,6 @@
 ||hgbnr.com^
 ||hghit.com^
 ||cdn-cf-hc-banners.hgonline.net^
-||hgphlejpdirbqe.com^
 ||ssa.hgtv.com^
 ||marketing.hhglobal.com^
 ||hhklc.com^
@@ -9176,6 +9111,7 @@
 ||huoying666.com^
 ||huppahshoras.com^
 ||static.hupso.com^
+||e-goblin.hupu.com^
 ||goblin.hupu.com^
 ||shence.hupu.com^
 ||huq.io^
@@ -9385,6 +9321,7 @@
 ||imatrk.net^
 ||imedia.cz^
 ||swebstats.imf.org^
+||img-ad-nex.com^
 ||img.img-taboola.com^
 ||img301.com^
 ||imgapp.top^
@@ -9444,7 +9381,6 @@
 ||imr.sk^
 ||imtmp.net^
 ||imtwjwoasak.com^
-||i.imwx.com^
 ||accesstrade.in.th^
 ||stats.in.th^
 ||truehits.in.th^
@@ -9635,7 +9571,7 @@
 ||inter1ads.com^
 ||interactive-circle.jp^
 ||interactiveads.ai^
-||cdn.interactivemedia.net^
+||interactivemedia.net^
 ||bcm.interactives.dk^
 ||interactsh.com^
 ||interbuzznews.com^
@@ -9687,7 +9623,6 @@
 ||invoca.solutions^
 ||invocacdn.com^
 ||involve.asia^
-||inwwltetippv.xyz^
 ||ioadserve.com^
 ||ascstats.iobit.com^
 ||iodewijker.xyz^
@@ -9764,6 +9699,7 @@
 ||paopao-monitor.iqiyi.com^
 ||puma-api.iqiyi.com^
 ||rcd.iqiyi.com^
+||sns-paopao.iqiyi.com^
 ||store.iqiyi.com^
 ||subscription.iqiyi.com^
 ||ndct-data.video.iqiyi.com^
@@ -9923,6 +9859,9 @@
 ||cm.jd.com^
 ||dsp-x.jd.com^
 ||gia.jd.com^
+||im-x.jd.com^
+||img-x.jd.com^
+||jcm.jd.com^
 ||kepler.jd.com^
 ||knicks.jd.com^
 ||cc.m.jd.com^
@@ -9975,7 +9914,7 @@
 ||jivosite.com^
 ||jivox.com^
 ||jixie.io^
-||nbfopy.jjshouse.com^
+||jjshouse.com^
 ||jkub.com^
 ||jldbnjghezv.com^
 ||discover.jll.com^
@@ -10374,6 +10313,7 @@
 ||dataapi.ktplay.com^
 ||dwimg.ktplay.com^
 ||ywrcqa.ktvb.com^
+||ktxlytics.io^
 ||ktxtr.com^
 ||ku2d3a7pa8mdi.com^
 ||kuai8.com^
@@ -10433,7 +10373,6 @@
 ||kvhttt.top^
 ||tdep.kvk.nl^
 ||kvkaa.com^
-||kvsqa.xyz^
 ||kvtaaa.top^
 ||kvtnnn.top^
 ||kw3y5otoeuniv7e9rsi.com^
@@ -10805,6 +10744,7 @@
 ||crt.livejasmin.com^
 ||livelumber.com^
 ||livelyreward.com^
+||livemediav.com^
 ||livenetlife.com^
 ||livepartners.com^
 ||idbridge.liveperson.net^
@@ -10955,6 +10895,12 @@
 ||lp4.io^
 ||lpequdeliren.fun^
 ||lporirxe.com^
+||am-accdn.lpsnmedia.net^
+||am-lpcdn.lpsnmedia.net^
+||lo-accdn.lpsnmedia.net^
+||lo-lpcdn.lpsnmedia.net^
+||lpcdn-a.lpsnmedia.net^
+||va-lpcdn.lpsnmedia.net^
 ||lptrak.com^
 ||lpuegx.biz^
 ||cdn.lqm.io^
@@ -11100,6 +11046,7 @@
 ||bisko.mall.tv^
 ||central.mall.tv^
 ||genesis.malwarebytes.com^
+||legacy-telemetry.malwarebytes.com^
 ||malwarecrusher.com^
 ||malwareprotectionlive.com^
 ||mamblubamblua.com^
@@ -11319,6 +11266,7 @@
 ||thaqyl.mediamarkt.nl^
 ||mediamath.com^
 ||mediamathrdrt.com^
+||mediamathtag.com^
 ||beacons.mediamelon.com^
 ||mediamond.it^
 ||mediapalmtree.com^
@@ -12523,6 +12471,7 @@
 ||udbdf-v2.nimo.tv^
 ||ylog.nimo.tv^
 ||nimrute.com^
+||nineanalytics.io^
 ||ninetyninesec.com^
 ||api.ning.com^
 ||ninjacat.io^
@@ -14377,7 +14326,6 @@
 ||notifier.rarlab.com^
 ||rasgpushen.com^
 ||raspedexsculp.com^
-||ratanygaimiaheo.com^
 ||secure.rate2self.com^
 ||secure.rate8deny.com^
 ||js.rating-widget.com^
@@ -15399,7 +15347,6 @@
 ||sstats.self.com^
 ||selfbutler.com^
 ||selfcampaign.com^
-||selfcontrolenquirytyran.com^
 ||selfishsnake.com^
 ||amd.sellingsimplified.net^
 ||sb.sellpoint.net^
@@ -15852,6 +15799,7 @@
 ||smallfunnybears.com^
 ||smapp.work^
 ||smardroid.com^
+||secure.smart-business-365.com^
 ||secure.smart-business-ingenuity.com^
 ||smart-business-intuition.com^
 ||smart-data-systems.com^
@@ -16671,12 +16619,6 @@
 ||tadsbelver.com^
 ||tag4arm.com^
 ||event-logger.tagboard.com^
-||manager.tagcommander.com^
-||redirect476.tagcommander.com^
-||serverside3667.tagcommander.com^
-||serverside3967.tagcommander.com^
-||serverside4285.tagcommander.com^
-||serverside645.tagcommander.com^
 ||tagdeliver.com^
 ||tagdelivery.com^
 ||taggstar.com^
@@ -16723,6 +16665,8 @@
 ||et.tanx.com^
 ||ifs.tanx.com^
 ||ifsk2.tanx.com^
+||kgb-ifs.tanx.com^
+||live-ifs.tanx.com^
 ||opehs.tanx.com^
 ||p.tanx.com^
 ||rdstat.tanx.com^
@@ -16998,6 +16942,7 @@
 ||blue.thehill.com^
 ||f775.thehour.com^
 ||userexperience.thehut.net^
+||prod.theintercept.com^
 ||tls.thelibrarystore.com^
 ||a.thelocal.com^
 ||themightytrucker.com^
@@ -17073,6 +17018,7 @@
 ||incoming-telemetry.thunderbird.net^
 ||thunderhead.com^
 ||addlog.thuvienphapluat.vn^
+||assets.ti-media.net^
 ||nexus.ensighten.tiaa.org^
 ||tiancaii.com^
 ||yptqys.tianqistatic.com^
@@ -17087,6 +17033,7 @@
 ||jo.tictocswended.com^
 ||tidaltv.com^
 ||tideya.net^
+||code.tidio.co^
 ||log.tienphong.vn^
 ||tieszhu.com^
 ||sstats.tiffany.com^
@@ -17194,7 +17141,6 @@
 ||toncooperateapologise.com^
 ||tonemedia.com^
 ||fp.tongdun.net^
-||tonicorchestra.com^
 ||tooblycars.com^
 ||toocool2betrue.com^
 ||toolmatrix.plus^
@@ -17989,7 +17935,6 @@
 ||upsight-api.com^
 ||upskittyan.com^
 ||upsnap.com^
-||upsshipping.io^
 ||upswingmethyl.com^
 ||rum.uptime.com^
 ||uptimecdn.com^
@@ -18278,17 +18223,6 @@
 ||videonow.ru^
 ||videoo.tv^
 ||videoplayerhub.com^
-||att.videoplaza.tv^
-||be-rtl.videoplaza.tv^
-||de-videovalis.videoplaza.tv^
-||es-plus.videoplaza.tv^
-||es-sunelespanol.videoplaza.tv^
-||es-sunicontent.videoplaza.tv^
-||mx-sunmedia.videoplaza.tv^
-||service.videoplaza.tv^
-||ssp.videoplaza.tv^
-||vp.videoplaza.tv^
-||za-mc.videoplaza.tv^
 ||videoroll.net^
 ||banners.videosecrets.com^
 ||stats.videoseyred.in^
@@ -18495,7 +18429,7 @@
 ||voluumtrk3.com^
 ||voodoo.com^
 ||crosspromo.voodoo.io^
-||trackers.voodoo-analytics.io^
+||voodoo-analytics.io^
 ||api-gdpr.voodoo-tech.io^
 ||vs-api.voodoo-tech.io^
 ||vooodkabelochkaa.com^
@@ -18646,6 +18580,7 @@
 ||ads-resources-legacy.waze.com^
 ||adsassets.waze.com^
 ||advil.waze.com^
+||row-advil.waze.com^
 ||sdk.waze.com^
 ||wazimo.com^
 ||wbdpnz.com^
@@ -19408,12 +19343,14 @@
 ||bs-meta.yandex.ru^
 ||bs-metadsp.yandex.ru^
 ||extmaps-api.yandex.net^
+||lbs.yandex.ru^
 ||grade.market.yandex.ru^
 ||mc.yandex.com^
 ||metrika.yandex.ru^
 ||startup.mobile.yandex.net^
 ||log.strm.yandex.ru^
 ||web-metrica.yandex.ru^
+||yabs.yandex.ru^
 ||startup-mobile.ap.yandex-net.ru^
 ||yandexadexchange.net^
 ||cmta.yangkeduo.com^
@@ -19446,7 +19383,6 @@
 ||ygiudewsqhct.in^
 ||ygti905ffth6.com^
 ||yhti.net^
-||yhwgtvbvk.com^
 ||yhzzzs02.com^
 ||yicha.jp^
 ||applog.yiche.com^
@@ -19542,6 +19478,7 @@
 ||foundation.youdao.com^
 ||gorgon.youdao.com^
 ||impservice.youdao.com^
+||intervista.youdao.com^
 ||log-yex.youdao.com^
 ||rlogs.youdao.com^
 ||sdk-log-inter.youdao.com^
@@ -19577,7 +19514,6 @@
 ||c.ypcdn.com^
 ||ypvrnyovntabcfp.xyz^
 ||yqmxfz.com^
-||yqvtqjslflfsq.xyz^
 ||yrfowbaldjrxr.xyz^
 ||ysearchingfo.xyz^
 ||ysiquaarac.ga^
@@ -25787,6 +25723,10 @@
 ! Express.de Videos
 @@|player-feedback-v1.glomex.com^
 
+! Adobe
+@@|c00.adobe.com^
+@@||cc-api-data.adobe.io^
+
 ! Amazon Devices
 @@||acsechocaptiveportal.com^
 @@||execute-api.*.amazonaws.com^
@@ -28007,12 +27947,10 @@
 @@||email-clk.adguard.com^
 @@||ad3.adfarm1.adition.com^
 @@||ad4.adfarm1.adition.com^
-@@||app.adjust.com^
 @@||campaign.adobe.com^
 @@||tags.adsafety.net^
 @@||online.adservicemedia.dk^
 @@||email-link.adtidy.org^
-@@||guce.advertising.com^
 @@||a1.adformnet.akadns.net^
 @@||bs.eyeblaster.akadns.net^
 @@||goto.algolia.com^
@@ -28124,7 +28062,6 @@
 @@||email.namebase.io^
 @@||api.narrativ.com^
 @@||events.release.narrativ.com^
-@@||app.adjust.net.in^
 @@||click.email.newegg.com^
 @@||go.nextiva.com^
 @@||a.nonstoppartner.net^
