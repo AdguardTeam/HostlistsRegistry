@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-17T13:09:06.344Z
+! Last modified: 2023-01-17T22:05:21.718Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -495,10 +495,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 17 Jan 2023 12:55 UTC
-! Version: 2023.0117.1255.29
+! Last modified: 17 Jan 2023 21:56 UTC
+! Version: 2023.0117.2156.24
 ! Syntax: AdBlock
-! Domains: 19389
+! Domains: 19388
 !
 ||00px.net^
 ||021jf.com^
@@ -17528,7 +17528,6 @@
 ||yi.trepakingulfs.com^
 ||tresensa.com^
 ||t1.trex.media^
-||trezor.io^
 ||trfpump.com^
 ||trhzc.com^
 ||tri.media^
@@ -28004,6 +28003,10 @@
 @@|aa.tweakers.net^
 @@|ab.tweakers.nl^
 @@|ab.tweakers.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/214
+@@|trezor.io^
+@@|www.trezor.io^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
