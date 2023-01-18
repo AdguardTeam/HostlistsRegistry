@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-18T10:05:21.631Z
+! Last modified: 2023-01-18T13:08:51.030Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -278,6 +278,7 @@
 @@||cdn.tagcommander.com^
 ! Redirect
 @@||redirect*.tagcommander.com^
+||aff-tracker.com^
 
 ! Apple
 ||*analytics-events.apple.com^
@@ -287,7 +288,7 @@
 ||*metrics.mzstatic.com^
 ||api-adservices.apple.com^
 ||iadsdk.apple.com^
-||metrics.icloud.com^
+||metrics*.icloud.com^
 ||securemvt.apple.com^
 
 ! Bugtracker
@@ -300,6 +301,7 @@
 ||instabug.com^
 ||sentry-cdn.com^
 ||sentry.io^
+||crashtracking.*.ring.com^
 
 ! Google
 ||*.analytics.google.com^
@@ -495,10 +497,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 18 Jan 2023 10:00 UTC
-! Version: 2023.0118.1000.27
+! Last modified: 18 Jan 2023 12:25 UTC
+! Version: 2023.0118.1225.43
 ! Syntax: AdBlock
-! Domains: 19757
+! Domains: 19756
 !
 ||00px.net^
 ||021jf.com^
@@ -17656,7 +17658,6 @@
 ||torrentz.eu^
 ||toru0vane.com^
 ||toskmisway.com^
-||akm-img-a-in.tosshub.com^
 ||dioqto.totaljobs.com^
 ||totalping.com^
 ||sdr.totango.com^
@@ -28371,6 +28372,9 @@
 ! Agoda App search functions
 @@|api.agoda.com.edgekey.net^
 @@|searchapi.agoda.com^
+
+! Images on indiatoday.in
+@@|akm-img-a-in.tosshub.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
