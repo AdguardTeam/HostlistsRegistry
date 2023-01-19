@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-19T15:05:22.229Z
+! Last modified: 2023-01-19T16:06:03.969Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -79,6 +79,7 @@
 ||programmatics.net^
 ||taboola.com^
 ||wxadserve.xyz^
+||ad*.ettoday.net^
 
 ! Amazon AWS
 ||*-adserver-*.amazonaws.com^
@@ -278,6 +279,10 @@
 ! Redirect
 @@||redirect*.tagcommander.com^
 ||aff-tracker.com^
+||mmstat.com^
+||rutarget.ru^
+! sberbank.ru
+@@||track.rutarget.ru^
 
 ! Apple
 ||*analytics-events.apple.com^
@@ -311,9 +316,7 @@
 ||beacons*.gvt*.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
-||fls.doubleclick.net^
 ||fundingchoicesmessages.google.com^
-||g.doubleclick.net^
 ||google-analytics.com^
 ||googleadservices.com^
 ! Google Search referral links
@@ -327,7 +330,12 @@
 @@||www-googletagmanager.l.google.com^
 ||googletagservices.com^
 ||pagead-googlehosted.l.google.com^
-||static.doubleclick.net^
+||doubleclick.net
+! Google Search referral links
+@@||ad.doubleclick.net^
+!||fls.doubleclick.net^
+!||g.doubleclick.net^
+!||static.doubleclick.net^
 
 ! Huawei
 ||ad-*.dbankcloud.*^
@@ -402,12 +410,19 @@
 ||cleverpush.com^
 ||mycleverpush.com^
 
-! Shitty hosts
+! Crappy hosts
 ||ad*.on.cc^
 ||load*.biz^
 ||news-*.cc^
 ||news-*.pw^
 ||rplnd*.com^
+||ahoravideo-*.com^
+||ahoravideo-*.xyz^
+||fairu-*.com^
+||fairu-*.xyz^
+||rvwgm2wrld*.xyz^
+||wmail-*.com^
+||wmail-*.xyz^
 
 ! Smart TV
 ||alphonso.tv^
@@ -489,6 +504,9 @@
 ||videoplaza.tv^
 ! Videos on mtv.fi
 @@||fi-mtv*.videoplaza.tv^
+||sensic.net^
+! ORF App
+@@||at-config.sensic.net^
 
 ! Title: HaGeZi's Personal DNS Blocklist for Black & White list
 ! Description: My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!
@@ -496,10 +514,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 19 Jan 2023 14:29 UTC
-! Version: 2023.0119.1429.44
+! Last modified: 19 Jan 2023 15:48 UTC
+! Version: 2023.0119.1548.14
 ! Syntax: AdBlock
-! Domains: 19406
+! Domains: 19306
 !
 ||00px.net^
 ||021jf.com^
@@ -1870,11 +1888,6 @@
 ||ahaurgoo.net^
 ||ahlefind.com^
 ||ahnlabad.com^
-||ahoravideo-blog.com^
-||ahoravideo-cdn.com^
-||ahoravideo-endpoint.com^
-||ahoravideo-schnellvpn.com^
-||ahoravideo-schnellvpn.xyz^
 ||ahscdn.com^
 ||bd.ahsrst.cn^
 ||ai.net^
@@ -6246,14 +6259,6 @@
 ||doubleadserve.com^
 ||doubleclick.com^
 ||doubleclick.host^
-||accounts.doubleclick.net^
-||ad-emea.doubleclick.net^
-||dmp.doubleclick.net^
-||ff.doubleclick.net^
-||m.doubleclick.net^
-||s0.doubleclick.net^
-||td.doubleclick.net^
-||www3.doubleclick.net^
 ||doubleclick-analytics.com^
 ||doubleclickbygoogle.com^
 ||doubleclicks.biz^
@@ -6911,10 +6916,6 @@
 ||etracker.de^
 ||etrigue.com^
 ||ablink.email.etsy.com^
-||ad.ettoday.net^
-||ad1.ettoday.net^
-||ad2.ettoday.net^
-||adv.ettoday.net^
 ||dcs.ettoday.net^
 ||nxnszu.ettoday.net^
 ||etymonsibycter.com^
@@ -7139,14 +7140,6 @@
 ||faintestlogic.com^
 ||sstats.fairmont.com^
 ||fairnesschangingenamel.com^
-||fairu-blog.com^
-||fairu-cdn.com^
-||fairu-chat.com^
-||fairu-chat.xyz^
-||fairu-endpoint.com^
-||fairu-endpoint.xyz^
-||fairu-schnellvpn.com^
-||fairu-schnellvpn.xyz^
 ||fairyseason.com^
 ||faktor.io^
 ||edgedc.falabella.com^
@@ -11652,24 +11645,6 @@
 ||mmenuxic.com^
 ||mmnneo.com^
 ||mmondi.com^
-||ac.mmstat.com^
-||ae.mmstat.com^
-||cnzz.mmstat.com^
-||dz.mmstat.com^
-||gds.mmstat.com^
-||gj.mmstat.com^
-||gm.mmstat.com^
-||gxb.mmstat.com^
-||hd.mmstat.com^
-||oneid.mmstat.com^
-||res.mmstat.com^
-||ru.mmstat.com^
-||s-gm.mmstat.com^
-||sg.mmstat.com^
-||wgo.mmstat.com^
-||ws.mmstat.com^
-||yt.mmstat.com^
-||yt1.mmstat.com^
 ||mnbasd77.com^
 ||mndsrv.com^
 ||mnet-ad.net^
@@ -15077,35 +15052,6 @@
 ||ruscams.com^
 ||79h8h8.ruslanbaginskiy.com^
 ||rustgenerations.com^
-||adfox-hb-bidder.rutarget.ru^
-||adriver-sync.rutarget.ru^
-||alfasense-sync.rutarget.ru^
-||begun-sync.rutarget.ru^
-||between-sync.rutarget.ru^
-||bidder.rutarget.ru^
-||bidvol-sync.rutarget.ru^
-||buzzoola-sync.rutarget.ru^
-||cdn.rutarget.ru^
-||cdn6.rutarget.ru^
-||clientside-bidder.rutarget.ru^
-||clientside-video-bidder.rutarget.ru^
-||creative.rutarget.ru^
-||kadam-sync.rutarget.ru^
-||moevideo-sync.rutarget.ru^
-||ohmybid-sync.rutarget.ru^
-||prebid-bidder.rutarget.ru^
-||qvol-s-sync.rutarget.ru^
-||qvol-sync.rutarget.ru^
-||rambler-sync.rutarget.ru^
-||sape-sync.rutarget.ru^
-||solta-sync.rutarget.ru^
-||sync.rutarget.ru^
-||tag.rutarget.ru^
-||umg-sync.rutarget.ru^
-||videonow-sync.rutarget.ru^
-||videotarget-sync.rutarget.ru^
-||yandex-dmp-sync.rutarget.ru^
-||yandex-sync.rutarget.ru^
 ||ruth8badb.com^
 ||ruthlessdegree.com^
 ||rutils.com^
@@ -15115,10 +15061,6 @@
 ||ingest.make.rvapps.io^
 ||rvb-news3.club^
 ||rvmessage.online^
-||rvwgm2wrld.xyz^
-||rvwgm2wrld2.xyz^
-||rvwgm2wrld3.xyz^
-||rvwgm2wrld4.xyz^
 ||rwadx.com^
 ||rxeosevsso.com^
 ||ssl.o.rxlist.com^
@@ -15544,20 +15486,6 @@
 ||ios-quinoa-personal-identify-prod.sense360eng.com^
 ||quinoa-personal-identify-prod.sense360eng.com^
 ||sensetria.com^
-||at1-s2s.sensic.net^
-||au1-s2s.sensic.net^
-||config.sensic.net^
-||de-config.sensic.net^
-||de-config-preproduction.sensic.net^
-||de1-s2s.sensic.net^
-||es-config.sensic.net^
-||es1-s2s.sensic.net^
-||fc-id.sensic.net^
-||nl-config.sensic.net^
-||sg-config.sensic.net^
-||sg1-ssa.sensic.net^
-||sg2-s2s.sensic.net^
-||tmptrk.sensic.net^
 ||sensorsdata.cn^
 ||api.sentiance.com^
 ||sentifi.com^
@@ -19091,16 +19019,6 @@
 ||static.wlct-one.de^
 ||wledconsi.xyz^
 ||banners.wlservices.fr^
-||wmail-blog.com^
-||wmail-blog.xyz^
-||wmail-cdn.com^
-||wmail-cdn.xyz^
-||wmail-chat.com^
-||wmail-chat.xyz^
-||wmail-endpoint.xyz^
-||wmail-schnellvpn.com^
-||wmail-schnellvpn.xyz^
-||wmail-service.com^
 ||wmcdp.io^
 ||wmgroup.us^
 ||wmgtr.com^
@@ -28073,7 +27991,6 @@
 @@||click.dji.com^
 @@||email.docker.com^
 @@||postsign.docusign.com^
-@@||ad.doubleclick.net^
 @@||dart.l.doubleclick.net^
 @@||pagead.l.doubleclick.net^
 @@||pagead46.l.doubleclick.net^
