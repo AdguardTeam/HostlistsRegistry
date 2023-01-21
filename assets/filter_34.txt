@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-21T11:05:01.168Z
+! Last modified: 2023-01-21T16:05:42.248Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -516,8 +516,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 21 Jan 2023 10:50 UTC
-! Version: 2023.0121.1050.55
+! Last modified: 21 Jan 2023 15:43 UTC
+! Version: 2023.0121.1543.33
 ! Syntax: AdBlock
 ! Domains: 12128
 !
@@ -18263,7 +18263,7 @@
 @@|web.diagnostic.networking.aws.dev^
 ! Hulu, possibly other services
 ! https://github.com/Perflyst/PiHoleBlocklist/issues/138
-@@|mas-ext*.amazon.com^
+@@|mas-*.amazon.com^
 
 ! Amazon Shopping (in-app links)
 @@||images-amazon.com^
@@ -18859,8 +18859,9 @@
 
 ! Videos on WOW / Sky Ticket / Hulu
 @@|dpm.demdex.net^
-! edge-irl1.demdex.net
-! gslb-2.demdex.net
+@@|edge-irl1.demdex.net^
+@@|gslb-2.demdex.net^
+@@|dcs-edge-irl1-876252164.eu-west-1.elb.amazonaws.com^
 
 ! Images on iwank.tv
 @@|static.webclicks24.com^
@@ -20460,6 +20461,10 @@
 
 ! CNAME linuxfoundation.org
 @@|sites.hscoscdn10.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/228
+@@|swile.co^
+@@|www.swile.co^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
