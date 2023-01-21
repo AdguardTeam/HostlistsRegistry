@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-21T00:20:20.299Z
+! Last modified: 2023-01-21T07:05:14.033Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -516,10 +516,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 21 Jan 2023 00:05 UTC
-! Version: 2023.0121.0005.01
+! Last modified: 21 Jan 2023 06:33 UTC
+! Version: 2023.0121.0633.07
 ! Syntax: AdBlock
-! Domains: 12069
+! Domains: 12068
 !
 ||00px.net^
 ||021jf.com^
@@ -608,7 +608,6 @@
 ||2cnt.net^
 ||ttfpil.2dehands.be^
 ||2llmonds4ehcr93nb.com^
-||2o7.net^
 ||2performant.com^
 ||2qj7mq3w4uxe.com^
 ||2xclick.ru^
@@ -20393,6 +20392,12 @@
 ! https://github.com/hagezi/dns-blocklists/issues/225
 @@|studenti.it^
 @@|www.studenti.it^
+
+! https://github.com/hagezi/dns-blocklists/issues/226
+@@|subarumysubaruappproduction.112.2o7.net^
+
+! PowUnity bike tracking
+@@|go.powunity.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
