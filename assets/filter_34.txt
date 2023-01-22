@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-21T20:05:30.633Z
+! Last modified: 2023-01-22T00:22:00.840Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -406,6 +406,9 @@
 ! Prevents Netflix from continuing to play videos where you stopped or paused them
 @@||ichnaea*.netflix.com^
 
+! Nvidia
+||telemetry*.nvidia.com^
+
 ! Popups
 ||7e1e8f3eba.com^
 
@@ -517,10 +520,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 21 Jan 2023 19:21 UTC
-! Version: 2023.0121.1921.14
+! Last modified: 22 Jan 2023 00:05 UTC
+! Version: 2023.0122.0005.03
 ! Syntax: AdBlock
-! Domains: 12020
+! Domains: 12029
 !
 ||00px.net^
 ||021jf.com^
@@ -753,6 +756,7 @@
 ||a2tw6yoodsag.com^
 ||prod.cm.publishers.advertising.a2z.com^
 ||bugsnag-event.monitor.core.app.alexa.a2z.com^
+||bugsnag-session.monitor.core.app.alexa.a2z.com^
 ||video-ads.a2z.com^
 ||t.a3cloud.net^
 ||a6lxbeui.ru^
@@ -2957,6 +2961,7 @@
 ||checkfilter.biz^
 ||checkm8.com^
 ||results.checkshield.net^
+||chefishoani.com^
 ||nnvtvx.chegg.com^
 ||strk.chegg.com^
 ||dv.chemie.de^
@@ -5416,6 +5421,7 @@
 ||email-staging.goodrx.com^
 ||fcmatch.google.com^
 ||crashlytics2.l.google.com^
+||id.l.google.com^
 ||partnerad.l.google.com^
 ||mail-ads.google.com^
 ||googleanalytics.com^
@@ -6501,7 +6507,6 @@
 ||kallarann.gq^
 ||kalooga.com^
 ||stats.kaltura.com^
-||kampyle.com^
 ||outreach.kansashealthsystem.com^
 ||kantarmedia.com^
 ||kantartns.lt^
@@ -6596,6 +6601,7 @@
 ||kiynew.com^
 ||pixel.kknews.cc^
 ||klangoo.com^
+||static-tracking.klaviyo.com^
 ||telemetrics.klaviyo.com^
 ||r.kleertjes.com^
 ||t.kleinanzeigen.de^
@@ -8301,6 +8307,7 @@
 ||optimost.com^
 ||optimove.net^
 ||optinmonster.com^
+||optistats.ovh^
 ||cdn.optmn.cloud^
 ||optmnstr.com^
 ||optmstr.com^
@@ -9383,6 +9390,7 @@
 ||restorationpencil.com^
 ||restrainstorm.com^
 ||resulticks.com^
+||reswimmouldy.uno^
 ||retagro.com^
 ||retailads.net^
 ||collector.retailcrm.pro^
@@ -9734,6 +9742,7 @@
 ||news.scbiznews.com^
 ||scbt.asia^
 ||scentedindication.com^
+||rt.scg-data.de^
 ||secmetrics.schaefer-shop.de^
 ||collector.schibsted.io^
 ||privacy.schibsted.com^
@@ -9863,7 +9872,7 @@
 ||servg1.net^
 ||pub.servidoresge.com^
 ||serving-passthrough.com^
-||serving-sys.com^
+||secure-ds.serving-sys.com^
 ||servingcdn.net^
 ||ab.servogram.io^
 ||servw.bid^
@@ -11647,6 +11656,7 @@
 ||fresnel-events.vimeocdn.com^
 ||vindicosuite.com^
 ||vinlens.com^
+||violetlovelines.com^
 ||vionito.com^
 ||viope.cyou^
 ||e.viously.com^
@@ -11842,6 +11852,7 @@
 ||waufooke.com^
 ||wauk1care.com^
 ||waumari.tk^
+||waushaup.com^
 ||waust.at^
 ||up-cookiemon.wavecdn.net^
 ||collector.wawlabs.com^
@@ -12176,6 +12187,7 @@
 ||xflirt.com^
 ||tracker.xgen.dev^
 ||cnt.xhamster.com^
+||gga.xhamster.com^
 ||collector.xhamster2.com^
 ||veih8bee.xhcdn.com^
 ||xhr0.xyz^
@@ -12549,10 +12561,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 21 Jan 2023 10:10 UTC
-! Version: 2023.0121.1010.51
+! Last modified: 21 Jan 2023 23:24 UTC
+! Version: 2023.0121.2324.54
 ! Syntax: AdBlock
-! Domains: 5563
+! Domains: 5562
 !
 ||willhaben.at.04300.id^
 ||11trikots.com^
@@ -16938,7 +16950,6 @@
 ||sellsfun.com^
 ||sem-solar.de^
 ||seminariovirtual.org^
-||sendros.de^
 ||seniorendatingagentur.at^
 ||seniorlivinglab.ch^
 ||senlann.com^
@@ -19779,8 +19790,8 @@
 ! Manage kmail lists
 @@|static.klaviyo.com^
 
-! Unsubscribe from Newsletters
-@@|static-tracking.klaviyo.com^
+! Unsubscribe from Newsletters?
+! static-tracking.klaviyo.com
 
 ! https://github.com/hagezi/dns-blocklists/issues/72
 @@|manli.com^
