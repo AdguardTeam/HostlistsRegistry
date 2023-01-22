@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-22T06:05:31.265Z
+! Last modified: 2023-01-22T14:05:11.927Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -380,6 +380,8 @@
 ||events*.data.msn.*^
 ||measure.office.com^
 ||pipe.aria.microsoft.com^
+! Outlook mobile app
+@@||mobile.pipe.aria.microsoft.com^
 ||telemetry*.microsoft.com^
 ||vortex*.data.microsoft.com^
 ! Windows / Xbox-Achievments
@@ -520,10 +522,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 22 Jan 2023 05:22 UTC
-! Version: 2023.0122.0522.55
+! Last modified: 22 Jan 2023 13:48 UTC
+! Version: 2023.0122.1348.56
 ! Syntax: AdBlock
-! Domains: 12028
+! Domains: 12029
 !
 ||00px.net^
 ||021jf.com^
@@ -7784,6 +7786,7 @@
 ||ntracker-collector.naver.com^
 ||er.search.naver.com^
 ||sp.naver.com^
+||g.tivan.naver.com^
 ||logapi.tv.naver.com^
 ||veta.naver.com^
 ||wcs.naver.com^
@@ -18320,6 +18323,10 @@
 @@||nexusrules.officeapps.live.com^
 @@|self-events-data.trafficmanager.net^
 @@|self.events.data.microsoft.com^
+! Outlook mobile app
+! https://github.com/hagezi/dns-blocklists/issues/233
+@@|mobile.pipe.aria.microsoft.com^
+@@|mobile.events.data.trafficmanager.net^
 
 ! NVidia
 @@|activation.gfe.nvidia.com^
@@ -19700,7 +19707,7 @@
 @@|www.norden.social^
 
 ! Breaks naver.com
-@@||tivan.naver.com^
+@@|tivan.naver.com^
 
 ! Greek school sites
 @@||sch.gr^
