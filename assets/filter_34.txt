@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-23T05:05:24.220Z
+! Last modified: 2023-01-23T13:09:19.115Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -522,10 +522,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 23 Jan 2023 04:11 UTC
-! Version: 2023.0123.0411.55
+! Last modified: 23 Jan 2023 12:17 UTC
+! Version: 2023.0123.1217.36
 ! Syntax: AdBlock
-! Domains: 12092
+! Domains: 12091
 !
 ||00px.net^
 ||021jf.com^
@@ -3913,7 +3913,6 @@
 ||web.datelovetime.xyz^
 ||dating2cloud.org^
 ||datingtoday.top^
-||daum.net^
 ||aem-collector.daumkakao.io^
 ||oj.daunnotes.com^
 ||stats.davidickedelivery.com^
@@ -20466,6 +20465,10 @@
 ! https://github.com/hagezi/dns-blocklists/issues/236
 @@|embed.tagboard.com^
 @@|embed.tagboard.com.herokudns.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/237
+@@|daum.net^
+@@|www.daum.net^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
