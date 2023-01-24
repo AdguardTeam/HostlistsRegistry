@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-24T11:05:25.269Z
+! Last modified: 2023-01-24T17:05:29.761Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -522,10 +522,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 24 Jan 2023 10:34 UTC
-! Version: 2023.0124.1034.20
+! Last modified: 24 Jan 2023 16:31 UTC
+! Version: 2023.0124.1631.57
 ! Syntax: AdBlock
-! Domains: 12300
+! Domains: 12299
 !
 ||00px.net^
 ||021jf.com^
@@ -3147,7 +3147,6 @@
 ||clean-1-clean.club^
 ||clean-2-clean.club^
 ||cleanmediaads.com^
-||clearbit.com^
 ||clearbitjs.com^
 ||clearbitscripts.com^
 ||clenchedyouthmatching.com^
@@ -20527,6 +20526,17 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/240
 @@|get.revolut.com^
+
+! Needed for BBC iPlayer and BBC Sounds app (only Android TV)
+@@|mybbc-analytics.files.bbci.co.uk^
+@@|mybbc-analytics.files.bbci.co.uk.edgekey.net^
+
+! Images in SpeedDial 2 Browser Extension
+@@|logo.clearbit.com^
+@@|thumb.highdeliveryscdn.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/242
+@@||boldchat.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
