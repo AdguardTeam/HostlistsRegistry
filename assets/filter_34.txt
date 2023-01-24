@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-24T17:05:29.761Z
+! Last modified: 2023-01-24T19:04:58.837Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -285,6 +285,9 @@
 ||rutarget.ru^
 ! sberbank.ru
 @@||track.rutarget.ru^
+||device.marketingcloudapis.com^
+! Dyson App - Digital Assistant
+@@||mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
 
 ! Apple
 ||*analytics-events.apple.com^
@@ -522,10 +525,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 24 Jan 2023 16:31 UTC
-! Version: 2023.0124.1631.57
+! Last modified: 24 Jan 2023 18:41 UTC
+! Version: 2023.0124.1841.05
 ! Syntax: AdBlock
-! Domains: 12299
+! Domains: 12298
 !
 ||00px.net^
 ||021jf.com^
@@ -7277,7 +7280,6 @@
 ||marinegruffexpecting.com^
 ||maritaltrousersidle.com^
 ||marketgid.com^
-||device.marketingcloudapis.com^
 ||marketo.com^
 ||marketo.net^
 ||marketperf.com^
@@ -20537,6 +20539,7 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/242
 @@||boldchat.com^
+@@|mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
