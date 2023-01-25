@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-25T19:05:12.033Z
+! Last modified: 2023-01-25T20:05:35.211Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -403,7 +403,8 @@
 ||nlo-stl-web.azureedge.net^
 ||pestcontrol-uc1.azureedge.net^
 ||sdtagging.azureedge.net^
-||serviceschipotlecom.trafficmanager.net^
+! CNAME services.chipotle.com - breaks Chipotle order
+@@||serviceschipotlecom.trafficmanager.net^
 
 ! Netflix
 ||beacon*.netflix.net^
@@ -525,8 +526,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 25 Jan 2023 18:16 UTC
-! Version: 2023.0125.1816.22
+! Last modified: 25 Jan 2023 19:05 UTC
+! Version: 2023.0125.1905.13
 ! Syntax: AdBlock
 ! Domains: 12417
 !
