@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-24T20:05:19.918Z
+! Last modified: 2023-01-25T00:20:47.862Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -525,10 +525,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 24 Jan 2023 19:05 UTC
-! Version: 2023.0124.1905.58
+! Last modified: 25 Jan 2023 00:09 UTC
+! Version: 2023.0125.0009.06
 ! Syntax: AdBlock
-! Domains: 12298
+! Domains: 12305
 !
 ||00px.net^
 ||021jf.com^
@@ -3150,6 +3150,8 @@
 ||clean-1-clean.club^
 ||clean-2-clean.club^
 ||cleanmediaads.com^
+||ga.clearbit.com^
+||reveal.clearbit.com^
 ||clearbitjs.com^
 ||clearbitscripts.com^
 ||clenchedyouthmatching.com^
@@ -3939,6 +3941,7 @@
 ||darghinruskin.com^
 ||dariolunus.com^
 ||darkestfertil.com^
+||statistics.darkreader.app^
 ||stats.darkreader.app^
 ||dartonim.com^
 ||dnsseed.bitcoin.dashjr.org^
@@ -5030,8 +5033,7 @@
 ||flygame.io^
 ||flyingsquirellsmooch.com^
 ||flymangoo.com^
-||rtb-eu.fmlabsonline.com^
-||rtb-useast.fmlabsonline.com^
+||fmlabsonline.com^
 ||tms.fmm.io^
 ||fmnetwork.nl^
 ||fmpub.net^
@@ -5220,6 +5222,7 @@
 ||logs.gaana.com^
 ||gaconnector.com^
 ||gadscc.xyz^
+||gaelsdaniele.website^
 ||uep.gaijin.net^
 ||gaiqgs.xyz^
 ||galanasorra.com^
@@ -7445,6 +7448,7 @@
 ||trackingapi.meinprospekt.de^
 ||stat.meitudata.com^
 ||mm.melia.com^
+||mellow-game.pro^
 ||mellowads.com^
 ||melodramaticlaughingbrandy.com^
 ||melredirnxt.top^
@@ -9959,6 +9963,7 @@
 ||schoolboyfingernail.com^
 ||detnmz.sciencing.com^
 ||event.scimo.io^
+||sciniphruffin.com^
 ||scintillatingsilver.com^
 ||tagger.ope.scmp.com^
 ||os.scmpacdn.com^
@@ -12528,6 +12533,7 @@
 ||xxxiijmp.com^
 ||xxxijmp.com^
 ||xxxivjmp.com^
+||xxxnewvideos.com^
 ||count.xxxssk.com^
 ||xxxtarget.com^
 ||xxxviijmp.com^
@@ -12809,6 +12815,7 @@
 ||ssp.zryydi.com^
 ||zscwdu.com^
 ||zsxrhkrfwwv.com^
+||ztrck.me^
 ||ztsrv.com^
 ||zubivu.com^
 ||zucks.net^
@@ -12835,10 +12842,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 24 Jan 2023 09:53 UTC
-! Version: 2023.0124.0953.13
+! Last modified: 24 Jan 2023 23:28 UTC
+! Version: 2023.0124.2328.22
 ! Syntax: AdBlock
-! Domains: 5414
+! Domains: 5413
 !
 ||willhaben.at.04300.id^
 ||11trikots.com^
@@ -15825,7 +15832,6 @@
 ||maehercenter.de^
 ||mafiatekno.com^
 ||magicmixte.com^
-||magiczoomco.com^
 ||magliecalciocn.net^
 ||magnitshop.com^
 ||magros-welt.de^
@@ -18764,12 +18770,14 @@
 @@|dcfdata.espn.com^
 @@|players.brightcove.net^
 
-! https://github.com/notracking/hosts-blocklists/issues/787
-! !!! Will not be unblocked, the domains are used for ads/tracking and are quite common !!!
-! m1.fwmrm.net
-! m2.fwmrm.net
-! mssl.fwmrm.net
-! mssl.fwmrm.net.edgesuite.net
+! Videos on various sites
+@@|m1.fwmrm.net^
+@@|m1.fwmrm.net-v1.edgesuite.net^
+@@|m2.fwmrm.net^
+@@|m2.fwmrm.net-v1.edgesuite.net^
+@@|mssl.fwmrm.net^
+@@|mssl.fwmrm.net.edgesuite.net^
+@@|v.fwmrm.net^
 
 ! https://github.com/notracking/hosts-blocklists/issues/786
 @@|above.com^
@@ -19919,10 +19927,8 @@
 @@||seu*.cleverreach.com^
 
 ! Manage kmail lists
+@@|manage.kmail-lists.com^
 @@|static.klaviyo.com^
-
-! Unsubscribe from Newsletters?
-! static-tracking.klaviyo.com
 
 ! https://github.com/hagezi/dns-blocklists/issues/72
 @@|manli.com^
@@ -20539,7 +20545,10 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/242
 @@||boldchat.com^
+@@|dyson.nanorep.co^
+@@|us1-1.nanorep.co^
 @@|mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
+@@|s50.device.marketingcloudapis.com^
 
 ! https://github.com/hagezi/dns-blocklists/issues/243
 @@|review-rating.mncdn.com^
