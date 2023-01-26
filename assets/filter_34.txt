@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-26T15:05:23.128Z
+! Last modified: 2023-01-26T19:05:08.929Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -121,6 +121,7 @@
 @@||unagi.amazon.com^
 @@||unagi-fe.amazon.com^
 @@||unagi-na.amazon.com^
+||rcm*.amazon.*^
 
 ! Amazon Device Metrics
 ||d3p8zr0ffa9t17.cloudfront.net^
@@ -530,10 +531,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 26 Jan 2023 14:44 UTC
-! Version: 2023.0126.1444.55
+! Last modified: 26 Jan 2023 18:54 UTC
+! Version: 2023.0126.1854.02
 ! Syntax: AdBlock
-! Domains: 12473
+! Domains: 12472
 !
 ||00px.net^
 ||021jf.com^
@@ -1666,7 +1667,6 @@
 ||amaroid.net^
 ||amavalet.com^
 ||amazingcounters.com^
-||rcm.amazon.com^
 ||cloudfront-labs.amazonaws.com^
 ||admarvel.s3.amazonaws.com^
 ||ams-pageview-public.s3.amazonaws.com^
@@ -20817,6 +20817,18 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/247
 @@|h-microsoft.online-metrix.net^
+
+! Lucky Dreams Online Casino
+@@|ui.noda.live^
+@@|api.noda.live^
+@@|cf-iomeu-cdn.relaxg.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/248
+@@|qsurvey.mozilla.com^
+@@|privatedomain.sgizmo.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/249
+@@|api.zepto.co.in^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
