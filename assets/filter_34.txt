@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-27T14:05:25.771Z
+! Last modified: 2023-01-27T16:05:35.712Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -531,10 +531,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 27 Jan 2023 13:35 UTC
-! Version: 2023.0127.1335.58
+! Last modified: 27 Jan 2023 16:01 UTC
+! Version: 2023.0127.1601.45
 ! Syntax: AdBlock
-! Domains: 12480
+! Domains: 12482
 !
 ||00px.net^
 ||021jf.com^
@@ -772,6 +772,7 @@
 ||t.9gag.com^
 ||ywrcqa.9news.com^
 ||9r7i9bo06157.top^
+||cdn.9to5terminal.com^
 ||9v58v.com^
 ||9xob25oszs.com^
 ||a-ads.com^
@@ -6342,7 +6343,6 @@
 ||shoppers.instacartemail.com^
 ||install1nstall1.com^
 ||installads.net^
-||instant.page^
 ||instantfox.co^
 ||ping.instantsearchplus.com^
 ||instapagemetrics.com^
@@ -10229,7 +10229,9 @@
 ||servw.bid^
 ||sessioncam.com^
 ||sessionstack.com^
+||hg-statsd.setapp.com^
 ||mtga.setapp.com^
+||stats.setapp.com^
 ||setka.media^
 ||setnessalgy.com^
 ||cloud.setupad.com^
@@ -20855,6 +20857,20 @@
 @@|get.sentry.io^
 @@|go.sentry.io^
 @@|open.sentry.io^
+
+! https://github.com/hagezi/dns-blocklists/issues/257
+@@|app.datadoghq.eu^
+@@|app.datadoghq.com^
+@@|static.datadoghq.com^
+@@|docs.datadoghq.com^
+@@|consent-pref.trustarc.com^
+@@|adstream.com^
+@@|www.adstream.com^
+@@|extremereach.com^
+@@|www.extremereach.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/259
+@@||instant.page^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
