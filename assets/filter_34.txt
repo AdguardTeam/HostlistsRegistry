@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-27T17:05:19.364Z
+! Last modified: 2023-01-27T18:05:41.632Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -531,8 +531,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 27 Jan 2023 16:10 UTC
-! Version: 2023.0127.1610.04
+! Last modified: 27 Jan 2023 17:52 UTC
+! Version: 2023.0127.1752.56
 ! Syntax: AdBlock
 ! Domains: 12482
 !
@@ -20874,6 +20874,16 @@
 
 ! cover of redpocket at wechat - not able to see the custom cove
 @@|wxsnsdy.wxs.qq.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/260
+@@|id.rambler.ru^
+
+! https://github.com/hagezi/dns-blocklists/issues/261
+@@|betanews.com^
+@@|www.betanews.com^
+
+! Finnish fibre optics ISP
+@@|asiakas.valokuitunen.fi^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
