@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-28T17:05:06.895Z
+! Last modified: 2023-01-28T18:05:38.216Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -152,6 +152,8 @@
 |smetric.*.*^
 |telemetry.*.*^
 |track.*.*^
+! Referral links
+@@||track.cj.akadns.net^
 ! Mainly referral links
 @@||track.aftership.com^
 ! Parcel tracking
@@ -531,8 +533,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 28 Jan 2023 16:08 UTC
-! Version: 2023.0128.1608.15
+! Last modified: 28 Jan 2023 17:10 UTC
+! Version: 2023.0128.1710.59
 ! Syntax: AdBlock
 ! Domains: 12507
 !
@@ -20943,6 +20945,13 @@
 
 ! Turkish Airlines and other apps - Full-screen Stories
 @@|api.storyly.io^
+
+! Required for SwiftKey
+@@|bibo.api.swiftkey.com^
+@@|jenson.api.swiftkey.com^
+
+! Justwatch - pick a country a movie/show
+@@|click.justwatch.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
