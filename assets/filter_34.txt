@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-28T06:05:39.684Z
+! Last modified: 2023-01-28T17:05:06.895Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -531,8 +531,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 28 Jan 2023 05:58 UTC
-! Version: 2023.0128.0558.20
+! Last modified: 28 Jan 2023 16:08 UTC
+! Version: 2023.0128.1608.15
 ! Syntax: AdBlock
 ! Domains: 12507
 !
@@ -18636,12 +18636,17 @@
 @@|ajax.googleapis.com^
 @@|analyticsinsights-pa.googleapis.com^
 @@|analyticssearch-pa.googleapis.com^
+@@|androidtvwatsonfe-pa.googleapis.com^
 @@|appspot-preview.l.google.com^
+@@|auditrecording-pa.googleapis.com^
 @@|consent.google.com^
+@@|content-analytics.googleapis.com^
+@@|content-analyticsinsights-pa.googleapis.com^
 @@|csi.gstatic.com^
 @@|device-provisioning.googleapis.com^
-@@|firebasedynamiclinks-ipv4.googleapis.com^
-@@|firebasedynamiclinks-ipv6.googleapis.com^
+@@|federatedml-pa.googleapis.com^
+@@|firebase.googleapis.com^
+@@|firebasedynamiclinks-*.googleapis.com^
 @@|firebasedynamiclinks.googleapis.com^
 @@|firebaseinappmessaging.googleapis.com^
 @@|firebaseinstallations.googleapis.com^
@@ -18663,6 +18668,10 @@
 @@|semanticlocation-pa.googleapis.com^
 @@|smartlock.google.com^
 @@|userlocation.googleapis.com^
+@@|www.analyticsinsights-pa.googleapis.com^
+@@|www.analyticssearch-pa.googleapis.com^
+@@|www.device-provisioning.googleapis.com^
+@@|www.semanticlocation-pa.googleapis.com^
 ! Breaks site layouts, videos and more on some sites
 @@||googletagmanager.com^
 ! googletagservices.com
@@ -18702,6 +18711,7 @@
 @@|go.microsoft.com^
 @@|go.trouter.skype.com^
 @@|insideruser.microsoft.com^
+@@|insideruser.trafficmanager.net^
 @@|js.monitor.azure.com^
 @@|login.microsoftonline.com^
 @@|onecollector.cloudapp.aria.akadns.net^
@@ -20930,6 +20940,9 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/268
 @@||pdcdn1.top^
+
+! Turkish Airlines and other apps - Full-screen Stories
+@@|api.storyly.io^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
