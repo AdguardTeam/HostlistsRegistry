@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-29T00:22:34.182Z
+! Last modified: 2023-01-29T08:05:27.583Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -533,10 +533,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 29 Jan 2023 00:03 UTC
-! Version: 2023.0129.0003.05
+! Last modified: 29 Jan 2023 07:09 UTC
+! Version: 2023.0129.0709.59
 ! Syntax: AdBlock
-! Domains: 12538
+! Domains: 12537
 !
 ||00px.net^
 ||021jf.com^
@@ -12780,7 +12780,6 @@
 ||jill.fc.yahoo.com^
 ||ganon.yahoo.com^
 ||beap.gemini.yahoo.com^
-||geo.yahoo.com^
 ||marketingsolutions.yahoo.com^
 ||pclick.yahoo.com^
 ||ras.yahoo.com^
@@ -20969,9 +20968,13 @@
 @@||contabostorage.com^
 
 ! Yahoo App/Mail
+! https://github.com/hagezi/dns-blocklists/issues/269
 @@|consent.yahoo.com^
+@@|geo.yahoo.com^
 @@|guce.oath.com^
 @@|m.yap.yahoo.com^
+@@|pr.comet.yahoo.com^
+@@|udc.yahoo.com^
 @@|udcm.yahoo.com^
 
 ! https://github.com/hagezi/dns-blocklists/issues/265
@@ -20996,6 +20999,16 @@
 
 ! Justwatch - pick a country a movie/show
 @@|click.justwatch.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/270
+@@|data.tmsapi.com^
+@@|td-mashery-tm-use1.mashery.com^
+@@|td-tms.mashery.com^
+@@|tms.api.mashery.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/271
+@@|captive.roku.com^
+@@|d1k85ogl73rd7b.cloudfront.net^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
