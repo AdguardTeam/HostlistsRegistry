@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-30T00:17:47.579Z
+! Last modified: 2023-01-30T06:06:10.753Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -533,10 +533,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 29 Jan 2023 23:59 UTC
-! Version: 2023.0129.2359.02
+! Last modified: 30 Jan 2023 05:44 UTC
+! Version: 2023.0130.0544.01
 ! Syntax: AdBlock
-! Domains: 12582
+! Domains: 12581
 !
 ||00px.net^
 ||021jf.com^
@@ -8464,7 +8464,6 @@
 ||offerimage.com^
 ||offerwall-adnative.com^
 ||offfurreton.com^
-||hubblecontent.osi.office.net^
 ||clarity.officer.com^
 ||cp.official-coupons.com^
 ||eulerian.officiel-des-vacances.com^
@@ -21072,6 +21071,14 @@
 ! Discord Server List
 @@|discords.com^
 @@|www.discords.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/275
+@@||osi.office.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/276
+@@|indusprodcustomer3996.pc.cdn.bitgravity.com^
+@@|lalpathlabs.com^
+@@|www.lalpathlabs.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
