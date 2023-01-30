@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-30T15:05:40.133Z
+! Last modified: 2023-01-30T20:05:51.653Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -533,8 +533,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 30 Jan 2023 14:18 UTC
-! Version: 2023.0130.1418.23
+! Last modified: 30 Jan 2023 19:06 UTC
+! Version: 2023.0130.1906.24
 ! Syntax: AdBlock
 ! Domains: 14877
 !
@@ -23314,10 +23314,12 @@
 @@|consent.yahoo.com^
 @@|geo.yahoo.com^
 @@|guce.oath.com^
-@@|m.yap.yahoo.com^
 @@|pr.comet.yahoo.com^
 @@|udc.yahoo.com^
 @@|udcm.yahoo.com^
+
+! Yahoo Finance App -  no News are shown
+@@|m.yap.yahoo.com^
 
 ! https://github.com/hagezi/dns-blocklists/issues/265
 @@|embed.ly^
@@ -23382,6 +23384,9 @@
 
 ! Typeform
 @@|embed.typeform.com^
+
+! G5 Games - World of Adventures - Login and Accountsynchronisation
+@@|api.pgpl.g5e.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
