@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-31T13:10:29.474Z
+! Last modified: 2023-01-31T17:05:06.729Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -349,7 +349,8 @@
 !||fls.doubleclick.net^
 !||g.doubleclick.net^
 !||static.doubleclick.net^
-||id.google.*^
+! Google Reviews
+@@||id.google.*^
 
 ! Huawei
 ||ad-*.dbankcloud.*^
@@ -534,10 +535,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 31 Jan 2023 12:14 UTC
-! Version: 2023.0131.1214.02
+! Last modified: 31 Jan 2023 16:21 UTC
+! Version: 2023.0131.1621.36
 ! Syntax: AdBlock
-! Domains: 26568
+! Domains: 26575
 !
 ||007vww.com^
 ||00go.com^
@@ -3237,6 +3238,7 @@
 ||appservestar.com^
 ||appsfire.com^
 ||cdn-settings.appsflyersdk.com^
+||inapps.appsflyersdk.com^
 ||launches.appsflyersdk.com^
 ||appsforlive.fun^
 ||appsformypc.com^
@@ -8504,7 +8506,7 @@
 ||dramaticdirection.com^
 ||dratingmaject.com^
 ||drawbacksof.com^
-||uo.drawbaroddly.com^
+||drawbaroddly.com^
 ||dream-of-the-bloodmoon.com^
 ||dreambooknews.com^
 ||dreamdata.io^
@@ -8545,6 +8547,7 @@
 ||marketing.dropbox.com^
 ||dropboxfingerprintjs.com^
 ||dropkickmedia.com^
+||droppedbanking.com^
 ||dropshipaccess.com^
 ||drpease.com^
 ||saa.drphil.com^
@@ -11522,6 +11525,7 @@
 ||goodlov.online^
 ||email-staging.goodrx.com^
 ||goodtruebeautifulinc.com^
+||goodvibesmatterforus.com^
 ||googe.com^
 ||googele.com^
 ||contributor.google.com^
@@ -14034,6 +14038,7 @@
 ||khayatarai.com^
 ||khbsvn.top^
 ||khekwufgwbl.com^
+||khment.com^
 ||khoa-online.com^
 ||ywrcqa.khou.com^
 ||ki6lhg.icu^
@@ -14327,6 +14332,7 @@
 ||events.kumulos.com^
 ||stats.kumulos.com^
 ||kundencontroller.de^
+||kundendienstnflx.com^
 ||kundenserver.de^
 ||kuno-gae.com^
 ||stat.kununu.cz^
@@ -20839,8 +20845,8 @@
 ||sahargahlaban.ir^
 ||ws.sahibinden.com^
 ||said3page.com^
-||ak.sail-horizon.com^
-||aws-api.sail-personalize.com^
+||sail-horizon.com^
+||sail-personalize.com^
 ||api.sail-track.com^
 ||aws-api.sail-track.com^
 ||sailormoonlive.com^
@@ -21576,6 +21582,7 @@
 ||showmeyouradsnow.com^
 ||showroomlogic.com^
 ||shox.cc^
+||shrewrotl.com^
 ||shreyabanerjee.com^
 ||shrfbdg004.com^
 ||shrillspoon.com^
@@ -22855,6 +22862,7 @@
 ||syenitetatler.tech^
 ||syeuaw.top^
 ||somni.syf.com^
+||sylvatealonely.com^
 ||nsg.symantec.com^
 ||symplr.de^
 ||sync.tv^
@@ -35053,6 +35061,9 @@
 
 ! Sweden's biggest gym-app - blob-storage/CDN for Azure
 @@|az416426.vo.msecnd.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/283
+@@||buymeacoffee.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
