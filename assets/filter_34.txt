@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-31T05:05:29.851Z
+! Last modified: 2023-01-31T07:05:25.438Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -532,10 +532,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 31 Jan 2023 04:46 UTC
-! Version: 2023.0131.0446.02
+! Last modified: 31 Jan 2023 06:13 UTC
+! Version: 2023.0131.0613.46
 ! Syntax: AdBlock
-! Domains: 26690
+! Domains: 26694
 !
 ||007vww.com^
 ||00go.com^
@@ -26593,6 +26593,7 @@
 ||fc.yahoo.com^
 ||ganon.yahoo.com^
 ||gemini.yahoo.com^
+||geo.yahoo.com^
 ||marketingsolutions.yahoo.com^
 ||pclick.yahoo.com^
 ||promotions.yahoo.com^
@@ -26603,8 +26604,11 @@
 ||app.ssp.yahoo.com^
 ||c2shb.ssp.yahoo.com^
 ||web-oao.ssp.yahoo.com^
+||udc.yahoo.com^
+||udcm.yahoo.com^
 ||bats.video.yahoo.com^
 ||visit.webhosting.yahoo.com^
+||m.yap.yahoo.com^
 ||pr.ybp.yahoo.com^
 ||pr-bh.ybp.yahoo.com^
 ||ysm.yahoo.com^
@@ -35087,14 +35091,12 @@
 ! Yahoo App/Mail
 ! https://github.com/hagezi/dns-blocklists/issues/269
 @@|consent.yahoo.com^
-@@|geo.yahoo.com^
 @@|guce.oath.com^
 @@|pr.comet.yahoo.com^
-@@|udc.yahoo.com^
-@@|udcm.yahoo.com^
 
 ! Yahoo Finance App -  no News are shown
-@@|m.yap.yahoo.com^
+! supplies ads!
+! m.yap.yahoo.com
 
 ! https://github.com/hagezi/dns-blocklists/issues/265
 @@|embed.ly^
