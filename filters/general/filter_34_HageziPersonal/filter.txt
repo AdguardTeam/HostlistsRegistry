@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-01-31T10:05:46.229Z
+! Last modified: 2023-01-31T13:10:29.474Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -534,10 +534,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 31 Jan 2023 09:45 UTC
-! Version: 2023.0131.0945.04
+! Last modified: 31 Jan 2023 12:14 UTC
+! Version: 2023.0131.1214.02
 ! Syntax: AdBlock
-! Domains: 26570
+! Domains: 26568
 !
 ||007vww.com^
 ||00go.com^
@@ -16415,8 +16415,6 @@
 ||msdnmail.net^
 ||msearch.co^
 ||msecn.net^
-||az361816.vo.msecnd.net^
-||az693360.vo.msecnd.net^
 ||msgapp.com^
 ||msgtag.com^
 ||mshago.com^
@@ -35052,6 +35050,9 @@
 
 ! Compliance Solution for Small Businesses
 @@||termly.io^
+
+! Sweden's biggest gym-app - blob-storage/CDN for Azure
+@@|az416426.vo.msecnd.net^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
