@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-04T16:05:19.899Z
+! Last modified: 2023-02-04T20:05:23.762Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -554,8 +554,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 04 Feb 2023 15:51 UTC
-! Version: 2023.0204.1551.12
+! Last modified: 04 Feb 2023 20:00 UTC
+! Version: 2023.0204.2000.14
 ! Syntax: AdBlock
 ! Domains: 31700
 !
@@ -40244,6 +40244,17 @@
 
 ! Customer care of Swiggy Food Delivery App
 @@||pubnub.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/296
+@@|homedepot.cdn.findly.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/295
+@@|secondstreetapp.com^
+@@|www.secondstreetapp.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/295
+@@|localiq.com^
+@@|www.localiq.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
