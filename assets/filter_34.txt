@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-06T05:05:18.762Z
+! Last modified: 2023-02-06T12:07:29.838Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -193,6 +193,8 @@
 @@||tracking.exposed^
 ! Parcel tracking
 @@||tracking.post.japanpost.jp^
+! Shipment tracking for sephora orders
+@@||tracking.narvar.com^
 |gtrack.*.*^
 |trk.*.*^
 ! Mainly referral links
@@ -555,8 +557,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 06 Feb 2023 04:47 UTC
-! Version: 2023.0206.0447.47
+! Last modified: 06 Feb 2023 11:43 UTC
+! Version: 2023.0206.1143.58
 ! Syntax: AdBlock
 ! Domains: 33281
 !
@@ -41859,6 +41861,11 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/304
 @@|host.secureserver.net^
+
+! https://github.com/hagezi/dns-blocklists/issues/305
+@@|ship.sephora.com^
+@@|sephora.narvar.com^
+@@|tracking.narvar.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
