@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-02-06T12:07:18.097Z
+! Last modified: 2023-02-06T15:05:13.278Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-02-06T12:01:27.652Z
+! Last modified: 2023-02-06T14:32:16.596Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -1376,6 +1376,10 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||ads.rubiconproject.com^
+||eus.rubiconproject.com^
+||fastlane.rubiconproject.com^
+||prebid-*.rubiconproject.com^
 ||d25m254rjp3rii.cloudfront.net^
 ||creative.live7mm.tv^
 ||ad.petel.bg^
@@ -16206,7 +16210,6 @@ vkcdnservice.appspot.com^
 ||ruamupr.com^
 ||rubberbeak.com^
 ||rubcomplaintdimly.com^
-||rubiconproject.com^
 ||rubiestagaty.com^
 ||rubstove.com^
 ||rubymillsnpro.com^
@@ -25072,7 +25075,6 @@ vkcdnservice.appspot.com^
 ||cloud-exploration.com^
 ||cloudtracer101.com^
 ||clubcollector.com^
-||clustrmaps.com^
 ||cmcore.com^
 ||cmmeglobal.com^
 ||cmptch.com^
@@ -27998,6 +28000,9 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||pixel-*.rubiconproject.com^
+||pixel.rubiconproject.com^
+||smarttag.rubiconproject.com^
 ||stat.arzamas.academy^
 ||events.air.tv^
 ||event-listener.air.tv^
@@ -29607,6 +29612,7 @@ vkcdnservice.appspot.com^
 ||stats.aplus.com^
 ||stats.articlesbase.com^
 ||stats.avg.com^
+||stats.aws.rubiconproject.com^
 ||stats.bbc.co.uk^
 ||stats.behance.net^
 ||stats.binki.es^
@@ -39074,6 +39080,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||meltwater.com^
 ||menthu.vdsinside.com^
 ||metapic.se^
+||micro.rubiconproject.com^
 ||mindreskatt.se^
 ||missaffiliate.com^
 ||mmetrix.mobi^
@@ -39114,7 +39121,6 @@ charlestownwyllie.oaklawnnonantum.com^
 ||r.existenz.se^
 ||rabattcoop.com^
 ||rabattkoder.ifragasatt.se^
-||rabble-res.cloudinary.com^
 ||recirculation.spot.im^
 ||record.findtrustclicks.com^
 ||regstat.se^
