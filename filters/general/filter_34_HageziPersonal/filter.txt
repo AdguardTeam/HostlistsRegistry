@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-07T18:06:01.034Z
+! Last modified: 2023-02-07T19:05:09.729Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -170,6 +170,7 @@
 @@||track.customer.io^
 @@||track.effiliation.com^
 @@||track.goshippo.com^
+@@||track.dhlparcel.co.uk^
 ! Tracking application status of https://ceac.state.gov/ceac/
 @@||track.moyu.ac.cn^
 ! Breaks nzz.ch
@@ -562,8 +563,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 07 Feb 2023 17:40 UTC
-! Version: 2023.0207.1740.39
+! Last modified: 07 Feb 2023 18:31 UTC
+! Version: 2023.0207.1831.48
 ! Syntax: AdBlock
 ! Domains: 33633
 !
@@ -42239,6 +42240,12 @@
 ! Cookiebanner trigema.de and other sites
 @@|consent.cookiebot.eu^
 @@|consentcdn.cookiebot.eu^
+
+! https://github.com/hagezi/dns-blocklists/issues/311
+@@|track.dhlparcel.co.uk^
+
+! https://github.com/hagezi/dns-blocklists/issues/312
+@@|mijn.overheid.nl^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
