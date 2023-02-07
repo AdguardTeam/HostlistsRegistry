@@ -1,0 +1,19 @@
+{
+    "name": "The Blocklist Project - Ads List",
+    "description": "The collection of web addresses that have been identified as hosting or serving unwanted advertisements.",
+    "homepage": "https://github.com/blocklistproject/Lists",
+    "sources": [
+      {
+        "name": "The Blocklist Project - Ads List",
+        "source": "https://blocklistproject.github.io/Lists/adguard/ads-ags.txt",
+        "type": "adblock",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
