@@ -146,7 +146,7 @@ Possible tags:
 
   SVG icon requirements:
 
-  - The icon must have a square shape, i.e. the third and fourth parameters of the viewBox attribute must be equal.
+  - The icon must have a square shape, i.e. the third and fourth parameters of the `viewBox` attribute must be equal.
   - The icon must be black and white.
   - It should be as small as possible.
   - Svg tag must contain `fill="currentColor"` attribute. This is important for themes to work properly.
