@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-09T05:05:43.855Z
+! Last modified: 2023-02-09T06:06:22.008Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -563,10 +563,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 09 Feb 2023 00:02 UTC
-! Version: 2023.0209.0002.30
+! Last modified: 09 Feb 2023 05:40 UTC
+! Version: 2023.0209.0540.41
 ! Syntax: AdBlock
-! Domains: 27685
+! Domains: 27686
 !
 ||003store.com^
 ||007vww.com^
@@ -11366,6 +11366,7 @@
 ||getconatyclub.com^
 ||getconfidence.net^
 ||getcong.com^
+||ck.getcookiestxt.com^
 ||getcryptotab.com^
 ||getdiscoverbrowser.com^
 ||api.getdrip.com^
@@ -33755,6 +33756,8 @@
 @@|connect.facebook.com^
 @@|connect.facebook.net^
 @@|i.instagram.com^
+@@|*api.facebook.com^
+@@|*star.*.facebook.com^
 
 ! Facebook CDN
 @@||cdninstagram.com^
@@ -33898,12 +33901,16 @@
 
 ! SmartTV
 ! https://github.com/Perflyst/PiHoleBlocklist/issues/117
-! LG: latest date and time sync (resets to December 31st 2019)
-@@|us.lgtvsdp.com^
-! NPO Start app on LG webOS televisions / blocks thumbnails from loading in the LG Content Store
-@@|ngfts.lge.com^
-! LG Store: prevent some cover art from displaying properly
 @@|aic-ngfts.lge.com^
+@@|aic.cdpsvc.lgtvcommon.com^
+@@|common.lgthinq.com^
+@@|lss.lgthinq.com^
+@@|ngfts.lge.com^
+@@|us.emp.lgsmartplatform.com^
+@@|us.info.lgsmartad.com^
+@@|us.lgeapi.com^
+@@|us.lgtvsdp.com^
+@@|us.rdx2.lgtvsdp.com^
 
 ! Twitter
 @@|ads.twitter.com^
