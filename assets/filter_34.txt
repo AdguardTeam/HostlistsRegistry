@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-09T10:05:34.804Z
+! Last modified: 2023-02-09T20:05:29.580Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -118,8 +118,9 @@
 ||assoc-amazon.*^
 ! Forrester Log Service - market analytics company
 ! https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html
-||fls*.amazon.*^
-||forester.a2z.com^
+! Breaks Amazon browsing history
+@@||fls*.amazon.*^
+@@||forester.a2z.com^
 ||mads*.amazon.*^
 ||unagi*.amazon.*^
 ! Amazon Apps / Kindle / Fire-Tablet
@@ -563,10 +564,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 09 Feb 2023 09:53 UTC
-! Version: 2023.0209.0953.25
+! Last modified: 09 Feb 2023 19:56 UTC
+! Version: 2023.0209.1956.39
 ! Syntax: AdBlock
-! Domains: 63842
+! Domains: 63840
 !
 ||0000onlined.art^
 ||0000onlined.quest^
@@ -15188,8 +15189,6 @@
 ||gokmenas.com.tr^
 ||goldenleafmotel.com.au^
 ||goodvaluedigital.com.au^
-||adservice.google.com.iq^
-||adservice.google.com.tn^
 ||goplus.com.co^
 ||goshop.com.pe^
 ||gostores.com.br^
