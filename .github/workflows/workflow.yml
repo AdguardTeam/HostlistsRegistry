@@ -6,6 +6,7 @@ on:
       - main
   schedule:
     - cron: "0 * * * *"
+  pull_request:
   workflow_dispatch:
 
 jobs:
@@ -28,6 +29,7 @@ jobs:
 
       - name: Commit & Push changes
         uses: actions-js/push@master
+        if: github.ref == 'refs/heads/main' && github.repository == 'AdguardTeam/HostlistsRegistry'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: "main"
