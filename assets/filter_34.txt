@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-12T15:05:22.665Z
+! Last modified: 2023-02-12T16:05:26.911Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -582,10 +582,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 12 Feb 2023 10:50 UTC
-! Version: 2023.0212.1050.25
+! Last modified: 12 Feb 2023 15:22 UTC
+! Version: 2023.0212.1522.20
 ! Syntax: AdBlock
-! Domains: 25044
+! Domains: 25043
 !
 ||003store.com^
 ||007sites.com^
@@ -14288,7 +14288,6 @@
 ||lodeo.io^
 ||lodgedynamitebook.com^
 ||activate.loft.com^
-||api.loganalytics.io^
 ||logbor.com^
 ||logs-01.loggly.com^
 ||logibrj.com^
@@ -70535,6 +70534,9 @@
 ! https://github.com/hagezi/dns-blocklists/issues/328
 @@|trust-provider.com^
 @@|www.trust-provider.com^
+
+! Azure Log Analytics Workspace (KQL)
+@@|api.loganalytics.io^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
