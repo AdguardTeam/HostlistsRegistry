@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-02-12T00:22:12.407Z
+! Last modified: 2023-02-12T12:06:22.150Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-02-12T00:03:01.176Z
+! Last modified: 2023-02-12T12:01:34.753Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -21367,6 +21367,7 @@ vkcdnservice.appspot.com^
 ||geo-idm.fr^
 ||geopromos.com^
 ||geovisite.com^
+||geozo.com^
 ||germaniavid.com^
 ||gestionpub.com^
 ||get.com^
@@ -39911,7 +39912,6 @@ charlestownwyllie.oaklawnnonantum.com^
 !
 !
 ||c303.pw^
-||geozo.com^
 ! Domain server iklan milik luckyads.com (domain sering berganti-ganti)
 ! https://github.com/realodix/AdBlockID/issues/376
 ! XL Axiata
@@ -48980,23 +48980,14 @@ analytics-*.aasaam.com
 # https://github.com/Webamoozcom/warning-list/discussions/119
 ||shamining.com^
 
+# https://github.com/Webamoozcom/warning-list/discussions/129
+||ccnnetwork.co^
+
 # https://github.com/Webamoozcom/warning-list/discussions/130
 ||wintap.io^
 
 # https://github.com/Webamoozcom/warning-list/discussions/132
 ||frzss.com^
-
-
-# https://t.me/MiladNouriChannel/685
-# https://instagram.com/p/Ch7u5KrjAkP
-# https://cyber-alerts.com/2022/08/27/websites-related-to-usdtpkpgmail-com/
-||usdtbang.com^
-||usdteng.com^
-||usdtcan.com^
-||usdtbbc.com^
-||imtokenwallet.biz^
-
-||emenshowapp.xyz^
 
 !
 ! Source name: Additional rules
