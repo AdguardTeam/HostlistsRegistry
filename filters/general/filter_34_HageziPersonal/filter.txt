@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-12T01:32:38.312Z
+! Last modified: 2023-02-12T02:29:20.650Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -582,8 +582,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 11 Feb 2023 00:05 UTC
-! Version: 2023.0211.0005.55
+! Last modified: 11 Feb 2023 13:54 UTC
+! Version: 2023.0211.1354.41
 ! Syntax: AdBlock
 ! Domains: 26017
 !
@@ -71589,6 +71589,13 @@
 
 ! Breaks national radio-television organization's VOD portal - https://365.rtvslo.si
 @@|cdn.jwplayer.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/326
+@@|tmx.bestbuy.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/328
+@@|trust-provider.com^
+@@|www.trust-provider.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
