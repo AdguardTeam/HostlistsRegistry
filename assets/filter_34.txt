@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-18T00:21:09.655Z
+! Last modified: 2023-02-18T05:05:26.796Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -601,8 +601,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 18 Feb 2023 00:15 UTC
-! Version: 2023.0218.0015.18
+! Last modified: 18 Feb 2023 04:40 UTC
+! Version: 2023.0218.0440.33
 ! Syntax: AdBlock
 ! Domains: 26421
 !
@@ -73599,6 +73599,9 @@
 
 ! Blocks CNN app on Apple TV from confirming geo location, a requirement to open app
 @@||geo.ngtv.io^
+
+! https://github.com/hagezi/dns-blocklists/issues/432
+@@||measurement-lab.org^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
