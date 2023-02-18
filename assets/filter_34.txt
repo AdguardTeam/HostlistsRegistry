@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-18T09:05:39.362Z
+! Last modified: 2023-02-18T22:05:36.386Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -601,10 +601,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 18 Feb 2023 08:21 UTC
-! Version: 2023.0218.0821.51
+! Last modified: 18 Feb 2023 21:12 UTC
+! Version: 2023.0218.2112.56
 ! Syntax: AdBlock
-! Domains: 26420
+! Domains: 26419
 !
 ||003store.com^
 ||007sites.com^
@@ -3179,6 +3179,7 @@
 ||antvoice.com^
 ||script.anura.io^
 ||anyclip.com^
+||anydebrid.com^
 ||anymad.com^
 ||anymautey.xyz^
 ||anymind360.com^
@@ -5063,7 +5064,6 @@
 ||bredraptureoppressive.com^
 ||breedenandsilver.com^
 ||breedingdaringconcussion.com^
-||brestcity.com^
 ||brewseryngo.com^
 ||briareddollier.com^
 ||tr.actu.bricodepot.com^
@@ -5256,7 +5256,6 @@
 ||data-b43a87d00c.businessinsider.de^
 ||geoip.businessinsider.com^
 ||secure.businessintuition247.com^
-||businessua.com^
 ||bustlinganimal.com^
 ||events.busuu.com^
 ||butsenox.net^
@@ -65851,7 +65850,6 @@
 ||badeanzugtreff.de^
 ||badgyalbrand.com^
 ||baeckerei-huber.at^
-||de.baerskinhoodie.com^
 ||baeuchel.at^
 ||baffinosterreich.at^
 ||bagomi-versand.net^
@@ -71146,7 +71144,10 @@
 @@|syndication.twitter.com^
 @@|t.co^
 @@|www.t.co^
-
+@@|global.albtls.t.co^
+@@|d2cttawv9fdszz.cloudfront.net^
+@@|na.albtls.t.co^
+@@|dlp3zj68t5lvh.cloudfront.net^
 ! Youtube
 @@||googlevideo.com^
 @@||ytimg.com^
@@ -71906,10 +71907,6 @@
 
 ! Videos on fitbook.de
 @@|cdn.bitmovin.com^
-
-! Breaks login on videoland.com
-! https://github.com/AdAway/adaway.github.io/issues/343
-@@|socialize.eu1.gigya.com^
 
 ! Videos on various sites (SAT1, PRO7, ...)
 @@|polyfill.io^
@@ -73605,6 +73602,9 @@
 ! https://github.com/hagezi/dns-blocklists/issues/433
 @@|sbchill.com^
 @@|www.sbchill.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/478
+@@|tili.sanoma.fi^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
