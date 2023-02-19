@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-19T19:05:08.319Z
+! Last modified: 2023-02-19T20:05:31.351Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -598,8 +598,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 19 Feb 2023 18:19 UTC
-! Version: 2023.0219.1819.44
+! Last modified: 19 Feb 2023 19:25 UTC
+! Version: 2023.0219.1925.45
 ! Syntax: AdBlock
 ! Domains: 65319
 !
@@ -71602,6 +71602,7 @@
 ! https://github.com/hagezi/dns-blocklists/issues/309
 @@||info.lgsmartad.com^
 @@|aic-ngfts.lge.com^
+@@|aic-op-lss.lgthinq.com^
 @@|aic.cdpsvc.lgtvcommon.com^
 @@|aic.service.lgtvcommon.com^
 @@|common.lgthinq.com^
@@ -71627,6 +71628,7 @@
 @@|d2cttawv9fdszz.cloudfront.net^
 @@|na.albtls.t.co^
 @@|dlp3zj68t5lvh.cloudfront.net^
+
 ! Youtube
 @@||googlevideo.com^
 @@||ytimg.com^
@@ -74090,6 +74092,10 @@
 @@|www.myfed.space^
 @@|meneer.space^
 @@|www.meneer.space^
+
+! https://github.com/hagezi/dns-blocklists/issues/483
+@@|community.finanzguru.de^
+@@|finanzguru.userecho.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
