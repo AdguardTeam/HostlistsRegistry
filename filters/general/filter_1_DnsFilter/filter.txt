@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-02-21T06:05:52.616Z
+! Last modified: 2023-02-21T07:05:27.335Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-02-21T06:01:23.777Z
+! Last modified: 2023-02-21T06:59:22.316Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -31853,6 +31853,7 @@ charlestownwyllie.oaklawnnonantum.com^
 ||devatics.com^
 ||devatics.io^
 ||di-capt.com^
+||digianalytics.fr^
 ||display.studio^
 ||dmpcounter.com^
 ||dmxleo.com^
@@ -49747,7 +49748,7 @@ analytics-*.aasaam.com
 ! Once you enable private DNS, Android 9 starts resolving random domains looking like
 ! `*-*-ds.metric.gstatic.com` (for instance, `a5a6380f-dnsotls-ds.metric.gstatic.com`).
 ! Here you can check how it's used by Android: https://cs.android.com/search?q=ds.metric.gstatic.com
-@@-ds.metric.gstatic.com^
+@@-ds.metric.gstatic.com^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/824
 @@||id.i2i.jp^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/98798
@@ -49906,7 +49907,7 @@ analytics-*.aasaam.com
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/168
 @@||redirect.appmetrica.yandex.com^|
 ! Fixing redirects through guce.advertising.com (www.engadget.com, www.huffpost.com)
-@@||guce.advertising.com^
+@@||guce.advertising.com^|
 ! Unblock logrocket.com blog
 @@||blog.logrocket.com^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/27196
@@ -49916,7 +49917,7 @@ analytics-*.aasaam.com
 @@||cm-beacon.nakanohito.jp^|
 @@||cm-widget.nakanohito.jp^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/19113
-@@||ads.tdbank.com^
+@@||ads.tdbank.com^|
 ! https://forum.adguard.com/index.php?threads/23410/page-7#post-165504
 @@||nineto5mac-d.openx.net^|
 ! https://github.com/AdguardTeam/AdguardDNS/issues/192
