@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-22T01:33:53.026Z
+! Last modified: 2023-02-22T14:05:21.517Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -241,7 +241,9 @@
 @@||webhook.logentries.com^
 ||api*.mixpanel.com^
 ||newrelic.com^
-||cdn*.optimizely.com^
+! Nike-Shop payment (#498)
+! Used by Origin for content delivery and others
+@@||cdn*.optimizely.com^
 ||log*.optimizely.com^
 ||tagger.opecloud.com^
 ||realytics.io^
@@ -589,8 +591,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 22 Feb 2023 00:34 UTC
-! Version: 2023.0222.0034.02
+! Last modified: 22 Feb 2023 13:31 UTC
+! Version: 2023.0222.1331.09
 ! Syntax: AdBlock
 ! Domains: 29455
 !
@@ -76000,6 +76002,8 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/495
 @@|k.apiairasia.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/498
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
