@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-22T14:05:21.517Z
+! Last modified: 2023-02-22T19:05:04.954Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -340,6 +340,7 @@
 ||metrics*.icloud.com^
 ||securemvt.apple.com^
 ! It's app store tracking, but sometimes it breaks Apple watch/i/mac/tv OS updates!
+! Homepod reports "no internet connection"
 @@||xp.apple.com^
 
 ! Bugtracker
@@ -591,8 +592,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 22 Feb 2023 13:31 UTC
-! Version: 2023.0222.1331.09
+! Last modified: 22 Feb 2023 18:44 UTC
+! Version: 2023.0222.1844.24
 ! Syntax: AdBlock
 ! Domains: 29455
 !
@@ -73222,6 +73223,7 @@
 @@||safebrowsing.apple^
 @@||smoot.apple.com^
 ! Breaks Apple Watch update, stucks on "Search for update"
+! Homepod reports "no internet connection"
 @@|apple-dns.net^
 @@|www.apple-dns.net^
 @@|apple.tt.omtrdc.net^
@@ -76004,6 +76006,7 @@
 @@|k.apiairasia.com^
 
 ! https://github.com/hagezi/dns-blocklists/issues/498
+@@|cdn.optimizely.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
