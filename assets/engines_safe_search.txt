@@ -257,3 +257,10 @@
 |yandex.tj^$dnsrewrite=NOERROR;A;213.180.193.56
 |yandex.tm^$dnsrewrite=NOERROR;A;213.180.193.56
 |yandex.uz^$dnsrewrite=NOERROR;A;213.180.193.56
+#
+# Youtube
+|www.youtube.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|m.youtube.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|youtubei.googleapis.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|youtube.googleapis.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|www.youtube-nocookie.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
