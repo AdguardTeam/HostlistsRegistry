@@ -1,0 +1,20 @@
+{
+  "name": "Slickdeals Smarter Shopping",
+  "description": "Allows affiliate links for Slickdeals",
+  "homepage": "https://help.slickdeals.net/hc/en-us/articles/1260800863609-How-to-Guarantee-Cashback-is-Tracked-when-Running-Ad-Blockers",
+  "sources": [
+    {
+      "name": "Slickdeals Smarter Shopping",
+      "source": "https://slickdeals.net/attachment/extension/allowlist.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

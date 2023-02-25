@@ -1,0 +1,20 @@
+{
+  "name": "Rakuten Cash Back Shopping",
+  "description": "Allows affiliate links for Rakuten",
+  "homepage": "https://helpcenter.getadblock.com/hc/en-us/articles/9738480492051-Using-AdBlock-with-Rakuten-Ebates",
+  "sources": [
+    {
+      "name": "Rakuten Cash Back Shopping",
+      "source": "https://www.rakuten.com/whitelist/ebates-cash-back-shopping.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
