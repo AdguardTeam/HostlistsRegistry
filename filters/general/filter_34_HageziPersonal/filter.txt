@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-27T02:30:25.554Z
+! Last modified: 2023-02-27T13:10:39.182Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -17,14 +17,12 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
 ! Syntax: AdGuard
-
 ! Adobe
 ||demdex.net^
 ! Videos on WOW / Sky Ticket / Hulu / ...
 @@||dpm.demdex.net^
 ! Break a lot, really? Let's try ..
 ||omtrdc.net^
-
 ! Ads
 |ads.*^
 ! Audio Stream on ikz-online.de
@@ -83,7 +81,6 @@
 ||adition.com^
 ||adswizz.com^
 ||dns-*.iij.ad.jp^
-
 ! Amazon AWS
 ||*-adserver-*.amazonaws.com^
 ||*-analytics-*.amazonaws.com^
@@ -104,7 +101,6 @@
 ||tracking-*.amazonaws.com^
 ||webanalytics-*.amazonaws.com^
 ||wildcard-ads-*.amazonaws.com^
-
 ! Amazon Shopping
 ||amazon-adsystem.com^
 ! Amazon referral links
@@ -130,18 +126,14 @@
 ! @@||unagi-fe.amazon.com^
 ! @@||unagi-na.amazon.com^
 ||rcm*.amazon.*^
-
 ! Amazon Device Metrics
 ||d3p8zr0ffa9t17.cloudfront.net^
 ||device-metrics-*.amazon.com^
 ||mobileanalytics.*.amazonaws.com^
-
 ! Amazon Prime Video Telemetry
 ||*telemetry.insights.video.a2z.com^
-
 ! Amazon Sponsored Ads (firetv)
 ||aviary.amazon.*^
-
 ! Analytics / Tracker / Privacy
 |analytics.*.*^
 |analytic.*.*^
@@ -330,7 +322,6 @@
 ||analytics*.elasticbeanstalk.com^
 ||cdn.opecloud.com^
 ||tracking*.labcorp.com^
-
 ! Apple
 ||*analytics-events.apple.com^
 ||*analytics-events.news.apple-dns.net^
@@ -344,7 +335,6 @@
 ! It's app store tracking, but sometimes it breaks Apple watch/i/mac/tv OS updates!
 ! Homepod reports "no internet connection"
 @@||xp.apple.com^
-
 ! Bugtracker
 ||*-bugs-*.rtl.de^
 ||bugs-notify.nordvpn.com^
@@ -358,7 +348,6 @@
 ||sentry-cdn.com^
 ||sentry.io^
 ||crashtracking.*.ring.com^
-
 ! Google
 ||*.analytics.google.com^
 ||*google-analytics.l.google.com^
@@ -389,7 +378,6 @@
 @@||ad.doubleclick.net^
 ! Google Reviews
 @@||id.google.*^
-
 ! Huawei
 ||ad-*.dbankcloud.*^
 ||ad-*.dbankedge.*^
@@ -409,7 +397,6 @@
 ||log*.hicloud.com^
 ||metrics*.dbankcloud.*^
 ||metrics*.hicloud.com^
-
 ! Marketing
 ||1mm.fr^
 ||dotomi.com^
@@ -417,7 +404,6 @@
 @@||cj.dotomi.com^
 ! Google Shopping
 @@||ams*-usadmm-ds.dotomi.com
-
 ! Microsoft Telemetry
 ||*telemetry.officeapps.live.com^
 ||events*.data.microsoft.com^
@@ -440,7 +426,6 @@
 ||watson*.microsoft.com^
 ! MSN
 ||events*.data.msn.*^
-
 ! Microsoft Tracker
 ||adv-cloudfilse.azureedge.net^
 ||app-fnsp-matomo-analytics-prod.azurewebsites.net^
@@ -454,23 +439,18 @@
 ||sdtagging.azureedge.net^
 ! CNAME services.chipotle.com - breaks Chipotle order
 @@||serviceschipotlecom.trafficmanager.net^
-
 ! Netflix
 ||beacon*.netflix.net^
 ||customerevents*.netflix.com^
 ! Prevents Netflix from continuing to play videos where you stopped or paused them
 @@||ichnaea*.netflix.com^
-
 ! Nvidia
 ||telemetry*.nvidia.com^
-
 ! Popups
 ||7e1e8f3eba.com^
-
 ! Push Annoyances 
 ||cleverpush.com^
 ||mycleverpush.com^
-
 ! Crappy hosts
 ||ad*.on.cc^
 ||load*.biz^
@@ -484,7 +464,6 @@
 ||rvwgm2wrld*.xyz^
 ||wmail-*.com^
 ||wmail-*.xyz^
-
 ! Smart TV
 ||alphonso.tv^
 ||collect*.myhomescreen.tv^
@@ -513,7 +492,6 @@
 ||lgsmartad.com^
 ! Needed for TV Service Location Area
 @@||*.info.lgsmartad.com^
-
 ! TikTok Fingerprinting
 ||*-ad.byteoversea.com^
 ||*-mcs.byteoversea.com^
@@ -549,10 +527,8 @@
 ||xlog*.byteoversea.com^
 ||xlog*.snssdk.com^
 ||xlog*.tiktokv.com^
-
 ! Xiaomi
 ||t*.a.market.xiaomi.com^
-
 ! Videos - @@: Unbreak Videoplayback on various sites
 ||2mdn.net^
 @@||s0-2mdn-net.l.google.com^
@@ -586,7 +562,6 @@
 ||sensic.net^
 ! ORF App
 @@||at-config.sensic.net^
-
 ! Title: HaGeZi's Personal DNS Blocklist for Black & White list
 ! Description: My personal blocklist, an extension for known blocklists. Blocks ads, trackers, native device trackers, badware and more. Not intended to be used as a standalone blocklist, it serves as a addition for other blocklists!
 ! Homepage: https://github.com/hagezi/dns-blocklists
@@ -33486,7 +33461,6 @@
 ||zzyl.mobi^
 ||zzzperform.com^
 ||zzzsleepisnicezzz.art^
-
 ! Title: HaGeZi's Threat Intelligence Feeds - personal light version
 ! Description: Increases security! Blocks Malware, Badware, Spam, Scam and Phishing.
 ! Homepage: https://github.com/hagezi/dns-blocklists
@@ -72839,7 +72813,6 @@
 ||hsequniversal.com^
 ||hservers.net^
 ||hservice.live^
-||share-eu1.hsforms.com^
 ||hslfilmschool.com^
 ||ieabcd01efdcv.hslkgsz.com^
 ||hslstudios.com^
@@ -122549,7 +122522,6 @@
 ||zyzlk.com^
 ||zzcraigtown.buzz^
 ||zzq.lol^
-
 ! Title: HaGeZi's Fake DNS Blocklist
 ! Description: Protects against internet scams, traps & fakes! Blocks fake stores, -news, -science, -streaming, rip-offs, cost traps and co.
 ! Homepage: https://github.com/hagezi/dns-blocklists
@@ -127660,14 +127632,12 @@
 ||zuperiu.de^
 ||zyclist.de^
 ||zzyha.shop^
-
 ! Title: HaGeZi's White-/Allowlist
 ! Description: The list contains incorrectly blocked domains that limit functionality
 ! Homepage: https://github.com/hagezi/dns-blocklists
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-
 ! Adblock-Detection
 ! Videos
 @@|swankyrule.zomap.de^
@@ -127676,19 +127646,16 @@
 @@|www.asadcdn.com^
 ! Express.de Videos
 @@|player-feedback-v1.glomex.com^
-
 ! Adobe
 @@|c00.adobe.com^
 @@||cc-api-data.adobe.io^
 ! Fonts
 @@|use.typekit.net^
-
 ! Amazon AWS
 @@|aws.amazon.com^
 @@|bbuseruploads.s3.amazonaws.com^
 @@|kinesis.*.amazonaws.com^
 @@|s3.amazonaws.com^
-
 ! Amazon Devices
 @@||acsechocaptiveportal.com^
 @@||execute-api.*.amazonaws.com^
@@ -127707,7 +127674,6 @@
 ! Hulu, possibly other services
 ! https://github.com/Perflyst/PiHoleBlocklist/issues/138
 @@|mas-*.amazon.com^
-
 ! Amazon Shopping / Apps
 @@||images-amazon.com^
 @@|aax-*-retail-direct.amazon-adsystem.com^
@@ -127728,7 +127694,6 @@
 @@|aax-fe.amazon.com^
 @@|aax-fe.amazon.com.au^
 @@|aax-fe.amazon.sg^
-
 ! Amazon Video
 @@||aiv-cdn.net^
 @@||aiv-cdn.net.c.footprint.net^
@@ -127738,7 +127703,6 @@
 @@||atv-ps.amazon.com^
 @@||primevideo.com^
 @@||pv-cdn.net^
-
 ! Apple
 ! https://support.apple.com/en-us/HT210060
 @@||apps.apple.com^
@@ -127762,19 +127726,16 @@
 @@|smp-device-content.apple.com^
 @@|stats.gc.apple.com^
 @@|trackingshipment.apple.com^
-
 ! Certificates
 @@||digicert.com^
 @@||entrust.net^
 @@||geotrust.com^
 @@||lencr.org^
 @@||verisign.net^
-
 ! Cloudflare
 @@|cdn.cloudflare.net^
 @@|cdnjs.cloudflare.co^
 @@|cdnjs.cloudflare.com^
-
 ! Facebook
 @@|*graph-fallback.facebook.com^
 @@|*graph-fallback.instagram.com^
@@ -127787,11 +127748,9 @@
 @@|i.instagram.com^
 @@|*api.facebook.com^
 @@|*star.*.facebook.com^
-
 ! Facebook CDN
 @@||cdninstagram.com^
 @@||fbcdn.net^
-
 ! Google
 @@|afs.googleusercontent.com^
 @@|ajax.googleapis.com^
@@ -127838,7 +127797,6 @@
 ! googletagservices.com
 ! www.googletagservices.com
 ! Not used for tracking, metrics, analytics
-
 ! Hue Bridge
 ! https://github.com/hagezi/dns-blocklists/issues/208
 @@|diagnostics.meethue.com^
@@ -127846,7 +127804,6 @@
 @@|dp.dc1.philips.com^
 @@|ws.meethue.com^
 @@|www.ecdinterface.philips.com^
-
 ! Microsoft
 ! https://docs.microsoft.com/en-us/windows/privacy/manage-windows-11-endpoints
 ! https://docs.microsoft.com/en-us/microsoft-365/enterprise/microsoft-365-endpoints?view=o365-worldwide
@@ -127899,7 +127856,6 @@
 @@|vlscppe.microsoft.com^
 @@|wcpstatic.microsoft.com^
 @@|windowsupdate.s.llnwi.net^
-
 ! Office Forms
 @@||forms.office.com^
 @@|browser.pipe.aria.microsoft.com^
@@ -127922,7 +127878,6 @@
 @@|mobile.events.data.microsoft.com^
 @@|*-mobile.events.data.microsoft.com^
 @@|mobile.events.data.trafficmanager.net^
-
 ! NVidia
 @@|activation.gfe.nvidia.com^
 @@|events.gfe.nvidia.com^
@@ -127930,7 +127885,6 @@
 @@|images.nvidiagrid.net^
 @@|img.nvidiagrid.net^
 @@|services.gfe.nvidia.com^
-
 ! SmartTVs
 @@|acr*.samsungcloudsolution.com^
 @@|announcements.vizio.com^
@@ -128011,7 +127965,6 @@
 @@|vcs.vdspf.com^
 @@|vdterms.samsungcloudsolution.com^
 @@|webapp-prod.cloud.remarkable.engineering^
-
 ! https://github.com/hagezi/dns-blocklists/issues/309
 @@||info.lgsmartad.com^
 @@|aic-ngfts.lge.com^
@@ -128026,11 +127979,9 @@
 @@|us.lgeapi.com^
 @@|us.lgtvsdp.com^
 @@|us.rdx2.lgtvsdp.com^
-
 ! Smart Home
 ! IKEA Tradfri
 @@|webhook.logentries.com^
-
 ! Spotify
 ! Prevent problems with Spotify Premium
 @@||scdn.co^
@@ -128040,7 +127991,6 @@
 @@|heads*.spotify.com^
 @@|audio*.spotify.com^
 @@|wl.spotify.com^
-
 ! Twitter
 @@|ads.twitter.com^
 @@|analytics.twitter.com^
@@ -128051,7 +128001,6 @@
 @@|d2cttawv9fdszz.cloudfront.net^
 @@|na.albtls.t.co^
 @@|dlp3zj68t5lvh.cloudfront.net^
-
 ! Youtube
 @@||googlevideo.com^
 @@||ytimg.com^
@@ -128064,14 +128013,11 @@
 @@|www.youtu.be^
 @@|youtube-nocookie.com^
 @@|www.youtube-nocookie.com^
-
 ! -----------------------------------------------------------------------
-
 ! Axiad (https://www.axiad.com) provides Private Key Infrastructure (PKI)
 @@|axiadids.net^
 @@|www.axiadids.net^
 @@||cloud.axiadids.net^
-
 ! Videos on different websites do not start when the following domains are blocked:
 @@||damoh.*.de^
 @@||schneevonmorgen.com^
@@ -128101,17 +128047,14 @@
 @@|video.xxxjmp.com^
 @@|videos-fms.jwpsrv.com^
 @@|videos.porndig.com^
-
 ! Xiaomi device updates
 @@||update.intl.miui.com^
-
 ! AdGuard
 @@||adguard-dns.com^
 @@||adguard-dns.io^
 @@||adguard.com^
 @@|email-clk.adguard.com^
 @@|email-link.adtidy.org^
-
 ! Misc (Breaking)
 @@|assets.dwell.com^
 @@|assets.mmsrg.com^
@@ -128125,236 +128068,170 @@
 @@|pcapredict.com^
 @@|www.pcapredict.com^
 @@|sportsbet.com.au^
-
 ! NextDNS
 @@||nextdns.io^
-
 ! ControlD
 @@||controld.com^
-
 ! Images in Nintendo Mails
 @@|a1843.g.akamai.net^
-
 ! Cookies on various sites (spiegle.de ...)
 @@||sp-prod.net^
-
 ! Polls on n-tv.de and other news sites
 @@|api.opinary.com^
 @@|widgets.opinary.com^
-
 ! FAZ
 @@|consent.faz.net^
 @@|faz.sevenval-fit.com^
-
 ! breaks site layout
 @@|stats.t-online.de^
-
 ! breaks site layout
 @@|bilder.fernsehserien.de^
-
 ! Tidal login
 @@|et.tidal.com^
 @@|dd.tidal.com^
 @@|sslgen-tidal.datadome.co^
 @@|dd.tidal.com.first-party-js.datadome.co^
-
 ! CoinInsider is the authority on bitcoin, ethereum, ICOs & blockchain news
 @@|coininsider.com^
 @@|www.coininsider.com^
-
 ! Deviantart
 @@|static.parastorage.com^
-
 ! GMX
 @@|i0.gmx.net^
-
 ! Pinterest
 @@|ct.pinterest.com^
-
 ! Ad news NL
 @@|ad.nl^
 @@|www.ad.nl^
-
 ! https://github.com/notracking/hosts-blocklists/issues/767
 @@|formspree.io^
 @@|www.formspree.io^
-
 ! https://github.com/notracking/hosts-blocklists/issues/764
 @@|shop.spreadshirt.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/761
 @@|dynu.net^
 @@|www.dynu.net^
-
 ! https://github.com/anudeepND/blacklist/issues/201
 @@|api.bufferapp.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/768
 @@|store.minisforum.de^
-
 ! https://github.com/hagezi/dns-blocklists/issues/3
 @@|licenses.ashampoo.com^
-
 ! n-tv Livestream
 @@|te.technical-service.net^
 @@|te.ip-prod.aws-cbc.cloud^
-
 ! https://github.com/badmojr/1Hosts/issues/553
 @@|api.revenuecat.com^
-
 ! HP Smart App - Installation wizard not loading
 @@|mobilesdk-*.kampyle.com^
-
 ! https://github.com/AdAway/adaway.github.io/issues/309
 @@|cs.liiift.io^
-
 ! https://github.com/AdguardTeam/AdguardFilters/issues/32303
 @@|e.reddit.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/769
 @@|optmzly.fe.indazn.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/771
 @@|cdn.dnsv1.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/5
 @@|de.aukey.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/6
 @@|online.sh.cn^
-
 ! https://github.com/notracking/hosts-blocklists/issues/773
 @@|scenarieconomici.it^
 @@|www.scenarieconomici.it^
-
 ! Images on vagina.nl
 @@|wum97myjdw.ent-cdn.com^
-
 ! deskpi store
 @@|deskpi.com^
 @@|www.deskpi.com^
-
 ! Postal tracking
 @@|swiftcourrier.com^
 @@|www.swiftcourrier.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/8
 @@|mail.tsinghua.edu.cn^
-
 ! https://github.com/WaLLy3K/wally3k.github.io/issues/161
 @@|d.ifengimg.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/11
 @@|sea.net.edu.cn^
-
 ! Shop
 @@|koisea.com^
 @@|www.koisea.com^
-
 ! https://github.com/badmojr/1Hosts/issues/584
 @@|ftp.iij.ad.jp^
-
 ! https://github.com/badmojr/1Hosts/issues/581
 @@|clientstream.launchdarkly.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/13
 @@|img.myflixer.to^
 @@|myflixer.to^
 @@|www.myflixer.to^
-
 ! store
 @@|zeelool.com^
 @@|www.zeelool.com^
-
 ! https://github.com/StevenBlack/hosts/issues/2009
 @@|smart.link^
 @@|www.smart.link^
-
 ! https://github.com/hagezi/dns-blocklists/issues/14
 @@|bestgore.fun^
 @@|www.bestgore.fun^
-
 ! Disney images in mails
 @@|image.mail.disneyplus.com^
-
 ! Dev Tutorials
 @@|newbedev.com^
 @@|www.newbedev.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/19
 @@|activehosted.com^
 @@|www.activehosted.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/19
 @@|activecampaign.com^
 @@|www.activecampaign.com^
-
 ! https://forum.adguard.com/index.php?threads/45115/223037
 ! amplitude.com
-
 ! https://github.com/nextdns/metadata/issues/1020
 @@|mintos.com^
 @@|www.mintos.com^
-
 ! Images/Links in Twitch mails
 @@|ink1001.com^
 @@|www.ink1001.com^
-
 ! Twitch Prime Loot
 @@|spade.twitch.tv^
 @@|spade.sci.twitch.tv^
 @@|countess.twitch.tv^
-
 ! NordVPN Support
 @@|cdn-customers.nanorep.com^
-
 ! Customer support
 @@||zopim.com^
-
 ! https://github.com/EnergizedProtection/block/issues/639
 @@|devices.carnivalmobile.com^
-
 ! Rules update ClearURLs Addon
 @@|rules*.clearurls.xyz^
-
 ! Stock images
 @@|shutterstock.com^
 @@|www.shutterstock.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/24
 @@|go.e2language.com^
-
 ! Verbraucherzentrale NRW
 @@|fakeshop-finder.nrw^
 @@|www.fakeshop-finder.nrw^
-
 ! required for steam purchases
 @@|t.paypal.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/26
 @@|cdn.elev.io^
-
 ! Upload Crash report
 @@|in.appcenter.ms^
-
 ! Deploy mobile app updates directly to devices
 @@|codepush.appcenter.ms^
-
 ! https://github.com/StevenBlack/hosts/issues/2042
 @@|audid-api.taobao.com^
-
 ! AdBlock Detection Rakuten.tv
 ! !!! Will not be unblocked, the domains are used for ads/tracking and are quite common !!!
 ! tv.ads.spotx.tv
 ! *.2mdn.net
 ! *.smartclip.net
 ! ...
-
 ! https://github.com/notracking/hosts-blocklists/issues/788
 @@|dcf.espn.com^
 @@|dcfdata.espn.com^
 @@|players.brightcove.net^
-
 ! Videos on various sites
 @@|m1.fwmrm.net^
 @@|m1.fwmrm.net-v1.edgesuite.net^
@@ -128363,36 +128240,26 @@
 @@|mssl.fwmrm.net^
 @@|mssl.fwmrm.net.edgesuite.net^
 @@|v.fwmrm.net^
-
 ! https://github.com/notracking/hosts-blocklists/issues/786
 @@|above.com^
 @@|www.above.com^
-
 ! https://github.com/nextdns/metadata/issues/1003
 @@|webadvisorc.rest.gti.mcafee.com^
-
 ! Videos on 20min.ch - Example:  https://www.20min.ch/video/weisse-girls-mit-farbigen-dreadlocks-finde-ich-nicht-so-toll-222458234734
-
 ! Videos on 247sports.com - Example: https://247sports.com/Video/Preps-To-Pros-Player-as-Potental-5-Star-Jump-Chris-Vizzina-11250144/
 @@|production-cmp.isgprivacy.cbsi.com^
-
 ! Videos on 9news.com.au
 @@||api.brightcove.com^
 @@|edge.api.brightcove.com^
-
 ! Sky Sport
 ! edge-auth.api.brightcove.com
-
 ! domain reseller
 @@|afternic.com^
 @@|www.afternic.com^
-
 ! Videos on tv.aftonbladet.se
 @@|cdn.stream.schibsted.media^
-
 ! Breaks site layout ameba.jp
 @@|stat100.ameba.jp^
-
 ! Red Hat Ansible
 @@|ansible.com^
 @@|www.ansible.com^
@@ -128400,164 +128267,124 @@
 @@|group46.sites.hscoscdn40.net^
 @@|330046.group46.sites.hubspot.net^
 @@|330046g46.secure0032.hubspot.net^
-
 ! Anime site
 @@|anime-loads.org^
 @@|www.anime-loads.org^
-
 ! Videos on arstechnica.com
 @@|player.cnevids.com^
 @@|cdn.mediavoice.com^
 @@|plugin.mediavoice.com^
-
 ! Breaks site layput on bankofamerica.com
 @@|staticweb.bankofamerica.com^
 ! CNAMES
 @@|staticweb.ecglb.bac.com^
 @@|cs636.wac.chicdn.net^
-
 ! Images on bloomberght.com
 @@|geoim.bloomberght.com^
-
 ! Images and videos on bostonglobe.com
 @@|amp-api-prd.bostonglobe.com^
 @@|video-api.bostonglobe.arcpublishing.com^
 @@|bostonglobe-prod.cdn.arcpublishing.com^
 @@|video-api-cdn.bostonglobe.arcpublishing.com^
-
 ! Breaks site layout on boston.com
 @@|bdc2020.o0bc.com^
-
 ! Chip TR
 @@|chip.com.tr^
-
 ! survey-based insights
 @@|cint.com^
 @@|www.cint.com^
 @@||asynchronousmessaging.dashboard.co.uk^
-
 ! Calssmates site
 @@|classmates.com^
 @@|www.classmates.com^
-
 ! Breaks site layout on ctrip.com
 @@|c-ctrip.com^
 @@|www.c-ctrip.com^
-
 ! Breaks site layout fastpic.org
 @@|static.fastpic.org^
-
 ! Imageas and site layout on femmeactuelle.fr
 @@|tra.scds.pmdstatic.net^
-
 ! Fun Trivia
 @@|funtrivia.com^
 @@|www.funtrivia.com^
-
 ! Breaks site layout on guancha.cn
 @@|i.guancha.cn^
-
 ! Breaks site layout on haberler.com
 @@|s.hbrcdn.com^
 @@|i.hbrcdn.com^
-
 ! heroeswm.ru
 @@|heroeswm.ru^
 @@|www.heroeswm.ru^
-
 ! Heureka
 @@|heureka.sk^
 @@|www.heureka.sk^
-
 ! Huge Domains
 @@|hugedomains.com^
 @@|www.hugedomains.com^
-
 ! Videos on huffpost.com adn other sites
 @@|capi.connatix.com^
 @@|cd.connatix.com^
 @@|cds.connatix.com^
 @@|img.connatix.com^
 @@|vid.connatix.com^
-
 ! Videos on huffingtonpost.it / iltalehti.fi
 !+ www.googletagmanager.com
-
 ! Videos on WOW / Sky Ticket / Hulu
 @@|dpm.demdex.net^
 @@|edge-irl1.demdex.net^
 @@|gslb-2.demdex.net^
 @@|dcs-edge-irl1-876252164.eu-west-1.elb.amazonaws.com^
-
 ! Images on iwank.tv
 @@|static.webclicks24.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/789
 @@||cdn-noc.net^
-
 ! https://github.com/badmojr/1Hosts/issues/661
 @@|alvarotrigo.com^
 @@|www.alvarotrigo.com^
 @@|browserhow.com^
 @@|www.browserhow.com^
-
 ! https://github.com/StevenBlack/hosts/issues/2047
 @@|ocs-dl.fra1.cdn.digitaloceanspaces.com^
 @@|cds.b5g9b8e4.hwcdn.net^
-
 ! Images on landsend.com
 @@|scnd.landsend.com^
-
 ! Videos on lavoixdunord.fr
 @@|ads.videoadex.com^
-
 ! Mailerlite main site
 @@|mailerlite.com^
 @@|www.mailerlite.com^
-
 ! MANGO shop
 @@|shop.mango.com^
-
 ! Maxpark site
 @@|maxpark.com^
 @@|www.maxpark.com^
-
 ! Images on mentalfloss.com
 @@|assets.minutemediacdn.com^
 @@|images1.minutemediacdn.com^
 @@|images2.minutemediacdn.com^
-
 ! Metal Tracker site
 @@|metal-tracker.com^
 @@|www.metal-tracker.com^
-
 ! mixi site
 @@|mixi.jp^
 @@|www.mixi.jp^
-
 ! MyAbandonWare
 @@|myabandonware.com^
 @@|www.myabandonware.com^
-
 ! MyPoints web site
 @@|mypoints.com^
 @@|www.mypoints.com^
-
 ! Nairland Forum
 @@|nairaland.com^
 @@|www.nairaland.com^
-
 ! Videos on nationalreview.com
 @@|player.avplayer.com^
 @@|play.aniview.com^
-
 ! Breakls site layout on nnmclub.to
 @@|nnmstatic.win^
 @@|www.nnmstatic.win^
-
 ! Breaks site layout in note.com
 @@|d291vdycu0ht11.cloudfront.net^
-
 ! Site nutaku
 @@|nutaku.net^
 @@|www.nutaku.net^
@@ -128565,511 +128392,378 @@
 @@|www.nutaku.com^
 @@|cdn1-images.nutaku.net^
 @@|cdn1-images.nutaku.com^
-
 ! my.nextdns.io
 @@||vercel-dns.com^
 ! cname.vercel-dns.com
-
 ! Videos on omroepbrabant.nl
 @@|omroepbrabant.bbvms.com^
 @@|vms.bluebillywig.com^
-
 ! Breaks site layout on opentable.com
 @@|cdn.otstatic.com^
-
 ! PicClick
 @@|picclick.com^
 @@|www.picclick.com^
-
 ! Plarium
 @@|plarium.com^
 @@|www.plarium.com^
-
 ! Qoo10 Shop
 @@|qoo10.sg^
 @@|www.qoo10.sg^
-
 ! Qt
 @@|qt.io^
 @@|www.qt.io^
-
 ! Search on various sites
 @@||searchnode.io^
 @@||searchnode.net^
-
 ! Images/Content on realclearpolitics.com
 @@|assets.realclear.com^
-
 ! ROJADIRECTA
 @@|rojadirecta.me^
 @@|www.rojadirecta.me^
-
 ! Videos on rnd.de
 @@||video-api.arcpublishing.com^
 @@|madsack-prod-cdn.video-api.arcpublishing.com^
-
 ! Site layout on rutube.ru
 @@|static.rutube.ru^
 @@|cl-ad786718.edgecdn.ru^
-
 ! Site layout on rutor.is
 @@|cdnbunny.org^
 @@|www.cdnbunny.org^
-
 ! save.tv
 @@|save.tv^
 @@|www.save.tv^
-
 ! SCNlog
 @@|scnlog.me^
 @@|www.scnlog.me^
-
 ! Click article Links on scotsman.com
 !+ www.googletagmanager.com
-
 ! Breaks site layout on share-videos.se
 @@|static.share-videos.se^
-
 ! sibnet.ru
 @@|sibnet.ru^
 @@|www.sibnet.ru^
-
 ! shopvote.de
 @@|shopvote.de^
 @@|www.shopvote.de^
-
 ! Breaks site layout on sondakika.com
 @@|s.sdacdn.com^
 @@|i.sdacdn.com^
-
 ! falabella.com
 @@|sodimac.cl^
 @@|www.sodimac.cl^
-
 ! socpublic.com
 @@|socpublic.com^
 @@|www.socpublic.com^
-
 ! soso.com
 @@|soso.com^
 @@|www.soso.com^
-
 ! tarafdari.com
 @@|tarafdari.com^
 @@|www.tarafdari.com^
-
 ! Breaks site layout on world.taobao.com
 @@|h5api.m.taobao.com^
-
 ! https://github.com/badmojr/1Hosts/issues/667
 @@|myip.wtf^
 @@|www.myip.wtf^
-
 ! https://github.com/badmojr/1Hosts/issues/669
 @@|netdirector.co.uk^
 @@|auto.netdirector.co.uk^
 @@|campaignmanager.netdirector.co.uk^
 @@|images.netdirector.co.uk^
 @@|payments*.netdirector.co.uk^
-
 ! tipico.de
 @@|tipico.de^
 @@|www.tipico.de^
-
 ! tracker.gg
 @@|tracker.gg^
 @@|www.tracker.gg^
-
 ! track24.ru
 @@|track24.ru^
 @@|www.track24.ru^
-
 ! twitchy.com
 @@|twitchy.com^
 @@|www.twitchy.com^
-
 ! IX
 @@|ix.de^
 @@|www.ix.de^
-
 ! kamibox.de
 @@|kamibox.de^
 @@|www.kamibox.de^
-
 ! china-gadgets.de
 @@|china-gadgets.de^
 @@|www.china-gadgets.de^
-
 ! eterna.de
 @@|eterna.de^
 @@|www.eterna.de^
-
 ! ihreapotheken.de
 @@|ihreapotheken.de^
 @@|www.ihreapotheken.de^
-
 ! ad-magazin.de
 @@|ad-magazin.de^
 @@|www.ad-magazin.de^
-
 ! homepage-baukasten.de
 @@|homepage-baukasten.de^
 @@|www.homepage-baukasten.de^
-
 ! Videos on tvspielfilm.de
 @@|cmp.tvspielfilm.de^
-
 ! Images on 1001spiele.de
 @@|ccf.admeen.org^
 @@|tcf.admeen.org^
-
 ! buy content pass on autoservicepraxis.de and other sites
 @@|get.contentpass.net^
-
 ! Breaks site layout on betano.de
 @@|static.gmlinteractive.com^
 @@|cov.gmlinteractive.com^
-
 ! Images on https://www.beretta.com/en-us/gifts/
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1012
 @@|marvel-b1-cdn.bc0a.com^
-
 ! https://github.com/badmojr/1Hosts/issues/677
 @@|awxcdn.com^
 @@|www.awxcdn.com^
-
 ! Sign in on https://www.spectrum.net/
 ! https://github.com/badmojr/1Hosts/issues/640
 @@|pov.spectrum.net^
 @@|h-charter.online-metrix.net^
-
 ! DHgate shopping
 @@|de.dhgate.com^
-
 ! IP Address Tools
 @@|ipaddress.com^
 @@|www.ipaddress.com^
-
 ! Breaks Windowsupdate in VirtualBox
 @@||api.iris.microsoft.com^
-
 ! Images/ media on sports.bwin.de
 @@|scmedia.itsfogo.com^
 @@|media.itsfogo.com^
-
 ! Videos on bunte.de
 @@|hgc-cf-cache-1.svonm.com^
-
 ! Site layout on cinemaxx.de
 ! !!! Will not be unblocked, the domains are used for ads/tracking and are quite common !!!
 ! securepubads.g.doubleclick.net
 !+ googletagservices.com
-
 ! co.de / subdomains.com
 @@|co.de^
 @@|www.co.de^
-
 ! Blocks login/content after login on nzz.ch
 @@|track.nzz.ch^
 @@|ens.nzz.ch^
-
 ! Shopping saturn.de
 @@|car.saturn.de^
 @@|pvn.saturn.de^
-
 ! Unity
 @@|answers.unity.com^
 @@|unityprod.answerhub.com^
-
 ! DATEV Community
 @@|datev-community.de^
 @@|www.datev-community.de^
-
 ! Breaks site daskochrezept.de
 @@|cmp-consent-tool.privacymanager.io^
-
 ! Cookie-Management (required) on t3n.de and other sites
 @@|cdn.privacy-mgmt.com^
-
 ! nickles.de site & cookies
 @@|nickles.de^
 @@|www.nickles.de^
 @@|test.cmp.quantcast.com^
-
 ! Breaks site https://www.forbes.com/cloud100/list/2/
 @@|consent.trustarc.com^
-
 ! Breaks site layout on winfuture.de
 @@|wfcdn.de^
 @@|www.wfcdn.de^
 @@|i.wfcdn.de^
 @@|j.wfcdn.de^
 @@|scr.wfcdn.de^
-
 ! Videos on fcbinside.de
 @@|embed.dugout.com^
-
 ! Videos on fitbook.de
 @@|cdn.bitmovin.com^
-
 ! Videos on various sites (SAT1, PRO7, ...)
 @@|polyfill.io^
 @@|www.polyfill.io^
-
 ! Audo Stream on ikz-online.de
 @@|ads.julephosting.de^
-
 ! Videos on kino.de
 @@|vid-cdn*.stroeermb.de^
 @@|videos.kino.de^
-
 ! https://github.com/nextdns/metadata/issues/1058
 @@|learn.cisecurity.org^
-
 ! Videos on RTL.de
 !+ googletagmanager.com
-
 ! Site layout on https://www.mybestbrands.de/
 @@|cdn-eu.dynamicyield.com^
-
 ! Breaks site layout on MyDirtyHobby
 @@||mdhcdn.com^
 ! cdn1-s-ha-e15.mdhcdn.com
 ! cdn1-s-ha-e17t.mdhcdn.com
 ! cdn1-s-ha-e18.mdhcdn.com
-
 ! CDN for Amazon JP
 @@|dtioykqj1u8de.cloudfront.net^
-
 ! https://github.com/WaLLy3K/wally3k.github.io/issues/147
 @@|content.ibanking-services.com^
-
 ! Blocks the IPTV service provided by https://nimitv.com/en.html - https://github.com/AdAway/adaway.github.io/issues/346
 ! static.cloudflareinsights.com
-
 ! Searchbar on weather.com not accessible - https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1034#event-7315828826
 @@|mparticle.map.fastly.net^
 @@|mparticle.weather.com^
-
 ! https://github.com/AdAway/adaway.github.io/issues/345
 ! cdn-settings.appsflyersdk.com
-
 ! https://github.com/hagezi/dns-blocklists/issues/28
 @@|domaintechnik.at^
 @@|www.domaintechnik.at^
-
 ! Roblox
 @@|locale.roblox.com^
-
 ! Chip Downloads
 @@|api.chip-secured-download.de^
-
 ! Images on beeg.com
 @@|thumbs-015.externulls.com^
-
 ! Welt.de - internally hosted ads are displayed when the following domain is blocked
 @@|yagiay.com^
 @@|www.yagiay.com^
-
 ! https://github.com/nextdns/metadata/issues/1060
 @@|wallet.advcash.com^
-
 ! https://github.com/nextdns/metadata/issues/1061
 @@||videorolls.row.aiv-cdn.net^
 ! s3-iad-ww.cf.videorolls.row.aiv-cdn.net
 ! s3.ll.videorolls.row.aiv-cdn.net
-
 ! Gitlab pages
 @@|ab13.mktossl.com^
 @@|gitlab.mktoweb.com^
 @@|page.gitlab.com^
-
 ! Firefox tracking protection
 @@|tracking-protection.cdn.mozilla.net^
 @@|tracking-protection.prod.mozaws.net^
-
 ! ChannelPilot - Product Management Tool
 @@|click.cptrack.de^
 @@|content.cptrack.de^
-
 ! Videos on news38.de
 @@|lbnew.consentmanager.net^
 @@|consentmanager.mgr.consensu.org^
-
 ! Mobile phones with Mediatek chip (EPO.DAT)
 @@||mediatek.com^
-
 ! Videos on crunchyroll.com
 @@|fy.v.vrv.co^
 @@|ellation.map.fastly.net^
-
 ! ALDI Prospekte
 @@|prospekt.aldi-sued.de^
 @@|publitas.com^
 @@|www.publitas.com^
 @@||custom-domain.publitas.com^
-
 ! https://github.com/badmojr/1Hosts/issues/699
 @@|ekomi.com^
 @@|www.ekomi.com^
 @@|smartforms.ekomi.com^
-
 ! https://github.com/FadeMind/hosts.extras/issues/54
 @@|pastie.org^
 @@|www.pastie.org^
-
 ! VOE Videos
 @@|voe.sx^
 @@|www.voe.sx^
 @@|uptodatefinishconferenceroom.com^
 @@|www.uptodatefinishconferenceroom.com^
-
 ! https://github.com/bigdargon/hostsVN/issues/327
 @@|sdk-02.moengage.com^
-
 ! Surveys and more
 @@|qualtrics.com^
 @@|www.qualtrics.com^
-
 ! Videos on heise.de
 @@|cdn-kaltura-dscd.edgekey.net^
-
 ! https://github.com/StevenBlack/hosts/issues/2081
 @@|ablink.account.quizlet.com^
-
 ! Website analysis
 ! similarweb.com
-
 ! Recruiting smart people
 @@|talentwunder.com^
 @@|www.talentwunder.com^
-
 ! Search on brickshop.nl
 @@|ws.sharethis.com^
-
 ! Updates on Oppo devices
 @@|component-ota-in.allawnos.com^
-
 ! Islamic University of Technology
 @@|iutoic-dhaka.edu^
 @@|www.iutoic-dhaka.edu^
-
 ! Mexican restaurant
 @@|abuelos.com^
 @@|www.abuelos.com^
-
 ! Images on Baidu
 @@|t10.baidu.com^
-
 ! Meituan/Huawei apps
 @@|api-unionid.meituan.com^
-
 ! https://github.com/badmojr/1Hosts/issues/702
 @@|yacy.net^
 @@|www.yacy.net^
 @@|searchlab.eu^
 @@|www.searchlab.eu^
-
 ! https://en.wikipedia.org/wiki/Deep_Freeze_(software)
 @@|faronics.com^
 @@|www.faronics.com^
-
 ! File Upload Service
 @@|files.im^
 @@|www.files.im^
-
 ! URL shortener
 @@|tny.cz^
 @@|www.tny.cz^
-
 ! Black Hat forum
 @@|fssquad.com^
 @@|www.fssquad.com^
-
 ! Videos on dmax.de
 @@|src.litix.io^
-
 ! Lieferando Food Tracker
 @@|tracker*.scoober.com^
-
 ! Breaks some Android Apps (Images not loading, ...)
 ! https://github.com/AdAway/adaway.github.io/issues/347
 @@|res.cloudinary.com^
-
 ! wieistmeineip.de
 @@|wieistmeineip.de^
 @@|www.wieistmeineip.de^
-
 ! Blogroll on 1000mg.jp
 @@|blogroll.livedoor.net^
-
 ! QA Stack
 @@|qastack.com.de^
-
 ! Images in Nintendo mails
 @@|image.ccg.nintendo.net^
-
 ! Content in RTL+ mails
 ! cdn.braze.eu
-
 ! https://github.com/badmojr/1Hosts/issues/708
 @@||kiwibrowser.com^
-
 ! Strato Shops
 @@|shop.strato.de^
-
 ! https://github.com/hagezi/dns-blocklists/issues/39
 @@|yu.ac.kr^
-
 ! https://github.com/hagezi/dns-blocklists/issues/38
 @@|uu.cc^
 @@|www.uu.cc^
-
 ! https://github.com/hagezi/dns-blocklists/issues/36
 @@|ku6.com^
 @@|www.ku6.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/35
 @@|knet.cn^
 @@|www.knet.cn^
-
 ! https://github.com/hagezi/dns-blocklists/issues/34
 @@|hexun.com^
 @@|www.hexun.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/33
 @@|happyelements.cn^
 @@|www.happyelements.cn^
-
 ! https://github.com/hagezi/dns-blocklists/issues/32
 @@|flvto.biz^
 @@|www.flvto.biz^
-
 ! https://github.com/hagezi/dns-blocklists/issues/31
 @@|baihe.com^
 @@|www.baihe.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/30
 @@|56.com^
 @@|www.56.com^
-
 ! REWE online Prospekt
 @@||bonialconnect.com^
 @@|content-media.bonial.biz^
-
 ! General support chat
 ! https://github.com/hagezi/dns-blocklists/issues/40
 @@||intercom.io^
 @@|api*.intercom.io^
 @@|widget.intercom.io^
-
 ! SurveyMonkey
 @@|research.net^
 @@|www.research.net^
-
 ! O2 App
 @@|api-v4.trbo.com^
-
 ! Shops
 @@||spartoo.co.uk^
 @@||spartoo.com^
@@ -129079,106 +128773,78 @@
 @@||spartoo.pt^
 @@|gizmodern.com^
 @@|www.gizmodern.com^
-
 ! https://github.com/badmojr/1Hosts/issues/728
 @@|metricool.com^
 @@|www.metricool.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/799
 @@|s3.us-west-1.wasabisys.com^
-
 ! https://github.com/AdAway/adaway.github.io/issues/349
 @@|images.salsify.com^
-
 ! Amazon Photos
 @@|cdws.eu-west-1.amazonaws.com^
-
 ! Mac Software
 @@|mackeeper.com^
 @@|www.mackeeper.com^
-
 ! GPS Track Platform
 @@|traccar.org^
 @@|www.traccar.org^
-
 ! Customer Chat / Vodafone error reporting
 @@||messengerpeople.com^
-
 ! Breaks some services/sites (Renault API, ...)
 ! https://github.com/StevenBlack/hosts/issues/2098
 ! https://github.com/AdAway/adaway.github.io/pull/352
 ! https://github.com/nextdns/metadata/issues/1078
 ! ...
 @@||gigya.com^
-
 ! https://github.com/AdAway/adaway.github.io/issues/338
 ! info.ammex.com
 ! go.pardot.com
 ! pi.pardot.com
-
 ! Das Erste / ARD
 ! image.ard.de
 ! image-ard-de-cddc.at-o.net
-
 ! https://github.com/AdAway/adaway.github.io/pull/353
 @@|cdn.rebuyengine.com^
-
 ! Search on https://www.malwarebytes.com/glossary
 @@|searchg2.crownpeak.net^
-
 ! OpenJDK
 @@|openjdk.org^
 @@|www.openjdk.org^
-
 ! rarbg.to CAPTCHA
 @@|rarbgmirrored.org^
 @@|www.rarbgmirrored.org^
-
 ! WordPress Websites design specialists
 @@|wpbeaches.com^
 @@|www.wpbeaches.com^
-
 ! Images on Forbes
 @@||ceros.com^
-
 ! MAJESTIC
 @@|majesticseo.com^
 @@|www.majesticseo.com^
-
 ! Tyk
 @@|tyk.io^
 @@|www.tyk.io^
-
 ! ECOSIA
 @@|ecosia.de^
 @@|www.ecosia.de^
-
 ! Portainer
 @@||scarf.sh^
 @@|cr.portainer.io^
 ! gateway.scarf.sh
-
 ! Microsoft Edge
 @@|microsoftedgewelcome.microsoft.com^
-
 ! Coveo search functionality
 @@|static.cloud.coveo.com^
-
 ! https://github.com/Ultimate-Hosts-Blacklist/whitelist/issues/190
 @@|js.pusher.com^
-
 ! https://about.gitlab.com/solutions/open-source/join/
 @@||sheerid.com^
-
 ! Firmware updates shure.com
 @@|p.shure.com^
-
 ! JoynMe App
 @@|middleware.p7s1.io^
-
 ! F1 App livetiming
 @@|embed.scribblelive.com^
-
 ! F1 TV
 @@|f1-prod-production.apigee.net^
 @@|f1-prod-production.dn.apigee.net^
@@ -129188,65 +128854,47 @@
 @@|f1tv-livedata.formula1.com^
 @@|formula1.com^
 @@|www.formula1.com^
-
 ! Manufacture of ZigBee and Z-Wave controllers
 @@|aeotec.com^
 @@|www.aeotec.com^
-
 ! https://github.com/StevenBlack/hosts/issues/2109
-
 ! https://github.com/EnergizedProtection/block/issues/902
 @@||wdtinc.com^
-
 ! Breaks Hulu streaming when at ad play periods
 @@|ads-a-darwin.hulustream.com.akamaized.net^
 @@|ads-fa-darwin.hulustream.com^
 @@|ads-e-darwin.hulustream.com^
-
 ! Parcel tracking
 @@|17track.net^
 @@|www.17track.net^
-
 ! Videos on linetv.tw
 @@|itad.linetv.tw^
-
 ! Search engine
 @@|yep.com^
 @@|www.yep.com^
-
 ! Vodafone IMS Services
 @@||ims.vodafone.com^
-
 ! Soundcloud Feeds
 @@|d28n7yywqog3r7.cloudfront.net^
-
 ! WhatsApp news site
 @@|wabetainfo.com^
 @@|www.wabetainfo.com^
-
 ! Personal Domain - https://github.com/notracking/hosts-blocklists/issues/804
 @@|disguised.nl^
 @@|www.disguised.nl^
-
 ! Prevents registration on rungne.com
 @@|a.klaviyo.com^
-
 ! Videos in Glomex player
 @@|lush-clouds.zomap.de^
-
 ! Banking
 @@|zinspilot.de^
 @@|www.zinspilot.de^
-
 ! Disneyland Paris register
 @@||registerdisney.go.com^
-
 ! 3-D Secure authentication
 @@|includes.ccdc02.com^
-
 ! DPD parcel tracking
 @@|tracking.dpd.de^
-
 ! Akamai
 @@|akamaihd.net^
 @@|www.akamaihd.net^
@@ -129256,195 +128904,142 @@
 @@|www.akamaized.net^
 @@|lastfm-img2.akamaized.net^
 @@|widget-cdn.rpxnow.com^
-
 ! uceprotect network
 @@|uceprotect.net^
 @@|www.uceprotect.net^
-
 ! Breaks site layouts - ex. bose.com
 @@|assets.adobedtm.com^
-
 ! AdBlock Detection on Sport1
 ! https://github.com/ookangzheng/blahdns/issues/271
 @@|tag.aticdn.net^
-
 ! CNAME best-lover
 ! target.clickfunnels.com
-
 ! Breaks https://support.xbox.com/en-US/
 ! https://github.com/AdAway/adaway.github.io/issues/330
 @@|statics-marketingsites-*-ms-com.akamaized.net^
-
 ! Videos on NFL.com
 @@|p.nfltags.com^
-
 ! GeFroce Now login on ShieldTV
 @@|collector.lightstep.com^
 @@|ingest.lightstep.com^
-
 ! Videos Sueddeutsche.de
 @@|prd.jwpltx.com^
 @@|pix.sueddeutsche.de^
-
 ! Add calendar events
 @@|addthisevent.com^
 @@|www.addthisevent.com^
-
 ! Images on SkyShowTime
 @@|pixel.disco.skyshowtime.com^
-
 ! Videos on mein-mmo.de
 @@|sdk.privacy-center.org^
-
 ! Computermagazine
 @@|pcwelt.de^
 @@|www.pcwelt.de^
-
 ! Ionos Mails
 @@|cloud-news.ionos.com^
-
 ! e-mail bulletins
 @@|lnks.gd^
 @@|www.lnks.gd^
-
 ! https://github.com/AdguardTeam/AdguardFilters/issues/132565
 @@|shalltry.com^
 @@|www.shalltry.com^
-
 ! Breaks Videos on adult sites
 @@|streamsb.net^
 @@|www.streamsb.net^
-
 ! VPS forum
 @@|lowendbox.com^
 @@|www.lowendbox.com^
-
 ! platform for interactive content
 @@|view.genial.ly^
-
 ! Images on various sites not loading
 @@|sp-ao.shortpixel.ai^
-
 ! Breaks fastpic.org
-
 ! Confirmation of change.org petitions
 @@|click.e.change.org^
 @@||change.org.cdn.cloudflare.net^
-
 ! reviews about online shops
 @@|avis-verifies.com^
 @@|www.avis-verifies.com^
-
 ! Media CDN
 @@|iframely.net^
 @@|www.iframely.net^
-
 ! CRL server for GoDaddy Subsidiary Starfield CA
 @@|o.ss2.us^
 @@|s.ss2.us^
-
 ! Breaks Fidelity login
 @@|h-fidelity.online-metrix.net^
-
 ! Mastodon instance
 @@|ioc.exchange^
 @@|www.ioc.exchange^
-
 ! Shopping tables on verabradley.com
 @@|js.klevu.com^
-
 ! Dicks Sporting Goods website catalog will not show product listings
 @@|tag.dickssportinggoods.com^
-
 ! T-Mobile Tuesdays in-app messages
 @@|device-api.urbanairship.com^
-
 ! kohls.com product catalog images
 @@|stylitics.com^
 @@|www.stylitics.com^
 @@|web-assets.stylitics.com^
 @@|web-assets.stylitics.com.cdn.cloudflare.net^
-
 ! News site
 @@|dailycaller.com^
 @@|www.dailycaller.com^
-
 ! Application Insights data on the Azure portal
 @@||aimon.applicationinsights.io^
 @@|applicationinsights.io^
 @@|www.applicationinsights.io^
-
 ! RBC Two step authentication
 @@|d3tracking.rbc.com^
-
 ! Chipotle account login
 @@|services.chipotle.com^
-
 ! apple-dns.net
-
 ! Articles on buzzfee.com
 @@|abeagle-public.buzzfeed.com^
-
 ! EA Desktop App - Properties/Download unavailable / Affects various apps
 @@|auth.split.io^
 @@|cdn.split.io^
 ! events.split.io
 @@|sdk.split.io^
-
 ! https://github.com/hagezi/dns-blocklists/issues/59#issuecomment-1312547506
 @@|appsumo.com^
 @@|www.appsumo.com^
-
 ! Canary email app
 @@|canarymail.io^
 @@|www.canarymail.io^
-
 ! Mastodon instance
 @@|norden.social^
 @@|www.norden.social^
-
 ! Breaks naver.com
 @@|tivan.naver.com^
-
 ! Greek school sites
 @@||sch.gr^
-
 ! CDN - Breaks https://academic.oup.com/comjnl/article-abstract/62/8/1106/5298776?login=false
 @@|oup.silverchair-cdn.com^
-
 ! Edeka Marktsuche / Cookies
 @@|cdn.tagcommander.com^
 @@|cdn.trustcommander.net^
-
 ! ORF TVThek App stucks on loading
 @@|at-config.sensic.net^
-
 ! ServusTV App stucks on loading screen
 @@|mobile-data.onetrust.io^
-
 ! Twibbonize
 @@|twibbonize.com^
 @@|www.twibbonize.com^
 @@||twibbonize.com.cdn.ezoic.net^
-
 ! CDN of Akamai
 @@|akamai-images-content.com^
 @@|www.akamai-images-content.com^
-
 ! Yandex Single Sign On
 @@||passport.yandex.ru^
-
 ! MX server for Yandex.Mail
 @@|mx.yandex.ru^
-
 ! Yandex breaking
 @@||export.yandex.ru^
 @@||informer.yandex.ru^
 @@||share.yandex.ru^
-
 ! Videos on ettoday.net
 @@|msg.ettoday.net^
-
 ! Video Hosting
 @@|ff-01.com^
 @@|www.ff-01.com^
@@ -129456,115 +129051,83 @@
 @@|www.ff-04.com^
 @@|ff-05.com^
 @@|www.ff-05.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/65
 @@|overclockers.co.uk^
-
 ! Code Examples
 @@|code-examples.net^
 @@|www.code-examples.net^
-
 ! Oaktree Insights investment emails
 @@|go.oaktreecapital.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/68
 @@|*telemetry.*oraclecloud.com^
-
 ! Roku TV Crackle app
 @@|ravm.tv^
 @@|www.ravm.tv^
-
 ! https://old.reddit.com/r/nextdns/comments/yzvnuw/nest_usage_metrics_being_blocked/
 @@|logsink.devices.nest.com^
-
 ! Garena League account linking - https://leaguelink.riotgames.com/
 @@|js.captcha-display.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/70
 @@||meituan.net^
 @@||meituan.com^
-
 ! gitbook.io
 @@|app.gitbook.com^
-
 ! Unsubscribe from various Newsletters
 @@||seu*.cleverreach.com^
-
 ! Manage kmail lists
 @@|manage.kmail-lists.com^
 @@|static.klaviyo.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/72
 @@|manli.com^
 @@|www.manli.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/73
 @@|cdn.reamaze.com^
-
 ! Chromecast functionality of Disney+ Hotstar app
 @@|79423.analytics.edgekey.net^
 @@|e2725.g.akamaiedge.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/74
 @@|b-cdn.net^
 @@|www.b-cdn.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/75
 @@|ip.istatmenus.app^
-
 ! Sitelayout gratis.com and other sites
 @@|cdn.segmentify.com^
 @@|per*.segmentify.com^
 @@|cdn.sgmntfy.com^
-
 ! Yep search results
 @@|api.yep.com^
-
 ! Breaks site layout on therapythatworksinstitute.com and others
 @@||kajabi-cdn.com^
-
 ! Open-source and modern URL shortener
 @@|kutt.it^
 @@|www.kutt.it^
-
 ! Images and links in various Mails, e.g. emp.de
 @@|recommender*.scarabresearch.com^
 @@|images.cdn.scarabresearch.com^
-
 ! Breaks paypal pay process on some german shopping sites
 @@|siteintercept.qualtrics.com^
 @@|*paypal*.siteintercept.qualtrics.com^
-
 ! Aim Lab aimlab.gg passwort reset
 @@|ct.sendgrid.net^
-
 ! Code examples in R
 @@|stat.ethz.ch^
-
 ! Tschibo customer support formular
 @@|tagm.tchibo.de^
-
 ! Gcash login
 @@|ilog-sea-aliyun.alipayplus.com^
-
 ! Tantanapp
 @@|tantanapp.com^
 @@|www.tantanapp.com^
 @@|api.immomo.com^
-
 ! Market research by survey panels
 @@|opinions.research-interactive.com^
 @@|surveymyopinion.researchnow.com^
-
 ! Legit bank
 @@|hsbc.com.au^
-
 ! ACDSee Photo Studio
 @@||acdsystems.com^
-
 ! Images/Links/... in Mails (Nintendo, SEAT, ...)
 @@||exacttarget.com.edgekey.net^
-
 ! Images/Links in Microsft Mails
 @@||email*.office.com^
 @@||email.microsoftemail.com^
@@ -129575,581 +129138,423 @@
 @@||engage.xbox.com^
 @@||mail.onedrive.com^
 @@||microsoftstoreemail.com^
-
 ! Images in Mails - DHL, …
 @@|imgs.elainemedia.de^
 @@|imgs.elaine-asp.de^
 @@|lforr.elaine-asp.de^
 @@|lforr.elainelfo.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/87
 @@|dns.digitale-gesellschaft.ch^
-
 ! Video Playback on various sites
 @@|jwpcdn.com^
 @@|www.jwpcdn.com^
-
 ! Backup software
 @@|arqbackup.com^
 @@|www.arqbackup.com^
-
 ! Survey in Mails
 @@|global.cdn.survey.medallia.com^
 @@|survey*.medallia.eu^
-
 ! C99's API Service
 @@|api.c99.nl^
-
 ! Breaks apis and services - e.g. imprint won't load: https://www.cyprianerhof.com/credits/impressum
 @@|bnamic.com^
 @@|www.bnamic.com^
-
 ! Breaks Qikify App
 @@|sdk.qikify.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/90
 @@|softonic.com^
 @@|www.softonic.com^
-
 ! Search on bricomart.es
 @@|tag.search.sensefuel.live^
-
 ! Disney+ Asia will show a No Internet Connection banner
 @@|bifrost-api.hotstar.com^
-
 ! Epic Games Launcher
 @@|eulatracking-public-service-*.ol.epicgames.com^
-
 ! Chick-Fil-A App
 @@||tmetrix.my.chick-fil-a.com^
-
 ! Imgur
 @@|js.media-lab.ai^
-
 ! Men's Health videos
 @@|glimmer.hearstapps.com^
-
 ! https://github.com/geoapify
 @@|maps.geoapify.com^
-
 ! Streaming website
 ! https://github.com/hagezi/dns-blocklists/issues/92
 @@|vidio.com^
 @@|www.vidio.com^
-
 ! breaks chart at https://www.cnbc.com/2022/12/07/carvana-shares-tank-as-bankruptcy-concerns-grow-for-used-car-retailer.html
 @@|fm.cnbc.com^
-
 ! breaks https://share.hsforms.com/13gyIEVN5SrScw-iVvCgIew4sk30
 @@|hsforms.com^
 @@|www.hsforms.com^
 @@|hsforms.net^
 @@|www.hsforms.net^
-
 ! Surveys
-
 ! Customer live chat support
 @@|liveperson.com^
 @@|www.liveperson.com^
 @@|adminlogin.liveperson.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/96
 @@||arc.epoq.de^
-
 ! legit website
 @@|deviceatlas.com^
 @@|www.deviceatlas.com^
-
 ! Adult site
 @@|fapcat.com^
 @@|www.fapcat.com^
-
 ! Optimized mobile GPS Data - Google
 @@|xtrapath*.izatcloud.net^
-
 ! Chia blockchain
 @@|chia.net^
 @@|www.chia.net^
-
 ! Chinese logistics company
 @@|cainiao.com^
 @@|www.cainiao.com^
-
 ! Portal news
 @@|ac24horas.com^
 @@|www.ac24horas.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/99
 @@|uber.space^
 @@|www.uber.space^
-
 ! Xiaomi - filter download gallery editor
 @@|f*.market.xiaomi.com^
 @@|f*.market.mi-img.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/101
 @@|ota-recruit-sg.allawnos.com^
 @@|component-ota-sg.allawnos.com^
-
 ! checkout/payment jetblue.com
 @@|ipe-pmt.prod.sabre.com^
-
 ! ARMBian apt-update
 @@|mirrors.aliyun.com^
-
 ! Matomo Software
 @@|matomo.org^
 @@|www.matomo.org^
-
 ! cgv.vn - Can't choose seats when booking
 @@|netcoresmartech.com^
 @@|www.netcoresmartech.com^
-
 ! Images on mail.ru
 @@|r.mradx.net^
-
 ! legal shop
 @@|hockerty.de^
 @@|www.hockerty.de^
-
 ! https://github.com/StevenBlack/hosts/issues/2174
 @@|passion.io^
 @@|www.passion.io^
-
 ! provides reference material such as word definitions to legal terminology
 @@|nolo.com^
 @@|www.nolo.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/107
 @@|monitor.ppcprotect.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/109
 @@|noip.at^
 @@|www.noip.at^
-
 ! https://github.com/hagezi/dns-blocklists/issues/110
 @@|goatcounter.com^
 @@|www.goatcounter.com^
-
 ! required to use Space Pool mobile app
 @@|api-mainnet.pool.space^
-
 ! required for LIDL login
 @@|metrics.lidl.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/111
 @@|appx.transient.amazon.co.uk^
-
 ! https://github.com/hagezi/dns-blocklists/issues/113
 @@|open.spotify.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/115
 @@|zencdn.net^
 @@|www.zencdn.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/116
 @@|ipinfo.io^
 @@|www.ipinfo.io^
-
 ! Collaboration platform and Git hosting
 @@|codeberg.org^
 @@|www.codeberg.org^
-
 ! Subscription Platform / CNAME for e.g. www.huffingtonpost.it - gedi-huffingtonpost.cdn.zephr.com
 @@|zephr.com^
 @@|www.zephr.com^
-
 ! Images in various mails, e.g. Doktoronline
 @@||msdp1.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/119
 @@|cdn-116.anonfiles.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/120
 @@|assets.sitescdn.net^
-
 ! oppo phone's app accounts such as wallet / my oppo will be forced to log out
 @@|client-uc.heytapmobi.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/122
 @@|static.cdn.responsys.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/122
 @@||performfeeds.com^
-
 ! Breaks LinkedIn
 @@||cdx.cedexis.net^
-
 ! TSB Bank mobile banking app
 @@|check2.tsb.co.uk^
 @@|h-tsb.online-metrix.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/127
 @@|tracking.post.japanpost.jp^
-
 ! Images in Mails - e.g. NordVPN
 @@|static.iterable.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/130
 @@|imore.com^
 @@|www.imore.com^
-
 ! https://github.com/notracking/hosts-blocklists/issues/827
 @@|telegra.ph^
 @@|www.telegra.ph^
-
 ! https://github.com/hagezi/dns-blocklists/issues/132
 @@|majorgeeks.com^
 @@|www.majorgeeks.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/133
 @@|stacksocial.com^
 @@|www.stacksocial.com^
-
 ! Parcel tracking
 @@|track.goshippo.com^
-
 ! Mandrill Mailchimp add-on - requesting a password, placing an order, links in emails, ...
 @@|mandrillapp.com^
 @@|www.mandrillapp.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/136
 @@|amazonforum.com^
 @@|www.amazonforum.com^
-
 ! verifying student status in YT Music or YT
 @@||sheerid.net^
-
 ! Image sharing
 @@|i.imgci.com^
-
 ! blocks espncricinfo's cricket statistics
 @@|stats.espncricinfo.com^
-
 ! embedded widget chat service
 @@|cbox.ws^
 @@|www.cbox.ws^
-
 ! Ticket Shop
 @@|viagogo.de^
 @@|www.viagogo.de^
-
 ! Camouflage encyclopedia
 @@|camopedia.org^
 @@|www.camopedia.org^
-
 ! gaming accessories
 @@|sharkoon.com^
 @@|www.sharkoon.com^
-
 ! aikQ Mail
 @@|aikq.de^
 @@|www.aikq.de^
-
 ! Shop
 @@|airydress.com^
 @@|www.airydress.com^
-
 ! Movie Streaming
 @@|1kinobig.ru^
 @@|www.1kinobig.ru^
-
 ! ADLER Shop
 @@|adlermode.com^
 @@|www.adlermode.com^
-
 ! Video Streaming
 @@||videoland.com^
-
 ! Game
 @@|clickerheroes.com^
 @@|www.clickerheroes.com^
-
 ! korean news site - https://github.com/hagezi/dns-blocklists/issues/140
 @@|postshare.co.kr^
-
 ! LeakIX Platform - https://github.com/hagezi/dns-blocklists/issues/141
 @@|leakix.net^
 @@|www.leakix.net^
-
 ! Soundcloud and others in some regions
 @@|geolocation.onetrust.com^
-
 ! Images in apps and mails
 @@|appboy-images.com^
 @@|www.appboy-images.com^
-
 ! Banggood App
 @@|banggood.com^
 @@|www.banggood.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/144
 @@|tenping.kr^
 @@|www.tenping.kr^
-
 ! https://github.com/hagezi/dns-blocklists/issues/145
 @@|opentelemetry.io^
 @@|www.opentelemetry.io^
-
 ! https://github.com/hagezi/dns-blocklists/issues/165
 @@|cdn.brid.tv^
 @@|cdn.tpdads.com^
-
 ! Weather Apps/Maps - e.g. Carrot Weather
 @@||aerisapi.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/168
 @@|app.link.nba.com^
 @@|clickdimensions.com^
 @@|www.clickdimensions.com^
 @@|custom.bnc.lt^
-
 ! https://github.com/hagezi/dns-blocklists/issues/169
 @@||tnt-ea.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/171
 @@|mntzrlt.net^
 @@|www.mntzrlt.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/171
 @@|chillx.top^
 @@|www.chillx.top^
-
 ! https://github.com/hagezi/dns-blocklists/issues/174
 @@|cdn.adf.ly^
-
 ! https://github.com/hagezi/dns-blocklists/issues/177
 @@|commentsengine.com^
 @@|www.commentsengine.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/178
 @@|assets.rebelmouse.io^
 @@|assets.rbl.ms^
-
 ! Links in mails from Peek & Cloppenburg and others
 @@|puc-cdn.exponea.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/180
 @@|ssl.o.auspost.com.au^
 @@|o.auspost.com.au.ssl.d2.sc.omtrdc.net^
-
 ! News website in Italy
 @@|shalom.it^
 @@|www.shalom.it^
-
 ! https://github.com/hagezi/dns-blocklists/issues/189
 @@|s.deepl.com^
-
 ! Navigation on various sites - fender.com
 @@|cdn.segment.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/190
 @@|uplynk.com^
 @@|www.uplynk.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/191
 @@|speedcheck.org^
 @@|www.speedcheck.org^
-
 ! https://github.com/hagezi/dns-blocklists/issues/192
 @@|filedropper.com^
 @@|www.filedropper.com^
-
 ! WOT - Website Safety Check
 @@|mywot.com^
 @@|www.mywot.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/202
 @@|mindvalley.com^
 @@|www.mindvalley.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/191
 @@||etrality.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/191
 @@|api.speedspot.org^
-
 ! LinkedIn Content
 @@|snap.licdn.com^
-
 ! File/Document Sharing
 @@|docdro.id^
 @@|www.docdro.id^
-
 ! Xiaomi sync
 @@||micardapi.micloud.xiaomi.net^
 @@||pdc.micloud.xiaomi.net^
 @@||phonecallapi.micloud.xiaomi.net^
 @@||smsapi.micloud.xiaomi.net^
-
 ! Prevents Netflix from continuing to play videos where you stopped or paused them
 @@|ichnaea*.netflix.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/210
 @@||app.link^
-
 ! legit cryptocurrency exchange
 @@|fixedfloat.com^
 @@|www.fixedfloat.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/212
 @@|a.apkpure.com^
-
 ! Tweakers AdBlock Detection - some articles are not accessible
 @@|aa.tweakers.nl^
 @@|aa.tweakers.net^
 @@|ab.tweakers.nl^
 @@|ab.tweakers.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/214
 @@|trezor.io^
 @@|www.trezor.io^
-
 ! Agoda App search functions
 @@|api.agoda.com.edgekey.net^
 @@|searchapi.agoda.com^
-
 ! Images on indiatoday.in
 @@|akm-img-a-in.tosshub.com^
-
 ! Breaks site layout on cbs.com
 @@|wwwimage-tve.cbsstatic.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/215
 @@||api.b.hatena.ne.jp^
-
 ! Tech help articles
 @@|living-sun.com^
 @@|www.living-sun.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/198
 ! https://github.com/hagezi/dns-blocklists/issues/218
 @@||maxmind.com^
-
 ! Special offers from Aachen
 @@|oecherdeal.de^
 @@|www.oecherdeal.de^
-
 ! https://github.com/hagezi/dns-blocklists/issues/219
 @@|courier.com^
 @@|www.courier.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/222
 @@|edgeme.sh^
 @@|www.edgeme.sh^
-
 ! https://github.com/hagezi/dns-blocklists/issues/223
 @@||snap.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/224
 @@|ahacdn.me^
 @@|www.ahacdn.me^
-
 ! https://github.com/hagezi/dns-blocklists/issues/225
 @@|studenti.it^
 @@|www.studenti.it^
-
 ! https://github.com/hagezi/dns-blocklists/issues/226
 @@|subarumysubaruappproduction.112.2o7.net^
-
 ! PowUnity bike tracking
 @@|go.powunity.com^
-
 ! CNAME linuxfoundation.org
 @@|sites.hscoscdn10.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/228
 @@|swile.co^
 @@|www.swile.co^
-
 ! https://github.com/hagezi/dns-blocklists/issues/229
 @@|z.cdp-dev.cnn.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/231
 @@|1weather.onelouder.com^
-
 ! Nytimes Account
 @@|myaccount.nytimes.com^
-
 ! Images/Videos on various sites, e.g. RTL.de
 @@|bilder-a.akamaihd.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/235
 @@||aylanetworks.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/236
 @@|embed.tagboard.com^
 @@|embed.tagboard.com.herokudns.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/238
 @@|binarypiano.com^
 @@|www.binarypiano.com^
-
 ! Industry Solutions
 @@|famatel.com^
 @@|www.famatel.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/240
 @@|get.revolut.com^
-
 ! Needed for BBC iPlayer and BBC Sounds app (only Android TV)
 @@|mybbc-analytics.files.bbci.co.uk^
 @@|mybbc-analytics.files.bbci.co.uk.edgekey.net^
-
 ! Images in SpeedDial 2 Browser Extension
 @@|logo.clearbit.com^
 @@|thumb.highdeliveryscdn.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/242
 @@||boldchat.com^
 @@|dyson.nanorep.co^
 @@|us1-1.nanorep.co^
 @@|mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
 @@|s50.device.marketingcloudapis.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/243
 @@|review-rating.mncdn.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/244
 @@|a2zapk.com^
 @@|www.a2zapk.com^
-
 ! privacy-focussed cybersecurity company
 @@|polygraph.net^
 @@|www.polygraph.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/245
 @@|serviceschipotlecom.trafficmanager.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/246
 @@|saweria.co^
 @@|www.saweria.co^
-
 ! https://github.com/hagezi/dns-blocklists/issues/247
 @@|h-microsoft.online-metrix.net^
-
 ! Lucky Dreams Online Casino
 @@|ui.noda.live^
 @@|api.noda.live^
 @@|cf-iomeu-cdn.relaxg.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/248
 @@|qsurvey.mozilla.com^
 @@|privatedomain.sgizmo.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/249
 @@|api.zepto.co.in^
-
 ! TikTok login
 @@|starling-oversea.byteoversea.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/250
 @@|gogoanime.tel^
 @@|www.gogoanime.tel^
-
 ! https://github.com/hagezi/dns-blocklists/issues/252
 @@|detectportal.firefox.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/255
 @@|app.sentry.io^
 @@|docs.sentry.io^
@@ -130157,7 +129562,6 @@
 @@|get.sentry.io^
 @@|go.sentry.io^
 @@|open.sentry.io^
-
 ! https://github.com/hagezi/dns-blocklists/issues/257
 @@|app.datadoghq.eu^
 @@|app.datadoghq.com^
@@ -130166,7 +129570,6 @@
 @@|consent-pref.trustarc.com^
 @@|adstream.com^
 @@|www.adstream.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/287
 @@|abcnews.extremereach.com^
 @@|abc-twitter.extremereach.com^
@@ -130175,157 +129578,114 @@
 @@|download.extremereach.com^
 @@|dv.extremereach.com^
 @@|updates.extremereach.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/259
 @@||instant.page^
-
 ! cover of redpocket at wechat - not able to see the custom cove
 @@|wxsnsdy.wxs.qq.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/260
 @@|id.rambler.ru^
-
 ! https://github.com/hagezi/dns-blocklists/issues/261
 @@|betanews.com^
 @@|www.betanews.com^
-
 ! Finnish fibre optics ISP
 @@|asiakas.valokuitunen.fi^
-
 ! https://github.com/hagezi/dns-blocklists/issues/262
 @@|news.rambler.ru^
-
 ! Contabo Object Storage
 @@||contabostorage.com^
-
 ! Yahoo App/Mail
 ! https://github.com/hagezi/dns-blocklists/issues/269
 @@|consent.yahoo.com^
 @@|guce.oath.com^
 @@|pr.comet.yahoo.com^
-
 ! Yahoo Finance App -  no News are shown
 ! supplies ads!
 ! m.yap.yahoo.com
-
 ! https://github.com/hagezi/dns-blocklists/issues/265
 @@|embed.ly^
 @@|www.embed.ly^
-
 ! https://github.com/hagezi/dns-blocklists/issues/266
 @@|api-secure.solvemedia.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/267
 @@|check.ddos-guard.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/268
 @@||pdcdn1.top^
-
 ! Turkish Airlines and other apps - Full-screen Stories
 @@|api.storyly.io^
-
 ! Required for SwiftKey
 @@|bibo.api.swiftkey.com^
 @@|jenson.api.swiftkey.com^
-
 ! Justwatch - pick a country a movie/show
 @@|click.justwatch.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/270
 @@|data.tmsapi.com^
 @@|td-mashery-tm-use1.mashery.com^
 @@|td-tms.mashery.com^
 @@|tms.api.mashery.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/271
 @@|captive.roku.com^
 @@|d1k85ogl73rd7b.cloudfront.net^
-
 ! Apollo Reddit app push-notifications
 @@|apollopushserver.xyz^
 @@|www.apollopushserver.xyz^
-
 ! https://github.com/hagezi/dns-blocklists/issues/272
 @@|code.createjs.com^
-
 ! SmartThings - https://github.com/hagezi/dns-blocklists/issues/273
 @@|api.st-av.net^
 @@|uimetadata.samsungiotcloud.com^
 @@||mcsvc.samsung.com^
-
 ! Discord Server List
 @@|discords.com^
 @@|www.discords.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/275
 @@||osi.office.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/276
 @@|indusprodcustomer3996.pc.cdn.bitgravity.com^
 @@|lalpathlabs.com^
 @@|www.lalpathlabs.com^
-
 ! Site layout o2online.de
 ! https://github.com/hagezi/dns-blocklists/issues/279
 @@||o9.de^
-
 ! Typeform
 @@|embed.typeform.com^
-
 ! G5 Games - World of Adventures - Login and Accountsynchronisation
 @@|api.pgpl.g5e.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/280
 @@|rv.treehousei.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/281
 @@|filehorse.com^
 @@|www.filehorse.com^
-
 ! Compliance Solution for Small Businesses
 @@||termly.io^
-
 ! Sweden's biggest gym-app - blob-storage/CDN for Azure
 @@|az416426.vo.msecnd.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/283
 @@||buymeacoffee.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/288
 @@|csm-e-cbch-eb.tls1.yospace.com^
 @@|csm-e-cecbcaeuw1live101-08ca6f41e85e8368d.bln1.yospace.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/289
 @@|m1.com^
 @@|www.m1.com^
-
 ! Videos on theguardian.com
 @@|interactive.guim.co.uk^
 @@|sourcepoint.theguardian.com^
-
 ! Breaks site layout chaturbate
 @@|static-assets.highwebmedia.com^
-
 ! Videos/Cookies on lefigaro.fr and other sites
 @@|cdn.appconsent.io^
 @@|collector.appconsent.io^
-
 ! https://github.com/hagezi/dns-blocklists/issues/292
 @@|email.goodrx.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/294
 @@|tracker.scenetime.com^
-
 ! Customer care of Swiggy Food Delivery App
 @@||pubnub.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/296
 @@|homedepot.cdn.findly.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/295
 @@|secondstreetapp.com^
 @@|www.secondstreetapp.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/295
 @@|localiq.com^
 @@|www.localiq.com^
@@ -130334,232 +129694,166 @@
 @@|tm.uol.com.br^
 @@|e.imguol.com^
 @@|h.imguol.com^
-
 ! Fix BBC Videos (Consent banner blocked)
-
 ! https://github.com/hagezi/dns-blocklists/issues/300
 @@||stat.gov.pl^
-
 ! https://github.com/hagezi/dns-blocklists/issues/303
 @@||unmineable.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/302
 @@|phishingquiz.withgoogle.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/304
 @@|host.secureserver.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/305
 @@|ship.sephora.com^
 @@|sephora.narvar.com^
 @@|tracking.narvar.com^
-
 ! Images on rabble.se
 @@|rabble-res.cloudinary.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/307
 @@|benefithub.com^
 @@|www.benefithub.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/308
 @@|url.rw^
 @@|www.url.rw^
-
 ! Images Pluto.tv
 @@|images.pluto.tv^
-
 ! Images
 @@|images.redbox.com^
 @@|i.ibb.co^
-
 ! Movie Covers
 @@|canvas.tubitv.com^
-
 ! CDN for utomik.com Gaming on various platforms
 @@|cdn77.utomik.com^
-
 ! Cookiebanner trigema.de and other sites
 @@|consent.cookiebot.eu^
 @@|consentcdn.cookiebot.eu^
-
 ! https://github.com/hagezi/dns-blocklists/issues/311
 @@|track.dhlparcel.co.uk^
-
 ! https://github.com/hagezi/dns-blocklists/issues/312
 @@|mijn.overheid.nl^
-
 ! https://github.com/hagezi/dns-blocklists/issues/313
 @@||tipico.de^
-
 ! https://github.com/hagezi/dns-blocklists/issues/314
 @@|mobapi-qero-ab.e-goi.com^
-
 ! Contact form (https://auroraredlight.de/kontakt/) didn't work when hitting the send button
 @@|vr331.infusionsoft.com^
-
 ! Site layout on techtarget.com
 @@|cdn.ttgtmedia.com^
-
 ! cable-internet-provider
 @@|eazy.de^
 @@|www.eazy.de^
-
 ! https://github.com/hagezi/dns-blocklists/issues/325
 ! https://github.com/hagezi/dns-blocklists/issues/325#issuecomment-1426085695
 ! edilnet.it
-
 ! Breaks national radio-television organization's VOD portal - https://365.rtvslo.si
 ! Videos Rifftrax channel on Roku
 @@|cdn.jwplayer.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/326
 @@|tmx.bestbuy.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/328
 @@|trust-provider.com^
 @@|www.trust-provider.com^
-
 ! Azure Log Analytics Workspace (KQL)
 @@|api.loganalytics.io^
-
 ! Rifftrax channel on Roku will not start
 @@|assets-secure.applicaster.com^
-
 ! Embedded TikTok
 @@|mcs-va.tiktok.com^
 @@|mcs-va.tiktok.com.edgekey.net^
 @@|e35058.api3.akamaiedge.net^
-
 ! Live Chat on https://www.coextro.com/
 @@|tawk.to^
 @@|www.tawk.to^
-
 ! break the messaging capabilities of Chinese chat app Tencent QQ
 @@||msf.3g.qq.com^
 @@|msfwifi.3g.qq.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/337
 @@|se-tv4.videoplaza.tv^
-
 ! https://github.com/hagezi/dns-blocklists/issues/338
 @@||ads.brave.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/339
 @@|neon.ipsator.com^
 @@|carbon-v2.ipsator.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/341
 @@|sentry.sc-prod.net^
-
 ! Custommer support chat on various sites
 @@||chatra.io^
-
 ! Breaks Forms on/in various sites/apps
 @@||static-app.klaviyo.com^
 @@||static-forms.klaviyo.com^
-
 ! breaks architectural digest’s website by blocking media.architecturaldigest.com
 @@|vulcan.condenastdigital.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/352
 @@|option.boldapps.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/354
 ! Parcel tracking
 @@|track.aliexpress.com^
 @@|track.aliexpress.ru^
 @@|track.aliexpress.com.gds.alibabadns.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/357
 @@|track.yw56.com.cn^
-
 ! https://github.com/hagezi/dns-blocklists/issues/363
 @@|img.yana.asideas.de^
 @@|prod-image-fastly-cdn.yana.asideas.de^
-
 ! https://github.com/hagezi/dns-blocklists/issues/380
 @@||speedtest.sbcglobal.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/364
 @@|reliaquest.com^
 @@|www.reliaquest.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/422
 @@|doppler-config.cbsivideo.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/420
 @@|playback.video.meredithcorp.io^
 @@|imagesvc.meredithcorp.io^
 @@|cdn.video.meredithcorp.io^
-
 ! Blocks CNN app on Apple TV from confirming geo location, a requirement to open app
 @@||geo.ngtv.io^
-
 ! https://github.com/hagezi/dns-blocklists/issues/432
 @@||measurement-lab.org^
-
 ! https://github.com/hagezi/dns-blocklists/issues/433
 @@|sbchill.com^
 @@|www.sbchill.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/478
 @@|tili.sanoma.fi^
-
 ! https://github.com/hagezi/dns-blocklists/discussions/482#discussioncomment-5025232
 @@|myfed.space^
 @@|www.myfed.space^
 @@|meneer.space^
 @@|www.meneer.space^
-
 ! https://github.com/hagezi/dns-blocklists/issues/483
 @@|community.finanzguru.de^
 @@|finanzguru.userecho.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/486
 @@|track.gojek.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/487
 @@|firehose.eu-west-1.amazonaws.com^
 @@|youexec-resources-down.s3.us-west-2.amazonaws.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/489
 @@|hopp.to^
 @@|www.hopp.to^
-
 ! https://github.com/hagezi/dns-blocklists/issues/495
 @@|k.apiairasia.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/498
 @@|cdn.optimizely.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/539
 @@|baixaki.com.br^
 @@|www.baixaki.com.br^
-
 ! https://github.com/hagezi/dns-blocklists/issues/539
 @@|api*.spot.im^
-
 ! https://github.com/hagezi/dns-blocklists/issues/540
 @@|cdn1.affirm.com^
 @@|api-cf.affirm.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/541
 @@|agave.myanalytics.cdn.office.net^
-
 ! https://github.com/hagezi/dns-blocklists/issues/543
 @@|onmilwaukee.com^
 @@|www.onmilwaukee.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/545
 @@|karenpryoracademy.com^
 @@|www.karenpryoracademy.com^
-
 ! https://github.com/hagezi/dns-blocklists/issues/545
-
 ! https://github.com/hagezi/dns-blocklists/issues/552
 @@|ping.ui.com^
-
-
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
 ! Homepage: https://github.com/hagezi/dns-blocklists
@@ -130567,7 +129861,6 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
 ! Syntax: AdBlock
-
 @@||7eer.net^
 @@||adfoc.us^
 @@||adj.st^
