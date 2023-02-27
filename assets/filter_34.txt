@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-02-27T20:05:29.663Z
+! Last modified: 2023-02-27T23:05:38.519Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -420,24 +420,13 @@
 
 ! Microsoft Telemetry
 ||*telemetry.officeapps.live.com^
-||events*.data.microsoft.com^
-! Office 365 Apps and Services
-@@||browser.events.data.microsoft.com^
-@@||*mobile.events.data.microsoft.com^
-@@||self.events.data.microsoft.com^
-! Windows / Xbox-Achievments
-@@||*v10.events.data.microsoft.com^
-@@||*v20.events.data.microsoft.com^
-||measure.office.com^
-||pipe.aria.microsoft.com^
-! Outlook mobile app
-@@||mobile.pipe.aria.microsoft.com^
 ||telemetry*.microsoft.com^
 ||vortex*.data.microsoft.com^
-! Windows / Xbox-Achievments
-@@||*v10.vortex-win.data.microsoft.com^
-@@||*v20.vortex-win.data.microsoft.com^
 ||watson*.microsoft.com^
+||measure.office.com^
+! Office / Windows / XBox
+@@||pipe.aria.microsoft.com^
+@@||events*.data.microsoft.com^
 ! MSN
 ||events*.data.msn.*^
 
@@ -593,8 +582,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 27 Feb 2023 19:20 UTC
-! Version: 2023.0227.1920.15
+! Last modified: 27 Feb 2023 21:52 UTC
+! Version: 2023.0227.2152.07
 ! Syntax: AdBlock
 ! Domains: 33110
 !
