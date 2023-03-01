@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-03-01T06:06:34.017Z
+! Last modified: 2023-03-01T08:06:28.338Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-03-01T06:01:40.137Z
+! Last modified: 2023-03-01T07:33:40.360Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -39635,6 +39635,23 @@ charlestownwyllie.oaklawnnonantum.com^
 !
 ! JP-specific scam
 ||maillovelove.net^
+
+!
+! Source name: AdGuard Japanese filter ad servers first-party
+! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers_firstparty.txt
+!
+!
+! This section contains the list of advertising networks domains, which are hosted on non advertising sites as subdomains.
+! Note, that we only put rules that block full subdomains here and not URL parts (there's `general_url.txt` for that).
+!
+! Good: ||ad.doubleclick.net^
+! Bad: /banner.jpg (should be in general_url.txt)
+! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
+!
+||sgad.surfsnow.jp^
+||mbadv.nan.co.jp^
+||creative.live.tktube.com^
+||ads.world-fusigi.net^
 
 !
 ! Source name: AdGuard German filter ad servers

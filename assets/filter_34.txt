@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-01T02:34:14.579Z
+! Last modified: 2023-03-01T08:06:45.242Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -582,10 +582,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 01 Mär 2023 01:57 UTC
-! Version: 2023.0301.0157.26
+! Last modified: 01 Mär 2023 07:21 UTC
+! Version: 2023.0301.0721.10
 ! Syntax: AdBlock
-! Domains: 33422
+! Domains: 33430
 !
 ||00-tv.com^
 ||000space.com^
@@ -19317,6 +19317,7 @@
 ||loopme.com^
 ||loopme.me^
 ||marketing.loopnetmail.com^
+||lootcs.com^
 ||lootynews.com^
 ||lope4refl.com^
 ||loqnaol.cc^
@@ -21744,6 +21745,7 @@
 ||newenglandcoinco.com^
 ||newestpornstars.com^
 ||newextra.com^
+||newfootwearshop.com^
 ||newforceltd.com^
 ||newgensolutions.net^
 ||newhin.com^
@@ -28839,6 +28841,12 @@
 ||t.t-cb-spook.com^
 ||now.t-mobile.com^
 ||now1.t-mobile.com^
+||data-1df8532686.t-online.de^
+||data-501446ac98.t-online.de^
+||homepage.t-online.de^
+||jdgtgb.t-online.de^
+||lokalwerben.t-online.de^
+||rt.t-online.de^
 ||t13.io^
 ||t1bet.net^
 ||rtb2-useast.t3dsp.com^
@@ -108474,8 +108482,6 @@
 ||t-box.pro^
 ||t-grosche.de^
 ||lmo.t-lanes.ca^
-||tcrwharen.homepage.t-online.de^
-||wc0x83ghk.homepage.t-online.de^
 ||t-ticket.al^
 ||t-view.info^
 ||t-view.top^
@@ -132716,6 +132722,9 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/552
 @@|ping.ui.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/575
+@@||syn-alias.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral for Black & White list
