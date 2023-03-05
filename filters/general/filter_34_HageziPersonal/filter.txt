@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-05T13:08:03.116Z
+! Last modified: 2023-03-05T22:05:25.950Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -582,10 +582,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 05 Mar 2023 12:43 UTC
-! Version: 2023.0305.1243.25
+! Last modified: 05 Mar 2023 21:22 UTC
+! Version: 2023.0305.2122.33
 ! Syntax: AdBlock
-! Domains: 30886
+! Domains: 30892
 !
 ||003store.com^
 ||007sites.com^
@@ -4150,6 +4150,7 @@
 ||gdpr-banner.awsmpsa.com^
 ||awstats.cloud^
 ||awsurveys.com^
+||missmatch3-addressdelivery.mails-5v6i15.aww9lv2.shop^
 ||awyyzx.com^
 ||awzbijw.com^
 ||axdsz.pro^
@@ -5621,6 +5622,7 @@
 ||aff.bstatic.com^
 ||btaoc.xyz^
 ||btbfpuz.com^
+||btc9339.com^
 ||btcclicks.com^
 ||btctrade.lol^
 ||btdnav.com^
@@ -6869,7 +6871,6 @@
 ||mobile-collector.eu01.nr-data.net.cdn.cloudflare.net^
 ||csp-reporting.cloudflare.com^
 ||data.em2.cloudflare.com^
-||a.nel.cloudflare.com^
 ||report-uri.cloudflare.com^
 ||tr.www.cloudflare.com^
 ||cloudflareinsights.com^
@@ -11407,6 +11408,7 @@
 ||erandex.com^
 ||qos.ercdn.com^
 ||ercmkzq.cc^
+||ercnnier.com^
 ||ercoeteasacom.com^
 ||erdecisesgeorg.info^
 ||erehirz.net^
@@ -13259,6 +13261,7 @@
 ||gifthandymanshortage.com^
 ||giftsformobile.com^
 ||gifttopsurvey.top^
+||gig-os.com^
 ||data-17c7ec5f16.giga.de^
 ||data-ec98eddf4a.giga.de^
 ||jdgtgb.giga.de^
@@ -15837,9 +15840,9 @@
 ||api.itpub.cloud^
 ||itrack.it^
 ||itracker360.com^
-||itracmediav4.com^
 ||itskiddien.club^
 ||itskiddoan.club^
+||countly.itslearning.com^
 ||itspsmup.com^
 ||itstuffnews.com^
 ||itsup.com^
@@ -16851,6 +16854,7 @@
 ||kumpulblogger.com^
 ||events.kumulos.com^
 ||stats.kumulos.com^
+||kunde-apperneuerung.com^
 ||kundendienstnflx.com^
 ||kundenserver.de^
 ||kundvisaren.se^
@@ -19369,6 +19373,7 @@
 ||somni.mysynchrony.com^
 ||myteamdev.com^
 ||nzmkzl.mytheresa.com^
+||mythicalbattle.com^
 ||img.side.mythiell.com^
 ||mytop-in.net^
 ||mytopf.com^
@@ -28831,6 +28836,7 @@
 ||hcjpbc.usmagazine.com^
 ||usmaniapsh.com^
 ||usnese.com^
+||usokps.com^
 ||usonar.jp^
 ||usounoul.com^
 ||uspcworks.com^
@@ -43157,7 +43163,6 @@
 ||btc9002.com^
 ||btc9119.com^
 ||btc9229.com^
-||btc9339.com^
 ||btc9449.com^
 ||btc9989.com^
 ||btcblockdefi.xyz^
@@ -136105,6 +136110,13 @@
 ! Videos in Filmstarts.de App on Android
 !dmxleo.dailymotion.com
 @@|streaming.split.io^
+
+! https://github.com/hagezi/dns-blocklists/issues/614
+@@|a.nel.cloudflare.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/621
+@@|spring-oreo.itracmediav4.com^
+@@|pubssl.itmems4.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral
