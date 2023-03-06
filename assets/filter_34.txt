@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-06T02:31:37.418Z
+! Last modified: 2023-03-06T05:05:37.340Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -582,8 +582,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 06 Mar 2023 01:53 UTC
-! Version: 2023.0306.0153.09
+! Last modified: 06 Mar 2023 04:53 UTC
+! Version: 2023.0306.0453.07
 ! Syntax: AdBlock
 ! Domains: 31006
 !
@@ -69706,7 +69706,6 @@
 ||goexoenergy.com^
 ||gofeed.us^
 ||gofelipe.com^
-||file164.gofile.io^
 ||store10.gofile.io^
 ||gofires.com^
 ||gofirstnews.com^
@@ -132525,6 +132524,9 @@
 ! PayPal payment sending service
 @@|xoom.com^
 @@|www.xoom.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/625
+@@|file*.gofile.io^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral
