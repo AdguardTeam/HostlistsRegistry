@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-08T12:07:39.187Z
+! Last modified: 2023-03-08T13:10:09.700Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -582,10 +582,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 08 Mar 2023 11:10 UTC
-! Version: 2023.0308.1110.55
+! Last modified: 08 Mar 2023 12:43 UTC
+! Version: 2023.0308.1243.46
 ! Syntax: AdBlock
-! Domains: 31538
+! Domains: 31547
 !
 ||003store.com^
 ||007sites.com^
@@ -8464,6 +8464,7 @@
 ||scigineer.co.jp^
 ||sw88.shopdisney.co.uk^
 ||data-rep.livetech.shopee.co.id^
+||data-rep.livetech.shopee.co.th^
 ||sift.co.uk^
 ||skymedia.co.uk^
 ||smartcdn.co.uk^
@@ -8905,6 +8906,10 @@
 ||salesdoubler.com.ua^
 ||discover-metrics.cloud.seek.com.au^
 ||shopconvert.com.br^
+||data-rep.livetech.shopee.com.br^
+||data-rep.livetech.shopee.com.co^
+||data-rep.livetech.shopee.com.mx^
+||data-rep.livetech.shopee.com.my^
 ||shoptarget.com.br^
 ||adbox.sina.com.cn^
 ||beacon.sina.com.cn^
@@ -25759,6 +25764,10 @@
 ||shopback.net^
 ||speedtrap.shopdirect.com^
 ||try.shopecoheat.co^
+||data-rep.livetech.shopee.ph^
+||data-rep.livetech.shopee.sg^
+||data-rep.livetech.shopee.tw^
+||data-rep.livetech.shopee.vn^
 ||shopee1666.com^
 ||c-api-bit.shopeemobile.com^
 ||monorail-edge.shopifysvc.com^
@@ -139838,6 +139847,9 @@
 
 ! https://github.com/hagezi/dns-blocklists/issues/647
 @@||cdnhwc1.com^
+
+! https://github.com/hagezi/dns-blocklists/issues/655 
+@@|*-boot.tiktokv.com^
 
 
 ! Title: HaGeZi's White-/Allowlist Referral
