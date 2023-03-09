@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-09T07:05:48.590Z
+! Last modified: 2023-03-09T16:05:51.756Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -18,14 +18,16 @@
 ! Expires: Updated regularly
 ! Syntax: AdGuard
 
-! Adobe
+! *** Adobe ***
+
 ||demdex.net^
 ! Videos on WOW / Sky Ticket / Hulu / ...
 @@||dpm.demdex.net^
 ! Break a lot, really? Let's try ..
 ||omtrdc.net^
 
-! Ads
+! *** Ads ***
+
 |ads.*^
 ! Audio Stream on ikz-online.de
 @@||ads.julephosting.de^
@@ -37,6 +39,7 @@
 @@||ads.twitter.com^
 ! Videos on lavoixdunord.fr
 @@||ads.videoadex.com^
+
 ||*-adkviewtrackingtagserver.*.elasticbeanstalk.com^
 ||*-ads.aimatch.com^
 ||*-adserver-*.*.elasticbeanstalk.com^
@@ -44,10 +47,12 @@
 ||*met-vgwort-de.cdn.ampproject.org^
 ||adform.com^
 ||adform.net^
+
 ||adjust.com^
 ! Referral/Redirect
 @@||app.adjust.com^
 @@||ulink.adjust.com^
+
 ||adjust.net.in^
 ! Referral/Redirect
 @@||app.adjust.net.in^
@@ -55,19 +60,23 @@
 ||adjust.world^
 ||adnxs-simple.com^
 ||adnxs.com^
+
 ||adocean.pl^
 ! Video streams and content on various websites
 @@||ing.adocean.pl^
 @@||myao.adocean.pl^
 @@||tvn*.adocean.pl^
+
 ||adsafeprotected.com^
 ||adserver.*.yahoodns.net^
 ||adsymptotic.com^
 ||adtd.douglas.*^
 ||adtima-*.zascdn.*^
+
 ||advertising.com^
 ! Redirects engadget.com / huffpost.com
 @@||guce.advertising.com^
+
 ||advertising-*.dpgmedia.cloud^
 ||adzxplore.com^
 ||cdn.scarabresearch.com^
@@ -84,7 +93,8 @@
 ||adswizz.com^
 ||dns-*.iij.ad.jp^
 
-! Amazon AWS
+! *** Amazon AWS **
+
 ||*-adserver-*.amazonaws.com^
 ||*-analytics-*.amazonaws.com^
 ||*-beacon-*.amazonaws.com^
@@ -105,7 +115,8 @@
 ||webanalytics-*.amazonaws.com^
 ||wildcard-ads-*.amazonaws.com^
 
-! Amazon Shopping
+! *** Amazon Shopping ***
+
 ||amazon-adsystem.com^
 ! Amazon referral links
 @@||aax-*-retail-direct.amazon-adsystem.com^
@@ -113,16 +124,21 @@
 @@||aax-eu.amazon.*^
 @@||aax-fe.amazon.*^
 @@||assoc-redirect.amazon.*^
+
 ! I'm not sure if you need to unblock this yet
 ! @@||c.amazon-adsystem.com^
+
 ||advertising.amazon.*^
 ||assoc-amazon.*^
+
 ! Forrester Log Service - market analytics company
 ! https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html
 ! Breaks Amazon browsing history
 @@||fls*.amazon.*^
 @@||forester.a2z.com^
+
 ||mads*.amazon.*^
+
 ||unagi*.amazon.*^
 ! Amazon Apps / Kindle / Fire-Tablet
 ! Some say the following "unagi's" limits features, some say it doesn't. I could not notice any limitations so far!
@@ -131,34 +147,43 @@
 ! @@||unagi-na.amazon.com^
 ||rcm*.amazon.*^
 
-! Amazon Device Metrics
+! *** Amazon Device Metrics ***
+
 ||d3p8zr0ffa9t17.cloudfront.net^
 ||device-metrics-*.amazon.com^
 ||mobileanalytics.*.amazonaws.com^
 
-! Amazon Prime Video Telemetry
+! *** Amazon Prime Video Telemetry **
+
 ||*telemetry.insights.video.a2z.com^
 
-! Amazon Sponsored Ads (firetv)
+! *** Amazon Sponsored Ads (firetv) ***
+
 ||aviary.amazon.*^
 
-! Analytics / Tracker / Privacy
+! *** Analytics / Tracker / Privacy ***
+
 |analytics.*.*^
+
 |analytic.*.*^
 ! ControlD analytics page
 @@||analytics.controld.com^
 ! Twitter referral links
 @@||analytics.twitter.com^
+
 |sanalytics.*.*^
 |sanalytic.*.*^
 |metrics.*.*^
+
 |metric.*.*^
 ! Not used for tracking, metrics, analytics
 @@||metric.gstatic.com^
-|piwik.*.*^
+
 |smetrics.*.*^
 |smetric.*.*^
+|piwik.*.*^
 |telemetry.*.*^
+
 |track.*.*^
 ! Referral links
 @@||track.cj.akadns.net^
@@ -182,6 +207,7 @@
 @@||track.plop.pm^
 ! Time Tracking
 @@||track.toggl.com^
+
 |tracking.*.*^
 ! Mainly referral links
 @@||tracking.publicidees.com^
@@ -199,19 +225,23 @@
 @@||tracking.post.japanpost.jp^
 ! Shipment tracking for sephora orders
 @@||tracking.narvar.com^
+
 |gtrack.*.*^
 |trk.*.*^
 ! Mainly referral links
 @@||trk.klclick*.com^
+
 ||*.analytics.yahoo.com^
 ||*analytics.chip.de^
 ||*pixel.br.de^
 ||*track.bild.de^
 ||analytics-*.yinzcam.com^
 ||appdynamics.com^
+
 ||appsflyer.com^
 ! Referral links
 @@||customlinks.appsflyer.com^
+
 ||wsmetrics.batch.com^
 ||branch.io^
 ||braze.com^
@@ -227,54 +257,68 @@
 ||*-tracking.goodgamestudios.com^
 ||go-mpulse.net^
 ||hotjar.com^
+
 ||iocnt.de^
 ||iocnt.net^
 ! Videos on rtl.de
 @@||rtl-relay.iocnt.net^
 @@||data-*.rtl.de^
+
 ||ioam.de^
 ||kameleoon.eu^
 ||kameleoon.com^
 ||*.t.keepitpumpin.io^
 ||indexww.com^
+
 ||logentries.com^
 # IKEA Tradfri
 @@||webhook.logentries.com^
+
 ||api*.mixpanel.com^
 ||newrelic.com^
+
 ! Nike-Shop payment (#498)
 ! Used by Origin for content delivery and others
 @@||cdn*.optimizely.com^
 ||log*.optimizely.com^
+
 ||tagger.opecloud.com^
 ||realytics.io^
 ||scorecardresearch.com^
 ||sidekickopen*.com^
+
 ||split.io^
-! Affects various apps
+! Affects various apps and sites
 @@||auth.split.io^
 @@||cdn.split.io^
 @@||sdk.split.io^
+@@||streaming.split.io^
+
 ||technical-service.net^
 ! n-tv.de livestream
 @@||te.technical-service.net^
+
 ||track*.sevensenders.com^
 ||uptain.de^
 ||f-log*.grammarly.io^
 ||app-analytics*.huami.com^
 ||log-collector.shopee.*^
 ||analytics*.clickdimensions.com^
+
 ||siteintercept.qualtrics.com^
 ! Beaks paypal pay process on some german shopping sites
 @@||*paypal*.siteintercept.qualtrics.com^
+
 ||wt-eu02.net^
 ||wurfl.io^
 ||xiti.com^
 ||mc.yandex.ru^
+
 ||tiqcdn.com^
 ! Adblock-Detection: Bild.de, Sport1 and others
 @@||tags.tiqcdn.com^
 @@||www.asadcdn.com^
+
 ||log*.aliyuncs.com^
 ||*-ia.aimatch.com^
 ||goatcounter.com^
@@ -288,31 +332,39 @@
 ||webcache*.datareporter.eu^
 ||direct-collect.dy-api.*^
 ||*analytics*.echostarbeta.com^
+
 ||analytics.edgekey.net^
 ! Videos on mtv.fi
 @@||ma135-r.analytics.edgekey.net^
 ! Chromecast functionality of Disney+ Hotstar app
 @@||79423.analytics.edgekey.net^
+
 ||collector.xhamster.*^
 ||*-analytics.appspot.com^
 ||tracker-*.appspot.com^
 ||browser-intake-datadoghq.*^
+
 ||tagcommander.com^
 ! Search on edeka.de
 @@||cdn.tagcommander.com^
 ! Redirect
 @@||redirect*.tagcommander.com^
+
 ||aff-tracker.com^
 ||mmstat.com^
+
 ||rutarget.ru^
 ! sberbank.ru
 @@||track.rutarget.ru^
+
 ||device.marketingcloudapis.com^
 ! Dyson App - Digital Assistant
 @@||mcpwgrxj4n94hv1pvdyqw0zwdxyq.device.marketingcloudapis.com^
+
 ||t.eloqua.com^
 ||fwmrm.net^
 ||serving-sys.com^
+
 ||2o7.net^
 ! 2o7.net exceptions
 @@||appleglobal.102.112.2o7.net^
@@ -323,15 +375,19 @@
 @@||subarumysubaruappproduction.112.2o7.net^
 @@||cdn.gigya.commes.122.2o7.net^
 @@||webmdglobal.122.2o7.net^
+
 ||tracking*.adsafety.net^
+
 ||rubiconproject.com^
 ! Ask.com search
 @@||micro.rubiconproject.com^
+
 ||analytics*.elasticbeanstalk.com^
 ||cdn.opecloud.com^
 ||tracking*.labcorp.com^
 
-! Apple
+! *** Apple ***
+
 ||*analytics-events.apple.com^
 ||*analytics-events.news.apple-dns.net^
 ||*feedbackws.icloud.com^
@@ -345,7 +401,8 @@
 ! Homepod reports "no internet connection"
 @@||xp.apple.com^
 
-! Bugtracker
+! *** Bugtracker ***
+
 ||*-bugs-*.rtl.de^
 ||bugs-notify.nordvpn.com^
 ||bugsnag.com^
@@ -359,7 +416,8 @@
 ||sentry.io^
 ||crashtracking.*.ring.com^
 
-! Google
+! *** Google ***
+
 ||*.analytics.google.com^
 ||*google-analytics.l.google.com^
 ||androidtvchannels-pa.googleapis.com^
@@ -372,10 +430,12 @@
 ! BBC Videos
 @@||fundingchoicesmessages.google.com^
 ||google-analytics.com^
+
 ||googleadservices.com^
 ! Google Search referral links
 @@||www.googleadservices.com^
 @@||adservice.google.*^
+
 ||googleoptimize.com^
 ||googlesyndication.com^
 ||googletagmanager.com^
@@ -390,7 +450,8 @@
 ! Google Reviews
 @@||id.google.*^
 
-! Huawei
+! *** Huawei ***
+
 ||ad-*.dbankcloud.*^
 ||ad-*.dbankedge.*^
 ||ad-*.hicloud.com^
@@ -410,15 +471,19 @@
 ||metrics*.dbankcloud.*^
 ||metrics*.hicloud.com^
 
-! Marketing
+! *** Marketing ***
+
 ||1mm.fr^
+
 ||dotomi.com^
 ! Referral links
 @@||cj.dotomi.com^
+
 ! Google Shopping
 @@||ams*-usadmm-ds.dotomi.com
 
-! Microsoft Telemetry
+! *** Microsoft Telemetry ***
+
 ||*telemetry.officeapps.live.com^
 ||telemetry*.microsoft.com^
 ||vortex*.data.microsoft.com^
@@ -430,7 +495,8 @@
 ! MSN
 ||events*.data.msn.*^
 
-! Microsoft Tracker
+! *** Microsoft Tracker ***
+
 ||adv-cloudfilse.azureedge.net^
 ||app-fnsp-matomo-analytics-prod.azurewebsites.net^
 ||bat.bing.com^
@@ -444,23 +510,28 @@
 ! CNAME services.chipotle.com - breaks Chipotle order
 @@||serviceschipotlecom.trafficmanager.net^
 
-! Netflix
+! *** Netflix ***
+
 ||beacon*.netflix.net^
 ||customerevents*.netflix.com^
 ! Prevents Netflix from continuing to play videos where you stopped or paused them
 @@||ichnaea*.netflix.com^
 
-! Nvidia
+! *** Nvidia ***
+
 ||telemetry*.nvidia.com^
 
-! Popups
+! *** Popups ***
+
 ||7e1e8f3eba.com^
 
-! Push Annoyances 
+! *** Push Annoyances ***
+
 ||cleverpush.com^
 ||mycleverpush.com^
 
-! Crappy hosts
+! *** Crappy hosts ***
+
 ||ad*.on.cc^
 ||load*.biz^
 ||news-*.cc^
@@ -474,7 +545,8 @@
 ||wmail-*.com^
 ||wmail-*.xyz^
 
-! Smart TV
+! *** Smart TV ***
+
 ||alphonso.tv^
 ||collect*.myhomescreen.tv^
 ||collector-*.tvsquared.com^
@@ -485,7 +557,8 @@
 ||tvtelemetrie.com^
 ||tvtelemetrie.de^
 ||usage*.myhomescreen.tv^
-# LG webOS
+
+! LG webOS
 ||aic-gfts.lge.com^
 ||qt2-ngfts.lge.com^
 ||cdpbeacon.lgtvcommon.com^
@@ -503,7 +576,8 @@
 ! Needed for TV Service Location Area
 @@||*.info.lgsmartad.com^
 
-! TikTok Fingerprinting
+! *** TikTok Fingerprinting ***
+
 ||*-ad.byteoversea.com^
 ||*-mcs.byteoversea.com^
 ||*-mon-*.bytegsdk.com^
@@ -521,9 +595,11 @@
 ||log*.tiktok.com^
 ||log*.tiktokv.com^
 ||mcs*.snssdk.com^
+
 ||mcs*.tiktok.com^
 ! Embedded TikTok
 @@||mcs-va.tiktok.com^
+
 ||mcs*.tiktokv.com^
 ||mon*.byteoversea.com^
 ||mon*.tiktokv.com^
@@ -538,28 +614,37 @@
 ||xlog*.byteoversea.com^
 ||xlog*.snssdk.com^
 ||xlog*.tiktokv.com^
+
 ! TikTok login
 @@||*-boot.tiktokv.com^
 
-! Xiaomi
+! *** Xiaomi ***
+
 ||t*.a.market.xiaomi.com^
 
-! Videos - @@: Unbreak Videoplayback on various sites
+! *** Videos *** @@: Unbreak Videoplayback on various sites
+
 ||2mdn.net^
 @@||s0-2mdn-net.l.google.com^
 @@||s0.2mdn.net^
+
 @@||damoh.schneevonmorgen.com^
 @@||glomex.com^
+
 ||imrworldwide.com^
+
 ||litix.io^
 ! Videos on dmax.de
 @@||src.litix.io^
+
 ||nmrodam.com^
 ||smartclip.net^
 ||videostep.com^
+
 ||zomap.de^
 @@||lush-clouds.zomap.de^
 @@||swankyrule.zomap.de^
+
 ! Videos on different PL pages
 @@||adocean-pl.hit.gemius.pl^
 @@||gapl.hit.gemius.pl^
@@ -567,13 +652,17 @@
 @@||pro.hit.gemius.pl^
 @@||spl.hit.gemius.pl^
 @@||str.hit.gemius.pl^
+
 ||aniview.com^
 ! Videos on nationalreview.com amt other sites
 @@||play.aniview.com^
+
 ||cws*.conviva.com^
+
 ||videoplaza.tv^
 ! Videos on mtv.fi
 @@||fi-mtv*.videoplaza.tv^
+
 ||sensic.net^
 ! ORF App
 @@||at-config.sensic.net^
@@ -584,10 +673,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 09 Mar 2023 06:30 UTC
-! Version: 2023.0309.0630.24
+! Last modified: 09 Mar 2023 10:17 UTC
+! Version: 2023.0309.1017.41
 ! Syntax: AdBlock
-! Domains: 31107
+! Domains: 31108
 !
 ||003store.com^
 ||007sites.com^
@@ -12674,6 +12763,7 @@
 ||wvvw.france24.com^
 ||franecki.net^
 ||franeski.net^
+||frankgreenauonline.shop^
 ||info.franklin.edu^
 ||service.frankwatching.com^
 ||frap.site^
