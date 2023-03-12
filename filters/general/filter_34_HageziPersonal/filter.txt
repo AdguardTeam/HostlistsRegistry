@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-12T10:05:33.821Z
+! Last modified: 2023-03-12T11:05:06.438Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -28,7 +28,7 @@
 
 ! *** Ads ***
 
-|ads.*^
+|ads.*.*^
 ! Audio Stream on ikz-online.de
 @@||ads.julephosting.de^
 ! Worms Rumble Game
@@ -39,6 +39,9 @@
 @@||ads.twitter.com^
 ! Videos on lavoixdunord.fr
 @@||ads.videoadex.com^
+
+|ad-static.*.*^
+|ads-static.*.*^
 
 ||*-adkviewtrackingtagserver.*.elasticbeanstalk.com^
 ||*-ads.aimatch.com^
@@ -137,8 +140,8 @@
 ! Forrester Log Service - market analytics company
 ! https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-port-requirements.html
 ! Breaks Amazon browsing history
-@@||fls*.amazon.*^
-@@||forester.a2z.com^
+||fls*.amazon.*^
+||forester.a2z.com^
 
 ||mads*.amazon.*^
 
@@ -283,7 +286,7 @@
 
 ! Nike-Shop payment (#498)
 ! Used by Origin for content delivery and others
-@@||cdn*.optimizely.com^
+@@||cdn.optimizely.com^
 ||log*.optimizely.com^
 
 ||tagger.opecloud.com^
@@ -420,7 +423,7 @@
 ||instabug.com^
 ||sentry-cdn.com^
 ||sentry.io^
-|sentry.*^
+|sentry.*.*^
 ||crashtracking.*.ring.com^
 
 ! *** Google ***
@@ -509,6 +512,7 @@
 ||bat.bing.com^
 ||cdnnwlive.azureedge.net^
 ||clarity.ms^
+||clarity.*.*^
 ||fp-cdn.azureedge.net^
 ||live-tfs-omnilytics.azurewebsites.net^
 ||nlo-stl-web.azureedge.net^
@@ -935,10 +939,10 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 12 Mar 2023 09:18 UTC
-! Version: 2023.0312.0918.45
+! Last modified: 12 Mar 2023 10:05 UTC
+! Version: 2023.0312.1005.52
 ! Syntax: AdBlock
-! Domains: 30496
+! Domains: 30498
 !
 ||000space.com^
 ||000webhost.com^
@@ -2583,6 +2587,9 @@
 ||adrtx.net^
 ||adrun.ru^
 ||adrunnr.com^
+||ads.bid^
+||ads.cc^
+||ads.net^
 ||ads-link.net^
 ||ads-lot.ru^
 ||log.ads-m.net^
@@ -20847,7 +20854,6 @@
 ||offfurreton.com^
 ||measure.office.net^
 ||officeinsumos.com^
-||clarity.officer.com^
 ||officetablntry.org^
 ||cp.official-coupons.com^
 ||officialbanisters.com^
@@ -21230,6 +21236,8 @@
 ||optimizefunds.co^
 ||api.optimizely.com^
 ||app.optimizely.com^
+||cdn-pci.optimizely.com^
+||cdn-s-optional.optimizely.com^
 ||client.optimizely.com^
 ||rum.optimizely.com^
 ||tapi.optimizely.com^
@@ -21981,7 +21989,6 @@
 ||phonalytics.com^
 ||phone-location.info^
 ||phoneland.pl^
-||ads-static.phonepe.com^
 ||phoneringtones.info^
 ||phongthuylinhchi.com^
 ||phonroid.com^
@@ -23077,7 +23084,6 @@
 ||qadservice.com^
 ||qajvfiqafqto.com^
 ||qalruhvcoa.com^
-||ad-static.qanda.ai^
 ||qanifinasrilk.com^
 ||smtc.qantas.com^
 ||qapharmco.com^
