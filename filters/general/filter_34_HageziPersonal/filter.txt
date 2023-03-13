@@ -2,7 +2,7 @@
 ! Title: HaGeZi Personal Black & White
 ! Description: An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2023-03-13T09:51:04.967Z
+! Last modified: 2023-03-13T13:09:35.134Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -310,7 +310,6 @@
 ||f-log*.grammarly.io^
 ||app-analytics*.huami.com^
 ||log-collector.shopee.*^
-||data-rep.livetech.shopee.*^
 ||analytics*.clickdimensions.com^
 
 ||siteintercept.qualtrics.com^
@@ -588,7 +587,6 @@
 @@||*.info.lgsmartad.com^
 
 ! *** Shopee - the Shopping "TikTok" ;) ***
-
 ||ccms.shopee.io^
 ||cvf.shopee.*^
 ||dem.shopee.com^
@@ -598,6 +596,7 @@
 ||frd.shopee.*^
 ||gslb.sgw.shopeemobile.com^
 ||livetech*.shopee.*^
+! ||data-rep.livetech.shopee.*^
 ||msdk.shopee.*^
 ||offline.toc.shopeemobile.com^
 ||patronus.idata.shopeemobile.com^
@@ -956,8 +955,8 @@
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE.md
 ! Expires: Updated regularly
-! Last modified: 13 Mar 2023 09:44 UTC
-! Version: 2023.0313.0944.40
+! Last modified: 13 Mar 2023 12:14 UTC
+! Version: 2023.0313.1214.28
 ! Syntax: AdBlock
 ! Domains: 30674
 !
@@ -141993,6 +141992,8 @@
 @@|cmsbetconstruct.com^
 @@|www.cmsbetconstruct.com^
 @@|eu-swarm-newm.betcoswarm.com^
+@@|statistics.bcapps.org^
+@@||widget.cloud.opta.net^
 
 ! F1 App - live blog
 @@|d11rmv9we9fli4.cloudfront.net^
