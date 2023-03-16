@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2023-03-08T20:05:57.083Z
+! Last modified: 2023-03-16T14:49:18.524Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -64,7 +64,7 @@
 ||ssl.bblck.me^
 ||allblock.net^
 
-! Malicious or purchaseable domains found in videogame manuals and title screens
+! Malicious or purchaseable domains found in videogame manuals, title screens, or game driver/patch sites
 ||acclaimsports.com^
 ||acclaimmaxsports.com^
 ||hip-games.com^
@@ -77,6 +77,7 @@
 ||oldgames.4all.cc^
 ||cloudyvideogame.com^
 ||marsshooter.org^
+||fortevr.com^
 ! Dead router connection URİs
 ! To log in to TP-Link routers, use tplinkwifi.net instead.
 ||tplinklogin.net^
@@ -1848,11 +1849,7 @@
 ||21steditionnaturalgh.com^
 ! https://github.com/iam-py-test/investigations/blob/main/2021/11/24/1.md
 ||macsoftwarez.com^
-||ec2-3-238-75-201.compute-1.amazonaws.com^
-||ec2-54-177-49-112.us-west-1.compute.amazonaws.com^
 ||krmcean.xyz^
-||ec2-44-192-106-88.compute-1.amazonaws.com^
-||ec2-52-53-211-120.us-west-1.compute.amazonaws.com^
 ||mygametoa.com^
 ! https://github.com/iam-py-test/investigations/blob/main/2021/11/25/1.md
 ! https://github.com/uBlockOrigin/uAssets/pull/10599
@@ -1961,7 +1958,6 @@
 ||mozicrack.com^
 ||download-srvr.xyz^
 ||134.122.115.190^
-||cybermicto768jubileejhsye6yt6543.s3.us-east-1.amazonaws.com^
 ! https://github.com/uBlockOrigin/uBlock-issues/issues/1774#issuecomment-1000722777
 ||viewty.xyz^
 ||landing.marketstm.com^
@@ -4497,7 +4493,6 @@
 ||zutozone.com^
 ||zz1200.com^
 ||niderschlagsradar.de^
-||2c236979-b1bb-4c7a-915c-df74dbad0d8c.s3.ap-northeast-2.amazonaws.com^
 ||69.162.80.56^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/134903
 ||smartlink.name^
@@ -7972,6 +7967,93 @@
 ||208.88.225.116^
 ||208.88.225.117^
 ||208.88.225.119^
+! https://github.com/AdguardTeam/AdguardFilters/issues/145513
+||achilles-par.com^
+||adrastos-eli.com^
+||aegid-bal.com^
+||aesch-mko.com^
+||agapios-gla.com^
+||ahura-maz.com^
+||alia-iso.com^
+||altwi-cha.com^
+||amanda-cle.info^
+||amazonaws.com^
+||animikii-ana.com^
+||apoll-amp.com^
+||aries-nbl.com^
+||artax-evn.com^
+||aslau-cre.info^
+||balor-ghn.com^
+||baste-znl.com^
+||belia-glp.com^
+||bilqi-omv.com^
+||blode-cpq.com^
+||bricius-ing.com^
+||brije-cor.info^
+||chima-eoj.com^
+||chlod-qui.com^
+||ciar-kep.com^
+||clarus-che.com^
+||cynes-gwf.com^
+||daeda-iyk.com^
+||dipaka-ead.com^
+||enki-mit.com^
+||epiph-xvm.com^
+||ermin-oxj.info^
+||freyr-clo.com^
+||galla-uev.com^
+||gargi-xba.com^
+||gaut-hil.com^
+||gloos-zus.info^
+||gronw-zis.com^
+||gwawl-oqs.com^
+||harib-eir.info^
+||heily-nin.com^
+||hilarion-lar.com^
+||hildr-zah.com^
+||iason-eug.com^
+||illum-sec.com^
+||ingig-nes.com^
+||iorwe-qmf.com^
+||irene-eux.com^
+||kamak-mab.com^
+||kuno-gae.com^
+||laurentia-kor.com^
+||leont-pfd.com^
+||ligeia-gip.com^
+||linus-axz.com^
+||lugaid-kal.com^
+||lykos-bzm.com^
+||lysim-lre.com^
+||lysimachus-aur.com^
+||menelaus-col.com^
+||nesto-sig.com^
+||nicomachus-mac.com^
+||orest-vlv.com^
+||orige-duo.com^
+||orion-gen.com^
+||patro-sfe.com^
+||phara-gte.com^
+||philotheos-iov.com^
+||phoka-mps.com^
+||ponti-pzk.com^
+||pritha-ner.com^
+||pyrrh-xbf.com^
+||quinctus-isb.com^
+||rama-bac.com^
+||rober-srr.com^
+||sigiward-ger.com^
+||sindr-yet.com^
+||tanit-adr.com^
+||thiem-csl.com^
+||thor-pom.com^
+||thutm-bru.com^
+||uthyr-que.com^
+||zeroredirect1.com^
+||zp-dom.com^
+||redirect.newprogrammatic.click^
+||3.231.116.86^
+||54.237.193.255^
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
