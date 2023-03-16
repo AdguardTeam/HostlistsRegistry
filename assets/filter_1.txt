@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-03-16T06:05:56.686Z
+! Last modified: 2023-03-16T12:07:17.629Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-03-16T06:01:33.059Z
+! Last modified: 2023-03-16T12:01:31.273Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -30062,6 +30062,8 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||ana.gomtv.com^
+||log.gomlab.com^
 ||gtm.tipranks.com^
 ||st.film.ru^
 ||trj.valuecommerce.com^
@@ -35996,6 +35998,7 @@ cdn-settings.appsflyersdk.com^
 ! Bad: /banner.jpg (should be in general_url.txt)
 ! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
 !
+||riamiavid.com^
 ||octolinkcom.me^
 ||clickatdcode.com^
 ||aclicktds.org^
@@ -43636,6 +43639,7 @@ cdn-settings.appsflyersdk.com^
 ||aizhubo.co^
 ||aijilu.xyz^
 ||yoydmhb.cn^
+||9831tb.com^
 ||001adafg.xyz^
 ||0024aaaa.com^
 ||004fsdljasd.xyz^
