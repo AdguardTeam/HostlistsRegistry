@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2023-03-08T20:05:57.083Z
+! Last modified: 2023-03-19T21:05:43.287Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -10,11 +10,93 @@
 ! Source name: Dandelion Sprout's Anti-Malware List
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
+! Title: 💊 Dandelion Sprout's Anti-Malware List (for AdGuard Home, and for AdGuard for Android/Windows' DNS filtering)
+! Version: 19March2023v2
+! Expires: 2 days
+! Description: This list goes the extra kilometer to prevent more malware than other mainstream anti-malware lists. It blocks heavily abused top-level domains (and even search engine results for them), blocks domains used in malware redirection trains and in domain parking schemes, blocks sponsored Windows PUP nags on PC guide articles, uses mass blocking of domains belonging to bad IPs, and has many other subcategories that give it a solid advantage over similar lists out there.
+! For other security-specific lists I've made, check out https://github.com/DandelionSprout/adfilt/tree/master/Special%20security%20lists
+! Homepage: https://github.com/DandelionSprout/adfilt/blob/master/Wiki/General-info.md#-english
+
+! ——— Bad top-level domains ———
+! You can expect these domains to have an overwhelming majority of malware domains that have nothing to do with the countries in question. Nevertheless, if you are in a situation where you have to do active business in any of the countries in question, then this list may not be ideal for you.
+! When asking us to whitelist a site: Make sure the site has some sort of public content. Non-public sites and alias sites are usually not whitelisted.
+! Tokelau (Put on break due to too many whitelistings being needed)
+
+! Gabon
+||*.ga^
+@@||google.ga^
+@@||filtri-dns.ga^
+@@||dgdi.ga^
+@@||9191.ga^
+@@||animevsub.ga^
+@@||my.ga^
+@@||shorturl.ga^
+! Mali (Put on break due to too many and too frequent whitelistings being needed)
+
+! Equatorial Guinea
+||*.gq^
+@@||inege.gq^
+@@||tvgelive.gq^
+! Central African Republic
+||*.cf^
+@@||google.cf^
+@@||rths.cf^
+@@||acap.cf^
+! Palau
+||*.pw^
+@@||libgen.pw^
+@@||petridish.pw^
+@@||palaugov.pw^
+@@||dpc.pw^
+@@||buttercup.pw^
+@@||rezka.pw^
+@@||darkcrystal.pw^
+@@||xor.pw^
+@@||fullhdfilmizlesene.pw^
+@@||gopass.pw^
+@@||vost.pw^
+@@||core.pw^
+@@||bittor.pw^
+! Legitimate use is almost non-existent, but has a tiny userbase in Japan. Its extreme common-ness in malware redirections means that the entry will be kept forever.
+||*.top^
+@@||caitlin.top^
+@@||corriente.top^
+@@||gdtot.top^
+@@||nicenature.top^
+@@||reminder.top^
+@@||magocoro.top^
+@@||castlevania.top^
+@@||suiten.top^
+@@||shucks.top^
+@@||1stream.top^
+@@||ambr.top^
+@@||techblog.top^
+@@||changlam10.top^
+@@||changlam11.top^
+@@||pdcdn1.top^
+@@||mastodon.top^
+@@||pressplay.top^
+@@||chillx.top^
+@@||strims.top^
+@@||thedesk.top^
 ! International topical domains that have consistently horrendous scores on watchlists of bad TLDs, and whose use for legit purposes is practically non-existent.
 ||*.loan^
+||*.agency^
+@@||battlefield.agency^
+@@||baam.agency^
+@@||robotzebra.agency^
+@@||uphotel.agency^
 ||*.gdn^
 ||*.bid^
 ||*.ooo^
+! https://bgp.he.net/AS202492#_prefixes (17/07/2022)
+||*.monster^
+@@||egybest.monster^
+@@||yts.monster^
+@@||cloudcdn.monster^
+@@||fedi.monster^
+@@||rollenspiel.monster^
+@@||tts.monster^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131156
 ||*.sbs^
 ! https://github.com/DandelionSprout/adfilt/issues/659
@@ -32,6 +114,8 @@
 
 ! ——— Attempted removal of Google search result entries that lead to the above top-level domains (Advanced adblockers only) ———
 
+
+
 ! ——— You know those ultra-fraudulent auto-generated things that clutter up Google searches? These entries should remove some of them. ———
 
 
@@ -40,9 +124,15 @@
 ! I strongly recommend the use of https://addons.mozilla.org/firefox/addon/google-search-fixer/ for use on Firefox for Android, thus the entries are written for the Chrome version of Google Mobile.
 
 
+
+
 ! ——— For DuckDuckGo ———
 
+
+
 ! ——— For Bing ———
+
+
 
 ! ——— Old dead tech-related domains ———
 ! Domains that used to host lists for adblockers or "hosts" tools, but which are now either used by malware pushers, or could potentially be snapped up by them.
@@ -64,7 +154,7 @@
 ||ssl.bblck.me^
 ||allblock.net^
 
-! Malicious or purchaseable domains found in videogame manuals and title screens
+! Malicious or purchaseable domains found in videogame manuals, title screens, or game driver/patch sites
 ||acclaimsports.com^
 ||acclaimmaxsports.com^
 ||hip-games.com^
@@ -77,6 +167,7 @@
 ||oldgames.4all.cc^
 ||cloudyvideogame.com^
 ||marsshooter.org^
+||fortevr.com^
 ! Dead router connection URİs
 ! To log in to TP-Link routers, use tplinkwifi.net instead.
 ||tplinklogin.net^
@@ -7972,6 +8063,116 @@
 ||208.88.225.116^
 ||208.88.225.117^
 ||208.88.225.119^
+! https://github.com/AdguardTeam/AdguardFilters/issues/145513
+||achilles-par.com^
+||adrastos-eli.com^
+||aegid-bal.com^
+||aesch-mko.com^
+||agapios-gla.com^
+||ahura-maz.com^
+||alia-iso.com^
+||altwi-cha.com^
+||amanda-cle.info^
+||animikii-ana.com^
+||apoll-amp.com^
+||aries-nbl.com^
+||artax-evn.com^
+||aslau-cre.info^
+||balor-ghn.com^
+||baste-znl.com^
+||belia-glp.com^
+||bilqi-omv.com^
+||blode-cpq.com^
+||bricius-ing.com^
+||brije-cor.info^
+||chima-eoj.com^
+||chlod-qui.com^
+||ciar-kep.com^
+||clarus-che.com^
+||cynes-gwf.com^
+||daeda-iyk.com^
+||dipaka-ead.com^
+||enki-mit.com^
+||epiph-xvm.com^
+||ermin-oxj.info^
+||freyr-clo.com^
+||galla-uev.com^
+||gargi-xba.com^
+||gaut-hil.com^
+||gloos-zus.info^
+||gronw-zis.com^
+||gwawl-oqs.com^
+||harib-eir.info^
+||heily-nin.com^
+||hilarion-lar.com^
+||hildr-zah.com^
+||iason-eug.com^
+||illum-sec.com^
+||ingig-nes.com^
+||iorwe-qmf.com^
+||irene-eux.com^
+||kamak-mab.com^
+||kuno-gae.com^
+||laurentia-kor.com^
+||leont-pfd.com^
+||ligeia-gip.com^
+||linus-axz.com^
+||lugaid-kal.com^
+||lykos-bzm.com^
+||lysim-lre.com^
+||lysimachus-aur.com^
+||menelaus-col.com^
+||nesto-sig.com^
+||nicomachus-mac.com^
+||orest-vlv.com^
+||orige-duo.com^
+||orion-gen.com^
+||patro-sfe.com^
+||phara-gte.com^
+||philotheos-iov.com^
+||phoka-mps.com^
+||ponti-pzk.com^
+||pritha-ner.com^
+||pyrrh-xbf.com^
+||quinctus-isb.com^
+||rama-bac.com^
+||rober-srr.com^
+||sigiward-ger.com^
+||sindr-yet.com^
+||tanit-adr.com^
+||thiem-csl.com^
+||thor-pom.com^
+||thutm-bru.com^
+||uthyr-que.com^
+||zeroredirect1.com^
+||zp-dom.com^
+||redirect.newprogrammatic.click^
+||3.231.116.86^
+||54.237.193.255^
+! https://github.com/DandelionSprout/adfilt/issues/808
+! https://www.mandiant.com/resources/blog/tracking-evolution-gootloader-operations (26/01/2023)
+||jonathanbartz.com^
+||jp.imonitorsoft.com^
+||junk-bros.com^
+||kakiosk.adsparkdev.com^
+||kepw.org^
+||kristinee.com^
+||lakeside-fishandchips.com^
+||system-libs.com^
+||usa-winwin.com^
+||optercore.com^
+||optimizewin.com^
+||office-softs.com^
+||office-checker.com^
+||system-checker.com^
+||center-main.com^
+||office-view.com^
+||i-likefood.co^
+||108.61.242.65^
+||146.70.78.43^
+||87.120.254.39^
+||45.150.108.213^
+||92.204.160.240^
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
@@ -11024,11 +11225,40 @@
 ||githubuser.com^
 ||rgithub.com^
 ||githubt.com^
+
+! ——— Usually used by various groups who buy old domains and display illicit ads on them ———
+://ww4.
+@@||ww4.ikea.com^
+://ww5.
+@@||ww5.ikea.com^
+@@||ww5.msu.ac.zw^
+://ww6.
+@@||ww6.generali.pt^
+://ww7.
+@@||ww7.be^
+@@||ww7.readsnk.com^
+://ww8.
+@@||ww8.co^
+@@||ww8.ikea.com^
+@@||ww8.tiki.ne.jp^
+@@||ww8.erovoice.us^
+@@||ww8.anyanime.com^
+@@||ww8.bakushpal.az^
+@@||ww8.tokyoghoulre.com^
+@@||ww8.readonepiece.com^
+://ww9.
+@@||ww9.ikea.com^
+@@||ww9.tiki.ne.jp^
+@@||ww9.sakura.ne.jp^
+@@||ww9.generali.pt^
+@@||ww9.itau.com.br^
 ://ww10.
 ://ww11.
 ://ww12.
 ://ww13.
 ://ww14.
+://ww15.
+@@||ww15.nl^
 ://ww16.
 ://ww17.
 ://ww18.
@@ -11105,5 +11335,13 @@
 
 
 
+
+! https://github.com/AdguardTeam/AdguardFilters/issues/145513
+
+
+
+
+
+||amazonaws.com^$badfilter
 
 ! Placeholder line for alternate list versions
