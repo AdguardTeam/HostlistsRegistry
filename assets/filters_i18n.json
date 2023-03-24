@@ -2680,7 +2680,7 @@
 				"description": "Liste zum Blockieren von Werbung und Trackern. Gibt der Funktionalität den Vorrang vor dem Blockieren."
 			},
 			"en": {
-				"name": "OISD Blocklist Basic",
+				"name": "OISD Blocklist Small",
 				"description": "List for blocking ads and trackers. Prioritizes functionality over blocking."
 			},
 			"es": {
@@ -5275,8 +5275,8 @@
 				"description": "Liste zum Blockieren von Werbung und Trackern. Gibt der Funktionalität Vorrang vor dem Blockieren. Die Wahrscheinlichkeit einer falschen Blockierung ist höher als bei der Basisversion von OISD Blocklist."
 			},
 			"en": {
-				"name": "OISD Blocklist Full",
-				"description": "List for blocking ads and trackers. Prioritizes functionality over blocking. Chances of incorrect blocking are higher than in the basic version of OISD Blocklist."
+				"name": "OISD Blocklist Big",
+				"description": "List for blocking ads and trackers. Prioritizes functionality over blocking. Chances of incorrect blocking are higher than in the small version of OISD Blocklist."
 			},
 			"es": {
 				"name": "Energized Spark",
@@ -6547,10 +6547,26 @@
 				"description": "封鎖討厭的廣告、追蹤器和惡意軟體的清單。寬松版：解除對應用內獎勵、反 AdBlock 等的大量廣告和追蹤器的封鎖。"
 			}
 		},
+		"39": {
+			"en": {
+				"name": "Dandelion Sprout's Anti Push Notifications",
+				"description": "Aims to remove push notifications on sites. Combines eligible rules from AdGuard Popups Filter's anti-push sections and Fanboy's Notifications Blocking List."
+			}
+		},
 		"40": {
 			"en": {
 				"name": "TUR: Turkish Ad Hosts",
 				"description": "Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey."
+			}
+		},
+		"41": {
+			"en": {
+				"name": "CERT Polska List of malicious domains",
+				"description": "CERT Polska deals with incidents and threats originating or aiming at systems in the .pl domain or connected to NASK's or other Polish Internet provider's network."
+			},
+			"pl": {
+				"name": "CERT Polska List of malicious domains",
+				"description": "CERT Polska zajmuje się incydentami mającymi swoje źródło, bądź których celem są hosty w domenie .pl albo podłączone do NASK lub innego polskiego dostawcy Internetu."
 			}
 		}
 	}
