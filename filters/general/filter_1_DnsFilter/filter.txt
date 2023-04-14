@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-04-14T06:05:33.174Z
+! Last modified: 2023-04-14T12:06:52.196Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-04-14T06:01:21.400Z
+! Last modified: 2023-04-14T12:01:47.491Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -34,6 +34,8 @@
 !
 !
 !
+||ubsjyqfek.com^
+||kipeir.com^
 ||ovyondkggnqhmt.xyz^
 ||muddychronicstuffed.com^
 ||dating-roo3.site^
@@ -3045,6 +3047,7 @@ vkcdnservice.appspot.com^
 ||adsyst.biz^
 ||adt328.com^
 ||adt545.net^
+||adt598.com^
 ||adtag.cc^
 ||adtags.mobi^
 ||adtaily.com^
@@ -25269,7 +25272,7 @@ vkcdnservice.appspot.com^
 ||qist.me^
 ||ads-gdl.imovideo.ru^
 ||ads.imovideo.ru^
-||turbo.adsbynimbus.com^
+||adsbynimbus.com^
 ||adsgard.aprod.scopely.io^
 ||ads-interfaces.sc-cdn.net^
 ||adsapi.snapchat.com^
@@ -30571,6 +30574,10 @@ vkcdnservice.appspot.com^
 ! Disabled in DNS filter
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
+!
+! TODO: Move to the regular rules if there are no problems before 01.05.23
+||analytics.s3.amazonaws.com^
+||analyticsengine.s3.amazonaws.com^
 !
 ||lake.joongang.co.kr^
 ||dsas.danawa.com^
@@ -40693,6 +40700,7 @@ inapps.appsflyersdk.com^
 ! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/JapaneseFilter/sections/adservers.txt
 !
 !
+||smart-c.jp^
 ||yeetsalear.com^
 ||jpshopes.com^
 ||safemy-ios.com^
@@ -41808,7 +41816,6 @@ inapps.appsflyersdk.com^
 ||cdn.adt511.net^
 ||cdn.adt523.net^
 ||cdn.adt532.com^
-||cdn.adt598.com^
 ||cdn.advisible.com^
 ||cdn.amplitude.com^
 ||cdn.appsmav.com^
@@ -43541,6 +43548,9 @@ inapps.appsflyersdk.com^
 ||zoushao.xyz^
 ||wvwl.cn^
 ||92ph.cn^
+||uwhreur.cn^
+||sozrrkx.xyz^
+||uqelxct.cn^
 ||001adafg.xyz^
 ||003aldjads.xyz^
 ||004fsdljasd.xyz^
