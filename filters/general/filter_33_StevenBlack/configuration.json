@@ -9,7 +9,10 @@
             "type": "hosts",
             "transformations": [
                 "Validate"
-            ]
+            ],
+            "exclusions": [
+		        "localhost.localdomain"
+		    ]
         }
     ],
     "transformations": [
