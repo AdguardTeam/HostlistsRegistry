@@ -466,6 +466,38 @@
 			"timeUpdated": 1670335868274
 		},
 		{
+			"filterId": "TUR_turkish_ad_hosts",
+			"name": "TUR: Turkish Ad Hosts",
+			"description": "Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey.",
+			"tags": [
+				"purpose:regional",
+				"lang:tr"
+			],
+			"homepage": "https://github.com/symbuzzer/Turkish-Ad-Hosts",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_40.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/symbuzzer/Turkish-Ad-Hosts/main/adguard/filter.txt",
+			"timeAdded": 1676647387443,
+			"timeUpdated": 1682265933428
+		},
+		{
+			"filterId": "POL_cert_polska_list_of_malicious_domains",
+			"name": "POL: CERT Polska List of malicious domains",
+			"description": "CERT Polska deals with incidents and threats originating or aiming at systems in the .pl domain or connected to NASK's or other Polish Internet provider's network.",
+			"tags": [
+				"purpose:regional",
+				"lang:pl"
+			],
+			"homepage": "https://cert.pl/posts/2020/03/ostrzezenia_phishing/",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
+			"sourceUrl": "https://hole.cert.pl/domains/domains_adblock.txt",
+			"timeAdded": 1678201318112,
+			"timeUpdated": 1682340691319
+		},
+		{
 			"filterId": "scam_blocklist_by_durablenapkin",
 			"name": "Scam Blocklist by DurableNapkin",
 			"description": "List for blocking untrustworthy websites",
@@ -493,7 +525,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
 			"sourceUrl": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.txt",
 			"timeAdded": 1622639343000,
-			"timeUpdated": 1682299987398
+			"timeUpdated": 1682340692851
 		},
 		{
 			"filterId": "dandelion_sprouts_anti_malware_list",
@@ -523,7 +555,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
 			"sourceUrl": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt",
 			"timeAdded": 1622639343000,
-			"timeUpdated": 1682299989058
+			"timeUpdated": 1682340694027
 		},
 		{
 			"filterId": "staklerware_indicators_list",
@@ -539,6 +571,21 @@
 			"sourceUrl": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
 			"timeAdded": 1660743805268,
 			"timeUpdated": 1680714328288
+		},
+		{
+			"filterId": "shadowwhisperers_malware_list",
+			"name": "ShadowWhisperer's Malware List",
+			"description": "Malicious Sites, PUPs, Malware, Brower Hijackers, Phishing Sites",
+			"tags": [
+				"purpose:security"
+			],
+			"homepage": "https://github.com/ShadowWhisperer/BlockLists",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware",
+			"timeAdded": 1681400345355,
+			"timeUpdated": 1682107546757
 		},
 		{
 			"filterId": "nocoin_filter_list",
