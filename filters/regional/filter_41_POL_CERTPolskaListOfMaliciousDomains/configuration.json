@@ -8,6 +8,7 @@
         "source": "https://hole.cert.pl/domains/domains_adblock.txt",
         "type": "adblock",
         "transformations": [
+          "RemoveModifiers",
           "Validate"
         ]
       }
