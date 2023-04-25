@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-04-25T06:05:51.504Z
+! Last modified: 2023-04-25T12:06:37.447Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-04-25T06:01:41.827Z
+! Last modified: 2023-04-25T12:01:43.680Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -34,6 +34,8 @@
 !
 !
 !
+||watchtopapps.com^
+||notdyedfinance.com^
 ||paigna.com^
 ||sooreejy.xyz^
 ||bh-dm.com^
@@ -1436,6 +1438,15 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17139
 ||gjc.gjirafa.com^
 ||code.ainsyndication.com^
+!
+!---------------------------------------------------------------------
+!------------------------------ Croatian -----------------------------
+!---------------------------------------------------------------------
+! NOTE: Croatian
+!
+! https://github.com/AdguardTeam/AdguardFilters/issues/149285
+||traffic.styria.hr^
+||widget.admiral.hr^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/140344
 ||eph-adsjutarnji.cdn.sysbee.net^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17278
@@ -15138,7 +15149,6 @@ vkcdnservice.appspot.com^
 ||notadsworld.com^
 ||notchcollectormuffin.com^
 ||notcotal.com^
-||notdyedfinance.com^
 ||notesbook.in^
 ||nothingpetwring.com^
 ||nothycantyo.com^
