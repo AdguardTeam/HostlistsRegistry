@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-04-26T06:05:24.475Z
+! Last modified: 2023-04-26T11:04:59.774Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-04-26T06:01:33.887Z
+! Last modified: 2023-04-26T10:09:27.818Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.15
 !
@@ -1276,6 +1276,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||banners.defenceweb.co.za^
 ||smart-placements-sdk.ex.co^
 ||adtech-prod.nikecloud.com^
 ||newrevive.detik.com^
@@ -26950,6 +26951,7 @@ vkcdnservice.appspot.com^
 !||i.snssdk.com/log/*
 !||i.snssdk.com/slardar/sdk.js
 !
+||widget.sparrow.ru^
 ||medipartner.jp^
 ||tr.usergram.info^
 ||code.usergram.info^
@@ -27482,7 +27484,7 @@ vkcdnservice.appspot.com^
 ||kissmetrics.io^
 ||sanity-dataplane.rudderstack.com^
 ||c1.politexpert.ru^
-||logrocket.com^
+||cdn.logrocket.com^
 ||ipmeta.io^
 ||datasign.co^
 ||analytics.daasrv.net^
@@ -33521,7 +33523,6 @@ vkcdnservice.appspot.com^
 ||tracker.cdnbye.com^
 ||tracker.cpapath.com^
 ||tracker.downdetector.com^
-||tracker.files.fm^
 ||tracker.giftd.ru^
 ||tracker.joongang.co.kr^
 ||tracker.joost.com^
@@ -34984,6 +34985,7 @@ inapps.appsflyersdk.com^
 ||itrac.it^
 ||itracker360.com^
 ||itracmediav4.com^
+||izatcloud.net^
 ||janrain.xyz^
 ||journera.com^
 ||journity.com^
@@ -52598,8 +52600,6 @@ analytics-*.aasaam.com
 @@||redirect.appmetrica.yandex.com^|
 ! Fixing redirects through guce.advertising.com (www.engadget.com, www.huffpost.com)
 @@||guce.advertising.com^|
-! Unblock logrocket.com blog
-@@||blog.logrocket.com^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/27196
 @@||a.adwolf.ru^|
 ! https://github.com/AdguardTeam/AdguardFilters/issues/26607
