@@ -2,7 +2,7 @@
 ! Title: TUR: Turkish Ad Hosts
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey.
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
-! Last modified: 2023-05-16T21:05:29.085Z
+! Last modified: 2023-05-17T18:05:50.841Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.12
 !
@@ -15,7 +15,7 @@
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey...
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
 ! License: GPLv3
-! Last modified: 2023-05-16T21:02:39.072Z
+! Last modified: 2023-05-17T17:28:45.434Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.19
 !
@@ -23,6 +23,7 @@
 ||061353efff4748e1a51974616704a9cc.js.ubembed.com^
 ||0b1ebd324d574f37b3516c9a1b33b66d-eb42afa9716f.cdn.forter.com^
 ||12112336.pix-cdn.org^
+||1558334541.rsc.cdn77.org^
 ||3p-geo.yahoo.com^
 ||3p-udc.yahoo.com^
 ||510002161.collect.igodigital.com^
@@ -31,6 +32,7 @@
 ||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^
 ||6371800.collect.igodigital.com^
 ||8881img.com^
+||9to5mac-com.videoplayerhub.com^
 ||a.ad.gt^
 ||a.adtng.com^
 ||a.appbaqend.com^
@@ -131,6 +133,7 @@
 ||amazonclix.com^
 ||amer.hhkld.com^
 ||amplify.outbrain.com^
+||amunfezanttor.com^
 ||an.facebook.com^
 ||an.yandex.ru^
 ||analytics.archive.org^
@@ -328,7 +331,9 @@
 ||cdn.taboola.com^
 ||cdn.thequin.ai^
 ||cdn.unblockia.com^
+||cdn.unibotscdn.com^
 ||cdn.valuad.cloud^
+||cdn.viglink.com^
 ||cdn.webpushr.com^
 ||cdn.yourwebbars.com^
 ||cdn-api.admost.com^
@@ -364,6 +369,7 @@
 ||cluster.awmdelivery.com^
 ||cm.mgid.com^
 ||cmp.uniconsent.com^
+||cms.quantserve.com^
 ||cnt.trvdp.com^
 ||code.createjs.com^
 ||code.jivosite.com^
@@ -481,6 +487,7 @@
 ||edge-sentry-box.otelz.com^
 ||eezegrip.net^
 ||emea.hhkld.com^
+||engine.adzerk.net^
 ||errnewlog.umeng.com^
 ||etahub.com^
 ||etl-xlmc-ssl.sandai.net^
@@ -491,6 +498,7 @@
 ||eum.kuveytturk.com.tr^
 ||eus.rubiconproject.com^
 ||euw-ice.360yield.com^
+||event-stream.spot.im^
 ||events.apester.com^
 ||events.bitaksi.com^
 ||events.browsiprod.com^
@@ -513,6 +521,9 @@
 ||fastclick.net^
 ||fastlane.rubiconproject.com^
 ||fcg-api.exponea.com^
+||fcmatch.google.com^
+||fcmatch.youtube.com^
+||fe.cabioredtop.com^
 ||firebase-settings.crashlytics.com^
 ||fiverr.ck-cdn.com^
 ||flash.sec.intl.miui.com^
@@ -541,6 +552,7 @@
 ||get.s-onetag.com^
 ||ghb.adtelligent.com^
 ||ghb.spotim.market^
+||ghbtns.com^
 ||gj.mmstat.com^
 ||global.adserver.yahoo.com^
 ||global.ketchcdn.com^
@@ -619,6 +631,7 @@
 ||intake-analytics.wikimedia.org^
 ||intake-logging.wikimedia.org^
 ||inv-nets.admixer.net^
+||invitejs.trustpilot.com^
 ||io.innertrends.com^
 ||ipac.ctnsnet.com^
 ||ipcheck.tmgrup.com.tr^
@@ -655,10 +668,12 @@
 ||kinja-com.videoplayerhub.com^
 ||krk.kargo.com^
 ||kvezz.com^
+||kz.rebakeassets.com^
 ||l.sharethis.com^
 ||laquesis.data.olxcdn.com^
 ||launches.appsflyer.com^
 ||lenovo.demdex.net^
+||lephaush.net^
 ||lexicon.33across.com^
 ||lgr.visilabs.net^
 ||lider90.com^
@@ -703,6 +718,7 @@
 ||mczbf.com^
 ||me-client.eservice.emarsys.net^
 ||med-api.admost.com^
+||media.ethicalads.io^
 ||media.net^
 ||medya.ilan.gov.tr.whecloud.com^
 ||medyanative.com^
@@ -747,6 +763,7 @@
 ||mug.criteo.com^
 ||munchkin.marketo.net^
 ||mweb-hb.presage.io^
+||my.rtmark.net^
 ||mynetreklam.com^
 ||n0633.com^
 ||nativespot.com^
@@ -763,6 +780,7 @@
 ||nvidiacorp.us-5.evergage.com^
 ||o.gez.io^
 ||odb.outbrain.com^
+||odr.mookie1.com^
 ||offer.slgnt.eu^
 ||omclyzyapf.com^
 ||onetag-sys.com^
@@ -817,6 +835,7 @@
 ||playbuzzltd-d.openx.net^
 ||player.adtelligent.com^
 ||player.aniview.com^
+||player.spotim.market^
 ||pnsdkapi.turktelekom.com.tr^
 ||pornhdr.cf^
 ||poweredby.jads.co^
@@ -832,11 +851,13 @@
 ||protagcdn.com^
 ||ps.eyeota.net^
 ||pub-sdk-cfg.criteo.com^
+||publisher-assets.spot.im^
 ||punosy.best^
 ||punosy.top^
 ||purch-match.dotomi.com^
 ||purch-sync.go.sonobi.com^
 ||push.dengage.com^
+||push-sdk.net^
 ||pushs.euromsg.com^
 ||px.adhigh.net^
 ||px.airpr.com^
@@ -847,6 +868,7 @@
 ||qsearch-a.akamaihd.net^
 ||r.stripe.com^
 ||radar.cedexis.com^
+||rauvoaty.net^
 ||rebrand.ly^
 ||recs.engageya.com^
 ||redirect.frontend.weborama.fr^
@@ -988,6 +1010,7 @@
 ||static.lcwaikiki.com^
 ||static.onedio.com^
 ||static.scarabresearch.com^
+||static.tapfiliate.com^
 ||static.trafficjunky.com^
 ||static.virgul.com^
 ||static.yieldmo.com^
@@ -996,6 +1019,7 @@
 ||statistics.daktilo.com^
 ||stats.bannersnack.com^
 ||stats.birgun.net^
+||stats.kde.org^
 ||stats.redditmedia.com^
 ||stats.vidyome.com^
 ||stats.vk-portal.net^
@@ -1114,6 +1138,7 @@
 ||w.usabilla.com^
 ||w3-reporting.reddit.com^
 ||w3-reporting-nel.reddit.com^
+||waust.at^
 ||web.webpushs.com^
 ||webanalytics.logitechg.com^
 ||websdk.appsflyer.com^
@@ -1133,9 +1158,9 @@
 ||ws.sahibinden.com^
 ||ws.sharethis.com^
 ||ws-na.amazon-adsystem.com^
+||wurfl.io^
 ||wuzbhjpvsf.com^
 ||ww1.newffr.com^
-||waust.at^
 ||www.blockadsnot.com^
 ||www.datadoghq-browser-agent.com^
 ||www.dianomi.com^
