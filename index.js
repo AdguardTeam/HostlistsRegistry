@@ -23,6 +23,7 @@ const localesDir = path.join(__dirname, './locales');
     try {
         await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
     } catch (e) {
-        console.error('Failed to compile hostlists', e)
+        console.error('Failed to compile hostlists', e);
+        process.exit(1);
     }
 })();
