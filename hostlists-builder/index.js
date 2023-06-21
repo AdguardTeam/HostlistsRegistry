@@ -247,6 +247,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     // populates metadata for filter
     const filterMetadata = {
       filterId: metadata.filterId,
+      id: metadata.id,
       name: metadata.name,
       description: metadata.description,
       tags: metadata.tags,
@@ -258,6 +259,11 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
       timeAdded: metadata.timeAdded,
       timeUpdated: timeUpdated,
     };
+
+    console.log();
+    console.log('--- metadata filter id: ', filterMetadata.id);
+    console.log();
+
     if (metadata.environment === "prod") {
       filtersMetadata.push(filterMetadata);
     }
