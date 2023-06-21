@@ -2,6 +2,7 @@
 	"filters": [
 		{
 			"filterId": "adguard_dns_filter",
+			"id": 1,
 			"name": "AdGuard DNS filter",
 			"description": "List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking",
 			"tags": [
@@ -17,6 +18,7 @@
 		},
 		{
 			"filterId": "1hosts_lite",
+			"id": 24,
 			"name": "1Hosts (Lite)",
 			"description": "List for blocking pesky ads, trackers, and malware. Balanced version: set & forget, doesn't hamper user experience.",
 			"tags": [
@@ -32,6 +34,7 @@
 		},
 		{
 			"filterId": "oisd_full",
+			"id": 27,
 			"name": "OISD Blocklist Big",
 			"description": "List for blocking ads and trackers. Prioritizes functionality over blocking. Chances of incorrect blocking are higher than in the small version of OISD Blocklist.",
 			"tags": [
@@ -43,10 +46,11 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
 			"sourceUrl": "https://big.oisd.nl/",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1687327555404
+			"timeUpdated": 1687348228799
 		},
 		{
 			"filterId": "adway_default_blocklist",
+			"id": 2,
 			"name": "AdAway Default Blocklist",
 			"description": "Open-source ad blocker for Android using the hosts file",
 			"tags": [
@@ -62,6 +66,7 @@
 		},
 		{
 			"filterId": "notracking_hosts_blocklists",
+			"id": 32,
 			"name": "The NoTracking blocklist",
 			"description": "The NoTracking blocklist is a DNS based filter list for blocking ads, malware, phishing and other online garbage.",
 			"tags": [
@@ -77,6 +82,7 @@
 		},
 		{
 			"filterId": "steven_blacks_list",
+			"id": 33,
 			"name": "Steven Black's List",
 			"description": "Unified hosts file (adware + malware).",
 			"tags": [
@@ -92,6 +98,7 @@
 		},
 		{
 			"filterId": "hagezi_personal",
+			"id": 34,
 			"name": "HaGeZi Personal Black & White",
 			"description": "An extension for existing blocklists, my personal black and whitelist. Unblocks false positives and referral domains.",
 			"tags": [
@@ -107,6 +114,7 @@
 		},
 		{
 			"filterId": "1hosts_mini",
+			"id": 38,
 			"name": "1Hosts (mini)",
 			"description": "List for blocking pesky ads, trackers, and malware. Lenient version: unblocks a number of ads & trackers for in-app rewards, anti-AdBlock, etc.",
 			"tags": [
@@ -122,6 +130,7 @@
 		},
 		{
 			"filterId": "peter_lowe_list",
+			"id": 3,
 			"name": "Peter Lowe's Blocklist",
 			"description": "Blocklist with hostnames of ad and tracking servers",
 			"tags": [
@@ -137,6 +146,7 @@
 		},
 		{
 			"filterId": "dan_pollocks_list",
+			"id": 4,
 			"name": "Dan Pollock's List",
 			"description": "List for blocking ads and preventing user tracking",
 			"tags": [
@@ -152,6 +162,7 @@
 		},
 		{
 			"filterId": "oisd_basic",
+			"id": 5,
 			"name": "OISD Blocklist Small",
 			"description": "List for blocking ads and trackers. Prioritizes functionality over blocking.",
 			"tags": [
@@ -163,10 +174,11 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_5.txt",
 			"sourceUrl": "https://small.oisd.nl/",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1687327568164
+			"timeUpdated": 1687348242290
 		},
 		{
 			"filterId": "windowsspyblocker_hosts_spy_rules",
+			"id": 23,
 			"name": "WindowsSpyBlocker - Hosts spy rules",
 			"description": "List for blocking spying and tracking on Windows",
 			"tags": [
@@ -182,6 +194,7 @@
 		},
 		{
 			"filterId": "no_google",
+			"id": 37,
 			"name": "No Google",
 			"description": "Completely blocks all Google-related domains (including YouTube).",
 			"tags": [
@@ -197,6 +210,7 @@
 		},
 		{
 			"filterId": "dandelion_sprouts_game_console_adblock_list",
+			"id": 6,
 			"name": "Dandelion Sprout's Game Console Adblock List",
 			"description": "List for blocking ads on videogame consoles that use AdGuard Home",
 			"tags": [
@@ -212,6 +226,7 @@
 		},
 		{
 			"filterId": "perflyst_dandelion_sprout_smart_tv_blocklist_for_adguard_home",
+			"id": 7,
 			"name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
 			"description": "List for preventing smart TVs from sending metadata to the vendor, and for blocking ads in apps and movie services",
 			"tags": [
@@ -227,6 +242,7 @@
 		},
 		{
 			"filterId": "NOR_dandelion_sprouts_anti_malware_list",
+			"id": 13,
 			"name": "NOR: Dandelion Sprouts nordiske filtre",
 			"description": "Dandelion Sprout's Nordic Filters (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)",
 			"tags": [
@@ -243,6 +259,7 @@
 		},
 		{
 			"filterId": "POL_polish_filters_for_pi_hole",
+			"id": 14,
 			"name": "POL: Polish filters for Pi-hole",
 			"description": "Polish filters for Pi-hole.",
 			"tags": [
@@ -259,6 +276,7 @@
 		},
 		{
 			"filterId": "KOR_youslist",
+			"id": 15,
 			"name": "KOR: YousList",
 			"description": "List for blocking ads mainly on Korean websites",
 			"tags": [
@@ -275,6 +293,7 @@
 		},
 		{
 			"filterId": "VNM_abpvn",
+			"id": 16,
 			"name": "VNM: ABPVN List",
 			"description": "List for blocking ads on Vietnamese websites",
 			"tags": [
@@ -291,6 +310,7 @@
 		},
 		{
 			"filterId": "SWE_frellwit_swedish_hosts_file",
+			"id": 17,
 			"name": "SWE: Frellwit's Swedish Hosts File",
 			"description": "List for blocking ads, tracking, scams & malware mainly on Swedish websites",
 			"tags": [
@@ -307,6 +327,7 @@
 		},
 		{
 			"filterId": "ITA_filtri_dns",
+			"id": 18,
 			"name": "ITA: Filtri-DNS",
 			"description": "List for blocking ads on Italian websites based on EasyList Italy and ADB X Files",
 			"tags": [
@@ -323,6 +344,7 @@
 		},
 		{
 			"filterId": "IRN_unwanted_iranian_domains",
+			"id": 19,
 			"name": "IRN: PersianBlocker list",
 			"description": "Optimal and extensive list for blocking ads and trackers on Persian language sites",
 			"tags": [
@@ -339,6 +361,7 @@
 		},
 		{
 			"filterId": "MKD_macedonian_pi_hole_blocklist",
+			"id": 20,
 			"name": "MKD: Macedonian Pi-hole Blocklist",
 			"description": "List for blocking ads on Macedonian websites",
 			"tags": [
@@ -355,6 +378,7 @@
 		},
 		{
 			"filterId": "CHN_anti_ad",
+			"id": 21,
 			"name": "CHN: anti-AD",
 			"description": "List for blocking ads in the Chinese region. Aims at privacy protection.",
 			"tags": [
@@ -371,6 +395,7 @@
 		},
 		{
 			"filterId": "IDN_abpindo",
+			"id": 22,
 			"name": "IDN: ABPindo",
 			"description": "Filter complementary to EasyList for blocking ads on Indonesian and Malaysian websites",
 			"tags": [
@@ -387,6 +412,7 @@
 		},
 		{
 			"filterId": "KOR_list_kr",
+			"id": 25,
 			"name": "KOR: List-KR DNS",
 			"description": "A DNS version of List-KR, a filter for websites in the Korean language",
 			"tags": [
@@ -403,6 +429,7 @@
 		},
 		{
 			"filterId": "TUR_turk_adlist",
+			"id": 26,
 			"name": "TUR: turk-adlist",
 			"description": "List for blocking ads and annoying elements on Turkish websites",
 			"tags": [
@@ -419,6 +446,7 @@
 		},
 		{
 			"filterId": "CHN_adrules",
+			"id": 29,
 			"name": "CHN: AdRules DNS List",
 			"description": "List for blocking ads in the Chinese region",
 			"tags": [
@@ -435,6 +463,7 @@
 		},
 		{
 			"filterId": "HUN_hufilter",
+			"id": 35,
 			"name": "HUN: Hufilter",
 			"description": "The Hungarian Adblock List.",
 			"tags": [
@@ -451,6 +480,7 @@
 		},
 		{
 			"filterId": "LIT_easylist_lithuania",
+			"id": 36,
 			"name": "LIT: EasyList Lithuania",
 			"description": "This is a (currently pretty small and not much tested) version of EasyList Lithuania designed for use with domains-based tools.",
 			"tags": [
@@ -467,6 +497,7 @@
 		},
 		{
 			"filterId": "TUR_turkish_ad_hosts",
+			"id": 40,
 			"name": "TUR: Turkish Ad Hosts",
 			"description": "Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey.",
 			"tags": [
@@ -483,6 +514,7 @@
 		},
 		{
 			"filterId": "POL_cert_polska_list_of_malicious_domains",
+			"id": 41,
 			"name": "POL: CERT Polska List of malicious domains",
 			"description": "CERT Polska deals with incidents and threats originating or aiming at systems in the .pl domain or connected to NASK's or other Polish Internet provider's network.",
 			"tags": [
@@ -495,10 +527,11 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
 			"sourceUrl": "https://hole.cert.pl/domains/domains_adblock.txt",
 			"timeAdded": 1678201318112,
-			"timeUpdated": 1687345536671
+			"timeUpdated": 1687348252707
 		},
 		{
 			"filterId": "scam_blocklist_by_durablenapkin",
+			"id": 10,
 			"name": "Scam Blocklist by DurableNapkin",
 			"description": "List for blocking untrustworthy websites",
 			"tags": [
@@ -514,6 +547,7 @@
 		},
 		{
 			"filterId": "urlhaus_filter_online",
+			"id": 11,
 			"name": "Malicious URL Blocklist (URLHaus)",
 			"description": "Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus",
 			"tags": [
@@ -529,6 +563,7 @@
 		},
 		{
 			"filterId": "dandelion_sprouts_anti_malware_list",
+			"id": 12,
 			"name": "Dandelion Sprout's Anti-Malware List",
 			"description": "Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)",
 			"tags": [
@@ -544,6 +579,7 @@
 		},
 		{
 			"filterId": "curben_phishing_filter",
+			"id": 30,
 			"name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
 			"description": "Blocklist of phishing websites, based on PhishTank and OpenPhish lists",
 			"tags": [
@@ -559,6 +595,7 @@
 		},
 		{
 			"filterId": "staklerware_indicators_list",
+			"id": 31,
 			"name": "Stalkerware Indicators List",
 			"description": "Indicators of compromise on Stalkerware applications for Android and iOS.",
 			"tags": [
@@ -574,6 +611,7 @@
 		},
 		{
 			"filterId": "shadowwhisperers_malware_list",
+			"id": 42,
 			"name": "ShadowWhisperer's Malware List",
 			"description": "Malicious Sites, PUPs, Malware, Brower Hijackers, Phishing Sites",
 			"tags": [
@@ -589,6 +627,7 @@
 		},
 		{
 			"filterId": "nocoin_filter_list",
+			"id": 8,
 			"name": "NoCoin Filter List",
 			"description": "List for blocking browser-based crypto mining",
 			"tags": [
@@ -604,6 +643,7 @@
 		},
 		{
 			"filterId": "the_big_list_of_hacked_malware_web_sites",
+			"id": 9,
 			"name": "The Big List of Hacked Malware Web Sites",
 			"description": "List of websites that are hacked with malware, ransomware or trojans",
 			"tags": [
