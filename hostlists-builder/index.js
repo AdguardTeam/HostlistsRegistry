@@ -259,11 +259,6 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
       timeAdded: metadata.timeAdded,
       timeUpdated: timeUpdated,
     };
-
-    console.log();
-    console.log('--- metadata filter id: ', filterMetadata.id);
-    console.log();
-
     if (metadata.environment === "prod") {
       filtersMetadata.push(filterMetadata);
     }
