@@ -247,6 +247,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir) {
     // populates metadata for filter
     const filterMetadata = {
       filterId: metadata.filterId,
+      id: metadata.id,
       name: metadata.name,
       description: metadata.description,
       tags: metadata.tags,
