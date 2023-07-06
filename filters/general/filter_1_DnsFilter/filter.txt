@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-07-06T06:06:36.409Z
+! Last modified: 2023-07-06T08:06:22.091Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-07-06T06:01:32.247Z
+! Last modified: 2023-07-06T07:59:49.532Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -34,6 +34,7 @@
 !
 !
 !
+||pseemsee.com^
 ||blbazybajvzvw.top^
 ||excellentvids.online^
 ||adsterratech.com^
@@ -53962,6 +53963,9 @@ analytics-*.aasaam.com
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1412
+! line25.com - not able to accept cookies to use the page
+@@|ezodn.com^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1411
 @@||gate.first-id.fr^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1401
