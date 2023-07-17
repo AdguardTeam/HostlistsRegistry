@@ -1,0 +1,19 @@
+{
+    "name": "ISR: EasyList Hebrew",
+    "description": "List for blocking ads in Hebrew.",
+    "homepage": "https://github.com/easylist/EasyListHebrew",
+    "sources": [
+      {
+        "name": "EasyList Hebrew (Hosts)",
+        "source": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/hosts.txt",
+        "type": "hosts",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
