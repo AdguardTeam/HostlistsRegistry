@@ -16,7 +16,7 @@
 		"hostlist.4.description": "Фільтр для блокування реклами та запобігання стеження за користувачами"
 	},
 	{
-		"hostlist.5.name": "OISD Blocklist Basic",
+		"hostlist.5.name": "OISD Blocklist Small",
 		"hostlist.5.description": "Фільтр для блокування реклами та стеження. Пріоритет функціональності над блокуванням."
 	},
 	{
@@ -37,7 +37,7 @@
 	},
 	{
 		"hostlist.14.name": "POL: Polish filters for Pi hole",
-		"hostlist.14.description": "Польські фільтри для Pi hole."
+		"hostlist.14.description": "Польські фільтри для Pi-hole."
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
@@ -104,8 +104,8 @@
 		"hostlist.26.description": "Фільтр для блокування реклами та надокучливих елементів на сайтах турецькою мовою"
 	},
 	{
-		"hostlist.27.name": "OISD Blocklist Full",
-		"hostlist.27.description": "Список для блокування реклами та трекерів. Віддає перевагу функціональності перед блокуванням. Імовірність помилкового блокування вища, ніж у базовій версії OISD Blocklist."
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "Список для блокування реклами та стеження. Віддає перевагу функціональності перед блокуванням. Ризик помилкових блокування вищий, ніж в OISD Blocklist Small."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
@@ -128,8 +128,8 @@
 		"hostlist.31.description": "Індикатори компрометації додатків Stalkerware для Android та iOS."
 	},
 	{
-		"hostlist.34.name": "HaGeZi Personal Black & White",
-		"hostlist.34.description": "Доповнення для наявних фільтрів, мій особистий фільтр блокування та винятків. Розблоковує помилкові спрацьовування та реферальні домени."
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "Очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, партнерську програму, стеження, показники, телеметрію, фішинг, зловмисне програмне забезпечення, шахрайство, фейки тощо."
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -146,5 +146,21 @@
 	{
 		"hostlist.38.name": "1Hosts (mini)",
 		"hostlist.38.description": "Фільтр для блокування набридливої реклами, стеження і зловмисного програмного забезпечення. М'яка версія: розблоковує певну рекламу і стеження задля винагород у додатках, антиблокувальних сповіщень тощо."
+	},
+	{
+		"hostlist.39.name": "Dandelion Sprout's Anti Push Notifications",
+		"hostlist.39.description": "Призначений для видалення push-сповіщень на сайтах. Поєднує відповідні правила з розділів проти спливних повідомлень Фільтра спливних сповіщень AdGuard і списку блокування сповіщень Fanboy."
+	},
+	{
+		"hostlist.40.name": "TUR: Turkish Ad Hosts",
+		"hostlist.40.description": "Необхідний файл хостів для блокування стеження і, можливо, рекламних мереж в популярних мобільних додатках (і, можливо, вебсайтах) в Туреччині."
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
+		"hostlist.41.description": "CERT Polska займається інцидентами та загрозами, що виникають або спрямовані на системи в домені .pl або підключені до мережі NASK чи іншого польського інтернет-провайдера."
+	},
+	{
+		"hostlist.42.name": "ShadowWhisperer's Malware List",
+		"hostlist.42.description": "Шахрайські сайти, шкідливі програми, фішингові сайти"
 	}
 ]

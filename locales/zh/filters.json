@@ -16,7 +16,7 @@
 		"hostlist.4.description": "拦截广告和用户跟踪器的列表"
 	},
 	{
-		"hostlist.5.name": "OISD Blocklist Basic",
+		"hostlist.5.name": "OISD Blocklist Small",
 		"hostlist.5.description": "用于拦截广告和跟踪器的列表。功能优先于拦截。"
 	},
 	{
@@ -36,8 +36,8 @@
 		"hostlist.13.description": "Dandelion Sprout's Nordic Filters 过滤器（用于 AdGuard Home 和 AdGuard Android/Windows版 的 DNS 过滤）。"
 	},
 	{
-		"hostlist.14.name": "POL: Polish filters for Pi hole",
-		"hostlist.14.description": "用于 Pi hole 的波兰过滤器"
+		"hostlist.14.name": "POL: Polish filters for Pi-hole",
+		"hostlist.14.description": "用于 Pi-hole 的波兰过滤器"
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
@@ -53,7 +53,7 @@
 	},
 	{
 		"hostlist.18.name": "ITA: Filtri-DNS",
-		"hostlist.18.description": "旨在拦截基于 Easylist Italy 和 ADB X Files 的意大利网站上的广告的列表。"
+		"hostlist.18.description": "旨在拦截基于 Easylist Italy 和 ADB X Files 的意大利网站上的广告的列表"
 	},
 	{
 		"hostlist.19.name": "IRN: PersianBlocker list",
@@ -104,8 +104,8 @@
 		"hostlist.26.description": "土耳其语网站上拦截广告和烦人元素的列表"
 	},
 	{
-		"hostlist.27.name": "OISD Blocklist Full",
-		"hostlist.27.description": "拦截广告和跟踪器的列表。功能优先于拦截。错误屏蔽的可能性高于 OISD 黑名单的基本版本。"
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "拦截广告和跟踪器的列表。功能优先于拦截。错误屏蔽的风险高于 OISD 黑名单的小版本。"
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
@@ -128,8 +128,8 @@
 		"hostlist.31.description": "安卓和 iOS 系统的 Stalkerware 应用程序使用指标。"
 	},
 	{
-		"hostlist.34.name": "HaGeZi Personal Black & White",
-		"hostlist.34.description": "现有黑名单的扩展，用户个人黑名单和白名单。解除对误报和转介域的封锁。"
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "Broom 清洁互联网并保护隐私安全！拦截广告、联盟、跟踪、指标、遥测、网络钓鱼、恶意软件、诈骗、假货、硬币和其他垃圾。"
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -146,5 +146,21 @@
 	{
 		"hostlist.38.name": "1Hosts (mini)",
 		"hostlist.38.description": "拦截讨厌的广告、跟踪器和恶意软件的列表。宽松版：解除对应用内奖励、反 AdBlock 等的大量广告和跟踪器的屏蔽。"
+	},
+	{
+		"hostlist.39.name": "Dandelion Sprout's Anti Push Notifications",
+		"hostlist.39.description": "旨在删除网站上的推送通知。结合了 AdGuard 弹出窗口过滤器的反推送部分和 Fanboy 的通知阻止列表中的合格规则。"
+	},
+	{
+		"hostlist.40.name": "TUR: Turkish Ad Hosts",
+		"hostlist.40.description": "必要的主机文件可阻止土耳其常用移动应用程序（以及可能的网页）中的跟踪以及可能的广告网络。"
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
+		"hostlist.41.description": "CERT Polska 处理源自或针对 .pl 域名中的系统或连接到 NASK 或其他波兰互联网提供商网络的事件和威胁。"
+	},
+	{
+		"hostlist.42.name": "ShadowWhisperer's Malware List",
+		"hostlist.42.description": "恶意网站、PUP、恶意软件、浏览器劫持程序、钓鱼网站"
 	}
 ]

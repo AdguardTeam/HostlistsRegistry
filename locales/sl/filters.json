@@ -16,7 +16,7 @@
 		"hostlist.4.description": "Seznam za onemogočanje oglasov in preprečevanje sledenja uporabnikom"
 	},
 	{
-		"hostlist.5.name": "OISD Osnovni seznam onemogočenih",
+		"hostlist.5.name": "OISD Blocklist Small",
 		"hostlist.5.description": "Seznam za onemogočanje oglasov in sledilnikov. Prednost daje funkcionalnosti pred zaviranjem."
 	},
 	{
@@ -36,7 +36,7 @@
 		"hostlist.13.description": "Nordijski filtri Dandelion Sprout (filtriranje DNS v AdGuard Home, AdGuard za Android in AdGuard za Windows)"
 	},
 	{
-		"hostlist.14.name": "POL: Poljski filtri za Pi luknjo",
+		"hostlist.14.name": "POL: Polish filters for Pi-hole",
 		"hostlist.14.description": "Poljski filtri za Pi luknjo."
 	},
 	{
@@ -53,7 +53,7 @@
 	},
 	{
 		"hostlist.18.name": "ITA: Filtri DNS",
-		"hostlist.18.description": "Seznam za zaviranje oglasov na italijanskih spletnih straneh, ki temelji na datotekah 'Easylist Italy' in 'ADB X'"
+		"hostlist.18.description": "Seznam za zaviranje oglasov na italijanskih spletnih straneh, ki temelji na datotekah 'EasyList Italy' in 'ADB X'"
 	},
 	{
 		"hostlist.19.name": "IRN: Seznam PersianBlocker",
@@ -104,8 +104,8 @@
 		"hostlist.26.description": "Seznam za zaviranje oglasov in nadležnih elementov na turških spletnih straneh"
 	},
 	{
-		"hostlist.27.name": "Energizirana iskra",
-		"hostlist.27.description": "Seznam za zaviranje oglasov in sledilnikov. Prednost daje funkcionalnosti pred onemogočenjem. Možnosti za napačno zaviranje so večje kot pri osnovni različici seznama onemogočenih OISD."
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "Seznam za blokiranje oglasov in sledilnikov. Prednost ima funkcionalnost pred blokiranjem. Tveganje za napačno blokiranje je večje kot v manjši različici OISD Blocklist."
 	},
 	{
 		"hostlist.29.name": "CHN: Seznam DNS pravil oglasov",
@@ -128,8 +128,8 @@
 		"hostlist.31.description": "Indikatorji ogroženosti programov za zalezovanje za Android in iOS."
 	},
 	{
-		"hostlist.34.name": "HaGeZi Personal Black & White",
-		"hostlist.34.description": "Razširitev za obstoječe sezname onemogočenih, moj osebni seznam nedovoljenih in dovoljenih. Odstrani zaviranje pozitivnih rezultatatov in napotitvene domene."
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "Metla - Čisti internet in varuje vašo zasebnost! Blokira oglase, podružnice, sledenje, meritve, telemetrijo, lažno predstavljanje, zlonamerno programsko opremo, prevare, ponaredke, kovance in drugo sranje."
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -146,5 +146,21 @@
 	{
 		"hostlist.38.name": "1 Gostitelji (mini)",
 		"hostlist.38.description": "Seznam za zaviranje nadležnih oglasov, sledilnikov in zlonamerne programske opreme. Prizanesljiva različica: odpravi zaviranje številnih oglasov in sledilnikov za nagrade v aplikaciji, zaščito pred zaviranjem oglasov itd."
+	},
+	{
+		"hostlist.39.name": "Obvestila proti potiskanju Dandelion Sprout",
+		"hostlist.39.description": "Cilj je odstraniti potisna obvestila na straneh. Združuje primerna pravila iz razdelkov proti potiskanju filtra AdGuard Filter pojavnih sporočil in seznama zaviranja obvestil Fanboy."
+	},
+	{
+		"hostlist.40.name": "TUR: Turški gostitelji oglasov",
+		"hostlist.40.description": "Potrebna datoteka gostiteljev za onemogočanje (in morda oglaševalskih) omrežij v pogosto uporabljenih mobilnih aplikacijah (in morda spletnih straneh) v Turčiji."
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska Seznam zlonamernih domen",
+		"hostlist.41.description": "CERT Polska se ukvarja z incidenti in grožnjami, ki izvirajo ali so namenjene sistemom v domeni .pl ali povezanim z omrežjem NASK ali drugega poljskega internetnega ponudnika."
+	},
+	{
+		"hostlist.42.name": "Seznam zlonamernih programov ShadowWhisperer",
+		"hostlist.42.description": "Zlonamerne spletne strani, PUP-ji, zlonamerni programi, ugrabitelji brskalnikov, lažne spletne strani"
 	}
 ]
