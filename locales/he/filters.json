@@ -16,6 +16,7 @@
 		"hostlist.4.description": "חום מלכודות חלון קופץ, מונע מעקב משתמש, חוסם את מרבית הפרסום."
 	},
 	{
+		"hostlist.5.name": "OISD Blocklist Small",
 		"hostlist.5.description": "חוסם פרסומות/עוקבנים ומתעדף תפקודיות על פני חסימה."
 	},
 	{
@@ -35,6 +36,10 @@
 		"hostlist.13.description": "מסננים נורדיים של Dandelion Sprout (עבור AdGuard Home ועבור AdGuard עבור Android/סינון DNS של Windows)."
 	},
 	{
+		"hostlist.14.name": "POL: Polish filters for Pi-hole",
+		"hostlist.14.description": "מסננים פולניים עבור Pi-hole."
+	},
+	{
 		"hostlist.15.name": "KOR: YousList",
 		"hostlist.15.description": "מסנן חסימה עבור פרסומות, בעיקר באתרים קוריאניים."
 	},
@@ -47,7 +52,8 @@
 		"hostlist.17.description": "מכוון להיפטר מפרסומות, מעקב, הונאות וזדונה באתרים שוודים (בעיקר)."
 	},
 	{
-		"hostlist.18.name": "ITA: Filtri-DNS"
+		"hostlist.18.name": "ITA: Filtri-DNS",
+		"hostlist.18.description": "קובץ מארחים ניסיוני עבור אתרים איטלקיים שנוצר מן EasyList Italy וקבצי ADB X"
 	},
 	{
 		"hostlist.19.name": "IRN: Unwanted Iranian domains",
@@ -86,7 +92,8 @@
 		"hostlist.9.description": "רשימת אתרים שנפרצו עם נוזקה, כופרה או טרויאניים."
 	},
 	{
-		"hostlist.24.name": "1Hosts (Lite)"
+		"hostlist.24.name": "1Hosts (Lite)",
+		"hostlist.24.description": "רשימה לחסימת מודעות טורדניות, עוקבים ותוכנות זדוניות. גרסה מאוזנת: הגדר ושכח, לא פוגע בחוויית משתמש."
 	},
 	{
 		"hostlist.25.name": "KOR: List-KR DNS",
@@ -97,6 +104,10 @@
 		"hostlist.26.description": "רשימה לחסימת מודעות ואלמנטים מעצבנים באתרים טורקיים"
 	},
 	{
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "רשימה לחסימת מודעות ועוקבים. נותן עדיפות לפונקציונליות על פני חסימה. הסיכונים של חסימה שגויה גבוהים יותר מאשר בגרסה הקטנה של OISD Blocklist."
+	},
+	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
 		"hostlist.29.description": "רשימה לחסימת מודעות באזור סיני"
 	},
@@ -105,17 +116,51 @@
 		"hostlist.30.description": "רשימת חסימה של אתרי פישינג, מבוססת על רשימות PhishTank ו-OpenPhish"
 	},
 	{
-		"hostlist.32.name": "רשימת החסימות של NoTracking"
+		"hostlist.32.name": "רשימת החסימות של NoTracking",
+		"hostlist.32.description": "רשימת החסימה של NoTracking היא רשימת מסננים מבוססת DNS לחסימת מודעות, תוכנות זדוניות, דיוג ואשפה מקוונת אחרת."
 	},
 	{
-		"hostlist.33.name": "Steven Black's List"
+		"hostlist.33.name": "Steven Black's List",
+		"hostlist.33.description": "קובץ מארח מאוחד (תוכנות פרסום + תוכנות זדוניות)."
 	},
 	{
 		"hostlist.31.name": "רשימת אינדיקטורים ל-Stalkerware",
 		"hostlist.31.description": "אינדיקטורים של פשרה על יישומי Stalkerware עבור אנדרואיד ו-iOS."
 	},
 	{
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "מטאטא - מנקה את האינטרנט ומגן על הפרטיות שלך! חוסם מודעות, שותפים, מעקב, מדדים, טלמטריה, פישינג, תוכנות זדוניות, הונאה, זיוף, מטבעות ועוד שטויות."
+	},
+	{
 		"hostlist.35.name": "HUN: Hufilter",
 		"hostlist.35.description": "מסננים פולניים עבור Pi hole."
+	},
+	{
+		"hostlist.36.name": "LIT: EasyList Lithuania",
+		"hostlist.36.description": "זוהי גרסה (כרגע די קטנה ולא נבדקה הרבה) של EasyList ליטא המיועדת לשימוש עם כלים מבוססי דומיינים."
+	},
+	{
+		"hostlist.37.name": "No Google",
+		"hostlist.37.description": "חוסם לחלוטין את כל הדומיינים הקשורים לגוגל (כולל YouTube)."
+	},
+	{
+		"hostlist.38.name": "1Hosts (mini)",
+		"hostlist.38.description": "רשימה לחסימת מודעות טורדניות, עוקבים ותוכנות זדוניות. גרסה מקלה: מבטל חסימה של מספר מודעות ועוקבים לתגמולים בתוך האפליקציה, נגד AdBlock וכו'."
+	},
+	{
+		"hostlist.39.name": "Dandelion Sprout's Anti Push Notifications",
+		"hostlist.39.description": "שואפת להסיר התראות דחיפה באתרים. משלב כללים מתאימים מקטעי האנטי-דחיפה של AdGuard Popups Filter ורשימת חסימת ההתראות של Fanboy."
+	},
+	{
+		"hostlist.40.name": "TUR: Turkish Ad Hosts",
+		"hostlist.40.description": "קובץ מארחים הכרחי לחסימת רשתות מעקב ואולי פרסום באפליקציות ניידות נפוצות (ואולי בדפי אינטרנט) בטורקיה."
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
+		"hostlist.41.description": "CERT Polska עוסק בתקריות ואיומים שמקורם או מכוונים למערכות בתחום .pl או מחוברות לרשת של NASK או ספק אינטרנט פולני אחר."
+	},
+	{
+		"hostlist.42.name": "ShadowWhisperer's Malware List",
+		"hostlist.42.description": "אתרים זדוניים, PUPs, תוכנות זדוניות, חוטפי דפדפנים, אתרי פישינג"
 	}
 ]
