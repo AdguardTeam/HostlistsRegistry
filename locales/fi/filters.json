@@ -16,7 +16,7 @@
 		"hostlist.4.description": "Lista mainosten ja käyttäjäseurannan estoon."
 	},
 	{
-		"hostlist.5.name": "OISD Blocklist Basic",
+		"hostlist.5.name": "OISD Blocklist Small",
 		"hostlist.5.description": "Lista mainosten ja seurantojen estoon. Painottaa eston sijaan toiminnallisuutta."
 	},
 	{
@@ -36,7 +36,7 @@
 		"hostlist.13.description": "Dandelion Sproutin pohjoismaiset suodattimet (AdGuard Homen sekä AdGuardin Android- ja Windows-versioiden DNS-suodatukselle)."
 	},
 	{
-		"hostlist.14.name": "POL: Puolan Pi-hole-suodattimet",
+		"hostlist.14.name": "POL: Polish filters for Pi-hole",
 		"hostlist.14.description": "Puolankielen Pi-hole-suodattimet."
 	},
 	{
@@ -104,8 +104,8 @@
 		"hostlist.26.description": "Estolista mainosten ja ärsyttävien elementtien estoon turkinkielisillä sivustoilla."
 	},
 	{
-		"hostlist.27.name": "Energized Spark",
-		"hostlist.27.description": "Estolista mainoksille ja seurannoille painottaen toiminnallisuutta eston sijaan. OISD Blocklist -perusversioon verrattuna virheellisten estojen mahdollisuus on suurempi."
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "Luettelo mainosten ja seurantalaitteiden estämiseen. Priorisoi toiminnallisuuden estämisen sijaan. Virheellisen estämisen riski on suurempi kuin OISD Blocklistin pienessä versiossa."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
@@ -128,8 +128,8 @@
 		"hostlist.31.description": "Merkkejä Android- ja iOS-käyttöjärjestelmien altistumisesta Stalkerware-sovelluksille."
 	},
 	{
-		"hostlist.34.name": "HaGeZi Personal Black & White",
-		"hostlist.34.description": "Laajennus olemassa oleville estolistoille, henkilökohtainen musta ja valkoinen listani. Poistaa väärien positiivisten ja viittausverkkotunnusten estoja."
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "Luuta - Puhdistaa Internetin ja suojaa yksityisyyttäsi! Estää mainokset, kumppanit, seurannan, mittaustiedot, telemetrian, tietojenkalastelun, haittaohjelmat, huijaukset, väärennökset, kolikot ja muuta paskaa."
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -145,6 +145,22 @@
 	},
 	{
 		"hostlist.38.name": "1Hosts (mini)",
-		"hostlist.38.description": "Lista ärsyttävien mainosten, seurantojen ja haittaohjelmien estoon. Sallivampi versio: sallii joitakin mainoksia ja seurantoja sovellusten sisäisiä hyötyjä, mainoseston käytöstäpoistosuosituksia, yms. varten."
+		"hostlist.38.description": "Lista ärsyttävien mainosten, seurantojen ja haittaohjelmien estoon. Sallivampi versio, joka sallii joitakin mainoksia ja seurantoja sovellusten sisäisiä hyötyjä, mainoseston käytöstäpoistosuosituksia, yms. varten."
+	},
+	{
+		"hostlist.39.name": "Dandelion Sprout's Anti Push Notifications",
+		"hostlist.39.description": "Tavoitteena on poistaa push-ilmoitukset sivustoilta. Yhdistää kelvolliset säännöt AdGuard-ponnahdusikkunoista, suodattimen push-esto-osioista ja Fanboyn ilmoitusten estoluettelosta."
+	},
+	{
+		"hostlist.40.name": "TUR: Turkish Ad Hosts",
+		"hostlist.40.description": "Tarvittava isäntätiedosto, jolla estetään seuranta- ja mahdollisesti mainosverkkojen käyttö yleisesti käytetyissä mobiilisovelluksissa (ja mahdollisesti verkkosivuissa) Turkissa."
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
+		"hostlist.41.description": "CERT Polska käsittelee vaaratilanteita ja uhkia, jotka ovat peräisin tai kohdistuvat .pl-verkkotunnuksen järjestelmiin tai NASKin tai muun puolalaisen Internet-palveluntarjoajan verkkoon liitettyihin järjestelmiin."
+	},
+	{
+		"hostlist.42.name": "ShadowWhisperer's Malware List",
+		"hostlist.42.description": "Haitalliset sivustot, PUPit, haittaohjelmat, selaimen kaappaajat, tietojenkalastelusivustot"
 	}
 ]

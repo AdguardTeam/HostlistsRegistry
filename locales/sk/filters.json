@@ -16,8 +16,8 @@
 		"hostlist.4.description": "Zoznam na blokovanie reklám a zabránenie sledovaniu používateľov"
 	},
 	{
-		"hostlist.5.name": "Základný zoznam blokovaní OISD",
-		"hostlist.5.description": "Zoznam na blokovanie reklám a sledovacích zariadení. Uprednostňuje funkčnosť pred blokovaním."
+		"hostlist.5.name": "OISD Blocklist Small",
+		"hostlist.5.description": "Zoznam na blokovanie reklám a sledovačov. Uprednostňuje funkčnosť pred blokovaním."
 	},
 	{
 		"hostlist.23.name": "WindowsSpyBlocker – Hosts špionážne pravidlá",
@@ -36,8 +36,8 @@
 		"hostlist.13.description": "Dandelion Sprout's Nordic Filters (pre AdGuard Home a pre DNS filtráciu AdGuard pre Android/Windows)."
 	},
 	{
-		"hostlist.14.name": "POL: poľské filtre pre Pi hole",
-		"hostlist.14.description": "Poľské filtre pre Pi hole."
+		"hostlist.14.name": "POL: Polish filters for Pi-hole",
+		"hostlist.14.description": "Poľské filtre pre Pi-hole."
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
@@ -53,11 +53,11 @@
 	},
 	{
 		"hostlist.18.name": "ITA: Filtri-DNS",
-		"hostlist.18.description": "Zoznam na blokovanie reklám na talianskych webových stránkach založený na súboroch Easylist Italy a ADB X"
+		"hostlist.18.description": "Zoznam na blokovanie reklám na talianskych webových stránkach založený na súboroch EasyList Italy a ADB X"
 	},
 	{
 		"hostlist.19.name": "IRN: PersianBlocker list",
-		"hostlist.19.description": "Optimálny a rozsiahly zoznam na blokovanie reklám a sledovacích zariadení na stránkach v perzskom jazyku"
+		"hostlist.19.description": "Optimálny a rozsiahly zoznam na blokovanie reklám a sledovačov na stránkach v perzskom jazyku"
 	},
 	{
 		"hostlist.20.name": "MKD: Macedónsky blokovací zoznam Pi-hole",
@@ -81,7 +81,7 @@
 	},
 	{
 		"hostlist.12.name": "Zoznam Anti-Nalware od Dandelion Sprout",
-		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (filtrovanie DNS v aplikáciách AdGuard Home, AdGuard pre Android a AdGuard pre Windows)"
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (filtrácia DNS v aplikáciách AdGuard Home, AdGuard pre Android a AdGuard pre Windows)"
 	},
 	{
 		"hostlist.8.name": "NoCoin Filter List",
@@ -93,7 +93,7 @@
 	},
 	{
 		"hostlist.24.name": "1Hosts (Lite)",
-		"hostlist.24.description": "Zoznam na blokovanie otravných reklám, sledovacích zariadení a malvéru"
+		"hostlist.24.description": "Zoznam na blokovanie otravných reklám, sledovačov a malvéru."
 	},
 	{
 		"hostlist.25.name": "KOR: List-KR DNS",
@@ -104,8 +104,8 @@
 		"hostlist.26.description": "Zoznam na blokovanie reklám a otravných prvkov na tureckých webových stránkach"
 	},
 	{
-		"hostlist.27.name": "Energized Spark",
-		"hostlist.27.description": "Zoznam na blokovanie reklám a sledovacích zariadení. Uprednostňuje funkčnosť pred blokovaním. Pravdepodobnosť nesprávneho blokovania je vyššia ako v základnej verzii OISD Blocklist."
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "Zoznam na blokovanie reklám a sledovačov. Uprednostňuje funkčnosť pred blokovaním. Riziko nesprávneho blokovania je vyššie ako v malej verzii OISD Blocklist."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
@@ -128,8 +128,8 @@
 		"hostlist.31.description": "Indikátory kompromitácie aplikácií Stalkerware pre Android a iOS."
 	},
 	{
-		"hostlist.34.name": "HaGeZi Personal Black & White",
-		"hostlist.34.description": "Rozšírenie pre existujúce zoznamy blokovania, môj osobný čierny a biely zoznam. Odblokuje falošne pozitívne výsledky a odkazujúce domény."
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "Metla - Čistí internet a chráni vaše súkromie! Blokuje reklamy, partnerské, sledovacie, metrické, telemetrické, phishingové, malvérové, podvodné, falošné, mincové a iné šmejdy."
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -146,5 +146,21 @@
 	{
 		"hostlist.38.name": "1Hosts (Lite)",
 		"hostlist.38.description": "Zoznam na blokovanie otravných reklám, sledovačov a malvéru. Odľahčená verzia: odblokuje množstvo reklám a sledovačov v aplikáciách, anti-AdBlock atď."
+	},
+	{
+		"hostlist.39.name": "Dandelion Sprout's Anti Push Notifications",
+		"hostlist.39.description": "Cieľom je zamedziť \"push\" notofikácie na stránkach. Kombinuje vhodné pravidlá z AdGuard Popups Filter's anti-push sekcii a Fanboy's Notifications Blocking List."
+	},
+	{
+		"hostlist.40.name": "TUR: Turkish Ad Hosts",
+		"hostlist.40.description": "Súbor hostiteľa potrebný na zablokovanie sledovacích a prípadne reklamných sietí v bežne používaných mobilných aplikáciách (a prípadne webových stránkach) v Turecku."
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
+		"hostlist.41.description": "CERT Polska sa zaoberá incidentmi a hrozbami, ktoré majú pôvod alebo sú zamerané na systémy v doméne .pl alebo sú pripojené k sieti NASK alebo iného poľského poskytovateľa internetu."
+	},
+	{
+		"hostlist.42.name": "ShadowWhisperer's Malware List",
+		"hostlist.42.description": "Škodlivé stránky, PUP, malvér, únoscovia prehliadača, phishingové stránky"
 	}
 ]

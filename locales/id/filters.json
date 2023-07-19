@@ -1,6 +1,6 @@
 [
 	{
-		"hostlist.1.name": "Penyaring nama domain yang disederhanakan AdGuard",
+		"hostlist.1.name": "Filter DNS AdGuard",
 		"hostlist.1.description": "Daftar terdiri dari beberapa filter (Filter Dasar AdGuard, Filter Media Sosial, Filter Perlindungan Pelacakan, Filter Iklan Seluler, EasyList dan EasyPrivacy) dan disederhanakan secara khusus agar lebih kompatibel dengan pemblokiran iklan tingkat DNS"
 	},
 	{
@@ -16,7 +16,7 @@
 		"hostlist.4.description": "Daftar untuk memblokir iklan dan mencegah pelacakan pengguna"
 	},
 	{
-		"hostlist.5.name": "OISD Blocklist Basic",
+		"hostlist.5.name": "OISD Blocklist Small",
 		"hostlist.5.description": "Memblokir iklan/pelacak dan memprioritaskan fungsi di atas pemblokiran."
 	},
 	{
@@ -36,8 +36,8 @@
 		"hostlist.13.description": "Dandelion Sprout's Nordic Filters (untuk AdGuard Home, dan untuk AdGuard pada penyaringan DNS Android/Windows)."
 	},
 	{
-		"hostlist.14.name": "POL: Polish filters for Pi hole",
-		"hostlist.14.description": "Penyaring Polish untuk Pi hole."
+		"hostlist.14.name": "POL: Polish filters for Pi-hole",
+		"hostlist.14.description": "Penyaring Polish untuk Pi-hole."
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
@@ -104,8 +104,8 @@
 		"hostlist.26.description": "Daftar untuk memblokir iklan dan elemen yang mengganggu di situs web Turki"
 	},
 	{
-		"hostlist.27.name": "OISD Blocklist Full",
-		"hostlist.27.description": "Daftar untuk memblokir iklan dan pelacak. Memprioritaskan fungsionalitas daripada pemblokiran. Kemungkinan pemblokiran yang salah lebih tinggi daripada di versi dasar Daftar Blokir OISD."
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "Daftar untuk memblokir iklan dan pelacak. Memprioritaskan fungsionalitas daripada pemblokiran. Risiko pemblokiran yang salah lebih tinggi daripada di versi dasar Daftar Blokir OISD."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
@@ -128,8 +128,8 @@
 		"hostlist.31.description": "Indikator kompromi pada aplikasi Stalkerware untuk Android dan iOS."
 	},
 	{
-		"hostlist.34.name": "HaGeZi Personal Black & White",
-		"hostlist.34.description": "Ekstensi untuk daftar blokir yang ada, daftar hitam dan putih pribadi saya. Buka blokir positif palsu dan domain rujukan."
+		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.description": "Sapu - Membersihkan Internet dan melindungi privasi Anda! Memblokir Iklan, Afiliasi, Pelacakan, Metrik, Telemetri, Phishing, Malware, Penipuan, Palsu, Koin, dan Omong Kosong lainnya."
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -146,5 +146,21 @@
 	{
 		"hostlist.38.name": "1Host (mini)",
 		"hostlist.38.description": "Daftar untuk memblokir iklan, pelacak, dan malware yang mengganggu. Versi ringan: membuka blokir sejumlah iklan & pelacak untuk hadiah dalam aplikasi, anti-AdBlock, dll."
+	},
+	{
+		"hostlist.39.name": "Dandelion Sprout's Anti Push Notifications",
+		"hostlist.39.description": "Bertujuan untuk menghapus pemberitahuan push di situs. Menggabungkan aturan yang memenuhi syarat dari bagian anti-push Filter Popups AdGuard dan Daftar Pemblokiran Pemberitahuan Fanboy."
+	},
+	{
+		"hostlist.40.name": "TUR: Turkish Ad Hosts",
+		"hostlist.40.description": "File host yang diperlukan untuk memblokir pelacakan dan mungkin jaringan iklan di aplikasi seluler yang umum digunakan (dan mungkin halaman web) di Turki."
+	},
+	{
+		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
+		"hostlist.41.description": "CERT Polska menangani insiden dan ancaman yang berasal atau ditujukan pada sistem dalam domain .pl atau yang terhubung ke jaringan NASK atau penyedia Internet Polandia lainnya."
+	},
+	{
+		"hostlist.42.name": "ShadowWhisperer's Malware List",
+		"hostlist.42.description": "Situs Berbahaya, PUP, Malware, Pembajak Peramban, Situs Phishing"
 	}
 ]
