@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-07-21T06:05:42.031Z
+! Last modified: 2023-07-21T12:06:53.677Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-07-21T06:01:27.713Z
+! Last modified: 2023-07-21T12:01:38.452Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -23,17 +23,7 @@
 ! Source name: AdGuard Base filter ad servers
 ! Source: https://raw.githubusercontent.com/AdguardTeam/AdguardFilters/master/BaseFilter/sections/adservers.txt
 !
-!
-! This section contains the list of third-party advertising networks domains.
-! Note, that we only put rules that block full domains here and not URL parts (there's `general_url.txt` for that). Also, it must be domains that are used in a third-party context.
-! The rules with hints are at the end of file.
-
-! Good: ||doubleclick.net^$third-party
-! Bad: /banner.jpg (should be in general_url.txt)
-! Bad: ||adssubdomain.legitwebsite.com^ (should be in adservers_firstparty.txt)
-!
-!
-!
+||eemreyrwkqwnv.top^
 ||okueroskynt.com^
 ||li.blogtrottr.com^
 ||jeannvalmvvvr.top^
@@ -1313,6 +1303,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||zap.cdn.zynga.com^
 ||mv.outbrain.com^
 ||ads.sparkflow.net^
 ||creative.ytboob.live^
@@ -29367,7 +29358,6 @@ vkcdnservice.appspot.com^
 ||adballoon.afreecatv.com^
 ||deapi.afreecatv.com^
 !
-||frontman.tmobiapi.com^
 ||naverpa-phinf.pstatic.net^
 ||tivan.naver.com^
 ||veta.naver.com^
@@ -29553,7 +29543,7 @@ vkcdnservice.appspot.com^
 ||mcoreads.com^
 ||onlineapi.youappi.com^
 ||networksdk.ssacdn.com^
-||ms.applvn.com^
+||ms*.applvn.com^
 ||tapsell.ir^
 ||jioads.akamaized.net^
 ||ajdivotdelbloab24.jio.com^
@@ -36952,6 +36942,8 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
 !
+||am.yahoo.co.jp^
+||b99.yahoo.co.jp^
 ||logs13.xiti.com^
 ||tracing-collector.strava.com^
 ||cgicol.amap.com^
@@ -37558,6 +37550,7 @@ inapps.appsflyersdk.com^
 ||ffbbbdc6d3c353211fe2ba39c9f744cd.com^
 ||ffe390afd658c19dcbf707e0597b846d.de^
 ||fn-pz.com^
+||fourtimessmelly.com^
 ||fpapi.io^
 ||fpcdn.io^
 ||fptls.com^
@@ -37631,6 +37624,7 @@ inapps.appsflyersdk.com^
 ||mors22.com^
 ||mrpdata.net^
 ||mt48.net^
+||mysingleromance.com^
 ||n0909.com^
 ||native-track.com^
 ||niblewren.co^
@@ -38246,6 +38240,7 @@ inapps.appsflyersdk.com^
 ||rlets.com^
 ||rockincontent.net^
 ||roeye.com^
+||roeyecdn.com^
 ||roirevolution.com^
 ||rp-rep.net^
 ||rstg.io^
