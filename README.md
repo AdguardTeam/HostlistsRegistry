@@ -46,9 +46,9 @@ To add a new filter, you need to:
 
 - Go to the filters folder.
 - Go to the category to which the new filter will belong.
-- Create a new folder with the name "filter_(id)_(filter name)".
-- Create two files in this folder: configuration.json and metadata.json, the contents of these files are described below.
-- In the folder locales/en/filters.json add an object with the name and description of the filter according to the example added above.
+- Create a new folder with the name `filter_(id)_(filter name)`.
+- Create two files in this folder: `configuration.json` and `metadata.json`. The contents of these files are described below.
+- In the file `locales/en/filters.json` add an object with the name and description of the filter according to the example added above.
 - The files /assets/filters.json and /assets/filters-dev.json must not be edited manually.
 
 ## <a id="filters-meta"></a> Filters Metadata
