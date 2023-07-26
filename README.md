@@ -133,7 +133,7 @@ Possible tags:
 
 ## <a id="how-to-add-a-blockable-service"></a> How to add a blockable service
 
-To add a new blocked service, you need to add a new object to the /assets/services.json file, the contents of which are described in the next section.
+To add a new blocked service, you need to add a new object to the `/assets/services.json` file, the contents of which are described in the next section.
 
 ## <a id="services-meta"></a> Services Metadata
 
