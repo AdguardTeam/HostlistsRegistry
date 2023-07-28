@@ -40,6 +40,18 @@ Some of these blocklists are automatically [converted](https://github.com/Adguar
 - If the blocklist intentionally blocks or restricts access to a service for no reason other than being a reflection of the filter author's opinion, the blocklist will not get added, or will get removed if already added.
 - If the blocklist is popular in a specific region and there are no alternatives to it, then it can be added as is even if it does not satisfy requirements above.
 
+## <a id="how-to-add-a-filter-list"></a> How to add a filter list
+
+To add a new filter, you need to:
+
+  1. Go to the filters folder.
+  2. Go to the category to which the new filter will belong.
+  3. Create a new folder with the name `filter_(id)_(filter name)`.
+  4. Create two files in this folder: `configuration.json` and `metadata.json`. The contents of these files are described below.
+  5. In the file `locales/en/filters.json` add an object with the name and description of the filter according to the example added above.
+
+The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edited manually.
+
 ## <a id="filters-meta"></a> Filters Metadata
 
 - `metadata.json`
@@ -118,6 +130,10 @@ Possible tags:
 
 - `obsolete` — for abandoned filter lists; filter's metadata with this tag will be excluded
   from `filters.json` and `filters_i18n.json`.
+
+## <a id="how-to-add-a-blockable-service"></a> How to add a blockable service
+
+To add a new blocked service, you need to add a new object to the `/assets/services.json` file, the contents of which are described in the next section.
 
 ## <a id="services-meta"></a> Services Metadata
 
