@@ -2,7 +2,7 @@
 ! Title: KOR: List-KR DNS
 ! Description: A DNS version of List-KR, a filter for websites in the Korean language
 ! Homepage: https://github.com/List-KR/List-KR
-! Last modified: 2023-08-07T14:05:30.940Z
+! Last modified: 2023-08-08T11:05:20.506Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -210,8 +210,12 @@
 ! Source name: List-KR 1st_domains.txt
 ! Source: https://raw.githubusercontent.com/List-KR/List-KR/master/filters-share/1st_domains.txt
 !
-||cdn-adn-https-new.rayjump.com^
-||cdn-adn-https.rayjump.com^
+||ad.*.doubleclick.net^
+||mediavisor.doubleclick.net^
+||static.doubleclick.net^
+||n4403ad.doubleclick.net^
+||g.doubleclick.net^
+||cdn-adn-*.rayjump.com^
 ||net.rayjump.com^
 ||vungle.com^
 ||stream.spongead.com^
@@ -264,7 +268,7 @@
 ||contentsfeed.com^
 ||mediacategory.com^
 ||innorame.com^
-||doubleclick.net^
+||ad.doubleclick.net^
 ||adbinead.com^
 ||cizion.com^
 ||adop.cc^
