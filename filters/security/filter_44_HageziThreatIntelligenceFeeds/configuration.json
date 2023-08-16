@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Threat Intelligence Feeds",
+    "description": "Increases security significantly! Blocks Malware, Cryptojacking, Spam, Scam and Phishing.",
+    "homepage": "https://github.com/hagezi/dns-blocklists",
+    "sources": [
+      {
+        "name": "HaGeZi's Threat Intelligence Feeds",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
+        "type": "adblock",
+        "transformations": [
+          "RemoveModifiers",
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
