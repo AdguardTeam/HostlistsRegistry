@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Anti-Piracy Blocklist",
+    "description": "Blocks websites and services that are mainly used for illegal distribution of copyrighted content.",
+    "homepage": "https://github.com/hagezi/dns-blocklists#piracy",
+    "sources": [
+        {
+            "name": "HaGeZi's Anti-Piracy Blocklist",
+            "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
