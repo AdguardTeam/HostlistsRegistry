@@ -2,7 +2,7 @@
 ! Title: TUR: Turkish Ad Hosts
 ! Description: Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
-! Last modified: 2023-08-13T21:05:11.060Z
+! Last modified: 2023-08-16T07:05:45.476Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey...
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
 ! License: GPLv3
-! Last modified: 2023-08-13T20:28:32.366Z
+! Last modified: 2023-08-16T06:49:50.374Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -31,6 +31,7 @@
 ||595tuchuang.com^
 ||6093eccf-6734-4877-ac8b-83d6d0e27b46.edge.permutive.app^
 ||6371800.collect.igodigital.com^
+||7fb6f12dd2.17dc91dc49.com^
 ||8881img.com^
 ||9to5mac-com.videoplayerhub.com^
 ||a.ad.gt^
@@ -79,6 +80,7 @@
 ||adbsmetrics.hyundai.com^
 ||addata.exxen.com^
 ||ade.googlesyndication.com^
+||ade.clmbtech.com^
 ||adeventtracker.spotify.com^
 ||adform.net^
 ||adfp.fcloud.com.tr^
@@ -90,6 +92,7 @@
 ||ads.assemblyexchange.com^
 ||ads.avocet.io^
 ||ads.betweendigital.com^
+||ads.digitalcaramel.com^
 ||ads.dygdigital.com^
 ||ads.ekstat.com^
 ||ads.exoclick.com^
@@ -274,6 +277,7 @@
 ||bat.bing.com^
 ||bats.video.yahoo.com^
 ||bcp.crwdcntrl.net^
+||beacon.krxd.net^
 ||beacon.riskified.com^
 ||beacon.wikia-services.com^
 ||beacon-nf.rubiconproject.com^
@@ -354,8 +358,8 @@
 ||cdn.efilli.com^
 ||cdn.eksiup.com^
 ||cdn.engine.4dsply.com^
-||cdn.feedify.net^
 ||cdn.feathr.co^
+||cdn.feedify.net^
 ||cdn.firstimpression.io^
 ||cdn.firstpromoter.com^
 ||cdn.geni.us^
@@ -477,6 +481,7 @@
 ||consent.cookiebot.com^
 ||consent-manager-events.ogury.io^
 ||consentlog.cookieyes.com^
+||content.mql5.com^
 ||conversions.appsflyer.com^
 ||cookie-cdn.cookiepro.com^
 ||cookies.nextmillmedia.com^
@@ -682,6 +687,7 @@
 ||global.proper.io^
 ||globalapi.ad.xiaomi.com^
 ||globalsiteanalytics.com^
+||glochatuji.com^
 ||go.ezoic.net^
 ||go.goaserv.com^
 ||go.xlivrdr.com^
@@ -751,6 +757,8 @@
 ||id.rlcdn.com^
 ||id5-sync.com^
 ||idsync.rlcdn.com^
+||idx.liadm.com^
+||image.useinsider.com^
 ||image2.pubmatic.com^
 ||image6.pubmatic.com^
 ||image8.pubmatic.com^
@@ -864,11 +872,13 @@
 ||match.360yield.com^
 ||match.adsrvr.org^
 ||match.sharethrough.com^
+||matchid.adfox.yandex.ru^
 ||mb.moatads.com^
 ||mb9eo.publishers.tremorhub.com^
 ||mbid.marfeelrev.com^
 ||mbls.visilabs.net^
 ||mc.webvisor.org^
+||mc.yandex.com^
 ||mc.yandex.ru^
 ||mc2tnzs73p3554cjc7h876m-gfm4.device.marketingcloudapis.com^
 ||mcfk02nd3k8q7w75g9yxxcc6yj20.device.marketingcloudapis.com^
@@ -1010,6 +1020,7 @@
 ||pixels-1.ingbank.com.tr^
 ||pl15371971.highcpmrevenuenetwork.com^
 ||pl15373403.highcpmrevenuenetwork.com^
+||pl15393240.highrevenuegate.com^
 ||pl15413159.highcpmrevenuenetwork.com^
 ||platform-api.sharethis.com^
 ||playbuzzltd-d.openx.net^
@@ -1086,6 +1097,7 @@
 ||rot.spotsniper.ru^
 ||rotarb.bid^
 ||router.miwifi.com^
+||rp.liadm.com^
 ||rpc-php.trafficfactory.biz^
 ||rpdn.relateddigital.com^
 ||rr3s4p9hfoptgmhna.ay.delivery^
@@ -1111,6 +1123,7 @@
 ||rumcdn.geoedge.be^
 ||run.admost.com^
 ||rxeosevsso.com^
+||s.aagm.link^
 ||s.adroll.com^
 ||s.amazon-adsystem.com^
 ||s.btstatic.com^
@@ -1238,6 +1251,7 @@
 ||static.apester.com^
 ||static.chartbeat.com^
 ||static.clevertap.com^
+||static.clmbtech.com^
 ||static.cloudflareinsights.com^
 ||static.criteo.net^
 ||static.fd-api.com^
@@ -1355,6 +1369,7 @@
 ||tracking.olx-st.com^
 ||tracking.rus.miui.com^
 ||trc.taboola.com^
+||trc-events.taboola.com^
 ||trgde.adocean.pl^
 ||trk.indoleads.com^
 ||trk.pinterest.com^
@@ -1439,6 +1454,7 @@
 ||ww1.newffr.com^
 ||www.biphic.com^
 ||www.blockadsnot.com^
+||www.ccmiocw.com^
 ||www.cdn4ads.com^
 ||www.datadoghq-browser-agent.com^
 ||www.dianomi.com^
@@ -1447,6 +1463,7 @@
 ||www.everestjs.net^
 ||www.fastly-insights.com^
 ||www.publisher-network.com^
+||www.rnengage.com^
 ||www.softwareadvice.com^
 ||www.summerhamster.com^
 ||www.w3counter.com^
@@ -1457,6 +1474,7 @@
 ||x.clearbitjs.com^
 ||x.everestop.io^
 ||x01.aidata.io^
+||xfwblpomxc.com^
 ||xngqoc.com^
 ||yandex-dmp-sync.rutarget.ru^
 ||yandex-sync.rutarget.ru^
