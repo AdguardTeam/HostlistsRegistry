@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Allowlist Referral",
+    "description": "This list unblocks affiliate & tracking referral links that appear in mails, search results etc.",
+    "homepage": "https://github.com/hagezi/dns-blocklists#referral",
+    "sources": [
+        {
+            "name": "HaGeZi's Allowlist Referral",
+            "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
