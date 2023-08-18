@@ -142,7 +142,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
 			"sourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
 			"timeAdded": 1640082678993,
-			"timeUpdated": 1692284727465
+			"timeUpdated": 1692359434116
 		},
 		{
 			"filterId": "dan_pollocks_list",
@@ -223,6 +223,54 @@
 			"sourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
 			"timeAdded": 1679670623835,
 			"timeUpdated": 1689329587412
+		},
+		{
+			"filterId": "hagezi_allowlist_referral",
+			"id": 45,
+			"name": "HaGeZi's Allowlist Referral",
+			"description": "This list unblocks affiliate & tracking referral links that appear in mails, search results etc.",
+			"tags": [
+				"purpose:other"
+			],
+			"homepage": "https://github.com/hagezi/dns-blocklists#referral",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_45.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt",
+			"timeAdded": 1692201329143,
+			"timeUpdated": 1692349513631
+		},
+		{
+			"filterId": "hagezi_antipiracy_blocklist",
+			"id": 46,
+			"name": "HaGeZi's Anti-Piracy Blocklist",
+			"description": "Blocks websites and services that are mainly used for illegal distribution of copyrighted content.",
+			"tags": [
+				"purpose:other"
+			],
+			"homepage": "https://github.com/hagezi/dns-blocklists#piracy",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt",
+			"timeAdded": 1692204947218,
+			"timeUpdated": 1692331557064
+		},
+		{
+			"filterId": "hagezi_gambling_blocklist",
+			"id": 47,
+			"name": "HaGeZi's Gambling Blocklist",
+			"description": "Blocks gambling content.",
+			"tags": [
+				"purpose:other"
+			],
+			"homepage": "https://github.com/hagezi/dns-blocklists#gambling",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_47.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
+			"timeAdded": 1692228213114,
+			"timeUpdated": 1692331559032
 		},
 		{
 			"filterId": "dandelion_sprouts_game_console_adblock_list",
@@ -526,7 +574,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
 			"sourceUrl": "https://hole.cert.pl/domains/domains_adblock.txt",
 			"timeAdded": 1678201318112,
-			"timeUpdated": 1692356726863
+			"timeUpdated": 1692359451886
 		},
 		{
 			"filterId": "ISR_easyList_hebrew",
@@ -607,7 +655,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
 			"sourceUrl": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
 			"timeAdded": 1689805499960,
-			"timeUpdated": 1692338757138
+			"timeUpdated": 1692359454491
 		},
 		{
 			"filterId": "curben_phishing_filter",
@@ -656,6 +704,22 @@
 			"sourceUrl": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware",
 			"timeAdded": 1681400345355,
 			"timeUpdated": 1692241553796
+		},
+		{
+			"filterId": "hagezi_threat_intelligence_feeds",
+			"id": 44,
+			"name": "HaGeZi's Threat Intelligence Feeds",
+			"description": "Increases security significantly! Blocks Malware, Cryptojacking, Spam, Scam and Phishing.",
+			"tags": [
+				"purpose:security"
+			],
+			"homepage": "https://github.com/hagezi/dns-blocklists",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_44.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
+			"timeAdded": 1692186669090,
+			"timeUpdated": 1692331587856
 		},
 		{
 			"filterId": "nocoin_filter_list",
