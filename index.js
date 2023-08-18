@@ -57,7 +57,7 @@ const SVGParser = require('svg-parser');
     try {
         const servicesContent = await fs.readFile('./assets/services.json', 'utf8');
         JSON.parse(servicesContent);
-    } catch (e) {
+    } catch (ex) {
         console.error('Failed to parse services.json', ex);
         process.exit(1);
     }
