@@ -4,7 +4,8 @@
   "description": "Hostlists Registry",
   "main": "index.js",
   "dependencies": {
-    "adguard-hostlists-builder": "./hostlists-builder/"
+    "adguard-hostlists-builder": "./hostlists-builder/",
+    "svg-parser": "^2.0.4"
   },
   "scripts": {
     "compose": "node index.js",
