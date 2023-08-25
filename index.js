@@ -3,7 +3,6 @@
 const path = require('path');
 const { promises: fs } = require('fs');
 const builder = require("adguard-hostlists-builder");
-const SVGParser = require('svg-parser');
 
 // build services.json from services folder
 (async() => {
