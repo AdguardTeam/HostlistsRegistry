@@ -2,7 +2,7 @@
 ! Title: TUR: Turkish Ad Hosts
 ! Description: Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
-! Last modified: 2023-08-22T06:05:56.979Z
+! Last modified: 2023-08-25T05:05:41.183Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey...
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
 ! License: GPLv3
-! Last modified: 2023-08-22T05:20:53.114Z
+! Last modified: 2023-08-25T04:49:51.866Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -79,6 +79,7 @@
 ||ad.plus^
 ||ad.vidverto.io^
 ||ad-cdn.bilgin.pro^
+||ad-delivery.net^
 ||ad01.tmgrup.com.tr^
 ||adbsmetrics.hyundai.com^
 ||addata.exxen.com^
@@ -136,6 +137,8 @@
 ||adservice.google.nl^
 ||adsninja.ca^
 ||adsp.haberturk.com^
+||adsreklamizm.ga^
+||adsreklamizm.tk^
 ||adtago.s3.amazonaws.com^
 ||adv.sec.intl.miui.com^
 ||adv.sec.miui.com^
@@ -153,9 +156,14 @@
 ||aj2550.bid^
 ||ak.oalsauwy.net^
 ||ak.sail-horizon.com^
+||aksamreklami.net^
+||aksamvaktireklam.com^
+||aksamvaktimreklamsx.net^
 ||alb.reddit.com^
 ||aloofvest.com^
 ||altinbas.revotas.com^
+||amareklamizm.ml^
+||amareklamizm.gq^
 ||amazonaax.com^
 ||amazonclix.com^
 ||amer.hhkld.com^
@@ -270,6 +278,7 @@
 ||b.pub.network^
 ||b.stats.paypal.com^
 ||b-cdn.cnnturk.com^
+||b-cdn.hurriyet.com.tr^
 ||b-cdn.milliyet.com.tr^
 ||b-cdn.posta.com.tr^
 ||b-code.liadm.com^
@@ -294,8 +303,12 @@
 ||bidder.criteo.com^
 ||biddr.brealtime.com^
 ||bigrourg.net^
+||bireysel-reklam-sayfamiz.tk^
+||bitcireklam.com^
+||bncsdestekgiristr.com^
 ||bngdyn.com^
 ||bngprm.com^
+||bnscbasvurugiristr.com^
 ||bordeaux.futurecdn.net^
 ||brightcombid.marphezis.com^
 ||browser.events.data.microsoft.com^
@@ -375,6 +388,7 @@
 ||cdn.izooto.com^
 ||cdn.krxd.net^
 ||cdn.lr-in.com^
+||cdn.lr-in-prod.com^
 ||cdn.makroo.com^
 ||cdn.matomo.cloud^
 ||cdn.membrana.media^
@@ -558,12 +572,14 @@
 ||delivery.adrecover.com^
 ||demo.criteo.com^
 ||dengage-public-data-collector-proxy.burgan.com.tr^
+||denizfirsatlarimbasvuru.xyz^
 ||depart.trinitymedia.ai^
 ||deploy.mopinion.com^
 ||device-metrics-us.amazon.com^
 ||device-metrics-us-2.amazon.com^
 ||devices.carnivalmobile.com^
 ||di.rlcdn.com^
+||digital-vakifbank-reklam-web.tk^
 ||diken.xyz^
 ||direct-events-collector.spot.im^
 ||directory.cookieyes.com^
@@ -594,6 +610,7 @@
 ||dtm-dre.platform.dbankcloud.cn^
 ||dttrk.com^
 ||ductquest.com^
+||duyuru-geldi-reklam-basvuru-com.ml^
 ||dwin1.com^
 ||dx.mountain.com^
 ||dxp.baidu.com^
@@ -604,6 +621,7 @@
 ||e3.adpushup.com^
 ||eb2.3lift.com^
 ||eb42afa9716f.cdn4.forter.com^
+||ebncbasvuru.com^
 ||ecdn.analysis.fi^
 ||ecdn.firstimpression.io^
 ||edge.fullstory.com^
@@ -611,6 +629,7 @@
 ||edge.uniconsent.com^
 ||edge-sentry-box.otelz.com^
 ||eezegrip.net^
+||egitimhanekurumum.net^
 ||elo-io.videoplayerhub.com^
 ||elonreptiloid.com^
 ||elsa.memoinsights.com^
@@ -686,6 +705,7 @@
 ||geoim.hurriyet.com^
 ||geoloc.hurriyet.com.tr^
 ||geolocation.onetrust.com^
+||gercekkampanyareklami.com^
 ||get.optad360.io^
 ||get.s-onetag.com^
 ||ghb.adtelligent.com^
@@ -708,6 +728,7 @@
 ||google-analytics.com^
 ||googleadservices.com^
 ||googleoptimize.com^
+||googlereklamsayfalari.com^
 ||googletagmanager.com^
 ||grid.bidswitch.net^
 ||grs.dbankcloud.asia^
@@ -719,6 +740,7 @@
 ||gtm.flo.com.tr^
 ||gtm.lidyana.com^
 ||gtrk.s3.amazonaws.com^
+||guldurenreklam.com^
 ||gum.criteo.com^
 ||gvt2.com^
 ||h.n11.com^
@@ -735,6 +757,7 @@
 ||hepsipay-sentry.hepsipay.com^
 ||hexagon-analytics.com^
 ||hf5rbejvpwds.com^
+||hit.8digits.com^
 ||hit.demirorenteknoloji.com^
 ||hit.gemius.pl^
 ||hit.mynet.com^
@@ -829,6 +852,10 @@
 ||json.geoiplookup.io^
 ||jsonip.com^
 ||k.intellitxt.com^
+||kaanbabaads.net^
+||kampanya-reklam-is-bankasi-com.ml^
+||kampanyadiyariherseyburda.xyz^
+||kaanatesoglu7.net^
 ||kia.selphiu.com^
 ||kimberlite.io^
 ||kinja-com.videoplayerhub.com^
@@ -905,6 +932,11 @@
 ||medyanative.com^
 ||medyanet-com-tr.videoplayerhub.com^
 ||memorial.revotas.com^
+||metoatesoglureklamcibaba.net^
+||metoatesoglureklamcibabaa.net^
+||metoatesoglureklamcibabaaa.net^
+||metoatesoglureklamcikral.net^
+||metoatesoglureklamkralidir.net^
 ||metrics.apple.com^
 ||metrics.brightcove.com^
 ||metrics.data.hicloud.com^
@@ -968,10 +1000,16 @@
 ||odb.outbrain.com^
 ||odr.mookie1.com^
 ||offer.slgnt.eu^
+||oglenreklamiiaa.net^
+||oglenreklamiixs.net^
+||oglenvaktireklamms.net^
+||oglenvaktmsreklams.com^
+||oglenvaktsreklams.net^
 ||ogp.me^
 ||omclyzyapf.com^
 ||onclickprediction.com^
 ||onetag-sys.com^
+||onlinegiris-reklamm-vakifbank-web.cf^
 ||open.oneplus.net^
 ||openfpcdn.io^
 ||operate-sdk-telemetry.unity3d.com^
@@ -994,6 +1032,7 @@
 ||pagead2.googlesyndication.com^
 ||panel.afyads.com^
 ||parkingridiculous.com^
+||parksoftreklam.com^
 ||partner-api.jobbio.com^
 ||partnerlinks.io^
 ||path1.xtracloud.net^
@@ -1032,7 +1071,9 @@
 ||pl15373403.highcpmrevenuenetwork.com^
 ||pl15393240.highrevenuegate.com^
 ||pl15413159.highcpmrevenuenetwork.com^
+||plat-form-vakif-onlinereklam-com.tk^
 ||platform-api.sharethis.com^
+||platform-onlinereklam-vakif-com.tk^
 ||playbuzzltd-d.openx.net^
 ||player.adtelligent.com^
 ||player.aniview.com^
@@ -1042,6 +1083,7 @@
 ||pnpjceawvmeu.cdnvideo3.com^
 ||pnsdkapi.turktelekom.com.tr^
 ||pocketfaucet.com^
+||polat-geldi-reklam-basvurusu-com.ml^
 ||pornhdr.cf^
 ||poweredby.jads.co^
 ||pq-direct.revsci.net^
@@ -1093,6 +1135,27 @@
 ||register.appsflyer.com^
 ||rek.izlesene.com^
 ||rek5.savefrom.net^
+||reklam-bimcell.tk^
+||reklam-finansman-mortgage-danismanlik.blogspot.com.tr^
+||reklam-yurt-emlak.blogspot.com.tr^
+||reklam1.hizliindirimlial.online^
+||reklam2.hizliindirimlial.online^
+||reklamabakgotur.cf^
+||reklamajans.shop^
+||reklamas.info^
+||reklamasdhost.click^
+||reklamburda.co^
+||reklamci.space^
+||reklamcilerdm.cf^
+||reklamgoooogle.ga^
+||reklamgoooogle.gq^
+||reklamgoooogle.ml^
+||reklamgoooogle.tk^
+||reklamhesab.tk^
+||reklamlarhayat.net^
+||reklamonline.site^
+||reklamonlines.site^
+||reklamseverinsanlar.net^
 ||reklamup.com^
 ||renderer.apester.com^
 ||report.appmetrica.yandex.net^
@@ -1159,11 +1222,15 @@
 ||s8t.teads.tv^
 ||s9.addthis.com^
 ||ss-pbs.quantumdex.io^
+||sabahreklamireha.net^
+||sabahreklamvaktms.net^
+||sahibindenalisveris-trparanguvende-mobildepartmani.com^
 ||samsung-com.112.2o7.net^
 ||samsungadhub.com^
 ||samsungads.com^
 ||samsungturkey.demdex.net^
 ||sb.scorecardresearch.com^
+||sbhreklamvakti.net^
 ||sc-static.net^
 ||scarfsmash.com^
 ||script.4dex.io^
@@ -1300,10 +1367,12 @@
 ||strmrdrfrokd.site^
 ||stun.fpapi.io^
 ||su.addthis.com^
+||subesiz-vakifonlinbasvuru.chickenkiller.com^
 ||sunlightmetrics.b-cdn.net^
 ||supportmetrics.apple.com^
 ||svibeacon.onezapp.com^
 ||sw.wpu.sh^
+||swimsolution.ap-reklama.cz^
 ||sync.1dmp.io^
 ||sync.1rx.io^
 ||sync.bfmio.com^
@@ -1383,6 +1452,7 @@
 ||tracking.mubi.com^
 ||tracking.olx-st.com^
 ||tracking.rus.miui.com^
+||tramerodemelerimiz.blogspot.com^
 ||trc.taboola.com^
 ||trc-events.taboola.com^
 ||trgde.adocean.pl^
@@ -1390,12 +1460,14 @@
 ||trk.pinterest.com^
 ||trk.storyly.io^
 ||trk.techtarget.com^
-||tsyndicate.com^
+||trreklamlarcom.xyz^
 ||tru.am^
+||tsyndicate.com^
 ||tubemov.com^
 ||tubestatic.usco1621-b.com^
 ||twinrdsrv.com^
 ||twistconcept.com^
+||twitterhalkreklam.com^
 ||tx.n11.com^
 ||u.openx.net^
 ||u1102.com^
@@ -1428,6 +1500,11 @@
 ||utoken.umeng.com^
 ||utt.impactcdn.com^
 ||v.vidghjlgkuyfk.site^
+||vakif-onllline-reklam-platform.cf^
+||vakifbank-onlinegiris-reklam-web.tk^
+||vakifbank-onlinegiriss-reklam-web.tk^
+||vakifbank-reklam-resmi.tk^
+||vakifreklamkayit.tk^
 ||vast.yomeno.xyz^
 ||vc.hotjar.io^
 ||videosvc.ezoic.com^
@@ -1435,6 +1512,7 @@
 ||visariomedia.com^
 ||visitor.omnitagjs.com^
 ||vitals.vercel-insights.com^
+||vkf-onlinereklam-sayfasi.cf^
 ||vsh.visilabs.net^
 ||vstvstsa.com^
 ||vue.comm100.com^
@@ -1492,6 +1570,7 @@
 ||x.everestop.io^
 ||x01.aidata.io^
 ||xfwblpomxc.com^
+||xmtvreklam3d.com^
 ||xngqoc.com^
 ||yandex-dmp-sync.rutarget.ru^
 ||yandex-sync.rutarget.ru^
