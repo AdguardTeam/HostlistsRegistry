@@ -20,8 +20,8 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
             // form json to object
             const OldDataObj = JSON.parse(OldDataJSON);
             // get only services array
-            const OldServicesData = OldDataObj.blocked_services;
-            return OldServicesData;
+            const OldServicesDataArray = OldDataObj.blocked_services;
+            return OldServicesDataArray;
         } catch (error) {
             console.error('Error while reading JSON file:', error);
         }
