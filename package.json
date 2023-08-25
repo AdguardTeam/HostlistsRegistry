@@ -4,7 +4,9 @@
   "description": "Hostlists Registry",
   "main": "index.js",
   "dependencies": {
-    "adguard-hostlists-builder": "./hostlists-builder/"
+    "adguard-hostlists-builder": "./hostlists-builder/",
+    "js-yaml": "^4.1.0",
+    "xmldom": "^0.6.0"
   },
   "scripts": {
     "compose": "node index.js",
