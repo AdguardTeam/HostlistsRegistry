@@ -2,7 +2,7 @@
 ! Title: TUR: Turkish Ad Hosts
 ! Description: Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
-! Last modified: 2023-08-27T16:05:28.462Z
+! Last modified: 2023-08-28T08:06:18.371Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey...
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
 ! License: GPLv3
-! Last modified: 2023-08-27T15:15:52.358Z
+! Last modified: 2023-08-28T07:52:16.515Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -48,6 +48,7 @@
 ||a.labadena.com^
 ||a.magsrv.com^
 ||a.omappapi.com^
+||a.orbsrv.com^
 ||a.pub.network^
 ||a.quora.com^
 ||a.realsrv.com^
@@ -218,6 +219,7 @@
 ||api.exponea.com^
 ||api.fouanalytics.com^
 ||api.gameanalytics.com^
+||api.ibeat-analytics.com^
 ||api.instabug.com^
 ||api.leanplum.com^
 ||api.miui.security.xiaomi.com^
@@ -311,6 +313,7 @@
 ||bngprm.com^
 ||bnscbasvurugiristr.com^
 ||bordeaux.futurecdn.net^
+||bqstreamer.com^
 ||brightcombid.marphezis.com^
 ||browser.events.data.microsoft.com^
 ||browser.pipe.aria.microsoft.com^
@@ -344,6 +347,7 @@
 ||camschat.net^
 ||capi.connatix.com^
 ||capture.trackjs.com^
+||carrick-ui.advoncommerce.com^
 ||carvecakes.com^
 ||cas.avalon.perfdrive.com^
 ||cbox.im^
@@ -394,6 +398,7 @@
 ||cdn.matomo.cloud^
 ||cdn.membrana.media^
 ||cdn.medyanetads.com^
+||cdn.mmctsvc.com^
 ||cdn.mookie1.com^
 ||cdn.mxpnl.com^
 ||cdn.netmera-web.com^
@@ -428,11 +433,13 @@
 ||cdn.taboola.com^
 ||cdn.tagdeliver.com^
 ||cdn.thequin.ai^
+||cdn.trackjs.com^
 ||cdn.unblockia.com^
 ||cdn.unibotscdn.com^
 ||cdn.usefulcontentsites.com^
 ||cdn.valuad.cloud^
 ||cdn.viglink.com^
+||cdn.wazimo.com^
 ||cdn.webpushr.com^
 ||cdn.yourwebbars.com^
 ||cdn-api.admost.com^
@@ -681,6 +688,7 @@
 ||fiverr.ck-cdn.com^
 ||flash.sec.intl.miui.com^
 ||fls-na.amazon.com^
+||fls-na.amazon-adsystem.com^
 ||fourier.taobao.com^
 ||fonts.mopinion.com^
 ||formulaonedigitalmedia.germany-2.evergage.com^
@@ -819,6 +827,7 @@
 ||ipcheck.tmgrup.com.tr^
 ||iplocation-api.wp.trt.com.tr^
 ||ipr.n11.com^
+||ir-na.amazon-adsystem.com^
 ||iscep-stories.commencis.com^
 ||isortagim.hangikredi.com^
 ||istat.izlesene.com^
@@ -876,6 +885,7 @@
 ||live.demand.supply^
 ||live.primis.tech^
 ||load.sumo.com^
+||loadus.exelator.com^
 ||log.cookieyes.com^
 ||log.haberturk.com^
 ||log.pinterest.com^
@@ -962,6 +972,7 @@
 ||mobileanalytics.us-east-1.amazonaws.com^
 ||mon.isnssdk.com^
 ||mon.tiktokv.com^
+||mon-i18n.tiktokv.com^
 ||mon-va.byteoversea.com^
 ||mon-va.tiktokv.com^
 ||monitor.clickcease.com^
@@ -974,6 +985,7 @@
 ||ms.applovin.com^
 ||ms.applvn.com^
 ||ms.pubpowerplatform.io^
+||ms-cookie-sync.presage.io^
 ||mscom.demdex.net^
 ||mssdk-va.byteoversea.com^
 ||mstm.motorsport.com^
@@ -1104,6 +1116,7 @@
 ||pt.ctsdwm.com^
 ||pub.doubleverify.com^
 ||pub-sdk-cfg.criteo.com^
+||public.servenobid.com^
 ||publisher-assets.spot.im^
 ||pugsgivehugs.com^
 ||punosy.best^
@@ -1304,6 +1317,7 @@
 ||src.ebay-us.com^
 ||srv.buysellads.com^
 ||srv.pixel.parsely.com^
+||srv224.com^
 ||srvccc.fish91826twenty.ga^
 ||srvr.dmvs-apac.com^
 ||ssbsync-global.smartadserver.com^
@@ -1327,7 +1341,7 @@
 ||startup.mobile.yandex.net^
 ||stat.tildacdn.com^
 ||statcounter.com^
-||statsforads.com^
+||static.growthrx.in^
 ||static.adsafeprotected.com^
 ||static.apester.com^
 ||static.chartbeat.com^
@@ -1358,6 +1372,7 @@
 ||stats.vk-portal.net^
 ||stats.vlitag.com^
 ||stats.wp.com^
+||statsforads.com^
 ||statsigapi.net^
 ||steadfastsystem.com^
 ||steepsquirrel.com^
@@ -1369,6 +1384,7 @@
 ||stun.fpapi.io^
 ||su.addthis.com^
 ||subesiz-vakifonlinbasvuru.chickenkiller.com^
+||succeedscene.com^
 ||sunlightmetrics.b-cdn.net^
 ||supportmetrics.apple.com^
 ||svibeacon.onezapp.com^
@@ -1398,6 +1414,7 @@
 ||t.castle.io^
 ||t.contentsquare.net^
 ||t.imgur.com^
+||t8.prnx.net^
 ||tacticschangebabysitting.com^
 ||tag.1rx.io^
 ||tag.bounceexchange.com^
@@ -1424,6 +1441,7 @@
 ||tg1.aniview.com^
 ||tg1.playstream.media^
 ||the.gatekeeperconsent.com^
+||thrtle.com^
 ||tlx.3lift.com^
 ||tme.112.2o7.net^
 ||tns-counter.ru^
@@ -1434,6 +1452,7 @@
 ||toyotaeuropetoyglobaldev.112.2o7.net^
 ||toyotaeuropelexglobalprod.112.2o7.net^
 ||tpc.googlesyndication.com^
+||tps10232.doubleverify.com^
 ||tps30.doubleverify.com^
 ||tpx.tesseradigital.com^
 ||tr.rdrtr.com^
@@ -1474,6 +1493,7 @@
 ||u1102.com^
 ||u10506.19.spylog.com^
 ||ua.realtimely.io^
+||ubuyanalytics.ubuy.com^
 ||udmserve.net^
 ||uip.semasio.net^
 ||uk-script.dotmetrics.net^
@@ -1526,6 +1546,7 @@
 ||webed.dm-event.net^
 ||websdk.appsflyer.com^
 ||webstats.garanti.com.tr^
+||webtrafficsource.com^
 ||whos.amung.us^
 ||widget.cdn.vidyome.com^
 ||widget.criteo.com^
