@@ -1,10 +1,10 @@
 /* globals require, __dirname, process */
 
 const path = require('path');
-const builder = require("adguard-hostlists-builder");
+const builder = require('adguard-hostlists-builder');
 const fs = require('fs');
-const {checkRemovedServices} = require('./scripts/services/checkRemovedServices')
-const {rewriteServicesJSON} = require('./scripts/services/rewriteServicesJSON')
+const { checkRemovedServices } = require('./scripts/services/checkRemovedServices');
+const { rewriteServicesJSON } = require('./scripts/services/rewriteServicesJSON');
 
 const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');
@@ -14,17 +14,17 @@ const servicesDir = path.join(__dirname, './services');
 const servicesJSON = path.join(assetsDir, '/services.json');
 
 // build services.json from services folder
-const buildServices = async (servicesDir, servicesJSON) => {
+const buildServices = async (dir, JSON) => {
     try {
-        await checkRemovedServices(servicesDir, servicesJSON);
-        await rewriteServicesJSON(servicesDir, servicesJSON);
+        await checkRemovedServices(dir, JSON);
+        await rewriteServicesJSON(dir, JSON);
         console.log('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
         console.log('Building services.json finished with an error', error);
         process.exit(1);
     }
-}
+};
 buildServices(servicesDir, servicesJSON);
 
 // Validate services.json and make sure it is a valid JSON.

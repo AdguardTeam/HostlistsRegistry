@@ -12,6 +12,12 @@
     "compose": "node index.js",
     "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "cd scripts/translations ; ./download.sh",
-    "locales:upload": "cd scripts/translations ; ./upload.sh"
+    "locales:upload": "cd scripts/translations ; ./upload.sh",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1"
   }
 }
