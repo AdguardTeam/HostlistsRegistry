@@ -12,7 +12,6 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         const replaceSpecialCharacters = lowerCased.replace(specificCharacters, '');
         return replaceSpecialCharacters;
     };
-    console.log(servicesJSON);
     // get array with old services objects and check if json is valid
     const getServicesData = async (servicesJSON) => {
         try {
