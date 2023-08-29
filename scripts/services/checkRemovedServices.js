@@ -1,6 +1,7 @@
-const { promises: fs, readdir } = require('fs');
+const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
+const servicesDir = path.resolve(__dirname, '../../services/')
 
 const checkRemovedServices = async (distFolder, servicesJSON) => {
 
@@ -11,7 +12,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         const replaceSpecialCharacters = lowerCased.replace(specificCharacters, '');
         return replaceSpecialCharacters;
     };
-
+    console.log(servicesJSON)
     // get array with old services objects and check if json is valid
     const getServicesData = async (servicesJSON) => {
         try {
@@ -82,7 +83,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
             // write files
             for (const removedObject of onlyRemovedObjects) {
                 await fs.writeFile(
-                    path.join(appRoot, `../dist/${removedObject.id}.yml`),
+                    path.join(`${servicesDir}/${removedObject.id}.yml`),
                     yaml.dump(removedObject)
                 );
             }

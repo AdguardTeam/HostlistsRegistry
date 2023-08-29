@@ -2,13 +2,10 @@ const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const servicesDir = path.join(__dirname, '../services/');
-const servicesJSON = path.join(__dirname, '../assets/services.json');
-
 const {checkSVG} = require('./checkSVG')
 
 // build services.json from services folder
-const rewriteServicesJSON = async () => {
+const rewriteServicesJSON = async (servicesDir, servicesJSON) => {
     // variable to store json's object
     let servicesData = []
     // array with all services names
