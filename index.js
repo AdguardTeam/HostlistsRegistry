@@ -3,8 +3,8 @@
 const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs');
-const { checkRemovedServices } = require('./scripts/services/checkRemovedServices');
-const { rewriteServicesJSON } = require('./scripts/services/rewriteServicesJSON');
+const { checkRemovedServices } = require('./scripts/services/check-removed-services');
+const { rewriteServicesJSON } = require('./scripts/services/rewrite-services-json');
 
 const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');

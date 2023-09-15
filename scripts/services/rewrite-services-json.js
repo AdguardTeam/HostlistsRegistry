@@ -2,7 +2,7 @@ const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const { checkSVG } = require('./checkSVG');
+const { checkSVG } = require('./check-svg');
 
 // build services.json from services folder
 const rewriteServicesJSON = async (servicesDir, servicesJSON) => {
