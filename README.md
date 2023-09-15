@@ -147,7 +147,7 @@ The `services.json` file functions as a centralized configuration repository, co
 
 - Adding a new service: to add a new service to `services.json` you need to add a `.yml`file to the services folder, after running the script the file will be updated.
 
-  Service metadata. Includes id, name, rules, icon.
+  Service metadata. Includes id, name, rules, icon_svg.
 
   - `id` — unique human-readable service identifier (string)
   - `name` — service name (string)
