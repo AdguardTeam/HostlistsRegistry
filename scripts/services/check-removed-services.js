@@ -4,15 +4,33 @@ const yaml = require('js-yaml');
 
 const servicesDir = path.resolve(__dirname, '../../services/');
 
+/**
+ * Converts a service name to lowercase and replaces special characters.
+ *
+ * @param {string} serviceName - The service name to be normalized.
+ * @returns {string} The normalized service name.
+ */
+const normalizeFileName = (serviceName) => {
+    const specificCharacters = new RegExp(/[^a-z0-9.]/, 'g');
+    const lowerCased = serviceName.toLowerCase();
+    const replaceSpecialCharacters = lowerCased.replace(specificCharacters, '');
+    return replaceSpecialCharacters;
+};
+
+/**
+ * Checks for removed services and rewrites YAML files if necessary.
+ *
+ * @param {string} distFolder - The path to the folder /services.
+ * @param {string} servicesJSON - The path to the JSON file containing old services data /assets/services.json.
+ * @throws {Error} If services have been removed, an error is thrown with the list of removed services.
+ */
 const checkRemovedServices = async (distFolder, servicesJSON) => {
-    // changes names of services to lower case without, and all - change to _
-    const normalizeFileName = (serviceName) => {
-        const specificCharacters = new RegExp(/[^a-z0-9.]/, 'g');
-        const lowerCased = serviceName.toLowerCase();
-        const replaceSpecialCharacters = lowerCased.replace(specificCharacters, '');
-        return replaceSpecialCharacters;
-    };
-    // get array with old services objects and check if json is valid
+/**
+ * Reads and parses the old services data from a JSON file.
+ *
+ * @param {string} servicesFile - The path to the JSON file.
+ * @returns {Promise<Array<Object>>} An array of old services data objects.
+ */
     const getServicesData = async (servicesFile) => {
         let OldServicesDataArray = [];
         try {
@@ -27,6 +45,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         }
         return OldServicesDataArray;
     };
+
     // old services array with objects
     const OldServicesData = await getServicesData(servicesJSON);
 
@@ -34,6 +53,11 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         return;
     }
 
+    /**
+     * Retrieves the names of old services after normalization.
+     *
+     * @returns {Promise<Array<string>>} An array of normalized old service names.
+     */
     const getOldServicesNames = async () => {
         // get array with id's from old data
         const OldServicesNameArray = OldServicesData.map((service) => service.id);
@@ -44,6 +68,12 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         return formattedServiceNames;
     };
 
+    /**
+     * Retrieves the names of new services from the specified folder after normalization.
+     *
+     * @param {string} folder - The path to the folder containing new service files.
+     * @returns {Promise<Array<string>>} An array of normalized new service names.
+     */
     const getNewServicesNames = async (folder) => {
         // get all dir names from services folder
         const NewServicesFileNames = await fs.readdir(folder);
@@ -66,6 +96,11 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
 
     const differences = OldServicesNames.filter((item) => !NewServicesNames.includes(item));
 
+    /**
+     * Rewrites YAML files for removed services.
+     *
+     * @param {Array<string>} removedServices - An array of removed service names.
+     */
     const rewriteYMLFile = async (removedServices) => {
         try {
             // get only removed objects
@@ -85,7 +120,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
                 );
             }
         } catch (error) {
-            console.error('Error while rewrite file:', error);
+            console.error('Error while rewriting file:', error);
         }
     };
 
@@ -93,7 +128,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         console.log('No services have been removed');
     } else {
         await rewriteYMLFile(differences);
-        throw new Error(`These services have been removed: ${differences.join(', ')}, and was rewritten`);
+        throw new Error(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
     }
 };
 

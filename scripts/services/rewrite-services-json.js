@@ -4,28 +4,46 @@ const yaml = require('js-yaml');
 
 const { checkSVG } = require('./check-svg');
 
-// build services.json from services folder
+/**
+ * Builds a services.json file from the services folder.
+ *
+ * @param {string} servicesDir - The path to the services folder.
+ * @param {string} servicesJSON - The path to the services.json file to write.
+ * @throws {Error} If there are issues reading or writing files, or if SVG validation fails.
+ */
 const rewriteServicesJSON = async (servicesDir, servicesJSON) => {
-    // variable to store json's object
+    // Variable to store the JSON object.
     const servicesData = [];
-    // array with all services names
+
+    // Array with all service names in the services folder.
     const fileNames = await fs.readdir(servicesDir);
-    // read service data from services folder
+
+    /**
+     * Reads service data from a YML file and pushes it into the servicesData array.
+     *
+     * @param {string} fileName - The name of the YML file to read.
+     * @throws {Error} If there is an error while reading the YML file.
+     */
     const readServiceData = async (fileName) => {
         try {
             const fileData = await fs.readFile(path.resolve(__dirname, servicesDir, fileName), 'utf8');
             const fileDataObject = yaml.load(fileData);
-            // Push the parsed YAML data into the servicesData array
             servicesData.push(fileDataObject);
         } catch (er) {
             throw Error(`Error while reading YML file: "${fileName}"`, er);
         }
     };
-    // read data from files
+
+    // Read data from YML files.
     const getServicesData = fileNames.map((fileName) => readServiceData(fileName));
     await Promise.all(getServicesData);
 
-    // check that all file has correct svg
+    /**
+     * Checks that all services have valid SVG icons.
+     *
+     * @param {Array<Object>} servicesArray - An array of service data objects.
+     * @returns {boolean} True if all services have valid SVG icons; otherwise, false.
+     */
     const checkValidSVG = (servicesArray) => {
         const checkedServicesSVG = servicesArray.filter((service) => {
             const servicesSVG = service.icon_svg;
@@ -37,14 +55,20 @@ const rewriteServicesJSON = async (servicesDir, servicesJSON) => {
         }
         return false;
     };
+
+    // Validate SVG icons.
     checkValidSVG(servicesData);
-    // stores services.json file content
+
+    // Object to store the services.json file content.
     const services = {};
-    // sort object with services by id
+
+    // Sort the servicesData array by ID.
     const sortedServicesData = servicesData.sort((a, b) => a.id.localeCompare(b.id));
-    // write sorted services array by blocked_services key
+
+    // Write the sorted services array into the blocked_services key.
     services.blocked_services = sortedServicesData;
-    // rewrite services.json
+
+    // Rewrite services.json.
     await fs.writeFile(servicesJSON, JSON.stringify(services, null, 2));
 };
 
