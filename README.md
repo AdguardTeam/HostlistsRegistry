@@ -155,7 +155,7 @@ The `services.json` file combines information about services received from separ
 
 Service metadata includes `id`, `name`, `rules`, `icon_svg`:
 
-- `id` — unique human-readable service identifier (string, as `_snake_case_`)
+- `id` — unique human-readable service identifier (string, as `snake_case`)
 - `name` — service name (string)
 - `rules` — list of domain rules in Adblock syntax (list of strings)
 - `icon_svg` — svg icon (string)
