@@ -25,7 +25,6 @@ const buildServices = async (dir, JSON) => {
         process.exit(1);
     }
 };
-buildServices(servicesDir, servicesJSON);
 
 // Validate services.json and make sure it is a valid JSON.
 try {
@@ -38,6 +37,7 @@ try {
 (async () => {
     try {
         await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await buildServices(servicesDir, servicesJSON);
     } catch (e) {
         console.error('Failed to compile hostlists', e);
         process.exit(1);
