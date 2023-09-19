@@ -99,6 +99,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         try {
             // get only removed objects
             const onlyRemovedObjects = [];
+            // eslint-disable-next-line no-restricted-syntax
             for (const removedService of removedServices) {
                 const serviceItem = oldServicesData
                     .find((service) => normalizeFileName(service.id) === removedService);
@@ -107,10 +108,12 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
                 }
             }
             // write files
+            // eslint-disable-next-line no-restricted-syntax
             for (const removedObject of onlyRemovedObjects) {
+                // eslint-disable-next-line no-await-in-loop
                 await fs.writeFile(
                     path.join(`${servicesDir}/${removedObject.id}.yml`),
-                    yaml.dump(removedObject, {'lineWidth': -1}),
+                    yaml.dump(removedObject, { lineWidth: -1 }),
                 );
             }
         } catch (error) {

@@ -1,4 +1,4 @@
-/* globals require, __dirname, process */
+// globals require, __dirname, process
 
 const path = require('path');
 const builder = require('adguard-hostlists-builder');
