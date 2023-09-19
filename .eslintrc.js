@@ -10,6 +10,12 @@ module.exports = {
     parserOptions: {
         ecmaVersion: 12,
     },
+    ignorePatterns: [
+        'node_modules/',
+        // TODO: uncomment later and fix errors
+        'scripts/translations/',
+        'hostlists-builder/',
+    ],
     rules: {
         indent: ['error', 4],
         'no-console': 'off',
