@@ -32,24 +32,20 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
  * @returns {Promise<Array<Object>>} An array of old services data objects.
  */
     const getServicesData = async (servicesFile) => {
-        let OldServicesDataArray = [];
         try {
-            // get json data
-            const OldDataJSON = await fs.readFile(servicesFile);
-            // form json to object
-            const OldDataObj = JSON.parse(OldDataJSON);
-            // get only services array
-            OldServicesDataArray = OldDataObj.blocked_services;
+            const oldDataJSON = await fs.readFile(servicesFile);
+            const oldDataObj = JSON.parse(oldDataJSON);
+            return oldDataObj.blocked_services;
         } catch (error) {
             console.error('Error while reading JSON file:', error);
+            return null;
         }
-        return OldServicesDataArray;
     };
 
     // old services array with objects
-    const OldServicesData = await getServicesData(servicesJSON);
+    const oldServicesData = await getServicesData(servicesJSON);
 
-    if (!OldServicesData) {
+    if (!oldServicesData || !Array.isArray(oldServicesData)) {
         return;
     }
 
@@ -58,11 +54,11 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
      *
      * @returns {Promise<Array<string>>} An array of normalized old service names.
      */
-    const getOldServicesNames = async () => {
+    const getOldServicesNames = async (oldData) => {
         // get array with id's from old data
-        const OldServicesNameArray = OldServicesData.map((service) => service.id);
+        const oldServicesNameArray = oldData.map((service) => service.id);
         // format file names
-        const formattedServiceNames = OldServicesNameArray.map((serviceName) => normalizeFileName(serviceName));
+        const formattedServiceNames = oldServicesNameArray.map((serviceName) => normalizeFileName(serviceName));
         // sort array by name
         formattedServiceNames.sort();
         return formattedServiceNames;
@@ -74,14 +70,12 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
      * @param {string} folder - The path to the folder containing new service files.
      * @returns {Promise<Array<string>>} An array of normalized new service names.
      */
-    const getNewServicesNames = async (folder) => {
+    const getNewServicesNames = async (distPath) => {
         // get all dir names from services folder
-        const NewServicesFileNames = await fs.readdir(folder);
+        const NewServicesFileNames = await fs.readdir(distPath);
         const NewServicesNameArray = NewServicesFileNames.map((file) => {
-            // make names string types
-            const stringFileName = file.toString();
             // get only names without extension
-            const onlyName = stringFileName.replace('.yml', '');
+            const onlyName = file.replace('.yml', '');
             return onlyName;
         });
         // format file names
@@ -91,10 +85,10 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
         return formattedServiceNames;
     };
 
-    const NewServicesNames = await getNewServicesNames(distFolder);
-    const OldServicesNames = await getOldServicesNames();
+    const newServicesNames = await getNewServicesNames(distFolder);
+    const oldServicesNames = await getOldServicesNames(oldServicesData);
 
-    const differences = OldServicesNames.filter((item) => !NewServicesNames.includes(item));
+    const differences = oldServicesNames.filter((item) => !newServicesNames.includes(item));
 
     /**
      * Rewrites YAML files for removed services.
@@ -106,7 +100,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
             // get only removed objects
             const onlyRemovedObjects = [];
             for (const removedService of removedServices) {
-                const serviceItem = OldServicesData
+                const serviceItem = oldServicesData
                     .find((service) => normalizeFileName(service.id) === removedService);
                 if (serviceItem) {
                     onlyRemovedObjects.push(serviceItem);
@@ -116,7 +110,7 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
             for (const removedObject of onlyRemovedObjects) {
                 await fs.writeFile(
                     path.join(`${servicesDir}/${removedObject.id}.yml`),
-                    yaml.dump(removedObject),
+                    yaml.dump(removedObject, {'lineWidth': -1}),
                 );
             }
         } catch (error) {

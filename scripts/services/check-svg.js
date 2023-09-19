@@ -38,8 +38,8 @@ const checkSVG = (serviceName, SVGString) => {
      *
      * @throws {Error} If `width` or `height` attributes are present, an error is thrown.
      */
-    const checkWidthHeightAttributes = () => {
-        if (svgElement.hasAttribute('height') || svgElement.hasAttribute('width')) {
+    const checkWidthHeightAttributes = (svgItem) => {
+        if (svgItem.hasAttribute('height') || svgItem.hasAttribute('width')) {
             throw new Error(`${serviceName} : Svg tag must not contain \`width\` and \`height\` attributes`);
         }
     };
@@ -49,8 +49,8 @@ const checkSVG = (serviceName, SVGString) => {
      *
      * @throws {Error} If the `fill` attribute is missing or not set to 'currentColor', an error is thrown.
      */
-    const checkFillAttribute = () => {
-        if (!svgElement.hasAttribute('fill') || svgElement.getAttribute('fill') !== 'currentColor') {
+    const checkFillAttribute = (svgItem) => {
+        if (!svgItem.hasAttribute('fill') || svgItem.getAttribute('fill') !== 'currentColor') {
             throw new Error(`${serviceName} : Svg tag must contain \`fill="currentColor"\` attribute.`);
         }
     };
@@ -60,15 +60,15 @@ const checkSVG = (serviceName, SVGString) => {
      *
      * @throws {Error} If the SVG is not square, an error is thrown.
      */
-    const checkSquareSVG = () => {
-        const svgViewBox = svgElement.getAttribute('viewBox').split(' ');
+    const checkSquareSVG = (svgItem) => {
+        const svgViewBox = svgItem.getAttribute('viewBox').split(' ');
         if (svgViewBox[2] !== svgViewBox[3]) {
             throw new Error(`${serviceName} : The icon must have a square shape.`);
         }
     };
 
-    checkWidthHeightAttributes();
-    checkFillAttribute();
-    checkSquareSVG();
+    checkWidthHeightAttributes(svgElement);
+    checkFillAttribute(svgElement);
+    checkSquareSVG(svgElement);
 };
 module.exports = { checkSVG };

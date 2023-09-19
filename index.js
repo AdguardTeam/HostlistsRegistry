@@ -11,13 +11,13 @@ const assetsDir = path.join(__dirname, './assets');
 const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
 const servicesDir = path.join(__dirname, './services');
-const servicesJSON = path.join(assetsDir, '/services.json');
+const servicesJSON = path.join(__dirname, './assets/services.json');
 
 // build services.json from services folder
-const buildServices = async (dir, JSON) => {
+const buildServices = async (dirPath, filePath) => {
     try {
-        await checkRemovedServices(dir, JSON);
-        await rewriteServicesJSON(dir, JSON);
+        await checkRemovedServices(dirPath, filePath);
+        await rewriteServicesJSON(dirPath, filePath);
         console.log('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
