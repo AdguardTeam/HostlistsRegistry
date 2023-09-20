@@ -97,25 +97,31 @@ const checkRemovedServices = async (distFolder, servicesJSON) => {
      */
     const rewriteYMLFile = async (removedServices) => {
         try {
-            // get only removed objects
-            const onlyRemovedObjects = [];
-            // eslint-disable-next-line no-restricted-syntax
-            for (const removedService of removedServices) {
-                const serviceItem = oldServicesData
-                    .find((service) => normalizeFileName(service.id) === removedService);
-                if (serviceItem) {
-                    onlyRemovedObjects.push(serviceItem);
+            // Get objects from the old data, that have been deleted.
+            const onlyRemovedObjects = removedServices
+                .map((removedService) => {
+                    const serviceItem = oldServicesData
+                        .find((service) => normalizeFileName(service.id) === removedService);
+                    return serviceItem;
+                });
+            /**
+             * Write removed services into YML files.
+             * @param {Array<object>} removedObjects - Array of objects that should be written in separate YML files.
+             */
+            const writeRemovedServices = async (removedObjects) => {
+                if (removedObjects.length === 0) {
+                    return;
                 }
-            }
-            // write files
-            // eslint-disable-next-line no-restricted-syntax
-            for (const removedObject of onlyRemovedObjects) {
-                // eslint-disable-next-line no-await-in-loop
+                const [removedObject, ...restObjects] = removedObjects;
                 await fs.writeFile(
                     path.join(`${servicesDir}/${removedObject.id}.yml`),
                     yaml.dump(removedObject, { lineWidth: -1 }),
                 );
-            }
+                if (removedObjects.length > 1) {
+                    await writeRemovedServices(restObjects);
+                }
+            };
+            await writeRemovedServices(onlyRemovedObjects);
         } catch (error) {
             console.error('Error while rewriting file:', error);
         }
