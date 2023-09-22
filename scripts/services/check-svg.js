@@ -4,7 +4,8 @@ const { DOMParser } = require('xmldom');
  * Parses the SVG string into an SVG DOM object.
  *
  * @param {string} svgIcon - The SVG string to parse.
- * @returns {Document} The parsed SVG DOM object.
+ * @param {string} serviceId - The service id, which is displayed in case of an error.
+ * @returns {object} The parsed SVG DOM object.
  * @throws {Error} If there is an SVG syntax error, an error is thrown.
  */
 const parseSVG = (svgIcon, serviceId) => {
@@ -22,7 +23,7 @@ const parseSVG = (svgIcon, serviceId) => {
  *
  * @param {string} svgIcon - The SVG string to parse.
  * @param {string} serviceId - The name of the service associated with the SVG.
- * @returns {svgErrors} - Returns error message array or null
+ * @returns {Array<Array>} - Returns error message array.
  */
 const checkSVG = (svgIcon, serviceId) => {
     // Array to collect errors.

@@ -12,18 +12,13 @@ const servicesDir = path.resolve(__dirname, '../../services/');
  * @param {string} serviceName - The service name to be normalized.
  * @returns {string} The normalized service name.
  */
-const normalizeFileName = (serviceName) => {
-    const specificCharacters = new RegExp(/[^a-z0-9.]/, 'g');
-    const lowerCased = serviceName.toLowerCase();
-    const normalized = lowerCased.replace(specificCharacters, '');
-    return normalized;
-};
+const normalizeFileName = (serviceName) => serviceName.toLowerCase().replace(/[^a-z0-9.]/g, '');
 
 /**
  * Reads and parses the services data from from a JSON file.
  *
  * @param {string} jsonFilePath - The path to the JSON file.
- * @returns {Promise<Array<Object>>|null} A promise that resolves to an array of services data objects from JSON file.
+ * @returns {Promise<object[]|null>} A promise that resolves to an array of services data objects from JSON file.
  * if the JSON file is successfully read and parsed. Returns `null` if there's an error during the process.
  */
 const getJsonObjects = async (jsonFilePath) => {
@@ -72,6 +67,7 @@ const getYmlFileNames = async (servicesFolderPath) => {
 
 /**
  * Write removed services objects into YML files.
+ *
  * @param {Array<object>} removedObjects - Array of objects that should be written in separate YML files.
  */
 const writeRemovedServices = async (removedObjects) => {
@@ -92,7 +88,7 @@ const writeRemovedServices = async (removedObjects) => {
  * Rewrites YAML files for removed services.
  *
  * @param {Array<string>} removedServicesNames - An array of removed normalized service names.
- * @param {Array<objects>} jsonServicesData - An array of json data objects
+ * @param {Array<object>} jsonServicesData - An array of json data objects
  * @throws {Error} If there is an error while rewriting file.
  */
 const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {

@@ -7,7 +7,7 @@ const { checkSVG } = require('./check-svg');
 /**
  * Checks that all services have valid SVG icons.
  *
- * @param {Array<Object>} servicesArray - An array of service data objects.
+ * @param {Array<object>} servicesArray - An array of service data objects.
  * @returns {boolean} True if all services have valid SVG icons.
  * @throws {Error} If an error(s) occurred during SVG validation, an error is thrown.
  */
@@ -28,7 +28,7 @@ const validateSvgIcons = (servicesArray) => {
  *
  * @param {string} servicesDir - The path to the directory containing YAML files.
  * @param {string[]} servicesNames - An array of file names to read and parse.
- * @returns {Promise<Array<Object>>} A promise that resolves to an array of objects of YAML content
+ * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content
  * from the specified files.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
