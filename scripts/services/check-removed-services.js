@@ -63,15 +63,11 @@ const getYmlFileNames = async (servicesFolderPath) => {
     // get all dir names from services folder
     const ymlFiles = await fs.readdir(servicesFolderPath);
     // get the file names without its extension
-    const ymlFileNames = ymlFiles.map((ymlFile) => {
-        const ymlFileName = path.parse(ymlFile).name;
-        return ymlFileName;
-    });
+    const ymlFileNames = ymlFiles.map((ymlFile) => path.parse(ymlFile).name);
     // format file names
     const formattedServiceNames = ymlFileNames.map(normalizeFileName);
-    // sort array by name
-    formattedServiceNames.sort();
-    return formattedServiceNames;
+    // return sorted array
+    return formattedServiceNames.sort();
 };
 
 /**
@@ -103,11 +99,8 @@ const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {
     try {
         // Get services objects from the json data, that have been deleted in services folder.
         const removedServicesObjects = removedServicesNames
-            .map((removedServiceName) => {
-                const serviceData = jsonServicesData
-                    .find(({ id }) => normalizeFileName(id) === removedServiceName);
-                return serviceData;
-            });
+            .map((removedServiceName) => jsonServicesData
+                .find(({ id }) => normalizeFileName(id) === removedServiceName));
         await writeRemovedServices(removedServicesObjects);
     } catch (error) {
         console.error('Error while rewriting file:', error);
