@@ -8,27 +8,35 @@ const { checkSVG } = require('./check-svg');
  * Checks that all services have valid SVG icons.
  *
  * @param {Array<Object>} servicesArray - An array of service data objects.
- * @returns {boolean} True if all services have valid SVG icons; otherwise, false.
+ * @returns {boolean} True if all services have valid SVG icons.
+ * @throws {Error} If an error(s) occurred during SVG validation, an error is thrown.
  */
 const validateSvgIcons = (servicesArray) => {
-    const checkedServicesSVG = servicesArray.filter((service) => checkSVG(service.icon_svg, service.id));
-    return (checkedServicesSVG.length > 0);
+    // Array with results of svg validation.
+    const svgValidationResults = servicesArray.map((service) => checkSVG(service.icon_svg, service.id));
+    // Flatten array and filter nullable values.
+    const errorReports = svgValidationResults.flat().filter((el) => el);
+    if (errorReports.length > 0) {
+        throw new Error(`\n${errorReports.join('\n')}`);
+    } else {
+        return true;
+    }
 };
 
 /**
  * Reads and parses YAML files from a specified directory with given file names.
  *
- * @param {string} servicesDirPath - The path to the directory containing YAML files.
+ * @param {string} servicesDir - The path to the directory containing YAML files.
  * @param {string[]} servicesNames - An array of file names to read and parse.
  * @returns {Promise<Array<Object>>} A promise that resolves to an array of objects of YAML content
  * from the specified files.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
-const getYmlFileContent = async (servicesDirPath, servicesNames) => {
+const getYmlFileContent = async (servicesDir, servicesNames) => {
     try {
         // Reads data from a yml file and writes it to an object
         const ymlDataContent = servicesNames.map(async (fileName) => {
-            const ymlFileChunk = await fs.readFile(path.resolve(__dirname, servicesDirPath, fileName), 'utf-8');
+            const ymlFileChunk = await fs.readFile(path.resolve(__dirname, servicesDir, fileName), 'utf-8');
             const fileDataObject = yaml.load(ymlFileChunk);
             return fileDataObject;
         });
@@ -36,8 +44,8 @@ const getYmlFileContent = async (servicesDirPath, servicesNames) => {
         // Wait for all promises to resolve and return the array of parsed YAML content
         return Promise.all(ymlDataContent);
     } catch (error) {
-        // If an error occurs during the process, throw an error with a specific message
-        throw new Error(`Error while reading YAML file(s): ${error}`);
+        // If an error occurs during the process, throw an error
+        throw new Error('Error while reading YAML file', error);
     }
 };
 

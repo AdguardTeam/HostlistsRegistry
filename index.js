@@ -17,8 +17,7 @@ const outputServicesFile = path.join(assetsDir, 'services.json');
  * @param {string} filePath The file path for the "services.json" file.
  * @throws {Error} If JSON file is not valid.
  */
-
-const validateJSON = (filePath) => {
+const validateJson = (filePath) => {
     try {
         JSON.parse(fs.readFileSync(filePath, 'utf8'));
     } catch (error) {
@@ -28,7 +27,11 @@ const validateJSON = (filePath) => {
 };
 
 /**
- * Builds the services.json file by performing the following steps:
+ * Builds the "services.json" file by performing the following steps:
+ * 1. Check if the services.json file is valid.
+ * 2. Check if the services in the "/services" folder have been deleted by comparing with the data in "services.json".
+ * 3. If the information has been deleted, write the missing files.
+ * 4. Collect information from the services files, sort and overwrite "services.json".
  *
  * @param {string} dirPath - The directory path where the services data is located.
  * @param {string} filePath - The file path for the "services.json" file.
@@ -36,7 +39,7 @@ const validateJSON = (filePath) => {
  */
 const buildServices = async (dirPath, filePath) => {
     try {
-        validateJSON(filePath);
+        validateJson(filePath);
         await checkRemovedServices(dirPath, filePath);
         await rewriteServicesJSON(dirPath, filePath);
         console.log('Successfully finished building services.json');
@@ -46,10 +49,11 @@ const buildServices = async (dirPath, filePath) => {
         process.exit(1);
     }
 };
+
 // Compile hostlists.
 (async () => {
     try {
-        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         await buildServices(inputServicesDir, outputServicesFile);
     } catch (error) {
         console.error('Failed to compile hostlists', error);
