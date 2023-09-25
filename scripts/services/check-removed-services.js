@@ -43,9 +43,8 @@ const getJsonObjectNames = async (jsonData) => {
     const jsonServicesId = jsonData.map((service) => service.id);
     // format file names
     const formattedServicesId = jsonServicesId.map(normalizeFileName);
-    // sort array by name
-    formattedServicesId.sort();
-    return formattedServicesId;
+    // return sorted array
+    return formattedServicesId.sort();
 };
 
 /**
