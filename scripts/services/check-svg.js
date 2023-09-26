@@ -23,7 +23,7 @@ const parseSVG = (svgIcon, serviceId) => {
  *
  * @param {string} svgIcon - The SVG string to parse.
  * @param {string} serviceId - The name of the service associated with the SVG.
- * @returns {Array<Array>} - Returns error message array.
+ * @returns {Array<string>} - Returns error message array.
  */
 const checkSVG = (svgIcon, serviceId) => {
     // Array to collect errors.
