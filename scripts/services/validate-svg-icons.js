@@ -30,7 +30,7 @@ const checkSVG = (svgIcon, serviceId) => {
     const svgErrors = [];
     const svgNode = parseSVG(svgIcon, serviceId);
     // Check if the first child node of the parsed SVG object is undefined
-    // or does not have the 'svg' nodeName. If so, , the error is written to an array.
+    // or does not have the 'svg' nodeName. If so, the error is written to an array.
     if (!svgNode.childNodes[0].nodeName || svgNode.childNodes[0].nodeName !== 'svg') {
         svgErrors.push(`${serviceId} : Parsed SVG object is undefined`);
     }
@@ -53,4 +53,27 @@ const checkSVG = (svgIcon, serviceId) => {
     }
     return svgErrors;
 };
-module.exports = { checkSVG };
+
+/**
+ * Checks that all services have valid SVG icons.
+ *
+ * @param {Array<object>} servicesArray - An array of service data objects.
+ * @throws An error if any service has an invalid SVG icon.
+ * The error message contains details for all of the invalid SVG icons.
+ */
+const validateSvgIcons = (servicesArray) => {
+    // Array with results of svg validation.
+    const errorReports = [];
+    // Collects error messages into an array
+    servicesArray.forEach((service) => {
+        const errors = checkSVG(service.icon_svg, service.id);
+        if (errors.length > 0) {
+            errorReports.push(...errors);
+        }
+    });
+    if (errorReports.length > 0) {
+        throw new Error(`\n${errorReports.join('\n')}`);
+    }
+};
+
+module.exports = { validateSvgIcons };

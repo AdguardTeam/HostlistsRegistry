@@ -2,34 +2,14 @@ const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 
-const { checkSVG } = require('./check-svg');
-
-/**
- * Checks that all services have valid SVG icons.
- *
- * @param {Array<object>} servicesArray - An array of service data objects.
- * @throws An error if any service has an invalid SVG icon.
- * The error message contains details for all of the invalid SVG icons.
- */
-const validateSvgIcons = (servicesArray) => {
-    // Array with results of svg validation.
-    const svgValidationResults = servicesArray.map((service) => checkSVG(service.icon_svg, service.id));
-    // Flatten array and filter nullable values.
-    const errorReports = svgValidationResults.flat().filter((el) => el);
-    if (errorReports.length > 0) {
-        throw new Error(`\n${errorReports.join('\n')}`);
-    } else {
-        return true;
-    }
-};
+const { validateSvgIcons } = require('./validate-svg-icons');
 
 /**
  * Reads and parses YAML files from a specified directory with given file names.
  *
  * @param {string} servicesDir - The path to the directory containing YAML files.
  * @param {string[]} servicesNames - An array of file names to read and parse.
- * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content
- * from the specified files.
+ * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
 const getYmlFileContent = async (servicesDir, servicesNames) => {
