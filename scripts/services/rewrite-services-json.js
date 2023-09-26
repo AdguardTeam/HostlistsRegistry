@@ -8,7 +8,6 @@ const { checkSVG } = require('./check-svg');
  * Checks that all services have valid SVG icons.
  *
  * @param {Array<object>} servicesArray - An array of service data objects.
- * @returns {boolean} True if all services have valid SVG icons.
  * @throws {Error} If an error(s) occurred during SVG validation, an error is thrown.
  */
 const validateSvgIcons = (servicesArray) => {
