@@ -38,14 +38,7 @@ const getJsonObjects = async (jsonFilePath) => {
  * @param {Promise<Array<object>>} jsonData - An array of objects from services.json file.
  * @returns {Promise<Array<string>>} An array of normalized service id form JSON.
  */
-const getJsonObjectNames = async (jsonData) => {
-    // get array with id's from json data
-    const jsonServicesId = jsonData.map((service) => service.id);
-    // format file names
-    const formattedServicesId = jsonServicesId.map(normalizeFileName);
-    // return sorted array
-    return formattedServicesId.sort();
-};
+const getJsonObjectNames = (jsonData) => jsonData.map(({ id }) => normalizeFileName(id)).sort();
 
 /**
  * Gets the names of YML file from the services folder.
@@ -120,7 +113,7 @@ const checkRemovedServices = async (servicesFolderPath, jsonFilePath) => {
     // Array with normalized YML file names from services folder.
     const ymlFileNames = await getYmlFileNames(servicesFolderPath);
     // Array with normalized id of services from JSON file.
-    const jsonObjectNames = await getJsonObjectNames(jsonDataObjects);
+    const jsonObjectNames = getJsonObjectNames(jsonDataObjects);
     // Array with the names of services, the id of which is present in services.json
     // and absent in the name of YML files from the services folder.
     const differences = jsonObjectNames.filter((name) => !ymlFileNames.includes(name));
