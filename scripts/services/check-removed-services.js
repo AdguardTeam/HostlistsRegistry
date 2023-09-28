@@ -27,7 +27,7 @@ const getJsonObjects = async (jsonFilePath) => {
         const jsonObjects = JSON.parse(jsonFileContent);
         return jsonObjects.blocked_services;
     } catch (error) {
-        console.error('Error while reading JSON file:', error);
+        console.error('Error while reading services.json', error);
         return null;
     }
 };
@@ -90,6 +90,8 @@ const writeRemovedServices = async (removedObjects) => {
  * @param {Array<object>} jsonServicesData - An array of json data objects
  * @throws {Error} If there is an error while rewriting file.
  */
+// TODO: get rid of "id" inside the "yml" file and take "id" directly from the "yml" filename
+// to avoid checking when adding new files and exclude the possibility of typos
 const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {
     try {
         // Get services objects from the json data, that have been deleted in services folder.
@@ -98,7 +100,7 @@ const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {
                 .find(({ id }) => normalizeFileName(id) === removedServiceName));
         await writeRemovedServices(removedServicesObjects);
     } catch (error) {
-        console.error('Error while rewriting file:', error);
+        throw new Error('Error while rewriting file:', error);
     }
 };
 
