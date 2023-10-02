@@ -27,7 +27,8 @@ const validateJson = (filePath) => {
 };
 
 /**
- * Builds the "services.json" file by performing the following steps:
+ * Builds the result services file and saves it to `resultFilePath`.
+ * During the build the following steps are performed:
  * 1. Check if the services.json file is valid.
  * 2. Check if the services in the "/services" folder have been deleted by comparing with the data in "services.json".
  * 3. If the information has been deleted, write the missing files.
