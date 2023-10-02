@@ -25,7 +25,7 @@ const getYmlFileContent = async (servicesDir, servicesNames) => {
         return Promise.all(ymlDataContent);
     } catch (error) {
         // If an error occurs during the process, throw an error
-        throw new Error('Error while reading YAML file', error);
+        throw new Error('Error while reading YAML files', error);
     }
 };
 
