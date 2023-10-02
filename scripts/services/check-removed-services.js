@@ -17,13 +17,13 @@ const normalizeFileName = (serviceName) => serviceName.toLowerCase().replace(/[^
 /**
  * Reads and parses the services data from from a JSON file.
  *
- * @param {string} jsonFilePath - The path to the JSON file.
+ * @param {string} resultFilePath - The path to the JSON file.
  * @returns {Promise<object[]|null>} A promise that resolves to an array of services data objects from JSON file.
  * if the JSON file is successfully read and parsed. Returns `null` if there's an error during the process.
  */
-const getJsonObjects = async (jsonFilePath) => {
+const getJsonObjects = async (resultFilePath) => {
     try {
-        const jsonFileContent = await fs.readFile(jsonFilePath);
+        const jsonFileContent = await fs.readFile(resultFilePath);
         const jsonObjects = JSON.parse(jsonFileContent);
         return jsonObjects.blocked_services;
     } catch (error) {
@@ -43,12 +43,12 @@ const getJsonObjectNames = (jsonData) => jsonData.map(({ id }) => normalizeFileN
 /**
  * Gets the names of YML file from the services folder.
  *
- * @param {string} servicesFolderPath - The path to the folder containing YML service files.
+ * @param {string} inputDirPath - The path to the folder containing YML service files.
  * @returns {Promise<Array<string>>} An array of normalized yml file names.
  */
-const getYmlFileNames = async (servicesFolderPath) => {
+const getYmlFileNames = async (inputDirPath) => {
     // get all dir names from services folder
-    const ymlFiles = await fs.readdir(servicesFolderPath);
+    const ymlFiles = await fs.readdir(inputDirPath);
     // get the file names without its extension
     const ymlFileNames = ymlFiles.map((ymlFile) => path.parse(ymlFile).name);
     // format file names
@@ -100,18 +100,18 @@ const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {
 /**
  * Checks for removed services and rewrites YAML files if necessary.
  *
- * @param {string} servicesFolderPath - The path to the folder /services.
- * @param {string} jsonFilePath - The path to the JSON file containing old services data /assets/services.json.
+ * @param {string} inputDirPath - The path to the folder services folder.
+ * @param {string} resultFilePath - The path to the JSON file containing services data from JSON file.
  */
-const checkRemovedServices = async (servicesFolderPath, jsonFilePath) => {
+const restoreRemovedInputServices = async (inputDirPath, resultFilePath) => {
     // Get data from services JSON file - array with objects
-    const jsonDataObjects = await getJsonObjects(jsonFilePath);
+    const jsonDataObjects = await getJsonObjects(resultFilePath);
     // Check if data is array
     if (!Array.isArray(jsonDataObjects)) {
         return;
     }
     // Array with normalized YML file names from services folder.
-    const ymlFileNames = await getYmlFileNames(servicesFolderPath);
+    const ymlFileNames = await getYmlFileNames(inputDirPath);
     // Array with normalized id of services from JSON file.
     const jsonObjectNames = getJsonObjectNames(jsonDataObjects);
     // Array with the names of services, the id of which is present in services.json
@@ -125,4 +125,4 @@ const checkRemovedServices = async (servicesFolderPath, jsonFilePath) => {
     }
 };
 
-module.exports = { checkRemovedServices };
+module.exports = { restoreRemovedInputServices };

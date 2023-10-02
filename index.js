@@ -1,7 +1,7 @@
 const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs');
-const { checkRemovedServices } = require('./scripts/services/check-removed-services');
+const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
 const { rewriteServicesJSON } = require('./scripts/services/rewrite-services-json');
 
 const filtersDir = path.join(__dirname, './filters');
@@ -33,15 +33,15 @@ const validateJson = (filePath) => {
  * 3. If the information has been deleted, write the missing files.
  * 4. Collect information from the services files, sort and overwrite "services.json".
  *
- * @param {string} dirPath - The directory path where the services data is located.
- * @param {string} filePath - The file path for the "services.json" file.
+ * @param {string} inputDirPath - The directory path where the services data is located.
+ * @param {string} resultFilePath - The file path for the "services.json" file.
  * @returns {Promise<void>} A promise that resolves when the building process is complete.
  */
-const buildServices = async (dirPath, filePath) => {
+const buildServices = async (inputDirPath, resultFilePath) => {
     try {
-        validateJson(filePath);
-        await checkRemovedServices(dirPath, filePath);
-        await rewriteServicesJSON(dirPath, filePath);
+        validateJson(resultFilePath);
+        await restoreRemovedInputServices(inputDirPath, resultFilePath);
+        await rewriteServicesJSON(inputDirPath, resultFilePath);
         console.log('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {

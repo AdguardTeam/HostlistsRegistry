@@ -7,16 +7,16 @@ const { validateSvgIcons } = require('./validate-svg-icons');
 /**
  * Reads and parses YAML files from a specified directory with given file names.
  *
- * @param {string} servicesDir - The path to the directory containing YAML files.
+ * @param {string} inputDirPath - The path to the directory containing YAML files.
  * @param {string[]} servicesNames - An array of file names to read and parse.
  * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
-const getYmlFileContent = async (servicesDir, servicesNames) => {
+const getYmlFileContent = async (inputDirPath, servicesNames) => {
     try {
         // Reads data from a yml file and writes it to an object
         const ymlDataContent = servicesNames.map(async (fileName) => {
-            const ymlFileChunk = await fs.readFile(path.resolve(__dirname, servicesDir, fileName), 'utf-8');
+            const ymlFileChunk = await fs.readFile(path.resolve(__dirname, inputDirPath, fileName), 'utf-8');
             const fileDataObject = yaml.load(ymlFileChunk);
             return fileDataObject;
         });
@@ -32,15 +32,15 @@ const getYmlFileContent = async (servicesDir, servicesNames) => {
 /**
  * Builds a services.json file from the services folder.
  *
- * @param {string} servicesDir - The path to the services folder.
- * @param {string} servicesJSON - The path to the services.json file to write.
+ * @param {string} inputDirPath - The path to the services folder.
+ * @param {string} resultFilePath - The path to the services.json file to write.
  * @throws {Error} If there are issues reading or writing files, or if SVG validation fails.
  */
-const rewriteServicesJSON = async (servicesDir, servicesJSON) => {
+const rewriteServicesJSON = async (inputDirPath, resultFilePath) => {
     // Array with all service names in the services folder.
-    const ymlFileNames = await fs.readdir(servicesDir);
+    const ymlFileNames = await fs.readdir(inputDirPath);
     // Array with YML files content.
-    const ymlDataObjects = await getYmlFileContent(servicesDir, ymlFileNames);
+    const ymlDataObjects = await getYmlFileContent(inputDirPath, ymlFileNames);
     // Validate SVG icons. If the svg icon is not valid, an error is thrown.
     validateSvgIcons(ymlDataObjects);
     // Object to store the services.json file content.
@@ -50,7 +50,7 @@ const rewriteServicesJSON = async (servicesDir, servicesJSON) => {
     // Write the sorted services array into the blocked_services key.
     servicesData.blocked_services = sortedServicesData;
     // Rewrite services.json.
-    await fs.writeFile(servicesJSON, JSON.stringify(servicesData, null, 2));
+    await fs.writeFile(resultFilePath, JSON.stringify(servicesData, null, 2));
 };
 
 module.exports = {
