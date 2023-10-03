@@ -15,17 +15,17 @@ const servicesDir = path.resolve(__dirname, '../../services/');
 const normalizeFileName = (serviceName) => serviceName.toLowerCase().replace(/[^a-z0-9.]/g, '');
 
 /**
- * Reads and parses the services data from from a JSON file.
+ * Gets blocked services data from services file.
  *
- * @param {string} resultFilePath - The path to the JSON file.
- * @returns {Promise<object[]|null>} A promise that resolves to an array of services data objects from JSON file.
- * if the JSON file is successfully read and parsed. Returns `null` if there's an error during the process.
+ * @param {string} filePath - The path to the file.
+ * @returns {Promise<object[]|null>} - Array of blocked services objects.
+ * Returns `null` if there's an error during the process.
  */
-const getJsonObjects = async (resultFilePath) => {
+const getBlockedServicesData = async (filePath) => {
     try {
-        const jsonFileContent = await fs.readFile(resultFilePath);
-        const jsonObjects = JSON.parse(jsonFileContent);
-        return jsonObjects.blocked_services;
+        const fileContent = await fs.readFile(filePath);
+        const serviceObjects = JSON.parse(fileContent);
+        return serviceObjects.blocked_services;
     } catch (error) {
         console.error('Error while reading services.json', error);
         return null;
@@ -33,12 +33,12 @@ const getJsonObjects = async (resultFilePath) => {
 };
 
 /**
- * Gets the names of services from JSON file after normalization.
+ * Gets the normalized id of blocked services.
  *
- * @param {Promise<Array<object>>} jsonData - An array of objects from services.json file.
- * @returns {Promise<Array<string>>} An array of normalized service id form JSON.
+ * @param {Promise<Array<object>>} serviceData - An array of blocked services objects.
+ * @returns {Promise<Array<string>>} - An array of normalized blocked service id.
  */
-const getJsonObjectNames = (jsonData) => jsonData.map(({ id }) => normalizeFileName(id)).sort();
+const getBlockedServicesNames = (serviceData) => serviceData.map(({ id }) => normalizeFileName(id)).sort();
 
 /**
  * Write removed services objects into YML files.
@@ -60,48 +60,29 @@ const writeRemovedServices = async (removedObjects) => {
 };
 
 /**
- * Rewrites YAML files for removed services.
- *
- * @param {Array<string>} removedServicesNames - An array of removed normalized service names.
- * @param {Array<object>} jsonServicesData - An array of json data objects
- * @throws {Error} If there is an error while rewriting file.
- */
-// TODO: get rid of "id" inside the "yml" file and take "id" directly from the "yml" filename
-// to avoid checking when adding new files and exclude the possibility of typos
-const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {
-    try {
-        // Get services objects from the json data, that have been deleted in services folder.
-        const removedServicesObjects = removedServicesNames
-            .map((removedServiceName) => jsonServicesData
-                .find(({ id }) => normalizeFileName(id) === removedServiceName));
-        await writeRemovedServices(removedServicesObjects);
-    } catch (error) {
-        throw new Error('Error while rewriting file:', error);
-    }
-};
-
-/**
  * Checks for removed services and rewrites YAML files if necessary.
  *
  * @param {string} resultFilePath - The path to the JSON file containing services data from JSON file.
- * @param {Array<string>} ymlFileNames - Array of normalized yml file names.
+ * @param {Array<string>} servicesFileNames - Array of normalized yml file names.
  */
-const restoreRemovedInputServices = async (resultFilePath, ymlFileNames) => {
+const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) => {
     // Get data from services JSON file - array with objects
-    const jsonDataObjects = await getJsonObjects(resultFilePath);
+    const blockedServices = await getBlockedServicesData(resultFilePath);
     // Check if data is array
-    if (!Array.isArray(jsonDataObjects)) {
+    if (!Array.isArray(blockedServices)) {
         return;
     }
     // Array with normalized id of services from JSON file.
-    const jsonObjectNames = getJsonObjectNames(jsonDataObjects);
+    const unifiedBlockedServicesNames = getBlockedServicesNames(blockedServices);
+    // Get normalized yml file names
+    const unifiedServiceFileNames = servicesFileNames.map((fileName) => normalizeFileName(fileName));
     // Array with the names of services, the id of which is present in services.json
     // and absent in the name of YML files from the services folder.
-    const differences = jsonObjectNames.filter((name) => !ymlFileNames.includes(name));
-    // If there are missing services, it is necessary to find the corresponding object in services.json
-    // and rewrite the data from it into a separate YML file.
+    const differences = unifiedBlockedServicesNames.filter((name) => !unifiedServiceFileNames.includes(name));
+    // If there are missing services, find and rewrite the corresponding objects from blocked services.
     if (differences.length > 0) {
-        await rewriteYMLFile(differences, jsonDataObjects);
+        const removedServiceObjects = blockedServices.filter(({ id }) => differences.includes(id));
+        await writeRemovedServices(removedServiceObjects);
         console.log(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
     }
 };
