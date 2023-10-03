@@ -60,14 +60,20 @@ const writeRemovedServices = async (removedObjects) => {
 };
 
 /**
- * Checks for removed services and rewrites YAML files if necessary.
+ * Checks if any of the input service data objects is removed
+ * and restores it from the `resultFilePath` file.
  *
- * @param {string} filePath - The path to the JSON file containing services data.
- * @param {Array<string>} servicesFileNames - Array of normalized yml file names.
+ * IMPORTANT: Services which previously were built to the `resultFilePath` file **should not be removed**.
+ *
+ * During the process service `id`s are checked against normalized YML file names
+ * and if there are any differences, the corresponding service YML files are rewritten.
+ *
+ * @param {string} resultFilePath - The path to the JSON file containing services data.
+ * @param {Array<string>} servicesFileNames - Array of services file names from services folder.
  */
-const restoreRemovedInputServices = async (filePath, servicesFileNames) => {
+const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) => {
     // Get data from services JSON file - array with objects
-    const blockedServices = await getBlockedServicesData(filePath);
+    const blockedServices = await getBlockedServicesData(resultFilePath);
     // Check if data is array
     if (!Array.isArray(blockedServices)) {
         return;
