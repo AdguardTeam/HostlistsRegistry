@@ -10,14 +10,14 @@ const { validateSvgIcons } = require('./validate-svg-icons');
  * Reads and parses YAML files from a specified directory with given file names.
  *
  * @param {string} filePath - The path to the directory containing YAML files.
- * @param {string[]} servicesFileNames - An array of file names to read and parse.
+ * @param {string[]} serviceFileNames - An array of file names to read and parse.
  * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
-const getServiceFilesContent = async (filePath, servicesFileNames) => {
+const getServiceFilesContent = async (filePath, serviceFileNames) => {
     try {
         // Reads data from a yml file and writes it to an object
-        const serviceFileContent = servicesFileNames.map(async (fileName) => {
+        const serviceFileContent = serviceFileNames.map(async (fileName) => {
             const fileChunk = await fs.readFile(
                 (path.resolve(__dirname, filePath, `${fileName}${YML_FILE_EXTENSION}`)),
                 'utf-8',
@@ -39,12 +39,12 @@ const getServiceFilesContent = async (filePath, servicesFileNames) => {
  *
  * @param {string} inputDirPath - The path to the services folder.
  * @param {string} resultFilePath - The path to the services.json file to write.
- * @param {Array<string>} servicesFileNames - Array of services file names.
+ * @param {Array<string>} serviceFileNames - Array of services file names.
  * @throws {Error} If there are issues reading or writing files, or if SVG validation fails.
  */
-const overwriteResultFile = async (inputDirPath, resultFilePath, servicesFileNames) => {
+const overwriteResultFile = async (inputDirPath, resultFilePath, serviceFileNames) => {
     // Array with YML files content.
-    const servicesDataObjects = await getServiceFilesContent(inputDirPath, servicesFileNames);
+    const servicesDataObjects = await getServiceFilesContent(inputDirPath, serviceFileNames);
     // Validate SVG icons. If the svg icon is not valid, an error is thrown.
     validateSvgIcons(servicesDataObjects);
     // Object to store the services.json file content.

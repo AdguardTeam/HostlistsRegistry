@@ -36,7 +36,7 @@ const getServicesFileNames = async (inputDirPath) => {
     // get all dir names from services folder
     const fileNames = await fs.readdir(inputDirPath);
     // get the file names without its extension
-    const fileBaseNames = fileNames.map((ymlFile) => path.parse(ymlFile).name);
+    const fileBaseNames = fileNames.map((file) => path.parse(file).name);
     // return sorted array
     return fileBaseNames.sort();
 };
@@ -56,9 +56,9 @@ const getServicesFileNames = async (inputDirPath) => {
 const buildServices = async (inputDirPath, resultFilePath) => {
     try {
         await validateJson(resultFilePath);
-        const servicesFileNames = await getServicesFileNames(inputDirPath);
-        await restoreRemovedInputServices(resultFilePath, servicesFileNames);
-        await overwriteResultFile(inputDirPath, resultFilePath, servicesFileNames);
+        const serviceFileNames = await getServicesFileNames(inputDirPath);
+        await restoreRemovedInputServices(resultFilePath, serviceFileNames);
+        await overwriteResultFile(inputDirPath, resultFilePath, serviceFileNames);
         console.log('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
