@@ -41,23 +41,6 @@ const getJsonObjects = async (resultFilePath) => {
 const getJsonObjectNames = (jsonData) => jsonData.map(({ id }) => normalizeFileName(id)).sort();
 
 /**
- * Gets the names of YML file from the services folder.
- *
- * @param {string} inputDirPath - The path to the folder containing YML service files.
- * @returns {Promise<Array<string>>} An array of normalized yml file names.
- */
-const getYmlFileNames = async (inputDirPath) => {
-    // get all dir names from services folder
-    const ymlFiles = await fs.readdir(inputDirPath);
-    // get the file names without its extension
-    const ymlFileNames = ymlFiles.map((ymlFile) => path.parse(ymlFile).name);
-    // format file names
-    const formattedServiceNames = ymlFileNames.map(normalizeFileName);
-    // return sorted array
-    return formattedServiceNames.sort();
-};
-
-/**
  * Write removed services objects into YML files.
  *
  * @param {Array<object>} removedObjects - Array of objects that should be written in separate YML files.
@@ -100,18 +83,16 @@ const rewriteYMLFile = async (removedServicesNames, jsonServicesData) => {
 /**
  * Checks for removed services and rewrites YAML files if necessary.
  *
- * @param {string} inputDirPath - The path to the folder services folder.
  * @param {string} resultFilePath - The path to the JSON file containing services data from JSON file.
+ * @param {Array<string>} ymlFileNames - Array of normalized yml file names.
  */
-const restoreRemovedInputServices = async (inputDirPath, resultFilePath) => {
+const restoreRemovedInputServices = async (resultFilePath, ymlFileNames) => {
     // Get data from services JSON file - array with objects
     const jsonDataObjects = await getJsonObjects(resultFilePath);
     // Check if data is array
     if (!Array.isArray(jsonDataObjects)) {
         return;
     }
-    // Array with normalized YML file names from services folder.
-    const ymlFileNames = await getYmlFileNames(inputDirPath);
     // Array with normalized id of services from JSON file.
     const jsonObjectNames = getJsonObjectNames(jsonDataObjects);
     // Array with the names of services, the id of which is present in services.json
@@ -125,4 +106,7 @@ const restoreRemovedInputServices = async (inputDirPath, resultFilePath) => {
     }
 };
 
-module.exports = { restoreRemovedInputServices };
+module.exports = {
+    restoreRemovedInputServices,
+    normalizeFileName,
+};

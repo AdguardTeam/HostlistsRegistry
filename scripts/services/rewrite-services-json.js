@@ -34,11 +34,10 @@ const getYmlFileContent = async (inputDirPath, servicesNames) => {
  *
  * @param {string} inputDirPath - The path to the services folder.
  * @param {string} resultFilePath - The path to the services.json file to write.
+ * @param {Array<string>} ymlFileNames - Array of normalized yml file names.
  * @throws {Error} If there are issues reading or writing files, or if SVG validation fails.
  */
-const rewriteServicesJSON = async (inputDirPath, resultFilePath) => {
-    // Array with all service names in the services folder.
-    const ymlFileNames = await fs.readdir(inputDirPath);
+const rewriteServicesJSON = async (inputDirPath, resultFilePath, ymlFileNames) => {
     // Array with YML files content.
     const ymlDataObjects = await getYmlFileContent(inputDirPath, ymlFileNames);
     // Validate SVG icons. If the svg icon is not valid, an error is thrown.

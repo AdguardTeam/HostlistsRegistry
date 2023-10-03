@@ -1,7 +1,7 @@
 const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs');
-const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
+const { restoreRemovedInputServices, normalizeFileName } = require('./scripts/services/check-removed-services');
 const { rewriteServicesJSON } = require('./scripts/services/rewrite-services-json');
 
 const filtersDir = path.join(__dirname, './filters');
@@ -27,6 +27,23 @@ const validateJson = (filePath) => {
 };
 
 /**
+ * Gets the names of YML file from the services folder.
+ *
+ * @param {string} inputDirPath - The path to the folder containing YML service files.
+ * @returns {Promise<Array<string>>} An array of normalized yml file names.
+ */
+const getYmlFileNames = async (inputDirPath) => {
+    // get all dir names from services folder
+    const ymlFiles = await fs.readdir(inputDirPath);
+    // get the file names without its extension
+    const ymlFileNames = ymlFiles.map((ymlFile) => path.parse(ymlFile).name);
+    // format file names
+    const formattedServiceNames = ymlFileNames.map(normalizeFileName);
+    // return sorted array
+    return formattedServiceNames.sort();
+};
+
+/**
  * Builds the result services file and saves it to `resultFilePath`.
  * During the build the following steps are performed:
  * 1. Check if the services.json file is valid.
@@ -41,8 +58,9 @@ const validateJson = (filePath) => {
 const buildServices = async (inputDirPath, resultFilePath) => {
     try {
         validateJson(resultFilePath);
-        await restoreRemovedInputServices(inputDirPath, resultFilePath);
-        await rewriteServicesJSON(inputDirPath, resultFilePath);
+        const ymlFileNames = getYmlFileNames(inputDirPath);
+        await restoreRemovedInputServices(resultFilePath, ymlFileNames);
+        await rewriteServicesJSON(inputDirPath, resultFilePath, ymlFileNames);
         console.log('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
