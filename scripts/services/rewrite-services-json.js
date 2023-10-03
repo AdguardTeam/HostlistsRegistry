@@ -18,15 +18,14 @@ const getServiceFilesContent = async (filePath, serviceFileNames) => {
     try {
         // Reads data from a yml file and writes it to an object
         const serviceFileContent = serviceFileNames.map(async (fileName) => {
-            const fileChunk = await fs.readFile(
-                (path.resolve(__dirname, filePath, `${fileName}${YML_FILE_EXTENSION}`)),
-                'utf-8',
-            );
+            // Service file path
+            const serviceFilePath = path.resolve(__dirname, filePath, `${fileName}${YML_FILE_EXTENSION}`);
+            // Read the file content
+            const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
             const fileData = yaml.load(fileChunk);
             return fileData;
         });
-
-        // Wait for all promises to resolve and return the array of parsed YAML content
+        // Wait for all promises to resolve and return the array of parsed content
         return Promise.all(serviceFileContent);
     } catch (error) {
         // If an error occurs during the process, throw an error
@@ -35,25 +34,23 @@ const getServiceFilesContent = async (filePath, serviceFileNames) => {
 };
 
 /**
- * Builds a services.json file from the services folder.
+ * Overwrites the content of a result file with combined service data.
  *
- * @param {string} inputDirPath - The path to the services folder.
- * @param {string} resultFilePath - The path to the services.json file to write.
- * @param {Array<string>} serviceFileNames - Array of services file names.
- * @throws {Error} If there are issues reading or writing files, or if SVG validation fails.
+ * @param {string} inputDirPath - The path to the directory containing service files.
+ * @param {string} resultFilePath - The path to the result file to be overwritten.
+ * @param {string[]} serviceFileNames - An array of service file names to read content from.
+ * @returns {Promise<void>} - A Promise that resolves when the operation is complete.
  */
 const overwriteResultFile = async (inputDirPath, resultFilePath, serviceFileNames) => {
     // Array with YML files content.
-    const servicesDataObjects = await getServiceFilesContent(inputDirPath, serviceFileNames);
+    const combinedServiceContent = await getServiceFilesContent(inputDirPath, serviceFileNames);
     // Validate SVG icons. If the svg icon is not valid, an error is thrown.
-    validateSvgIcons(servicesDataObjects);
-    // Object to store the services.json file content.
+    validateSvgIcons(combinedServiceContent);
+    // Object to store the blocked services JSON file content.
     const servicesData = {};
-    // Sort services from YML data.
-    const sortedServicesData = servicesDataObjects.sort();
     // Write the sorted services array into the blocked_services key.
-    servicesData.blocked_services = sortedServicesData;
-    // Rewrite services.json.
+    servicesData.blocked_services = combinedServiceContent.sort();
+    // Rewrite services JSON file.
     await fs.writeFile(resultFilePath, JSON.stringify(servicesData, null, 2));
 };
 
