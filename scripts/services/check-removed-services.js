@@ -62,22 +62,24 @@ const writeRemovedServices = async (removedObjects) => {
 /**
  * Checks for removed services and rewrites YAML files if necessary.
  *
- * @param {string} resultFilePath - The path to the JSON file containing services data from JSON file.
+ * @param {string} filePath - The path to the JSON file containing services data.
  * @param {Array<string>} servicesFileNames - Array of normalized yml file names.
  */
-const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) => {
+const restoreRemovedInputServices = async (filePath, servicesFileNames) => {
     // Get data from services JSON file - array with objects
-    const blockedServices = await getBlockedServicesData(resultFilePath);
+    const blockedServices = await getBlockedServicesData(filePath);
     // Check if data is array
     if (!Array.isArray(blockedServices)) {
         return;
     }
+    // TODO: get rid of "id" inside the "yml" file and take "id" directly from the "yml" filename
+    // to avoid checking when adding new files and exclude the possibility of typos.
     // Array with normalized id of services from JSON file.
     const unifiedBlockedServicesNames = getBlockedServicesNames(blockedServices);
     // Get normalized yml file names
     const unifiedServiceFileNames = servicesFileNames.map((fileName) => normalizeFileName(fileName));
-    // Array with the names of services, the id of which is present in services.json
-    // and absent in the name of YML files from the services folder.
+    // Array with the names of services, the id of which is present in services JSON file
+    // and absent in the name of files from the services folder.
     const differences = unifiedBlockedServicesNames.filter((name) => !unifiedServiceFileNames.includes(name));
     // If there are missing services, find and rewrite the corresponding objects from blocked services.
     if (differences.length > 0) {

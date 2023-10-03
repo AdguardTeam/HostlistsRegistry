@@ -42,7 +42,7 @@ const getServiceFilesContent = async (filePath, serviceFilenames) => {
  * @param {Array<string>} ymlFileNames - Array of normalized yml file names.
  * @throws {Error} If there are issues reading or writing files, or if SVG validation fails.
  */
-const createBlockedServicesFile = async (inputDirPath, resultFilePath, ymlFileNames) => {
+const overwriteResultFile = async (inputDirPath, resultFilePath, ymlFileNames) => {
     // Array with YML files content.
     const servicesDataObjects = await getServiceFilesContent(inputDirPath, ymlFileNames);
     // Validate SVG icons. If the svg icon is not valid, an error is thrown.
@@ -58,5 +58,5 @@ const createBlockedServicesFile = async (inputDirPath, resultFilePath, ymlFileNa
 };
 
 module.exports = {
-    createBlockedServicesFile,
+    overwriteResultFile,
 };

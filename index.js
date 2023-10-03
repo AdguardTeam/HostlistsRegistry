@@ -2,7 +2,7 @@ const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
-const { createBlockedServicesFile } = require('./scripts/services/rewrite-services-json');
+const { overwriteResultFile } = require('./scripts/services/rewrite-services-json');
 
 const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');
@@ -12,10 +12,10 @@ const inputServicesDir = path.join(__dirname, './services');
 const outputServicesFile = path.join(assetsDir, 'services.json');
 
 /**
- * Validate services.json and make sure it is a valid JSON.
+ * Validate services JSON file.
  *
- * @param {string} filePath The file path for the "services.json" file.
- * @throws {Error} If JSON file is not valid.
+ * @param {string} filePath - The file path for services JSON file.
+ * @throws {Error} - If JSON  is not valid.
  */
 const validateJson = async (filePath) => {
     try {
@@ -29,8 +29,8 @@ const validateJson = async (filePath) => {
 /**
  * Gets the names of YML file from the services folder.
  *
- * @param {string} inputDirPath - The path to the folder containing YML service files.
- * @returns {Promise<Array<string>>} An array of normalized yml file names.
+ * @param {string} inputDirPath - The path to the folder with service files.
+ * @returns {Promise<Array<string>>} - An array of services file names.
  */
 const getServicesFileNames = async (inputDirPath) => {
     // get all dir names from services folder
@@ -44,10 +44,10 @@ const getServicesFileNames = async (inputDirPath) => {
 /**
  * Builds the result services file and saves it to `resultFilePath`.
  * During the build the following steps are performed:
- * 1. Check if the services.json file is valid.
- * 2. Check if the services in the "/services" folder have been deleted by comparing with the data in "services.json".
+ * 1. Check if the services JSON file is valid.
+ * 2. Check if the services in the folder have been deleted by comparing with the data in JSON file.
  * 3. If the information has been deleted, write the missing files.
- * 4. Collect information from the services files, sort and overwrite "services.json".
+ * 4. Collect information from the services files, sort and overwrite blocked services files.
  *
  * @param {string} inputDirPath - The directory path where the services data is located.
  * @param {string} resultFilePath - The file path for the "services.json" file.
@@ -58,7 +58,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
         await validateJson(resultFilePath);
         const servicesFileNames = await getServicesFileNames(inputDirPath);
         await restoreRemovedInputServices(resultFilePath, servicesFileNames);
-        await createBlockedServicesFile(inputDirPath, resultFilePath, servicesFileNames);
+        await overwriteResultFile(inputDirPath, resultFilePath, servicesFileNames);
         console.log('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
@@ -70,7 +70,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
 // Compile hostlists.
 (async () => {
     try {
-        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         await buildServices(inputServicesDir, outputServicesFile);
     } catch (error) {
         console.error('Failed to compile hostlists', error);
