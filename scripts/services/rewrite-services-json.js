@@ -9,17 +9,17 @@ const { validateSvgIcons } = require('./validate-svg-icons');
 /**
  * Reads and parses YAML files from a specified directory with given file names.
  *
- * @param {string} filePath - The path to the directory containing YAML files.
+ * @param {string} dirPath - The path to the directory containing YAML files.
  * @param {string[]} serviceFileNames - An array of file names to read and parse.
  * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
-const getServiceFilesContent = async (filePath, serviceFileNames) => {
+const getServiceFilesContent = async (dirPath, serviceFileNames) => {
     try {
         // Reads data from a yml file and writes it to an object
         const serviceFileContent = serviceFileNames.map(async (fileName) => {
             // Service file path
-            const serviceFilePath = path.resolve(__dirname, filePath, `${fileName}${YML_FILE_EXTENSION}`);
+            const serviceFilePath = path.resolve(__dirname, dirPath, `${fileName}${YML_FILE_EXTENSION}`);
             // Read the file content
             const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
             const fileData = yaml.load(fileChunk);
