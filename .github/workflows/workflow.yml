@@ -23,7 +23,10 @@ jobs:
       - name: yarn install
         run: yarn install
 
-      - name: node
+      - name: yarn lint
+        run: yarn lint
+
+      - name: run compose
         run: |
           node index.js
 

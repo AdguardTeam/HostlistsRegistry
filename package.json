@@ -4,12 +4,21 @@
   "description": "Hostlists Registry",
   "main": "index.js",
   "dependencies": {
-    "adguard-hostlists-builder": "./hostlists-builder/"
+    "adguard-hostlists-builder": "./hostlists-builder/",
+    "js-yaml": "^4.1.0",
+    "xmldom": "^0.6.0"
   },
   "scripts": {
     "compose": "node index.js",
     "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "cd scripts/translations ; ./download.sh",
-    "locales:upload": "cd scripts/translations ; ./upload.sh"
+    "locales:upload": "cd scripts/translations ; ./upload.sh",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "eslint": "^8.49.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.28.1",
+    "eslint-plugin-jsdoc": "^46.8.2"
   }
 }
