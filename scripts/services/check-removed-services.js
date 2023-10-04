@@ -90,6 +90,7 @@ const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) =>
     // If there are missing services, find and rewrite the corresponding objects from blocked services.
     if (differences.length > 0) {
         const removedServiceObjects = blockedServices.filter(({ id }) => differences.includes(id));
+        // TODO: Rewrite writeRemovedServices to not call it recursively
         await writeRemovedServices(removedServiceObjects);
         console.log(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
     }
