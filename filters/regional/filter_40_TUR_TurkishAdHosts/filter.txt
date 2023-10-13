@@ -2,7 +2,7 @@
 ! Title: TUR: Turkish Ad Hosts
 ! Description: Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
-! Last modified: 2023-09-17T12:06:39.005Z
+! Last modified: 2023-10-12T22:05:33.053Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey...
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
 ! License: GPLv3
-! Last modified: 2023-09-17T11:26:27.439Z
+! Last modified: 2023-10-12T21:28:45.035Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -43,6 +43,7 @@
 ||a.applovin.com^
 ||a.bestcontentcost.top^
 ||a.doganburda.com^
+||a.exoclick.com^
 ||a.exosrv.com^
 ||a.jhfhdkhkh.site^
 ||a.labadena.com^
@@ -160,12 +161,14 @@
 ||aip-cdn.sozcu.com.tr^
 ||aip2.sozcu.com.tr^
 ||aj2550.bid^
+||ak.hauchiwu.com^
 ||ak.oalsauwy.net^
 ||ak.sail-horizon.com^
 ||aksamreklami.net^
 ||aksamvaktireklam.com^
 ||aksamvaktimreklamsx.net^
 ||alb.reddit.com^
+||alexatracker.com^
 ||aloofvest.com^
 ||altinbas.revotas.com^
 ||amareklamizm.ml^
@@ -178,7 +181,6 @@
 ||amunfezanttor.com^
 ||an.facebook.com^
 ||an.yandex.ru^
-||analitik2.edevlet.gov.tr^
 ||analytics.archive.org^
 ||analytics.callbell.eu^
 ||analytics.cdn.live^
@@ -361,6 +363,7 @@
 ||cbox.im^
 ||cbox.ws^
 ||cc.swiftype.com^
+||cc-api-data.adobe.io^
 ||cd.connatix.com^
 ||cdn.ad.xiaomi.com^
 ||cdn.ad4game.com^
@@ -617,6 +620,7 @@
 ||dmxleo.dailymotion.com^
 ||dn6rwwtxa647p.cloudfront.net^
 ||dnhfi5nn2dt67.cloudfront.net^
+||dnn506yrbagrg.cloudfront.net^
 ||dogus-ads-cdn.dygdigital.com^
 ||dominantroute.com^
 ||doubleclick.net^
@@ -658,6 +662,7 @@
 ||emea.hhkld.com^
 ||engine.adzerk.net^
 ||enormousfoot.com^
+||epnt.ebay.com^
 ||errnewlog.umeng.com^
 ||etahub.com^
 ||etl-xlmc-ssl.sandai.net^
@@ -808,6 +813,7 @@
 ||i.isnssdk.com^
 ||i.loopme.me^
 ||ib.adnxs.com^
+||ib.adnxs-simple.com^
 ||ice.360yield.com^
 ||id.crwdcntrl.net^
 ||id.google.com^
@@ -890,9 +896,11 @@
 ||krk.kargo.com^
 ||kvezz.com^
 ||kz.rebakeassets.com^
+||l.betrad.com^
 ||l.sharethis.com^
 ||laquesis.data.olxcdn.com^
 ||launches.appsflyer.com^
+||launches.appsflyersdk.com^
 ||lenovo.demdex.net^
 ||lephaush.net^
 ||lexicon.33across.com^
@@ -946,6 +954,7 @@
 ||mbls.visilabs.net^
 ||mc.webvisor.org^
 ||mc.yandex.com^
+||mc.yandex.com.tr^
 ||mc.yandex.ru^
 ||mc2tnzs73p3554cjc7h876m-gfm4.device.marketingcloudapis.com^
 ||mcfk02nd3k8q7w75g9yxxcc6yj20.device.marketingcloudapis.com^
@@ -958,10 +967,12 @@
 ||media.ethicalads.io^
 ||media.net^
 ||media.trafficjunky.net^
+||mediation.adnxs.com^
 ||medya.ilan.gov.tr.whecloud.com^
 ||medyanative.com^
 ||medyanet-com-tr.videoplayerhub.com^
 ||memorial.revotas.com^
+||merequartz.com^
 ||metoatesoglureklamcibaba.net^
 ||metoatesoglureklamcibabaa.net^
 ||metoatesoglureklamcibabaaa.net^
@@ -1024,6 +1035,7 @@
 ||networksdk.ssacdn.com^
 ||news.2xclick.ru^
 ||news-muheji.com^
+||nexus.toyota.com^
 ||ninja.akamaized.net^
 ||ninja.data.olxcdn.com^
 ||nmetrics.samsung.com^
@@ -1031,6 +1043,7 @@
 ||ntvpforever.com^
 ||nvidiacorp.us-5.evergage.com^
 ||o.gez.io^
+||oaphoace.net^
 ||odb.outbrain.com^
 ||odr.mookie1.com^
 ||offer.slgnt.eu^
@@ -1158,6 +1171,7 @@
 ||qgxbluhsgad.com^
 ||qsearch-a.akamaihd.net^
 ||r.admob.com^
+||r.apkpure.net^
 ||r.skimresources.com^
 ||r.stripe.com^
 ||radar.cedexis.com^
@@ -1248,6 +1262,7 @@
 ||s.skimresources.com^
 ||s.uuidksinc.net^
 ||s.visilabs.net^
+||s.youtube.com^
 ||s-img.idealmedia.io^
 ||s0.2mdn.net^
 ||s10.histats.com^
@@ -1295,6 +1310,7 @@
 ||seal.globalsign.com^
 ||seal.godaddy.com^
 ||secure.adnxs.com^
+||secure.gaug.es^
 ||secure.quantserve.com^
 ||secure-assets.rubiconproject.com^
 ||secure-ds.serving-sys.com^
@@ -1367,9 +1383,10 @@
 ||starget.intel.com^
 ||startup.mobile.webvisor.com^
 ||startup.mobile.yandex.net^
+||startup-mobile.ap.yandex-net.ru^
 ||stat.tildacdn.com^
 ||statcounter.com^
-||static.growthrx.in^
+||static.addtoany.com^
 ||static.adsafeprotected.com^
 ||static.apester.com^
 ||static.chartbeat.com^
@@ -1379,6 +1396,7 @@
 ||static.criteo.net^
 ||static.fd-api.com^
 ||static.getclicky.com^
+||static.growthrx.in^
 ||static.lcwaikiki.com^
 ||static.narrativ.com^
 ||static.onedio.com^
@@ -1477,6 +1495,7 @@
 ||to.getnitropack.com^
 ||top-fwz1.mail.ru^
 ||toplist.cz^
+||toyota.tt.omtrdc.net^
 ||toyotaeurope.tt.omtrdc.net^
 ||toyotaeuropetoyglobaldev.112.2o7.net^
 ||toyotaeuropelexglobalprod.112.2o7.net^
@@ -1539,6 +1558,7 @@
 ||unilever.tt.omtrdc.net^
 ||unileverna.tt.omtrdc.net^
 ||uno.rub88677win.xyz^
+||unsubscribe.prod.leanplum.com^
 ||untropiuson.com^
 ||upload.luckyorange.net^
 ||uptimecdn.com^
