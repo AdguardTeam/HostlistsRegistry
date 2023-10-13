@@ -1,0 +1,19 @@
+{
+    "name": "RU: EasyList for Russia",
+    "description": "List for blocking ads in Hebrew.",
+    "homepage": "https://github.com/easylist/ruadlist",
+    "sources": [
+      {
+        "name": "RU-Adlist (Adblock)",
+        "source": "https://easylist-downloads.adblockplus.org/ruadlist.txt",
+        "type": "adblock",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
