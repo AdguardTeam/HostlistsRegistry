@@ -4,6 +4,7 @@ const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
 const { overwriteResultFile } = require('./scripts/services/rewrite-services-json');
+
 const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');
 const tagsDir = path.join(__dirname, './tags');
