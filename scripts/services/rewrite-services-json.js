@@ -15,22 +15,24 @@ const { validateSvgIcons } = require('./validate-svg-icons');
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
 const getServiceFilesContent = async (dirPath, serviceFileNames) => {
-    try {
-        // Reads data from a yml file and writes it to an object
-        const serviceFileContent = serviceFileNames.map(async (fileName) => {
-            // Service file path
-            const serviceFilePath = path.resolve(__dirname, dirPath, `${fileName}${YML_FILE_EXTENSION}`);
-            // Read the file content
-            const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
-            const fileData = yaml.load(fileChunk);
-            return fileData;
-        });
-        // Wait for all promises to resolve and return the array of parsed content
-        return Promise.all(serviceFileContent);
-    } catch (error) {
-        // If an error occurs during the process, throw an error
-        throw new Error('Error while reading YAML files', error);
-    }
+    // Reads data from a yml file and writes it to an object
+    const serviceFileContent = await Promise.all(
+        serviceFileNames.map(async (fileName) => {
+            try {
+                // Service file path
+                const serviceFilePath = path.resolve(__dirname, dirPath, `${fileName}${YML_FILE_EXTENSION}`);
+                // Read the file content
+                const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
+                const fileData = yaml.load(fileChunk);
+                return fileData;
+            } catch (error) {
+                // If an error occurs during the process, throw an error
+                throw new Error(`Error while reading ${fileName}.yml file`);
+            }
+        }),
+    );
+    // Wait for all promises to resolve and return the array of parsed content
+    return serviceFileContent;
 };
 
 /**
