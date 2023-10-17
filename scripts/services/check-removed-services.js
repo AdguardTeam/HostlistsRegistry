@@ -6,6 +6,8 @@ const YML_FILE_EXTENSION = '.yml';
 
 const servicesDir = path.resolve(__dirname, '../../services/');
 
+const logger = require('../helpers/logger');
+
 /**
  * Converts a service name to lowercase and replaces special characters.
  *
@@ -27,7 +29,7 @@ const getBlockedServicesData = async (filePath) => {
         const serviceObjects = JSON.parse(fileContent);
         return serviceObjects.blocked_services;
     } catch (error) {
-        console.error('Error while reading services.json', error);
+        logger.error('Error while reading services.json', error.message);
         return null;
     }
 };
@@ -92,7 +94,7 @@ const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) =>
         const removedServiceObjects = blockedServices.filter(({ id }) => differences.includes(normalizeFileName(id)));
         // TODO: Rewrite writeRemovedServices to not call it recursively
         await writeRemovedServices(removedServiceObjects);
-        console.log(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
+        logger.warning(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
     }
 };
 
