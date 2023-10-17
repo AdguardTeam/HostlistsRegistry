@@ -71,7 +71,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
 // Compile hostlists.
 (async () => {
     try {
-        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         await buildServices(inputServicesDir, outputServicesFile);
     } catch (error) {
         logger.error('Failed to compile hostlists');
