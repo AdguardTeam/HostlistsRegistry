@@ -2,7 +2,6 @@ const chalk = require('chalk');
 
 /**
  * Logger utility for displaying messages with different styles using Chalk.
- *
  */
 const logger = {
     // Log a success message with bold green text.
