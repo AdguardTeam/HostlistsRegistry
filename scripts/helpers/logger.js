@@ -17,9 +17,10 @@ const logger = {
      * Log an error message with red text and an optional comment without color
      *
      * @param {string} message - The message to be logged.
+     * @param {string} comment - An optional comment.
      */
-    error: (message) => {
-        console.log(chalk.bold.red(message));
+    error: (message, comment) => {
+        console.log(`${chalk.bold.red(`${message}:`)} ${comment}`);
     },
 
     /**

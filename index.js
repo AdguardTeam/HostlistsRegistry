@@ -22,7 +22,7 @@ const validateJson = async (filePath) => {
     try {
         JSON.parse(await fs.readFile(filePath, 'utf8'));
     } catch (error) {
-        logger.error(`Failed to parse ${filePath}: ${error.message}`);
+        logger.error(`Failed to parse ${filePath}`, error.message);
         process.exit(1);
     }
 };
@@ -63,7 +63,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
         logger.success(`Successfully finished building ${resultFilePath}`);
         process.exit(0);
     } catch (error) {
-        logger.error(`Error occurred while building ${resultFilePath}: ${error.message}`);
+        logger.error(`Error occurred while building ${resultFilePath}`, error.message);
         process.exit(1);
     }
 };
