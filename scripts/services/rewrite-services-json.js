@@ -28,7 +28,7 @@ const getServiceFilesContent = async (dirPath, serviceFileNames) => {
                 return fileData;
             } catch (error) {
                 // Collect the filename if an error occurred during reading
-                return invalidYmlFiles.push(fileName);
+                invalidYmlFiles.push(fileName);
             }
         }),
     );
