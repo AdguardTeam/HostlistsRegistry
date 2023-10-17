@@ -6,7 +6,7 @@ const YML_FILE_EXTENSION = '.yml';
 
 const servicesDir = path.resolve(__dirname, '../../services/');
 
-const logger = require('../helpers/logger');
+const { logger } = require('../helpers/logger');
 
 /**
  * Converts a service name to lowercase and replaces special characters.

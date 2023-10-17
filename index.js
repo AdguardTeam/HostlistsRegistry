@@ -1,9 +1,9 @@
 const path = require('path');
-const chalk = require('chalk');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
 const { overwriteResultFile } = require('./scripts/services/rewrite-services-json');
+const { logger } = require('./scripts/helpers/logger');
 
 const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');
@@ -22,7 +22,7 @@ const validateJson = async (filePath) => {
     try {
         JSON.parse(await fs.readFile(filePath, 'utf8'));
     } catch (error) {
-        console.error(chalk.red.bold('Failed to parse services.json: ') + chalk.red(error.message));
+        logger.error('Failed to parse services.json: ', `${error.message}`);
         process.exit(1);
     }
 };
@@ -60,10 +60,10 @@ const buildServices = async (inputDirPath, resultFilePath) => {
         const serviceFileNames = await getServicesFileNames(inputDirPath);
         await restoreRemovedInputServices(resultFilePath, serviceFileNames);
         await overwriteResultFile(inputDirPath, resultFilePath, serviceFileNames);
-        console.log(chalk.bold.green('Successfully finished building services.json'));
+        logger.success('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
-        console.log(chalk.bold.red('Building services.json finished with an error: ') + chalk.red(error.message));
+        logger.error('Building services.json finished with an error: ', error.message);
         process.exit(1);
     }
 };
@@ -74,7 +74,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
         await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         await buildServices(inputServicesDir, outputServicesFile);
     } catch (error) {
-        console.error(chalk.bold.red('Failed to compile hostlists'));
+        logger.error('Failed to compile hostlists');
         process.exit(1);
     }
 })();
