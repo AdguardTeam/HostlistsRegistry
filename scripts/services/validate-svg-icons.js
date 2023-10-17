@@ -32,7 +32,7 @@ const checkSVG = (svgIcon, serviceId) => {
     // Check if the first child node of the parsed SVG object is undefined
     // or does not have the 'svg' nodeName. If so, the error is written to an array.
     if (!svgNode.childNodes[0].nodeName || svgNode.childNodes[0].nodeName !== 'svg') {
-        svgErrors.push(`${serviceId} : Parsed SVG object is undefined`);
+        svgErrors.push(`${serviceId} : Parsed SVG object is invalid`);
     }
     const svgDocumentElement = svgNode.documentElement;
     // Checks if the SVG is square by comparing the viewBox dimensions.
