@@ -29,7 +29,7 @@ const getBlockedServicesData = async (filePath) => {
         const serviceObjects = JSON.parse(fileContent);
         return serviceObjects.blocked_services;
     } catch (error) {
-        logger.error('Error while reading services.json', error.message);
+        logger.error(`Error while reading file ${filePath}: ${error.message}`);
         return null;
     }
 };
