@@ -20,7 +20,10 @@ const logger = {
      * @param {string} comment - An optional comment.
      */
     error: (message, comment) => {
-        console.log(`${chalk.bold.red(`${message}:`)} ${comment}`);
+        const logMessage = comment
+            ? `${chalk.bold.red(`${message}:`)} ${comment}`
+            : chalk.bold.red(message);
+        console.log(logMessage);
     },
 
     /**
