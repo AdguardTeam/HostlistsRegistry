@@ -63,7 +63,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
         logger.success('Successfully finished building services.json');
         process.exit(0);
     } catch (error) {
-        logger.error('Building services.json finished with an error: ', error.message);
+        logger.error(`Error occurred while building ${resultFilePath}: ${error.message}`);
         process.exit(1);
     }
 };
