@@ -39,7 +39,7 @@ const checkSVG = (svgIcon, serviceId) => {
     // Checks if the SVG is square by comparing the viewBox dimensions.
     // If the SVG is not square, the error is written to an array.
     const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
-    if ((svgViewBox[2] !== svgViewBox[3])) {
+    if (svgViewBox[2] !== svgViewBox[3]) {
         svgErrors.push(`${serviceId} : The icon must have a square shape.`);
     }
     // Checks if the SVG tag contains 'width' and 'height' attributes.
