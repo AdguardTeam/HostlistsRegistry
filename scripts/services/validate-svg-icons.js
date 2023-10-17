@@ -33,12 +33,13 @@ const checkSVG = (svgIcon, serviceId) => {
     // or does not have the 'svg' nodeName. If so, the error is written to an array.
     if (!svgNode.childNodes[0].nodeName || svgNode.childNodes[0].nodeName !== 'svg') {
         svgErrors.push(`${serviceId} : Parsed SVG object is invalid`);
+        return svgErrors;
     }
     const svgDocumentElement = svgNode.documentElement;
     // Checks if the SVG is square by comparing the viewBox dimensions.
     // If the SVG is not square, the error is written to an array.
     const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
-    if ((svgViewBox[2] !== svgViewBox[3]) && (svgViewBox[0] !== 0) && (svgViewBox[1] !== 0)) {
+    if ((svgViewBox[2] !== svgViewBox[3])) {
         svgErrors.push(`${serviceId} : The icon must have a square shape.`);
     }
     // Checks if the SVG tag contains 'width' and 'height' attributes.
