@@ -22,7 +22,7 @@ const validateJson = async (filePath) => {
     try {
         JSON.parse(await fs.readFile(filePath, 'utf8'));
     } catch (error) {
-        logger.error('Failed to parse services.json: ', `${error.message}`);
+        logger.error(`Failed to parse ${filePath}: ${error.message}`);
         process.exit(1);
     }
 };
@@ -60,10 +60,10 @@ const buildServices = async (inputDirPath, resultFilePath) => {
         const serviceFileNames = await getServicesFileNames(inputDirPath);
         await restoreRemovedInputServices(resultFilePath, serviceFileNames);
         await overwriteResultFile(inputDirPath, resultFilePath, serviceFileNames);
-        logger.success('Successfully finished building services.json');
+        logger.success(`Successfully finished building ${resultFilePath}`);
         process.exit(0);
     } catch (error) {
-        logger.error('Building services.json finished with an error: ', error.message);
+        logger.error(`Building services.json finished with an error: ${error.message}`);
         process.exit(1);
     }
 };
