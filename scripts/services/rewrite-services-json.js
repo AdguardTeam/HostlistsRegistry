@@ -34,7 +34,7 @@ const getServiceFilesContent = async (dirPath, serviceFileNames) => {
     );
     // If an error(s) occurs during the process, throw an error
     if (invalidYmlFiles.length > 0) {
-        throw new Error(`Error while reading ${invalidYmlFiles.join(', ')} YML files.`);
+        throw new Error(`Error while reading YML files: ${invalidYmlFiles.join(', ')}`);
     } else {
         // Wait for all promises to resolve and return the array of parsed content
         return serviceFileContent;
