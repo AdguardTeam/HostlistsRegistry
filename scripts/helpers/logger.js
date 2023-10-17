@@ -17,7 +17,7 @@ const logger = {
      * Log an error message with red text and an optional comment without color
      *
      * @param {string} message - The message to be logged.
-     * @param {string} comment - An optional comment.
+     * @param {string} [comment] - An optional comment.
      */
     error: (message, comment) => {
         const logMessage = comment
