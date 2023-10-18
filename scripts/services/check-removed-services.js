@@ -22,6 +22,7 @@ const normalizeFileName = (serviceName) => serviceName.toLowerCase().replace(/[^
  * @param {string} filePath - The path to the file.
  * @returns {Promise<object[]|null>} - Array of blocked services objects.
  * Returns `null` if there's an error during the process.
+ * @throws {Error} - If the file cannot be read or parsed.
  */
 const getBlockedServicesData = async (filePath) => {
     try {
@@ -72,6 +73,8 @@ const writeRemovedServices = async (removedObjects) => {
  *
  * @param {string} resultFilePath - The path to the JSON file containing services data.
  * @param {Array<string>} servicesFileNames - Array of services file names from services folder.
+ * @returns {Promise<void>} - A promise that resolves when the process is complete.
+ * @throws {Error} - If the services data file could not be read or parsed, or if the data is not an array.
  */
 const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) => {
     // Get data from services JSON file - array with objects
