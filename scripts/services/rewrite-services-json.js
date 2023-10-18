@@ -15,22 +15,30 @@ const { validateSvgIcons } = require('./validate-svg-icons');
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
 const getServiceFilesContent = async (dirPath, serviceFileNames) => {
-    try {
-        // Reads data from a yml file and writes it to an object
-        const serviceFileContent = serviceFileNames.map(async (fileName) => {
-            // Service file path
-            const serviceFilePath = path.resolve(__dirname, dirPath, `${fileName}${YML_FILE_EXTENSION}`);
-            // Read the file content
-            const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
-            const fileData = yaml.load(fileChunk);
-            return fileData;
-        });
-        // Wait for all promises to resolve and return the array of parsed content
-        return Promise.all(serviceFileContent);
-    } catch (error) {
-        // If an error occurs during the process, throw an error
-        throw new Error('Error while reading YAML files', error);
+    const invalidYmlFiles = [];
+    // Reads data from a yml file and writes it to an object
+    const serviceFileContents = await Promise.all(
+        serviceFileNames.map(async (fileName) => {
+            try {
+                // Set the path to the file
+                const serviceFilePath = path.resolve(__dirname, dirPath, `${fileName}${YML_FILE_EXTENSION}`);
+                // Read the file and parse the content
+                const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
+                const fileData = yaml.load(fileChunk);
+                return fileData;
+            } catch (error) {
+                // Collect the names of the invalid files
+                invalidYmlFiles.push(fileName);
+                return null;
+            }
+        }),
+    );
+    // If there are invalid files, throw an error
+    if (invalidYmlFiles.length > 0) {
+        throw new Error(`Error while reading YML files: ${invalidYmlFiles.join(', ')}`);
     }
+    // Return the array of objects with YML files content if there are no errors
+    return serviceFileContents;
 };
 
 /**

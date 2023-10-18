@@ -6,6 +6,8 @@ const YML_FILE_EXTENSION = '.yml';
 
 const servicesDir = path.resolve(__dirname, '../../services/');
 
+const { logger } = require('../helpers/logger');
+
 /**
  * Converts a service name to lowercase and replaces special characters.
  *
@@ -20,6 +22,7 @@ const normalizeFileName = (serviceName) => serviceName.toLowerCase().replace(/[^
  * @param {string} filePath - The path to the file.
  * @returns {Promise<object[]|null>} - Array of blocked services objects.
  * Returns `null` if there's an error during the process.
+ * @throws {Error} - If the file cannot be read or parsed.
  */
 const getBlockedServicesData = async (filePath) => {
     try {
@@ -27,8 +30,8 @@ const getBlockedServicesData = async (filePath) => {
         const serviceObjects = JSON.parse(fileContent);
         return serviceObjects.blocked_services;
     } catch (error) {
-        console.error('Error while reading services.json', error);
-        return null;
+        logger.error(`Error while reading file ${filePath}`);
+        throw new Error(error);
     }
 };
 
@@ -66,17 +69,19 @@ const writeRemovedServices = async (removedObjects) => {
  * IMPORTANT: Services which previously were built to the `resultFilePath` file **should not be removed**.
  *
  * During the process service `id`s are checked against normalized YML file names
- * and if there are any differences, the corresponding service YML files are rewritten.
+ * and if there are any differences, the corresponding service YML files are restored.
  *
  * @param {string} resultFilePath - The path to the JSON file containing services data.
  * @param {Array<string>} servicesFileNames - Array of services file names from services folder.
+ * @returns {Promise<void>} - A promise that resolves when the process is complete.
+ * @throws {Error} - If the services data file could not be read or parsed, or if the data is not an array.
  */
 const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) => {
     // Get data from services JSON file - array with objects
     const blockedServices = await getBlockedServicesData(resultFilePath);
     // Check if data is array
     if (!Array.isArray(blockedServices)) {
-        return;
+        throw new Error('Blocked services data is not an array');
     }
     // TODO: get rid of "id" inside the "yml" file and take "id" directly from the "yml" filename
     // to avoid checking when adding new files and exclude the possibility of typos.
@@ -89,10 +94,10 @@ const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) =>
     const differences = normalizedBlockedServiceNames.filter((name) => !normalizedServiceFileNames.includes(name));
     // If there are missing services, find and rewrite the corresponding objects from blocked services.
     if (differences.length > 0) {
-        const removedServiceObjects = blockedServices.filter(({ id }) => differences.includes(id));
+        const removedServiceObjects = blockedServices.filter(({ id }) => differences.includes(normalizeFileName(id)));
         // TODO: Rewrite writeRemovedServices to not call it recursively
         await writeRemovedServices(removedServiceObjects);
-        console.log(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
+        logger.warning(`These services have been removed: ${differences.join(', ')}, and were restored`);
     }
 };
 
