@@ -17,29 +17,28 @@ const { validateSvgIcons } = require('./validate-svg-icons');
 const getServiceFilesContent = async (dirPath, serviceFileNames) => {
     const invalidYmlFiles = [];
     // Reads data from a yml file and writes it to an object
-    const serviceFileContent = await Promise.all(
+    const serviceFileContents = await Promise.all(
         serviceFileNames.map(async (fileName) => {
             try {
-                // Service file path
+                // Set the path to the file
                 const serviceFilePath = path.resolve(__dirname, dirPath, `${fileName}${YML_FILE_EXTENSION}`);
-                // Read the file content
+                // Read the file and parse the content
                 const fileChunk = await fs.readFile(serviceFilePath, 'utf-8');
                 const fileData = yaml.load(fileChunk);
                 return fileData;
             } catch (error) {
-                // Collect the filename if an error occurred during reading
+                // Collect the names of the invalid files
                 invalidYmlFiles.push(fileName);
                 return null;
             }
         }),
     );
-    // If an error(s) occurs during the process, throw an error
+    // If there are invalid files, throw an error
     if (invalidYmlFiles.length > 0) {
         throw new Error(`Error while reading YML files: ${invalidYmlFiles.join(', ')}`);
-    } else {
-        // Wait for all promises to resolve and return the array of parsed content
-        return serviceFileContent;
     }
+    // Return the array of objects with YML files content if there are no errors
+    return serviceFileContents;
 };
 
 /**
