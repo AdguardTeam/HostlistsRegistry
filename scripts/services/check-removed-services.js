@@ -69,7 +69,7 @@ const writeRemovedServices = async (removedObjects) => {
  * IMPORTANT: Services which previously were built to the `resultFilePath` file **should not be removed**.
  *
  * During the process service `id`s are checked against normalized YML file names
- * and if there are any differences, the corresponding service YML files are rewritten.
+ * and if there are any differences, the corresponding service YML files are restored.
  *
  * @param {string} resultFilePath - The path to the JSON file containing services data.
  * @param {Array<string>} servicesFileNames - Array of services file names from services folder.
@@ -97,7 +97,7 @@ const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) =>
         const removedServiceObjects = blockedServices.filter(({ id }) => differences.includes(normalizeFileName(id)));
         // TODO: Rewrite writeRemovedServices to not call it recursively
         await writeRemovedServices(removedServiceObjects);
-        logger.warning(`These services have been removed: ${differences.join(', ')}, and were rewritten`);
+        logger.warning(`These services have been removed: ${differences.join(', ')}, and were restored`);
     }
 };
 
