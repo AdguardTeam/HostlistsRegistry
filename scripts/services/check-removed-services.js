@@ -30,7 +30,7 @@ const getBlockedServicesData = async (filePath) => {
         return serviceObjects.blocked_services;
     } catch (error) {
         logger.error(`Error while reading file ${filePath}`, error.message);
-        return null;
+        throw new Error(error);
     }
 };
 
@@ -78,7 +78,7 @@ const restoreRemovedInputServices = async (resultFilePath, servicesFileNames) =>
     const blockedServices = await getBlockedServicesData(resultFilePath);
     // Check if data is array
     if (!Array.isArray(blockedServices)) {
-        return;
+        throw new Error('Blocked services data is not an array');
     }
     // TODO: get rid of "id" inside the "yml" file and take "id" directly from the "yml" filename
     // to avoid checking when adding new files and exclude the possibility of typos.
