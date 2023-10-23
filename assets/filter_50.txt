@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2023-10-23T18:06:16.629Z
+! Last modified: 2023-10-23T21:06:21.862Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -3058,6 +3058,7 @@ thepiratebay3.com^
 ! https://forum.xda-developers.com/t/downloaded-a-fake-magisk.4581461/
 ! https://old.reddit.com/r/Android/comments/7r346t/psa_magiskmanagercom_is_not_the_official_website/
 ! https://github.com/topjohnwu/Magisk/issues/3435
+! https://github.com/hagezi/dns-blocklists/issues/1744
 ||magiskmanager.com^
 ||magisk.me^
 ||magiskcn.com^
@@ -3066,6 +3067,10 @@ thepiratebay3.com^
 ||magiskroot.net^
 ||magisks.com^
 ||themagisk.com^
+||magiskzip.net^
+||magiskmanagerroot.com^
+||magisk.download^
+||magisk.info^
 
 ! phishing https://www.virustotal.com/gui/url/8521a1e5b4269111fb1e98f2142739dad1d6fb42ddf5198597c68abfea395f7f/detection
 ||reink2.top^
