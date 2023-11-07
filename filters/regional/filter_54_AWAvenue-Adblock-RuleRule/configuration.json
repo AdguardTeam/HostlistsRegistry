@@ -1,0 +1,19 @@
+{
+    "name": "秋风广告规则",
+    "description": "使用Adblock语法，从网络层面对抗Android应用中的各种广告SDK，阻止其加载。",
+    "homepage": "https://github.com/TG-Twilight/AWAvenue-Adblock-Rule",
+    "sources": [
+      {
+        "name": "秋风广告规则",
+        "source": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Adblock-Rule/main/AWAvenue-Adblock-Rule.txt",
+        "type": "adblock",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
