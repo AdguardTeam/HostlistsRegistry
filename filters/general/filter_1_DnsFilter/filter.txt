@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2023-11-13T12:07:38.580Z
+! Last modified: 2023-11-13T18:05:28.349Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2023-11-13T12:01:20.825Z
+! Last modified: 2023-11-13T18:01:18.470Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -38166,6 +38166,7 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||analytics.cocolog-nifty.com^
 ||stats.totalav.com^
 ||analytics.clubic.com^
 ||logs.netflix.com^
@@ -40337,6 +40338,10 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
 !
+! NOTE: Regular rules
+!
+||fraud.adjoe.zone^
+||sdk-monitoring.ogury.co^
 ||tracker.srta.spectrum.com^
 ||event-collector.moviesanywhere.com^
 ||us-east-1.paa-reporting-advertising.amazon^
@@ -49865,7 +49870,6 @@ inapps.appsflyersdk.com^
 ||colossal.jp^
 ||cpro.baidu.com^
 ||download.jword.jp^
-||find-a.jp^
 ||fivecdm.com^
 ||fxprime-popular.com^
 ||i2idata.com^
@@ -50696,17 +50700,15 @@ inapps.appsflyersdk.com^
 # A hosts file that aims to get rid of ads, tracking, scams & badware on (mostly) Swedish websites
 # ----
 # title:          Frellwit's Swedish Hosts File
-# last updated:   2023-11-12 17:37:45 CET
-# entries:        1171
+# last updated:   2023-11-13 15:07:44 CET
+# entries:        1061
 # format:         hosts (hosts -- in hosts file format)
 # homepage:       https://github.com/lassekongo83/Frellwits-filter-lists/
 ||1terms.com^
 ||a.zxcvads.com^
 ||ab.fastighetsvarlden.se^
 ||accesslnk.com^
-||ad.spreaker.com^
 ||adcell.io^
-||adclick.se^
 ||addrevenue.io^
 ||addy.expressen.se^
 ||adeprimo.se^
@@ -50721,9 +50723,7 @@ inapps.appsflyersdk.com^
 ||ads.fotosidan.se^
 ||ads.holid.io^
 ||ads.insikt24.se^
-||ads.internet24.se^
 ||ads.kelkoo.com^
-||ads.lektion.se^
 ||ads.leovegas.com^
 ||ads.mainloop.net^
 ||ads.motorvarlden.se^
@@ -50734,7 +50734,6 @@ inapps.appsflyersdk.com^
 ||ads.skargarden.se^
 ||ads.skidspar.se^
 ||ads.skolvarlden.se^
-||ads.spania.no^
 ||ads.ungdomar.se^
 ||ads.varldenidag.se^
 ||ads.veterinaren.nu^
@@ -50745,7 +50744,6 @@ inapps.appsflyersdk.com^
 ||advert.livesportmedia.eu^
 ||advert.rabaldermedia.se^
 ||af.analytics.elx.cloud^
-||affiliatemedia.noaccountcasino.com^
 ||affiliatemedia.speedybet.com^
 ||affiliates.videoslots.com^
 ||affiliator.com^
@@ -50758,9 +50756,7 @@ inapps.appsflyersdk.com^
 ||analytics.gen.shield.monitoringservice.co^
 ||analytics.hpscloud.se^
 ||analytics.ica.se^
-||analytics.imponline.com^
 ||analytics.kb.se^
-||analytics.netcent.se^
 ||analytics.nikkasystems.com^
 ||analytics.sunet.se^
 ||analytics.svt.se^
@@ -50768,11 +50764,9 @@ inapps.appsflyersdk.com^
 ||angry-golick-2a96e5.netlify.app^
 ||annons.svenskjakt.se^
 ||annons.turist.se^
-||annonsera.kyrkanstidning.se^
 ||anonymousdemographics.com^
 ||api.adfenix.com^
 ||api.getlevelten.com^
-||api.innomdc.com^
 ||app.converdiant.com^
 ||apps.shareaholic.com^
 ||aquaplatform.com^
@@ -50789,12 +50783,10 @@ inapps.appsflyersdk.com^
 ||barbours.com.se^
 ||bcm.interactives.dk^
 ||bellmetric.net^
-||bettersport.se^
 ||bettingstugan.se^
 ||bilpolicydi.bytelab.dk^
 ||biowebb-data.s3.amazonaws.com^
 ||bitstarz.com^
-||bjursundfastigheter.se^
 ||boost-cdn.manatee.dk^
 ||borsvarlden-banners.azurewebsites.net^
 ||brandy.bonniernewslifestyle.se^
@@ -50803,7 +50795,6 @@ inapps.appsflyersdk.com^
 ||browser-http-intake.logs.datadoghq.eu^
 ||bulletproof-analytics.com^
 ||buzzador.com^
-||cache6.riedta.com^
 ||campersverige.com.se^
 ||cargodisplayads.com^
 ||carneoam.com^
@@ -50823,7 +50814,6 @@ inapps.appsflyersdk.com^
 ||cdn.appsmav.com^
 ||cdn.biddercore.io^
 ||cdn.churnkit.com^
-||cdn.connatix.com^
 ||cdn.convertbox.com^
 ||cdn.jst.ai^
 ||cdn.maaw.io^
@@ -50847,7 +50837,6 @@ inapps.appsflyersdk.com^
 ||collector-pxrf8vapwa.pxchk.net^
 ||collector-pxrf8vapwa.px-cdn.net^
 ||collector-pxrf8vapwa.px-cloud.net^
-||collector.houston-analytics.com^
 ||collect-metrics.aquro.com^
 ||connectio.s3.amazonaws.com^
 ||content.livesportmedia.eu^
@@ -50856,7 +50845,6 @@ inapps.appsflyersdk.com^
 ||creative.prf.hn^
 ||creatopy-adtag-production.b-cdn.net^
 ||ctx.matchads.net^
-||curedonswab.com^
 ||curemedia.se^
 ||cxpublic.com^
 ||d9v72urx9pbbc.cloudfront.net^
@@ -50870,13 +50858,11 @@ inapps.appsflyersdk.com^
 ||dinapengar.compricer.se^
 ||dinbilgaranti.se^
 ||doktor-se.onelink.me^
-||double.se^
 ||drift.com^
 ||driftt.com^
 ||dspk.kindredplc.com^
 ||dynamic-83d822c6-3868940931.stat.truthlyanalytics.com^
 ||eas.mediekompaniet.com^
-||ecsanalytics.com^
 ||edge.atmtd.com^
 ||embi-media.com^
 ||etc-cdn-staging.ams3.digitaloceanspaces.com^
@@ -50908,7 +50894,6 @@ inapps.appsflyersdk.com^
 ||hollistersverige.com.se^
 ||h.online-metrix.net^
 ||iba.feedblitz.com^
-||icarabatt.com^
 ||iconosquare.com^
 ||images-ads.aland.com^
 ||img.ascontentcloud.com^
@@ -50921,12 +50906,9 @@ inapps.appsflyersdk.com^
 ||jackwolfskinsverige.com.se^
 ||js.datadome.co^
 ||js.glitnoraffiliates.com^
-||js.pafpartners.com^
-||jss.jajja.com^
 ||jssdk.pulse.schibsted.com^
 ||js.hs-banner.com^
 ||keenstockholm.com.se^
-||keymetrics.se^
 ||ksdarprt.reseguiden.se^
 ||kyrkoskatten.se^
 ||kyrkskatt.se^
@@ -50956,67 +50938,54 @@ inapps.appsflyersdk.com^
 ||matomo.mindbite.cloud^
 ||matomo.studio.se^
 ||matomo.vibb.ax^
-||matomo-sysutv.goteborg.se^
 ||maxetise.net^
 ||mcgtrack.herokuapp.com^
-||mdn2015x4.com^
 ||media.hajper.com^
-||media.plista.com^
 ||mediakraft.se^
 ||mediaserver.entainpartners.com^
 ||mediaserver.gvcaffiliates.com.cdn.cloudflare.net^
 ||mega.folkbladet.nu^
 ||mega.vk.se^
 ||meltwater.com^
-||menthu.vdsinside.com^
 ||metapic.se^
 ||micro.rubiconproject.com^
 ||mindreskatt.se^
 ||missaffiliate.com^
 ||mmetrix.mobi^
-||moceanads.com^
 ||mraffiliate.com^
 ||mrporter-creative.prf.hn^
 ||mtpc.se^
 ||mtst.io^
 ||my.hellobar.com^
-||nbes.nu^
 ||network.ad.nu^
 ||newstats.blogg.se^
 ||nichehuset.dk^
 ||nobull-sverige.com.se^
-||nordishopping.com^
 ||norranstats.azurewebsites.net^
 ||norstatsurveys.com^
 ||ntrfr.expekt.se^
 ||nucleusanalytics.io^
-||oas.market.se^
 ||omni-ad-blocket.herokuapp.com^
 ||openx.financialpublishers.nl^
 ||openx.gamereactor.dk^
 ||openx.jaktsidan.se^
 ||optnmnstr.com^
 ||owa.agriprim.se^
-||p.insplanet.com^
 ||palmangelssverige.com.se^
 ||pcf.tdscd.com^
 ||petrk.com^
-||piwik.qmmedia.zone^
 ||pixel-profile-cloud.eniro.com^
 ||platform-api.sharethis.com^
 ||plus.sharedcount.com^
 ||popitunder.com^
 ||portalhc.com^
-||postnord-sverige.com^
 ||proxyas.com^
 ||pushcrew.com^
 ||pxl.host^
 ||r.existenz.se^
-||rabattcoop.com^
 ||recirculation.spot.im^
 ||record.findtrustclicks.com^
 ||regstat.se^
-||reklam.6x.se^
 ||report.23video.com^
 ||resor-external.barnsemester.se^
 ||resultify.com^
@@ -51025,7 +50994,6 @@ inapps.appsflyersdk.com^
 ||revive.nyheteridag.se^
 ||revive.teknikveckan.com^
 ||revive.tv7.fi^
-||revive.zinion.com^
 ||revive.99mac.se^
 ||revrelations.com^
 ||richmediastudio.com^
@@ -51040,7 +51008,6 @@ inapps.appsflyersdk.com^
 ||salesbooster.ai^
 ||sannsyn.com^
 ||sbs.deliveryengine.adswizz.com^
-||science.omni.se^
 ||script.extellio.com^
 ||scripts.makeinfluence.com^
 ||script.e-space.se^
@@ -51054,9 +51021,7 @@ inapps.appsflyersdk.com^
 ||serenitycandles.com.se^
 ||servedby.lintigroup.se^
 ||se-ads-microservice.ads.allermedia.io^
-||se-ads-microservice.aws.aller.com^
 ||sgtm.inet.se^
-||sifomedia.sportsverige.se^
 ||skattamindre.se^
 ||sleeknote.com^
 ||smetrics.aftonbladet.se^
@@ -51075,15 +51040,12 @@ inapps.appsflyersdk.com^
 ||static.step.dk^
 ||static.ws.apsis.one^
 ||static.zotabox.com^
-||static-se.plista.com^
 ||statistics.heltenkelt.se^
 ||statistik.blogg1.se^
 ||statistik.mxo.se^
 ||statistik.svenskaakademien.se^
 ||stats.agrar.nu^
-||stats.bytelabs.se^
 ||stats.docu.info^
-||stats.healthcare.se^
 ||stats.helsingborg.se^
 ||stats.jibber.social^
 ||stats.playoncenter.com^
@@ -51096,7 +51058,6 @@ inapps.appsflyersdk.com^
 ||s-eu-1.pushpushgo.com^
 ||t.atmng.io^
 ||t.fml.rip^
-||t.influact.com^
 ||tagging-service.fotbollskanalen.se^
 ||tagging-service.tv4play.se^
 ||tagging-service.tv4.se^
@@ -51107,7 +51068,6 @@ inapps.appsflyersdk.com^
 ||tourn.co^
 ||tourn.se^
 ||tr.apsisforms.com^
-||track.addevent.com^
 ||track.postkodlotteriet.se^
 ||tracker.zummycloud.com^
 ||tracker-v4.gamedock.io^
@@ -51229,20 +51189,20 @@ inapps.appsflyersdk.com^
 ||valentinosverige.com^
 ||vejaskorstockholm.com.se^
 ||viagogo.se^
-||vikispot.com^
 ||visitanalytics.userreport.com^
 ||w.sharethis.com^
 ||wct-1.com^
 ||webbannons.ntm.eu^
+||webbplatsanalys.goteborg.se^
 ||webstats.100procent.com^
 ||web-analytics.ica.se^
-||widget.boende.se^
 ||widget.cdn.citygate.se^
 ||widget.citygate.se^
 ||widgets.getsitecontrol.com^
 ||widgets.spklw.com^
 ||woomio.com^
 ||ws.sharethis.com^
+||www.adnordics.com^
 ||www.adsnet.se^
 ||www.alphalete.com.se^
 ||www.aservice.tools^
@@ -51252,13 +51212,11 @@ inapps.appsflyersdk.com^
 ||www.guesssverige.com.se^
 ||www.gymsharkswedens.com^
 ||www.kundvisaren.se^
-||www.linnlilja.se^
 ||www.mymediaindex.com^
 ||www.runningshoessverige.com^
 ||www.stadiumstage.com^
 ||www.vejaskor.com.se^
 ||www.vejasskor.com^
-||www.air-max.se^
 ||www.datadoghq-browser-agent.com^
 ||www.gymshark-sweden.com.se^
 
@@ -52447,6 +52405,8 @@ inapps.appsflyersdk.com^
 ||vns86.oss-*.aliyuncs.com^
 ||zhizhizhizhi.oss-*.aliyuncs.com^
 ||121.204.246.*.gif
+||05826.online^
+||0a2b3c4d5e.com^
 ||0efghij.com^
 ||0ghijkl.com^
 ||0mnopqr.com^
@@ -52587,6 +52547,7 @@ inapps.appsflyersdk.com^
 ||foizico.cn^
 ||fotaxf.xyz^
 ||fptdxkm.com^
+||fsgiosi.com^
 ||ftzzbx.xyz^
 ||fzgetdy.cn^
 ||g2ak5.com^
@@ -52637,6 +52598,7 @@ inapps.appsflyersdk.com^
 ||grthhr.xyz^
 ||gscsahv011.com^
 ||gscsahv012.com^
+||gscsahv013.com^
 ||gslejoki.xyz^
 ||gth112.com^
 ||gwdobvs.cn^
@@ -52677,6 +52639,7 @@ inapps.appsflyersdk.com^
 ||itwzlyq.com^
 ||iujlwn.icu^
 ||iuvssgh.cn^
+||jcbjcb9.cn^
 ||jevwdao.cn^
 ||jiangjinmoa.cn^
 ||jili9.io^
@@ -52708,6 +52671,7 @@ inapps.appsflyersdk.com^
 ||kzprugp.xyz^
 ||l404k.com^
 ||l80ays.com^
+||lblwhh.xyz^
 ||ldvnehc.xyz^
 ||lfhnzbj.xyz^
 ||lianglili2.cn^
@@ -52769,10 +52733,12 @@ inapps.appsflyersdk.com^
 ||oapyrzde.xyz^
 ||ocwdkp.icu^
 ||oehcxmhk.xyz^
+||oektiu.xyz^
 ||okpcyp.icu^
 ||olltcqg.xyz^
 ||omkxes.xyz^
 ||omzxutfm.com^
+||ooejkd.xyz^
 ||oprece.xyz^
 ||orssengseen.com^
 ||ovfvkfc.xyz^
@@ -52813,6 +52779,7 @@ inapps.appsflyersdk.com^
 ||rkds5.icu^
 ||rntdqwc.xyz^
 ||roxewwq.cn^
+||rrfccx.com^
 ||rslkhj.xyz^
 ||rvreuxi.cn^
 ||rzflhxn.cn^
@@ -52823,6 +52790,7 @@ inapps.appsflyersdk.com^
 ||shipostrich.com^
 ||shx11.xyz^
 ||smlpcz.icu^
+||splfnok.cn^
 ||sqevnrb.com^
 ||sregfle.cn^
 ||srlhgo.cn^
@@ -52832,6 +52800,7 @@ inapps.appsflyersdk.com^
 ||tcvmtp.xyz^
 ||tdhlmto.cn^
 ||tewsdnka35.xyz^
+||tfczk.xyz^
 ||tgjdbx.xyz^
 ||thboxp.xyz^
 ||tmlwvxae.xyz^
@@ -52839,8 +52808,10 @@ inapps.appsflyersdk.com^
 ||toyhyhv.icu^
 ||tqrznqs.cn^
 ||trdmtx.xyz^
+||tuvixr.xyz^
 ||tyuetxt.com^
 ||uahozcfq.xyz^
+||uakxkb.icu^
 ||uavejnys.xyz^
 ||udpdmeb.cn^
 ||ugvbsrbht.xyz^
@@ -52926,6 +52897,7 @@ inapps.appsflyersdk.com^
 ||yhlzadr.xyz^
 ||yhtpsy8888.cc^
 ||yivkzvog.xyz^
+||yjxzvqy.xyz^
 ||ynulcpt.cn^
 ||yuanxiaa.cn^
 ||yuanxiab.cn^
@@ -52940,25 +52912,15 @@ inapps.appsflyersdk.com^
 ||zents2.top^
 ||zjdruhn.xyz^
 ||zlncvn.xyz^
+||zmfcnlvu.xyz^
 ||zndvfrl.xyz^
 ||znwzcmd.cn^
+||zpvuugw.cn^
 ||zuugfj.cn^
 ||zys13.top^
 ||zys15.top^
 ||zys16.top^
 ||zyzo.cn^
-||05826.online^
-||splfnok.cn^
-||yjxzvqy.xyz^
-||zmfcnlvu.xyz^
-||gscsahv013.com^
-||lblwhh.xyz^
-||uakxkb.icu^
-||oektiu.xyz^
-||tuvixr.xyz^
-||rrfccx.com^
-||jcbjcb9.cn^
-||tfczk.xyz^
 ||zzyy17.top^
 ||zzyy18.top^
 ||zzyy19.top^
