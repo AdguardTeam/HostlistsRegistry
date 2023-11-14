@@ -58,7 +58,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
     try {
         await validateJson(resultFilePath);
         const serviceFileNames = await getServicesFileNames(inputDirPath);
-        await restoreRemovedInputServices(resultFilePath, serviceFileNames);
+        await restoreRemovedInputServices(resultFilePath, serviceFileNames, inputServicesDir);
         await overwriteResultFile(inputDirPath, resultFilePath, serviceFileNames);
         logger.success(`Successfully finished building ${resultFilePath}`);
         process.exit(0);
@@ -71,7 +71,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
 // Compile hostlists.
 (async () => {
     try {
-        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         await buildServices(inputServicesDir, outputServicesFile);
     } catch (error) {
         logger.error('Failed to compile hostlists');
