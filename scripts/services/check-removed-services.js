@@ -51,7 +51,11 @@ const writeRemovedServices = async (removedObjects) => {
 // TODO: Do a svg check before finding differences
 // After recovering deleted files - merge them together
 
-// TODO: Check for an empty string inside a yml file, write about it in the docs
+// TODO: Check for an empty string inside a yml file, write about it in the docs and add if necessary.
+
+// TODO: Rename folders and files to be more consistent
+
+// TODO: Get JSON data and YML data in one place
 
 /**
  * Checks if any of the input service data objects is removed
@@ -69,15 +73,14 @@ const writeRemovedServices = async (removedObjects) => {
  * @throws {Error} - If the services data file could not be read or parsed, or if the data is not an array.
  */
 const restoreRemovedInputServices = async (resultFilePath, servicesFileNames, distFilePath) => {
-    // Get data from services JSON file - array with objects
+    // Get blocked services data
     const blockedServices = await getBlockedServicesData(resultFilePath);
     // Check if data is array
     if (!Array.isArray(blockedServices)) {
         throw new Error('Blocked services data is not an array');
     }
+    // Get the content of the services files
     const serviceFilesContent = await getServiceFilesContent(distFilePath, servicesFileNames);
-    // TODO: get rid of "id" inside the "yml" file and take "id" directly from the "yml" filename
-    // to avoid checking when adding new files and exclude the possibility of typos.
     const differences = blockedServices.filter(
         (blockedService) => !serviceFilesContent.find((serviceFile) => serviceFile.id === blockedService.id),
     );

@@ -15,12 +15,26 @@ const { getServiceFilesContent } = require('./helpers');
 const overwriteResultFile = async (inputDirPath, resultFilePath, serviceFileNames) => {
     // Array with YML files content.
     const combinedServiceContent = await getServiceFilesContent(inputDirPath, serviceFileNames);
+
+    const servicesGroupsMap = {};
+    const combinedGroups = [];
+
+    combinedServiceContent.forEach((service) => {
+        if (!servicesGroupsMap[service.group]) {
+            servicesGroupsMap[service.group] = true;
+            combinedGroups.push({ id: service.group });
+        }
+    });
+
+    combinedGroups.sort((a, b) => a.id.localeCompare(b.id));
     // Validate SVG icons. If the svg icon is not valid, an error is thrown.
     validateSvgIcons(combinedServiceContent);
     // Object to store the blocked services JSON file content.
     const servicesData = {};
+
     // Write the sorted services array into the blocked_services key.
     servicesData.blocked_services = combinedServiceContent.sort();
+    servicesData.groups = combinedGroups;
     // Rewrite services JSON file.
     await fs.writeFile(resultFilePath, JSON.stringify(servicesData, null, 2));
 };
