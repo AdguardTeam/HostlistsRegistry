@@ -2,9 +2,9 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2023-11-18T11:05:38.882Z
+! Last modified: 2023-11-21T17:45:46.102Z
 !
-! Compiled by @adguard/hostlist-compiler v1.0.22
+! Compiled by @adguard/hostlist-compiler v1.0.23
 !
 !
 ! Source name: Dandelion Sprout's Anti-Malware List
@@ -4390,6 +4390,8 @@
 ||171.112.177.90^
 ||115.194.38.143^
 ||61.52.79.32^
+! https://scammer.info/t/pihishing-site-claiming-to-hold-a-ups-package-that-needs-payment/84466
+://ups-dk.$denyallow=dk|nu|se|no|fo|gl|ups.com|ups-dk.*
 ! https://www.virustotal.com/gui/url/269d374b629d7896da1f9e7449bd5afecf6284a9a564244f96a71e5192363635?nocache=1
 ||lowseelan.com^
 ! https://www.virustotal.com/gui/file/50fd813cf8fe981e6aee179f8ba394e5527c5128b84c328f9f8347cd994bbc42/community
@@ -22713,3 +22715,12 @@
 
 
 ||amazonaws.com^$badfilter
+
+
+
+! Very experimental entry; see https://github.com/DandelionSprout/adfilt/issues/950 and https://www.techspot.com/news/77949-ccleaner-could-install-avast-anti-virus-without-permission.html
+
+
+! To keep track of when on earth the AdGuard team will allow $denyallow in included lists
+||example.org^$denyallow=example.org
+||example.org^$denyallow=~example.org

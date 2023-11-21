@@ -2,9 +2,9 @@
 ! Title: CHN: anti-AD
 ! Description: List for blocking ads in the Chinese region. Aims at privacy protection.
 ! Homepage: https://anti-ad.net/
-! Last modified: 2023-11-19T19:05:20.272Z
+! Last modified: 2023-11-21T17:45:38.526Z
 !
-! Compiled by @adguard/hostlist-compiler v1.0.22
+! Compiled by @adguard/hostlist-compiler v1.0.23
 !
 !
 ! Source name: anti-AD
@@ -98,6 +98,7 @@
 @@||code.sms.mob.com^
 @@||widget.sndcdn.com^
 @@||ad.nl^
+/^(\S+\.)?ad(s?[\d]+|m|s)?\./$denyallow=nucdn.net|azureedge.net|alibabacorp.com|alibabadns.com
 @@||ad.vivo.com.cn^
 @@||ads.alafish.cn^
 @@||ads.doordash.com^
@@ -115,6 +116,7 @@
 @@||ads.vk.com^
 @@||ui.ads.microsoft.com^
 @@||adm.10jqka.com.cn^
+/^(\S+\.)?advert/$denyallow=alibabacorp.com|alibabadns.com|sm.cn|tanx.com|alibaba-inc.com|tmall.com|taobao.com
 /^(\S+\.)?affiliat(es?[0-9a-z]*?|ion[0-9\-a-z]*?|ly[0-9a-z\-]*?)\./
 /^(\S+\.)?s?metrics\./
 /^(\S+\.)?afgr[\d]{1,2}\.com$/
