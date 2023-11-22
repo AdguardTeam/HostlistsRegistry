@@ -1,8 +1,8 @@
 const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
-const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
-const { overwriteResultFile } = require('./scripts/services/rewrite-services-json');
+const { getDifferences, restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
+const { getCombinedServicesData } = require('./scripts/services/rewrite-services-json');
 const { logger } = require('./scripts/helpers/logger');
 
 const filtersDir = path.join(__dirname, './filters');
@@ -11,6 +11,8 @@ const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
 const inputServicesDir = path.join(__dirname, './services');
 const outputServicesFile = path.join(assetsDir, 'services.json');
+
+const { getServiceFilesContent, getBlockedServicesData } = require('./scripts/services/helpers');
 
 /**
  * Validate services JSON file.
@@ -28,21 +30,6 @@ const validateJson = async (filePath) => {
 };
 
 /**
- * Gets the names of YML file from the services folder.
- *
- * @param {string} inputDirPath - The path to the folder with service files.
- * @returns {Promise<Array<string>>} - An array of services file names.
- */
-const getServicesFileNames = async (inputDirPath) => {
-    // get all dir names from services folder
-    const fileNames = await fs.readdir(inputDirPath);
-    // get the file names without its extension
-    const fileBaseNames = fileNames.map((file) => path.parse(file).name);
-    // return sorted array
-    return fileBaseNames.sort();
-};
-
-/**
  * Builds the result services file and saves it to `resultFilePath`.
  * During the build the following steps are performed:
  * 1. Check if the services JSON file is valid.
@@ -57,9 +44,15 @@ const getServicesFileNames = async (inputDirPath) => {
 const buildServices = async (inputDirPath, resultFilePath) => {
     try {
         await validateJson(resultFilePath);
-        const serviceFileNames = await getServicesFileNames(inputDirPath);
-        await restoreRemovedInputServices(resultFilePath, serviceFileNames, inputServicesDir);
-        await overwriteResultFile(inputDirPath, resultFilePath, serviceFileNames);
+        const blockedServices = await getBlockedServicesData(resultFilePath);
+        let serviceFilesContent = await getServiceFilesContent(inputDirPath);
+        const differences = await getDifferences(blockedServices, serviceFilesContent);
+        if (differences) {
+            await restoreRemovedInputServices(differences, inputServicesDir);
+            serviceFilesContent = await getServiceFilesContent(inputDirPath);
+        }
+        const combinedServicesData = await getCombinedServicesData(serviceFilesContent);
+        await fs.writeFile(resultFilePath, JSON.stringify(combinedServicesData, null, 2));
         logger.success(`Successfully finished building ${resultFilePath}`);
         process.exit(0);
     } catch (error) {
