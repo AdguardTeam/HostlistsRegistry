@@ -2,13 +2,11 @@ const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 
-const {
-    readSourceFilesContent,
-    readDistFileContent,
-    restoreRemovedSourceFiles,
-} = require('./scripts/helpers/read-and-write-files');
+const { readSourceFilesContent, readDistFileContent } = require('./scripts/services/get-services-content');
 
-const { getDifferences, mergeServicesData, groupServicesData } = require('./scripts/helpers/content-operations');
+const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
+
+const { getDifferences, restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 

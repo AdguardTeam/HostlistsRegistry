@@ -1,24 +1,4 @@
 /**
- * Get the differences between blocked services and source service files based on their 'id' property.
- *
- * @param {Array<Object>} distContent - An array of objects representing service data from the destination.
- * @param {Array<Object>} sourceContent - An array of objects representing service files from the source.
- * @returns {Array<Object>|false} - An array containing objects representing the differences,
- * or false if no differences exist.
- *
- * @throws {Error} - Throws an error if the destination services data is not an array.
- */
-const getDifferences = (distContent, sourceContent) => {
-    if (!Array.isArray(distContent)) {
-        throw new Error('Blocked services data is not an array');
-    }
-    const differences = distContent.filter(
-        (distObject) => !sourceContent.find((sourceObject) => sourceObject.id === distObject.id),
-    );
-    return (differences.length > 0) ? differences : false;
-};
-
-/**
  * Merges service data from source and destination content based on their 'id' property.
  *
  * @param {Array<object>} sourceContent - An array of objects representing service data from the source.
@@ -26,8 +6,8 @@ const getDifferences = (distContent, sourceContent) => {
  * @returns {Array<object>}  - An array containing unique objects merged from both input arrays,
  * with duplication handled by the 'id' property.
  */
-const mergeServicesData = (sourceContent, distContent) => {
-    const mergedMap = [...sourceContent, ...distContent].reduce((acc, obj) => {
+const mergeServicesData = (distContent, sourceContent) => {
+    const mergedMap = [...distContent, ...sourceContent].reduce((acc, obj) => {
         acc[obj.id] = obj;
         return acc;
     }, {});
@@ -71,7 +51,6 @@ const groupServicesData = (combinedServiceContent) => {
 };
 
 module.exports = {
-    getDifferences,
     mergeServicesData,
     groupServicesData,
 };

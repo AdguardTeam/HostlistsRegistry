@@ -3,7 +3,8 @@ const path = require('path');
 const yaml = require('js-yaml');
 
 const YML_FILE_EXTENSION = '.yml';
-const { logger } = require('./logger');
+
+const { logger } = require('../helpers/logger');
 
 /**
  * Read and parse JSON file.
@@ -74,31 +75,7 @@ const readSourceFilesContent = async (folderPath) => {
     return sourceFileContent;
 };
 
-/**
- * Write removed services objects into files.
- *
- * @param {Array<object>} differences - Array of objects that should be written in separate files.
- * @param {string} sourceDir - The path to the directory containing YAML files.
- */
-
-const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
-    if (differences.length === 0) {
-        return;
-    }
-    const [removedObject, ...restObjects] = differences;
-    await fs.writeFile(
-        path.join(`${sourceDirPath}/${removedObject.id}${YML_FILE_EXTENSION}`),
-        yaml.dump(removedObject, { lineWidth: -1 }),
-    );
-    if (sourceDirPath.length > 1) {
-        await restoreRemovedSourceFiles(restObjects);
-    }
-    const removedServices = differences.map((difference) => difference.id);
-    logger.warning(`These services have been removed: ${removedServices.join(', ')}, and were restored`);
-};
-
 module.exports = {
     readSourceFilesContent,
     readDistFileContent,
-    restoreRemovedSourceFiles,
 };
