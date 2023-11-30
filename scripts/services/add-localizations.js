@@ -87,7 +87,6 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
  *
  * @param {string} baseFolder - The base path to the folder containing the directories.
  * @param {string[]} directories - An array of directory names where files for groups exist.
- * @param {string} targetFile - The name of the target file to read.
  * @returns {Promise<object>} A promise that resolves to an object representing grouped translations.
  *
  * @throws {Error} If there is an issue reading the file or parsing its content.

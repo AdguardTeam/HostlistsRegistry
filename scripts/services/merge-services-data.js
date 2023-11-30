@@ -1,8 +1,8 @@
 /**
  * Merges service data from source and destination content based on their 'id' property.
  *
- * @param {Array<object>} sourceContent - An array of objects representing service data from the source.
  * @param {Array<object>} distContent - An array of objects representing service data from the destination.
+ * @param {Array<object>} sourceContent - An array of objects representing service data from the source.
  * @returns {Array<object>}  - An array containing unique objects merged from both input arrays,
  * with duplication handled by the 'id' property.
  */
@@ -18,7 +18,7 @@ const mergeServicesData = (distContent, sourceContent) => {
  * Combines service data into a structured format with grouped services and sorted groups.
  *
  * @param {Array<object>} combinedServiceContent - An array of objects representing combined service data.
- * @returns {Promise<object>} - A Promise resolving to an object containing structured service data.
+ * @returns {object} - Object containing structured service data.
  *
  * @throws {Error} - Throws an error if the input data is not in the expected format.
  */
@@ -43,7 +43,7 @@ const groupServicesData = (combinedServiceContent) => {
         servicesData.blocked_services = combinedServiceContent.sort();
         // Write the sorted combined groups array into the 'groups' key
         servicesData.groups = combinedGroups;
-        // Return the structured service data as a Promise
+        // Return the structured service data
         return servicesData;
     } catch (error) {
         throw new Error('Error while grouping services data');
