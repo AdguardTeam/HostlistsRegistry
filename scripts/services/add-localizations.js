@@ -75,7 +75,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
             // {cdn : {en: { name: "Cdn" } } }
             componentLocalesTranslate[id] = localesTranslate;
         });
-        // Merge component locales into the groupedFileObjects using Object.assign
+        // Merge component locales into the groupedFileObjects
         Object.assign(groupedFileObjects, componentLocalesTranslate);
     });
 
@@ -96,7 +96,7 @@ const getGroupedTranslations = async (baseFolder, directories) => {
     try {
         // Collect translations asynchronously from each directory
         const collectTranslations = directories.map(async (directory) => {
-            // File path for the translation file
+            // File path to the translation file
             const translationFilePath = path.join(baseFolder, directory, 'services.json');
             // Check if the translation file exists
             if (await isExist(translationFilePath)) {
@@ -125,8 +125,8 @@ const getGroupedTranslations = async (baseFolder, directories) => {
 };
 
 /**
- * @typedef {{ groups: groupedFileObjects }} categoryLocalesTranslate
- * @property {groupedFileObjects} - An object containing grouped translations
+ * @typedef {{groups: groupedFileObjects}} categoryLocalesTranslate
+ * @property {object} groupedFileObjects - An object containing grouped translations
  * for a specific group within a category and locale.
  */
 
@@ -134,7 +134,6 @@ const getGroupedTranslations = async (baseFolder, directories) => {
  * Asynchronously retrieves grouped translations for different locales based on specified directories.
  *
  * @param {string} baseLocalesFolder - The base path to the folder containing locale directories.
- * @param {string} targetServiceFile - The name of the service file used to identify directories.
  * @returns {categoryLocalesTranslate} A promise that resolves to an object representing grouped translations
  * for different locales.
  *
