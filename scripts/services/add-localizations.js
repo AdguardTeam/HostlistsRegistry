@@ -118,7 +118,7 @@ const getGroupedTranslations = async (baseFolder, directories) => {
             return acc;
         }, {});
     } catch (error) {
-        logger.error(`Error getting grouped translations: ${error.message}`);
+        logger.error(`Error getting grouped translations: ${error}`);
         throw new Error(error);
     }
 };
@@ -151,7 +151,7 @@ const getLocales = async (baseLocalesFolder) => {
         );
         return categoryLocalesTranslate;
     } catch (error) {
-        logger.error(`Error getting locales: ${error.message}`);
+        logger.error(`Error getting locales: ${error}`);
         throw new Error(error);
     }
 };
@@ -174,7 +174,7 @@ const addServiceLocalizations = async (baseLocalesFolder, i18nFilePath) => {
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
     } catch (error) {
-        logger.error(`Error adding localizations: ${error.message}`);
+        logger.error(`Error adding localizations: ${error}`);
         throw new Error(error);
     }
 };

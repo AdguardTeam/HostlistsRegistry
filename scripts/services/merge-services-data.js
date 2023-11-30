@@ -1,3 +1,5 @@
+const { logger } = require('../helpers/logger');
+
 /**
  * Merges service data from source and destination content based on their 'id' property.
  *
@@ -20,7 +22,7 @@ const mergeServicesData = (distContent, sourceContent) => {
  * @param {Array<object>} combinedServiceContent - An array of objects representing combined service data.
  * @returns {object} - Object containing structured service data.
  *
- * @throws {Error} - Throws an error if the input data is not in the expected format.
+ * @throws {Error} - Throws an error if the input data is not in the expected format or group is empty
  */
 const groupServicesData = (combinedServiceContent) => {
     try {
@@ -28,19 +30,24 @@ const groupServicesData = (combinedServiceContent) => {
         const servicesGroupsMap = {};
         // Array to store the final combined service groups
         const combinedGroups = [];
+        // Array to store services with empty groups
+        const invalidGroupNames = [];
         // Iterate through the combined service content to build service groups
         combinedServiceContent.forEach((service) => {
+            if (!service.group) {
+                invalidGroupNames.push(service.id);
+            }
             if (!servicesGroupsMap[service.group]) {
                 servicesGroupsMap[service.group] = true;
                 combinedGroups.push({ id: service.group });
             }
             return combinedGroups;
         });
-
+        if (invalidGroupNames.length > 0) {
+            throw new Error(`Services with id: ${invalidGroupNames.join()} has an empty or missing 'group' key.`);
+        }
         // Sort the combined groups array lexicographically by 'id'
         const sortedGroups = combinedGroups.sort((a, b) => a.id.localeCompare(b.id));
-        console.log(sortedGroups)
-
         // Object to store the final service data structure
         const servicesData = {};
         // Write the sorted combined service content array into the 'blocked_services' key
@@ -50,7 +57,8 @@ const groupServicesData = (combinedServiceContent) => {
         // Return the structured service data
         return servicesData;
     } catch (error) {
-        throw new Error('Error while grouping services data');
+        logger.error(`Error while grouping services data: ${error}`);
+        throw new Error(error);
     }
 };
 
