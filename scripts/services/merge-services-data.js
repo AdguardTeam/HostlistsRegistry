@@ -34,15 +34,19 @@ const groupServicesData = (combinedServiceContent) => {
                 servicesGroupsMap[service.group] = true;
                 combinedGroups.push({ id: service.group });
             }
+            return combinedGroups;
         });
+
         // Sort the combined groups array lexicographically by 'id'
-        combinedGroups.sort((a, b) => a.id.localeCompare(b.id));
+        const sortedGroups = combinedGroups.sort((a, b) => a.id.localeCompare(b.id));
+        console.log(sortedGroups)
+
         // Object to store the final service data structure
         const servicesData = {};
         // Write the sorted combined service content array into the 'blocked_services' key
         servicesData.blocked_services = combinedServiceContent.sort();
         // Write the sorted combined groups array into the 'groups' key
-        servicesData.groups = combinedGroups;
+        servicesData.groups = sortedGroups;
         // Return the structured service data
         return servicesData;
     } catch (error) {
