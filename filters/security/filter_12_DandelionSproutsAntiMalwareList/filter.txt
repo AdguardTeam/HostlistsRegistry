@@ -2,16 +2,16 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2023-11-08T11:05:33.019Z
+! Last modified: 2023-11-26T22:05:47.928Z
 !
-! Compiled by @adguard/hostlist-compiler v1.0.22
+! Compiled by @adguard/hostlist-compiler v1.0.23
 !
 !
 ! Source name: Dandelion Sprout's Anti-Malware List
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
 ! Title: 💊 Dandelion Sprout's Anti-Malware List (for AdGuard Home, AdGuard for Android/Windows' DNS filtering, and Pi-Hole FTL ≥5.22)
-! Version: 08November2023v2
+! Version: 22November2023v1
 ! Expires: 2 days
 ! Description: This list goes the extra kilometer to prevent more malware than other mainstream anti-malware lists. It blocks heavily abused top-level domains (and even search engine results for them), blocks domains used in malware redirection trains and in domain parking schemes, blocks sponsored Windows PUP nags on PC guide articles, uses mass blocking of domains belonging to bad IPs, and has many other subcategories that give it a solid advantage over similar lists out there.
 ! For other security-specific lists I've made, check out https://github.com/DandelionSprout/adfilt/tree/master/Special%20security%20lists
@@ -25,88 +25,27 @@
 ! Mali (Put on break due to too many and too frequent whitelistings being needed)
 
 ! Equatorial Guinea
-||*.gq^
-@@||inege.gq^
-@@||tvgelive.gq^
-@@||siteproxy.gq^
-@@||blockly.gq^
+||*.gq^$denyallow=inege.gq|tvgelive.gq|siteproxy.gq|blockly.gq
 ! Central African Republic
-||*.cf^
-@@||google.cf^
-@@||rths.cf^
-@@||acap.cf^
+||*.cf^$denyallow=google.cf|rths.cf|acap.cf|shorter.cf
 ! Palau (Put on break due to too many whitelistings being needed)
-!!!||pw^
-@@||libgen.pw^
-@@||petridish.pw^
-@@||palaugov.pw^
-@@||dpc.pw^
-@@||buttercup.pw^
-@@||rezka.pw^
-@@||darkcrystal.pw^
-@@||xor.pw^
-@@||fullhdfilmizlesene.pw^
-@@||gopass.pw^
-@@||vost.pw^
-@@||core.pw^
-@@||bittor.pw^
-@@||plutonium.pw^
-@@||nitter.pw^
-@@||kge.pw^
+!!!||pw^~libgen.pw|petridish.pw|palaugov.pw|dpc.pw|buttercup.pw|rezka.pw|darkcrystal.pw|xor.pw|fullhdfilmizlesene.pw|gopass.pw|vost.pw|core.pw|bittor.pw|plutonium.pw|nitter.pw|kge.pw
 ! Legitimate use is almost non-existent, but has a tiny userbase in Japan. Its extreme common-ness in malware redirections means that the entry will be kept forever.
-||*.top^
-@@||caitlin.top^
-@@||corriente.top^
-@@||gdtot.top^
-@@||nicenature.top^
-@@||reminder.top^
-@@||magocoro.top^
-@@||castlevania.top^
-@@||suiten.top^
-@@||shucks.top^
-@@||1stream.top^
-@@||ambr.top^
-@@||techblog.top^
-@@||changlam10.top^
-@@||changlam11.top^
-@@||pdcdn1.top^
-@@||mastodon.top^
-@@||pressplay.top^
-@@||chillx.top^
-@@||strims.top^
-@@||thedesk.top^
-@@||audioforyou.top^
+||*.top^$denyallow=caitlin.top|corriente.top|gdtot.top|nicenature.top|reminder.top|magocoro.top|castlevania.top|suiten.top|shucks.top|1stream.top|ambr.top|techblog.top|changlam10.top|changlam11.top|pdcdn1.top|mastodon.top|pressplay.top|chillx.top|strims.top|thedesk.top|audioforyou.top
 ! International topical domains that have consistently horrendous scores on watchlists of bad TLDs, and whose use for legit purposes is practically non-existent.
 ||*.loan^
-||*.agency^
-@@||battlefield.agency^
-@@||baam.agency^
-@@||robotzebra.agency^
-@@||uphotel.agency^
-@@||ws.agency^
-||*.gdn^
-@@||cst.gdn^
+||*.agency^$denyallow=battlefield.agency|baam.agency|robotzebra.agency|uphotel.agency|ws.agency
+||*.gdn^$denyallow=cst.gdn
 ||*.bid^
-||*.ooo^
-@@||toast.ooo^
+||*.ooo^$denyallow=toast.ooo
 ! https://bgp.he.net/AS202492#_prefixes (17/07/2022)
-!!!||monster^
-@@||egybest.monster^
-@@||yts.monster^
-@@||cloudcdn.monster^
-@@||fedi.monster^
-@@||rollenspiel.monster^
-@@||tts.monster^
-@@||geometry.monster^
+!!!||monster^~egybest.monster|yts.monster|cloudcdn.monster|fedi.monster|rollenspiel.monster|tts.monster|geometry.monster
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131156
 ||*.sbs^
 ! https://github.com/DandelionSprout/adfilt/issues/659
-||*.discount^
-@@||real.discount^
+||*.discount^$denyallow=real.discount
 ! https://github.com/AdguardTeam/AdguardFilters/issues/137635
-||*.cfd^
-@@||frcoal.cfd^
-@@||freedium.cfd^
+||*.cfd^$denyallow=frcoal.cfd|freedium.cfd
 ! Experimental attempt to cover a few hardcore spam ASNs
 
 
@@ -3986,7 +3925,7 @@
 ||188.120.50.98^
 ||190.238.183.5^
 ||27.220.253.78^
-! ! https://www.virustotal.com/gui/file/0374ead74fa807fb1737d8829fdb5bad6c93779f6b9eb7162eddabff7a64acff/community
+! https://www.virustotal.com/gui/file/0374ead74fa807fb1737d8829fdb5bad6c93779f6b9eb7162eddabff7a64acff/community
 ||esetnode32-antiviru.ydns.eu^
 ! https://www.joesandbox.com/analysis/486636/0/html#domains
 ||aieov.com^
@@ -4603,6 +4542,7 @@
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121544
 ||trafredirtds.com^
+
 ! https://github.com/AdguardTeam/AdguardFilters/issues/121772
 ||pu020ev.com^
 ||kadam.net^
@@ -16989,7 +16929,6 @@
 ||ptwmjmp.com^
 ||wmptengate.com^
 ||93.93.51.223^
-@@||archive.*
 ||github.sale^
 ! https://www.tv2.no/nyheter/innenriks/advarer-ikke-klikk-pa-lenken/16040614/
 ||0nedr1ved0cumentonline.com^
@@ -17242,6 +17181,104 @@
 ! https://github.com/libre-tube/LibreTube/issues/4409
 ||libretube.app^
 ||libretube.net^
+! https://github.com/RPiList/specials/issues/1353
+||khw6g09fx28k.cfd^
+||49gw5gonj143k.click^
+||djxd2ox30l7.click^
+||vtreanext.click^
+||theratgamez.com^
+||fwkldh.click^
+||gyhguflo.click^
+||hfjdfurhhd.xyz^
+||4rf5tgfdfy.click^
+||rt54erdfgh.pro^
+||dew3hy6.cfd^
+||aswedfcv6ty.click^
+||bgtrjuy6.cfd^
+||mjiu876tyh.pro^
+||lsdkjh.xyz^
+||nafsdwas.click^
+||ki987yth.pro^
+||5rd5tgh.cfd^
+||d589nenr.cfd^
+||mi5cr46kg.click^
+||9iujhfre3.cfd^
+||asdhkl.click^
+||se5vy6.click^
+||9iuh5tyh.cfd^
+||cvasdf.click^
+||vgcj2rzjd.cfd^
+||jgtek990e.click^
+||nnnsjhsh.click^
+||clabzeroby.net^
+||cvbnrtgf8u.cfd^
+||juy6asert67.click^
+||jkghfdt.xyz^
+||dfhduh.xyz^
+||k50c8s2p7.cfd^
+||p0jrmnpr7.cfd^
+||jnh4afbw7.click^
+||xzr9uauq.cfd^
+||1lu98dcf0.cfd^
+||bn6h9d7tr.cfd^
+||hyt5ytr.click^
+||t67uyhgf.co^
+||crack4hit.com^
+||hit4pc.click^
+||4vz6ew1li.cfd^
+||exs7oilq14cz6.click^
+||3zo0grlgm.cfd^
+||7nalhxb28rmm.cfd^
+||hjdhhfdh.click^
+||dk9vqq64cp14e.click^
+||losf8uo304l.click^
+||ntxkddng28vq7.cfd^
+||kjr3y14yt.click^
+||a1lky06jn.cfd^
+||l97hha31f8h.cfd^
+||cwz20w14xn0.click^
+||tnzcwlf284.cfd^
+||dialogfosti.click^
+||myonlyland.com^
+||kinovizbx.xyz^
+||hw1ip330zc.click^
+||ix1n0li6u7273.cfd^
+||vgfrrtc.click^
+||vablecable.click^
+||jiuppppml.click^
+||zvotg9ceh.cfd^
+||huqiinxy.click^
+||wtechfullsetup.xyz^
+||closerscopy.net^
+||freeinstallcpc.xyz^
+||l1ihpb0dz521ol.cfd^
+||nccenbkdr1063.cfd^
+||a18n5nh14xos.click^
+||b5mtuo30dqu.click^
+||galvu301.click^
+||5tbyvf27hc.cfd^
+||gotechfiles.xyz^
+||getintopcc.pro^
+||poiqhawq.click^
+||ygabgga.click^
+||eyhdjyst.click^
+||rosterfile4u.click^
+||cfmarker.click^
+||azxdr4erf.xyz^
+||38ed4r.cfd^
+||xitrbgq.click^
+||ym2f4o2f.cfd^
+||topkeygen.com^
+||piratesfile.com^
+||rootscrack.com^
+||cracksmat.com^
+||crackedsoft.org^
+||crackxpoint.com^
+||crackerzpro.org^
+||crackfinal.com^
+||wazusoft.com^
+||crackzoom.com^
+||activators4windows.com^
 
 ! ——— Standard malware that I stumbled upon on my own ———
 ! http://www.toorgle.net/results.php?q=fetishkitsch&security=666
@@ -22553,6 +22590,10 @@
 ! Tumblr spambots
 ||shua999.com^
 ||ybd001.com^
+! Google results for «SodaStream site:no cranberry»
+
+
+
 
 ! ——— Horrendously bad copypasted Android rooting "guides" (often with fake titles) that bricked two of my phones ———
 ! Most of the guides haven't even accounted for how modern phones have replaced the recovery environment with an extra boot environment, leading to very critical Fastboot commands not working and/or bricking the phone.
@@ -22584,38 +22625,18 @@
 ||githubt.com^
 
 ! ——— Usually used by various groups who buy old domains and display illicit ads on them ———
-://ww4.
-@@||ww4.ikea.com^
-://ww5.
-@@||ww5.ikea.com^
-@@||ww5.msu.ac.zw^
-://ww6.
-@@||ww6.generali.pt^
-://ww7.
-@@||ww7.be^
-@@||ww7.readsnk.com^
-://ww8.
-@@||ww8.co^
-@@||ww8.ikea.com^
-@@||ww8.tiki.ne.jp^
-@@||ww8.erovoice.us^
-@@||ww8.anyanime.com^
-@@||ww8.bakushpal.az^
-@@||ww8.tokyoghoulre.com^
-@@||ww8.readonepiece.com^
-://ww9.
-@@||ww9.ikea.com^
-@@||ww9.tiki.ne.jp^
-@@||ww9.sakura.ne.jp^
-@@||ww9.generali.pt^
-@@||ww9.itau.com.br^
+://ww4.$denyallow=ww4.ikea.com
+://ww5.$denyallow=ww5.ikea.com|ww5.msu.ac.zw
+://ww6.$denyallow=ww6.generali.pt
+://ww7.$denyallow=ww7.be|ww7.readsnk.com
+://ww8.$denyallow=ww8.co|ww8.ikea.com|ww8.tiki.ne.jp|ww8.erovoice.us|ww8.anyanime.com|ww8.bakushpal.az|ww8.tokyoghoulre.com|ww8.readonepiece.com
+://ww9.$denyallow=ww9.ikea.com|ww9.tiki.ne.jp|ww9.sakura.ne.jp|ww9.generali.pt|ww9.itau.com.br
 ://ww10.
 ://ww11.
 ://ww12.
 ://ww13.
 ://ww14.
-://ww15.
-@@||ww15.nl^
+://ww15.$denyallow=ww15.nl
 ://ww16.
 ://ww17.
 ://ww18.
@@ -22708,3 +22729,12 @@
 
 
 ||amazonaws.com^$badfilter
+
+
+
+! Very experimental entry; see https://github.com/DandelionSprout/adfilt/issues/950 and https://www.techspot.com/news/77949-ccleaner-could-install-avast-anti-virus-without-permission.html
+
+
+! To keep track of when on earth the AdGuard team will allow $denyallow in included lists
+||example.org^$denyallow=example.org
+||example.org^$denyallow=~example.org

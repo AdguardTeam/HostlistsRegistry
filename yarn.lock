@@ -7,10 +7,10 @@
   resolved "https://registry.yarnpkg.com/@aashutoshrathi/word-wrap/-/word-wrap-1.2.6.tgz#bd9154aec9983f77b3a034ecaa015c2e4201f6cf"
   integrity sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==
 
-"@adguard/hostlist-compiler@^1.0.22":
-  version "1.0.22"
-  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.22.tgz#45ba54bcc091a60f032e13849b5f05b8f27d52aa"
-  integrity sha512-zWKErcgzv03/WIvUKA9TfB76C+ImXSSyjPcN/6eL87PaJxd+2Td3tDgzFaEEM5DFs3PEG7PNJEljAkAPivEqow==
+"@adguard/hostlist-compiler@^1.0.23":
+  version "1.0.23"
+  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.23.tgz#11ed30246b3ea3979a4680ec9286afd04842a5f7"
+  integrity sha512-9j4RW2rQqbVy1Ga2HhzeQNdxnD94d7VPRFIFGemK8/CAz6xMpJ6swRCBnDtVNzy2xW40YEgspUg4Xfn5KIHTpg==
   dependencies:
     ajv "^6.12.0"
     ajv-errors "^1.0.1"
@@ -148,7 +148,7 @@ acorn@^8.9.0:
 adguard-hostlists-builder@./hostlists-builder/:
   version "1.0.1"
   dependencies:
-    "@adguard/hostlist-compiler" "^1.0.22"
+    "@adguard/hostlist-compiler" "^1.0.23"
     md5 "^2.3.0"
 
 ajv-errors@^1.0.1:
