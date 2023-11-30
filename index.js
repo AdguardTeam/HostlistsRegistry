@@ -10,14 +10,19 @@ const { getDifferences, restoreRemovedSourceFiles } = require('./scripts/service
 
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 
+const { addServicesLocalizations } = require('./scripts/services/add-localizations');
+
 const { logger } = require('./scripts/helpers/logger');
+
+const SERVICES_FILE_NAME = 'services.json';
 
 const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');
 const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
 const inputServicesDir = path.join(__dirname, './services');
-const outputServicesFile = path.join(assetsDir, 'services.json');
+const outputServicesFile = path.join(assetsDir, `${SERVICES_FILE_NAME}`);
+const servicesI18FilePath = path.join(__dirname, './assets/services_i18n.json');
 
 /**
  * Build services data by reading and processing content from a destination JSON file
@@ -50,6 +55,7 @@ const buildServices = async (distFilePath, sourceDirPath) => {
         const groupedServicesData = groupServicesData(mergedServicesData);
         // Write the grouped service data to the destination JSON file
         await fs.writeFile(distFilePath, JSON.stringify(groupedServicesData, null, 2));
+        await addServicesLocalizations(localesDir, SERVICES_FILE_NAME, servicesI18FilePath);
         logger.success(`Successfully finished building ${distFilePath}`);
         process.exit(0);
     } catch (error) {
@@ -61,7 +67,7 @@ const buildServices = async (distFilePath, sourceDirPath) => {
 // Compile hostlists.
 (async () => {
     try {
-        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         await buildServices(outputServicesFile, inputServicesDir);
     } catch (error) {
         logger.error('Failed to compile hostlists');
