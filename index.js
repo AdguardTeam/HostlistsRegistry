@@ -24,8 +24,6 @@ const servicesI18nFile = path.join(assetsDir, 'services_i18n.json');
  *
  * @param {string} distFilePath - The file path to the destination JSON file.
  * @param {string} sourceDirPath - The directory path containing source YAML files.
- * @param {string} localesFolder - The directory with translations
- * @param {string} combinedTranslationsFile - The file with combined translation for service groups
  * @returns {Promise<void>} - A Promise resolving once the build process is complete.
  *
  * @throws {Error} - Throws an error if there's an issue during the build process.
