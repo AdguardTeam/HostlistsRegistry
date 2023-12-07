@@ -9,10 +9,10 @@ const { logger } = require('../helpers/logger');
 /**
  * Returns the blocked services data from a JSON file.
  *
- * @param {string} filePath - The path to the json file.
- * @returns {Promise<object[]>} - Array of blocked services objects.
- * @throws {Error} - If the file cannot be read or parsed,
- * if the blocked services data is undefined or not an array.
+ * @param {string} filePath - The path to the file.
+ * @returns {Promise<object[]|undefined>} - Array of blocked services objects.
+ * Returns `undefined` if there is no `blocked_services` in the successfully read services data file.
+ * @throws {Error} - If the file cannot be read or parsed.
  */
 const readDistFileContent = async (filePath) => {
     let blockedServices;
