@@ -7,22 +7,33 @@ const YML_FILE_EXTENSION = '.yml';
 const { logger } = require('../helpers/logger');
 
 /**
- * Read and parse JSON file.
+ * Returns the blocked services data from a JSON file.
  *
- * @param {string} filePath - The path to the file.
- * @returns {Promise<object[]|null>} - Array of blocked services objects.
- * Returns `null` if there's an error during the process.
- * @throws {Error} - If the file cannot be read or parsed.
+ * @param {string} filePath - The path to the json file.
+ * @returns {Promise<object[]>} - Array of blocked services objects.
+ * @throws {Error} - If the file cannot be read or parsed,
+ * if the blocked services data is undefined or not an array.
  */
 const readDistFileContent = async (filePath) => {
+    let blockedServices;
     try {
         const fileContent = await fs.readFile(filePath);
         const serviceObjects = JSON.parse(fileContent);
-        return serviceObjects.blocked_services;
+        blockedServices = serviceObjects.blocked_services;
     } catch (error) {
         logger.error(`Error while reading file ${filePath}`);
         throw new Error(error);
     }
+
+    if (typeof blockedServices === 'undefined') {
+        throw new Error('Blocked services data is undefined');
+    }
+
+    if (!Array.isArray(blockedServices)) {
+        throw new Error('Blocked services data is not an array');
+    }
+
+    return blockedServices;
 };
 
 /**

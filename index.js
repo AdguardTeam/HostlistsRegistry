@@ -30,17 +30,17 @@ const outputServicesFile = path.join(assetsDir, 'services.json');
 const buildServices = async (sourceDirPath, distFilePath) => {
     try {
         // Read content from the JSON file
-        const distFileContent = await readDistFileContent(distFilePath);
+        const distBlockedServices = await readDistFileContent(distFilePath);
         // Read content from the source YML files
         const sourceFilesContent = await readSourceFilesContent(sourceDirPath);
         // Get the differences between the destination and source data
-        const differences = getDifferences(distFileContent, sourceFilesContent);
+        const differences = getDifferences(distBlockedServices, sourceFilesContent);
         // If there are differences, restore removed source files
         if (differences) {
             await restoreRemovedSourceFiles(differences, sourceDirPath);
         }
         // Merge data from the destination and source files
-        const mergedServicesData = mergeServicesData(distFileContent, sourceFilesContent);
+        const mergedServicesData = mergeServicesData(distBlockedServices, sourceFilesContent);
         // Validate SVG icons in merged data. Throws an error if any SVG icon is not valid.
         validateSvgIcons(mergedServicesData);
         // Groups data by keys

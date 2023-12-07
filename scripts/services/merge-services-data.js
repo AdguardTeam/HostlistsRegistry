@@ -3,13 +3,13 @@ const { logger } = require('../helpers/logger');
 /**
  * Merges service data from source and destination content based on their 'id' property.
  *
- * @param {Array<object>} distContent - An array of objects representing service data from the destination.
- * @param {Array<object>} sourceContent - An array of objects representing service data from the source.
+ * @param {Array<object>} distServices - An array of objects representing service data from the destination.
+ * @param {Array<object>} sourceServices - An array of objects representing service data from the source.
  * @returns {Array<object>}  - An array containing unique objects merged from both input arrays,
  * with duplication handled by the 'id' property.
  */
-const mergeServicesData = (distContent, sourceContent) => {
-    const mergedMap = [...distContent, ...sourceContent].reduce((acc, obj) => {
+const mergeServicesData = (distServices, sourceServices) => {
+    const mergedMap = [...distServices, ...sourceServices].reduce((acc, obj) => {
         acc[obj.id] = obj;
         return acc;
     }, {});
@@ -29,7 +29,14 @@ const groupServicesData = (combinedServiceContent) => {
         // Object to store the final service data structure
         const servicesData = {};
         // Write the sorted combined service content array into the 'blocked_services' key
-        servicesData.blocked_services = combinedServiceContent.sort((a, b) => a.id.localeCompare(b.id));
+        servicesData.blocked_services = combinedServiceContent.sort((a, b) => {
+            if (a.id < b.id) {
+                return -1;
+            } if (a.id > b.id) {
+                return 1;
+            }
+            return 0;
+        });
         // Return the structured service data
         return servicesData;
     } catch (error) {

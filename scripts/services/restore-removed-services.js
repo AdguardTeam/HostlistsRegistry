@@ -10,19 +10,14 @@ const YML_FILE_EXTENSION = '.yml';
  *
  * @param {Array<object>} distContent - An array of objects representing service data from the destination.
  * @param {Array<object>} sourceContent - An array of objects representing service files from the source.
- * @returns {Array<object> | false} - An array containing objects representing the differences,
- * or false if no differences exist.
- *
- * @throws {Error} - Throws an error if the destination services data is not an array.
+ * @returns {Array<object> | null} - An array containing objects representing the differences,
+ * or null if no differences exist.
  */
 const getDifferences = (distContent, sourceContent) => {
-    if (!Array.isArray(distContent)) {
-        throw new Error('Blocked services data is not an array');
-    }
     const differences = distContent.filter(
         (distObject) => !sourceContent.find((sourceObject) => sourceObject.id === distObject.id),
     );
-    return (differences.length > 0) ? differences : false;
+    return (differences.length > 0) ? differences : null;
 };
 
 /**
