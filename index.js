@@ -15,7 +15,6 @@ const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
 const inputServicesDir = path.join(__dirname, './services');
 const outputServicesFile = path.join(assetsDir, 'services.json');
-const servicesI18nFile = path.join(assetsDir, 'services_i18n.json');
 
 /**
  * Build services data by reading and processing content from a destination JSON file
