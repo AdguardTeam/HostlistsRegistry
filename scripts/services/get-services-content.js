@@ -10,7 +10,7 @@ const { logger } = require('../helpers/logger');
  * Read and parse JSON file.
  *
  * @param {string} filePath - The path to the file.
- * @returns {Promise<object[]|null>} - Array of blocked services objects.
+ * @returns {Promise<object[]|undefined>} - Array of blocked services objects.
  * Returns `undefined` if there is no `blocked_services` in the successfully read services data file.
  * @throws {Error} - If the file cannot be read or parsed.
  */
