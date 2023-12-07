@@ -21,13 +21,13 @@ const outputServicesFile = path.join(assetsDir, 'services.json');
  * and source YAML files. Differences are handled, and the final grouped data is written back
  * to the destination JSON file.
  *
- * @param {string} distFilePath - The file path to the destination JSON file.
  * @param {string} sourceDirPath - The directory path containing source YAML files.
+ * @param {string} distFilePath - The file path to the destination JSON file.
  * @returns {Promise<void>} - A Promise resolving once the build process is complete.
  *
  * @throws {Error} - Throws an error if there's an issue during the build process.
  */
-const buildServices = async (distFilePath, sourceDirPath) => {
+const buildServices = async (sourceDirPath, distFilePath) => {
     try {
         // Read content from the JSON file
         const distFileContent = await readDistFileContent(distFilePath);
@@ -60,7 +60,7 @@ const buildServices = async (distFilePath, sourceDirPath) => {
 (async () => {
     try {
         await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
-        await buildServices(outputServicesFile, inputServicesDir);
+        await buildServices(inputServicesDir, outputServicesFile);
     } catch (error) {
         logger.error('Failed to compile hostlists');
         process.exit(1);
