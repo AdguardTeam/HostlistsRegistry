@@ -36,9 +36,14 @@ const checkSVG = (svgIcon, serviceId) => {
         return svgErrors;
     }
     const svgDocumentElement = svgNode.documentElement;
+    const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
+    // Checks if SVG has the viewBox attribute.
+    // If SVG does not have this attribute, the error is written to an array.
+    if (svgViewBox.length < 4) {
+        svgErrors.push(`${serviceId} : The icon must have a viewBox attribute.`);
+    }
     // Checks if the SVG is square by comparing the viewBox dimensions.
     // If the SVG is not square, the error is written to an array.
-    const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
     if (svgViewBox[2] !== svgViewBox[3]) {
         svgErrors.push(`${serviceId} : The icon must have a square shape.`);
     }

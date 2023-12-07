@@ -1,8 +1,12 @@
 const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
-const { restoreRemovedInputServices } = require('./scripts/services/check-removed-services');
-const { overwriteResultFile } = require('./scripts/services/rewrite-services-json');
+
+const { readSourceFilesContent, readDistFileContent } = require('./scripts/services/get-services-content');
+const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
+const { getDifferences, restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
+const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
+
 const { logger } = require('./scripts/helpers/logger');
 
 const filtersDir = path.join(__dirname, './filters');
@@ -11,59 +15,46 @@ const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
 const inputServicesDir = path.join(__dirname, './services');
 const outputServicesFile = path.join(assetsDir, 'services.json');
+const servicesI18nFile = path.join(assetsDir, 'services_i18n.json');
 
 /**
- * Validate services JSON file.
+ * Build services data by reading and processing content from a destination JSON file
+ * and source YAML files. Differences are handled, and the final grouped data is written back
+ * to the destination JSON file.
  *
- * @param {string} filePath - The file path for services JSON file.
- * @throws {Error} - If JSON  is not valid.
+ * @param {string} distFilePath - The file path to the destination JSON file.
+ * @param {string} sourceDirPath - The directory path containing source YAML files.
+ * @param {string} localesFolder - The directory with translations
+ * @param {string} combinedTranslationsFile - The file with combined translation for service groups
+ * @returns {Promise<void>} - A Promise resolving once the build process is complete.
+ *
+ * @throws {Error} - Throws an error if there's an issue during the build process.
  */
-const validateJson = async (filePath) => {
+const buildServices = async (distFilePath, sourceDirPath) => {
     try {
-        JSON.parse(await fs.readFile(filePath, 'utf8'));
-    } catch (error) {
-        logger.error(`Failed to parse ${filePath}`, error.message);
-        process.exit(1);
-    }
-};
-
-/**
- * Gets the names of YML file from the services folder.
- *
- * @param {string} inputDirPath - The path to the folder with service files.
- * @returns {Promise<Array<string>>} - An array of services file names.
- */
-const getServicesFileNames = async (inputDirPath) => {
-    // get all dir names from services folder
-    const fileNames = await fs.readdir(inputDirPath);
-    // get the file names without its extension
-    const fileBaseNames = fileNames.map((file) => path.parse(file).name);
-    // return sorted array
-    return fileBaseNames.sort();
-};
-
-/**
- * Builds the result services file and saves it to `resultFilePath`.
- * During the build the following steps are performed:
- * 1. Check if the services JSON file is valid.
- * 2. Check if the services in the folder have been deleted by comparing with the data in JSON file.
- * 3. If the information has been deleted, write the missing files.
- * 4. Collect information from the services files, sort and overwrite blocked services files.
- *
- * @param {string} inputDirPath - The directory path where the services data is located.
- * @param {string} resultFilePath - The file path for the "services.json" file.
- * @returns {Promise<void>} A promise that resolves when the building process is complete.
- */
-const buildServices = async (inputDirPath, resultFilePath) => {
-    try {
-        await validateJson(resultFilePath);
-        const serviceFileNames = await getServicesFileNames(inputDirPath);
-        await restoreRemovedInputServices(resultFilePath, serviceFileNames);
-        await overwriteResultFile(inputDirPath, resultFilePath, serviceFileNames);
-        logger.success(`Successfully finished building ${resultFilePath}`);
+        // Read content from the JSON file
+        const distFileContent = await readDistFileContent(distFilePath);
+        // Read content from the source YML files
+        const sourceFilesContent = await readSourceFilesContent(sourceDirPath);
+        // Get the differences between the destination and source data
+        const differences = getDifferences(distFileContent, sourceFilesContent);
+        // If there are differences, restore removed source files
+        if (differences) {
+            await restoreRemovedSourceFiles(differences, sourceDirPath);
+        }
+        // Merge data from the destination and source files
+        const mergedServicesData = mergeServicesData(distFileContent, sourceFilesContent);
+        // Validate SVG icons in merged data. Throws an error if any SVG icon is not valid.
+        validateSvgIcons(mergedServicesData);
+        // Groups data by keys
+        const groupedServicesData = groupServicesData(mergedServicesData);
+        // Write the grouped service data to the destination JSON file
+        await fs.writeFile(distFilePath, JSON.stringify(groupedServicesData, null, 2));
+        // Add localizations for service groups
+        logger.success(`Successfully finished building ${distFilePath}`);
         process.exit(0);
     } catch (error) {
-        logger.error(`Error occurred while building ${resultFilePath}`, error.message);
+        logger.error(`Error occurred while building ${distFilePath}`, error.message);
         process.exit(1);
     }
 };
@@ -72,7 +63,7 @@ const buildServices = async (inputDirPath, resultFilePath) => {
 (async () => {
     try {
         await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
-        await buildServices(inputServicesDir, outputServicesFile);
+        await buildServices(outputServicesFile, inputServicesDir, localesDir, servicesI18nFile);
     } catch (error) {
         logger.error('Failed to compile hostlists');
         process.exit(1);
