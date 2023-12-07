@@ -11,7 +11,7 @@ const { logger } = require('../helpers/logger');
  *
  * @param {string} filePath - The path to the file.
  * @returns {Promise<object[]|null>} - Array of blocked services objects.
- * Returns `null` if there's an error during the process.
+ * Returns `undefined` if there is no `blocked_services` in the successfully read services data file.
  * @throws {Error} - If the file cannot be read or parsed.
  */
 const readDistFileContent = async (filePath) => {
