@@ -8,14 +8,14 @@ const YML_FILE_EXTENSION = '.yml';
 /**
  * Get the differences between blocked services and source service files based on their 'id' property.
  *
- * @param {Array<object>} distContent - An array of objects representing service data from the destination.
- * @param {Array<object>} sourceContent - An array of objects representing service files from the source.
+ * @param {Array<object>} distServices - An array of objects representing service data from the destination.
+ * @param {Array<object>} sourceServices - An array of objects representing service files from the source.
  * @returns {Array<object> | null} - An array containing objects representing the differences,
  * or null if no differences exist.
  */
-const getDifferences = (distContent, sourceContent) => {
-    const differences = distContent.filter(
-        (distObject) => !sourceContent.find((sourceObject) => sourceObject.id === distObject.id),
+const getDifferences = (distServices, sourceServices) => {
+    const differences = distServices.filter(
+        (distObject) => !sourceServices.find((sourceObject) => sourceObject.id === distObject.id),
     );
     return (differences.length > 0) ? differences : null;
 };
