@@ -2,7 +2,7 @@ const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 
-const { readSourceFilesContent, getBlockedServices } = require('./scripts/services/get-services-content');
+const { getYmlSourcesBlockedServices, getJsonBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
 const { getDifferences, restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
@@ -30,17 +30,17 @@ const outputServicesFile = path.join(assetsDir, 'services.json');
 const buildServices = async (sourceDirPath, distFilePath) => {
     try {
         // Read content from the JSON file
-        const distBlockedServices = await getBlockedServices(distFilePath);
+        const distBlockedServices = await getJsonBlockedServices(distFilePath);
         // Read content from the source YML files
-        const sourceFilesContent = await readSourceFilesContent(sourceDirPath);
+        const sourceBlockedServices = await getYmlSourcesBlockedServices(sourceDirPath);
         // Get the differences between the destination and source data
-        const differences = getDifferences(distBlockedServices, sourceFilesContent);
+        const differences = getDifferences(distBlockedServices, sourceBlockedServices);
         // If there are differences, restore removed source files
         if (differences) {
             await restoreRemovedSourceFiles(differences, sourceDirPath);
         }
         // Merge data from the destination and source files
-        const mergedServicesData = mergeServicesData(distBlockedServices, sourceFilesContent);
+        const mergedServicesData = mergeServicesData(distBlockedServices, sourceBlockedServices);
         // Validate SVG icons in merged data. Throws an error if any SVG icon is not valid.
         validateSvgIcons(mergedServicesData);
         // Groups data by keys

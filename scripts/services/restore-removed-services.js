@@ -17,7 +17,7 @@ const getDifferences = (distServices, sourceServices) => {
     const differences = distServices.filter(
         (distObject) => !sourceServices.find((sourceObject) => sourceObject.id === distObject.id),
     );
-    return (differences.length > 0) ? differences : null;
+    return differences.length > 0 ? differences : null;
 };
 
 /**
