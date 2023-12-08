@@ -2,7 +2,7 @@ const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 
-const { readSourceFilesContent, readDistFileContent } = require('./scripts/services/get-services-content');
+const { readSourceFilesContent, getBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
 const { getDifferences, restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
@@ -30,7 +30,7 @@ const outputServicesFile = path.join(assetsDir, 'services.json');
 const buildServices = async (sourceDirPath, distFilePath) => {
     try {
         // Read content from the JSON file
-        const distBlockedServices = await readDistFileContent(distFilePath);
+        const distBlockedServices = await getBlockedServices(distFilePath);
         // Read content from the source YML files
         const sourceFilesContent = await readSourceFilesContent(sourceDirPath);
         // Get the differences between the destination and source data
