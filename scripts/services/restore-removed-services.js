@@ -2,12 +2,11 @@ const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const { logger } = require('../helpers/logger');
-const typeDefs = require('./type-defs.js');
 
 const YML_FILE_EXTENSION = '.yml';
 
 /**
- * @typedef {typeDefs.Service} Service
+ * @typedef {require('./type-defs.js').Service} Service
  */
 
 /**
