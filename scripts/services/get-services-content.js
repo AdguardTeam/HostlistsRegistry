@@ -7,10 +7,14 @@ const YML_FILE_EXTENSION = '.yml';
 const { logger } = require('../helpers/logger');
 
 /**
+ * @typedef {require('./type-defs.js').Service} Service
+ */
+
+/**
  * Returns the blocked services data from a JSON file.
  *
  * @param {string} distFilePath - The path to the json file.
- * @returns {Promise<object[]>} - Array of blocked services objects.
+ * @returns {Service[]} - Array of blocked services objects.
  * @throws {Error} - If the file cannot be read or parsed,
  * if the blocked services data is undefined or not an array.
  */
@@ -55,7 +59,7 @@ const getDirFileNames = async (folderPath) => {
  * Reads and parses YAML files from a specified directory with given file names.
  *
  * @param {string} folderPath - The path to the directory containing YAML files.
- * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content.
+ * @returns {Promise<Service[]>} A promise that resolves to an array of objects of YAML content.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
 const getYmlSourcesBlockedServices = async (folderPath) => {

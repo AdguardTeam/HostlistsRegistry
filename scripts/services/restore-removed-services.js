@@ -29,7 +29,7 @@ const getDifferences = (distServices, sourceServices) => {
  * Write removed services objects into files.
  *
  * @param {Service[]} differences - Array of objects that should be written in separate files.
- * @param {string} sourceDir - The path to the directory containing YAML files.
+ * @param {string} sourceDirPath - The path to the directory containing YAML files.
  */
 const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
     if (differences.length === 0) {

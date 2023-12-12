@@ -1,6 +1,10 @@
 const { DOMParser } = require('xmldom');
 
 /**
+ * @typedef {require('./type-defs.js').Service} Service
+ */
+
+/**
  * Parses the SVG string into an SVG DOM object.
  *
  * @param {string} svgIcon - The SVG string to parse.
@@ -63,7 +67,7 @@ const checkSVG = (svgIcon, serviceId) => {
 /**
  * Checks that all services have valid SVG icons.
  *
- * @param {Array<object>} servicesArray - An array of service data objects.
+ * @param {Service[]} servicesArray - An array of service data objects.
  * @throws An error if any service has an invalid SVG icon.
  * The error message contains details for all of the invalid SVG icons.
  */
