@@ -6,11 +6,15 @@ const { logger } = require('../helpers/logger');
 const YML_FILE_EXTENSION = '.yml';
 
 /**
+ * @typedef {require('./type-defs.js').Service} Service
+ */
+
+/**
  * Get the differences between blocked services and source service files based on their 'id' property.
  *
- * @param {Array<object>} distServices - An array of objects representing service data from the destination.
- * @param {Array<object>} sourceServices - An array of objects representing service files from the source.
- * @returns {Array<object> | null} - An array containing objects representing the differences,
+ * @param {Service[]} distServices - An array of objects representing service data from the destination.
+ * @param {Service[]} sourceServices - An array of objects representing service files from the source.
+ * @returns {Service[] | null} - An array containing objects representing the differences,
  * or null if no differences exist.
  */
 const getDifferences = (distServices, sourceServices) => {
@@ -23,7 +27,7 @@ const getDifferences = (distServices, sourceServices) => {
 /**
  * Write removed services objects into files.
  *
- * @param {Array<object>} differences - Array of objects that should be written in separate files.
+ * @param {Service[]} differences - Array of objects that should be written in separate files.
  * @param {string} sourceDir - The path to the directory containing YAML files.
  */
 
