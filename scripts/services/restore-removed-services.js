@@ -20,6 +20,7 @@ const getDifferences = (distServices, sourceServices) => {
     return differences.length > 0 ? differences : null;
 };
 
+// TODO: rewrite the function to avoid using recursion
 /**
  * Write removed services objects into files.
  *
