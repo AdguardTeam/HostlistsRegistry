@@ -1,7 +1,7 @@
 const { logger } = require('../helpers/logger');
 
 /**
- * @typedef {require('./type-defs.js').Service} Service
+ * @typedef {require('./type-defs').Service} Service
  */
 
 /**

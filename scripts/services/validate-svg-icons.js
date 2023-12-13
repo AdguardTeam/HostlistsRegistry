@@ -1,7 +1,7 @@
 const { DOMParser } = require('xmldom');
 
 /**
- * @typedef {require('./type-defs.js').Service} Service
+ * @typedef {require('./type-defs').Service} Service
  */
 
 /**

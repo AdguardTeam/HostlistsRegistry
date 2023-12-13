@@ -35,5 +35,6 @@ module.exports = {
                 startLines: 1,
             },
         ],
+        'jsdoc/valid-types': 'off',
     },
 };

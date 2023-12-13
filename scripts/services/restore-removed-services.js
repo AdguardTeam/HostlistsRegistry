@@ -6,7 +6,7 @@ const { logger } = require('../helpers/logger');
 const YML_FILE_EXTENSION = '.yml';
 
 /**
- * @typedef {require('./type-defs.js').Service} Service
+ * @typedef {require('./type-defs').Service} Service
  */
 
 /**
