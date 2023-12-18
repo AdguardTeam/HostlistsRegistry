@@ -49,21 +49,21 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         const groupedServicesData = groupServicesData(mergedServicesData);
         // Write the grouped service data to the destination JSON file
         await fs.writeFile(distFilePath, JSON.stringify(groupedServicesData, null, 2));
-        // Add localizations for service groups
         logger.success(`Successfully finished building ${distFilePath}`);
-        process.exit(0);
     } catch (error) {
         logger.error(`Error occurred while building ${distFilePath}`, error.message);
-        process.exit(1);
     }
 };
 
 // Compile hostlists.
 (async () => {
     try {
-        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        // build services.json file
         await buildServices(inputServicesDir, outputServicesFile);
+        // add localizations for services groups
         await addServiceLocalizations(localesDir, servicesI18nFile);
+        process.exit(0);
     } catch (error) {
         logger.error('Failed to compile hostlists');
         process.exit(1);

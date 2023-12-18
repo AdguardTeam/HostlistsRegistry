@@ -7,3 +7,29 @@
  * @property {string[]} rules List of domain rules in adblocking syntax.
  * @property {string} icon_svg The icon of the service in SVG format.
  */
+
+/**
+ * @typedef {{groups: groupedFileObjects}} categoryLocalesTranslate
+ * @property {object} groupedFileObjects - An object containing grouped translations
+ * for a specific group within a category and locale.
+ */
+
+/**
+ * @typedef {{
+ *   [id: string]: {
+ *     [locale: string]: {
+ *       sign: string;
+ *     };
+ *   };
+ * }} groupedFileObjects
+ * Example:
+ * {
+ *    'cdn': {
+ *        'en': { 'name': 'Content Delivery Network' },
+ *    },
+ *    'dating': {
+ *        'en': { 'name': 'Dating Services' },
+ *    },
+ *    // ...
+ * }
+ */

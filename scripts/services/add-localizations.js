@@ -3,12 +3,17 @@ const path = require('path');
 const { logger } = require('../helpers/logger');
 
 /**
+ * @typedef {import('./type-defs')} categoryLocalesTranslate
+ * @typedef {import('./type-defs')} groupedFileObjects
+ */
+
+/**
  * Returns only directories names from folder
  *
  * @param {string} folderPath folder path
  * @returns {Array<string>} only directories names in folder
  */
-const getDirFileNames = async (folderPath) => (await fs.readdir(folderPath, { withFileTypes: true }))
+const getDirNames = async (folderPath) => (await fs.readdir(folderPath, { withFileTypes: true }))
     .filter((folderFile) => folderFile.isDirectory())
     .map((folderFile) => folderFile.name);
 
@@ -21,28 +26,6 @@ const getDirFileNames = async (folderPath) => (await fs.readdir(folderPath, { wi
 const isExist = async (filePath) => fs.access(filePath, fs.constants.F_OK)
     .then(() => true)
     .catch(() => false);
-
-/**
- * @typedef {{
- *   [id: string]: {
- *     [locale: string]: {
- *       sign: string;
- *     };
- *   };
- * }} groupedFileObjects
- * Example:
- * {
- *    'id1': {
- *        'en': { 'name': 'value1' },
- *        'es': { 'description': 'value3' }
- *    },
- *    'id2': {
- *        'en': { 'name': 'value2' },
- *        'fr': { 'description': 'value4' }
- *    },
- *    // ...
- * }
- */
 
 /**
  * Groups file content by translations for a specific locale.
@@ -124,12 +107,6 @@ const getGroupedTranslations = async (baseFolder, directories) => {
 };
 
 /**
- * @typedef {{groups: groupedFileObjects}} categoryLocalesTranslate
- * @property {object} groupedFileObjects - An object containing grouped translations
- * for a specific group within a category and locale.
- */
-
-/**
  * Asynchronously retrieves grouped translations for different locales based on specified directories.
  *
  * @param {string} baseLocalesFolder - The base path to the folder containing locale directories.
@@ -141,7 +118,7 @@ const getGroupedTranslations = async (baseFolder, directories) => {
 const getLocales = async (baseLocalesFolder) => {
     try {
         // Get an array of locale directories in the base folder
-        const localesDirectories = await getDirFileNames(baseLocalesFolder);
+        const localesDirectories = await getDirNames(baseLocalesFolder);
         // Initialize an object to store grouped translations
         const categoryLocalesTranslate = {};
         // Get grouped translations for all locale directories
@@ -173,6 +150,7 @@ const addServiceLocalizations = async (baseLocalesFolder, i18nFilePath) => {
         const localizations = await getLocales(baseLocalesFolder);
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
+        logger.success('Successfully added localizations');
     } catch (error) {
         logger.error(`Error adding localizations: ${error}`);
         throw new Error(error);

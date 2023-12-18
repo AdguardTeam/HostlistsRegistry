@@ -46,7 +46,7 @@ const getJsonBlockedServices = async (distFilePath) => {
  * @param {string} folderPath - The path to the folder.
  * @returns {Promise<Array<string>>} - An array of file names.
  */
-const getDirFileNames = async (folderPath) => {
+const getFilesInDirectory = async (folderPath) => {
     // get all dir names from services folder
     const fileNames = await fs.readdir(folderPath);
     // get the file names without its extension
@@ -63,7 +63,7 @@ const getDirFileNames = async (folderPath) => {
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
 const getYmlSourcesBlockedServices = async (folderPath) => {
-    const sourceFileNames = await getDirFileNames(folderPath);
+    const sourceFileNames = await getFilesInDirectory(folderPath);
     const invalidYmlFiles = [];
     // Reads data from a yml file and writes it to an object
     const sourceFileContent = await Promise.all(
