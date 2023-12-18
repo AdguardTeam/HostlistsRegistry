@@ -5,6 +5,29 @@ const { logger } = require('../helpers/logger');
  */
 
 /**
+ * Sorts an array of objects based on their identifiers (ID).
+ *
+ * @param {Array} arrayOfObjects - The array of objects to be sorted.
+ * @returns {Array} - The sorted array of objects.
+ */
+const sortByID = (arrayOfObjects) => arrayOfObjects.sort((objectA, objectB) => {
+    /**
+     * Compares two objects based on their identifiers (ID).
+     *
+     * @param {object} a - The first object for comparison.
+     * @param {object} b - The second object for comparison.
+     * @returns {number} - The result of the comparison (-1, 0, or 1).
+     */
+    if (objectA.id < objectB.id) {
+        return -1;
+    }
+    if (objectA.id > objectB.id) {
+        return 1;
+    }
+    return 0;
+});
+
+/**
  * Merges service data from source and destination content based on their 'id' property.
  *
  * @param {Service[]} distServices - An array of objects representing service data from the destination.
@@ -51,11 +74,11 @@ const groupServicesData = (combinedServiceContent) => {
             throw new Error(`Services with id: ${invalidGroupNames.join()} has an empty or missing 'group' key.`);
         }
         // Sort the combined groups array lexicographically by 'id'
-        const sortedGroups = combinedGroups.sort((a, b) => a.id.localeCompare(b.id));
+        const sortedGroups = sortByID(combinedGroups);
         // Object to store the final service data structure
         const servicesData = {};
         // Write the sorted combined service content array into the 'blocked_services' key
-        servicesData.blocked_services = combinedServiceContent.sort();
+        servicesData.blocked_services = sortByID(combinedServiceContent);
         // Write the sorted combined groups array into the 'groups' key
         servicesData.groups = sortedGroups;
         // Return the structured service data
