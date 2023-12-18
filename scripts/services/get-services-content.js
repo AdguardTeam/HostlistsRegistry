@@ -7,22 +7,37 @@ const YML_FILE_EXTENSION = '.yml';
 const { logger } = require('../helpers/logger');
 
 /**
- * Read and parse JSON file.
- *
- * @param {string} filePath - The path to the file.
- * @returns {Promise<object[]|null>} - Array of blocked services objects.
- * Returns `null` if there's an error during the process.
- * @throws {Error} - If the file cannot be read or parsed.
+ * @typedef {require('./type-defs').Service} Service
  */
-const readDistFileContent = async (filePath) => {
+
+/**
+ * Returns the blocked services data from a JSON file.
+ *
+ * @param {string} distFilePath - The path to the json file.
+ * @returns {Service[]} - Array of blocked services objects.
+ * @throws {Error} - If the file cannot be read or parsed,
+ * if the blocked services data is undefined or not an array.
+ */
+const getJsonBlockedServices = async (distFilePath) => {
+    let blockedServices;
     try {
-        const fileContent = await fs.readFile(filePath);
+        const fileContent = await fs.readFile(distFilePath);
         const serviceObjects = JSON.parse(fileContent);
-        return serviceObjects.blocked_services;
+        blockedServices = serviceObjects.blocked_services;
     } catch (error) {
-        logger.error(`Error while reading file ${filePath}`);
+        logger.error(`Error while reading file ${distFilePath}`);
         throw new Error(error);
     }
+
+    if (typeof blockedServices === 'undefined') {
+        throw new Error('Blocked services data is undefined');
+    }
+
+    if (!Array.isArray(blockedServices)) {
+        throw new Error('Blocked services data is not an array');
+    }
+
+    return blockedServices;
 };
 
 /**
@@ -44,10 +59,10 @@ const getDirFileNames = async (folderPath) => {
  * Reads and parses YAML files from a specified directory with given file names.
  *
  * @param {string} folderPath - The path to the directory containing YAML files.
- * @returns {Promise<Array<object>>} A promise that resolves to an array of objects of YAML content.
+ * @returns {Promise<Service[]>} A promise that resolves to an array of objects of YAML content.
  * @throws {Error} If there is an error while reading or parsing any of the YAML files, an error is thrown.
  */
-const readSourceFilesContent = async (folderPath) => {
+const getYmlSourcesBlockedServices = async (folderPath) => {
     const sourceFileNames = await getDirFileNames(folderPath);
     const invalidYmlFiles = [];
     // Reads data from a yml file and writes it to an object
@@ -76,6 +91,6 @@ const readSourceFilesContent = async (folderPath) => {
 };
 
 module.exports = {
-    readSourceFilesContent,
-    readDistFileContent,
+    getYmlSourcesBlockedServices,
+    getJsonBlockedServices,
 };

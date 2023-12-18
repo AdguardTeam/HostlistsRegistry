@@ -1,15 +1,19 @@
 const { logger } = require('../helpers/logger');
 
 /**
+ * @typedef {require('./type-defs').Service} Service
+ */
+
+/**
  * Merges service data from source and destination content based on their 'id' property.
  *
- * @param {Array<object>} distContent - An array of objects representing service data from the destination.
- * @param {Array<object>} sourceContent - An array of objects representing service data from the source.
- * @returns {Array<object>}  - An array containing unique objects merged from both input arrays,
+ * @param {Service[]} distServices - An array of objects representing service data from the destination.
+ * @param {Service[]} sourceServices - An array of objects representing service data from the source.
+ * @returns {Service[]}  - An array containing unique objects merged from both input arrays,
  * with duplication handled by the 'id' property.
  */
-const mergeServicesData = (distContent, sourceContent) => {
-    const mergedMap = [...distContent, ...sourceContent].reduce((acc, obj) => {
+const mergeServicesData = (distServices, sourceServices) => {
+    const mergedMap = [...distServices, ...sourceServices].reduce((acc, obj) => {
         acc[obj.id] = obj;
         return acc;
     }, {});
@@ -19,7 +23,7 @@ const mergeServicesData = (distContent, sourceContent) => {
 /**
  * Combines service data into a structured format with grouped services and sorted groups.
  *
- * @param {Array<object>} combinedServiceContent - An array of objects representing combined service data.
+ * @param {Service[]} combinedServiceContent - An array of objects representing combined service data.
  * @returns {object} - Object containing structured service data.
  *
  * @throws {Error} - Throws an error if the input data is not in the expected format or group is empty

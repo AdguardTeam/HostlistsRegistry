@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2023-12-06T21:05:59.309Z
+! Last modified: 2023-12-18T11:05:52.054Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -121,7 +121,6 @@
 ||chairgaubsy.com^
 ||epailseptox.com^
 ||hentaiplaytime.com^
-||notification-time.com^
 ||viewmypdf.com^
 
 ! com-guest.info badware
@@ -177,7 +176,6 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/6381
 ||americanoverlook.com^
 ||anonnews.co^
-||channel-7-news.com^
 ||embols.com^
 ||endingthefed.com^
 ||goneleft.com^
@@ -643,6 +641,7 @@ thepiratebay3.com^
 ||cheats.ink^
 ||allsft.info^
 ||allsft.pro^
+||allsft.shop^
 ||cheat-world.site^
 ||clc-link.me^
 ||soft-portal.me^
@@ -654,6 +653,7 @@ thepiratebay3.com^
 ||cheater-pro.com^
 ||tautarahacks.fun^
 ||pengwincheats.xyz^
+||pengwinhacks.xyz^
 ! https://www.virustotal.com/gui/file/a810ae0441a75d4b5ae36e7094343b0ef3661681dfe24cbf8c2131b1dfac0605?nocache=1
 ! https://github.com/uBlockOrigin/uAssets/issues/8630#issuecomment-810957825
 ||tophacks.pro^
@@ -1245,6 +1245,10 @@ thepiratebay3.com^
 ||corre-os.top^
 ! https://twitter.com/harugasumi/status/1719947641818411189
 ||aeonasco.com^
+! https://twitter.com/harugasumi/status/1734701589292597496
+||tokyo-waters.com^
+! https://twitter.com/AP_Zenmashi/status/1736670144234217692
+||tepco-tokyos.xyz^
 
 ! https://onijima.jp/?p=54165
 ||pocket-888.com^
@@ -2829,6 +2833,15 @@ thepiratebay3.com^
 ||keiunkan.com^
 ||matching-search.jp^
 ||matching-searchh.jp^
+||falsettoy.click^
+||on-li-ne.net^
+||rayon-mid.com^
+||pc.mt3sys.com^
+||tokyodisney.mixracket.com^
+||as25ap.com^
+||asap15.com^
+||sm8787.com^
+||pc.line-center.jp^
 
 ! https://twitter.com/1ZRR4H/status/1623067548781539339
 ||soft-pro.site^
@@ -3024,6 +3037,7 @@ thepiratebay3.com^
 ||newpappernews4.ru.com^
 ||qwudbhasdwq8h.sa.com^
 ||uwqghwfdwqywetqwfghewqeqweig.s3.ap-southeast-2.amazonaws.com^
+||baattakkkk.online^
 
 ! https://insight-jp.nttsecurity.com/post/102ic6o/webgoogle-chrome
 ||gateway.pinata.cloud^
@@ -3147,7 +3161,8 @@ thepiratebay3.com^
 ||magiskroot.net^
 ||magisks.com^
 ||themagisk.com^
-||magiskzip.net^
+||magiskzip.*^
+||magiskmodule.com^
 ||magiskmanagerroot.com^
 ||magisk.download^
 ||magisk.info^
@@ -3190,5 +3205,20 @@ thepiratebay3.com^
 ||unitradingbot.com^
 ||unitradingtool.info^
 ||cealits.com^
+||eventdrops.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/21257
+||elemateletronic.click^
+
+! https://github.com/uBlockOrigin/uAssets/pull/21315
+! https://bbs.kafan.cn/thread-2258753-1-1.html
+||chromegoogle.cn^
+
+! https://github.com/uBlockOrigin/uAssets/pull/21316
+! https://bbs.kafan.cn/thread-2262861-1-1.html
+||mk90.shop^
+
+! Cryptocurrency Scams
 ||mevnow.com^
+||mevtime.com^
 ||eth-mev.com^

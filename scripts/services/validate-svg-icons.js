@@ -1,6 +1,10 @@
 const { DOMParser } = require('xmldom');
 
 /**
+ * @typedef {require('./type-defs').Service} Service
+ */
+
+/**
  * Parses the SVG string into an SVG DOM object.
  *
  * @param {string} svgIcon - The SVG string to parse.
@@ -36,9 +40,9 @@ const checkSVG = (svgIcon, serviceId) => {
         return svgErrors;
     }
     const svgDocumentElement = svgNode.documentElement;
-    // Checks if the SVG is square by comparing the viewBox dimensions.
-    // If the SVG is not square, the error is written to an array.
     const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
+    // Checks if SVG has the viewBox attribute.
+    // If SVG does not have this attribute, the error is written to an array.
     if (svgViewBox.length < 4) {
         svgErrors.push(`${serviceId} : The icon must have a viewBox attribute.`);
     }
@@ -61,7 +65,7 @@ const checkSVG = (svgIcon, serviceId) => {
 /**
  * Checks that all services have valid SVG icons.
  *
- * @param {Array<object>} servicesArray - An array of service data objects.
+ * @param {Service[]} servicesArray - An array of service data objects.
  * @throws An error if any service has an invalid SVG icon.
  * The error message contains details for all of the invalid SVG icons.
  */
