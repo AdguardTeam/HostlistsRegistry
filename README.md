@@ -159,7 +159,18 @@ Service metadata includes `id`, `name`, `rules`, `icon_svg`, `group`:
 - `name` — service name (string)
 - `rules` — list of domain rules in Adblock syntax (list of strings)
 - `icon_svg` — svg icon (string)
-- `group` - semantic group for service
+- `group` - semantic group for service. Possible values:
+  - `cdn`,
+  - `dating`,
+  - `gambling`,
+  - `gaming`,
+  - `hosting`,
+  - `messenger`,
+  - `privacy`,
+  - `shopping`,
+  - `social_network`,
+  - `software`,
+  - `streaming`
 
 <details>
 
