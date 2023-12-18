@@ -33,6 +33,34 @@ const readFiltersMeta = (baseDir) => {
     return filters;
 }
 
+/**
+ * Returns id of hostlist or hostlisttag in the input object.
+ *
+ * @param {object} input Base locale object.
+ *
+ * @returns {number} Id of hostlist or hostlisttag.
+ */
+const getId = (input) => {
+    // get any key in the object with name and description
+    const key = Object.keys(input)[0];
+    // id is the part after the first dot in the key
+    const id = key.split('.')[1];
+    return parseInt(id);
+};
+
+/**
+ * Sorts base language items by id.
+ *
+ * @param {Array<object>} inputItems Unsorted base language items.
+ *
+ * @returns {Array<object>} Sorted base language items.
+ */
+const sortBaseLanguageItems = (inputItems) => {
+    return inputItems.sort((a, b) => {
+        return getId(a) - getId(b);
+    });
+};
+
 const tags = JSON.parse(fs.readFileSync(TAGS_META_PATH).toString());
 const filters = readFiltersMeta(FILTERS_META_PATH);
 const filtersBaseLanguage = JSON.parse(fs.readFileSync(FILTERS_FILE));
@@ -90,5 +118,12 @@ for (let filter of filters) {
     }
 }
 
-fs.writeFileSync(FILTERS_FILE, JSON.stringify(filtersBaseLanguage, 0, '\t'));
-fs.writeFileSync(TAGS_FILE, JSON.stringify(tagsBaseLanguage, 0, '\t'));
+fs.writeFileSync(
+    FILTERS_FILE,
+    JSON.stringify(sortBaseLanguageItems(filtersBaseLanguage), 0, '\t'),
+);
+
+fs.writeFileSync(
+    TAGS_FILE,
+    JSON.stringify(sortBaseLanguageItems(tagsBaseLanguage), 0, '\t'),
+);
