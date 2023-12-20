@@ -198,7 +198,6 @@ SVG icon requirements:
 - It should be as small as possible.
 - Svg tag must contain `fill="currentColor"` attribute. This is important for themes to work properly.
 - Svg tag must not contain `width` and `height` attributes
-- Double quotes inside the SVG tag must be escaped so as not to break JSON.
 
 ## <a id="safe-search"></a> Safe Search Filters
 
