@@ -606,7 +606,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
 			"sourceUrl": "https://hole.cert.pl/domains/domains_adblock.txt",
 			"timeAdded": 1678201318112,
-			"timeUpdated": 1703186345409
+			"timeUpdated": 1703186568722
 		},
 		{
 			"filterId": "ISR_easyList_hebrew",
@@ -687,7 +687,7 @@
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
 			"sourceUrl": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
 			"timeAdded": 1689805499960,
-			"timeUpdated": 1703163994488
+			"timeUpdated": 1703186570476
 		},
 		{
 			"filterId": "curben_phishing_filter",
@@ -784,6 +784,22 @@
 			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
 			"timeAdded": 1698232782837,
 			"timeUpdated": 1703157741065
+		},
+		{
+			"filterId": "hagezi_dyndns_blocklist",
+			"id": 54,
+			"name": "HaGeZi's DynDNS Blocklist",
+			"description": "Blocks dynamic DNS services to protect against malicious use in phishing campaigns and others.",
+			"tags": [
+				"purpose:security"
+			],
+			"homepage": "https://github.com/hagezi/dns-blocklists",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
+			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
+			"timeAdded": 1703182917830,
+			"timeUpdated": 1703186579359
 		},
 		{
 			"filterId": "nocoin_filter_list",
