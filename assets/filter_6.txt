@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Game Console Adblock List
 ! Description: List for blocking ads on videogame consoles that use AdGuard Home
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2023-11-21T17:45:35.547Z
+! Last modified: 2023-12-24T03:05:30.748Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -11,7 +11,7 @@
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
 !
 ! Title: 🎮 Game Console Adblock List
-! Version: 19January2022v1-Alpha
+! Version: 24December2023v1-Alpha
 ! Expires: 10 days
 ! Description: Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home. Enjoy.
 ! Important note: To block ads in the consoles' dedicated internet browsers with AdGuard Home, and not in the system menus, check out https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt instead.
@@ -35,6 +35,7 @@
 
 ! ——— Wii U ———
 ! Believed to reduce the initial loading time of Wii Sports Club by several seconds
+! While the same domain is used by Animal Crossing Plaza, it does not seem to have any impact if it's blocked or not blocked.
 ! Since no third-party Miiverse clients with console support are believed to be able to exist by now (January 2020), this entry is pretty much here to stay.
 ||discovery.olv.nintendo.net^
 
