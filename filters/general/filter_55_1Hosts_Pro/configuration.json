@@ -1,0 +1,20 @@
+{
+    "name": "1Hosts (Pro)",
+    "description": "List for blocking pesky ads, trackers, and malware. Balanced version: set & forget, doesn't hamper user experience.",
+    "homepage": "https://badmojr.github.io/1Hosts/",
+    "sources": [
+      {
+        "name": "1Hosts (Pro)",
+        "source": "https://o0.pages.dev/Pro/adblock.txt",
+        "type": "adblock",
+        "transformations": [
+          "RemoveModifiers",
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
