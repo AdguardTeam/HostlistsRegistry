@@ -2,7 +2,7 @@
 ! Title: HaGeZi's Allowlist Referral
 ! Description: This list unblocks affiliate & tracking referral links that appear in mails, search results etc.
 ! Homepage: https://github.com/hagezi/dns-blocklists#referral
-! Last modified: 2024-01-01T20:05:40.983Z
+! Last modified: 2024-01-02T10:05:33.807Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -139,13 +139,9 @@
 @@||click.aliexpress.com^
 @@||click.allkeyshop.com^
 @@||click.alternate.de^
-@@||aax-*-retail-direct.amazon.com^
-@@||aax-eu.amazon.*^
-@@||aax-fe.amazon.*^
-@@||aax-us-iad.amazon.com^
+@@||aax*.amazon-adsystem.com^
+@@||aax*.amazon.*^
 @@||assoc-redirect.amazon.*^
-@@||aax-*-retail-direct.amazon-adsystem.com^
-@@||aax-fe.amazon-adsystem.com^
 @@||click.member.americanexpress.com^
 @@||prism.app-us1.com^
 @@||click.appcast.io^
