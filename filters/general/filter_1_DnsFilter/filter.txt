@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2024-01-08T06:06:18.656Z
+! Last modified: 2024-01-08T12:07:33.076Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2024-01-08T06:01:10.177Z
+! Last modified: 2024-01-08T12:01:22.571Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -35974,7 +35974,6 @@ vkcdnservice.appspot.com^
 ||analysis.wangtwothree.com^
 ||pixel.locker2.com^
 ||analytics.trovit.com^
-||us.tags.newscgp.com^
 ||smazaz.icu^
 ||mpraven.org^
 ||rumt-zh.com^
@@ -39602,6 +39601,8 @@ vkcdnservice.appspot.com^
 ! Blocking piwik analytics subdomain(for DNS filtering)
 |piwik.
 !
+||o1184810.ingest.sentry.io^
+||t.la-croix.com^
 ||trk.tirto.id^
 ||prdwebcollector.ruetracking.com^
 ||analytics-api.invideo.io^
@@ -43028,6 +43029,7 @@ inapps.appsflyersdk.com^
 ||tags.cdn.circlesix.co^
 ||tags.fullcontact.com^
 ||tags.master-perf-tools.com^
+||tags.newscgp.com^
 ||tagtracking.vibescm.com^
 ||telemetry.goodlifefitness.com^
 ||telemetry.phenixrts.com^
