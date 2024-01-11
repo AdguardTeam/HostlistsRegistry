@@ -16,9 +16,16 @@ const translationFile = 'services.json';
  * @param {string} folderPath folder path
  * @returns {Array<string>} only directories names in folder
  */
-const getDirNames = async (folderPath) => (await fs.readdir(folderPath, { withFileTypes: true }))
-    .filter((folderFile) => folderFile.isDirectory())
-    .map((folderFile) => folderFile.name);
+const getDirNames = async (folderPath) => {
+    try {
+        return (await fs.readdir(folderPath, { withFileTypes: true }))
+            .filter((dirent) => dirent.isDirectory())
+            .map((dirent) => dirent.name);
+    } catch (error) {
+        logger.error('Error getting directories names');
+        throw new Error(error);
+    }
+};
 
 /**
  * Groups file content by translations for a specific locale.
@@ -62,7 +69,6 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
  * and returns an object representing the grouped translations.
  *
  * @param {string} localesFolder - The base path to the folder containing the directories.
- * @param {string[]} directories - An array of directory names where files for groups exist.
  * @returns {Promise<object>} A promise that resolves to an object representing grouped translations.
  *
  * @throws {Error} If there is an issue reading the file or parsing its content.
@@ -71,6 +77,7 @@ const getGroupedTranslations = async (localesFolder) => {
     try {
         // Get an array of locale directories in the base folder
         const localesDirectories = await getDirNames(localesFolder);
+        console.log(localesDirectories);
         // Collect translations asynchronously from each directory
         const collectTranslations = localesDirectories.map(async (directory) => {
             // File path to the translation file
@@ -115,9 +122,7 @@ const getLocales = async (localesFolder) => {
         // Initialize an object to store grouped translations
         const categoryLocalesTranslate = {};
         // Get grouped translations for all locale directories
-        categoryLocalesTranslate.groups = await getGroupedTranslations(
-            localesFolder,
-        );
+        categoryLocalesTranslate.groups = await getGroupedTranslations(localesFolder);
         return categoryLocalesTranslate;
     } catch (error) {
         logger.error(`Error getting locales: ${error}`);
