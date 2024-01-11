@@ -58,7 +58,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
 // Compile hostlists.
 (async () => {
     try {
-        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
         // build services.json file
         await buildServices(inputServicesDir, outputServicesFile);
         // add localizations for services groups

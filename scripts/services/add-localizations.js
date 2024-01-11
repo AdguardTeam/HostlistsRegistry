@@ -1,5 +1,4 @@
-const { promises: fs } = require('fs');
-const { existsSync } = require('fs');
+const { promises: fs, existsSync, readFileSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
 
@@ -92,23 +91,19 @@ const getGroupedTranslations = async (localesFolder) => {
     try {
         // Get an array of locale directories in the base folder
         const localesDirectories = await getDirNames(localesFolder);
-        console.log(localesDirectories);
-        // Collect translations asynchronously from each directory
-        const collectTranslations = localesDirectories.map(async (directory) => {
+        const existingTranslations = [];
+        // Collect translations from each directory
+        localesDirectories.forEach((directory) => {
             // File path to the translation file
             const translationFilePath = path.join(localesFolder, directory, translationFile);
             // Check if the translation file exists
-            if (await existsSync(translationFilePath)) {
+            if (existsSync(translationFilePath)) {
                 // Read and parse the translation content
-                const translationContent = JSON.parse(await fs.readFile(translationFilePath));
+                const translationContent = JSON.parse(readFileSync(translationFilePath));
                 // Group translations by id, locale and use (name, description etc.)
-                return groupFileContentByTranslations(translationContent, directory);
+                existingTranslations.push(groupFileContentByTranslations(translationContent, directory));
             }
-            return null;
         });
-        const translations = await Promise.all(collectTranslations);
-        // Filter out null values (directories without translation files)
-        const existingTranslations = translations.filter((translation) => translation !== null);
         // Reduce the array of translations into a single grouped object
         return existingTranslations.reduce((acc, obj) => {
             // Merge translations for each component and locale
