@@ -68,18 +68,20 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
  * Asynchronously reads file content from specified directories, groups the content by translations,
  * and returns an object representing the grouped translations.
  *
- * @param {string} baseFolder - The base path to the folder containing the directories.
+ * @param {string} localesFolder - The base path to the folder containing the directories.
  * @param {string[]} directories - An array of directory names where files for groups exist.
  * @returns {Promise<object>} A promise that resolves to an object representing grouped translations.
  *
  * @throws {Error} If there is an issue reading the file or parsing its content.
  */
-const getGroupedTranslations = async (baseFolder, directories) => {
+const getGroupedTranslations = async (localesFolder) => {
     try {
+        // Get an array of locale directories in the base folder
+        const localesDirectories = await getDirNames(localesFolder);
         // Collect translations asynchronously from each directory
-        const collectTranslations = directories.map(async (directory) => {
+        const collectTranslations = localesDirectories.map(async (directory) => {
             // File path to the translation file
-            const translationFilePath = path.join(baseFolder, directory, 'services.json');
+            const translationFilePath = path.join(localesFolder, directory, 'services.json');
             // Check if the translation file exists
             if (await isExist(translationFilePath)) {
                 // Read and parse the translation content
@@ -109,22 +111,19 @@ const getGroupedTranslations = async (baseFolder, directories) => {
 /**
  * Asynchronously retrieves grouped translations for different locales based on specified directories.
  *
- * @param {string} baseLocalesFolder - The base path to the folder containing locale directories.
+ * @param {string} localesFolder - The base path to the folder containing locale directories.
  * @returns {categoryLocalesTranslate} A promise that resolves to an object representing grouped translations
  * for different locales.
  *
  * @throws {Error} If there is an issue finding directories or retrieving grouped translations.
  */
-const getLocales = async (baseLocalesFolder) => {
+const getLocales = async (localesFolder) => {
     try {
-        // Get an array of locale directories in the base folder
-        const localesDirectories = await getDirNames(baseLocalesFolder);
         // Initialize an object to store grouped translations
         const categoryLocalesTranslate = {};
         // Get grouped translations for all locale directories
         categoryLocalesTranslate.groups = await getGroupedTranslations(
-            baseLocalesFolder,
-            localesDirectories,
+            localesFolder,
         );
         return categoryLocalesTranslate;
     } catch (error) {
@@ -137,17 +136,17 @@ const getLocales = async (baseLocalesFolder) => {
  * Asynchronously retrieves grouped translations for different locales based on specified directories
  * and writes the localizations to a specified file path.
  *
- * @param {string} baseLocalesFolder - The base path to the folder containing locale directories.
+ * @param {string} localesFolder - The base path to the folder containing locale directories.
  * @param {string} i18nFilePath - The file path where the localizations will be written.
  * @returns {Promise<void>} A promise that resolves when the localizations are successfully written to the file.
  *
  * @throws {Error} If there is an issue finding directories, retrieving grouped translations,
  * or writing the localizations to the file.
  */
-const addServiceLocalizations = async (baseLocalesFolder, i18nFilePath) => {
+const addServiceLocalizations = async (localesFolder, i18nFilePath) => {
     try {
         // Get grouped translations from different locales for service groups
-        const localizations = await getLocales(baseLocalesFolder);
+        const localizations = await getLocales(localesFolder);
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
         logger.success('Successfully added localizations');
