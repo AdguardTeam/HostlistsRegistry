@@ -3,6 +3,8 @@ const { existsSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
 
+const translationFile = 'services.json';
+
 /**
  * @typedef {import('./type-defs')} categoryLocalesTranslate
  * @typedef {import('./type-defs')} groupedFileObjects
@@ -72,7 +74,7 @@ const getGroupedTranslations = async (localesFolder) => {
         // Collect translations asynchronously from each directory
         const collectTranslations = localesDirectories.map(async (directory) => {
             // File path to the translation file
-            const translationFilePath = path.join(localesFolder, directory, 'services.json');
+            const translationFilePath = path.join(localesFolder, directory, translationFile);
             // Check if the translation file exists
             if (await existsSync(translationFilePath)) {
                 // Read and parse the translation content
