@@ -6,11 +6,6 @@ const { logger } = require('../helpers/logger');
 const translationFile = 'services.json';
 
 /**
- * @typedef {import('./type-defs')} categoryLocalesTranslate
- * @typedef {import('./type-defs')} groupedFileObjects
- */
-
-/**
  * Returns only directories names from folder
  *
  * @param {string} folderPath folder path
@@ -26,6 +21,26 @@ const getDirNames = async (folderPath) => {
         throw new Error(error);
     }
 };
+
+/**
+ * @typedef {{
+ *   [id: string]: {
+ *     [locale: string]: {
+ *       sign: string;
+ *     };
+ *   };
+ * }} groupedFileObjects
+ * Example:
+ * {
+ *    'cdn': {
+ *        'en': { 'name': 'Content Delivery Network' },
+ *    },
+ *    'dating': {
+ *        'en': { 'name': 'Dating Services' },
+ *    },
+ *    // ...
+ * }
+ */
 
 /**
  * Groups file content by translations for a specific locale.
@@ -107,6 +122,12 @@ const getGroupedTranslations = async (localesFolder) => {
         throw new Error(error);
     }
 };
+
+/**
+ * @typedef {{groups: groupedFileObjects}} categoryLocalesTranslate
+ * @property {object} groupedFileObjects - An object containing grouped translations
+ * for a specific group within a category and locale.
+ */
 
 /**
  * Asynchronously retrieves grouped translations for different locales based on specified directories.
