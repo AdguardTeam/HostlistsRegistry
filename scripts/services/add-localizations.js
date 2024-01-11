@@ -1,4 +1,5 @@
 const { promises: fs } = require('fs');
+const { existsSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
 
@@ -16,16 +17,6 @@ const { logger } = require('../helpers/logger');
 const getDirNames = async (folderPath) => (await fs.readdir(folderPath, { withFileTypes: true }))
     .filter((folderFile) => folderFile.isDirectory())
     .map((folderFile) => folderFile.name);
-
-/**
- * Check if file is exist
- *
- * @param {string} filePath - path to the file
- * @returns {boolean} true - if exist, false - if does noe
- */
-const isExist = async (filePath) => fs.access(filePath, fs.constants.F_OK)
-    .then(() => true)
-    .catch(() => false);
 
 /**
  * Groups file content by translations for a specific locale.
@@ -83,7 +74,7 @@ const getGroupedTranslations = async (localesFolder) => {
             // File path to the translation file
             const translationFilePath = path.join(localesFolder, directory, 'services.json');
             // Check if the translation file exists
-            if (await isExist(translationFilePath)) {
+            if (await existsSync(translationFilePath)) {
                 // Read and parse the translation content
                 const translationContent = JSON.parse(await fs.readFile(translationFilePath));
                 // Group translations by id, locale and use (name, description etc.)
