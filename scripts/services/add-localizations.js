@@ -63,6 +63,8 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
         const componentLocalesTranslate = {};
         // { "servicesgroup.cdn.name": "Cdn" }
         Object.entries(fileObject).forEach(([key, value]) => {
+            // Skip TODO comments
+            if (value.includes('TODO:')) return;
             // Destructure the key into category, id, and sign (name, description, etc.)
             // servicesgroup.cdn.name --> id - cdn , sign - name
             const [, id, sign] = key.split('.');
@@ -215,12 +217,12 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
  */
 const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFilePath) => {
     try {
+        // Check if translations are present for all groups in the base locale
+        await checkBaseTranslations(outputServicesFile, SERVICES_BASE_TRANSLATION_FILEPATH);
         // Get grouped translations from different locales for service groups
         const localizations = await getLocales(localesFolder);
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
-        // Check if translations are present for all groups in the base locale
-        await checkBaseTranslations(outputServicesFile, SERVICES_BASE_TRANSLATION_FILEPATH);
         logger.success('Successfully added localizations');
     } catch (error) {
         logger.error(`Error adding localizations: ${error}`);
