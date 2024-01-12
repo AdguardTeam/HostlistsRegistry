@@ -62,7 +62,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         // build services.json file
         await buildServices(inputServicesDir, outputServicesFile);
         // add localizations for services groups
-        await addServiceLocalizations(localesDir, servicesI18nFile);
+        await addServiceLocalizations(outputServicesFile, localesDir, servicesI18nFile);
         process.exit(0);
     } catch (error) {
         logger.error('Failed to compile hostlists');

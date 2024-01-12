@@ -2,7 +2,9 @@ const { promises: fs, existsSync, readFileSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
 
-const translationFile = 'services.json';
+const SERVICES_TRANSLATION_FILE = 'services.json';
+const BASE_LOCALE_DIR = 'locales/en';
+const SERVICES_BASE_TRANSLATION_FILEPATH = path.join(BASE_LOCALE_DIR, SERVICES_TRANSLATION_FILE);
 
 /**
  * Returns only directories names from folder
@@ -83,6 +85,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
  * and returns an object representing the grouped translations.
  *
  * @param {string} localesFolder - The base path to the folder containing the directories.
+ * @param {string} translationFile - The file path to the translation file.
  * @returns {Promise<object>} A promise that resolves to an object representing grouped translations.
  *
  * @throws {Error} If there is an issue reading the file or parsing its content.
@@ -95,7 +98,7 @@ const getGroupedTranslations = async (localesFolder) => {
         // Collect translations from each directory
         localesDirectories.forEach((directory) => {
             // File path to the translation file
-            const translationFilePath = path.join(localesFolder, directory, translationFile);
+            const translationFilePath = path.join(localesFolder, directory, SERVICES_TRANSLATION_FILE);
             // Check if the translation file exists
             if (existsSync(translationFilePath)) {
                 // Read and parse the translation content
@@ -128,6 +131,7 @@ const getGroupedTranslations = async (localesFolder) => {
  * Asynchronously retrieves grouped translations for different locales based on specified directories.
  *
  * @param {string} localesFolder - The base path to the folder containing locale directories.
+ * @param {string} translationFile - The file path to the translation file.
  * @returns {categoryLocalesTranslate} A promise that resolves to an object representing grouped translations
  * for different locales.
  *
@@ -146,10 +150,62 @@ const getLocales = async (localesFolder) => {
     }
 };
 
+const sortTranslations = (translations) => translations.sort((a, b) => {
+    const keysA = Object.keys(a).join('');
+    const keysB = Object.keys(b).join('');
+
+    if (keysA < keysB) return -1;
+    if (keysA > keysB) return 1;
+    return 0;
+});
+
+/**
+ * Checks if translations exist for groups from the services file in the base locale.
+ *
+ * @param {string} servicesFile - Path to the file containing service data.
+ * @param {string} translationsFile - Path to the file containing base locale translations.
+ * @returns {Promise<void>} - A promise that resolves once the operation is complete.
+ */
+const checkBaseTranslations = async (servicesFile, translationsFile) => {
+    try {
+        // Read service data and translations from files
+        const servicesData = JSON.parse(await fs.readFile(servicesFile));
+        const { groups } = servicesData;
+        const translations = JSON.parse(await fs.readFile(translationsFile));
+
+        // Create a set of translation IDs
+        const translationsIds = new Set(translations.map((translation) => Object.keys(translation)[0]));
+
+        const missingLocales = [];
+
+        // Check each group for missing translations
+        groups.forEach((group) => {
+            const groupString = `servicesgroup.${group.id}.name`;
+            if (!translationsIds.has(groupString)) {
+                missingLocales.push({ [groupString]: `TODO: name for group ${group.id}` });
+            }
+        });
+        // If there are no translations for some groups - TODO comment is added
+        if (missingLocales.length > 0) {
+            // Sort existing translations and missing translations
+            const sortedTranslations = sortTranslations([...translations, ...missingLocales]);
+            // Write sorted translations back to the translations file
+            await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
+            logger.warning(
+                'Don\'t forget to add the missing translations in base locale',
+            );
+        }
+    } catch (error) {
+        // Handle any errors that occurred during the operation
+        logger.error('Error when checking for translations in base locale:', error.message);
+    }
+};
+
 /**
  * Asynchronously retrieves grouped translations for different locales based on specified directories
  * and writes the localizations to a specified file path.
  *
+ * @param outputServicesFile - The file path to the services file.
  * @param {string} localesFolder - The base path to the folder containing locale directories.
  * @param {string} i18nFilePath - The file path where the localizations will be written.
  * @returns {Promise<void>} A promise that resolves when the localizations are successfully written to the file.
@@ -157,12 +213,14 @@ const getLocales = async (localesFolder) => {
  * @throws {Error} If there is an issue finding directories, retrieving grouped translations,
  * or writing the localizations to the file.
  */
-const addServiceLocalizations = async (localesFolder, i18nFilePath) => {
+const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFilePath) => {
     try {
         // Get grouped translations from different locales for service groups
         const localizations = await getLocales(localesFolder);
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
+        // Check if translations are present for all groups in the base locale
+        await checkBaseTranslations(outputServicesFile, SERVICES_BASE_TRANSLATION_FILEPATH);
         logger.success('Successfully added localizations');
     } catch (error) {
         logger.error(`Error adding localizations: ${error}`);
