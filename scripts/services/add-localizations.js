@@ -152,6 +152,12 @@ const getLocales = async (localesFolder) => {
     }
 };
 
+/**
+ * Sorts an array of translation objects based on their keys.
+ *
+ * @param {Array<object>} translations - Array of translation objects.
+ * @returns {Array<object>} - Sorted array of translation objects.
+ */
 const sortTranslations = (translations) => translations.sort((a, b) => {
     const keysA = Object.keys(a).join('');
     const keysB = Object.keys(b).join('');
