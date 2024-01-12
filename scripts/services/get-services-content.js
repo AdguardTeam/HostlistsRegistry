@@ -11,33 +11,55 @@ const { logger } = require('../helpers/logger');
  */
 
 /**
- * Returns the blocked services data from a JSON file.
+ * Represents an individual group object from services combined file.
  *
- * @param {string} distFilePath - The path to the json file.
- * @returns {Service[]} - Array of blocked services objects.
- * @throws {Error} - If the file cannot be read or parsed,
- * if the blocked services data is undefined or not an array.
+ * @typedef {object} Group
+ * @property {string} id - The identifier of the group.
  */
-const getJsonBlockedServices = async (distFilePath) => {
+
+/**
+ * Reads and retrieves blocked services and groups data from a JSON file.
+ *
+ * @param {string} distFilePath - The path to the JSON file containing blocked services and groups data.
+ * @returns {[Service[], Group[]]} - An array containing two elements:
+ *   - An array of objects representing blocked services.
+ *   - An array of objects representing blocked groups.
+ *
+ * @throws {Error} Throws an error if there is an issue reading the file, if blocked services data is undefined,
+ *   if blocked services data is not an array, or if blocked groups data is not an array.
+ */
+const getJsonBlockedData = async (distFilePath) => {
     let blockedServices;
+    let blockedGroups;
+
     try {
         const fileContent = await fs.readFile(distFilePath);
         const serviceObjects = JSON.parse(fileContent);
+
+        // Extract blocked services and groups from the parsed JSON
         blockedServices = serviceObjects.blocked_services;
+        blockedGroups = serviceObjects.groups;
     } catch (error) {
         logger.error(`Error while reading file ${distFilePath}`);
         throw new Error(error);
     }
 
+    // Validate blocked services data
     if (typeof blockedServices === 'undefined') {
         throw new Error('Blocked services data is undefined');
     }
-
     if (!Array.isArray(blockedServices)) {
         throw new Error('Blocked services data is not an array');
     }
+    if (!Array.isArray(blockedGroups)) {
+        throw new Error('Blocked groups data is not an array');
+    }
+    if (typeof blockedGroups === 'undefined') {
+        throw new Error('Blocked groups data data is undefined');
+    }
 
-    return blockedServices;
+    // Return an array with blocked services and groups
+    return [blockedServices, blockedGroups];
 };
 
 /**
@@ -92,5 +114,5 @@ const getYmlSourcesBlockedServices = async (folderPath) => {
 
 module.exports = {
     getYmlSourcesBlockedServices,
-    getJsonBlockedServices,
+    getJsonBlockedData,
 };

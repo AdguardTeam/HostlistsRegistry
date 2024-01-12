@@ -1,31 +1,9 @@
 const { logger } = require('../helpers/logger');
+const { sortByID } = require('../helpers/helpers');
 
 /**
  * @typedef {require('./type-defs').Service} Service
  */
-
-/**
- * Sorts an array of objects based on their identifiers (ID).
- *
- * @param {Array} arrayOfObjects - The array of objects to be sorted.
- * @returns {Array} - The sorted array of objects.
- */
-const sortByID = (arrayOfObjects) => arrayOfObjects.sort((objectA, objectB) => {
-    /**
-     * Compares two objects based on their identifiers (ID).
-     *
-     * @param {object} a - The first object for comparison.
-     * @param {object} b - The second object for comparison.
-     * @returns {number} - The result of the comparison (-1, 0, or 1).
-     */
-    if (objectA.id < objectB.id) {
-        return -1;
-    }
-    if (objectA.id > objectB.id) {
-        return 1;
-    }
-    return 0;
-});
 
 /**
  * Merges service data from source and destination content based on their 'id' property.

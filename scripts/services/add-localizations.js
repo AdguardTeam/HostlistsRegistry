@@ -158,7 +158,7 @@ const getLocales = async (localesFolder) => {
  * @param {Array<object>} translations - Array of translation objects.
  * @returns {Array<object>} - Sorted array of translation objects.
  */
-const sortTranslations = (translations) => translations.sort((a, b) => {
+const sortByKeys = (translations) => translations.sort((a, b) => {
     const keysA = Object.keys(a).join('');
     const keysB = Object.keys(b).join('');
 
@@ -180,12 +180,9 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
         const servicesData = JSON.parse(await fs.readFile(servicesFile));
         const { groups } = servicesData;
         const translations = JSON.parse(await fs.readFile(translationsFile));
-
         // Create a set of translation IDs
         const translationsIds = new Set(translations.map((translation) => Object.keys(translation)[0]));
-
         const missingLocales = [];
-
         // Check each group for missing translations
         groups.forEach((group) => {
             const groupString = `servicesgroup.${group.id}.name`;
@@ -196,7 +193,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
         // If there are no translations for some groups - TODO comment is added
         if (missingLocales.length > 0) {
             // Sort existing translations and missing translations
-            const sortedTranslations = sortTranslations([...translations, ...missingLocales]);
+            const sortedTranslations = sortByKeys([...translations, ...missingLocales]);
             // Write sorted translations back to the translations file
             await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
             logger.warning(
