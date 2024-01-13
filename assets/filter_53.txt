@@ -2,7 +2,7 @@
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-01-10T17:05:33.684Z
+! Last modified: 2024-01-13T08:05:48.634Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -11,8 +11,8 @@
 ! Source: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
 !
 ! Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
-! 规则版本: 1.2.9
-! 更新时间: 2024-01-10
+! 规则版本: 1.3.0
+! 更新时间: 2024-01-13
 ! 
 ! 项目地址：https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 ! 
@@ -30,6 +30,7 @@
 ||1010pic.com^
 ||8le8le.com^
 ||a0.app.xiaomi.com^
+||aaid.umeng.com^
 ||acs.m.taobao.com^
 ||ad-scope.com^
 ||ad-scope.com.cn^
@@ -174,7 +175,6 @@
 ||crashlytics.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||csjplatform.com^
-||data-sdk-uuid-log.d.meituan.net^
 ||data.mistat.india.xiaomi.com^
 ||data.mistat.rus.xiaomi.com^
 ||data.mistat.xiaomi.com^
@@ -234,6 +234,7 @@
 ||iadctest.qwapi.com^
 ||iadsdk.apple.com^
 ||iadworkbench.apple.com^
+||ib.snssdk.com^
 ||image-ad.sm.cn^
 ||imageplus.baidu.com^
 ||images.pinduoduo.com^
@@ -300,6 +301,7 @@
 ||mobilelog.upqzfile.com^
 ||mobileservice.cn^
 ||mon.snssdk.com^
+||mon.zijieapi.com^
 ||monitor.music.qq.com^
 ||monitor.uu.qq.com^
 ||monsetting.toutiao.com^
@@ -476,6 +478,7 @@
 /**-be-pack-sign.pglstatp-toutiao.com/
 /*-ad-sign.byteimg.com/
 /*-be-pack-sign.pglstatp-toutiao.com/
+/i*.snssdk.com/
 /*-lm.adkwai.com/
 /*.a.market.xiaomi.com/
 /*-ad.video.yximgs.com/
