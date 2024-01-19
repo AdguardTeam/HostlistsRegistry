@@ -2,7 +2,7 @@
 ! Title: CHN: AdRules DNS List
 ! Description: List for blocking ads in the Chinese region
 ! Homepage: https://github.com/Cats-Team/AdRules
-! Last modified: 2024-01-19T02:17:37.976Z
+! Last modified: 2024-01-19T05:05:42.869Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -15,8 +15,8 @@
 ! Powerd by Cats-Team
 ! Expires: 1 (update frequency)
 ! Description: The DNS Filters
-! Total count: 119843
-! Update: 2024-01-19 09:52:27(GMT+8)
+! Total count: 119902
+! Update: 2024-01-19 12:55:17(GMT+8)
 /^.+stat\.kugou\.com/
 /^admarvel\./
 /^admaster\./
@@ -44,6 +44,9 @@
 /^supersonicads\./
 /^wlmonitor\./
 /^zjtoolbar\./
+||*-ad-sign.byteimg.com^
+||*-ad.a.yximgs.com^
+||*-applog.fqnovel.com^
 ||*.3ygww.com^
 ||*.66san.com^
 ||*.88rpg.net^
@@ -1552,7 +1555,6 @@
 ||360coffeemaker.com^
 ||360design.in^
 ||360direct.qualfon.com^
-||360down7.miiyun.cn^
 ||360elite4free.com^
 ||360emulator.com^
 ||360i.com^
@@ -6668,6 +6670,11 @@
 ||ad*.ettoday.net^
 ||ad*.nexage.com^
 ||ad*.on.cc^
+||ad-cdn.qingting.fm^
+||ad-cdn.qtfm.cn^
+||ad-log-upload-os.hoyoverse.com^
+||ad-sdk.huxiu.com^
+||ad-survey.com^
 ||ad.*.xiaomi.com^
 ||ad.12306.cn^
 ||ad.1k3.com^
@@ -8423,12 +8430,18 @@
 ||adru.net^
 ||adrun.ru^
 ||adrunnr.com^
+||ads*-normal*.zijieapi.com^
 ||ads*.bojijulebu.com^
 ||ads*.depositfiles.com^
 ||ads*.depositfiles.org^
 ||ads*.dfiles.eu^
 ||ads*.dfiles.ru^
 ||ads*.zijieapi.com^
+||ads-api-o.api.leiniao.com^
+||ads-img-al.xhscdn.com^
+||ads-img-qc.xhscdn.com^
+||ads-video-al.xhscdn.com^
+||ads-video-qc.xhscdn.com^
 ||ads.*.kugou.com^
 ||ads.*.yahoo.com^
 ||ads.123net.jp^
@@ -10402,6 +10415,7 @@
 ||adwods.com^
 ||adwolf.ru^
 ||adword.ge^
+||adwords-community.com^
 ||adwords.com^
 ||adwordsexpress.com^
 ||adworkmedia.com^
@@ -13939,6 +13953,9 @@
 ||api*.amplitude.com^
 ||api*.batmobi.net^
 ||api*.batmobil.net^
+||api-ad-product.huxiu.com^
+||api-adservices.apple.com^
+||api-zhibo.qtfm.cn^
 ||api.*.hismarttv.com^
 ||api.06fgej.com^
 ||api.1101yh.com^
@@ -14137,6 +14154,7 @@
 ||apologizingrigorousmorally.com^
 ||aponiaonmarch.com^
 ||aporasal.net^
+||app-measurement.com^
 ||app.1112.com^
 ||app.12thman.com^
 ||app.12thmanfoundation.com^
@@ -14944,6 +14962,7 @@
 ||applinks.truckersnearby.com^
 ||applinks.xdressr.com^
 ||applinks.zerista.com^
+||applog-perf.uc.cn^
 ||applog.camera360.com^
 ||applog.lc.quark.cn^
 ||applog.reader.qq.com^
@@ -24428,7 +24447,6 @@
 ||cipangobesots.com^
 ||cipdn.com^
 ||cipledecline.buzz^
-||cipro.mx^
 ||cipta.net^
 ||ciptransfer.com^
 ||cipustar.com^
@@ -27969,6 +27987,7 @@
 ||crashexecute.com^
 ||crasheye.cn^
 ||crashlytics.163.com^
+||crashlyticsreports-pa.googleapis.com^
 ||cratchcfi.com^
 ||crateac.com^
 ||cratecamera.com^
@@ -29698,6 +29717,8 @@
 ||dasterx.ru^
 ||dasv10rewq.xyz^
 ||dasych.drmartypets.com^
+||data-sdk-uuid-log.d.meituan.net^
+||data-sdk-uuid-report.dreport.meituan.net^
 ||data.2ask.blue.com.hk^
 ||data.a.news.aida.de^
 ||data.abebooks.com^
@@ -31079,6 +31100,7 @@
 ||devguardmap.org^
 ||deviambarwati.com^
 ||deviatestartblock.com^
+||device-provisioning.googleapis.com^
 ||device.fishmobi.com^
 ||device9.com^
 ||devifoodgrains.com^
@@ -32166,7 +32188,6 @@
 ||dkugbhea.page.link^
 ||dkvakldvnsv.com^
 ||dkyd6.xyz^
-||dl.1003b.56a.com^
 ||dl.198424.com^
 ||dl.4buy.net^
 ||dl.4kporn.xxx^
@@ -32794,6 +32815,7 @@
 ||doubleadserve.com^
 ||doublebitcoin.io^
 ||doublebtc.win^
+||doubleclick-cn.net^
 ||doubleclick.com^
 ||doubleclick.ctfile.com^
 ||doubleclick.de^
@@ -39171,6 +39193,7 @@
 ||firearmtire.com^
 ||firebanner.com^
 ||firebasedynamiclinks.googleapis.com^
+||firebaselogging-*.googleapis.com^
 ||firebaselogging.googleapis.com^
 ||firebaseremoteconfig.googleapis.com^
 ||firecash.org^
@@ -44546,9 +44569,11 @@
 ||googe.com^
 ||googele.com^
 ||googfle.com^
+||google-analytics.com^
 ||google.trk.oeremil.com^
 ||googleadapis.com^
 ||googleads.g.doubleclick.net.iberostar.com^
+||googleadservices-cn.com^
 ||googleadservices.com^
 ||googleadsserving.cn^
 ||googleailesi.com^
@@ -44568,6 +44593,7 @@
 ||googleshopping.sapoapps.vn^
 ||googlesyndication.com^
 ||googletagnamager.com^
+||googletagservices-cn.com^
 ||googletraveladservices.com^
 ||googlevideoads.com^
 ||goohimom.net^
@@ -45684,6 +45710,7 @@
 ||gyydua.dakine.com^
 ||gyzlozas.com^
 ||gyzwcl.sconto.cz^
+||gz-data.com^
 ||gzads.com^
 ||gzakxmzydpkwr.com^
 ||gzasiatech.net^
@@ -47664,6 +47691,7 @@
 ||hkljed.xyz^
 ||hkmvjmnv.page.link^
 ||hkoxlirf.com^
+||hkrpg-log-upload-os.hoyoverse.com^
 ||hkrytf.xyz^
 ||hkscldggm.xyz^
 ||hksmstpzsnlj.com^
@@ -49738,6 +49766,7 @@
 ||im.inciseclops.com^
 ||im.of.pl^
 ||im.xo.pl^
+||image-ad.sm.cn^
 ||image.ard.de^
 ||image.click.livedoor.com^
 ||image.deginvest.de^
@@ -59163,9 +59192,18 @@
 ||loftsbaacad.com^
 ||loftychord.com^
 ||lofvkxaqsw.com^
+||log*-misc-lq.amemv.com^
+||log*-normal-lq.toutiaoapi.com^
 ||log*.aliyuncs.com^
 ||log*.byteoversea.com^
 ||log*.vietnamplus.vn^
+||log-api-mn.huxiu.com^
+||log-api.huxiu.com^
+||log-sdk.clickwifi.net^
+||log-sdk.gifshow.com^
+||log-sdk.ksapisrv.com^
+||log-upload-os.hoyoverse.com^
+||log-upload.mihoyo.com^
 ||log.ahamo.com^
 ||log.aispeech.com^
 ||log.ajunews.com^
@@ -59379,6 +59417,8 @@
 ||logaholic.com^
 ||loganfeels.com^
 ||logangmerch.us^
+||logapi-and.zhipin.com^
+||logapi-ios.zhipin.com^
 ||logapi.misa.com.vn^
 ||logapi.tv.naver.com^
 ||logapi.zhipin.com^
@@ -66474,6 +66514,8 @@
 ||mobacoinhack.com^
 ||mobaders.com^
 ||mobadme.jp^
+||mobads-logs.baidu.com^
+||mobads-pre-config.cdn.bcebos.com^
 ||mobads.baidu.cn^
 ||mobads.baidu.com^
 ||mobads4app.com^
@@ -73043,6 +73085,7 @@
 ||optimizesocial.com^
 ||optimizesrv.com^
 ||optimost.com^
+||optimus-ads.amap.com^
 ||optimusconstructora.com.pe^
 ||optinmonster.com^
 ||optionen.hager.de^
@@ -73257,7 +73300,6 @@
 ||orrisesdepute.com^
 ||orrtweqfaa.com^
 ||orsahomes.com^
-||orsan.gruporhynous.com^
 ||orsmfg.notino.de^
 ||orsomedia.cosavostra.com^
 ||orssengseen.com^
@@ -73937,6 +73979,7 @@
 ||ozvlyz.justmusic.de^
 ||ozwvd.com^
 ||ozwvkazrik.com^
+||p*-ad-sign.byteimg.com^
 ||p.012024jhvjhkozekl.space^
 ||p.5mnh.com^
 ||p.7060.la^
@@ -74010,6 +74053,8 @@
 ||p06.sc.origins.en25.com^
 ||p0kec0ins.com^
 ||p0y.cn^
+||p1-play.edge4k.com^
+||p1-play.kgslb.com^
 ||p1.chinakaoyan.com^
 ||p1.danskebank.co.uk^
 ||p1.danskebank.dk^
@@ -74021,6 +74066,7 @@
 ||p123p.com^
 ||p188.cn^
 ||p1corn.com^
+||p2-play.edge4k.com^
 ||p2.danskebank.co.uk^
 ||p2.danskebank.dk^
 ||p2.danskebank.fi^
@@ -74377,6 +74423,9 @@
 ||pangle.io^
 ||pangle.pangleglobal.com^
 ||pangoha.xyz^
+||pangolin-sdk-toutiao*.com^
+||pangolin-sdk-toutiao-b.com^
+||pangolin-sdk-toutiao.com^
 ||pangolin.snssdk.com^
 ||pangolin16.isnssdk.com^
 ||pangolin16.sgsnssdk.com^
@@ -75960,6 +76009,7 @@
 ||pgkxhq.jamesallen.com^
 ||pgl.example.com^
 ||pgl.example0101^
+||pglstatp-toutiao.com^
 ||pgmcdn.com^
 ||pgmediaserve.com^
 ||pgmfuffwfl.com^
@@ -85361,6 +85411,7 @@
 ||safestsniffingconfessed.com^
 ||safesync.com^
 ||safety.west.com^
+||safetygear.pk^
 ||safetypcchain.com^
 ||safetytds.com^
 ||safetytrade.net^
@@ -87465,6 +87516,7 @@
 ||sensifyfugged.com^
 ||sensor.org.ua^
 ||sensorpluck.com^
+||sensors-log.dongqiudi.com^
 ||sensors.balluff.com^
 ||sensors.cloud.tencent.com^
 ||sensors.ibreader.com^
@@ -87962,6 +88014,7 @@
 ||shahadotonline.net^
 ||shahebso.com^
 ||shahnazbeautyclinic.com^
+||shahu66.com^
 ||shaickox.com^
 ||shaidolt.com^
 ||shailreeb.com^
@@ -96724,6 +96777,7 @@
 ||stbt.coupons.com^
 ||stbuyshopoui.com^
 ||stbvip.net^
+||stbwhln.cn^
 ||stc.nas.nixcdn.com^
 ||stc.ninisite.com^
 ||stc.tools^
@@ -108297,6 +108351,7 @@
 ||ulnidkdlaxclpo.com^
 ||uloaludu.xyz^
 ||ulog*.*^
+||ulog-sdk.gifshow.com^
 ||ulog.imap.baidu.com^
 ||ulogix.ru^
 ||ulogjs.gifshow.com^
@@ -108968,6 +109023,7 @@
 ||uplevelreward.com^
 ||upliftsearch.com^
 ||uplinecliency.com^
+||upload-up.qtfm.cn^
 ||upload.adtech.fr^
 ||upload.adtech.us^
 ||upload.cc^
@@ -109622,6 +109678,7 @@
 ||uzxkuwalnjp.com^
 ||uzzidxlvnq.com^
 ||uzzifyjq.page.link^
+||v*-ad.video.yximgs.com^
 ||v*.denakop.com^
 ||v.adblockultimate.net^
 ||v.angha.me^
@@ -110127,6 +110184,7 @@
 ||vcigsmra.page.link^
 ||vcjczwnc.xyz^
 ||vckkbkxu.page.link^
+||vcl-brain.snssdk.com^
 ||vclicks.net^
 ||vclrendering.co.uk^
 ||vcmedia.com^
@@ -115631,7 +115689,6 @@
 ||www.opendownload.de^
 ||www.openload.de^
 ||www.operationintelligence7.com^
-||www.opolis.io^
 ||www.optimalhealthyday.com^
 ||www.optimalstrong.com^
 ||www.optimalwellnessfit.com^
@@ -117333,6 +117390,7 @@
 ||xwktyiydn.com^
 ||xwlidjauhdxzx.com^
 ||xwlketvkzf.com^
+||xwlnhw.com^
 ||xwlyfl.xyz^
 ||xwobsokr.page.link^
 ||xwpoxv.birdies.com^
@@ -119180,6 +119238,7 @@
 ||zhichangwo.com^
 ||zhidian3g.cn^
 ||zhihei.com^
+||zhihu-web-analytics.zhihu.com^
 ||zhihu.xmcimg.com^
 ||zhihuiduijian.com^
 ||zhilingshidai.com^
