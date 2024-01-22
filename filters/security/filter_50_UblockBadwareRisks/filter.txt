@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-01-22T15:06:18.727Z
+! Last modified: 2024-01-22T17:06:13.373Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -3212,3 +3212,6 @@ thepiratebay3.com^
 ! https://transparencyreport.google.com/safe-browsing/search?url=http:%2F%2Fapp0w.ltd%2F
 ! http://telegram.app0w.ltd/?rcd=c61d5 - Scam telegram
 ||app0w.ltd^
+
+! https://github.com/uBlockOrigin/uAssets/issues/22129
+||primeleech.com^
