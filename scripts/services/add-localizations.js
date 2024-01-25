@@ -72,7 +72,9 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
         // { "servicesgroup.cdn.name": "Cdn" }
         Object.entries(fileObject).forEach(([key, value]) => {
             // Skip TODO comments
-            if (value.includes('TODO:')) return;
+            if (value.includes('TODO:')) {
+                return;
+            }
             // Destructure the key into category, id, and sign (name, description, etc.)
             // servicesgroup.cdn.name --> id - cdn , sign - name
             const [, id, sign] = key.split('.');
@@ -167,9 +169,12 @@ const getLocales = async (localesFolder) => {
 const sortByKeys = (translations) => translations.sort((a, b) => {
     const keysA = Object.keys(a).join('');
     const keysB = Object.keys(b).join('');
-
-    if (keysA < keysB) return -1;
-    if (keysA > keysB) return 1;
+    if (keysA < keysB) {
+        return -1;
+    }
+    if (keysA > keysB) {
+        return 1;
+    }
     return 0;
 });
 
