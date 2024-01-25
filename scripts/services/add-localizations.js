@@ -27,19 +27,27 @@ const getDirNames = async (folderPath) => {
  * @typedef {{
  *   [id: string]: {
  *     [locale: string]: {
- *       sign: string;
+ *       name: string;
  *     };
  *   };
  * }} groupedFileObjects
+ *
+ * where
+ * - `id` is a group id, used in yml files
+ * - `locale` is a locale code, e.g. `en`, `es`, etc.
+ * - `name` is a group name from a specific locale
+ *
  * Example:
+ *
  * {
- *    'cdn': {
- *        'en': { 'name': 'Content Delivery Network' },
+ *    'id1': {
+ *        'en': { name: 'en-value1' },
+ *        'es': { name: 'es-value1' }
  *    },
- *    'dating': {
- *        'en': { 'name': 'Dating Services' },
+ *    'id2': {
+ *        'en': { name: 'en-value2' },
+ *        'fr': { name: 'fr-value2' }
  *    },
- *    // ...
  * }
  */
 
