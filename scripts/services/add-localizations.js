@@ -95,7 +95,6 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
  * and returns an object representing the grouped translations.
  *
  * @param {string} localesFolder - The base path to the folder containing the directories.
- * @param {string} translationFile - The file path to the translation file.
  * @returns {Promise<object>} A promise that resolves to an object representing grouped translations.
  *
  * @throws {Error} If there is an issue reading the file or parsing its content.
@@ -141,7 +140,6 @@ const getGroupedTranslations = async (localesFolder) => {
  * Asynchronously retrieves grouped translations for different locales based on specified directories.
  *
  * @param {string} localesFolder - The base path to the folder containing locale directories.
- * @param {string} translationFile - The file path to the translation file.
  * @returns {categoryLocalesTranslate} A promise that resolves to an object representing grouped translations
  * for different locales.
  *
@@ -218,7 +216,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
  * Asynchronously retrieves grouped translations for different locales based on specified directories
  * and writes the localizations to a specified file path.
  *
- * @param outputServicesFile - The file path to the services file.
+ * @param {string} outputServicesFile - The file path to the services file.
  * @param {string} localesFolder - The base path to the folder containing locale directories.
  * @param {string} i18nFilePath - The file path where the localizations will be written.
  * @returns {Promise<void>} A promise that resolves when the localizations are successfully written to the file.
