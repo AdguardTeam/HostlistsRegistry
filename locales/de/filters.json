@@ -1,7 +1,7 @@
 [
 	{
-		"hostlist.1.name": "AdGuard — DNS-Filter",
-		"hostlist.1.description": "Die Liste besteht aus mehreren Filtern (AdGuard Base Filter, Social Media Filter, Tracking Protection Filter, Mobile Ads Filter, EasyList und EasyPrivacy) und wurde speziell vereinfacht, um eine bessere Kompatibilität mit Werbeblockern auf DNS-Ebene zu gewährleisten"
+		"hostlist.1.name": "AdGuard DNS-Filter",
+		"hostlist.1.description": "Die Liste besteht aus mehreren Filtern (AdGuard Basisfilter, Social-Media-Filter, Tracking-Schutz-Filter, Mobil Werbungsfilter, EasyList und EasyPrivacy) und wurde speziell vereinfacht, um eine bessere Kompatibilität mit Werbeblockern auf DNS-Ebene zu gewährleisten"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
@@ -9,23 +9,39 @@
 	},
 	{
 		"hostlist.4.name": "Dan Pollocks Liste",
-		"hostlist.4.description": "Liste zum Blockieren von Werbung und zum Verhindern von Tracking"
+		"hostlist.4.description": "Liste zum Sperren von Werbung und zum Verhindern von Tracking"
 	},
 	{
 		"hostlist.5.name": "OISD Blocklist Small",
-		"hostlist.5.description": "Liste zum Blockieren von Werbung und Trackern. Gibt der Funktionalität den Vorrang vor dem Blockieren."
-	},
-	{
-		"hostlist.23.name": "WindowsSpyBlocker — Hosts-Spionagesperrregeln",
-		"hostlist.23.description": "Liste zum Blockieren von Spionage und Tracking unter Windows"
+		"hostlist.5.description": "Liste zum Sperren von Werbung und Trackern. Gibt der Funktionalität den Vorrang vor dem Sperren."
 	},
 	{
 		"hostlist.6.name": "Dandelion Sprouts Werbeblocker-Liste für Spielkonsolen",
-		"hostlist.6.description": "Liste zum Blockieren von Werbung auf Videospielkonsolen, die AdGuard Home verwenden"
+		"hostlist.6.description": "Liste zum Sperren von Werbung auf Videospielkonsolen, die AdGuard Home verwenden"
 	},
 	{
 		"hostlist.7.name": "Perflyst und Dandelion Sprouts Smart-TV-Sperrliste",
-		"hostlist.7.description": "Liste zum Verhindern, dass Smart-TVs Metadaten an den Anbieter senden, und zum Blockieren von Anzeigen in Apps und Filmdiensten"
+		"hostlist.7.description": "Liste zum Verhindern, dass Smart-TVs Metadaten an den Anbieter senden, und zum Sperren von Werbung in Apps und Filmdiensten"
+	},
+	{
+		"hostlist.8.name": "NoCoin Filter List (Schürfen nach Kryptowährung)",
+		"hostlist.8.description": "Liste zum Sperren von browserbasiertem Krypto-Mining"
+	},
+	{
+		"hostlist.9.name": "Die große Liste der angegriffenen Malware-Websites",
+		"hostlist.9.description": "Liste von Websites, die mit Malware, Ransomware oder Trojanern gehackt wurden"
+	},
+	{
+		"hostlist.10.name": "DurableNapkins Sperrliste für Betrugsversuche",
+		"hostlist.10.description": "Liste zum Sperren von nicht vertrauenswürdigen Websites"
+	},
+	{
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Blockliste bösartiger Websites basierend auf dem Datenbank-Dump von Abuse.ch URLhaus"
+	},
+	{
+		"hostlist.12.name": "Dandelion Sprouts Anti-Malware-Liste",
+		"hostlist.12.description": "Die Anti-Malware-Liste von Dandelion Sprout (DNS-Filterung in AdGuard Home, AdGuard für Android und AdGuard für Windows)"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts Nordische Filter",
@@ -37,55 +53,43 @@
 	},
 	{
 		"hostlist.15.name": "KOR: YousList",
-		"hostlist.15.description": "Liste zum Blockieren von Werbung hauptsächlich auf koreanischen Websites"
+		"hostlist.15.description": "Liste zum Sperren von Werbung hauptsächlich auf koreanischen Websites"
 	},
 	{
 		"hostlist.16.name": "VNM: ABPVN-Liste",
-		"hostlist.16.description": "Liste zum Blockieren von Werbung auf vietnamesischen Websites"
+		"hostlist.16.description": "Liste zum Sperren von Werbung auf vietnamesischen Websites"
 	},
 	{
 		"hostlist.17.name": "SWE: Frellwits schwedische Hosts-Datei",
-		"hostlist.17.description": "Liste zum Blockieren von Werbung, Tracking, Betrug und Malware hauptsächlich auf schwedischen Websites"
+		"hostlist.17.description": "Liste zum Sperren von Werbung, Tracking, Betrug und Malware hauptsächlich auf schwedischen Websites"
+	},
+	{
+		"hostlist.18.name": "Phishing-Domains",
+		"hostlist.18.description": "Sperrliste zum Filtern von Phishing-Domains!"
 	},
 	{
 		"hostlist.19.name": "IRN: PersianBlocker list",
-		"hostlist.19.description": "Optimale und umfangreiche Liste zum Blockieren von Werbung und Trackern auf persischsprachigen Websites"
+		"hostlist.19.description": "Optimale und umfangreiche Liste zum Sperren von Werbung und Trackern auf persischsprachigen Websites"
 	},
 	{
 		"hostlist.20.name": "MKD: Mazedonische Pi-Hole-Sperrliste",
-		"hostlist.20.description": "Liste zum Blockieren von Werbung auf mazedonischen Websites"
+		"hostlist.20.description": "Liste zum Sperren von Werbung auf mazedonischen Websites"
 	},
 	{
 		"hostlist.21.name": "CHN: Anti-AD",
-		"hostlist.21.description": "Liste zum Blockieren von Werbung in der chinesischen Region. Zielt auf den Schutz der Privatsphäre ab."
+		"hostlist.21.description": "Liste zum Sperren von Werbung in der chinesischen Region. Zielt auf den Schutz der Privatsphäre ab."
 	},
 	{
 		"hostlist.22.name": "IDN: ABPindo",
-		"hostlist.22.description": "Filter ergänzend zu EasyList zum Blockieren von Werbung auf indonesischen und malaysischen Websites"
+		"hostlist.22.description": "Filter ergänzend zu EasyList zum Sperren von Werbung auf indonesischen und malaysischen Websites"
 	},
 	{
-		"hostlist.10.name": "DurableNapkins Sperrliste für Betrugsversuche",
-		"hostlist.10.description": "Liste zum Blockieren von nicht vertrauenswürdigen Websites"
-	},
-	{
-		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
-		"hostlist.11.description": "Blockliste bösartiger Websites basierend auf dem Datenbank-Dump von Abuse.ch URLhaus"
-	},
-	{
-		"hostlist.12.name": "Dandelion Sprouts Anti-Malware-Liste",
-		"hostlist.12.description": "Die Anti-Malware-Liste von Dandelion Sprout (DNS-Filterung in AdGuard Home, AdGuard für Android und AdGuard für Windows)"
-	},
-	{
-		"hostlist.8.name": "NoCoin Filter List (Schürfen nach Kryptowährung)",
-		"hostlist.8.description": "Liste zum Blockieren von browserbasiertem Krypto-Mining"
-	},
-	{
-		"hostlist.9.name": "Die große Liste der angegriffenen Malware-Websites",
-		"hostlist.9.description": "Liste von Websites, die mit Malware, Ransomware oder Trojanern gehackt wurden"
+		"hostlist.23.name": "WindowsSpyBlocker — Hosts-Spionagesperrregeln",
+		"hostlist.23.description": "Liste zum Sperren von Spionage und Tracking unter Windows"
 	},
 	{
 		"hostlist.24.name": "1Hosts (Lite)",
-		"hostlist.24.description": "Liste zum Blockieren von lästiger Werbung, Trackern und Malware"
+		"hostlist.24.description": "Liste zum Sperren von lästiger Werbung, Trackern und Malware. Ausgewogene Version: Einstellen und vergessen, beeinträchtigt nicht die Benutzerfreundlichkeit."
 	},
 	{
 		"hostlist.25.name": "KOR: List-KR DNS",
@@ -93,19 +97,23 @@
 	},
 	{
 		"hostlist.26.name": "TUR: turk-adlist",
-		"hostlist.26.description": "Liste zum Blockieren von Werbung und störenden Elementen auf türkischen Websites"
+		"hostlist.26.description": "Liste zum Sperren von Werbung und störenden Elementen auf türkischen Websites"
 	},
 	{
 		"hostlist.27.name": "OISD Blocklist Big",
-		"hostlist.27.description": "Liste zum Blockieren von Werbung und Trackern. Gibt der Funktionalität Vorrang vor dem Blockieren. Das Risiko einer fehlerhaften Blockierung ist höher als bei der Small-Version der OISD-Blocklist."
+		"hostlist.27.description": "Liste zum Sperren von Werbung und Trackern. Die Funktionalität hat Vorrang vor dem Sperren. Das Risiko einer falschen Sperre ist höher als bei der kleinen Version von „OISD Blocklist“."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
-		"hostlist.29.description": "Liste zum Blockieren von Werbung in der chinesischen Region"
+		"hostlist.29.description": "Liste zum Sperren von Werbung in der chinesischen Region"
 	},
 	{
 		"hostlist.30.name": "Phishing URL Blocklist (PhishTank und OpenPhish)",
 		"hostlist.30.description": "Blockliste von Phishing-Websites, basierend auf PhishTank- und OpenPhish-Listen"
+	},
+	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "Anzeichen für eine Kompromittierung mit Stalkerware-Apps für Android und iOS."
 	},
 	{
 		"hostlist.32.name": "The NoTracking blocklist",
@@ -114,10 +122,6 @@
 	{
 		"hostlist.33.name": "Steven Black's List",
 		"hostlist.33.description": "Vereinheitlichte Hosts-Datei (Adware + Malware)."
-	},
-	{
-		"hostlist.31.name": "Stalkerware Indicators List",
-		"hostlist.31.description": "Anzeichen für eine Kompromittierung mit Stalkerware-Apps für Android und iOS."
 	},
 	{
 		"hostlist.34.name": "HaGeZi Multi NORMAL",
@@ -145,7 +149,7 @@
 	},
 	{
 		"hostlist.40.name": "TUR: Turkish Ad Hosts",
-		"hostlist.40.description": "Notwendige Hosts-Datei zum Blockieren von Tracking- (und möglicherweise Werbe-)Netzwerke in häufig genutzten mobilen Apps (und möglicherweise Websites) in der Türkei."
+		"hostlist.40.description": "Notwendige Hosts-Datei zum Sperren von Tracking- (und möglicherweise Werbe-)Netzwerke in häufig genutzten mobilen Apps (und möglicherweise Websites) in der Türkei."
 	},
 	{
 		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
@@ -154,5 +158,53 @@
 	{
 		"hostlist.42.name": "ShadowWhisperer's Malware List",
 		"hostlist.42.description": "Bösartige Websites, PUPs, Malware, Browser-Hijacker, Phishing-Websites"
+	},
+	{
+		"hostlist.43.name": "ISR: EasyList Hebräisch",
+		"hostlist.43.description": "Liste zum Sperren von Werbung auf Hebräisch."
+	},
+	{
+		"hostlist.44.name": "HaGeZi's Threat Intelligence Feeds",
+		"hostlist.44.description": "Erhöht die Sicherheit erheblich! Sperrt Malware, Cryptojacking, Spam, Scam und Phishing."
+	},
+	{
+		"hostlist.45.name": "HaGeZi's Allowlist Referral",
+		"hostlist.45.description": "Diese Liste hebt das Sperren von Partner- und Tracking-Links auf, die in Mails, Suchergebnissen usw. angezeigt werden."
+	},
+	{
+		"hostlist.46.name": "HaGeZi's Anti-Piraterie-Sperrliste",
+		"hostlist.46.description": "Sperrt Websites und Dienste, die hauptsächlich für die illegale Verbreitung von urheberrechtlich geschützten Inhalten genutzt werden."
+	},
+	{
+		"hostlist.47.name": "HaGeZi's Sperrliste für Glücksspiele",
+		"hostlist.47.description": "Sperrt Glücksspielinhalte."
+	},
+	{
+		"hostlist.48.name": "HaGeZi's Pro Blocklist",
+		"hostlist.48.description": "Großer Besen - Bereinigt das Internet und schützt Ihre Privatsphäre! Sperrt Werbung, Affiliate, Tracking, Metriken, Telemetrie, Phishing, Malware, Scam, Fake, Coins und anderen Kram."
+	},
+	{
+		"hostlist.49.name": "HaGeZis ultimative Sperrliste",
+		"hostlist.49.description": "Ultimative Kehrmaschine - Reinigt das Internet gründlich und schützt Ihre Privatsphäre! Sperrt Werbung, Affiliate, Tracking (+Referral), Metriken, Telemetrie, Phishing, Malware, Scam, Free Hoster, Fake, Coins und anderen Kram."
+	},
+	{
+		"hostlist.50.name": "uBlock₀-Filter - Risiken durch Badware",
+		"hostlist.50.description": "Für Websites, die Benutzer nachweislich dem Risiko aussetzen, Adware/Crapware/Malware zu installieren, Anmeldedaten zu stehlen usw. Damit soll zumindest sichergestellt werden, dass der Nutzer vor den Risiken gewarnt wird."
+	},
+	{
+		"hostlist.51.name": "HaGeZi's Pro++ Sperrliste",
+		"hostlist.51.description": "Kehrmaschine - Aggressive Bereinigung des Internets und Schutz Ihrer Privatsphäre! Sperrt Werbung, Affiliate, Tracking, Metriken, Telemetrie, Phishing, Malware, Scam, Fake, Coins und anderen Kram."
+	},
+	{
+		"hostlist.52.name": "HaGeZis verschlüsselte DNS/VPN/TOR/Proxy-Umgehung",
+		"hostlist.52.description": "Verhindert Methoden zur Umgehung Ihres DNS, sperrt verschlüsselte DNS, VPN, TOR, Proxies. Das Verhindern von Umgehungen kann nicht garantiert werden."
+	},
+	{
+		"hostlist.53.name": "AWAvenue Ads Rule",
+		"hostlist.53.description": "Verwenden Sie die Adblock-Syntax, um verschiedene Werbe-SDKs in Android-Apps von der Netzwerkebene aus zu bekämpfen und sie am Laden zu hindern."
+	},
+	{
+		"hostlist.54.name": "HaGeZis DynDNS-Sperrliste",
+		"hostlist.54.description": "Sperrt dynamische DNS-Dienste zum Schutz vor böswilliger Nutzung in Phishing-Kampagnen und anderen Fällen."
 	}
 ]

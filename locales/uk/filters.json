@@ -16,16 +16,32 @@
 		"hostlist.5.description": "Фільтр для блокування реклами та стеження. Пріоритет функціональності над блокуванням."
 	},
 	{
-		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
-		"hostlist.23.description": "Фільтр для блокування шпигунства та стеження в Windows"
-	},
-	{
 		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
 		"hostlist.6.description": "Фільтр для блокування реклами на ігрових приставках, які використовують AdGuard Home"
 	},
 	{
 		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
 		"hostlist.7.description": "Фільтр для заборони смарттелевізорам надсилати метадані продавцю, а також для блокування реклами в додатках і кіносервісах"
+	},
+	{
+		"hostlist.8.name": "NoCoin Filter List",
+		"hostlist.8.description": "Фільтр для блокування крипто-майнінгу на основі браузера"
+	},
+	{
+		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
+		"hostlist.9.description": "Список вебсайтів, які зламані шкідливими програмами, програмами-вимагачами або троянами"
+	},
+	{
+		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
+		"hostlist.10.description": "Список для блокування ненадійних сайтів"
+	},
+	{
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Фільтр блокування шкідливих сайтів на основі дампу бази даних Abuse.ch URLhaus"
+	},
+	{
+		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (для AdGuard Home або для DNS-захисту в AdGuard для Android або Windows)"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
@@ -48,6 +64,10 @@
 		"hostlist.17.description": "Фільтр для блокування реклами, стеження, шахрайства та шкідливого програмного забезпечення переважно на сайтах шведською мовою"
 	},
 	{
+		"hostlist.18.name": "ITA: Filtri-DNS",
+		"hostlist.18.description": "Список блокування для фільтрування фішингових доменів"
+	},
+	{
 		"hostlist.19.name": "IRN: PersianBlocker list",
 		"hostlist.19.description": "Оптимальний та великий фільтр для блокування реклами та стеження на сайтах перською мовою"
 	},
@@ -64,24 +84,8 @@
 		"hostlist.22.description": "Фільтр для блокування реклами на сайтах індонезійською та малайзійською мовами, доповнення до EasyList"
 	},
 	{
-		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
-		"hostlist.10.description": "Список для блокування ненадійних сайтів"
-	},
-	{
-		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
-		"hostlist.11.description": "Фільтр блокування шкідливих сайтів на основі дампу бази даних Abuse.ch URLhaus"
-	},
-	{
-		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
-		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (для AdGuard Home або для DNS-захисту в AdGuard для Android або Windows)"
-	},
-	{
-		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": "Фільтр для блокування крипто-майнінгу на основі браузера"
-	},
-	{
-		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
-		"hostlist.9.description": "Список вебсайтів, які зламані шкідливими програмами, програмами-вимагачами або троянами"
+		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
+		"hostlist.23.description": "Фільтр для блокування шпигунства та стеження в Windows"
 	},
 	{
 		"hostlist.24.name": "1Hosts (Lite)",
@@ -108,16 +112,16 @@
 		"hostlist.30.description": "Блокування фішингових сайтів на основі фільтрів PhishTank та OpenPhish"
 	},
 	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "Індикатори компрометації додатків Stalkerware для Android та iOS."
+	},
+	{
 		"hostlist.32.name": "The NoTracking blocklist",
 		"hostlist.32.description": "Список блокування NoTracking — це список фільтрів на основі DNS для блокування реклами, шкідливих програм, фішингу та іншого інтернет-сміття."
 	},
 	{
 		"hostlist.33.name": "Steven Black's List",
 		"hostlist.33.description": "Уніфікований файл хостів (рекламне ПЗ + шкідливе ПЗ)."
-	},
-	{
-		"hostlist.31.name": "Stalkerware Indicators List",
-		"hostlist.31.description": "Індикатори компрометації додатків Stalkerware для Android та iOS."
 	},
 	{
 		"hostlist.34.name": "HaGeZi Multi NORMAL",
@@ -149,10 +153,58 @@
 	},
 	{
 		"hostlist.41.name": "POL: CERT Polska List of malicious domains",
-		"hostlist.41.description": "CERT Polska займається інцидентами та загрозами, що виникають або спрямовані на системи в домені .pl або підключені до мережі NASK чи іншого польського інтернет-провайдера."
+		"hostlist.41.description": "CERT Polska займається інцидентами та загрозами, що виникають або спрямовані на системи в домені .pl або пов'язані з мережею NASK чи іншим польським інтернет-провайдером."
 	},
 	{
 		"hostlist.42.name": "ShadowWhisperer's Malware List",
 		"hostlist.42.description": "Шахрайські сайти, шкідливі програми, фішингові сайти"
+	},
+	{
+		"hostlist.43.name": "ISR: EasyList Hebrew",
+		"hostlist.43.description": "Список для блокування реклами на івриті."
+	},
+	{
+		"hostlist.44.name": "HaGeZi's Threat Intelligence Feeds",
+		"hostlist.44.description": "Значно підвищує безпеку! Блокує шкідливе програмне забезпечення, криптоджекінг, спам, шахрайство та фішинг."
+	},
+	{
+		"hostlist.45.name": "HaGeZi's Allowlist Referral",
+		"hostlist.45.description": "Цей список розблоковує партнерські та відстежувальні реферальні посилання, які з'являються в листах, результатах пошуку тощо."
+	},
+	{
+		"hostlist.46.name": "HaGeZi's Anti-Piracy Blocklist",
+		"hostlist.46.description": "Блокує вебсайти та сервіси, які використовуються переважно для незаконного розповсюдження контенту, захищеного авторським правом."
+	},
+	{
+		"hostlist.47.name": "HaGeZi's Gambling Blocklist",
+		"hostlist.47.description": "Блокує азартний контент."
+	},
+	{
+		"hostlist.48.name": "HaGeZi's Pro Blocklist",
+		"hostlist.48.description": "Очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, партнерську програму, стеження, показники, телеметрію, фішинг, зловмисне програмне забезпечення, шахрайство, фейки тощо."
+	},
+	{
+		"hostlist.49.name": "HaGeZi's Ultimate Blocklist",
+		"hostlist.49.description": "Суворо очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, партнерські програми, відстеження (зокрема, реферали), метрику, телеметрію, фішинг, шкідливі програми, шахрайство, безплатні хостинги, фейки, монети та інший непотріб."
+	},
+	{
+		"hostlist.50.name": "uBlock₀ filters – Badware risks",
+		"hostlist.50.description": "Для сайтів, на яких задокументовано, що вони наражають користувачів на ризик встановлення рекламного, шкідливого ПЗ, викрадення облікових даних тощо. Мета полягає в тому, щоб принаймні попередити користувача про майбутні ризики."
+	},
+	{
+		"hostlist.51.name": "HaGeZi's Pro++ Blocklist",
+		"hostlist.51.description": "Агресивно очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, афіліати, відстеження, метрики, телеметрію, фішинг, шкідливі програми, шахрайство, фейки, монети та інший непотріб."
+	},
+	{
+		"hostlist.52.name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+		"hostlist.52.description": "Запобігає методам обходу вашого DNS, блокує зашифровані DNS, VPN, TOR і проксі-сервери. Запобігання обходу не гарантується."
+	},
+	{
+		"hostlist.53.name": "AWAvenue Ads Rule",
+		"hostlist.53.description": "Використовує Adblock-синтаксис для боротьби з різними рекламними SDK у програмах Android на мережевому рівні, запобігаючи їхньому завантаженню."
+	},
+	{
+		"hostlist.54.name": "HaGeZi's DynDNS Blocklist",
+		"hostlist.54.description": "Блокує динамічні служби DNS для захисту від зловмисного використання у фішингових кампаніях тощо."
 	}
 ]

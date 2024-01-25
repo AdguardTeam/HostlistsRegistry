@@ -1,7 +1,7 @@
 [
 	{
 		"hostlist.1.name": "Filtro para AdGuard DNS",
-		"hostlist.1.description": "Lista composta de vários filtros (filtro base do AdGuard, filtro para mídia social, filtro de proteção contra rastreamento, filtro para dispositivo móvel, EasyList e EasyPrivacy). Também contém domínios simplificados para uma melhor compatibilidade no bloqueio de anúncios de nível DNS"
+		"hostlist.1.description": "Lista com vários filtros (AdGuard, Redes Sociais, proteção contra rastreamento, dispositivos móveis, EasyList e EasyPrivacy). Também apresenta domínios simplificados para um melhor bloqueio de anúncios a nível de DNS"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
@@ -16,16 +16,32 @@
 		"hostlist.5.description": "Lista para bloquear anúncios e rastreadores. Prioriza a funcionalidade sobre o bloqueio."
 	},
 	{
-		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
-		"hostlist.23.description": "Lista para bloquear espionagem e rastreamento no Windows"
-	},
-	{
 		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
 		"hostlist.6.description": "Lista para bloquear anúncios em consoles de videogame que usam o AdGuard Home"
 	},
 	{
 		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
 		"hostlist.7.description": "Lista para impedir que smart TVs enviem metadados ao provedor e para bloquear anúncios em aplicativos e serviços de filmes"
+	},
+	{
+		"hostlist.8.name": "NoCoin Filter List",
+		"hostlist.8.description": "Lista para bloquear mineração de criptografia baseada em navegador"
+	},
+	{
+		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
+		"hostlist.9.description": "Lista de sites invadidos por malware, ransomware ou trojans"
+	},
+	{
+		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
+		"hostlist.10.description": "Lista para bloquear os usuários contra sites não confiáveis"
+	},
+	{
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Lista de bloqueio de sites maliciosos com base no despejo de banco de dados de Abuse.ch URLhaus"
+	},
+	{
+		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (Filtragem DNS no AdGuard Home, AdGuard para Android, e AdGuard para Windows)"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
@@ -48,6 +64,10 @@
 		"hostlist.17.description": "Lista para bloquear anúncios, rastreamento, golpes e malware principalmente em sites suecos"
 	},
 	{
+		"hostlist.18.name": "Phishing Army",
+		"hostlist.18.description": "A lista de bloqueio para filtrar domínios de phishing"
+	},
+	{
 		"hostlist.19.name": "IRN: PersianBlocker list",
 		"hostlist.19.description": "Lista ideal e extensa para bloquear anúncios e rastreadores em sites em persa"
 	},
@@ -64,24 +84,8 @@
 		"hostlist.22.description": "Filtro complementar ao EasyList para bloquear anúncios em sites indonésios e malaios"
 	},
 	{
-		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
-		"hostlist.10.description": "Lista para bloquear os usuários contra sites não confiáveis"
-	},
-	{
-		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
-		"hostlist.11.description": "Lista de bloqueio de sites maliciosos com base no despejo de banco de dados de Abuse.ch URLhaus"
-	},
-	{
-		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
-		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (Filtragem DNS no AdGuard Home, AdGuard para Android, e AdGuard para Windows)"
-	},
-	{
-		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": "Lista para bloquear mineração de criptografia baseada em navegador"
-	},
-	{
-		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
-		"hostlist.9.description": "Lista de sites invadidos por malware, ransomware ou trojans"
+		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
+		"hostlist.23.description": "Lista para bloquear espionagem e rastreamento no Windows"
 	},
 	{
 		"hostlist.24.name": "1Hosts (Lite)",
@@ -108,16 +112,16 @@
 		"hostlist.30.description": "Lista de bloqueio de sites de phishing, com base nas listas PhishTank e OpenPhish"
 	},
 	{
+		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.description": "Indicadores de comprometimento em aplicativos Stalkerware para Android e iOS."
+	},
+	{
 		"hostlist.32.name": "The NoTracking blocklist",
 		"hostlist.32.description": "The NoTracking blocklist é uma lista de filtros baseada em DNS para bloquear anúncios, malware, phising e outros lixos online."
 	},
 	{
 		"hostlist.33.name": "Steven Black's List",
 		"hostlist.33.description": "Arquivo de hosts unificados (adware + malware)."
-	},
-	{
-		"hostlist.31.name": "Stalkerware Indicators List",
-		"hostlist.31.description": "Indicadores de comprometimento em aplicativos Stalkerware para Android e iOS."
 	},
 	{
 		"hostlist.34.name": "HaGeZi Multi NORMAL",
@@ -154,5 +158,32 @@
 	{
 		"hostlist.42.name": "ShadowWhisperer's Malware List",
 		"hostlist.42.description": "Sites maliciosos, PPIs, Malware, Browser Hijackers, Sites de Phishing"
+	},
+	{
+		"hostlist.43.name": "ISR: EasyList Hebraico",
+		"hostlist.43.description": "Lista para bloqueio de anúncios em hebraico."
+	},
+	{
+		"hostlist.44.name": "Feeds de inteligência contra ameaças do HaGeZi",
+		"hostlist.44.description": "Aumenta significativamente a segurança! Bloqueia malware, cryptojacking, spam, fraudes e phishing."
+	},
+	{
+		"hostlist.45.name": "Referência da lista de permissões do HaGeZi",
+		"hostlist.45.description": "Essa lista desbloqueia links de referência de afiliados e de rastreamento que aparecem em e-mails, resultados de pesquisa etc."
+	},
+	{
+		"hostlist.46.name": "Lista de bloqueio antipirataria da HaGeZi",
+		"hostlist.46.description": "Bloqueia sites e serviços que são usados principalmente para distribuição ilegal de conteúdo protegido por direitos autorais."
+	},
+	{
+		"hostlist.47.name": "Lista de bloqueio de jogos de azar do HaGeZi",
+		"hostlist.47.description": "Bloqueia conteúdo de jogos de azar."
+	},
+	{
+		"hostlist.48.name": "Lista de bloqueio profissional do HaGeZi",
+		"hostlist.48.description": "Big broom: limpa a Internet e protege sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, golpes, falsificações, moedas e outros tipos de lixo."
+	},
+	{
+		"hostlist.49.name": "Lista de bloqueio definitiva do HaGeZi"
 	}
 ]

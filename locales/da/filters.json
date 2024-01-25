@@ -16,16 +16,32 @@
 		"hostlist.5.description": "Liste til blokering af annoncer og trackere Prioriterer funktionalitet over blokering."
 	},
 	{
-		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
-		"hostlist.23.description": "Liste til blokering af udspionering og sporing på Windows"
-	},
-	{
 		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
 		"hostlist.6.description": "Liste til adblocking på videospilkonsoller med AdGuard Home"
 	},
 	{
 		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
 		"hostlist.7.description": "Liste til at forhindre Smart-TV'er i at sende metadata til leverandøren samt til adblocking i apps og filmtjenester"
+	},
+	{
+		"hostlist.8.name": "NoCoin Filter List",
+		"hostlist.8.description": "Liste blokering af browserbaseret kryptomining"
+	},
+	{
+		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
+		"hostlist.9.description": "Liste over websteder hacket med malware, ransomware eller trojanere"
+	},
+	{
+		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
+		"hostlist.10.description": "Liste til blokering af utroværdige websteder"
+	},
+	{
+		"hostlist.11.name": "Ondsindet URL-blokeringsliste (URLHaus)",
+		"hostlist.11.description": "En blokeringsliste over ondsindede websteder brugt til malware-distribution, baseret på databasedumpet fra Abuse.ch URLhaus"
+	},
+	{
+		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (DNS-filtrering til AdGuard Home og AdGuard til Android/Windows)"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
@@ -48,6 +64,10 @@
 		"hostlist.17.description": "Liste til blokering af annoncer, sporing, svindel og malware på primært svenske websteder"
 	},
 	{
+		"hostlist.18.name": "Phishing Army",
+		"hostlist.18.description": "Blokeringslisten til filtrering af phishing-domæner"
+	},
+	{
 		"hostlist.19.name": "IRN: Unwanted Iranian domains",
 		"hostlist.19.description": "Optimal og omfattende liste til blokering af annoncer og trackere på persisksprogede websteder"
 	},
@@ -64,24 +84,8 @@
 		"hostlist.22.description": "Supplerende filter til EasyList til adblocking på indonesiske og malaysiske websteder"
 	},
 	{
-		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
-		"hostlist.10.description": "Liste til blokering af utroværdige websteder"
-	},
-	{
-		"hostlist.11.name": "Ondsindet URL-blokeringsliste (URLHaus)",
-		"hostlist.11.description": "En blokeringsliste over ondsindede websteder brugt til malware-distribution, baseret på databasedumpet fra Abuse.ch URLhaus"
-	},
-	{
-		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
-		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (DNS-filtrering til AdGuard Home og AdGuard til Android/Windows)"
-	},
-	{
-		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": "Liste blokering af browserbaseret kryptomining"
-	},
-	{
-		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
-		"hostlist.9.description": "Liste over websteder hacket med malware, ransomware eller trojanere"
+		"hostlist.23.name": "WindowsSpyBlocker - Hosts spy rules",
+		"hostlist.23.description": "Liste til blokering af udspionering og sporing på Windows"
 	},
 	{
 		"hostlist.24.name": "1Hosts (Lite)",
@@ -96,7 +100,8 @@
 		"hostlist.26.description": "Liste til blokering af annoncer og irriterende elementer på tyrkiske websteder"
 	},
 	{
-		"hostlist.27.name": "OISD Blocklist Big"
+		"hostlist.27.name": "OISD Blocklist Big",
+		"hostlist.27.description": "Liste til blokering af annoncer og trackere. Prioriterer funktionalitet over blokering. Risici for ukorrekte blokeringer er højere end i den lille version af OISD Blocklist."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS List",
@@ -107,16 +112,16 @@
 		"hostlist.30.description": "Sortliste over phishing-websteder baseret på Phishtank- og Openphish-lister"
 	},
 	{
+		"hostlist.31.name": "Stalkerware-indikationsliste",
+		"hostlist.31.description": "Indikatorer for kompromittering med Stalkerware-applikationer til Android og iOS."
+	},
+	{
 		"hostlist.32.name": "NoTracking-sortlisten",
 		"hostlist.32.description": "NoTracking-sortlisten er en DNS-baseret filterliste til blokering af annoncer, malware, phising og andet onlineskrammel."
 	},
 	{
 		"hostlist.33.name": "Steven Blacks liste",
 		"hostlist.33.description": "Forenet hosts-fil (adware + malware)."
-	},
-	{
-		"hostlist.31.name": "Stalkerware-indikationsliste",
-		"hostlist.31.description": "Indikatorer for kompromittering med Stalkerware-applikationer til Android og iOS."
 	},
 	{
 		"hostlist.34.name": "HaGeZi Multi NORMAL",
@@ -143,13 +148,63 @@
 		"hostlist.39.description": "Rettet mod at fjerne push-notifikationer på websteder. Kombinerer relevante regler fra AdGuard Popups Filters anti-push afsnit og Fanboy's Notifications Blocking List."
 	},
 	{
-		"hostlist.40.name": "TUR: Tyrkiske annonceværter"
+		"hostlist.40.name": "TUR: Tyrkiske annonceværter",
+		"hostlist.40.description": "Nødvendig værtsfil til blokering af sporingsnetværk (og muligvis reklame-ditto) i almindeligt anvendte mobil-apps (og muligvis websider) i Tyrkiet."
 	},
 	{
 		"hostlist.41.name": "POL: CERT Polska-liste over ondsindede domæner",
 		"hostlist.41.description": "CERT Polska håndtere hændelser og trusler, som stammer fra/er målretter systemer i .pl-domænet eller tilknyttet NASKs eller andre polske internetudbydernetværk."
 	},
 	{
-		"hostlist.42.name": "ShadowWhisperer's Malware-liste"
+		"hostlist.42.name": "ShadowWhisperer's Malware-liste",
+		"hostlist.42.description": "Ondsindede websteder, PUP'er, malware, browser hijackers, phishing-websteder"
+	},
+	{
+		"hostlist.43.name": "ISR: EasyList Hebrew",
+		"hostlist.43.description": "Liste til adblocking på hebraisk."
+	},
+	{
+		"hostlist.44.name": "HaGeZi's Threat Intelligence Feeds",
+		"hostlist.44.description": "Øger sikkerheden markant! Blokerer malware, cryptojacking, spam, scam og phishing."
+	},
+	{
+		"hostlist.45.name": "HaGeZi's Allowlist Referral",
+		"hostlist.45.description": "Denne liste afblokerer affiliate- og sporingshenvisningslinks vist i mails, søgeresultater mv."
+	},
+	{
+		"hostlist.46.name": "HaGeZi's Anti-Piracy Blocklist",
+		"hostlist.46.description": "Blokerer websteder og tjenester primært brugt til ulovlig distribution af ophavsretligt beskyttet indhold."
+	},
+	{
+		"hostlist.47.name": "HaGeZi's Gambling Blocklist",
+		"hostlist.47.description": "Blokerer for spilindhold."
+	},
+	{
+		"hostlist.48.name": "HaGeZi's Pro Blocklist",
+		"hostlist.48.description": "Big Broom - renser internet og beskytter fortroligheden! Blokerer annoncer, affiliate, tracking, metrics, telemetri, phishing, malware, snyd, forfalskning, coins og andet skrammel."
+	},
+	{
+		"hostlist.49.name": "HaGeZi's Ultimate Blocklist",
+		"hostlist.49.description": "Ultimate Sweeper - renser internet og beskytter fortroligheden! Blokerer annoncer, affiliate, tracking (+referral), metrics, telemetri, phishing, malware, snyd, free hoster, forfalskning, coins og andet skrammel."
+	},
+	{
+		"hostlist.50.name": "uBlock₀ filters – Badware risks",
+		"hostlist.50.description": "For websteder dokumenteret for at udsætte brugere for risiko for at installere adware/crapware/malware, få stjålet loginoplysninger mv. Formålet er at i det mindste sikre, at en bruger advares om de potentielle risici."
+	},
+	{
+		"hostlist.51.name": "HaGeZi's Pro++ Blocklist",
+		"hostlist.51.description": "Sweeper - Aggressive renser internet og beskytter fortroligheden! Blokerer annoncer, affiliate, sporing, metrics, telemetri, phishing, malware, snyd, forfalskning, coins og andet skrammel."
+	},
+	{
+		"hostlist.52.name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+		"hostlist.52.description": "Forhindrer metoder i at omgå den opsatte DNS, blokerer krypteret DNS, VPN, TOR og proxy'er. Omgåelsesforhindring garanteres ikke."
+	},
+	{
+		"hostlist.53.name": "AWAvenue Ads Rule",
+		"hostlist.53.description": "Brug Adblock-syntax til at bekæmpe forskellige reklame-SDK'er i Android-apps på netværksniveau og forhindre deres indlæsning."
+	},
+	{
+		"hostlist.54.name": "HaGeZi's DynDNS Blocklist",
+		"hostlist.54.description": "Blokerer dynamiske DNS-tjenester for at beskytte mod ondsindet brug i phishing-kampagner mv."
 	}
 ]
