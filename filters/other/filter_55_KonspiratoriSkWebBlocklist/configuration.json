@@ -1,0 +1,20 @@
+{
+	"name": "Konspiratori.sk websites Blocklist",
+	"description": "Filter composed of konspiratori.sk websites list",
+	"homepage": "https://github.com/LubosKadasi/konspiratori.sk-AdGuard-blocklist",
+	"sources": [
+		{
+			"name": "Konspiratori.sk websites Blocklist",
+			"source": "https://konspiratori.sk/static/lists/zoznam_bez_score.txt",
+			"type": "adblock",
+			"transformations": [
+					"RemoveModifiers",
+					"Validate"
+			]
+		}
+	],
+	"transformations": [
+			"Deduplicate",
+			"Compress"
+	]
+}
