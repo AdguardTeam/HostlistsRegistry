@@ -208,7 +208,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
             // Write sorted translations back to the translations file
             await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
             logger.warning(
-                'Don\'t forget to add the missing translations in base locale',
+                'Please do not forget to add missing translations to the base locale',
             );
         }
     } catch (error) {
