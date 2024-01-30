@@ -19,7 +19,15 @@ const getDifferences = (targetCollection, sourceCollection) => {
  * @param {Array} arrayOfObjects - The array of objects to be sorted.
  * @returns {Array} - The sorted array of objects.
  */
-const sortByID = (arrayOfObjects) => arrayOfObjects.sort(({ id: a }, { id: b }) => a - b);
+const sortByID = (arrayOfObjects) => arrayOfObjects.sort((objectA, objectB) => {
+    if (objectA.id < objectB.id) {
+        return -1;
+    }
+    if (objectA.id > objectB.id) {
+        return 1;
+    }
+    return 0;
+});
 
 module.exports = {
     getDifferences,

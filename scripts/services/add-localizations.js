@@ -59,11 +59,12 @@ const getDirNames = async (folderPath) => {
  * Locale corresponds to the name of the directory from which the information is taken
  * @returns {groupedFileObjects} An object containing grouped translations by component id,
  * sign (name, description etc.) and locale.
+ * @throws {Error} If there is an issue.
  */
 const groupFileContentByTranslations = (fileObjects, locale) => {
     // Initialize an empty object to store grouped translations
     const groupedFileObjects = {};
-
+    const invalidKeys = [];
     fileObjects.forEach((fileObject) => {
         // Initialize empty objects for translation, locales, and component locales (groups id)
         const translate = {};
@@ -77,7 +78,11 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
             }
             // Destructure the key into category, id, and sign (name, description, etc.)
             // servicesgroup.cdn.name --> id - cdn , sign - name
-            const [, id, sign] = key.split('.');
+            const [prefix, id, sign] = key.split('.');
+            // Check if id and sign are present
+            if (prefix !== 'servicesgroup' || !id || sign !== 'name') {
+                invalidKeys.push(key);
+            }
             // { name: "Cdn" }
             translate[sign] = value;
             // locale - directory name
@@ -89,8 +94,9 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
         // Merge component locales into the groupedFileObjects
         Object.assign(groupedFileObjects, componentLocalesTranslate);
     });
-
-    return groupedFileObjects;
+    return (invalidKeys.length > 0)
+        ? logger.error(`Invalid key format: ${invalidKeys.join(', ')}. Expected format: 'servicesgroup.id.name'`)
+        : groupedFileObjects;
 };
 /**
  * Asynchronously reads file content from specified directories, groups the content by translations,
@@ -115,7 +121,8 @@ const getGroupedTranslations = async (localesFolder) => {
                 // Read and parse the translation content
                 const translationContent = JSON.parse(readFileSync(translationFilePath));
                 // Group translations by id, locale and use (name, description etc.)
-                existingTranslations.push(groupFileContentByTranslations(translationContent, directory));
+                const groupedTranslations = groupFileContentByTranslations(translationContent, directory);
+                existingTranslations.push(groupedTranslations);
             }
         });
         // Reduce the array of translations into a single grouped object
