@@ -171,7 +171,7 @@ const getGroupedTranslations = async (localesFolder) => {
 
 /**
  * @typedef {{groups: GroupTranslationByLocale}} categoryLocalesTranslate
- * @property {object} groupedFileObjects - An object containing grouped translations
+ * @property {GroupTranslationByLocale} - An object containing grouped translations
  * for a specific group within a category and locale.
  */
 
