@@ -1,9 +1,14 @@
 /**
+ * @typedef {object} ObjectWithID
+ * @property {string} id - The identifier of the object.
+ */
+
+/**
  * Get the differences between two array of objects based on their 'id' property.
  *
- * @param {Array<object>} targetCollection - An array of target objects.
- * @param {Array<object>} sourceCollection - An array of source objects.
- * @returns {Array<object> | null} - An array containing objects representing the differences,
+ * @param {ObjectWithID[]} targetCollection - An array of target objects.
+ * @param {ObjectWithID[]} sourceCollection - An array of source objects.
+ * @returns {ObjectWithID[] | null} - An array containing objects representing the differences,
  * or null if no differences exist.
  */
 const getDifferences = (targetCollection, sourceCollection) => {
@@ -16,8 +21,8 @@ const getDifferences = (targetCollection, sourceCollection) => {
 /**
  * Sorts an array of objects based on their identifiers (ID).
  *
- * @param {Array} arrayOfObjects - The array of objects to be sorted.
- * @returns {Array} - The sorted array of objects.
+ * @param {ObjectWithID[]} arrayOfObjects - The array of objects to be sorted.
+ * @returns {ObjectWithID[]} - The sorted array of objects.
  */
 const sortByID = (arrayOfObjects) => arrayOfObjects.sort((objectA, objectB) => {
     if (objectA.id < objectB.id) {
