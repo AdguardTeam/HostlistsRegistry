@@ -4,7 +4,7 @@ const fs = require('fs/promises');
 
 const { getJsonBlockedData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
-const { getDifferences, sortByID } = require('./scripts/helpers/helpers');
+const { getDifferences, sortByProperty } = require('./scripts/helpers/helpers');
 const { restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 const { addServiceLocalizations } = require('./scripts/services/add-localizations');
@@ -53,7 +53,11 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         // If there are differences, throw warning and add them to the services.json file
         if (groupsDifferences) {
             // Add to final services.json file absent groups
-            groupedServicesData.groups = sortByID([...groupedServicesData.groups, ...groupsDifferences]);
+            groupedServicesData.groups = sortByProperty(
+                [...groupedServicesData.groups, ...groupsDifferences],
+                'value',
+                'id',
+            );
             // Get groups name for warning
             const absentGroups = groupsDifferences.map((group) => group.id);
             logger.warning(`These groups have no services: ${absentGroups.join(', ')}`);

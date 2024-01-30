@@ -1,3 +1,4 @@
+const { logger } = require('./logger');
 /**
  * @typedef {object} ObjectWithID
  * @property {string} id - The identifier of the object.
@@ -19,22 +20,43 @@ const getDifferences = (targetCollection, sourceCollection) => {
 };
 
 /**
- * Sorts an array of objects based on their identifiers (ID).
+ * Sorts a collection (array of objects) based on a specified property and sorting criteria.
  *
- * @param {ObjectWithID[]} arrayOfObjects - The array of objects to be sorted.
- * @returns {ObjectWithID[]} - The sorted array of objects.
+ * @typedef {object} AssociativeArrayItem
+ * @property {string|number} key - The identifier property.
  */
-const sortByID = (arrayOfObjects) => arrayOfObjects.sort((objectA, objectB) => {
-    if (objectA.id < objectB.id) {
-        return -1;
+
+/**
+ * @typedef {Array<AssociativeArrayItem>} ObjectCollection
+ */
+
+/**
+ * @param {ObjectCollection} objectCollection - The collection of items to be sorted.
+ * @param {string} propName - The property name to use for sorting (key or value).
+ * @param {(string|number)} [sortKey] - The key to sort the items by.
+ *
+ * @throws {Error} Will throw an error if the values for sorting are not strings or numbers.
+ *
+ * @returns {ObjectCollection} - The sorted collection.
+ */
+const sortByProperty = (objectCollection, propName, sortKey) => objectCollection.sort((a, b) => {
+    try {
+        const valueA = propName === 'value' ? a[sortKey] : Object.keys(a).join('');
+        const valueB = propName === 'value' ? b[sortKey] : Object.keys(b).join('');
+
+        if (typeof valueA === 'number' && typeof valueB === 'number') {
+            return valueA - valueB;
+        } if (typeof valueA === 'string' && typeof valueB === 'string') {
+            return valueA.localeCompare(valueB);
+        }
+        throw new Error('Invalid type. Must be either string or number.');
+    } catch (error) {
+        logger.error(error);
+        throw error;
     }
-    if (objectA.id > objectB.id) {
-        return 1;
-    }
-    return 0;
 });
 
 module.exports = {
     getDifferences,
-    sortByID,
+    sortByProperty,
 };

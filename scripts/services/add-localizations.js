@@ -1,6 +1,7 @@
 const { promises: fs, existsSync, readFileSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
+const { sortByProperty } = require('../helpers/helpers');
 
 const SERVICES_TRANSLATION_FILE = 'services.json';
 const BASE_LOCALE_DIR = 'locales/en';
@@ -24,13 +25,28 @@ const getDirNames = async (folderPath) => {
 };
 
 /**
+ * @typedef {object} GroupID
+ * @property {string} id - The identifier of the group.
+ */
+
+/**
+ * @typedef {object} GroupLocale
+ * @property {string} locale - The locale of the group.
+ */
+
+/**
+ * @typedef {object} GroupTranslation
+ * @property {string} name - The name translation.
+ */
+
+/**
  * @typedef {{
- *   [id: string]: {
- *     [locale: string]: {
- *       name: string;
- *     };
- *   };
- * }} groupedFileObjects
+ *   GroupID: {
+ *     GroupLocale: {
+ *         GroupTranslation
+ *     }
+ *   }
+ * }} GroupTranslationByLocale
  *
  * where
  * - `id` is a group id, used in yml files
@@ -57,7 +73,7 @@ const getDirNames = async (folderPath) => {
  * @param {Array<object>} fileObjects - An array of objects representing file content.
  * @param {string} locale - The locale for which to group the file objects.
  * Locale corresponds to the name of the directory from which the information is taken
- * @returns {groupedFileObjects} An object containing grouped translations by component id,
+ * @returns {GroupTranslationByLocale} An object containing grouped translations by component id,
  * sign (name, description etc.) and locale.
  * @throws {Error} If there is an issue.
  */
@@ -140,7 +156,7 @@ const getGroupedTranslations = async (localesFolder) => {
 };
 
 /**
- * @typedef {{groups: groupedFileObjects}} categoryLocalesTranslate
+ * @typedef {{groups: GroupTranslationByLocale}} categoryLocalesTranslate
  * @property {object} groupedFileObjects - An object containing grouped translations
  * for a specific group within a category and locale.
  */
@@ -168,24 +184,6 @@ const getLocales = async (localesFolder) => {
 };
 
 /**
- * Sorts an array of translation objects based on their keys.
- *
- * @param {Array<object>} translations - Array of translation objects.
- * @returns {Array<object>} - Sorted array of translation objects.
- */
-const sortByKeys = (translations) => translations.sort((a, b) => {
-    const keysA = Object.keys(a).join('');
-    const keysB = Object.keys(b).join('');
-    if (keysA < keysB) {
-        return -1;
-    }
-    if (keysA > keysB) {
-        return 1;
-    }
-    return 0;
-});
-
-/**
  * Checks if translations exist for groups from the services file in the base locale.
  *
  * @param {string} servicesFile - Path to the file containing service data.
@@ -211,7 +209,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
         // If there are no translations for some groups - TODO comment is added
         if (missingLocales.length > 0) {
             // Sort existing translations and missing translations
-            const sortedTranslations = sortByKeys([...translations, ...missingLocales]);
+            const sortedTranslations = sortByProperty([...translations, ...missingLocales], 'key');
             // Write sorted translations back to the translations file
             await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
             logger.warning(
