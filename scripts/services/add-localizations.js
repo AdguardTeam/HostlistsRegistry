@@ -68,9 +68,23 @@ const getDirNames = async (folderPath) => {
  */
 
 /**
+ * @typedef {Array<object.<string, string>>} FileObjects
+ *
+ * @example
+ * [
+ *   {
+ *     "servicesgroup.cdn.name": "Content Delivery Network"
+ *   },
+ *   {
+ *     "servicesgroup.dating.name": "Dating Services"
+ *   },
+ * ]
+ */
+
+/**
  * Groups file content by translations for a specific locale.
  *
- * @param {Array<object>} fileObjects - An array of objects representing file content.
+ * @param {FileObjects} fileObjects - An array of objects representing file content.
  * @param {string} locale - The locale for which to group the file objects.
  * Locale corresponds to the name of the directory from which the information is taken
  * @returns {GroupTranslationByLocale} An object containing grouped translations by component id,
