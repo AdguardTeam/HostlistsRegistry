@@ -1,7 +1,7 @@
 const { promises: fs, existsSync, readFileSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
-const { sortByProperty } = require('../helpers/helpers');
+const { sortByFirstKeyName } = require('../helpers/helpers');
 
 const SERVICES_TRANSLATION_FILE = 'services.json';
 const BASE_LOCALE_DIR = 'locales/en';
@@ -223,7 +223,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
         // If there are no translations for some groups - TODO comment is added
         if (missingLocales.length > 0) {
             // Sort existing translations and missing translations
-            const sortedTranslations = sortByProperty([...translations, ...missingLocales], 'key');
+            const sortedTranslations = sortByFirstKeyName([...translations, ...missingLocales]);
             // Write sorted translations back to the translations file
             await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
             logger.warning(

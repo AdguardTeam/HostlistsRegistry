@@ -1,5 +1,5 @@
 const { logger } = require('../helpers/logger');
-const { sortByProperty } = require('../helpers/helpers');
+const { sortByKey } = require('../helpers/helpers');
 
 /**
  * @typedef {require('./type-defs').Service} Service
@@ -52,11 +52,11 @@ const groupServicesData = (combinedServiceContent) => {
             logger.error(`Services with id: ${invalidGroupNames.join(', ')} has an empty or missing 'group' key.`);
         }
         // Sort the combined groups array lexicographically by 'id'
-        const sortedGroups = sortByProperty(combinedGroups, 'value', 'id');
+        const sortedGroups = sortByKey(combinedGroups, 'id');
         // Object to store the final service data structure
         const servicesData = {};
         // Write the sorted combined service content array into the 'blocked_services' key
-        servicesData.blocked_services = sortByProperty(combinedServiceContent, 'value', 'id');
+        servicesData.blocked_services = sortByKey(combinedServiceContent, 'id');
         // Write the sorted combined groups array into the 'groups' key
         servicesData.groups = sortedGroups;
         // Return the structured service data
