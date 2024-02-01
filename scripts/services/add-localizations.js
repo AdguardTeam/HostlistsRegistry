@@ -2,6 +2,7 @@ const { promises: fs, existsSync, readFileSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
 const { sortByFirstKeyName } = require('../helpers/helpers');
+const { translationsCollectionSchema, servicesI18Schema } = require('./zod-schemas');
 
 const SERVICES_TRANSLATION_FILE = 'services.json';
 const BASE_LOCALE_DIR = 'locales/en';
@@ -92,6 +93,9 @@ const getDirNames = async (folderPath) => {
  * @throws {Error} If there is an issue.
  */
 const groupFileContentByTranslations = (fileObjects, locale) => {
+    // fileObjects - schema validation
+    // !!!! zod schema validation
+    translationsCollectionSchema.parse(fileObjects);
     // Initialize an empty object to store grouped translations
     const groupedFileObjects = {};
     const invalidKeys = [];
@@ -254,6 +258,7 @@ const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFi
         await checkBaseTranslations(outputServicesFile, SERVICES_BASE_TRANSLATION_FILEPATH);
         // Get grouped translations from different locales for service groups
         const localizations = await getLocales(localesFolder);
+        servicesI18Schema.parse(localizations);
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
         logger.success('Successfully added localizations');

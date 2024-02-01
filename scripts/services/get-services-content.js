@@ -35,7 +35,6 @@ const getJsonBlockedData = async (distFilePath) => {
     try {
         const fileContent = await fs.readFile(distFilePath);
         const serviceObjects = JSON.parse(fileContent);
-
         // Extract blocked services and groups from the parsed JSON
         blockedServices = serviceObjects.blocked_services;
         blockedGroups = serviceObjects.groups;
