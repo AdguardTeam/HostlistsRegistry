@@ -10,36 +10,8 @@
  */
 
 /**
- * @typedef {{ key: string}} Translation
- */
-
-/**
- * @typedef {Translation[]} TranslationsCollection
- */
-
-/**
- * @typedef {{ name: string }} TranslationName
- */
-
-/**
- * @typedef {{ [key: string]: TranslationName }} TranslationLocale
- */
-
-/**
- * @typedef {{ [key: string]: TranslationLocale }} TranslationId
- */
-
-/**
- * @typedef {{ [key: string]: TranslationId }} ServicesI18
- */
-
-/**
+ * Represents an individual group object from services combined file.
+ *
  * @typedef {object} Group
- * @property {string} id
- */
-
-/**
- * @typedef {object} GroupedServices
- * @property {Service[]} blocked_services
- * @property {Group[]} groups
+ * @property {string} id - The identifier of the group.
  */

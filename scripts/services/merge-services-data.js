@@ -2,7 +2,8 @@ const { logger } = require('../helpers/logger');
 const { sortByKey } = require('../helpers/helpers');
 
 /**
- * @typedef {require('./type-defs').Service} Service
+ * @typedef {import('./type-defs').Service} Service
+ * @typedef {import('./type-defs').Group} Group
  */
 
 /**
@@ -22,12 +23,18 @@ const mergeServicesData = (distServices, sourceServices) => {
 };
 
 /**
+ * @typedef {object} GroupedServices
+ * @property {Service[]} blocked_services - An array of Service objects.
+ * @property {Group[]} groups - An array of Group objects.
+ */
+
+/**
  * Combines service data into a structured format with grouped services and sorted groups.
  *
  * @param {Service[]} combinedServiceContent - An array of objects representing combined service data.
- * @returns {object} - Object containing structured service data.
+ * @returns {GroupedServices} - Object containing structured service data.
  *
- * @throws {Error} - Throws an error if the input data is not in the expected format or group is empty
+ * @throws {Error} - Throws an error if the input data is not in the expected format or group is empty.
  */
 const groupServicesData = (combinedServiceContent) => {
     try {

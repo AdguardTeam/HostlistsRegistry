@@ -8,6 +8,7 @@ const { getDifferences, sortByKey } = require('./scripts/helpers/helpers');
 const { restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 const { addServiceLocalizations } = require('./scripts/services/add-localizations');
+const { groupedServicesSchema } = require('./scripts/services/zod-schemas');
 
 const { logger } = require('./scripts/helpers/logger');
 
@@ -61,6 +62,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
             const absentGroups = groupsDifferences.map((group) => group.id);
             logger.warning(`These groups have no services: ${absentGroups.join(', ')}`);
         }
+        groupedServicesSchema.parse(groupedServicesData);
         // Write the grouped service data to the destination JSON file
         await fs.writeFile(distFilePath, JSON.stringify(groupedServicesData, null, 2));
         logger.success(`Successfully finished building ${distFilePath}`);

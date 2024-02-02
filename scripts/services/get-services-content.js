@@ -7,14 +7,8 @@ const YML_FILE_EXTENSION = '.yml';
 const { logger } = require('../helpers/logger');
 
 /**
- * @typedef {require('./type-defs').Service} Service
- */
-
-/**
- * Represents an individual group object from services combined file.
- *
- * @typedef {object} Group
- * @property {string} id - The identifier of the group.
+ * @typedef {import('./type-defs').Service} Service
+ * @typedef {import('./type-defs').Group} Group
  */
 
 /**
