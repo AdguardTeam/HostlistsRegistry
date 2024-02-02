@@ -2,7 +2,7 @@ const { promises: fs, existsSync, readFileSync } = require('fs');
 const path = require('path');
 const { logger } = require('../helpers/logger');
 const { sortByFirstKeyName } = require('../helpers/helpers');
-const { translationsCollectionSchema, servicesI18Schema } = require('./zod-schemas');
+const { translationsCollectionSchema, servicesI18Schema, translationSchema } = require('./zod-schemas');
 
 const SERVICES_TRANSLATION_FILE = 'services.json';
 const BASE_LOCALE_DIR = 'locales/en';
@@ -229,6 +229,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
             // Sort existing translations and missing translations
             const sortedTranslations = sortByFirstKeyName([...translations, ...missingLocales]);
             // Write sorted translations back to the translations file
+            translationSchema.parse(sortedTranslations);
             await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
             logger.warning(
                 'Please do not forget to add missing translations to the base locale',

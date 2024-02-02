@@ -2,6 +2,7 @@ const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const { logger } = require('../helpers/logger');
+const { serviceSchema } = require('./zod-schemas');
 
 const YML_FILE_EXTENSION = '.yml';
 
@@ -21,6 +22,7 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
         return;
     }
     const [removedObject, ...restObjects] = differences;
+    serviceSchema.parse(removedObject);
     await fs.writeFile(
         path.join(`${sourceDirPath}/${removedObject.id}${YML_FILE_EXTENSION}`),
         yaml.dump(removedObject, { lineWidth: -1 }),

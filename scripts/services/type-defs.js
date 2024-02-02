@@ -8,3 +8,38 @@
  * @property {string} icon_svg The icon of the service in SVG format.
  * @property {string} group The group of the service.
  */
+
+/**
+ * @typedef {{ key: string}} Translation
+ */
+
+/**
+ * @typedef {Translation[]} TranslationsCollection
+ */
+
+/**
+ * @typedef {{ name: string }} TranslationName
+ */
+
+/**
+ * @typedef {{ [key: string]: TranslationName }} TranslationLocale
+ */
+
+/**
+ * @typedef {{ [key: string]: TranslationLocale }} TranslationId
+ */
+
+/**
+ * @typedef {{ [key: string]: TranslationId }} ServicesI18
+ */
+
+/**
+ * @typedef {object} Group
+ * @property {string} id
+ */
+
+/**
+ * @typedef {object} GroupedServices
+ * @property {Service[]} blocked_services
+ * @property {Group[]} groups
+ */
