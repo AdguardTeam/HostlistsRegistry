@@ -69,7 +69,12 @@ const getDirNames = async (folderPath) => {
  */
 
 /**
- * @typedef {Array<object.<string, string>>} FileObjects
+ * @typedef {{ key: string}} Translation
+ * @example { "servicesgroup.cdn.name": "Content Delivery Network" }
+ */
+
+/**
+ * @typedef {Translation[]} TranslationsCollection
  *
  * @example
  * [
@@ -85,7 +90,7 @@ const getDirNames = async (folderPath) => {
 /**
  * Groups file content by translations for a specific locale.
  *
- * @param {FileObjects} fileObjects - An array of objects representing file content.
+ * @param {TranslationsCollection} fileObjects - An array of objects representing file content.
  * @param {string} locale - The locale for which to group the file objects.
  * Locale corresponds to the name of the directory from which the information is taken
  * @returns {GroupTranslationByLocale} An object containing grouped translations by component id,
@@ -94,7 +99,6 @@ const getDirNames = async (folderPath) => {
  */
 const groupFileContentByTranslations = (fileObjects, locale) => {
     // fileObjects - schema validation
-    // !!!! zod schema validation
     translationsCollectionSchema.parse(fileObjects);
     // Initialize an empty object to store grouped translations
     const groupedFileObjects = {};
@@ -133,11 +137,27 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
         : groupedFileObjects;
 };
 /**
+ * @typedef {{ name: string }} TranslationName
+ */
+
+/**
+ * @typedef {{ [key: string]: TranslationName }} TranslationLocale
+ */
+
+/**
+ * @typedef {{ [key: string]: { [key: string]: TranslationLocale } }} TranslationId
+ */
+
+/**
+ * @typedef {{ [key: string]: TranslationId }} groupedTranslations
+ */
+
+/**
  * Asynchronously reads file content from specified directories, groups the content by translations,
  * and returns an object representing the grouped translations.
  *
  * @param {string} localesFolder - The base path to the folder containing the directories.
- * @returns {Promise<object>} A promise that resolves to an object representing grouped translations.
+ * @returns {groupedTranslations} A promise that resolves to an object representing grouped translations.
  *
  * @throws {Error} If there is an issue reading the file or parsing its content.
  */
