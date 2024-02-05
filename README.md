@@ -160,17 +160,20 @@ Service metadata includes `id`, `name`, `rules`, `icon_svg`, `group`:
 - `rules` — list of domain rules in Adblock syntax (list of strings)
 - `icon_svg` — svg icon (string)
 - `group` - semantic group for service. Possible values:
-  - `cdn`,
-  - `dating`,
-  - `gambling`,
-  - `gaming`,
-  - `hosting`,
-  - `messenger`,
-  - `privacy`,
-  - `shopping`,
-  - `social_network`,
-  - `software`,
-  - `streaming`
+
+| Full Name                   | Key       | Definition                                                                              |
+|-----------------------------|-----------|-----------------------------------------------------------------------------------------|
+| Content Delivery Network    | `cdn`     | Optimizes content delivery for websites through caching and strategic distribution.    |
+| Dating Services             | `dating`  | Connects individuals seeking romantic relationships based on shared interests and preferences. |
+| Gambling Platforms          | `gambling`| Provides online gaming experiences with the chance to win prizes through casino games and |
+| Gaming Platforms            | `gaming`  | Offers a diverse range of video and online games for entertainment purposes.               |
+| Web Hosting                 | `hosting` | Offers server space and resources for hosting websites, applications, and digital content. |
+| Messaging Services          | `messenger` | Facilitates instant communication through text, voice, and video.                           |
+| Privacy Tools               | `privacy` | Prioritizes user data protection and privacy through encryption and strict measures.        |
+| Online Shopping             | `shopping`| Enables online commerce with features like secure payment options and order tracking.        |
+| Social Networking           | `social_network` | Connects individuals for interactions, community-building, and sharing personal and professional information |
+| Software Development Tools  | `software`| Provides tools and platforms for software development, coding, and project management.      |
+| Streaming Platforms         | `streaming`| Delivers real-time audio, video, or other content for immediate access and enjoyment.       |
 
 <details>
 
