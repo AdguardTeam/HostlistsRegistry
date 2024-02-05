@@ -53,18 +53,13 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         const groupsDifferences = getDifferences(distBlockedGroups, groupedServicesData.groups);
         // If there are differences, throw warning and add them to the services.json file
         if (groupsDifferences) {
-            // Add to final services.json file absent groups
-            groupedServicesData.groups = sortByKey(
-                [...groupedServicesData.groups, ...groupsDifferences],
-                'id',
-            );
             // Get groups name for warning
             const absentGroups = groupsDifferences.map((group) => group.id);
-            logger.warning(`These groups have no services: ${absentGroups.join(', ')}`);
+            logger.error(`These groups have no services: ${absentGroups.join(', ')}`);
         }
         groupedServicesSchema.parse(groupedServicesData);
         // Write the grouped service data to the destination JSON file
-        await fs.writeFile(distFilePath, JSON.stringify(groupedServicesData, null, 2));
+        await fs.writeFile(distFilePath, `${JSON.stringify(groupedServicesData, null, 2)}\n`);
         logger.success(`Successfully finished building ${distFilePath}`);
     } catch (error) {
         logger.error(`Error occurred while building ${distFilePath}`);

@@ -23,9 +23,10 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
     }
     const [removedObject, ...restObjects] = differences;
     serviceSchema.parse(removedObject);
+
     await fs.writeFile(
         path.join(`${sourceDirPath}/${removedObject.id}${YML_FILE_EXTENSION}`),
-        yaml.dump(removedObject, { lineWidth: -1 }),
+        yaml.dump(removedObject, `${{ lineWidth: -1 }}\n`),
     );
     if (sourceDirPath.length > 1) {
         await restoreRemovedSourceFiles(restObjects);

@@ -250,7 +250,7 @@ const checkBaseTranslations = async (servicesFile, translationsFile) => {
             const sortedTranslations = sortByFirstKeyName([...translations, ...missingLocales]);
             // Write sorted translations back to the translations file
             translationSchema.parse(sortedTranslations);
-            await fs.writeFile(translationsFile, JSON.stringify(sortedTranslations, null, 4));
+            await fs.writeFile(translationsFile, `${JSON.stringify(sortedTranslations, null, 4)}\n`);
             logger.warning(
                 'Please do not forget to add missing translations to the base locale',
             );
@@ -281,7 +281,7 @@ const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFi
         const localizations = await getLocales(localesFolder);
         servicesI18Schema.parse(localizations);
         // Write translations to combined translations file
-        await fs.writeFile(i18nFilePath, JSON.stringify(localizations, null, 4));
+        await fs.writeFile(i18nFilePath, `${JSON.stringify(localizations, null, 4)}\n`);
         logger.success('Successfully added localizations');
     } catch (error) {
         logger.error(`Error adding localizations: ${error}`);
