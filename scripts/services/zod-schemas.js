@@ -5,7 +5,6 @@ const { z } = require('zod');
  * The key should start with 'servicesgroup.' and end with '.name' and the value should be a string.
  * Should be only one property in the object.
  *
- * @typedef {{ [key: string]: string }} TranslationSchema
  * @example { 'servicesgroup.cdn.name': 'Content Delivery Network' }
  */
 const translationSchema = z.record(
@@ -18,15 +17,13 @@ const translationSchema = z.record(
 /**
  * Zod schema for an array of translation objects.
  *
- * @typedef {TranslationSchema[]} TranslationsCollectionSchema
  * @example [{ 'servicesgroup.cdn.name': 'Content Delivery Network' }]
  */
 const translationsCollectionSchema = z.array(translationSchema);
 
 /**
- * Zod schema for translation of specific name in a locale.
+ * Zod schema for translation of a specific name in a locale.
  *
- * @typedef {{ name: string }} TranslationNameSchema
  * @example {'name': 'Content Delivery Network'}
  */
 const translationNameSchema = z.object({ name: z.string() }).strict();
@@ -34,7 +31,6 @@ const translationNameSchema = z.object({ name: z.string() }).strict();
 /**
  * Zod schema for translating a specific service group in different locales.
  *
- * @typedef {{ [key: string]: TranslationNameSchema }} TranslationLocaleSchema
  * @example {'en': {'name': 'Content Delivery Network'}}
  */
 const translationLocaleSchema = z.record(
@@ -45,7 +41,6 @@ const translationLocaleSchema = z.record(
 /**
  * Zod schema for translating a specific service group in different locales.
  *
- * @typedef {{ [key: string]: TranslationLocaleSchema }} TranslationIdSchema
  * @example {'cdn':{'en': {'name': 'Content Delivery Network'}}}
  */
 const translationIdSchema = z.record(
@@ -56,7 +51,6 @@ const translationIdSchema = z.record(
 /**
  * Zod schema for a set of translation data for service groups.
  *
- * @typedef {{ groups: TranslationIdSchema }} ServicesI18Schema
  * @example {'groups': {'cdn':{'en': {'name': 'Content Delivery Network'}}}}
  */
 const servicesI18Schema = z.object({ groups: translationIdSchema });
@@ -64,13 +58,6 @@ const servicesI18Schema = z.object({ groups: translationIdSchema });
 /**
  * Zod schema for a service.
  *
- * @typedef {{
- *   id: string;
- *   name: string;
- *   rules: string[];
- *   icon_svg: string;
- *   group: string;
- * }} ServiceSchema
  * @example { id: 'cdn', name: 'Content Delivery Network', rules: [], icon_svg: '', group: 'cdn' }
  */
 const serviceSchema = z.object({
@@ -84,10 +71,6 @@ const serviceSchema = z.object({
 /**
  * Zod schema for services grouped by blocked_services and groups.
  *
- * @typedef {{
- *   blocked_services: ServiceSchema[];
- *   groups: { id: string }[];
- * }} GroupedServicesSchema
  * @example { blocked_services: [], groups: [{ id: 'cdn' }] }
  */
 const groupedServicesSchema = z.object({
