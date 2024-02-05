@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-02-05T15:05:46.548Z
+! Last modified: 2024-02-05T22:06:04.431Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -3239,3 +3239,7 @@ thepiratebay3.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/22268
 ||skinboxs.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/22353
+! https://www.virustotal.com/gui/url/3055f95af136e98d1341831e7157269daa57fc6302b6129a10d5560fa5056b94
+||gov.setupgovgr.xyz^
