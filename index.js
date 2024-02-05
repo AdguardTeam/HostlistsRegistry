@@ -4,7 +4,7 @@ const fs = require('fs/promises');
 
 const { getJsonBlockedData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
-const { getDifferences, sortByKey } = require('./scripts/helpers/helpers');
+const { getDifferences } = require('./scripts/helpers/helpers');
 const { restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 const { addServiceLocalizations } = require('./scripts/services/add-localizations');
