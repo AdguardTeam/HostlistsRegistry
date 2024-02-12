@@ -2175,21 +2175,41 @@
 				"name": "Hebrew language-specific blocking",
 				"description": "Designed specifically to block ads or other unwanted content in the Hebrew language."
 			},
+			"es": {
+				"name": "Bloqueo específico del idioma hebreo",
+				"description": "Diseñado específicamente para bloquear anuncios u otro contenido no deseado en idioma hebreo."
+			},
 			"fi": {
 				"name": "Heprean kielikohtainen mainosesto",
 				"description": "Suunniteltu erityisesti hepreankielisten mainosten ja ei-toivotun sisällön estoon."
+			},
+			"id": {
+				"name": "Penyaring khusus bahasa Ibrani",
+				"description": "Dirancang khusus untuk memblokir iklan atau konten lain yang tidak diinginkan dalam bahasa Ibrani."
 			},
 			"ja": {
 				"name": "ヘブライ語専用ブロッキング",
 				"description": "ヘブライ語の広告やその他の不要コンテンツをブロックするように設計されています。"
 			},
+			"ko": {
+				"name": "히브리어 특화 차단",
+				"description": "히브리어 광고나 원하지 않는 콘텐츠를 차단하도록 특별히 설계되었습니다."
+			},
 			"nl": {
 				"name": "Hebreeuwse taalspecifieke blokkering",
 				"description": "Specifiek ontworpen om advertenties of andere ongewenste inhoud in de Hebreeuwse taal te blokkeren."
 			},
+			"pt": {
+				"name": "Bloqueio específico no idioma hebraico",
+				"description": "Desenvolvido especificamente para bloquear anúncios ou outros conteúdos indesejados no idioma hebraico."
+			},
 			"pt_BR": {
 				"name": "Bloqueio específico do idioma hebraico",
 				"description": "Projetado especificamente para bloquear anúncios ou outros conteúdos indesejados no idioma hebraico."
+			},
+			"pt_PT": {
+				"name": "Bloqueio específico no idioma hebraico",
+				"description": "Desenvolvido especificamente para bloquear anúncios ou outros conteúdos indesejados no idioma hebraico."
 			},
 			"ru": {
 				"name": "Блокировка рекламы на иврите",
@@ -2206,6 +2226,14 @@
 			"uk": {
 				"name": "Блокування реклами івритом",
 				"description": "Розроблений спеціально для блокування реклами та іншого небажаного контенту на івриті."
+			},
+			"zh": {
+				"name": "针对希伯来语的拦截",
+				"description": "专门设计用于屏蔽希伯来语网页上的广告及不想看到的内容。"
+			},
+			"zh_TW": {
+				"name": "特定希伯來語的封鎖",
+				"description": "專門地旨在封鎖希伯來語廣告或其它討厭的內容。"
 			}
 		}
 	},
@@ -2311,7 +2339,7 @@
 				"description": "Zoznam pozostáva z niekoľkých filtrov (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList a EasyPrivacy) a je zjednodušený, aby bol lepšie kompatibilný s blokovaním reklám na úrovni DNS."
 			},
 			"sl": {
-				"name": "AdGuard Filter poenostavljenih imen domen",
+				"name": "AdGuard Filter DNS",
 				"description": "Seznam je sestavljen iz več filtrov (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList in EasyPrivacy) in je posebej poenostavljen, da je bolje združljiv z zaviranje oglasov na ravni DNS"
 			},
 			"sr": {
@@ -4027,7 +4055,7 @@
 			},
 			"id": {
 				"name": "SWE: Frellwit's Swedish Hosts File",
-				"description": "Bertujuan untuk menghilangkan iklan, pelacakan, scam & badware (terutama) pada situs berbahasa Swedia."
+				"description": "Daftar untuk memblokir iklan, pelacakan, penipuan & malware terutama di situs web Swedia"
 			},
 			"it": {
 				"name": "SWE: File Host svedese di Frellwit",
@@ -4111,20 +4139,43 @@
 				"name": "Phishing Army",
 				"description": "The blocklist to filter phishing domains"
 			},
+			"es": {
+				"name": "Phishing Army",
+				"description": "La lista de bloqueo para filtrar dominios de phishing"
+			},
 			"fi": {
 				"name": "Phishing Army",
 				"description": "Estolista tietojenkalasteluverkkotunnusten suodatukseen."
+			},
+			"id": {
+				"name": "Phishing Army"
 			},
 			"ja": {
 				"name": "Phishing Army",
 				"description": "フィッシングドメインをフィルタリングするためのブロックリストです。"
 			},
+			"ko": {
+				"name": "Phishing Army",
+				"description": "피싱 도메인을 필터링하는 차단 목록입니다."
+			},
 			"nl": {
-				"name": "Phishing-leger"
+				"name": "Phishing-leger",
+				"description": "De blokkeerlijst om phishing-domeinen te filteren"
+			},
+			"pl": {
+				"description": "Lista blokowanych do filtrowania domen phishingowych"
+			},
+			"pt": {
+				"name": "Phishing Army",
+				"description": "Lista de bloqueio para filtrar domínios de phishing"
 			},
 			"pt_BR": {
 				"name": "Phishing Army",
 				"description": "A lista de bloqueio para filtrar domínios de phishing"
+			},
+			"pt_PT": {
+				"name": "Phishing Army",
+				"description": "Lista de bloqueio para filtrar domínios de phishing"
 			},
 			"ru": {
 				"name": "Phishing Army"
@@ -4133,12 +4184,21 @@
 				"name": "Vojska lažnega predstavljanja",
 				"description": "Seznam onemogočenih za filtriranje domen lažnega predstavljanja!"
 			},
+			"tr": {
+				"name": "Phishing Army",
+				"description": "Kimlik avı alan adlarını filtrelemek için engel listesi"
+			},
 			"uk": {
 				"name": "ITA: Filtri-DNS",
 				"description": "Список блокування для фільтрування фішингових доменів"
 			},
+			"zh": {
+				"name": "Phishing Army",
+				"description": "针对过滤网络钓鱼域名的拦截列表。"
+			},
 			"zh_TW": {
-				"name": "Phishing Army"
+				"name": "Phishing Army",
+				"description": "用於過濾網路釣魚網域的封鎖清單！"
 			}
 		},
 		"19": {
@@ -5784,119 +5844,125 @@
 		},
 		"34": {
 			"ar": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "مكنسة - تنظف الإنترنت وتحمي خصوصيتك! يحظر الإعلانات ، الشركات التابعة ، التتبع ، المقاييس ، القياس عن بعد ، التصيد الاحتيالي ، البرامج الضارة ، الاحتيال ، التزييف ، العملات المعدنية وغيرها من الفضلات."
 			},
 			"be": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Мятла - ачышчае Інтэрнэт і абараняе вашу канфідэнцыяльнасць! Блакуе рэкламу, філіялы, адсочванне, метрыкі, тэлеметрыю, фішынг, шкоднасныя праграмы, махлярства, падробку, манеты і іншае дзярмо."
 			},
 			"da": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom — Renser internet og beskytter fortrolighed! Blokerer reklamer, tilknytninger, tracking, målingssystemer, telemetri, phishing, malware, scam, fake, mønter og andet skrammel."
 			},
 			"de": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Säubert das Internet und schützt Ihre Privatsphäre. Blockiert Werbung, Affiliate, Tracking, Metriken, Telemetrie, Phishing, Malware, Betrug, Fälschungen, Coins und anderen Mist."
 			},
 			"en": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap."
 			},
 			"es": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - ¡Limpia el Internet y protege tu privacidad! Bloquea anuncios, afiliados, rastreo, métricas, telemetría, phishing, malware, estafas, falsificaciones, Coins y demás problemas."
 			},
+			"fa": {
+				"name": "HaGeZi's Normal Blocklist"
+			},
 			"fi": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Luuta - Puhdistaa Internetin ja suojaa yksityisyyttäsi! Estää mainokset, kytkökset, seurannan, mittarit, telemetrian, tietojenkalastelun, haittaohjelmat, huijaukset, väärennökset, kolikot ja muuta roskaa."
 			},
 			"fr": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Nettoie l'Internet et protège votre vie privée ! Bloque les publicités, les affiliations, le pistage, les mesures, la télémétrie, le phishing, les logiciels malveillants, les escroqueries, les faux, les pièces de monnaie et autres saloperies."
 			},
 			"he": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "מטאטא - מנקה את האינטרנט ומגן על הפרטיות שלך! חוסם מודעות, שותפים, מעקב, מדדים, טלמטריה, פישינג, תוכנות זדוניות, הונאה, זיוף, מטבעות ועוד שטויות."
 			},
 			"hr": {
-				"name": "HaGeZi Personal Black & White",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Metla - Čisti internet i štiti vašu privatnost! Blokira oglase, partnere, praćenje, metriku, telemetriju, krađu identiteta, zlonamjerni softver, prijevare, lažne, kovanice i ostalo sranje."
 			},
 			"hu": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Seprű - Tisztítja az internetet és védi a magánéletét! Blokkolja a hirdetéseket, a leányvállalatokat, a nyomon követést, a mutatókat, a telemetriát, az adathalászatot, a rosszindulatú programokat, az átverést, a hamisítványokat, az érméket és más szarokat."
 			},
 			"id": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Sapu - Membersihkan Internet dan melindungi privasi Anda! Memblokir Iklan, Afiliasi, Pelacakan, Metrik, Telemetri, Phishing, Malware, Penipuan, Palsu, Koin, dan Omong Kosong lainnya."
 			},
 			"it": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Pulisce Internet e protegge la vostra privacy! Blocca gli annunci, le affiliazioni, il tracciamento, le metriche, la telemetria, il phishing, il malware, le truffe, i falsi, le monete e altre schifezze."
 			},
 			"ja": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.　（訳：ほうきみたいに、インターネットを掃除してプライバシーを守ります！広告、アフィリエイト、トラッキング、メトリックス、テレメトリ、フィッシング、マルウェア、詐欺、偽物、コイン、その他のゴミをブロックします。）"
 			},
 			"ko": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "인터넷을 깨끗하게 하고 데이터를 보호합니다. 광고, 제휴, 추적, 메트릭, 원격 측정, 피싱, 멀웨어, 사기, 코인 및 기타를 차단합니다."
 			},
 			"nl": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Reinigt het internet en beschermt jouw privacy! Blokkeert advertenties, affiliate, volgers, statistieken, telemetrie, phishing, malware, oplichterij, nep, munten en andere onzin."
 			},
 			"pl": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Miotła - Czyści Internet i chroni Twoją prywatność! Blokuje reklamy, podmioty stowarzyszone, śledzenie, metryki, telemetrię, phishing, złośliwe oprogramowanie, oszustwa, podróbki, monety i inne bzdury."
 			},
 			"pt": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Limpa a Internet e protege a sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraudes, falsificações, coins e outros problemas."
 			},
 			"pt_BR": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Limpa a Internet e protege a sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, golpes, falsificações, coins e outros problemas."
 			},
 			"pt_PT": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - Limpa a Internet e protege a sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraudes, falsificações, coins e outros problemas."
 			},
 			"ru": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Очищает интернет и защищает ваши данные. Блокирует рекламу, партнёрские программы, трекинг, метрику, телеметрию, фишинг, вредоносные программы, мошенничество, фейки, коины и прочее."
 			},
 			"sk": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Metla - Čistí internet a chráni vaše súkromie! Blokuje reklamy, partnerské, sledovacie, metrické, telemetrické, phishingové, malvérové, podvodné, falošné, mincové a iné šmejdy."
 			},
 			"sl": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Metla - Čisti internet in varuje vašo zasebnost! Blokira oglase, podružnice, sledenje, meritve, telemetrijo, lažno predstavljanje, zlonamerno programsko opremo, prevare, ponaredke, kovance in drugo sranje."
 			},
 			"sr": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Ekstenzija za postojeće blokčein liste, moja lična crno-bela lista. Deblokira lažne pozitivne i referentne domene."
 			},
+			"sv": {
+				"name": "HaGeZi's Normal Blocklist"
+			},
 			"tr": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom - İnterneti temizler ve gizliliğinizi korur! Reklamları, Ortaklık, İzleme, Ölçümler, Telemetri, Kimlik Avı, Kötü Amaçlı Yazılım, Dolandırıcılık, Sahte, Paralar ve diğer Saçmalıkları engeller."
 			},
 			"uk": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, партнерську програму, стеження, показники, телеметрію, фішинг, зловмисне програмне забезпечення, шахрайство, фейки тощо."
 			},
 			"vi": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Chổi - Dọn dẹp Internet và bảo vệ quyền riêng tư của bạn! Chặn quảng cáo, liên kết, theo dõi, số liệu, từ xa, lừa đảo, phần mềm độc hại, lừa đảo, giả mạo, tiền xu và những thứ tào lao khác."
 			},
 			"zh": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom 清洁互联网并保护隐私安全！拦截广告、联盟、跟踪、指标、遥测、网络钓鱼、恶意软件、诈骗、假货、硬币和其他垃圾。"
 			},
 			"zh_TW": {
-				"name": "HaGeZi Multi NORMAL",
+				"name": "HaGeZi's Normal Blocklist",
 				"description": "Broom 清潔網際網路並保護使用者的隱私！封鎖廣告、聯盟、跟踪、指標、遙測、網路釣魚、惡意軟體、詐騙、假貨、硬幣和其他垃圾。"
 			}
 		},
@@ -6860,21 +6926,41 @@
 				"name": "ISR: EasyList Hebrew",
 				"description": "List for blocking ads in Hebrew."
 			},
+			"es": {
+				"name": "ISR: EasyList Hebreo",
+				"description": "Lista para bloquear anuncios en hebreo."
+			},
 			"fi": {
 				"name": "ISR: EasyList Hebrew",
 				"description": "Suodatinlista mainosten estoon hepreankielisillä sivustoilla."
+			},
+			"id": {
+				"name": "ISR: EasyList Ibrani",
+				"description": "Daftar untuk memblokir iklan dalam bahasa Ibrani."
 			},
 			"ja": {
 				"name": "ISR: EasyList Hebrew",
 				"description": "ヘブライ語の広告ブロック用リストです。"
 			},
+			"ko": {
+				"name": "ISR: EasyList Hebrew",
+				"description": "히브리어 광고 차단 필터 목록입니다."
+			},
 			"nl": {
 				"name": "ISR: EasyList Hebreeuws",
 				"description": "Lijst voor het blokkeren van advertenties in het Hebreeuws."
 			},
+			"pt": {
+				"name": "ISR: EasyList hebraico",
+				"description": "Lista para bloquear anúncios em hebraico."
+			},
 			"pt_BR": {
 				"name": "ISR: EasyList Hebraico",
 				"description": "Lista para bloqueio de anúncios em hebraico."
+			},
+			"pt_PT": {
+				"name": "ISR: EasyList hebraico",
+				"description": "Lista para bloquear anúncios em hebraico."
 			},
 			"ru": {
 				"name": "ISR: EasyList иврит",
@@ -6891,6 +6977,14 @@
 			"uk": {
 				"name": "ISR: EasyList Hebrew",
 				"description": "Список для блокування реклами на івриті."
+			},
+			"zh": {
+				"name": "ISR：EasyList 希伯来语",
+				"description": "用于希伯来语广告拦截的列表。"
+			},
+			"zh_TW": {
+				"name": "ISR: EasyList 希伯來語",
+				"description": "用於希伯來語廣告封鎖的清單。"
 			}
 		},
 		"44": {
@@ -6906,21 +7000,41 @@
 				"name": "HaGeZi's Threat Intelligence Feeds",
 				"description": "Increases security significantly! Blocks Malware, Cryptojacking, Spam, Scam and Phishing."
 			},
+			"es": {
+				"name": "La información de inteligencia sobre amenazas de HaGeZi.",
+				"description": "Aumenta significativamente la seguridad! Bloquea malware, criptominado, spam, estafas y phishing."
+			},
 			"fi": {
 				"name": "HaGeZi's Threat Intelligence Feeds",
 				"description": "Parantaa suojasuta merkittävästi! Estää haittasisältöä, cryptokaappauksia, roskapostia, huijauksia ja tietojenkalastelua."
+			},
+			"id": {
+				"name": "Umpan Intelijen Ancaman HaGeZi",
+				"description": "Meningkatkan keamanan secara signifikan! Memblokir Malware, Cryptojacking, Spam, Penipuan, dan Phishing."
 			},
 			"ja": {
 				"name": "HaGeZi's Threat Intelligence Feeds",
 				"description": "セキュリティを大幅に向上！マルウェア、クリプトジャッキング、スパム、詐欺、フィッシングをブロックします。"
 			},
+			"ko": {
+				"name": "HaGeZi's Threat Intelligence Feeds",
+				"description": "보안을 크게 향상합니다! 멀웨어, 크립토재킹, 스팸, 사기 및 피싱을 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's Threat Intelligence Feeds",
 				"description": "Verhoogt de veiligheid aanzienlijk! Blokkeert malware, cryptojacking, spam, oplichting en phishing."
 			},
+			"pt": {
+				"name": "HaGeZi's Threat Intelligence Feeds",
+				"description": "Aumenta significativamente a segurança! Bloqueia malware, criptojacking, spam, fraudes e phishing."
+			},
 			"pt_BR": {
 				"name": "Feeds de inteligência contra ameaças do HaGeZi",
 				"description": "Aumenta significativamente a segurança! Bloqueia malware, cryptojacking, spam, fraudes e phishing."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Threat Intelligence Feeds",
+				"description": "Aumenta significativamente a segurança! Bloqueia malware, criptojacking, spam, fraudes e phishing."
 			},
 			"ru": {
 				"name": "HaGeZi's Threat Intelligence Feeds",
@@ -6937,6 +7051,14 @@
 			"uk": {
 				"name": "HaGeZi's Threat Intelligence Feeds",
 				"description": "Значно підвищує безпеку! Блокує шкідливе програмне забезпечення, криптоджекінг, спам, шахрайство та фішинг."
+			},
+			"zh": {
+				"name": "HaGeZi's Threat Intelligence Feeds",
+				"description": "显着提高安全性。拦截恶意软件、加密劫持、垃圾邮件、诈骗和钓鱼。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Threat Intelligence Feeds",
+				"description": "顯著提高安全性。封鎖惡意軟體、加密劫持、垃圾郵件、詐騙和釣魚。"
 			}
 		},
 		"45": {
@@ -6952,21 +7074,41 @@
 				"name": "HaGeZi's Allowlist Referral",
 				"description": "This list unblocks affiliate & tracking referral links that appear in mails, search results etc."
 			},
+			"es": {
+				"name": "Lista permitida de referidos de HaGeZi",
+				"description": "Esta lista desbloquea los enlaces de referido y rastreadores que aparecen en correos electrónicos, resultados de búsqueda, etc."
+			},
 			"fi": {
 				"name": "HaGeZi's Allowlist Referral",
 				"description": "Sallii (poistaa eston) sähköpostiviesteissä, hakutuloksissa yms. näkyviä kumppanuus- ja seurantaviittauslinkkejä."
+			},
+			"id": {
+				"name": "Rujukan Daftar Putih HaGeZi",
+				"description": "Daftar ini membuka blokir afiliasi & pelacakan tautan rujukan yang muncul di e-mail, hasil pencarian, dll."
 			},
 			"ja": {
 				"name": "HaGeZi's Allowlist Referral",
 				"description": "このリストは、メールや検索結果などに表示されるアフィリエイトリンクやトラッキング紹介リンクのブロックを解除します。"
 			},
+			"ko": {
+				"name": "HaGeZi's Allowlist Referral",
+				"description": "이 목록은 메일, 검색 결과에 나타나는 제휴 및 추적 추천 링크의 차단을 해제합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's Toelatingslijst verwijzingen",
 				"description": "Deze lijst deblokkeert affiliate- en volgers-verwijzingslinks die verschijnen in e-mails, zoekresultaten enz."
 			},
+			"pt": {
+				"name": "HaGeZi's Allowlist Referral",
+				"description": "Esta lista desbloqueia as ligações de referência de afiliados e de rastreadores que aparecem em mensagens de correio eletrónico, resultados de pesquisa etc."
+			},
 			"pt_BR": {
 				"name": "Referência da lista de permissões do HaGeZi",
 				"description": "Essa lista desbloqueia links de referência de afiliados e de rastreamento que aparecem em e-mails, resultados de pesquisa etc."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Allowlist Referral",
+				"description": "Esta lista desbloqueia as ligações de referência de afiliados e de rastreadores que aparecem em mensagens de correio eletrónico, resultados de pesquisa etc."
 			},
 			"ru": {
 				"name": "HaGeZi's Allowlist Referral",
@@ -6983,6 +7125,14 @@
 			"uk": {
 				"name": "HaGeZi's Allowlist Referral",
 				"description": "Цей список розблоковує партнерські та відстежувальні реферальні посилання, які з'являються в листах, результатах пошуку тощо."
+			},
+			"zh": {
+				"name": "HaGeZi's Allowlist Referral",
+				"description": "此列表可解锁出现在邮件、搜索结果等中的附属机构和跟踪推荐链接。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Allowlist Referral",
+				"description": "此清單可解鎖出現在郵件、搜尋結果等中的附屬機構和追蹤推薦連結。"
 			}
 		},
 		"46": {
@@ -6991,28 +7141,48 @@
 				"description": "Blokerer websteder og tjenester primært brugt til ulovlig distribution af ophavsretligt beskyttet indhold."
 			},
 			"de": {
-				"name": "HaGeZi's Anti-Piraterie-Sperrliste",
+				"name": "HaGeZi's Anti-Piracy Blocklist",
 				"description": "Sperrt Websites und Dienste, die hauptsächlich für die illegale Verbreitung von urheberrechtlich geschützten Inhalten genutzt werden."
 			},
 			"en": {
 				"name": "HaGeZi's Anti-Piracy Blocklist",
 				"description": "Blocks websites and services that are mainly used for illegal distribution of copyrighted content."
 			},
+			"es": {
+				"name": "Lista de bloqueo antipiratería de HaGeZi",
+				"description": "Bloquea sitios web y servicios que se utilizan principalmente para la distribución ilegal de contenido protegido por derechos de autor."
+			},
 			"fi": {
 				"name": "HaGeZi's Anti-Piracy Blocklist",
 				"description": "Estää verkkosivustoja ja palveluita, joita käytetään pääasiassa tekijänoikeudella suojatun sisällön laittomaan jakeluun."
+			},
+			"id": {
+				"name": "Daftar Blokir Anti-Pembajakan HaGeZi",
+				"description": "Memblokir situs web dan layanan yang umumnya digunakan untuk distribusi konten berhak cipta secara ilegal."
 			},
 			"ja": {
 				"name": "HaGeZi's Anti-Piracy Blocklist",
 				"description": "主に著作権で保護されたコンテンツの違法配信に使用されるウェブサイトやサービスをブロックします。"
 			},
+			"ko": {
+				"name": "HaGeZi's Anti-Piracy Blocklist",
+				"description": "저작권이 있는 콘텐츠의 불법 배포에 주로 쓰이는 웹사이트 및 서비스를 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's Blokkeerlijst tegen piraterij",
 				"description": "Blokkeert websites en services die voornamelijk worden gebruikt voor illegale distributie van auteursrechtelijk beschermde inhoud."
 			},
+			"pt": {
+				"name": "HaGeZi's Anti-Piracy Blocklist",
+				"description": "Bloqueia sítios Web e serviços que são utilizados principalmente para a distribuição ilegal de conteúdos protegidos por direitos de autor."
+			},
 			"pt_BR": {
 				"name": "Lista de bloqueio antipirataria da HaGeZi",
 				"description": "Bloqueia sites e serviços que são usados principalmente para distribuição ilegal de conteúdo protegido por direitos autorais."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Anti-Piracy Blocklist",
+				"description": "Bloqueia sítios Web e serviços que são utilizados principalmente para a distribuição ilegal de conteúdos protegidos por direitos de autor."
 			},
 			"ru": {
 				"name": "HaGeZi's Anti-Piracy Blocklist",
@@ -7029,6 +7199,14 @@
 			"uk": {
 				"name": "HaGeZi's Anti-Piracy Blocklist",
 				"description": "Блокує вебсайти та сервіси, які використовуються переважно для незаконного розповсюдження контенту, захищеного авторським правом."
+			},
+			"zh": {
+				"name": "HaGeZi's Anti-Piracy Blocklist",
+				"description": "拦截主要用于非法分发受版权保护的内容的网站和服务。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Anti-Piracy Blocklist",
+				"description": "封鎖主要用於非法分發受版權保護的內容的網站和服務。"
 			}
 		},
 		"47": {
@@ -7037,28 +7215,48 @@
 				"description": "Blokerer for spilindhold."
 			},
 			"de": {
-				"name": "HaGeZi's Sperrliste für Glücksspiele",
+				"name": "HaGeZi's Gambling Blocklist",
 				"description": "Sperrt Glücksspielinhalte."
 			},
 			"en": {
 				"name": "HaGeZi's Gambling Blocklist",
 				"description": "Blocks gambling content."
 			},
+			"es": {
+				"name": "Lista de bloqueo de juegos de azar de HaGeZi",
+				"description": "Bloquea contenido de juegos de azar."
+			},
 			"fi": {
 				"name": "HaGeZi's Gambling Blocklist",
 				"description": "Estää uhkapelisisältöä."
+			},
+			"id": {
+				"name": "Daftar Blokir Perjudian HaGeZi",
+				"description": "Memblokir konten perjudian."
 			},
 			"ja": {
 				"name": "HaGeZi's Gambling Blocklist",
 				"description": "ギャンブル系コンテンツをブロックします。"
 			},
+			"ko": {
+				"name": "HaGeZi's Gambling Blocklist",
+				"description": "도박 콘텐츠를 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's Blokkeerlijst voor kansspelen",
 				"description": "Blokkeert inhoud voor kansspelen."
 			},
+			"pt": {
+				"name": "HaGeZi's Gambling Blocklist",
+				"description": "Bloqueia conteúdos de jogos de azar."
+			},
 			"pt_BR": {
 				"name": "Lista de bloqueio de jogos de azar do HaGeZi",
 				"description": "Bloqueia conteúdo de jogos de azar."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Gambling Blocklist",
+				"description": "Bloqueia conteúdos de jogos de azar."
 			},
 			"ru": {
 				"name": "HaGeZi's Gambling Blocklist",
@@ -7075,6 +7273,14 @@
 			"uk": {
 				"name": "HaGeZi's Gambling Blocklist",
 				"description": "Блокує азартний контент."
+			},
+			"zh": {
+				"name": "HaGeZi's Gambling Blocklist",
+				"description": "拦截赌博内容。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Gambling Blocklist",
+				"description": "封鎖賭博內容。"
 			}
 		},
 		"48": {
@@ -7090,21 +7296,41 @@
 				"name": "HaGeZi's Pro Blocklist",
 				"description": "Big broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap."
 			},
+			"es": {
+				"name": "Lista de bloqueo profesional de HaGeZi",
+				"description": "Big Broom: ¡limpia Internet y protege tu privacidad! Bloquea anuncios, afiliados, seguimiento, métricas, telemetría, phishing, malware, estafas, falsificaciones, monedas y otra basura."
+			},
 			"fi": {
 				"name": "HaGeZi's Pro Blocklist",
 				"description": "Iso luuta - Puhdistaa Internetin ja suojaa yksityisyyttäsi! Estää mainoksia, kytköksiä, seurantoja, tilastointia, telemetriaa, tietojenkalastelua, haittasisältöä, huijauksia, väärennöksiä, mainausta ja muuta roskaa."
+			},
+			"id": {
+				"name": "Daftar Blokir HaGeZi Pro",
+				"description": "Sapu besar - Membersihkan Internet dan melindungi privasi Anda! Memblokir Iklan, Afiliasi, Pelacakan, Metrik, Telemetri, Phishing, Malware, Penipuan, Pemalsuan, Koin, dan Omong kosong lainnya."
 			},
 			"ja": {
 				"name": "HaGeZi's Pro Blocklist",
 				"description": "Big Broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.　（訳：大きなほうき（Big broom）みたいに、インターネットを掃除してプライバシーを守ります！広告、アフィリエイト、トラッキング、メトリックス、テレメトリ、フィッシング、マルウェア、詐欺、偽物、コイン、その他のゴミをブロックします。）"
 			},
+			"ko": {
+				"name": "HaGeZi's Pro Blocklist",
+				"description": "Big broom - 인터넷을 깨끗하게 하고 데이터를 보호합니다. 광고, 제휴, 추적, 메트릭, 원격 측정, 피싱, 멀웨어, 사기, 코인 및 기타를 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's Pro Blokkeerlijst",
 				"description": "Grote bezem - Reinigt het internet en beschermt jouw privacy! Blokkeert advertenties, affiliates, volgers, statistieken, telemetrie, phishing, malware, oplichting, nep, munten en andere onzin."
 			},
+			"pt": {
+				"name": "HaGeZi's Pro Blocklist",
+				"description": "Big broom: Limpa a Internet e protege a tua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraudes, falsificações, Coins etc."
+			},
 			"pt_BR": {
 				"name": "Lista de bloqueio profissional do HaGeZi",
 				"description": "Big broom: limpa a Internet e protege sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, golpes, falsificações, moedas e outros tipos de lixo."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Pro Blocklist",
+				"description": "Big broom: Limpa a Internet e protege a tua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraudes, falsificações, Coins etc."
 			},
 			"ru": {
 				"name": "HaGeZi's Pro Blocklist"
@@ -7120,6 +7346,14 @@
 			"uk": {
 				"name": "HaGeZi's Pro Blocklist",
 				"description": "Очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, партнерську програму, стеження, показники, телеметрію, фішинг, зловмисне програмне забезпечення, шахрайство, фейки тощо."
+			},
+			"zh": {
+				"name": "HaGeZi's Pro Blocklist",
+				"description": "Big Broom 清洁互联网并保护隐私安全！拦截广告、会员、跟踪、指标、遥测、网络钓鱼、恶意软件、诈骗、假货、硬币和其他垃圾。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Pro Blocklist",
+				"description": "Big broom 清潔網際網路並保護使用者的隱私！封鎖廣告、聯盟、追蹤、指標、遙測、網路釣魚、惡意軟體、詐騙、假貨、硬幣和其他垃圾。"
 			}
 		},
 		"49": {
@@ -7128,27 +7362,48 @@
 				"description": "Ultimate Sweeper - renser internet og beskytter fortroligheden! Blokerer annoncer, affiliate, tracking (+referral), metrics, telemetri, phishing, malware, snyd, free hoster, forfalskning, coins og andet skrammel."
 			},
 			"de": {
-				"name": "HaGeZis ultimative Sperrliste",
+				"name": "HaGeZi's Ultimate Blocklist",
 				"description": "Ultimative Kehrmaschine - Reinigt das Internet gründlich und schützt Ihre Privatsphäre! Sperrt Werbung, Affiliate, Tracking (+Referral), Metriken, Telemetrie, Phishing, Malware, Scam, Free Hoster, Fake, Coins und anderen Kram."
 			},
 			"en": {
 				"name": "HaGeZi's Ultimate Blocklist",
 				"description": "Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap."
 			},
+			"es": {
+				"name": "Lista de bloqueo definitiva de HaGeZi",
+				"description": "Ultimate Sweeper: Limpia estrictamente Internet y protege tu privacidad! Bloquea anuncios, afiliados, seguimiento (+referencias), métricas, telemetría, phishing, malware, estafas, hosting gratuito, falsificaciones, monedas y otra basura."
+			},
 			"fi": {
 				"name": "HaGeZi's Ultimate Blocklist",
 				"description": "Teholakaisukone - Puhdistaa Internetin tiukasti ja suojaa yksityisyyttäsi! Estää mainoksia, kytköksiä, seurantoja (+viitetietoja), tilastointia, telemetriaa, tietojenkalastelua, haittasisältöä, huijauksia, ilmaishostauksia, väärennöksiä, mainausta ja muuta roskaa."
+			},
+			"id": {
+				"name": "Daftar Blokir HaGeZi Ultimate",
+				"description": "Sapu besar - Membersihkan Internet secara ketat dan melindungi privasi Anda! Memblokir Iklan, Afiliasi, Pelacak (+Rujukan), Metrik, Telemetri, Phishing, Malware, Penipuan, Hoster Gratis, Pemalsuan, Koin, dan Omong kosong lainnya."
 			},
 			"ja": {
 				"name": "HaGeZi's Ultimate Blocklist",
 				"description": "Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap.（訳：Ultimate Sweeper - インターネットを厳格に浄化し、プライバシーを保護します！広告、アフィリエイト、トラッキング（+リフェラル）、メトリックス、テレメトリー、フィッシング、マルウェア、詐欺、無料ホスター、フェイク、コイン、その他のゴミをブロックします。）"
 			},
+			"ko": {
+				"name": "HaGeZi's Ultimate Blocklist",
+				"description": "Ultimate Sweeper - 인터넷을 깨끗하게 하고 데이터를 엄격히 보호합니다. 광고, 제휴, 추적 (+추천), 메트릭, 원격 측정, 피싱, 멀웨어, 사기, 무료 호스터, 코인 및 기타 쓰레기를 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's ultieme blokkeerlijst",
 				"description": "Ultimate Sweeper - Reinigt strikt het internet en beschermt jouw privacy! Blokkeert advertenties, aangesloten bedrijven, volgers (+verwijzing), statistieken, telemetrie, phishing, malware, oplichting, gratis hoster, nep, munten en andere onzin."
 			},
+			"pt": {
+				"name": "HaGeZi's Ultimate Blocklist",
+				"description": "Ultimate Sweeper: Limpa rigorosamente a Internet e protege a sua privacidade! Bloqueia Anúncios, Afiliados, Rastreamento (+Referência), Métricas, Telemetria, Phishing, Malware, Golpes, Free Hoster, Fakes, Coins etc."
+			},
 			"pt_BR": {
-				"name": "Lista de bloqueio definitiva do HaGeZi"
+				"name": "Lista de bloqueio definitiva do HaGeZi",
+				"description": "Ultimate Sweeper: limpa estritamente a Internet e protege sua privacidade! Bloqueia anúncios, afiliados, rastreamento (+referência), métricas, telemetria, phishing, malware, fraude, hoster gratuito, falsificação, moedas e outros tipos de conteúdo problemático."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Ultimate Blocklist",
+				"description": "Ultimate Sweeper: Limpa rigorosamente a Internet e protege a sua privacidade! Bloqueia Anúncios, Afiliados, Rastreamento (+Referência), Métricas, Telemetria, Phishing, Malware, Golpes, Free Hoster, Fakes, Coins etc."
 			},
 			"ru": {
 				"name": "HaGeZi's Ultimate Blocklist"
@@ -7164,6 +7419,14 @@
 			"uk": {
 				"name": "HaGeZi's Ultimate Blocklist",
 				"description": "Суворо очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, партнерські програми, відстеження (зокрема, реферали), метрику, телеметрію, фішинг, шкідливі програми, шахрайство, безплатні хостинги, фейки, монети та інший непотріб."
+			},
+			"zh": {
+				"name": "HaGeZi's Ultimate Blocklist",
+				"description": "Ultimate Sweeper 严格清洁互联网并保护隐私安全。拦截广告、会员、跟踪（+推荐）、指标、遥测、网络钓鱼、恶意软件、诈骗、免费托管、假货、硬币和其他垃圾。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Ultimate Blocklist",
+				"description": "Ultimate Sweeper 嚴格清潔網際網路並保護隱私安全。封鎖廣告、會員、追蹤（+推薦）、指標、遙測、網路釣魚、惡意軟體、詐騙、免費托管、假貨、硬幣和其他垃圾。"
 			}
 		},
 		"50": {
@@ -7179,17 +7442,41 @@
 				"name": "uBlock₀ filters – Badware risks",
 				"description": "For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead."
 			},
+			"es": {
+				"name": "Filtros uBlock₀ - Riesgos de malware",
+				"description": "Para los sitios conocidos por poner a los usuarios en riesgo de instalar adware/crapware/malware, o de que les roben sus credenciales de inicio de sesión, etc. El objetivo es al menos asegurarse de advertir al usuario sobre los riesgos que conlleva."
+			},
 			"fi": {
 				"name": "uBlock₀ filters – Badware risks",
 				"description": "Sivustoille, joiden on todistettu altistavan käyttäjiään mm. kirjautumistietojen yms. varkauteen jotavien mainos-, roska- ja haittaohjelmien asennukselle. Vähimmäistavoite on varmistaa, että käyttäjää varoitetaan mahdollisista riskeistä."
+			},
+			"id": {
+				"name": "Filter uBlock₀ – Risiko badware",
+				"description": "Untuk situs-situs yang didokumentasikan menempatkan pengguna pada risiko memasang adware/crapware/malware, memiliki kredensial login yang dicuri, dll. Tujuannya adalah untuk setidaknya memastikan pengguna diperingatkan akan risiko yang ada."
 			},
 			"ja": {
 				"name": "uBlock₀ filters – Badware risks",
 				"description": "アドウェア／クラップウェア／マルウェアのインストール、ログイン認証情報の盗難などのリスクにユーザーをさらすと文書化されたサイトが対象。少なくともユーザーに先のリスクを確実に警告することが目的です。"
 			},
+			"ko": {
+				"name": "uBlock₀ filters – Badware risks",
+				"description": "사용자를 애드웨어/크랩웨어/멀웨어 설치, 로그인 자격 증명 도용 등의 위험에 빠뜨리는 것으로 등재된 사이트의 경우, 최소한 사용자에게 발생할 수 있는 위험을 경고하도록 합니다."
+			},
 			"nl": {
 				"name": "uBlock₀-filters – Badwarerisico's",
 				"description": "Voor sites die gedocumenteerd zijn dat gebruikers het risico lopen adware/crapware/malware te installeren, dat aanmeldgegevens worden gestolen, enz. Het doel is om er in ieder geval voor te zorgen dat een gebruiker wordt gewaarschuwd voor de risico's die zich kunnen voordoen."
+			},
+			"pt": {
+				"name": "Filtros uBlock₀: riscos de badware",
+				"description": "Para sítios web que colocam os utilizadores em risco de instalação de adware/crapware/malware, roubo de credenciais de início de sessão roubadas etc. O objetivo é, pelo menos, garantir que o utilizador é avisado dos riscos que corre."
+			},
+			"pt_BR": {
+				"name": "Filtros uBlock₀: risco de badware",
+				"description": "Para sites documentados que colocam os usuários em risco de instalar adware/crapware/malware, ter credenciais de login roubadas, etc. O objetivo é pelo menos garantir que um usuário seja avisado sobre os riscos futuros."
+			},
+			"pt_PT": {
+				"name": "Filtros uBlock₀: riscos de badware",
+				"description": "Para sítios web que colocam os utilizadores em risco de instalação de adware/crapware/malware, roubo de credenciais de início de sessão roubadas etc. O objetivo é, pelo menos, garantir que o utilizador é avisado dos riscos que corre."
 			},
 			"ru": {
 				"name": "uBlock₀ filters – Badware risks",
@@ -7206,6 +7493,14 @@
 			"uk": {
 				"name": "uBlock₀ filters – Badware risks",
 				"description": "Для сайтів, на яких задокументовано, що вони наражають користувачів на ризик встановлення рекламного, шкідливого ПЗ, викрадення облікових даних тощо. Мета полягає в тому, щоб принаймні попередити користувача про майбутні ризики."
+			},
+			"zh": {
+				"name": "uBlock₀ filters – Badware risks",
+				"description": "对于记录在案的站点，该站点会使用户面临安装广告软件/垃圾软件/恶意软件、登录凭据被盗等风险。目的是至少确保警告用户注意未来的风险。"
+			},
+			"zh_TW": {
+				"name": "uBlock₀ filters – Badware risks",
+				"description": "用於記錄在案的站點，該站點會讓使用者面臨安裝廣告軟體/垃圾如at/惡意軟體、登入憑據被盜等風險。目的是至少確保警告使用者注意未來的風險。"
 			}
 		},
 		"51": {
@@ -7214,24 +7509,48 @@
 				"description": "Sweeper - Aggressive renser internet og beskytter fortroligheden! Blokerer annoncer, affiliate, sporing, metrics, telemetri, phishing, malware, snyd, forfalskning, coins og andet skrammel."
 			},
 			"de": {
-				"name": "HaGeZi's Pro++ Sperrliste",
+				"name": "HaGeZi's Pro++ Blocklist",
 				"description": "Kehrmaschine - Aggressive Bereinigung des Internets und Schutz Ihrer Privatsphäre! Sperrt Werbung, Affiliate, Tracking, Metriken, Telemetrie, Phishing, Malware, Scam, Fake, Coins und anderen Kram."
 			},
 			"en": {
 				"name": "HaGeZi's Pro++ Blocklist",
 				"description": "Sweeper - Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap."
 			},
+			"es": {
+				"name": "Lista de bloqueo Pro++ de HaGeZi",
+				"description": "Sweeper - Limpia agresivamente Internet y protege tu privacidad! Bloquea anuncios, afiliados, seguimiento, métricas, telemetría, phishing, malware, estafas, falsificaciones, monedas y otra basura."
+			},
 			"fi": {
 				"name": "HaGeZi's Pro++ Blocklist",
 				"description": "Lakaisukone - Puhdistaa Internetin ja suojaa yksityisyyttäsi! Estää mainoksia, kytköksiä, seurantoja, tilastointia, telemetriaa, tietojenkalastelua, haittasisältöä, huijauksia, väärennöksiä, mainausta ja muuta roskaa."
+			},
+			"id": {
+				"name": "Daftar Blokir HaGeZi Pro++",
+				"description": "Penyapu - Agresif membersihkan Internet dan melindungi privasi Anda! Memblokir Iklan, Afiliasi, Pelacakan, Metrik, Telemetri, Phishing, Malware, Penipuan, Pemalsuan, Koin, dan Omong Kosong lainnya."
 			},
 			"ja": {
 				"name": "HaGeZi's Pro++ Blocklist",
 				"description": "Sweeper - Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.（訳：Sweeper - アグレッシブにインターネットをクリーンにしてプライバシーを保護します！広告、アフィリエイト、トラッキング、メトリックス、テレメトリー、フィッシング、マルウェア、詐欺、フェイク、コイン、その他のゴミをブロックします。）"
 			},
+			"ko": {
+				"name": "HaGeZi's Pro++ Blocklist",
+				"description": "Sweeper - 적극적으로 인터넷을 깨끗하게 하고 데이터를 보호합니다. 광고, 제휴, 추적, 메트릭, 원격 측정, 피싱, 멀웨어, 사기, 코인 및 기타 쓰레기를 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's Pro++ Blokkeerlijst",
 				"description": "Sweeper - Agressief reinigt het internet en beschermt jouw privacy! Blokkeert advertenties, aangesloten bedrijven, volgers, statistieken, telemetrie, phishing, malware, oplichting, nep, munten en andere onzin."
+			},
+			"pt": {
+				"name": "HaGeZi's Pro++ Blocklist",
+				"description": "Sweeper: limpa agressivamente a Internet e protege sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraude, falsificação, Coins etc."
+			},
+			"pt_BR": {
+				"name": "Lista de bloqueio Pro++ do HaGeZi",
+				"description": "Sweeper: limpa agressivamente a Internet e protege sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraude, falsificação, moedas e outros tipo de conteúdo problemático."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Pro++ Blocklist",
+				"description": "Sweeper: limpa agressivamente a Internet e protege sua privacidade! Bloqueia anúncios, afiliados, rastreamento, métricas, telemetria, phishing, malware, fraude, falsificação, Coins etc."
 			},
 			"ru": {
 				"name": "HaGeZi's Pro++ Blocklist"
@@ -7247,6 +7566,14 @@
 			"uk": {
 				"name": "HaGeZi's Pro++ Blocklist",
 				"description": "Агресивно очищає інтернет і захищає вашу конфіденційність! Блокує рекламу, афіліати, відстеження, метрики, телеметрію, фішинг, шкідливі програми, шахрайство, фейки, монети та інший непотріб."
+			},
+			"zh": {
+				"name": "HaGeZi's Pro++ Blocklist",
+				"description": "Sweeper 深入清洁互联网并保护隐私安全！拦截广告、会员、跟踪、指标、遥测、网络钓鱼、恶意软件、诈骗、假货、硬币和其他垃圾。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Pro++ Blocklist",
+				"description": "Sweeper 深入清潔網際網路並保護使用者的隱私！封鎖廣告、聯盟、追蹤、指標、遙測、網路釣魚、惡意軟體、詐騙、假貨、硬幣和其他垃圾。"
 			}
 		},
 		"52": {
@@ -7255,23 +7582,48 @@
 				"description": "Forhindrer metoder i at omgå den opsatte DNS, blokerer krypteret DNS, VPN, TOR og proxy'er. Omgåelsesforhindring garanteres ikke."
 			},
 			"de": {
-				"name": "HaGeZis verschlüsselte DNS/VPN/TOR/Proxy-Umgehung",
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
 				"description": "Verhindert Methoden zur Umgehung Ihres DNS, sperrt verschlüsselte DNS, VPN, TOR, Proxies. Das Verhindern von Umgehungen kann nicht garantiert werden."
 			},
 			"en": {
 				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
 				"description": "Prevents methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, and proxies. Prevention of bypassing is not guaranteed."
 			},
+			"es": {
+				"name": "HaGeZi: DNS cifrado/VPN/TOR/Proxy Bypass",
+				"description": "Evite métodos para sobrepasar su DNS, bloquea DNS cifrados, VPN, TOR, Proxies. No se garantiza la prevención de elusiones de seguridad."
+			},
 			"fi": {
 				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
 				"description": "Estää DNS:n ohitusmenetelmiä, salatun DNS:n, VPN- ja TOR-yhteyksiä sekä välityspalvelimia. Ohituksen estoa ei taata."
+			},
+			"id": {
+				"name": "Jalan Pintas DNS/VPN/TOR/Proxy yang Terenkripsi HaGeZi",
+				"description": "Metode pencegahan untuk melewati DNS Anda, memblokir DNS terenkripsi, VPN, TOR, dan proksi. Pencegah pelewatan tidak dijamin."
 			},
 			"ja": {
 				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
 				"description": "DNSをバイパスする手法を防止し、暗号化されたDNS、VPN、TOR、プロキシをブロックします。バイパスの防止は保証されません。"
 			},
+			"ko": {
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+				"description": "DNS를 우회하는 방법을 막고, 암호화된 DNS, VPN, TOR 및 프록시를 차단합니다. 우회 방지는 보장되지 않습니다."
+			},
 			"nl": {
-				"name": "HaGeZi's versleutelde DNS/VPN/TOR/Proxy Bypass"
+				"name": "HaGeZi's versleutelde DNS/VPN/TOR/Proxy Bypass",
+				"description": "Voorkomt methoden om jouw DNS te omzeilen, blokkeert gecodeerde DNS, VPN, TOR, proxy's. Het voorkomen van bypassing is niet gegarandeerd."
+			},
+			"pt": {
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+				"description": "Impede métodos para ignorar seu DNS, bloqueia DNS criptografado, VPN, TOR e proxies. A prevenção de desvios não é garantida."
+			},
+			"pt_BR": {
+				"name": "DNS/VPN/TOR/Proxy Bypass criptografado da HaGeZi",
+				"description": "Previne métodos para contornar seu DNS, bloqueia DNS criptografado, VPN, TOR e proxies. A prevenção do não é garantida."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+				"description": "Impede métodos para ignorar seu DNS, bloqueia DNS criptografado, VPN, TOR e proxies. A prevenção de desvios não é garantida."
 			},
 			"ru": {
 				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass"
@@ -7281,11 +7633,20 @@
 				"description": "Prepreči metode za obhod vašega DNS-ja, zavira šifrirane DNS, VPN, TOR, namestniške strežnike. Preprečevanje obvoda ni zagotovljeno."
 			},
 			"tr": {
-				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass"
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+				"description": "DNS'nizi atlama yöntemlerini önler, şifrelenmiş DNS, VPN, TOR ve proxy'leri engeller. Atlamanın önlenmesi garanti edilmez."
 			},
 			"uk": {
 				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
 				"description": "Запобігає методам обходу вашого DNS, блокує зашифровані DNS, VPN, TOR і проксі-сервери. Запобігання обходу не гарантується."
+			},
+			"zh": {
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+				"description": "防止绕过 DNS 的方法，拦截加密的 DNS、VPN、TOR、代理。不能保证防止绕过。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+				"description": "防止繞過 DNS 的方法，封鎖加密的 DNS、VPN、TOR、代理。不能保證防止繞過。"
 			}
 		},
 		"53": {
@@ -7301,16 +7662,41 @@
 				"name": "AWAvenue Ads Rule",
 				"description": "Uses Adblock syntax to fight against various advertising SDKs in Android apps on the network level, preventing them from loading."
 			},
+			"es": {
+				"name": "Regla de anuncios de AWAvenue",
+				"description": "Utiliza la sintaxis de Adblock para luchar contra varios SDK de publicidad en aplicaciones de Android desde el nivel de red, evitando que se carguen."
+			},
 			"fi": {
 				"name": "AWAvenue Ads Rule",
 				"description": "Taistelee Adblock-syntaksin avulla erilaisia Android-sovellusten sisältämiä mainonta-SDK:ita vastaan verkkotasolla estäen niitä latautumasta."
+			},
+			"id": {
+				"name": "Aturan Iklan AWAvenue",
+				"description": "Menggunakan sintaks Adblock untuk melawan berbagai SDK iklan di aplikasi Android pada tingkat jaringan, mencegahnya dimuat."
 			},
 			"ja": {
 				"name": "AWAvenue Ads Rule",
 				"description": "Adblockシンタックスを使用して、ネットワークレベルでAndroidアプリの様々な広告SDKと戦い、それらが読み込まれるのを防ぎます。"
 			},
+			"ko": {
+				"name": "AWAvenue Ads Rule",
+				"description": "Adblock 구문을 사용해 네트워크 수준에서 Android 앱의 다양한 광고 SDK에 맞서 불러오기를 방지합니다."
+			},
 			"nl": {
-				"name": "AWAvenue-advertentieregel"
+				"name": "AWAvenue-advertentieregel",
+				"description": "Gebruikt Adblock-syntax om verschillende SDK's voor reclame in Android-apps te bestrijden vanaf het netwerkniveau en te voorkomen dat ze worden geladen."
+			},
+			"pt": {
+				"name": "AWAvenue Ads Rule",
+				"description": "Usa a sintaxe de bloqueio de anúncios para combater vários SDKs de publicidade em aplicativos Android no nível da rede, evitando que sejam carregados."
+			},
+			"pt_BR": {
+				"name": "AWAvenue Ads Rule",
+				"description": "Usa a sintaxe do bloqueador de anúncios para combater vários SDKs de publicidade em aplicativos Android no nível da rede, evitando que sejam carregados."
+			},
+			"pt_PT": {
+				"name": "AWAvenue Ads Rule",
+				"description": "Usa a sintaxe de bloqueio de anúncios para combater vários SDKs de publicidade em aplicativos Android no nível da rede, evitando que sejam carregados."
 			},
 			"ru": {
 				"name": "AWAvenue Ads Rule"
@@ -7323,11 +7709,20 @@
 				"description": "Uporablja sintakso Zaviralca oglasov za boj proti različnim oglaševalskim SDK-jem v aplikacijah Android na omrežni ravni, prepreči njihovo nalaganje."
 			},
 			"tr": {
-				"name": "AWAvenue Ads Rule"
+				"name": "AWAvenue Ads Rule",
+				"description": "Android uygulamalarındaki çeşitli reklam SDK'larına karşı ağ düzeyinde savaşmak için Reklam söz dizimini kullanır ve bunların yüklenmesini engeller."
 			},
 			"uk": {
 				"name": "AWAvenue Ads Rule",
 				"description": "Використовує Adblock-синтаксис для боротьби з різними рекламними SDK у програмах Android на мережевому рівні, запобігаючи їхньому завантаженню."
+			},
+			"zh": {
+				"name": "AWAvenue Ads Rule",
+				"description": "使用 Adblock 语法从网络层面对抗 Android 应用中的各种广告 SDK，阻止其加载。"
+			},
+			"zh_TW": {
+				"name": "AWAvenue Ads Rule",
+				"description": "使用 Adblock 語法從網路層面對抗 Android 應用中的各種廣告 SDK，阻止其載入。"
 			}
 		},
 		"54": {
@@ -7336,24 +7731,48 @@
 				"description": "Blokerer dynamiske DNS-tjenester for at beskytte mod ondsindet brug i phishing-kampagner mv."
 			},
 			"de": {
-				"name": "HaGeZis DynDNS-Sperrliste",
+				"name": "HaGeZi's DynDNS Blocklist",
 				"description": "Sperrt dynamische DNS-Dienste zum Schutz vor böswilliger Nutzung in Phishing-Kampagnen und anderen Fällen."
 			},
 			"en": {
 				"name": "HaGeZi's DynDNS Blocklist",
 				"description": "Blocks dynamic DNS services to protect against malicious use in phishing campaigns and others."
 			},
+			"es": {
+				"name": "Lista de bloqueo DynDNS de HaGeZi",
+				"description": "Bloquea los servicios DNS dinámicos para proteger contra el uso malicioso en campañas de phishing y otros."
+			},
 			"fi": {
 				"name": "HaGeZi's DynDNS Blocklist",
 				"description": "Estää dynaamiset DNS-palvelut niiden mahdolliselta väärinkäytön vuoksi mm. tietojenkalastelukampanjoissa."
+			},
+			"id": {
+				"name": "Daftar Blokir HaGeZi DynDNS",
+				"description": "Memblokir layanan DNS dinamis untuk melindungi dari penggunaan jahat dalam kampanye phishing dan lainnya."
 			},
 			"ja": {
 				"name": "HaGeZi's DynDNS Blocklist",
 				"description": "ダイナミックDNSサービスをブロックすることで、フィッシングキャンペーンなどでの悪意のある利用から保護します。"
 			},
+			"ko": {
+				"name": "HaGeZi's DynDNS Blocklist",
+				"description": "피싱 캠페인 등의 악용을 막기 위해 동적 DNS 서비스를 차단합니다."
+			},
 			"nl": {
 				"name": "HaGeZi's DynDNS-blokkeerlijst",
 				"description": "Blokkeert dynamische DNS-diensten om te beschermen tegen kwaadwillig gebruik in onder andere phishing-campagnes."
+			},
+			"pt": {
+				"name": "HaGeZi's DynDNS Blocklist",
+				"description": "Bloqueia os serviços DNS dinâmicos para proteger contra a utilização maliciosa em campanhas de phishing e outras situações."
+			},
+			"pt_BR": {
+				"name": "Lista de bloqueio DynDNS do HaGeZi",
+				"description": "Bloqueia serviços de DNS dinâmico para proteger contra o uso malicioso em campanhas de phishing e outros."
+			},
+			"pt_PT": {
+				"name": "HaGeZi's DynDNS Blocklist",
+				"description": "Bloqueia os serviços DNS dinâmicos para proteger contra a utilização maliciosa em campanhas de phishing e outras situações."
 			},
 			"ru": {
 				"name": "HaGeZi's DynDNS Blocklist",
@@ -7374,6 +7793,14 @@
 			"uk": {
 				"name": "HaGeZi's DynDNS Blocklist",
 				"description": "Блокує динамічні служби DNS для захисту від зловмисного використання у фішингових кампаніях тощо."
+			},
+			"zh": {
+				"name": "HaGeZi's DynDNS Blocklist",
+				"description": "阻止动态 DNS 服务，以防止在网络钓鱼活动和其他活动中恶意使用。"
+			},
+			"zh_TW": {
+				"name": "HaGeZi's DynDNS Blocklist",
+				"description": "阻止動態 DNS 服務，以防止在網路釣魚活動和其他活動中惡意使用。"
 			}
 		}
 	}
