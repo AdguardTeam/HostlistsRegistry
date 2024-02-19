@@ -1,0 +1,19 @@
+{
+  "name": "hostsVN",
+  "description": "Hosts block ads of Vietnamese",
+  "homepage": "https://github.com/bigdargon/hostsVN",
+  "sources": [
+    {
+      "name": "hostsVN",
+      "source": "https://raw.githubusercontent.com/bigdargon/hostsVN/master/filters/adservers-all.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
