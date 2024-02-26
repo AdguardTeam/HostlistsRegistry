@@ -2,7 +2,7 @@
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-02-26T11:05:12.390Z
+! Last modified: 2024-02-26T12:07:36.965Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -11,7 +11,7 @@
 ! Source: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
 !
 ! Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
-! 规则版本: 1.3.4
+! 规则版本: 1.4.0
 ! 更新时间: 2024-02-26
 ! 
 ! 项目地址：https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -261,6 +261,7 @@
 ||jpush.html5.qq.com^
 ||jpush.io^
 ||jswebcollects.kugou.com^
+||kl.67it.com^
 ||ks.pull.yximgs.com^
 ||lf1-cdn-tos.bytegoofy.com^
 ||liveats-vod.video.ptqy.gitv.tv^
@@ -268,6 +269,7 @@
 ||log-api-mn.huxiu.com^
 ||log-api.huxiu.com^
 ||log-api.pangolin-sdk-toutiao.com^
+||log-report.com^
 ||log-sdk.gifshow.com^
 ||log-upload-os.hoyoverse.com^
 ||log-upload.mihoyo.com^
@@ -294,6 +296,7 @@
 ||m.kubiqq.com^
 ||m1.ad.10010.com^
 ||masdkv6.3g.qq.com^
+||mazu.m.qq.com^
 ||mdp-usertrace-cn.heytapmobi.com^
 ||metok.sys.miui.com^
 ||metrics.apple.com^
@@ -303,6 +306,7 @@
 ||metrics2.data.hicloud.com^
 ||mi.gdt.qq.com^
 ||miav-cse.avlyun.com^
+||mine.baidu.com^
 ||miui-fxcse.avlyun.com^
 ||mnqlog.ldmnq.com^
 ||mobads-logs.baidu.com^
@@ -339,6 +343,7 @@
 ||pgdt.ugdtimg.com^
 ||pglstatp-toutiao.com^
 ||pig.pupuapi.com^
+||pixon.ads-pixiv.net^
 ||policy.video.ptqy.gitv.tv^
 ||proxy.advp.apple.com^
 ||public.gdtimg.com^
@@ -361,6 +366,7 @@
 ||s3.qq.com^
 ||samsung-com.112.2o7.net^
 ||samsungads.com^
+||sanme2.taisantech.com^
 ||saveu5-normal-lq.zijieapi.com^
 ||scdown.qq.com^
 ||sdk-cache.video.ptqy.gitv.tv^
@@ -379,6 +385,7 @@
 ||sensors-log.dongqiudi.com^
 ||service.changhong.upgrade2.huan.tv^
 ||sf16-static.i18n-pglstatp.com^
+||shouji.sogou.com^
 ||skdisplay.jd.com^
 ||slb-p2p.vcloud.ks-live.com^
 ||smartad.10010.com^
@@ -386,6 +393,7 @@
 ||sngmta.qq.com^
 ||stat.y.qq.com^
 ||static.ads-twitter.com^
+||statics.woozooo.com^
 ||staticsns.cdn.bcebos.com^
 ||stats.qiumibao.com^
 ||statsigapi.net^
@@ -404,7 +412,10 @@
 ||tj.b.qq.com^
 ||tj.video.qq.com^
 ||tmead.y.qq.com^
+||tmfmazu-wangka.m.qq.com^
+||tmfmazu.m.qq.com^
 ||tmfsdk.m.qq.com^
+||tmfsdktcpv4.m.qq.com^
 ||tnc3-aliec1.toutiaoapi.com^
 ||tnc3-aliec2.bytedance.com^
 ||tnc3-aliec2.toutiaoapi.com^
@@ -477,7 +488,6 @@
 ||webstat.qiumibao.com^
 ||win.gdt.qq.com^
 ||wn.x.jd.com^
-||shouji.sogou.com^
 ||ws.sj.qq.com^
 ||www42.zskwai.com^
 ||wxa.wxs.qq.com^
@@ -490,23 +500,22 @@
 ||xlviiirdr.com^
 ||xlviirdr.com^
 ||youxi.kugou.com^
-||pixon.ads-pixiv.net^
-||statics.woozooo.com^
-||sanme2.taisantech.com^
-||kl.67it.com^
 /*-ad-*.byteimg.com/
-/*-ad.sm.cn/
-/*-ad.wtzw.com/
-/*.log.aliyuncs.com/
-/*-normal-lq.zijieapi.com/
-/*.data.hicloud.com/
 /*-ad-sign.byteimg.com/
+/*-ad.sm.cn/
+/*-ad.video.yximgs.com/
+/*-ad.wtzw.com/
 /*-be-pack-sign.pglstatp-toutiao.com/
 /*-lm.adkwai.com/
-/*.a.market.xiaomi.com/
-/*-ad.video.yximgs.com/
+/*-normal-lq.zijieapi.com/
+/*.*.shouji.sogou.com/
 /*.*skwai.com/
+/*.a.market.xiaomi.com/
+/*.data.hicloud.com/
+/*.log.aliyuncs.com/
+/*.shouji.sogou.com/
 /*.zskwai.com/
 /ads*-normal-*.zijieapi.com/
-/*.shouji.sogou.com/
-/*.*.shouji.sogou.com/
+/cloud-inject-global.oss-cn-hongkong.aliyuncs.com/
+/cloudinject*-dev.*.*-*-*.amazonaws.com/
+/cloudinject*-dev.s3.ap-northoreast-1.amazonaws.com/
