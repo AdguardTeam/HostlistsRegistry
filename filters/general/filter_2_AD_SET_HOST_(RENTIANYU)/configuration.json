@@ -1,0 +1,20 @@
+{
+  "name": "AD_SET_HOST_(RENTIANYU)",
+  "description": "This project collects multiple hosts to remove ads and duplicates.",
+  "homepage": "https://github.com/rentianyu/Ad-set-hosts",
+  "sources": [
+    {
+      "name": "AD_SET_HOST_(RENTIANYU)",
+      "source": "https://raw.githubusercontent.com/rentianyu/Ad-set-hosts/master/adguard",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
