@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-03-19T17:06:22.131Z
+! Last modified: 2024-03-19T18:06:10.946Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -20,10 +20,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 19 Mar 2024 16:48 UTC
-! Version: 2024.0319.1648.22
+! Last modified: 19 Mar 2024 17:06 UTC
+! Version: 2024.0319.1706.18
 ! Syntax: AdGuard
-! Number of latin TLDs: 67 - punycode TLDs: 148
+! Number of latin TLDs: 67 - punycode TLDs: 151
 !
 ||*.asia^$denyallow=amzn.asia
 ||*.autos^
@@ -92,6 +92,7 @@
 ||*.work^$denyallow=frame.work
 ||*.wtf^$denyallow=akko.wtf|myip.wtf|plooshiesaresocute.wtf|tigress.wtf
 ||*.zip^$denyallow=community.zip|financialstatement.zip|lemmy.zip|redecanaistv.zip|redecanais.zip|url.zip
+||*.xn--p1acf^
 ||*.xn--11b4c3d^
 ||*.xn--1ck2e1b^
 ||*.xn--1qqw23a^
@@ -121,7 +122,6 @@
 ||*.xn--80asehdb^
 ||*.xn--80aswg^
 ||*.xn--8y0a063a^
-||*.xn--90a3ac^
 ||*.xn--90ae^
 ||*.xn--90ais^
 ||*.xn--9dbq2a^
@@ -129,7 +129,6 @@
 ||*.xn--9krt00a^
 ||*.xn--b4w605ferd^
 ||*.xn--bck1b9a5dre4c^
-||*.xn--c1avg^
 ||*.xn--c2br7g^
 ||*.xn--cck2b3b^
 ||*.xn--cckwcxetd^
@@ -143,8 +142,8 @@
 ||*.xn--e1a4c^
 ||*.xn--eckvdtc9d^
 ||*.xn--efvy88h^
-||*.xn--fct429k^
 ||*.xn--fhbei^
+||*.xn--fct429k^
 ||*.xn--fiq228c5hs^
 ||*.xn--fiq64b^
 ||*.xn--fiqs8s^
@@ -160,13 +159,11 @@
 ||*.xn--gk3at1e^
 ||*.xn--h2breg3eve^
 ||*.xn--h2brj9c^
-||*.xn--h2brj9c8c^
-||*.xn--hxt814e^
-||*.xn--i1b6b1a6a2e^
-||*.xn--imr513n^
 ||*.xn--io0a7i^
-||*.xn--j1aef^
-||*.xn--j1amh^
+||*.xn--imr513n^
+||*.xn--i1b6b1a6a2e^
+||*.xn--hxt814e^
+||*.xn--h2brj9c8c^
 ||*.xn--j6w193g^
 ||*.xn--jlq480n2rg^
 ||*.xn--jlq61u9w7b^
@@ -175,7 +172,6 @@
 ||*.xn--kprw13d^
 ||*.xn--kpry57d^
 ||*.xn--kput3i^
-||*.xn--l1acc^
 ||*.xn--lgbbat1ad8j^
 ||*.xn--mgb9awbf^
 ||*.xn--mgba3a3ejt^
@@ -186,20 +182,20 @@
 ||*.xn--mgbab2bd^
 ||*.xn--mgbah1a3hjkrd^
 ||*.xn--mgbai9azgqp6j^
-||*.xn--mgbayh7gpa^
-||*.xn--mgbbh1a^
-||*.xn--mgbbh1a71e^
-||*.xn--mgbc0a9azcg^
-||*.xn--mgbca7dzdo^
-||*.xn--mgbcpq6gpa1a^
-||*.xn--mgberp4a5d4ar^
-||*.xn--mgbgu82a^
-||*.xn--mgbi4ecexp^
-||*.xn--mgbpl2fh^
+||*.xn--mix891f^
+||*.xn--mgbx4cd0ab^
 ||*.xn--mgbt3dhd^
 ||*.xn--mgbtx2b^
-||*.xn--mgbx4cd0ab^
-||*.xn--mix891f^
+||*.xn--mgbpl2fh^
+||*.xn--mgbi4ecexp^
+||*.xn--mgbgu82a^
+||*.xn--mgberp4a5d4ar^
+||*.xn--mgbcpq6gpa1a^
+||*.xn--mgbca7dzdo^
+||*.xn--mgbc0a9azcg^
+||*.xn--mgbbh1a71e^
+||*.xn--mgbbh1a^
+||*.xn--mgbayh7gpa^
 ||*.xn--mk1bu44c^
 ||*.xn--mxtq1m^
 ||*.xn--ngbc5azd^
@@ -209,37 +205,41 @@
 ||*.xn--nqv7f^
 ||*.xn--nqv7fs00ema^
 ||*.xn--nyqy26a^
+||*.xn--zfr164b^
+||*.xn--ygbi2ammx^
+||*.xn--yfro4i67o^
+||*.xn--xkc2dl3a5ee0h^
+||*.xn--xkc2al3hye2a^
+||*.xn--xhq521b^
+||*.xn--wgbl6a^
+||*.xn--w4rs40l^
+||*.xn--w4r85el8fhu5dnra^
+||*.xn--vuq861b^
+||*.xn--vhquv^
+||*.xn--wgbh1c^
+||*.xn--unup4y^
+||*.xn--tiq49xqyj^
+||*.xn--tckwe^
+||*.xn--t60b56a^
+||*.xn--ses554g^
+||*.xn--s9brj9c^
+||*.xn--rvc1e0am3e^
+||*.xn--rhqv96g^
+||*.xn--rovu88b^
+||*.xn--qcka1pmc^
+||*.xn--q9jyb4c^
+||*.xn--q7ce6a^
+||*.xn--pssy2u^
+||*.xn--pgbs0dh^
 ||*.xn--o3cw4h^
 ||*.xn--ogbpf8fl^
 ||*.xn--otu796d^
-||*.xn--p1acf^
 ||*.xn--p1ai^
-||*.xn--pgbs0dh^
-||*.xn--pssy2u^
-||*.xn--q7ce6a^
-||*.xn--q9jyb4c^
-||*.xn--qcka1pmc^
+||*.xn--90a3ac^
+||*.xn--c1avg^
+||*.xn--j1aef^
+||*.xn--j1amh^
+||*.xn--l1acc^
 ||*.xn--qxa6a^
 ||*.xn--qxam^
-||*.xn--rhqv96g^
-||*.xn--rovu88b^
-||*.xn--rvc1e0am3e^
-||*.xn--s9brj9c^
-||*.xn--ses554g^
-||*.xn--t60b56a^
-||*.xn--tckwe^
-||*.xn--tiq49xqyj^
-||*.xn--unup4y^
-||*.xn--vhquv^
-||*.xn--vuq861b^
-||*.xn--w4r85el8fhu5dnra^
-||*.xn--w4rs40l^
-||*.xn--wgbh1c^
-||*.xn--wgbl6a^
-||*.xn--xhq521b^
-||*.xn--xkc2al3hye2a^
-||*.xn--xkc2dl3a5ee0h^
 ||*.xn--y9a3aq^
-||*.xn--yfro4i67o^
-||*.xn--ygbi2ammx^
-||*.xn--zfr164b^
