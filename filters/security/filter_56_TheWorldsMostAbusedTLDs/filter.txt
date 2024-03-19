@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-03-18T15:05:45.937Z
+! Last modified: 2024-03-19T17:06:22.131Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -10,29 +10,236 @@
 ! Source name: HaGeZi's The World's Most Abused TLDs
 ! Source: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds.txt
 !
+! Title: HaGeZi's The World's Most Abused TLDs
+! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS
+! Source: https://www.spamhaus.org/statistics/tlds/
+!         https://raw.githubusercontent.com/yokoffing/filterlists/main/enhanced_site_protection.txt
+!         https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
+!         https://raw.githubusercontent.com/LennyFox/Blocklists/master/Block_non_latin_TLDs.txt
+! Homepage: https://github.com/hagezi/dns-blocklists
+! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
+! Issues: https://github.com/hagezi/dns-blocklists/issues
+! Expires: 1 day
+! Last modified: 19 Mar 2024 16:48 UTC
+! Version: 2024.0319.1648.22
+! Syntax: AdGuard
+! Number of latin TLDs: 67 - punycode TLDs: 148
+!
+||*.asia^$denyallow=amzn.asia
 ||*.autos^
+||*.bar^$denyallow=fap.bar
+||*.beauty^$denyallow=homelab.beauty|nic.beauty|vipbj.beauty
 ||*.best^
 ||*.bid^
 ||*.bio^
+||*.biz^$denyallow=beiniz.biz|bonial.biz|cloudns.biz|cyberciti.biz|dzeta.biz|luckysbarbershop.biz|movabletype.biz|panasonic.biz|slussen.biz|yoox.biz
 ||*.boats^
 ||*.boston^
 ||*.boutique^
+||*.buzz^$denyallow=allthe.buzz|awful.buzz|cliq.buzz|montpellier.buzz|sideb.buzz|williamsonday.buzz
+||*.cf^$denyallow=acap.cf|google.cf
+||*.cfd^$denyallow=frcoal.cfd|freedium.cfd
 ||*.charity^
 ||*.christmas^
+||*.cyou^$denyallow=hammertime.cyou
+||*.dad^$denyallow=classic.dad|daily.dad|dear.dad|rad.dad
 ||*.dance^
+||*.degree^$denyallow=nic.degree|opf.degree|three60.degree
+||*.discount^$denyallow=real.discount
+||*.esq^$denyallow=erika.esq
 ||*.fishing^
+||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|nic.fit|pridegym.fit|thebene.fit|union.fit
+||*.foo^$denyallow=helloworld.foo
+||*.fyi^$denyallow=canonn.fyi|iusearchlinux.fyi|lunar.fyi
+||*.ga^$denyallow=mmo.ga
+||*.gdn^$denyallow=cst.gdn|pss.gdn
+||*.gq^$denyallow=inege.gq|tvgelive.gq
+||*.guru^$denyallow=bahn.guru|crontab.guru|jav.guru|webcal.guru
 ||*.hair^
 ||*.haus^
+||*.life^$denyallow=2ch.life|akamaicdn.life|circles.life|digitalcitizen.life|iboost.life|loveinfaith.life|stepone.life|yiff.life
 ||*.loan^
 ||*.loans^
+||*.lol^$denyallow=objection.lol
+||*.makeup^$denyallow=bird.makeup
+||*.market^$denyallow=digiseller.market|otto.market|plati.market
 ||*.men^
+||*.ml^$denyallow=aire.ml|amap.ml|beatbump.ml|debula.ml|fedi.ml|fmhy.ml|ghostcloud.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|nothingprivate.ml|precure.ml|prompt.ml
 ||*.mom^
+||*.monster^$denyallow=cloudcdn.monster|egybest.monster|fedi.monster|rollenspiel.monster|tts.monster|vipbj.monster|yts.monster
+||*.mov^$denyallow=david.mov|spankbang.mov
 ||*.name^
+||*.ooo^$denyallow=toast.ooo
+||*.phd^$denyallow=rafael.phd
+||*.prof^$denyallow=casey.prof
+||*.quest^$denyallow=amble.quest|bookshelf.quest|dice.quest|dont-panic.quest|epochal.quest|federation.quest|galaxy.quest|mhn.quest|mylegendary.quest|nic.quest|prometheus.quest|teacher.quest|theculture.quest|toot.quest
+||*.rest^$denyallow=crystals.rest|nect.rest
 ||*.review^
 ||*.rip^
+||*.rodeo^$denyallow=raypeat.rodeo
+||*.sbs^$denyallow=ecopulse.sbs|moae.sbs
 ||*.skin^
 ||*.support^
+||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|nic.surf|quran.surf|s-wings.surf
 ||*.tattoo^
+||*.tk^$denyallow=adistance.tk|bonzibuddy.tk|bryla.tk|budterence.tk|censurion.tk|c-r-t.tk|cuso.tk|dlyang.tk|google.tk|goshujin.tk|gotofap.tk|graph.tk|kabi.tk|pube.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
 ||*.tokyo^
+||*.top^$denyallow=1stream.top|ambr.top|arjun.top|audioforyou.top|awavenue.top|caitlin.top|castlevania.top|chillx.top|corriente.top|gdtot.top|magocoro.top|mastodon.top|nicenature.top|pdcdn1.top|pegelinux.top|pressplay.top|reminder.top|shucks.top|strims.top|suiten.top|techblog.top|thedesk.top|vsdb.top
+||*.trade^$denyallow=composer.trade
 ||*.uno^
 ||*.voto^
+||*.website^$denyallow=tilde.website
+||*.work^$denyallow=frame.work
+||*.wtf^$denyallow=akko.wtf|myip.wtf|plooshiesaresocute.wtf|tigress.wtf
+||*.zip^$denyallow=community.zip|financialstatement.zip|lemmy.zip|redecanaistv.zip|redecanais.zip|url.zip
+||*.xn--11b4c3d^
+||*.xn--1ck2e1b^
+||*.xn--1qqw23a^
+||*.xn--2scrj9c^
+||*.xn--30rr7y^
+||*.xn--3bst00m^
+||*.xn--3ds443g^
+||*.xn--3e0b707e^
+||*.xn--3hcrj9c^
+||*.xn--3oq18vl8pn36a^
+||*.xn--3pxu8k^
+||*.xn--42c2d9a^
+||*.xn--45br5cyl^
+||*.xn--45brj9c^
+||*.xn--45q11c^
+||*.xn--4gbrim^
+||*.xn--54b7fta0cc^
+||*.xn--55qw42g^
+||*.xn--55qx5d^
+||*.xn--5su34j936bgsg^
+||*.xn--5tzm5g^
+||*.xn--6frz82g^
+||*.xn--6qq986b3xl^
+||*.xn--80adxhks^
+||*.xn--80ao21a^
+||*.xn--80aqecdr1a^
+||*.xn--80asehdb^
+||*.xn--80aswg^
+||*.xn--8y0a063a^
+||*.xn--90a3ac^
+||*.xn--90ae^
+||*.xn--90ais^
+||*.xn--9dbq2a^
+||*.xn--9et52u^
+||*.xn--9krt00a^
+||*.xn--b4w605ferd^
+||*.xn--bck1b9a5dre4c^
+||*.xn--c1avg^
+||*.xn--c2br7g^
+||*.xn--cck2b3b^
+||*.xn--cckwcxetd^
+||*.xn--cg4bki^
+||*.xn--clchc0ea0b2g2a9gcd^
+||*.xn--czr694b^
+||*.xn--czrs0t^
+||*.xn--czru2d^
+||*.xn--d1acj3b^
+||*.xn--d1alf^
+||*.xn--e1a4c^
+||*.xn--eckvdtc9d^
+||*.xn--efvy88h^
+||*.xn--fct429k^
+||*.xn--fhbei^
+||*.xn--fiq228c5hs^
+||*.xn--fiq64b^
+||*.xn--fiqs8s^
+||*.xn--fiqz9s^
+||*.xn--fjq720a^
+||*.xn--flw351e^
+||*.xn--fpcrj9c3d^
+||*.xn--fzc2c9e2c^
+||*.xn--fzys8d69uvgm^
+||*.xn--g2xx48c^
+||*.xn--gckr3f0f^
+||*.xn--gecrj9c^
+||*.xn--gk3at1e^
+||*.xn--h2breg3eve^
+||*.xn--h2brj9c^
+||*.xn--h2brj9c8c^
+||*.xn--hxt814e^
+||*.xn--i1b6b1a6a2e^
+||*.xn--imr513n^
+||*.xn--io0a7i^
+||*.xn--j1aef^
+||*.xn--j1amh^
+||*.xn--j6w193g^
+||*.xn--jlq480n2rg^
+||*.xn--jlq61u9w7b^
+||*.xn--jvr189m^
+||*.xn--kcrx77d1x4a^
+||*.xn--kprw13d^
+||*.xn--kpry57d^
+||*.xn--kput3i^
+||*.xn--l1acc^
+||*.xn--lgbbat1ad8j^
+||*.xn--mgb9awbf^
+||*.xn--mgba3a3ejt^
+||*.xn--mgba3a4f16a^
+||*.xn--mgba7c0bbn0a^
+||*.xn--mgbaakc7dvf^
+||*.xn--mgbaam7a8h^
+||*.xn--mgbab2bd^
+||*.xn--mgbah1a3hjkrd^
+||*.xn--mgbai9azgqp6j^
+||*.xn--mgbayh7gpa^
+||*.xn--mgbbh1a^
+||*.xn--mgbbh1a71e^
+||*.xn--mgbc0a9azcg^
+||*.xn--mgbca7dzdo^
+||*.xn--mgbcpq6gpa1a^
+||*.xn--mgberp4a5d4ar^
+||*.xn--mgbgu82a^
+||*.xn--mgbi4ecexp^
+||*.xn--mgbpl2fh^
+||*.xn--mgbt3dhd^
+||*.xn--mgbtx2b^
+||*.xn--mgbx4cd0ab^
+||*.xn--mix891f^
+||*.xn--mk1bu44c^
+||*.xn--mxtq1m^
+||*.xn--ngbc5azd^
+||*.xn--ngbe9e0a^
+||*.xn--ngbrx^
+||*.xn--node^
+||*.xn--nqv7f^
+||*.xn--nqv7fs00ema^
+||*.xn--nyqy26a^
+||*.xn--o3cw4h^
+||*.xn--ogbpf8fl^
+||*.xn--otu796d^
+||*.xn--p1acf^
+||*.xn--p1ai^
+||*.xn--pgbs0dh^
+||*.xn--pssy2u^
+||*.xn--q7ce6a^
+||*.xn--q9jyb4c^
+||*.xn--qcka1pmc^
+||*.xn--qxa6a^
+||*.xn--qxam^
+||*.xn--rhqv96g^
+||*.xn--rovu88b^
+||*.xn--rvc1e0am3e^
+||*.xn--s9brj9c^
+||*.xn--ses554g^
+||*.xn--t60b56a^
+||*.xn--tckwe^
+||*.xn--tiq49xqyj^
+||*.xn--unup4y^
+||*.xn--vhquv^
+||*.xn--vuq861b^
+||*.xn--w4r85el8fhu5dnra^
+||*.xn--w4rs40l^
+||*.xn--wgbh1c^
+||*.xn--wgbl6a^
+||*.xn--xhq521b^
+||*.xn--xkc2al3hye2a^
+||*.xn--xkc2dl3a5ee0h^
+||*.xn--y9a3aq^
+||*.xn--yfro4i67o^
+||*.xn--ygbi2ammx^
+||*.xn--zfr164b^
