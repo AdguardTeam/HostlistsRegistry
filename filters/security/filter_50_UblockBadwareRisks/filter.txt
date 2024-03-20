@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-03-20T12:08:06.261Z
+! Last modified: 2024-03-20T13:07:51.635Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -117,8 +117,6 @@
 ! https://github.com/uBlockOrigin/uAssets/issues/4201
 ||googlo.co^
 ! https://github.com/uBlockOrigin/uAssets/issues/4201#issuecomment-458340273
-||chairgaubsy.com^
-||epailseptox.com^
 ||hentaiplaytime.com^
 ||viewmypdf.com^
 
@@ -3272,3 +3270,19 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/domain/host.cloudsonicwave.com
 ||traveltraffic.cc^
 ||cloudsonicwave.com^
+
+! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/fakebat-delivered-via-several-active-malvertising-campaigns
+! https://www.virustotal.com/gui/url/1429f749760b6d69d16234f394be11fc61f48df2e1956ecc37f556621abad7e7
+||obs-software.cc^
+||bandi-cam.cc^
+||breavas.app^
+||open-project.org^
+||onenote-download.com^
+||epicgames-store.org^
+||blcnder.org^
+||trelconf.com^
+||trelconf.net^
+||noitons.net^
+||bezynet.com^
+||church-notes.com^
+||avr-energie.com^
