@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-03-22T10:06:06.405Z
+! Last modified: 2024-03-22T14:06:04.911Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -3281,7 +3281,6 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/9f588e39087c3f6bc707205c7fad68545e9b5edc0506dc67f79e7fa684855934
 ! https://www.virustotal.com/gui/url/716d44ef0981fada4907f6c77d18b8c3915ddfaf29c232d8a794d4aff3d3c904
 ! https://www.virustotal.com/gui/url/2e8126228eba8ea905881f3c1cd4b8bb3f251d37ba016c56c001bbe7b4482e1c
-! https://www.virustotal.com/gui/url/3784676aef0f7fee0f36a52171350ea5e8117364cda005553be6d02e566217bf - hubside.fr
 ! https://www.virustotal.com/gui/url/dca49090dc4f87432c5c1b0ea589c470d058d71194bcfa1d7765c561d62dd520 - free-mobil.hubside.fr
 ! https://www.virustotal.com/gui/url/79a351dd5e9743efbbe360a77198bde28ead78dee2896ca863b9c2a778217292 - web-mail-free-org.hubside.fr
 ||fidelitefree.fr^
@@ -3292,6 +3291,7 @@ thepiratebay3.com^
 ||gatekeeperapp.net^
 ||free-mobil.hubside.fr^
 ||web-mail-free-org.hubside.fr^
+||free-service.hubside.fr^
 
 ! https://blog.sucuri.net/2024/02/web3-crypto-malware-angel-drainer.html
 ! https://www.virustotal.com/gui/url/2bf2e7500e2b15877f866b0a782436df8621b2c20f81e3d66f51e394f6ff6f30
@@ -3343,3 +3343,11 @@ thepiratebay3.com^
 ! https://infosec.exchange/@InfobloxThreatIntel/111947476473623155
 ! https://malwaretips.com/blogs/re-captha-version-3-55-top/
 ||re-captha-version-
+
+! https://www.gdatasoftware.com/blog/2024/03/37885-risepro-stealer-campaign-github
+! https://www.virustotal.com/gui/url/b47accf6e1261a50564f6520e8c3c56d6225054a95fe9a48c5e9e47e4ee7d120
+||digitalxnetwork.com^
+
+! https://securelist.com/trojanized-text-editor-apps/112167/
+! https://www.virustotal.com/gui/url/dce13fec61cd1b81b55c8d126b99266efbb6166d1a0bba02d4b8482ed53401b1
+||vnote-*.myqcloud.com^
