@@ -2,7 +2,7 @@
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2024-03-22T18:05:33.048Z
+! Last modified: 2024-03-22T21:05:06.613Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -15,7 +15,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2024-03-22T18:01:08.004Z
+! Last modified: 2024-03-22T20:06:00.303Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.22
 !
@@ -1008,9 +1008,20 @@
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17139
 ||gjc.gjirafa.com^
 ||code.ainsyndication.com^
-! https://github.com/AdguardTeam/AdguardFilters/issues/149285
+!
+!---------------------------------------------------------------------
+!------------------------------ Croatian -----------------------------
+!---------------------------------------------------------------------
+! NOTE: Croatian
+!
+||a.mabipa.com^
+||klik-slider.morgancode.com^
+||lupon.media^
+||redakcija.alo.rs^
 ||traffic.styria.hr^
 ||widget.admiral.hr^
+||widgets.jutarnji.hr^
+! https://github.com/AdguardTeam/AdguardFilters/issues/149285
 ! https://github.com/AdguardTeam/AdguardFilters/issues/140344
 ||eph-adsjutarnji.cdn.sysbee.net^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/17278
@@ -40312,7 +40323,6 @@ vkcdnservice.appspot.com^
 ||ir-new-cdn-eu-west-*-hb.rayjump.com^
 ||leadc6.icu^
 ||pangolin16.sgsnssdk.com^
-||i18n-pglstatp.com^
 ||ads.adadapted.com^
 ||zflylg.buzz^
 ||zflfoy.xyz^
@@ -41209,7 +41219,7 @@ vkcdnservice.appspot.com^
 ||px*.mediahills.ru^
 ||sdk.conscent.in^
 ||tpstelemetry.tencent.com^
-||posthog.com^
+||app.posthog.com^
 ||crossees.com^
 ||plausiblecdn.co^
 ||humanz.com^
@@ -47720,6 +47730,7 @@ inapps.appsflyersdk.com^
 ||hpr.outbrain.com^
 ||hspbotdetection.azurewebsites.net^
 ||hydro-ma-proxy.akamaized.net^
+||i.posthog.com^
 ||icu.getstorybox.com^
 ||iddu1vvb7sk8-a.akamaihd.net^
 ||identification.hotmart.com^
