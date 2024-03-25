@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-03-25T03:06:03.407Z
+! Last modified: 2024-03-25T04:07:13.989Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -597,9 +597,6 @@ thepiratebay3.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8378
 ||ogtrk.net^
-
-! https://www.hybrid-analysis.com/sample/3ad8f4dc6a021e82d25247c266d89d20d981f7187413405f0b2e35d984bd60cb
-||secureconv-dl.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8630
 ||mfilecloud.com^
@@ -3304,3 +3301,13 @@ thepiratebay3.com^
 ||dev-pacifservi.pantheonsite.io^
 ||yenib65.top^
 ||garanti.mobil-linki.com.tr^
+||hck.pages.dev^
+||autoiothiatowers.firebaseapp.com^
+
+! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/new-go-loader-pushes-rhadamanthys
+! https://safeweb.norton.com/report/show?url=https:%2F%2Farnaudpairoto.com%2F
+! https://otx.alienvault.com/indicator/domain/arnaudpairoto.com
+! https://www.virustotal.com/gui/url/ec3d5edf4b9db60d4a4057757d820361c850dd355dd21e929c57bc55e54f7517?nocache=1
+||arnaudpairoto.com^
+||puttyconnect.info^
+||astrosphere.world^
