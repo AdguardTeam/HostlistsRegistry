@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2024-03-22T14:05:57.659Z
+! Last modified: 2024-03-25T00:20:45.155Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -10,8 +10,8 @@
 ! Source name: Dandelion Sprout's Anti-Malware List
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
-! Title: 💊 Dandelion Sprout's Anti-Malware List (for AdGuard Home, AdGuard for Android/Windows' DNS filtering, and Pi-Hole FTL ≥5.22)
-! Version: 21March2024v1
+! Title: 💊 Dandelion Sprout's Anti-Malware List (for AdGuard Home, AdGuard for Android/Windows/macOS' DNS filtering, and Pi-Hole FTL ≥5.22)
+! Version: 24March2024v2
 ! Expires: 2 days
 ! Description: This list goes the extra kilometer to prevent more malware than other mainstream anti-malware lists. It blocks heavily abused top-level domains (and even search engine results for them), blocks domains used in malware redirection trains and in domain parking schemes, blocks sponsored Windows PUP nags on PC guide articles, uses mass blocking of domains belonging to bad IPs, and has many other subcategories that give it a solid advantage over similar lists out there.
 ! For other security-specific lists I've made, check out https://github.com/DandelionSprout/adfilt/tree/master/Special%20security%20lists
@@ -189,10 +189,6 @@
 ! Common scam domain patterns
 /^http://(apps?|best|competition|game|mobile|play|prize|reward|sweeps)\d{2,8}\.[a-z-]{5,22}\d{1,8}\.(icu|life|live)/
 /^https://(apps?|best|competition|game|mobile|play|prize|reward|sweeps)\d{2,8}\.[a-z-]{5,22}\d{1,8}\.(icu|life|live)/
-
-
-! https://github.com/AdguardTeam/AdguardFilters/issues/58737
-
 
 ! ——— Banner for "MSN New Tab" ———
 
