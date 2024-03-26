@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-03-25T11:05:35.428Z
+! Last modified: 2024-03-26T04:06:00.444Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -3301,18 +3301,8 @@ thepiratebay3.com^
 
 ! https://infosec.exchange/@urldna/112143355675099806
 ! https://www.virustotal.com/gui/url/38ad38ba67efdd42656b489e4df678ee065cad109cd1c9dbacf4632d356250d9
-||metamaskv2.pages.dev^
-||metamskilogin.gitbook.io^
-||dev-pacifservi.pantheonsite.io^
-||yenib65.top^
-||garanti.mobil-linki.com.tr^
-||hck.pages.dev^
-||autoiothiatowers.firebaseapp.com^
 ||steamproxy.co^
 ||midwestfinestbb.com^
-||pawan872.github.io^
-||gdshbl.com^
-||bernardamos422.wixsite.com^
 
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/new-go-loader-pushes-rhadamanthys
 ! https://safeweb.norton.com/report/show?url=https:%2F%2Farnaudpairoto.com%2F
@@ -3321,3 +3311,8 @@ thepiratebay3.com^
 ||arnaudpairoto.com^
 ||puttyconnect.info^
 ||astrosphere.world^
+
+! https://checkmarx.com/blog/over-170k-users-affected-by-attack-using-fake-python-infrastructure/
+! https://www.virustotal.com/gui/domain/files.pythanhosted.org
+! https://safeweb.norton.com/report/show?url=files.pythanhosted.org
+||pythanhosted.org^
