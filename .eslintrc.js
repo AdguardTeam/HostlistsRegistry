@@ -36,5 +36,6 @@ module.exports = {
             },
         ],
         'jsdoc/valid-types': 'off',
+        curly: ['error', 'all'],
     },
 };
