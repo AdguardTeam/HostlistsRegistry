@@ -2,7 +2,7 @@
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2024-03-30T11:05:32.828Z
+! Last modified: 2024-04-03T19:05:59.354Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -11,7 +11,7 @@
 ! Source: https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt
 !
 ! This blocklist helps to restrict access to Google and its domains. Contribute at https://github.com/nickspaargaren/no-google
-! Last updated: 2024-03-30
+! Last updated: 2024-04-03
 ! Analytics
 ||adgoogle.net^
 ||clickserver.googleads.com^
@@ -39,6 +39,7 @@
 ||gstatic.net^
 ||KQu0cL-dnsotls-ds.metric.gstatic.com^
 ||2mdn.net^
+||ai.google.dev^
 ||app-measurement.com^
 ||chromeenterprise.google^
 ||com.google^
@@ -294,6 +295,7 @@
 ||maps.google.com.tn^
 ||maps.google.ir^
 ||near.by^
+||quantumai.google^
 ||research.google^
 ||sre.google^
 ||stories.google^
