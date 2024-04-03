@@ -1,10 +1,10 @@
 {
-  "name": "AdGuard DNS filter for popup domains",
-  "description": "Filter comprising AdGuard Base filter, EasyList, and designed to enhance compatibility with popup blocking at the DNS level. It is crafted to provide the address of a blocking page in response to domain queries.",
+  "name": "AdGuard DNS Popup Hosts filter",
+  "description": "Filter includes rules for sites that open in a new window, composed from AdGuard, EasyList, ABPindo filters and improved for compatibility with DNS-level pop-up blocking.",
   "homepage": "https://github.com/AdguardTeam/AdguardSDNSFilter",
   "sources": [
     {
-      "name": "AdGuard DNS filter",
+      "name": "AdGuard DNS Popup Hosts filter",
       "source": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/adguard_popup_filter.txt",
       "type": "adblock",
       "transformations": [
