@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-04-03T05:05:57.571Z
+! Last modified: 2024-04-03T08:06:51.311Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.23
 !
@@ -2736,9 +2736,6 @@ thepiratebay3.com^
 ||t-haihukikaku.online^
 ||t-present.online^
 ||rich-cash.site^
-||z-lib.io^
-||z-lib.id^
-||zlibrary.to^
 ||fr4aj87j.com^
 ||island-vanity.com^
 ||side-joblp.com^
@@ -3088,6 +3085,25 @@ thepiratebay3.com^
 ||magiskmanagerroot.com^
 ||magisk.download^
 ||magisk.info^
+! Z-Library - Official sites: singlelogin.se, singlelogin.re, z-library.se, zlibrary-global.se, go-to-zlibrary.se
+! https://www.reddit.com/r/zlibrary/comments/16xtm67/if_you_cannot_download_any_books_then_youre_on/
+! https://github.com/uBlockOrigin/uAssets/pull/22998
+||z-lib.io^
+||z-lib.id^
+||zlibrary.to^
+||z-lib.ee^
+||z-lib.tf^
+||z-lib.wf^
+||z-lib.yt^
+||z-lib.lol^
+||zlibrary-global.com^
+||zlib-official.com^
+||zlibrary.lol^
+||z-library.live^
+||z-library.wiki^
+||z-library.blog^
+||z-library-proxy.com^
+||go-to-zlibrary.com^
 
 ! phishing https://www.virustotal.com/gui/url/8521a1e5b4269111fb1e98f2142739dad1d6fb42ddf5198597c68abfea395f7f/detection
 ||reink2.top^
