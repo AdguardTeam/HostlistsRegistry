@@ -2,9 +2,9 @@
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2024-04-05T04:07:14.668Z
+! Last modified: 2024-04-08T09:50:39.536Z
 !
-! Compiled by @adguard/hostlist-compiler v1.0.23
+! Compiled by @adguard/hostlist-compiler v1.0.24
 !
 !
 ! Source name: Dandelion Sprout's Anti-Malware List
@@ -23268,6 +23268,15 @@
 
 
 ||amazonaws.com^$badfilter
+
+
+! Brazilian mobsters trying to DDoS Cisco with TXT-type DNS requests
+|cisco.com|$dnstype=TXT
+|cloudflare.com|$dnstype=TXT
+|adobe.com|$dnstype=TXT
+|atlassian.com|$dnstype=TXT
+|apple.com|$dnstype=TXT
+|google.com|$dnstype=TXT
 
 
 
