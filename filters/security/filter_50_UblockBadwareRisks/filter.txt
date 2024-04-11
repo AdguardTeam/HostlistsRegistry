@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-04-11T05:06:23.088Z
+! Last modified: 2024-04-11T06:06:50.083Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3343,16 +3343,18 @@ thepiratebay3.com^
 ||umbreldapp.pages.dev^
 ||logdetails.fr-par-1.linodeobjects.com^
 ||mobilelegendsmycode.com^
+||affixresolve.web.app^
 ! https://infosec.exchange/@urldna/112227700561786450
 ||conradhayden.autos^
+! https://infosec.exchange/@urldna/112246221074509842
+||base-swap-frontend-*.vercel.app^
 ||garerna.vn^
 ||gareza.vn^
 ||member-garena.vn^
 ||nhanqua.garenaff.io.vn^
-||kzl.ekr.mybluehost.me^
-||pto.xfi.mybluehost.me^
 ||usps.posttrackre.com^
 ||usps.postiw.com^
+||usps.mytrackingie.top^
 
 ! openphish
 ||hybridtoken.org^
@@ -3361,6 +3363,8 @@ thepiratebay3.com^
 ||air-discount-bn1b.private-l.isting.fr^
 ||discord-support.info^
 ||lloydsonlinehelp.com^
+||lehoihoadao.com^
+||upgrade.eventmidasbuys.com^
 
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/new-go-loader-pushes-rhadamanthys
 ! https://safeweb.norton.com/report/show?url=https:%2F%2Farnaudpairoto.com%2F
@@ -3400,3 +3404,14 @@ thepiratebay3.com^
 
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/04/bing-ad-for-nordvpn-leads-to-sectoprat
 ||nordivpn.xyz^
+
+! https://blog.talosintelligence.com/coralraider-targets-socialmedia-accounts/
+! https://www.virustotal.com/gui/url/4084d02e0b9a73221be4a32e853f87471ca45c5a80f8c7e461e640e025503512
+! https://safeweb.norton.com/report/show?url=runningapplications-b7dae-default-rtdb.firebaseio.com
+! https://otx.alienvault.com/indicator/domain/runningapplications-b7dae-default-rtdb.firebaseio.com
+||runningapplications-b7dae-default-rtdb.firebaseio.com^
+||ondroid.store^
+
+! https://www.fortinet.com/blog/threat-research/scrubcrypt-deploys-venomrat-with-arsenal-of-plugins
+||nanoshield.pro^
+||kisanbethak.com^
