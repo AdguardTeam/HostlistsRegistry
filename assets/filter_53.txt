@@ -2,7 +2,7 @@
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-04-14T08:41:57.594Z
+! Last modified: 2024-04-14T10:24:50.771Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -78,6 +78,7 @@
 ||ads.music.126.net^
 ||ads.oppomobile.com^
 ||ads.service.kugou.com^
+||ads3-normal.zijieapi.com^
 ||ads3-normal-hl.zijieapi.com^
 ||ads3-normal-lq.zijieapi.com^
 ||ads5-normal-hl.zijieapi.com^
@@ -412,7 +413,7 @@
 ||service.vmos.cn^
 ||sf16-static.i18n-pglstatp.com^
 ||shouji.sogou.com^
-||sigmob.c0m^
+||sigmob.com^
 ||sigmob.cn^
 ||skdisplay.jd.com^
 ||slb-p2p.vcloud.ks-live.com^
@@ -550,6 +551,7 @@
 /*.log.aliyuncs.com/
 /*.shouji.sogou.com/
 /*.zskwai.com/
+/ads*-normal.zijieapi.com/
 /ads*-normal-*.zijieapi.com/
 /cloud-inject-global.oss-cn-hongkong.aliyuncs.com/
 /cloudinject*-dev.*.*-*-*.amazonaws.com/
