@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-04-15T06:07:23.164Z
+! Last modified: 2024-04-16T03:06:46.637Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3282,8 +3282,8 @@ thepiratebay3.com^
 ||uaxaqr.com^
 
 ! weebly/square phishing
-/^https:\/\/[-a-z]{2,}-10\d{4}\.weeblysite\.com\//
-/^https:\/\/[-a-z]{2,}-10\d{4}\.square\.site\//
+/^https:\/\/(?:[a-z0-9]{2,}-)+10\d{4}\.weeblysite\.com\//
+/^https:\/\/(?:[a-z0-9]{2,}-)+10\d{4}\.square\.site\//
 
 ! spotify
 ! https://community.spotify.com/t5/Accounts/Phishing-Email/td-p/5877600
@@ -3300,6 +3300,9 @@ thepiratebay3.com^
 ||upgrade.eventmidasbuys.com^
 ||schmeltzt.cardiopedbrasil.com.br^
 ||rd.dv-tube.com^
+||lzd2024.com^
+||2.dweer.wiki^
+||cbnotif.top^
 ||secure-documents.glitch.me^
 ||good-charmed-sled.glitch.me^
 ! http://s5[.]qb6agda[.]cursorltd.com/
