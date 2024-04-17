@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-04-16T14:06:18.343Z
+! Last modified: 2024-04-17T05:06:07.786Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3273,6 +3273,10 @@ thepiratebay3.com^
 ||conradhayden.autos^
 ! https://infosec.exchange/@urldna/112246221074509842
 ||base-swap-frontend-*.vercel.app^
+
+! facebook
+||business-facebook-*.pages.dev^
+||support-security-information-accounti.pages.dev^
 ||steamcommumnuty.com^
 ||garerna.vn^
 ||gareza.vn^
@@ -3291,6 +3295,9 @@ thepiratebay3.com^
 ! https://community.spotify.com/t5/Accounts/Phishing-Email/td-p/5877600
 /^https:\/\/[^.]+\.codeanyapp\.com\/wp-content\/.+\/spo[a-z]{2}i\//
 
+! coinbase
+||hurricane-harmonious-pleasure.glitch.me^
+
 ! openphish
 ||hybridtoken.org^
 ||tg-telegran.com^
@@ -3307,6 +3314,9 @@ thepiratebay3.com^
 ||cbnotif.top^
 ||secure-documents.glitch.me^
 ||good-charmed-sled.glitch.me^
+||s.edoctransfer.com^
+||nostalgic-agreeable-stop.glitch.me^
+||dfreg.freechip2023.com^
 ! http://s5[.]qb6agda[.]cursorltd.com/
 ||cursorltd.com^
 ||cprapid.com^
