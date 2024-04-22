@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-04-22T08:07:09.806Z
+! Last modified: 2024-04-22T11:05:48.525Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -20,16 +20,18 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 22 Apr 2024 06:27 UTC
-! Version: 2024.0422.0627.31
+! Last modified: 22 Apr 2024 09:06 UTC
+! Version: 2024.0422.0906.00
 ! Syntax: AdGuard
-! Number of latin TLDs: 92 - punycode TLDs: 151
+! Number of latin TLDs: 104 - punycode TLDs: 151
 !
+||*.africa^
 ||*.asia^$denyallow=amzn.asia|dbankcloud.asia
 ||*.autos^
 ||*.bar^$denyallow=fap.bar
 ||*.beauty^$denyallow=homelab.beauty|vipbj.beauty
 ||*.best^
+||*.bet^
 ||*.bid^
 ||*.bio^
 ||*.biz^$denyallow=beiniz.biz|bonial.biz|cloudns.biz|cyberciti.biz|dzeta.biz|epson.biz|luckysbarbershop.biz|movabletype.biz|panasonic.biz|slussen.biz|yoox.biz
@@ -49,9 +51,11 @@
 ||*.dance^
 ||*.date^
 ||*.degree^$denyallow=opf.degree|three60.degree
+||*.digital^
 ||*.directory^$denyallow=passkeys.directory
 ||*.discount^$denyallow=real.discount
 ||*.esq^$denyallow=erika.esq
+||*.finance^
 ||*.fishing^
 ||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|thebene.fit|union.fit
 ||*.foo^$denyallow=helloworld.foo
@@ -64,12 +68,17 @@
 ||*.hair^
 ||*.haus^
 ||*.homes^
+||*.icu^
 ||*.ink^
+||*.kim^
+||*.lat^
 ||*.life^$denyallow=2ch.life|akamaicdn.life|circles.life|digitalcitizen.life|iboost.life|lifetime.life|loveinfaith.life|stepone.life|yiff.life
 ||*.llp^
 ||*.loan^
 ||*.loans^
 ||*.lol^$denyallow=browser.lol|objection.lol
+||*.love^
+||*.ltd^
 ||*.makeup^$denyallow=bird.makeup
 ||*.market^$denyallow=digiseller.market|otto.market|plati.market
 ||*.men^
@@ -79,9 +88,10 @@
 ||*.motorcycles^
 ||*.mov^$denyallow=david.mov|spankbang.mov
 ||*.name^
-||*.navy^
 ||*.nf^
+||*.okinawa^
 ||*.ooo^$denyallow=toast.ooo
+||*.pet^
 ||*.phd^$denyallow=rafael.phd
 ||*.prof^$denyallow=casey.prof
 ||*.promo^
@@ -90,7 +100,6 @@
 ||*.rest^$denyallow=crystals.rest|nect.rest
 ||*.review^
 ||*.rip^$denyallow=medium.rip
-||*.rocks^
 ||*.rodeo^$denyallow=raypeat.rodeo
 ||*.rugby^
 ||*.run^
@@ -98,7 +107,7 @@
 ||*.sbs^$denyallow=ecopulse.sbs|moae.sbs
 ||*.sew^
 ||*.skin^
-||*.support^
+||*.st^
 ||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|quran.surf|s-wings.surf
 ||*.sz^
 ||*.tattoo^
@@ -108,10 +117,13 @@
 ||*.top^$denyallow=1stream.top|ambr.top|arjun.top|audioforyou.top|awavenue.top|caitlin.top|castlevania.top|chillx.top|corriente.top|gdtot.top|magocoro.top|mastodon.top|nicenature.top|pdcdn1.top|pegelinux.top|pressplay.top|reminder.top|reyhub.top|shucks.top|strims.top|suiten.top|techblog.top|thedesk.top|vsdb.top
 ||*.trade^$denyallow=composer.trade|kite.trade
 ||*.uno^
+||*.vip^
 ||*.voto^
+||*.wang^
 ||*.website^$denyallow=tilde.website
 ||*.wf^
 ||*.wiki^$denyallow=bg3.wiki|burnout.wiki|datei.wiki|kodi.wiki|minecraft.wiki|namu.wiki|notifiarr.wiki|osrs.wiki|rs.wiki|runescape.wiki
+||*.win^
 ||*.work^$denyallow=elphago.work|frame.work
 ||*.wtf^$denyallow=akko.wtf|myip.wtf|plooshiesaresocute.wtf|tigress.wtf
 ||*.yachts^
