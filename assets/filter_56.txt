@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-04-20T03:06:13.136Z
+! Last modified: 2024-04-22T08:07:09.806Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -20,10 +20,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 19 Apr 2024 22:00 UTC
-! Version: 2024.0419.2200.42
+! Last modified: 22 Apr 2024 06:27 UTC
+! Version: 2024.0422.0627.31
 ! Syntax: AdGuard
-! Number of latin TLDs: 74 - punycode TLDs: 151
+! Number of latin TLDs: 92 - punycode TLDs: 151
 !
 ||*.asia^$denyallow=amzn.asia|dbankcloud.asia
 ||*.autos^
@@ -43,9 +43,11 @@
 ||*.cfd^$denyallow=frcoal.cfd|freedium.cfd
 ||*.charity^
 ||*.christmas^
+||*.coupons^
 ||*.cyou^$denyallow=hammertime.cyou
 ||*.dad^$denyallow=classic.dad|daily.dad|dear.dad|rad.dad
 ||*.dance^
+||*.date^
 ||*.degree^$denyallow=opf.degree|three60.degree
 ||*.directory^$denyallow=passkeys.directory
 ||*.discount^$denyallow=real.discount
@@ -56,12 +58,15 @@
 ||*.fyi^$denyallow=canonn.fyi|iusearchlinux.fyi|lunar.fyi
 ||*.ga^$denyallow=mmo.ga
 ||*.gdn^$denyallow=cst.gdn|pss.gdn
+||*.giving^
 ||*.gq^$denyallow=tvgelive.gq
 ||*.guru^$denyallow=bahn.guru|crontab.guru|greenlight.guru|jav.guru|webcal.guru
 ||*.hair^
 ||*.haus^
 ||*.homes^
+||*.ink^
 ||*.life^$denyallow=2ch.life|akamaicdn.life|circles.life|digitalcitizen.life|iboost.life|lifetime.life|loveinfaith.life|stepone.life|yiff.life
+||*.llp^
 ||*.loan^
 ||*.loans^
 ||*.lol^$denyallow=browser.lol|objection.lol
@@ -71,20 +76,31 @@
 ||*.ml^$denyallow=aire.ml|beatbump.ml|debula.ml|fedi.ml|fmhy.ml|ghostcloud.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|nothingprivate.ml|precure.ml|prompt.ml
 ||*.mom^
 ||*.monster^$denyallow=cloudcdn.monster|egybest.monster|fedi.monster|rollenspiel.monster|tts.monster|vipbj.monster|yts.monster
+||*.motorcycles^
 ||*.mov^$denyallow=david.mov|spankbang.mov
 ||*.name^
+||*.navy^
+||*.nf^
 ||*.ooo^$denyallow=toast.ooo
 ||*.phd^$denyallow=rafael.phd
 ||*.prof^$denyallow=casey.prof
+||*.promo^
 ||*.quest^$denyallow=amble.quest|bookshelf.quest|dice.quest|dont-panic.quest|epochal.quest|federation.quest|galaxy.quest|mhn.quest|mylegendary.quest|prometheus.quest|teacher.quest|theculture.quest|toot.quest
+||*.rehab^
 ||*.rest^$denyallow=crystals.rest|nect.rest
 ||*.review^
 ||*.rip^$denyallow=medium.rip
+||*.rocks^
 ||*.rodeo^$denyallow=raypeat.rodeo
+||*.rugby^
+||*.run^
+||*.sale^
 ||*.sbs^$denyallow=ecopulse.sbs|moae.sbs
+||*.sew^
 ||*.skin^
 ||*.support^
 ||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|quran.surf|s-wings.surf
+||*.sz^
 ||*.tattoo^
 ||*.tk^$denyallow=adistance.tk|bonzibuddy.tk|bryla.tk|bstweaker.tk|budterence.tk|censurion.tk|c-r-t.tk|cuso.tk|google.tk|goshujin.tk|gotofap.tk|graph.tk|kabi.tk|pube.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
 ||*.today^
@@ -94,10 +110,12 @@
 ||*.uno^
 ||*.voto^
 ||*.website^$denyallow=tilde.website
+||*.wf^
 ||*.wiki^$denyallow=bg3.wiki|burnout.wiki|datei.wiki|kodi.wiki|minecraft.wiki|namu.wiki|notifiarr.wiki|osrs.wiki|rs.wiki|runescape.wiki
 ||*.work^$denyallow=elphago.work|frame.work
 ||*.wtf^$denyallow=akko.wtf|myip.wtf|plooshiesaresocute.wtf|tigress.wtf
 ||*.yachts^
+||*.you^
 ||*.zip^$denyallow=community.zip|financialstatement.zip|lemmy.zip|redecanaistv.zip|redecanais.zip|url.zip
 ||*.xn--p1acf^
 ||*.xn--11b4c3d^
