@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-04-27T04:06:12.721Z
+! Last modified: 2024-04-28T05:06:58.261Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -20,8 +20,8 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 27 Apr 2024 03:23 UTC
-! Version: 2024.0427.0323.56
+! Last modified: 27 Apr 2024 23:07 UTC
+! Version: 2024.0427.2307.39
 ! Syntax: AdGuard
 ! Number of latin TLDs: 103 - punycode TLDs: 151
 !
@@ -91,7 +91,7 @@
 ||*.nf^$denyallow=google.com.nf
 ||*.okinawa^
 ||*.ooo^$denyallow=toast.ooo
-||*.pet^
+||*.pet^$denyallow=kuma.pet
 ||*.phd^$denyallow=rafael.phd
 ||*.prof^$denyallow=casey.prof
 ||*.promo^
@@ -107,7 +107,7 @@
 ||*.sbs^$denyallow=ecopulse.sbs|moae.sbs
 ||*.sew^
 ||*.skin^
-||*.st^$denyallow=avito.st|google.st|selfh.st
+||*.st^$denyallow=avito.st|bpa.st|google.st|selfh.st
 ||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|quran.surf|s-wings.surf
 ||*.sz^
 ||*.tattoo^
