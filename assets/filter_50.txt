@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-05-06T01:30:00.091Z
+! Last modified: 2024-05-06T05:06:07.029Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3429,3 +3429,11 @@ thepiratebay3.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23559
 ||wasabiwallet.is^
+
+! https://www.virustotal.com/gui/url/5df7c4ecaa01f24d8ccfdac5be4c0eb09a0a49c705e6b1bcfebd50f261fa5174
+! https://www.virustotal.com/gui/url/70b03a18e67dfc8ae8b93c16e69c0046223cf8e312aa8f4f655e6e1498797493
+! https://safeweb.norton.com/report/show?url=magicslimnhatban.com
+! https://safeweb.norton.com/report/show?url=giamcannhatban.com
+! https://www.urlvoid.com/scan/magicslimnhatban.com/
+||magicslimnhatban.com^
+||giamcannhatban.com^
