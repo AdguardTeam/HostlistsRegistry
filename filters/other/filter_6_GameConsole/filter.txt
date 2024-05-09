@@ -2,7 +2,7 @@
 ! Title: Dandelion Sprout's Game Console Adblock List
 ! Description: List for blocking ads on videogame consoles that use AdGuard Home
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2024-04-29T07:05:44.280Z
+! Last modified: 2024-05-09T01:29:09.859Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -11,7 +11,7 @@
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt
 !
 ! Title: 🎮 Game Console Adblock List
-! Version: 29April2024v1-Alpha
+! Version: 09May2024v2-Alpha
 ! Expires: 10 days
 ! Description: Much like there's now lists for AdGuard Home and Pi-hole to block ads on smart-TVs, here's an attempt from me at doing the same for videogame consoles with AdGuard Home. Enjoy.
 ! Important note: To block ads in the consoles' dedicated internet browsers with AdGuard Home, and not in the system menus, check out https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList.txt instead.
@@ -20,20 +20,17 @@
 
 !#if !env_mv3
 ! ——— PlayStation 3 ———
-! Ads
+! Ads; but in the time between 2019 and 2024, I can no longer remember what the ads were
 ||nsx-e.np.dl.playstation.net^
-! What's New
+! What's New. This one is certainly going to stay for years to come, after I googled «ps3 "what's new"» again.
 ||mercury.dl.playstation.net^
 ! PlayStation Store Preview, incl. 'My Channels' logos
 ||nsx.np.dl.playstation.net^
-! Ticker ads in the XMB clockbar
+! Ticker ads in the XMB clockbar, as a row immediately below the clock date and the friend counter
 ||adproxy.ndmdhs.com^
 
 ! ——— Wii U ———
-! Believed to reduce the initial loading time of Wii Sports Club by several seconds
-! While the same domain is used by Animal Crossing Plaza, it does not seem to have any impact if it's blocked or not blocked.
-! Note 29 April 2024: The domain is said to be a core feature of Pretendo, but their own websites seem to strongly contradict each other (https://pretendo.network/docs/install/juxt contra the entire rest of their site). Re-testing of the entry will be done in early May 2024.
-||discovery.olv.nintendo.net^
+! Currently no entries.
 
 ! ——— Xbox One ———
 ! Removes sponsored info slots in the system menu
