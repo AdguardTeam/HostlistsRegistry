@@ -2,7 +2,7 @@
 ! Title: TUR: Turkish Ad Hosts
 ! Description: Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
-! Last modified: 2024-05-04T07:06:03.529Z
+! Last modified: 2024-05-11T14:05:32.435Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -15,7 +15,7 @@
 ! Description: Necessary hosts file to block tracking (and possibly advertising) networks in commonly used mobile applications (and possibly WEB pages) in Turkey...
 ! Homepage: https://github.com/symbuzzer/Turkish-Ad-Hosts
 ! License: GPLv3
-! Last modified: 2024-05-04T06:35:23.083Z
+! Last modified: 2024-05-11T14:01:38.205Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -398,6 +398,7 @@
 ||browser.sentry-cdn.com^
 ||browser-http-intake.logs.datadoghq.com^
 ||browser-http-intake.logs.datadoghq.eu^
+||browser-intake-datadoghq.com^
 ||browser-update.org^
 ||bs.serving-sys.com^
 ||bs.yandex.ru^
@@ -1107,7 +1108,6 @@
 ||logbak.hicloud.com^
 ||logger.virgul.com^
 ||login.dotomi.com^
-||logs.browser-intake-datadoghq.com^
 ||logs.ironsrc.mobi^
 ||logservice.hicloud.com^
 ||logservice1.hicloud.com^
@@ -1468,7 +1468,6 @@
 ||rules.quantcount.com^
 ||rules2.aatkit.com^
 ||rules3.aatkit.com^
-||rum.browser-intake-datadoghq.com^
 ||rum.cronitor.io^
 ||rum.uptime.com^
 ||rum-http-intake.logs.datadoghq.com^
