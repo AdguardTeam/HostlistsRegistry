@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-05-09T16:06:19.173Z
+! Last modified: 2024-05-13T07:06:15.324Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -20,10 +20,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 09 May 2024 15:24 UTC
-! Version: 2024.0509.1524.13
+! Last modified: 13 May 2024 06:36 UTC
+! Version: 2024.0513.0636.31
 ! Syntax: AdGuard
-! Number of latin TLDs: 106 - punycode TLDs: 151
+! Number of latin TLDs: 107 - punycode TLDs: 151
 !
 ||*.africa^
 ||*.asia^$denyallow=amzn.asia|dbankcloud.asia
@@ -56,6 +56,7 @@
 ||*.directory^$denyallow=2fa.directory|passkeys.directory
 ||*.discount^$denyallow=real.discount
 ||*.esq^$denyallow=erika.esq
+||*.fan^
 ||*.finance^
 ||*.fishing^
 ||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|thebene.fit|union.fit

@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-05-13T03:06:08.465Z
+! Last modified: 2024-05-13T07:06:15.081Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3144,6 +3144,28 @@ thepiratebay3.com^
 ! https://infosec.exchange/@InfobloxThreatIntel/111947476473623155
 ! https://malwaretips.com/blogs/re-captha-version-3-55-top/
 ||re-captha-version-
+! https://blog.sucuri.net/2024/05/mal-metrica-redirects-users-to-scam-sites.html
+! http://teluguodu.com/om-bheem-bush-movie-review/ - example site
+||check-tl-ver-
+||gemfowls.com^
+||tech4u.app^
+||cloud.tnewstraffic.com^
+||cache.cloudswiftcdn.com^
+||cdn.metricastats.com^
+||cloud.edgerapidcdn.com^
+||content.gorapidcdn.com^
+||content.streamfastcdn.com^
+||fast.quickcontentnetwork.com^
+||ga.cdzanalytics.com^
+||gll.metricaga.com^
+||go.syndcloud.com^
+||host.gsslcloud.com^
+||metrics.gocloudmaps.com^
+||secure.gdcstatic.com^
+||secure.globalultracdn.com^
+||static.rapidglobalorbit.com^
+||synd.edgecdnc.com^
+||syndication.gcdnanalytics.com^
 ! https://www.reddit.com/r/uBlockOrigin/comments/1cane2z/clients_website_is_getting_blocked/l0tvbkp/
 ||mygeomanager.org^
 ||livedashboardkit.info^
