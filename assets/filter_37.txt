@@ -2,16 +2,16 @@
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2023-12-14T16:05:43.962Z
+! Last modified: 2024-04-09T14:05:25.417Z
 !
-! Compiled by @adguard/hostlist-compiler v1.0.23
+! Compiled by @adguard/hostlist-compiler v1.0.24
 !
 !
 ! Source name: No Google
 ! Source: https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt
 !
 ! This blocklist helps to restrict access to Google and its domains. Contribute at https://github.com/nickspaargaren/no-google
-! Last updated: 2023-12-14
+! Last updated: 2024-04-09
 ! Analytics
 ||adgoogle.net^
 ||clickserver.googleads.com^
@@ -39,6 +39,7 @@
 ||gstatic.net^
 ||KQu0cL-dnsotls-ds.metric.gstatic.com^
 ||2mdn.net^
+||ai.google.dev^
 ||app-measurement.com^
 ||chromeenterprise.google^
 ||com.google^
@@ -294,6 +295,7 @@
 ||maps.google.com.tn^
 ||maps.google.ir^
 ||near.by^
+||quantumai.google^
 ||research.google^
 ||sre.google^
 ||stories.google^
@@ -592,6 +594,7 @@
 ||feedburner.com^
 ||firehunt.com^
 ||fl04oiwlyp.com^
+||flutter.dev^
 ||flutter.io^
 ||fpik3ohegr.com^
 ||fsehahqwg1.com^
@@ -1428,7 +1431,9 @@
 ||zzzfreebonusopros20.page.link^
 ! Products
 ||chrome.com^
+||coral.ai^
 ||domains.google^
+||idx.dev^
 ||waze-app.com^
 ||waze.com^
 ||waze.uservoice.com^

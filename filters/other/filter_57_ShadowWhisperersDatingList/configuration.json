@@ -1,0 +1,19 @@
+{
+  "name": "ShadowWhisperer's Dating List",
+  "description": "Blocks dating sites.",
+  "homepage": "https://github.com/ShadowWhisperer/BlockLists",
+  "sources": [
+    {
+      "name": "ShadowWhisperer's Dating List",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Dating",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}
