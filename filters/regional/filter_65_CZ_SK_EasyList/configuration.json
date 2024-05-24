@@ -1,0 +1,18 @@
+{
+  "name": "CZ_SK: EasyList Czech and Slovak",
+  "description": "The Czech and Slovak Adblock List.",
+  "homepage": "https://github.com/tomasko126/easylistczechandslovak",
+  "sources": [
+    {
+      "name": "The Czech and Slovak Adblock List",
+      "source": "https://raw.githubusercontent.com/tomasko126/easylistczechandslovak/master/filters.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate"
+  ]
+}
