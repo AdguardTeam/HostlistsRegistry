@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-05-29T14:06:22.078Z
+! Last modified: 2024-05-30T05:06:18.700Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3248,6 +3248,7 @@ thepiratebay3.com^
 ! amazon / ebay
 ||amazon-task.vip^
 ||ama-zon08.cc^
+||qwvcc615.xyz^
 ||zaxacava2.pages.dev^
 ||c.vn-ebayn.vip^
 ||vn-ebay.quxlpuj.cn^
@@ -3264,7 +3265,7 @@ thepiratebay3.com^
 ||rakutenpluss.com^
 ||rakutentenn.com^
 
-! AT&T
+! AT&T / BT
 ||diwapa3051.wixsite.com^
 ||idhnochalter.wixsite.com^
 ||cajewar736.wixsite.com^
@@ -3330,15 +3331,7 @@ thepiratebay3.com^
 ||jawatankosongterkini-2024.yfth1.com^
 ||usps.mytrackingie.top^
 ||uaxaqr.com^
-
-! weebly/square phishing
-/^https:\/\/(?:[a-z0-9]{2,}-)+10\d{4}\.weeblysite\.com\//
-/^https:\/\/(?:[a-z0-9]{2,}-)+10\d{4}\.square\.site\//
 ||purple598020.studio.site^
-
-! spotify
-! https://community.spotify.com/t5/Accounts/Phishing-Email/td-p/5877600
-/^https:\/\/[^.]+\.codeanyapp\.com\/wp-content\/.+\/spo[a-z]{2}i\//
 ! https://infosec.exchange/@urldna/112411843484788233
 ||asistenciahoy.com^
 ||cffdzs.blogspot.fr^
