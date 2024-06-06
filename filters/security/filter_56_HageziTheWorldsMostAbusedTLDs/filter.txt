@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-06-06T04:06:40.134Z
+! Last modified: 2024-06-06T15:06:26.744Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -21,10 +21,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 05 Jun 2024 22:27 UTC
-! Version: 2024.0605.2227.16
+! Last modified: 06 Jun 2024 14:59 UTC
+! Version: 2024.0606.1459.21
 ! Syntax: AdGuard
-! Number of latin TLDs: 119 - punycode TLDs: 151
+! Number of latin TLDs: 125 - punycode TLDs: 151
 !
 ||*.africa^
 ||*.agency^$denyallow=baam.agency|battlefield.agency|robotzebra.agency|uphotel.agency|ws.agency
@@ -100,11 +100,13 @@
 ||*.motorcycles^
 ||*.mov^$denyallow=david.mov|spankbang.mov
 ||*.name^
+||*.navy^
 ||*.nf^$denyallow=google.com.nf
 ||*.okinawa^
 ||*.ooo^$denyallow=toast.ooo
 ||*.pet^$denyallow=kickthespy.pet|kuma.pet
 ||*.phd^$denyallow=rafael.phd
+||*.photos^
 ||*.prof^$denyallow=casey.prof
 ||*.promo^
 ||*.quest^$denyallow=amble.quest|bookshelf.quest|dice.quest|dont-panic.quest|epochal.quest|federation.quest|galaxy.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest|teacher.quest|theculture.quest|toot.quest
@@ -120,7 +122,9 @@
 ||*.sbs^$denyallow=ecopulse.sbs|moae.sbs
 ||*.sew^
 ||*.shop^$denyallow=11ts.shop|eventix.shop|terminal.shop|urlbluemedia.shop
+||*.site^
 ||*.skin^
+||*.space^$denyallow=carstens.space|drgns.space|hf.space|httpjames.space|hullseals.space|link.space|searx.space
 ||*.st^$denyallow=avito.st|bpa.st|google.st|selfh.st
 ||*.store^$denyallow=androeed.store
 ||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|quran.surf|s-wings.surf
@@ -133,6 +137,7 @@
 ||*.top^$denyallow=1stream.top|ambr.top|arjun.top|audioforyou.top|awavenue.top|caitlin.top|callmebymygender.top|castlevania.top|chillx.top|corriente.top|gdtot.top|magocoro.top|mastodon.top|nicenature.top|pdcdn1.top|pegelinux.top|pressplay.top|reminder.top|reyhub.top|shucks.top|strims.top|suiten.top|techblog.top|thedesk.top|vsdb.top
 ||*.trade^$denyallow=composer.trade|kite.trade
 ||*.uno^
+||*.vip^$denyallow=18comic.vip|stream.vip
 ||*.vlaanderen^
 ||*.voto^
 ||*.wang^
@@ -141,6 +146,7 @@
 ||*.wiki^$denyallow=bg3.wiki|burnout.wiki|datei.wiki|fallout.wiki|getindie.wiki|kodi.wiki|mediaclients.wiki|minecraft.wiki|modding.wiki|namu.wiki|notifiarr.wiki|osrs.wiki|rs.wiki|runescape.wiki|w.wiki|zeppelin.wiki
 ||*.win^
 ||*.work^$denyallow=elphago.work|frame.work
+||*.world^
 ||*.wtf^$denyallow=akko.wtf|myip.wtf|plooshiesaresocute.wtf|tigress.wtf
 ||*.yachts^
 ||*.you^
