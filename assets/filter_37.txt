@@ -2,7 +2,7 @@
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2024-06-12T18:06:48.186Z
+! Last modified: 2024-06-12T19:05:46.227Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -10,11 +10,8 @@
 ! Source name: No Google
 ! Source: https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt
 !
-! This blocklist helps to restrict access to Google and its domains. Contribute at https://github.com/nickspaargaren/no-google
-! Last updated: 2024-06-12
-! Analytics
 ||adgoogle.net^
-||clickserver.googleads.com^
+||baseremoteconfig.googleapis.comadometry.com^
 ||crashlytics.com^
 ||google-analytics-cn.com^
 ||google-analytics.com^
@@ -38,11 +35,34 @@
 ||gstatic.com^
 ||gstatic.net^
 ||KQu0cL-dnsotls-ds.metric.gstatic.com^
+||2mdn-cn.net^
 ||2mdn.net^
-||ai.google.dev^
+||affiliate-script-pr.firebaseapp.com^
+||agnss.goog^
+||ai.com^
+||analytics.firebaseapp.com^
+||apigee.com^
+||apigee.net^
 ||app-measurement.com^
+||aswpsdkeu.com^
+||balrog.nonprod.cloudops.mozgcp.net^
+||balrog.prod.cloudops.mozgcp.net^
+||bg-call-donation-alpha.goog^
+||bg-call-donation-canary.goog^
+||bg-call-donation-dev.goog^
+||bg-call-donation.goog^
+||brightbytes.net^
+||chromecastexperiments.com^
 ||chromeenterprise.google^
+||chromexperiments.com^
 ||com.google^
+||content-signature-chains.prod.webservices.mozgcp.net^
+||digitalkeypairing.org^
+||face-indexing.com^
+||face-mining.com^
+||faceindexing.com^
+||facemining.com^
+||facesort.com^
 ||foofle.com^
 ||forms.gle^
 ||froogle.com^
@@ -53,6 +73,7 @@
 ||gmodules.com^
 ||gogle.com^
 ||gogole.com^
+||goo.gle^
 ||googel.com^
 ||googil.com^
 ||googl.com^
@@ -290,23 +311,63 @@
 ||id.google.jp^
 ||id.google.pk^
 ||igoogle.com^
+||kaggle.com^
+||looker.com^
 ||maps.google.com.ls^
 ||maps.google.com.th^
 ||maps.google.com.tn^
 ||maps.google.ir^
 ||near.by^
+||ns-tld1.charlestonroadregistry.com^
+||papy.co.jp^
+||partnerplustoolkit.com^
+||partners-aunz.com^
+||partnersaunz.com^
+||perplexity.ai^
+||pittpatt.com^
+||pki.goog^
+||postinistats.com^
+||postinitraining.com^
+||postrank.com^
+||privacychoices.org^
+||privacysandbox.com^
+||promotargeting.com^
+||promotargeting.net^
+||promotionbuildr.com^
+||promotionsbuildr.com^
+||promotionshq.com^
+||proofing.gmsdrops.goog^
 ||quantumai.google^
+||remote-settings.nonprod.webservices.mozgcp.net^
+||remote-settings.prod.webservices.mozgcp.net^
 ||research.google^
+||sandbox-freebase.com^
+||sandbox-freebaseapps.com^
+||screenwisemedia.com^
+||screenwisepanel.com^
+||screenwiseselect.com^
+||screenwisetrends.com^
+||screenwisetrendspanel.com^
+||simtransfer.goog^
+||slides.new^
 ||sre.google^
 ||stories.google^
+||syndicatedsearch.goog^
 ||tpc.googlesyndicytion.com^
 ||translate.goog^
 ||tv.google^
+||tveweb-appsvcs-aetnd-com-8ff57.firebaseapp.com^
+||urbanengines.com^
+||urchin.fr^
+||useg.nextdigital.com.hk^
+||walkthrough-tool.firebaseapp.com^
 ||www.google.com.ls^
 ||www.google.com.th^
 ||www.google.com.tn^
 ||www.google.ir^
 ||www.google.it.ao^
+||www.sO.2mdn.net^
+||youtube-3rd-party.com^
 ! Doubleclick
 ||doubleclick.com^
 ||doubleclick.de^
@@ -314,6 +375,7 @@
 ||doubleclick.net^
 ||doubleclickbygoogle.com^
 ||static.doubleclick.netnod^
+||www.ad.doubleclick.ne^
 ! Fiber
 ||googlefiber.net^
 ! Firebase
@@ -488,7 +550,10 @@
 ||adservice.google.ua^
 ||adups.com^
 ||advertisercommunity.com^
+||adwords-community.com^
 ||adwords.com^
+||adwords.google^
+||adwordsexpress.com^
 ||aglgqf4qs7.com^
 ||agoogleaday.com^
 ||ai.google^
@@ -496,6 +561,7 @@
 ||ampproject.org^
 ||amwbp6elqd.com^
 ||an5ywmva51.com^
+||api-googlemaps.net^
 ||appassets.androidplatform.net^
 ||appliedsemantics.com^
 ||apps5.oingo.com^
@@ -505,6 +571,9 @@
 ||autodraw.com^
 ||ayz0l8b0ew.com^
 ||b42mt0jrxf.com^
+||beacons-handoff.gcp.gvt5.com^
+||beacons.gcp.gvt5.com^
+||beacons.gvt5.com^
 ||beacons.gvt9.com^
 ||beacons5.gvt9.com^
 ||bg016rsivc.com^
@@ -544,6 +613,8 @@
 ||Cliens-2.google.com^
 ||cnaiezv38i.com^
 ||cobrasearch.com^
+||com.gemini.google^
+||com.xd.gemini.google^
 ||conversion-pixel.invitemedia.com^
 ||creative.cc-dt.com^
 ||crr0kvp1vv.com^
@@ -566,6 +637,7 @@
 ||dlut31p12z.com^
 ||dmtry.com^
 ||dns.google^
+||doodle4google.com^
 ||dp1msx93o1.com^
 ||dszj1hsjze.com^
 ||dwfwrmuek2.com^
@@ -614,22 +686,37 @@
 ||gib6606kgt.com^
 ||gioa5a3ukb.com^
 ||google-analytics.bi.owox.com^
+||google-pagerank.net^
 ||google.cx^
+||google.dev^
 ||google.eu^
 ||google.nf^
+||google.qualtrics.com^
 ||google.us^
+||googleaccountservices.com^
+||googleacquisitionmigration.com^
+||googleadapis.com^
+||googleads-cn.com^
+||googleads.com^
 ||googleadservices.co.uk^
 ||googleadservices.org^
 ||googleadservices.ru^
 ||googleadsserving.cn^
+||googleailesi.com^
 ||googleapis.com^
+||googleartproject.com^
+||googleplex.com^
 ||googlesciencefair.com^
+||googlesites.net^
 ||googlesource.com^
 ||googlesucks.com^
+||googletagservices-cn.com^
+||googletraveladservices-cn.com^
 ||googletraveladservices.com^
 ||googleusercontent.com^
 ||googlevideo.com^
 ||googlew.com^
+||googleweather.infogooglewifi.com^
 ||googlezip.net^
 ||gooogleapi.com^
 ||gp3gie1qbl.com^
@@ -668,6 +755,7 @@
 ||jd6iaikyda.com^
 ||jfruuvjr01.com^
 ||jix52tbhtf.com^
+||jmt17.google.^
 ||johu47i4g2.com^
 ||jr5xk4cyli.com^
 ||jtv5uybvs5.com^
@@ -705,6 +793,10 @@
 ||m80fg.com^
 ||m9dpopwtfu.com^
 ||madewithcode.com^
+||maps.google.com.do^
+||maps.google.com.ly^
+||maps.google.com.na^
+||maps.google.com.vc^
 ||material.io^
 ||mbmxgxxq1a.com^
 ||mdf91.com^
@@ -725,6 +817,7 @@
 ||n53eo6lws1.com^
 ||ndf81.com^
 ||ndt9tkktw6.com^
+||nestlabsgoogle.com^
 ||nfd81.com^
 ||nm0n1130ab.com^
 ||nn0e.com^
@@ -732,6 +825,10 @@
 ||nnlyu0swp0.com^
 ||nqp8358ik8.com^
 ||nrryyv92gi.com^
+||ns1.zdns.google^
+||ns2.zdns.google^
+||ns3.zdns.google^
+||ns4.zdns.google^
 ||nsk6ee6764.com^
 ||nvds6yqjm4.com^
 ||nwf07zk49q.com^
@@ -740,10 +837,10 @@
 ||oa9lvjhuw3.com^
 ||oazuwk6830.com^
 ||obqlaw84jg.com^
-||ocsp.pki.goog^
 ||odbetzy40u.com^
 ||of43chlfhq.com^
 ||okev9r02vb.com^
+||okgoogle.net^
 ||oldo5rrwhw.com^
 ||onka64mqbc.com^
 ||opensource.google^
@@ -759,6 +856,9 @@
 ||pnagolh5kv.com^
 ||ppmf4x1f9q.com^
 ||ppn2.com^
+||publicidadengoogle.biz^
+||publicidadengoogle.cl^
+||publicidadgoogleadwords.cl^
 ||puyroytflq.com^
 ||pvy2rdmnsp.com^
 ||pz3jakyva3.com^
@@ -772,6 +872,7 @@
 ||R1.sn-2a0noxu-ajt1.gvt1.com^
 ||rec4gno8he.com^
 ||redirector.gvt5.com^
+||registry.google^
 ||rjscu4as3k.com^
 ||rlfqaqqhzg.com^
 ||rosmagdo66.com^
@@ -856,7 +957,12 @@
 ||wq4bmoaedv.com^
 ||wv1xpwzpk2.com^
 ||www.google-docs.org^
+||www.google.com.do^
+||www.google.com.ly^
+||www.google.com.na^
+||www.google.com.vc^
 ||www.recaptcha.net^
+||www.support.google^
 ||x6mh5eo6jr.com^
 ||x706fc7pqy.com^
 ||x8sqkqod8h.com^
@@ -900,6 +1006,7 @@
 ||zx2nndxnz8.com^
 ||zyvwtasyon.com^
 ! Mail
+||email-insights.co.uk^
 ||gmail-for-your-domain.info^
 ||gmail.co^
 ||gmail.de^
