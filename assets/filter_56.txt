@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-06-11T04:06:49.426Z
+! Last modified: 2024-06-13T05:07:04.957Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -21,10 +21,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 10 Jun 2024 22:26 UTC
-! Version: 2024.0610.2226.17
+! Last modified: 12 Jun 2024 20:04 UTC
+! Version: 2024.0612.2004.32
 ! Syntax: AdGuard
-! Number of latin TLDs: 125 - punycode TLDs: 151
+! Number of latin TLDs: 127 - punycode TLDs: 151
 !
 ||*.africa^
 ||*.agency^$denyallow=baam.agency|battlefield.agency|robotzebra.agency|uphotel.agency|ws.agency
@@ -46,11 +46,13 @@
 ||*.buzz^$denyallow=allthe.buzz|awful.buzz|cliq.buzz|montpellier.buzz|sideb.buzz|williamsonday.buzz
 ||*.cam^
 ||*.casa^
+||*.cc^
 ||*.center^
 ||*.cf^$denyallow=acap.cf|google.cf
 ||*.cfd^$denyallow=frcoal.cfd|freedium.cfd
 ||*.charity^
 ||*.christmas^
+||*.click^
 ||*.club^$denyallow=reolink.club
 ||*.coupons^
 ||*.cyou^$denyallow=hammertime.cyou
