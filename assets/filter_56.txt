@@ -2,7 +2,7 @@
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-06-15T03:06:16.735Z
+! Last modified: 2024-06-16T04:06:29.603Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -21,10 +21,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 14 Jun 2024 21:55 UTC
-! Version: 2024.0614.2155.57
+! Last modified: 16 Jun 2024 00:17 UTC
+! Version: 2024.0616.0017.20
 ! Syntax: AdGuard
-! Number of latin TLDs: 135 - punycode TLDs: 151
+! Number of latin TLDs: 143 - punycode TLDs: 151
 !
 ||*.africa^
 ||*.agency^$denyallow=baam.agency|battlefield.agency|robotzebra.agency|uphotel.agency|ws.agency
@@ -47,14 +47,16 @@
 ||*.buzz^$denyallow=allthe.buzz|awful.buzz|cliq.buzz|montpellier.buzz|sideb.buzz|williamsonday.buzz
 ||*.cam^
 ||*.casa^
-||*.cc^$denyallow=shottr.cc
+||*.cc^$denyallow=shottr.cc|wallhaven.cc
 ||*.center^
 ||*.cf^$denyallow=acap.cf|google.cf
 ||*.cfd^$denyallow=frcoal.cfd|freedium.cfd
 ||*.charity^
 ||*.christmas^
+||*.church^
 ||*.click^
 ||*.club^$denyallow=reolink.club
+||*.cm^$denyallow=google.cm
 ||*.coupons^
 ||*.cu^$denyallow=google.com.cu
 ||*.cyou^$denyallow=hammertime.cyou
@@ -88,6 +90,7 @@
 ||*.homes^
 ||*.icu^
 ||*.ink^$denyallow=ishortn.ink|next.ink|short.ink
+||*.kg^$denyallow=google.kg
 ||*.kim^
 ||*.lat^
 ||*.life^$denyallow=2ch.life|akamaicdn.life|circles.life|colorgame.life|digitalcitizen.life|iboost.life|lifetime.life|loveinfaith.life|stepone.life|yiff.life
@@ -105,9 +108,12 @@
 ||*.monster^$denyallow=cloudcdn.monster|egybest.monster|fedi.monster|rollenspiel.monster|tts.monster|vipbj.monster|yts.monster
 ||*.motorcycles^
 ||*.mov^$denyallow=david.mov|spankbang.mov
+||*.mr^
 ||*.name^
 ||*.navy^
+||*.ne^$denyallow=google.ne
 ||*.nf^$denyallow=google.com.nf
+||*.ni^$denyallow=google.com.ni
 ||*.okinawa^
 ||*.ooo^$denyallow=toast.ooo
 ||*.party^
@@ -123,6 +129,7 @@
 ||*.rehab^
 ||*.rest^$denyallow=crystals.rest|nect.rest
 ||*.review^
+||*.rich^
 ||*.rip^$denyallow=medium.rip
 ||*.rodeo^$denyallow=raypeat.rodeo
 ||*.rugby^
@@ -140,6 +147,7 @@
 ||*.sx^$denyallow=filemoon.sx|voe.sx
 ||*.sz^
 ||*.tattoo^
+||*.tg^$denyallow=google.tg
 ||*.tk^$denyallow=adistance.tk|bonzibuddy.tk|bryla.tk|bstweaker.tk|budterence.tk|censurion.tk|c-r-t.tk|cuso.tk|google.tk|goshujin.tk|gotofap.tk|graph.tk|kabi.tk|pube.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
 ||*.today^$denyallow=archive.today
 ||*.tokyo^
