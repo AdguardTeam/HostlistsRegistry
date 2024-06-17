@@ -1,13 +1,15 @@
-// Prepares filters.json and tags.json in the locales folder
+// Prepares filters.json, groups.json and tags.json in the locales folder
 // Run with node scripts/translations/prepare.js
 const fs = require('fs');
 const path = require('path');
 
 const TAGS_META_PATH = 'tags/metadata.json';
+const GROUPS_META_PATH = 'groups/metadata.json';
 const FILTERS_META_PATH = 'filters';
 const BASE_LOCALE_DIR = 'locales/en';
 const FILTERS_FILE = path.join(BASE_LOCALE_DIR, 'filters.json');
 const TAGS_FILE = path.join(BASE_LOCALE_DIR, 'tags.json');
+const GROUPS_FILE = path.join(BASE_LOCALE_DIR, 'groups.json');
 const METADATA_FILE = 'metadata.json';
 
 /**
@@ -34,7 +36,7 @@ const readFiltersMeta = (baseDir) => {
 }
 
 /**
- * Returns id of hostlist or hostlisttag in the input object.
+ * Returns id of hostlist, hostlisttag or hostlistgroup in the input object.
  *
  * @param {object} input Base locale object.
  *
@@ -61,12 +63,16 @@ const sortBaseLanguageItems = (inputItems) => {
     });
 };
 
-const tags = JSON.parse(fs.readFileSync(TAGS_META_PATH).toString());
-const filters = readFiltersMeta(FILTERS_META_PATH);
-const filtersBaseLanguage = JSON.parse(fs.readFileSync(FILTERS_FILE));
-const tagsBaseLanguage = JSON.parse(fs.readFileSync(TAGS_FILE));
+const tagsMetadata = require(TAGS_META_PATH);
+const groupsMetadata = require(GROUPS_META_PATH);
+const filtersMetadata = readFiltersMeta(FILTERS_META_PATH);
+const filtersBaseLanguage = require(FILTERS_FILE);
+const tagsBaseLanguage = require(TAGS_FILE);
+const groupsBaseLanguage = require(GROUPS_FILE);
 
-for (let filter of filters) {
+const processedTags = new Set();
+const processedGroups = new Set();
+for (let filter of filtersMetadata) {
     const id = filter.id;
     const name = filter.name;
     const description = filter.description;
@@ -74,47 +80,63 @@ for (let filter of filters) {
 
     const filterNameKey = `hostlist.${id}.name`;
     const filterDescriptionKey = `hostlist.${id}.description`;
-    let found = false;
 
-    for (let filterLocale of filtersBaseLanguage) {
-        if (filterNameKey in filterLocale) {
-            filterLocale[filterNameKey] = name;
-            filterLocale[filterDescriptionKey] = description;
-            found = true;
-            break;
+    let filterLocalisationFindInBaseFile = filtersBaseLanguage
+        .some((entry) => entry.hasOwnProperty(filterNameKey));
+
+    if (!filterLocalisationFindInBaseFile) {
+        filtersBaseLanguage.push({
+            [filterNameKey]: name,
+            [filterDescriptionKey]: description
+        });
+    }
+
+    // Tags
+    for (let tagId of filterTags) {
+        if (processedTags.has(tagId)) {
+            continue;
         }
-    }
 
-    if (!found) {
-        const filterLocale = {};
-        filterLocale[filterNameKey] = name;
-        filterLocale[filterDescriptionKey] = description;
-        filtersBaseLanguage.push(filterLocale);
-    }
-
-    for (let tag of filterTags) {
-        const tagMeta = tags.find((el) => el.keyword === tag)
+        const tagMeta = tagsMetadata.find((el) => el.id === tagId)
         if (!tagMeta) {
-            throw new Error(`Cannot find tag metadata ${tag}, fix it in ${TAGS_FILE}`);
+            throw new Error(`Cannot find tag metadata ${tagId}, fix it in ${TAGS_FILE}`);
         }
 
-        const tagNameKey = `hostlisttag.${tagMeta.tagId}.name`;
-        const tagDescriptionKey = `hostlisttag.${tagMeta.tagId}.description`;
-        let found = false;
+        const tagNameKey = `hostlisttag.${tagId}.name`;
+        const tagDescriptionKey = `hostlisttag.${tagId}.description`;
 
-        for (let tagLocale of tagsBaseLanguage) {
-            if (tagNameKey in tagLocale) {
-                found = true;
-                break;
-            }
+        let tagLocalisationFoundInBaseFile = tagsBaseLanguage
+            .some((entry) => entry.hasOwnProperty(tagNameKey));
+
+        if (!tagLocalisationFoundInBaseFile) {
+            tagsBaseLanguage.push({
+                [tagNameKey]: `TODO: name for tag ${tagMeta.keyword}`,
+                [tagDescriptionKey]: `TODO: description for tag ${tagMeta.keyword}`
+            });
         }
 
-        if (!found) {
-            const tagLocale = {};
-            tagLocale[tagNameKey] = `TODO: name for tag ${tagMeta.keyword}`;
-            tagLocale[tagDescriptionKey] = `TODO: description for tag ${tagMeta.keyword}`;
-            tagsBaseLanguage.push(tagLocale);
+        processedTags.add(tagId);
+    }
+
+    // Group
+    if (!processedGroups.has(filter.groupId)) {
+        const groupMeta = groupsMetadata.find((el) => el.groupId === filter.groupId);
+        if (!groupMeta) {
+            throw new Error(`Cannot find group metadata for groupId ${filter.groupId}, fix it in ${GROUPS_FILE}`);
         }
+
+        const groupNameKey = `hostlistgroup.${filter.groupId}.name`;
+
+        let groupLocalisationFoundInBaseFile = groupsBaseLanguage
+            .some((entry) => entry.hasOwnProperty(groupNameKey));
+
+        if (!groupLocalisationFoundInBaseFile) {
+            groupsBaseLanguage.push({
+                [groupNameKey]: `TODO: name for group ${filter.groupId}`
+            });
+        }
+
+        processedGroups.add(filter.groupId);
     }
 }
 
@@ -126,4 +148,9 @@ fs.writeFileSync(
 fs.writeFileSync(
     TAGS_FILE,
     JSON.stringify(sortBaseLanguageItems(tagsBaseLanguage), 0, '\t'),
+);
+
+fs.writeFileSync(
+    GROUPS_FILE,
+    JSON.stringify(sortBaseLanguageItems(groupsBaseLanguage), 0, '\t')
 );

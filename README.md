@@ -58,7 +58,7 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
 
   Filter metadata. Includes name, description, etc.
 
-  - `filterId` — unique human-readable filter identifier (string)
+  - `filterKey` — unique human-readable filter identifier (string)
   - `id` - unique internal filter identifier (integer)
   - `name` — filter name; can be localized
   - `description` — filter description
@@ -75,7 +75,7 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
 
   ```json
   {
-    "filterId": "adguard_dns_filter",
+    "filterKey": "adguard_dns_filter",
     "id": 1,
     "name": "AdGuard DNS filter",
     "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",

@@ -2,15 +2,16 @@
   "name": "adguard-hostlists-registry",
   "version": "1.0.0",
   "description": "Hostlists Registry",
-  "main": "index.js",
+  "main": "scripts/compose.js",
   "dependencies": {
     "adguard-hostlists-builder": "./hostlists-builder/",
     "chalk": "^4.0.0",
+    "dayjs": "^1.11.11",
     "js-yaml": "^4.1.0",
     "xmldom": "^0.6.0"
   },
   "scripts": {
-    "compose": "node index.js",
+    "compose": "node scripts/compose.js",
     "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "cd scripts/translations ; ./download.sh",
     "locales:upload": "cd scripts/translations ; ./upload.sh",
