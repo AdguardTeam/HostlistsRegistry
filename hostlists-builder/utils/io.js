@@ -39,7 +39,7 @@ const writeFile = async function (path, data) {
  */
 const listDirs = async function (baseDir) {
     const out = [];
-    for await (const file of fs.promises.readdir(baseDir)) {
+    for (const file of await fs.promises.readdir(baseDir)) {
         const currentPath = path.join(baseDir, file);
         const stats = await fs.promises.stat(currentPath);
 

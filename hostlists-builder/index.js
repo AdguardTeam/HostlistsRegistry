@@ -86,9 +86,9 @@ const calculateRevisionHash = function (compiled) {
   return Buffer.from(md5(data, { asString: true })).toString('base64').trim();
 }
 
-const readHostlistConfiguration = function (filterDir) {
+const readHostlistConfiguration = async function (filterDir) {
   const configurationFile = path.join(filterDir, CONFIGURATION_FILE);
-  return JSON.parse(readFile(configurationFile));
+  return JSON.parse(await readFile(configurationFile));
 }
 
 /**
@@ -168,18 +168,18 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
 
   const filterDirs = await listFiltersDirs(filtersDir);
   for (const filterDir of filterDirs) {
-    const metadata = JSON.parse(readFile(path.join(filterDir, METADATA_FILE)));
+    const metadata = JSON.parse(await readFile(path.join(filterDir, METADATA_FILE)));
 
     // Validate filterKey field
     filterKeyValidator.validate(metadata.filterKey);
 
     // Reads the current revision information.
     const revisionFile = path.join(filterDir, REVISION_FILE);
-    const currentRevision = JSON.parse(readFile(revisionFile)) || { timeUpdated: new Date().getTime(), version: versionUtils.START_VERSION };
+    const currentRevision = JSON.parse(await readFile(revisionFile)) || { timeUpdated: new Date().getTime(), version: versionUtils.START_VERSION };
     let { timeUpdated, version } = currentRevision;
 
     // Compiles the hostlist using provided configuration.
-    const hostlistConfiguration = readHostlistConfiguration(filterDir);
+    const hostlistConfiguration = await readHostlistConfiguration(filterDir);
     const filterName = `filter_${metadata.id}.txt`;
 
     // If the hostlist is disabled, do not attempt to download it, just use the
@@ -253,7 +253,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
   await deferredRunner.run();
 
   // Build Mastodon dynamic server list
-  const services = JSON.parse(readFile(path.join(assetsDir, SERVICES_FILE)));
+  const services = JSON.parse(await readFile(path.join(assetsDir, SERVICES_FILE)));
   const mastodonServers = await mastodonServerlistCompiler();
 
   const mastodonIndex = services.blocked_services

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Hostlists Registry",
   "main": "scripts/compose.js",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "adguard-hostlists-builder": "./hostlists-builder/",
     "chalk": "^4.0.0",
