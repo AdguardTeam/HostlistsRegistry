@@ -43,7 +43,7 @@ module.exports = (() => {
         }
 
         for (let i = version.length; i > 0; i -= 1) {
-            if (version[i] >= 100 && i != 0) {
+            if (version[i] >= 100 && i !== 0) {
                 version[i] = 0;
                 version[i - 1] += 1;
             }

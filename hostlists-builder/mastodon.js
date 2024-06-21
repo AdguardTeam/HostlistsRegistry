@@ -20,7 +20,7 @@
      *
      * @type {Promise<Response>}
      */
-    let servers = await fetch('https://api.joinmastodon.org/servers')
+     let servers = await (await fetch('https://api.joinmastodon.org/servers'))
         .json();
 
         // Sort servers by total_users

@@ -34,7 +34,7 @@ module.exports = (() => {
                 throw new Error(`Cannot find a tag with keyword "${keyword}" in tags metadata`);
             }
 
-            return tags.map(keyword);
+            return tagsMap.get(keyword);
         });
     };
 

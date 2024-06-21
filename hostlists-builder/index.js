@@ -7,7 +7,7 @@ const dayjs = require('dayjs');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
 const mastodonServerlistCompiler = require('adguard-hostlists-builder/mastodon');
 const { listDirs, writeFile, readFile, DeferredRunner } = require('./utils/io');
-const versionUtils = require('./utils/version');
+const Revision = require('./utils/revision');
 const tagsUtils = require('./utils/tags');
 const replaceExpires = require('./utils/expires');
 const filterKeyValidatorFactory = require('./utils/validateFilterKey');
@@ -45,33 +45,6 @@ const listFiltersDirs = async function (baseDir) {
   }
   return filterDirs;
 }
-
-/**
- * Creates revision object,
- * doesn't update revision values if hash is not changed
- *
- * @param currentRevision
- * @param hash
- *
- * @returns {{timeUpdated: number, hash: String, version: number}}
- */
-const makeRevision = function (currentRevision, hash) {
-  const result = {
-    timeUpdated: new Date().getTime(),
-    hash,
-    version: currentRevision.version || versionUtils.START_VERSION,
-  };
-
-  if (currentRevision) {
-      if (currentRevision.hash === result.hash) {
-          result.timeUpdated = currentRevision.timeUpdated;
-      } else {
-          result.version = versionUtils.increment(currentRevision.version);
-      }
-  }
-
-  return result;
-};
 
 /**
  * Calculates revision for compiled rules.
@@ -175,8 +148,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
 
     // Reads the current revision information.
     const revisionFile = path.join(filterDir, REVISION_FILE);
-    const currentRevision = JSON.parse(await readFile(revisionFile)) || { timeUpdated: new Date().getTime(), version: versionUtils.START_VERSION };
-    let { timeUpdated, version } = currentRevision;
+    const revision = new Revision(JSON.parse(await readFile(revisionFile)));
 
     // Compiles the hostlist using provided configuration.
     const hostlistConfiguration = await readHostlistConfiguration(filterDir);
@@ -186,25 +158,28 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
     // existing one.
     if (!metadata.disabled) {
       try {
-        const hostlistCompiled = await hostlistCompiler(hostlistConfiguration);
+        revision.safelyIncrementVersion();
+        revision.safelyUpdateTime();
+
+        const hostlistCompiled = await hostlistCompiler({
+          ...hostlistConfiguration,
+          version: revision.version,
+        });
+
         const hash = calculateRevisionHash(hostlistCompiled);
 
         // Rewrites the filter if it's actually changed.
-
-        if (currentRevision.hash !== hash) {
-          const newRevision = makeRevision(currentRevision, hash);
+        if (revision.hash !== hash) {
+          revision.setHash(hash);
           const assetsFilterFile = path.join(assetsDir, filterName);
           const filterFile = path.join(filterDir, 'filter.txt');
           const content = hostlistCompiled.join('\n');
-
-          timeUpdated = newRevision.timeUpdated;
-          version = newRevision.version;
 
           // We don't write files now, cause next iteration may fails.
           // We want do it clear after loop
           deferredRunner.push(async () => {
             return Promise.all([
-              writeFile(revisionFile, newRevision),
+              writeFile(revisionFile, revision.makePlainObject()),
               writeFile(assetsFilterFile, content),
               writeFile(filterFile, content),
             ]);
@@ -232,14 +207,14 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
       description: metadata.description,
       tags: tagsUtils.mapTagKeywordsToTheirIds(metadata.tags),
       languages: tagsUtils.parseLangTag(metadata.tags),
-      version,
+      version: revision.version,
       homepage: metadata.homepage,
       expires: replaceExpires(metadata.expires),
       displayNumber: metadata.displayNumber,
       downloadUrl,
       subscriptionUrl,
       timeAdded: dayjs(metadata.timeAdded).format(OUTPUT_DATE_FORMAT),
-      timeUpdated: dayjs(timeUpdated).format(OUTPUT_DATE_FORMAT),
+      timeUpdated: dayjs(revision.timeUpdated).format(OUTPUT_DATE_FORMAT),
     };
 
     if (metadata.environment === 'prod') {
