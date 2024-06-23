@@ -2,7 +2,7 @@
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-06-22T11:05:28.143Z
+! Last modified: 2024-06-23T00:23:03.899Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -578,23 +578,18 @@
 ||ykad-gateway.youku.com^
 ||youku-acs.m.taobao.com^
 ||youxi.kugou.com^
-/*-ad-*.byteimg.com/
-/*-ad-sign.byteimg.com/
-/*-ad.sm.cn/
-/*-ad.video.yximgs.com/
-/*-ad.wtzw.com/
-/*-be-pack-sign.pglstatp-toutiao.com/
-/*-lm.adkwai.com/
-/*-normal-lq.zijieapi.com/
 /*.*.shouji.sogou.com/
-/*.*skwai.com/
+/*.[a-zA-Z0-9.-]skwai.com/
 /*.a.market.xiaomi.com/
 /*.data.hicloud.com/
 /*.log.aliyuncs.com/
 /*.shouji.sogou.com/
-/*.zskwai.com/
-/ads*-normal-*.zijieapi.com/
-/ads*-normal.zijieapi.com/
-/cloud-inject-global.oss-cn-hongkong.aliyuncs.com/
-/cloudinject*-dev.*.*-*-*.amazonaws.com/
-/cloudinject*-dev.s3.ap-northoreast-1.amazonaws.com/
+/[a-zA-Z0-9.-]*-ad-[a-zA-Z0-9.-]*.byteimg.com/
+/[a-zA-Z0-9.-]*-ad.sm.cn/
+/[a-zA-Z0-9.-]*-ad.video.yximgs.com/
+/[a-zA-Z0-9.-]*-ad.wtzw.com/
+/[a-zA-Z0-9.-]*-be-pack-sign.pglstatp-toutiao.com/
+/[a-zA-Z0-9.-]*-lm.adkwai.com/
+/[a-zA-Z0-9.-]*-normal-[a-zA-Z0-9.-]*.zijieapi.com/
+/[a-zA-Z0-9.-]*-normal.zijieapi.com/
+/cloudinject[a-zA-Z0-9.-]*-dev.*.[a-zA-Z0-9.-]*-[a-zA-Z0-9.-]*-[a-zA-Z0-9.-]*.amazonaws.com/
