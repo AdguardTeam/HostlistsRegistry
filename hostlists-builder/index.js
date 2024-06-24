@@ -182,7 +182,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
           const content = hostlistCompiled.join('\n');
 
           // We don't write files now, cause next iteration may fails.
-          // We want do it clear after loop
+          // We will do it after all filters have been successfully compiled
           deferredRunner.push(async () => {
             return Promise.all([
               writeFile(revisionFile, revision.makePlainObject()),
