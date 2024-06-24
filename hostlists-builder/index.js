@@ -152,9 +152,13 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
     const revisionFile = path.join(filterDir, REVISION_FILE);
     const revision = new Revision(JSON.parse(await readFile(revisionFile)));
 
+    if (typeof metadata.filterId === 'undefined') {
+      throw new Error('You should use `filterId` instead of `id` in metadata.json');
+    }
+
     // Compiles the hostlist using provided configuration.
     const hostlistConfiguration = await readHostlistConfiguration(filterDir);
-    const filterName = `filter_${metadata.id}.txt`;
+    const filterName = `filter_${metadata.filterId}.txt`;
 
     // If the hostlist is disabled, do not attempt to download it, just use the
     // existing one.
@@ -199,10 +203,6 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
       subscriptionUrl = hostlistConfiguration.sources[0].source;
     } else {
       subscriptionUrl = metadata.homepage;
-    }
-
-    if (typeof metadata.filterId === 'undefined') {
-      throw new Error('You should use `filterId` instead of `id` in metadata.json');
     }
 
     // populates metadata for filter
