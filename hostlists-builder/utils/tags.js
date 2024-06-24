@@ -1,54 +1,54 @@
-const tagsMetadata = require('../../tags/metadata.json');
-
-module.exports = (() => {
+/**
+ * Tags metadata methods container
+ */
+module.exports = class TagsMetadataUtils {
     /**
      * Builds a map from tags metadata
-     * 
-     * @return {Map<String, number>}
+     *
+     * @param {Array<{tagId: number, keyword: string}>} tagsMetadata Tags list from tags/metadata.json
      */
-    const buildTagsMap = function () {
-        const map = new Map();
-        for (const tagMetadata of tagsMetadata) {
-            if (map.has(tagMetadata.keyword)) {
+    constructor(tagsMetadata) {
+        this.tagsMap = new Map();
+
+        tagsMetadata.forEach((tagMetadata) => {
+            if (this.tagsMap.has(tagMetadata.keyword)) {
                 throw new Error(`Duplicate entry encountered for tag: ${tagMetadata.keyword}`);
             }
 
-            map.set(tagMetadata.keyword, tagMetadata.tagId);
-        }
-
-        return map;
-    };
-
-    const tagsMap = buildTagsMap();
+            this.tagsMap.set(tagMetadata.keyword, tagMetadata.tagId);
+        });
+    }
 
     /**
      * Maps tags keywords to their ids, or throws an error if keyword is not found
      *
-     * @param {string[]} tags
+     * @param {string[]} tagsKeywords Tag keywords list
      *
-     * @return {number[]}
+     * @returns {number[]} list of matching identifiers
      */
-    const mapTagKeywordsToTheirIds = function (tags) {
-        return tags.map((keyword) => {
-            if (!tagsMap.has(keyword)) {
+    mapTagKeywordsToTheirIds(tagsKeywords) {
+        return tagsKeywords.map((keyword) => {
+            if (!this.tagsMap.has(keyword)) {
                 throw new Error(`Cannot find a tag with keyword "${keyword}" in tags metadata`);
             }
 
-            return tagsMap.get(keyword);
+            return this.tagsMap.get(keyword);
         });
-    };
+    }
 
     /**
      * In case of backward compatibility
      * Adds 'languages' metadata field parsed from 'lang:' tags
      *
-     * @param {string[]} tagsKeywords
+     * @param {string[]} tagsKeywords Tags keywords list
+     *
+     * @returns {string[]}
      */
-    const parseLangTag = function (tagsKeywords) {
+    parseLangTag(tagsKeywords) {
         const languages = [];
 
         let hasRecommended = false;
-        for (const tagKeyword of tagsKeywords) {
+        tagsKeywords.forEach((tagKeyword) => {
             if (!hasRecommended && tagKeyword === 'recommended') {
                 hasRecommended = true;
             }
@@ -56,13 +56,8 @@ module.exports = (() => {
             if (tagKeyword.startsWith('lang:')) {
                 languages.push(tagKeyword.substring(5));
             }
-        }
+        });
 
         return hasRecommended ? languages : [];
-    };
-
-    return {
-        mapTagKeywordsToTheirIds,
-        parseLangTag,
-    };
-})();
+    }
+};

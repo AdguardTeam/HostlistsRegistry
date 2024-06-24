@@ -8,7 +8,7 @@ const hostlistCompiler = require('@adguard/hostlist-compiler');
 const mastodonServerlistCompiler = require('adguard-hostlists-builder/mastodon');
 const { listDirs, writeFile, readFile, DeferredRunner } = require('./utils/io');
 const Revision = require('./utils/revision');
-const tagsUtils = require('./utils/tags');
+const TagsMetadataUtils = require('./utils/tags');
 const replaceExpires = require('./utils/expires');
 const filterKeyValidatorFactory = require('./utils/validateFilterKey');
 
@@ -138,6 +138,8 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
   const filtersMetadataDev = [];
   const filterKeyValidator = filterKeyValidatorFactory();
   const deferredRunner = new DeferredRunner();
+  const tagsMetadata = JSON.parse(await readFile(path.join(tagsDir, METADATA_FILE)));
+  const tagsMetadataUtils = new TagsMetadataUtils(tagsMetadata.slice());
 
   const filterDirs = await listFiltersDirs(filtersDir);
   for (const filterDir of filterDirs) {
@@ -209,8 +211,8 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
       id: metadata.filterId,
       name: metadata.name,
       description: metadata.description,
-      tags: tagsUtils.mapTagKeywordsToTheirIds(metadata.tags),
-      languages: tagsUtils.parseLangTag(metadata.tags),
+      tags: tagsMetadataUtils.mapTagKeywordsToTheirIds(metadata.tags),
+      languages: tagsMetadataUtils.parseLangTag(metadata.tags),
       version: revision.version,
       homepage: metadata.homepage,
       expires: replaceExpires(metadata.expires),
@@ -253,8 +255,6 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
   const servicesFile = path.join(assetsDir, SERVICES_FILE);
   await writeFile(servicesFile, JSON.stringify(services, undefined, 2));
 
-  // copy tags and groups as is
-  const tagsMetadata = JSON.parse(await readFile(path.join(tagsDir, METADATA_FILE)));
   const groupsMetadata = JSON.parse(await readFile(path.join(groupsDir, METADATA_FILE)));
 
   // writes the populated metadata for all filters, tags, etc that are marked as "prod"
