@@ -199,10 +199,14 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
       subscriptionUrl = metadata.homepage;
     }
 
+    if (typeof metadata.filterId === 'undefined') {
+      throw new Error('You should use `filterId` instead of `id` in metadata.json');
+    }
+
     // populates metadata for filter
     const filterMetadata = {
       filterKey: metadata.filterKey,
-      id: metadata.id,
+      id: metadata.filterId,
       name: metadata.name,
       description: metadata.description,
       tags: tagsUtils.mapTagKeywordsToTheirIds(metadata.tags),

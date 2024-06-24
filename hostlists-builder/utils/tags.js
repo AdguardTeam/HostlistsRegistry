@@ -1,4 +1,4 @@
-const tagsMetadata = require('../../tags/metadata');
+const tagsMetadata = require('../../tags/metadata.json');
 
 module.exports = (() => {
     /**
