@@ -28,7 +28,7 @@ jobs:
 
       - name: run compose
         run: |
-          node index.js
+          node scripts/compose.js
 
       - name: Commit & Push changes
         uses: actions-js/push@master
