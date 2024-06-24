@@ -2,7 +2,7 @@
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-06-16T16:05:46.281Z
+! Last modified: 2024-06-23T00:23:03.899Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -12,8 +12,8 @@
 !
 !Title: AWAvenue 秋风广告规则（AWAvenue-Ads-Rule）
 
-!版本号: 1.4.8-release
-!上次更新日期: 2024-06-16
+!版本号: 1.4.9-release
+!上次更新日期: 2024-06-22
 
 !项目地址：https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 
@@ -33,12 +33,15 @@
 ||8le8le.com^
 ||a0.app.xiaomi.com^
 ||aaid.umeng.com^
+||ad-cache.dopool.com^
+||ad-cdn.qingting.fm^
 ||ad-scope.com^
 ||ad-scope.com.cn^
 ||ad-sdk.huxiu.com^
 ||ad.12306.cn^
 ||ad.51wnl.com^
 ||ad.bwton.com^
+||ad.cctv.com^
 ||ad.cyapi.cn^
 ||ad.partner.gifshow.com^
 ||ad.qingting.fm^
@@ -59,9 +62,11 @@
 ||adcolony.com^
 ||adexpo.tencentmusic.com^
 ||adfilter.imtt.qq.com^
+||adguanggao.eee114.com^
 ||adjust.cn^
 ||adkwai.com^
 ||adlink-api.huan.tv^
+||adm.funshion.com^
 ||ads-api-o.api.leiniao.com^
 ||ads-api.tiktok.com^
 ||ads-api.twitter.com^
@@ -103,10 +108,13 @@
 ||adsmind.ugdtimg.com^
 ||adsp.xunlei.com^
 ||adstats.tencentmusic.com^
+||adstore-1252524079.file.myqcloud.com^
+||adstore-index-1252524079.file.myqcloud.com^
 ||adtago.s3.amazonaws.com^
 ||adtech.yahooinc.com^
 ||adtrack.quark.cn^
 ||adukwai.com^
+||adv.fjtv.net^
 ||adv.sec.intl.miui.com^
 ||adv.sec.miui.com^
 ||advertiseonbing.azureedge.net^
@@ -118,9 +126,12 @@
 ||adview.cn^
 ||adx-cn.anythinktech.com^
 ||adx-drcn.op.dbankcloud.cn^
+||adx-open-service.youku.com^
 ||adxlog-adnet.vivo.com.cn^
 ||adxlog-adnet.vivo.com.cn.dsa.dnsv1.com.cn^
+||adxserver.ad.cmvideo.cn^
 ||afs.googlesyndication.com^
+||aiseet.aa.atianqi.com^
 ||ali-ad.a.yximgs.com^
 ||alog.umeng.com^
 ||amdcopen.m.taobao.com^
@@ -136,6 +147,7 @@
 ||analytics.tiktok.com^
 ||analytics.woozooo.com^
 ||analyze.lemurbrowser.com^
+||andrqd.play.aiseet.atianqi.com^
 ||apd-pcdnwxlogin.teg.tencent-cloud.net^
 ||api-access.pangolin-sdk-toutiao.com^
 ||api-access.pangolin-sdk-toutiao1.com^
@@ -180,6 +192,7 @@
 ||c2.gdt.qq.com^
 ||catalog.fjwhcbsh.com^
 ||ccs.umeng.com^
+||cctv.adsunion.com^
 ||cdn-ads.oss-cn-shanghai.aliyuncs.com^
 ||cdn.ynuf.aliapp.org^
 ||cfg.imtt.qq.com^
@@ -193,6 +206,7 @@
 ||crashlytics.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||csjplatform.com^
+||cws-cctv.conviva.com^
 ||data.chsmarttv.com^
 ||data.mistat.india.xiaomi.com^
 ||data.mistat.rus.xiaomi.com^
@@ -227,6 +241,9 @@
 ||gdfp.gifshow.com^
 ||gemini.yahoo.com^
 ||geo.yahoo.com^
+||ggx.cmvideo.cn^
+||ggx01.miguvideo.com^
+||ggx03.miguvideo.com^
 ||google-analytics.com^
 ||googleadservices-cn.com^
 ||googleadservices.com^
@@ -246,6 +263,7 @@
 ||httpdns.bcelive.com^
 ||httpdns.ocloud.oppomobile.com^
 ||hugelog.fcbox.com^
+||huichuan.sm.cn^
 ||hw-ot-ad.a.yximgs.com^
 ||hw.zuimeitianqi.com^
 ||hwpub-s01-drcn.cloud.dbankcloud.cn^
@@ -257,6 +275,7 @@
 ||iadctest.qwapi.com^
 ||iadsdk.apple.com^
 ||iadworkbench.apple.com^
+||ifacelog.iqiyi.com^
 ||ifs.tanx.com^
 ||image-ad.sm.cn^
 ||imageplus.baidu.com^
@@ -282,6 +301,9 @@
 ||ks.pull.yximgs.com^
 ||liveats-vod.video.ptqy.gitv.tv^
 ||livemonitor.huan.tv^
+||livep.l.aiseet.atianqi.com^
+||lives.l.aiseet.atianqi.com^
+||lives.l.ott.video.qq.com^
 ||lm10111.jtrincc.cn^
 ||log-api-mn.huxiu.com^
 ||log-api.huxiu.com^
@@ -313,11 +335,13 @@
 ||logservice1.hicloud.com^
 ||logtj.kugou.com^
 ||logupdate.avlyun.sec.miui.com^
+||m.atm.youku.com^
 ||m.kubiqq.com^
 ||m1.ad.10010.com^
 ||mapi.m.jd.com^
 ||masdkv6.3g.qq.com^
 ||mazu.m.qq.com^
+||mbdlog.iqiyi.com^
 ||metok.sys.miui.com^
 ||metrics.apple.com^
 ||metrics.data.hicloud.com^
@@ -334,10 +358,12 @@
 ||mobads-logs.baidu.com^
 ||mobads-pre-config.cdn.bcebos.com^
 ||mobads.baidu.com^
+||mobile.da.mgtv.com^
 ||mobilelog.upqzfile.com^
 ||mobileservice.cn^
 ||mon.zijieapi.com^
 ||monitor-ads-test.huan.tv^
+||monitor-uu.play.aiseet.atianqi.com^
 ||monitor.music.qq.com^
 ||monitor.uu.qq.com^
 ||monsetting.toutiao.com^
@@ -350,6 +376,7 @@
 ||o2o.api.xiaomi.com^
 ||oauth-login-drcn.platform.dbankcloud.com^
 ||offerwall.yandex.net^
+||omgmta.play.aiseet.atianqi.com^
 ||open.e.kuaishou.cn^
 ||open.e.kuaishou.com^
 ||open.kuaishouzt.com^
@@ -359,6 +386,7 @@
 ||orbit.jd.com^
 ||oth.eve.mdt.qq.com^
 ||oth.str.mdt.qq.com^
+||otheve.play.aiseet.atianqi.com^
 ||p.l.qq.com^
 ||p.s.360.cn^
 ||p3-tt.byteimg.com^
@@ -397,11 +425,13 @@
 ||scs.openspeech.cn^
 ||sdk-ab-config.qquanquan.com^
 ||sdk-cache.video.ptqy.gitv.tv^
+||sdk.cferw.com^
 ||sdk.e.qq.com^
 ||sdk.hzsanjiaomao.com^
 ||sdk.mobads.adwangmai.com^
 ||sdkconf.avlyun.com^
 ||sdkconfig.ad.intl.xiaomi.com^
+||sdkconfig.play.aiseet.atianqi.com^
 ||sdkconfig.video.qq.com^
 ||sdkoptedge.chinanetcenter.com^
 ||sdktmp.hubcloud.com.cn^
@@ -442,6 +472,7 @@
 ||tdc.qq.com^
 ||tdsdk.cpatrk.net^
 ||tdsdk.xdrig.com^
+||tencent-dtv.m.cn.miaozhen.com^
 ||terms-drcn.platform.dbankcloud.cn^
 ||tj.b.qq.com^
 ||tj.video.qq.com^
@@ -491,6 +522,7 @@
 ||v2-ad.video.yximgs.com^
 ||v2.gdt.qq.com^
 ||v3-ad.video.yximgs.com^
+||video-ad.sm.cn^
 ||video-dsp.pddpic.com^
 ||virusinfo-cloudscan-cn.heytapmobi.com^
 ||vlive.qqvideo.tc.qq.com^
@@ -531,32 +563,33 @@
 ||ws.sj.qq.com^
 ||www42.zskwai.com^
 ||wxa.wxs.qq.com^
+||wxsnsad.tc.qq.com^
 ||wxsnsdy.wxs.qq.com^
 ||wxsnsdythumb.wxs.qq.com^
 ||xc.gdt.qq.com^
+||xiaomi-dtv.m.cn.miaozhen.com^
 ||xlivrdr.com^
 ||xlmzc.cnjp-exp.com^
 ||xlog.jd.com^
 ||xlviiirdr.com^
 ||xlviirdr.com^
+||yk-ssp.ad.youku.com^
+||ykad-data.youku.com^
+||ykad-gateway.youku.com^
+||youku-acs.m.taobao.com^
 ||youxi.kugou.com^
-/*-ad-*.byteimg.com/
-/*-ad-sign.byteimg.com/
-/*-ad.sm.cn/
-/*-ad.video.yximgs.com/
-/*-ad.wtzw.com/
-/*-be-pack-sign.pglstatp-toutiao.com/
-/*-lm.adkwai.com/
-/*-normal-lq.zijieapi.com/
 /*.*.shouji.sogou.com/
-/*.*skwai.com/
+/*.[a-zA-Z0-9.-]skwai.com/
 /*.a.market.xiaomi.com/
 /*.data.hicloud.com/
 /*.log.aliyuncs.com/
 /*.shouji.sogou.com/
-/*.zskwai.com/
-/ads*-normal-*.zijieapi.com/
-/ads*-normal.zijieapi.com/
-/cloud-inject-global.oss-cn-hongkong.aliyuncs.com/
-/cloudinject*-dev.*.*-*-*.amazonaws.com/
-/cloudinject*-dev.s3.ap-northoreast-1.amazonaws.com/
+/[a-zA-Z0-9.-]*-ad-[a-zA-Z0-9.-]*.byteimg.com/
+/[a-zA-Z0-9.-]*-ad.sm.cn/
+/[a-zA-Z0-9.-]*-ad.video.yximgs.com/
+/[a-zA-Z0-9.-]*-ad.wtzw.com/
+/[a-zA-Z0-9.-]*-be-pack-sign.pglstatp-toutiao.com/
+/[a-zA-Z0-9.-]*-lm.adkwai.com/
+/[a-zA-Z0-9.-]*-normal-[a-zA-Z0-9.-]*.zijieapi.com/
+/[a-zA-Z0-9.-]*-normal.zijieapi.com/
+/cloudinject[a-zA-Z0-9.-]*-dev.*.[a-zA-Z0-9.-]*-[a-zA-Z0-9.-]*-[a-zA-Z0-9.-]*.amazonaws.com/
