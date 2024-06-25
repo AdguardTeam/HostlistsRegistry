@@ -1,917 +1,1084 @@
 {
 	"filters": [
 		{
-			"filterId": "adguard_dns_filter",
-			"id": 1,
+			"filterKey": "adguard_dns_filter",
+			"filterId": 1,
+			"groupId": 1,
 			"name": "AdGuard DNS filter",
 			"description": "List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/AdguardTeam/AdGuardSDNSFilter",
 			"expires": 345600,
 			"displayNumber": 1,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt",
-			"sourceUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
-			"timeAdded": 1404115015843,
-			"timeUpdated": 1719317282063
+			"subscriptionUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
+			"timeAdded": "2014-06-30T11:56:55+0400",
+			"timeUpdated": "2024-06-25T14:38:17+0300"
 		},
 		{
-			"filterId": "1hosts_lite",
-			"id": 24,
+			"filterKey": "1hosts_lite",
+			"filterId": 24,
+			"groupId": 1,
 			"name": "1Hosts (Lite)",
 			"description": "List for blocking pesky ads, trackers, and malware. Balanced version: set & forget, doesn't hamper user experience.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://badmojr.github.io/1Hosts/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_24.txt",
-			"sourceUrl": "https://badmojr.gitlab.io/1hosts/Lite/adblock.txt",
-			"timeAdded": 1640082678993,
-			"timeUpdated": 1715497505019
+			"subscriptionUrl": "https://badmojr.gitlab.io/1hosts/Lite/adblock.txt",
+			"timeAdded": "2021-12-21T13:31:18+0300",
+			"timeUpdated": "2024-06-25T14:38:18+0300"
 		},
 		{
-			"filterId": "oisd_full",
-			"id": 27,
+			"filterKey": "oisd_full",
+			"filterId": 27,
+			"groupId": 1,
 			"name": "OISD Blocklist Big",
 			"description": "List for blocking ads and trackers. Prioritizes functionality over blocking. Risks of incorrect blocking are higher than in the small version of OISD Blocklist.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://oisd.nl/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_27.txt",
-			"sourceUrl": "https://big.oisd.nl/",
-			"timeAdded": 1640082678993,
-			"timeUpdated": 1719309939966
+			"subscriptionUrl": "https://big.oisd.nl/",
+			"timeAdded": "2021-12-21T13:31:18+0300",
+			"timeUpdated": "2024-06-25T14:38:21+0300"
 		},
 		{
-			"filterId": "steven_blacks_list",
-			"id": 33,
+			"filterKey": "steven_blacks_list",
+			"filterId": 33,
+			"groupId": 1,
 			"name": "Steven Black's List",
 			"description": "Unified hosts file (adware + malware).",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/StevenBlack/hosts",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
-			"timeAdded": 1660743805268,
-			"timeUpdated": 1719288378937
+			"subscriptionUrl": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+			"timeAdded": "2022-08-17T16:43:25+0300",
+			"timeUpdated": "2024-06-25T14:38:26+0300"
 		},
 		{
-			"filterId": "hagezi_multinormal",
-			"id": 34,
+			"filterKey": "hagezi_multinormal",
+			"filterId": 34,
+			"groupId": 1,
 			"name": "HaGeZi's Normal Blocklist",
 			"description": "Broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_34.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt",
-			"timeAdded": 1689339206100,
-			"timeUpdated": 1719284767639
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/multi.txt",
+			"timeAdded": "2023-07-14T15:53:26+0300",
+			"timeUpdated": "2024-06-25T14:38:28+0300"
 		},
 		{
-			"filterId": "1hosts_mini",
-			"id": 38,
+			"filterKey": "1hosts_mini",
+			"filterId": 38,
+			"groupId": 1,
 			"name": "1Hosts (mini)",
 			"description": "List for blocking pesky ads, trackers, and malware. Lenient version: unblocks a number of ads & trackers for in-app rewards, anti-AdBlock, etc.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://badmojr.github.io/1Hosts/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_38.txt",
-			"sourceUrl": "https://badmojr.gitlab.io/1hosts/mini/adblock.txt",
-			"timeAdded": 1640082678993,
-			"timeUpdated": 1715497511015
+			"subscriptionUrl": "https://badmojr.gitlab.io/1hosts/mini/adblock.txt",
+			"timeAdded": "2021-12-21T13:31:18+0300",
+			"timeUpdated": "2024-06-25T14:38:30+0300"
 		},
 		{
-			"filterId": "peter_lowe_list",
-			"id": 3,
+			"filterKey": "peter_lowe_list",
+			"filterId": 3,
+			"groupId": 1,
 			"name": "Peter Lowe's Blocklist",
 			"description": "Blocklist with hostnames of ad and tracking servers",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://pgl.yoyo.org/adservers/",
 			"expires": 345600,
 			"displayNumber": 3,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt",
-			"sourceUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
-			"timeAdded": 1640082678993,
-			"timeUpdated": 1718971666737
+			"subscriptionUrl": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+			"timeAdded": "2021-12-21T13:31:18+0300",
+			"timeUpdated": "2024-06-25T14:38:32+0300"
 		},
 		{
-			"filterId": "hagezi_pro",
-			"id": 48,
+			"filterKey": "hagezi_pro",
+			"filterId": 48,
+			"groupId": 1,
 			"name": "HaGeZi's Pro Blocklist",
 			"description": "Big broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_48.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
-			"timeAdded": 1695055410687,
-			"timeUpdated": 1719295617235
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+			"timeAdded": "2023-09-18T19:43:30+0300",
+			"timeUpdated": "2024-06-25T14:38:33+0300"
 		},
 		{
-			"filterId": "hagezi_ultimate",
-			"id": 49,
+			"filterKey": "hagezi_ultimate",
+			"filterId": 49,
+			"groupId": 1,
 			"name": "HaGeZi's Ultimate Blocklist",
 			"description": "Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_49.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
-			"timeAdded": 1695056027320,
-			"timeUpdated": 1719295619063
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
+			"timeAdded": "2023-09-18T19:53:47+0300",
+			"timeUpdated": "2024-06-25T14:38:35+0300"
 		},
 		{
-			"filterId": "dan_pollocks_list",
-			"id": 4,
+			"filterKey": "dan_pollocks_list",
+			"filterId": 4,
+			"groupId": 1,
 			"name": "Dan Pollock's List",
 			"description": "List for blocking ads and preventing user tracking",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://someonewhocares.org/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt",
-			"sourceUrl": "https://someonewhocares.org/hosts/zero/hosts",
-			"timeAdded": 1640082678993,
-			"timeUpdated": 1719279112415
+			"subscriptionUrl": "https://someonewhocares.org/hosts/zero/hosts",
+			"timeAdded": "2021-12-21T13:31:18+0300",
+			"timeUpdated": "2024-06-25T14:38:38+0300"
 		},
 		{
-			"filterId": "hagezi_pro++",
-			"id": 51,
+			"filterKey": "hagezi_pro++",
+			"filterId": 51,
+			"groupId": 1,
 			"name": "HaGeZi's Pro++ Blocklist",
 			"description": "Sweeper - Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_51.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
-			"timeAdded": 1697214465726,
-			"timeUpdated": 1719295622090
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.plus.txt",
+			"timeAdded": "2023-10-13T19:27:45+0300",
+			"timeUpdated": "2024-06-25T14:38:42+0300"
 		},
 		{
-			"filterId": "awavenue_ads_rule",
-			"id": 53,
+			"filterKey": "awavenue_ads_rule",
+			"filterId": 53,
+			"groupId": 1,
 			"name": "AWAvenue Ads Rule",
 			"description": "Uses Adblock syntax to fight against various advertising SDKs in Android apps on the network level, preventing them from loading.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://awavenue.top/",
 			"expires": 1296000,
 			"displayNumber": 2,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
-			"timeAdded": 1699370433972,
-			"timeUpdated": 1719102183900
+			"subscriptionUrl": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt",
+			"timeAdded": "2023-11-07T18:20:33+0300",
+			"timeUpdated": "2024-06-25T14:38:44+0300"
 		},
 		{
-			"filterId": "adguard_popup_filter",
-			"id": 59,
+			"filterKey": "adguard_popup_filter",
+			"filterId": 59,
+			"groupId": 1,
 			"name": "AdGuard DNS Popup Hosts filter",
 			"description": "Filter includes rules for sites that open in a new window, composed from AdGuard, EasyList, ABPindo filters and improved for compatibility with DNS-level pop-up blocking.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/AdguardTeam/AdGuardSDNSFilter",
 			"expires": 345600,
 			"displayNumber": 1,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt",
-			"sourceUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/adguard_popup_filter.txt",
-			"timeAdded": 1712080012990,
-			"timeUpdated": 1719295622288
+			"subscriptionUrl": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/adguard_popup_filter.txt",
+			"timeAdded": "2024-04-02T20:46:52+0300",
+			"timeUpdated": "2024-06-25T14:38:45+0300"
 		},
 		{
-			"filterId": "oisd_basic",
-			"id": 5,
+			"filterKey": "oisd_basic",
+			"filterId": 5,
+			"groupId": 1,
 			"name": "OISD Blocklist Small",
 			"description": "List for blocking ads and trackers. Prioritizes functionality over blocking.",
 			"tags": [
-				"purpose:general"
+				1
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://oisd.nl/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_5.txt",
-			"sourceUrl": "https://small.oisd.nl/",
-			"timeAdded": 1640082678993,
-			"timeUpdated": 1719309952315
+			"subscriptionUrl": "https://small.oisd.nl/",
+			"timeAdded": "2021-12-21T13:31:18+0300",
+			"timeUpdated": "2024-06-25T14:38:45+0300"
 		},
 		{
-			"filterId": "windowsspyblocker_hosts_spy_rules",
-			"id": 23,
+			"filterKey": "windowsspyblocker_hosts_spy_rules",
+			"filterId": 23,
+			"groupId": 2,
 			"name": "WindowsSpyBlocker - Hosts spy rules",
 			"description": "List for blocking spying and tracking on Windows",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/crazy-max/WindowsSpyBlocker",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569825751
+			"subscriptionUrl": "https://raw.githubusercontent.com/crazy-max/WindowsSpyBlocker/master/data/hosts/spy.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:46+0300"
 		},
 		{
-			"filterId": "no_google",
-			"id": 37,
+			"filterKey": "no_google",
+			"filterId": 37,
+			"groupId": 2,
 			"name": "No Google",
 			"description": "Completely blocks all Google-related domains (including YouTube).",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/nickspaargaren/no-google",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_37.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt",
-			"timeAdded": 1667987017479,
-			"timeUpdated": 1718219146229
+			"subscriptionUrl": "https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt",
+			"timeAdded": "2022-11-09T12:43:37+0300",
+			"timeUpdated": "2024-06-25T14:38:46+0300"
 		},
 		{
-			"filterId": "dandelion_sprouts_anti_push_notifications",
-			"id": 39,
+			"filterKey": "dandelion_sprouts_anti_push_notifications",
+			"filterId": 39,
+			"groupId": 2,
 			"name": "Dandelion Sprout's Anti Push Notifications",
 			"description": "Aims to remove push notifications on sites. Combines eligible rules from AdGuard Popups Filter's anti-push sections and Fanboy's Notifications Blocking List.",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/DandelionSprout/adfilt",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_39.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
-			"timeAdded": 1679670623835,
-			"timeUpdated": 1712569825957
+			"subscriptionUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
+			"timeAdded": "2023-03-24T18:10:23+0300",
+			"timeUpdated": "2024-06-25T14:38:46+0300"
 		},
 		{
-			"filterId": "hagezi_allowlist_referral",
-			"id": 45,
+			"filterKey": "hagezi_allowlist_referral",
+			"filterId": 45,
+			"groupId": 2,
 			"name": "HaGeZi's Allowlist Referral",
 			"description": "This list unblocks affiliate & tracking referral links that appear in mails, search results etc.",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists#referral",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_45.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt",
-			"timeAdded": 1692201329143,
-			"timeUpdated": 1718420750496
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/whitelist-referral.txt",
+			"timeAdded": "2023-08-16T18:55:29+0300",
+			"timeUpdated": "2024-06-25T14:38:47+0300"
 		},
 		{
-			"filterId": "hagezi_antipiracy_blocklist",
-			"id": 46,
+			"filterKey": "hagezi_antipiracy_blocklist",
+			"filterId": 46,
+			"groupId": 2,
 			"name": "HaGeZi's Anti-Piracy Blocklist",
 			"description": "Blocks websites and services that are mainly used for illegal distribution of copyrighted content.",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists#piracy",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_46.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt",
-			"timeAdded": 1692204947218,
-			"timeUpdated": 1719245160275
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/anti.piracy.txt",
+			"timeAdded": "2023-08-16T19:55:47+0300",
+			"timeUpdated": "2024-06-25T14:38:47+0300"
 		},
 		{
-			"filterId": "hagezi_gambling_blocklist",
-			"id": 47,
+			"filterKey": "hagezi_gambling_blocklist",
+			"filterId": 47,
+			"groupId": 2,
 			"name": "HaGeZi's Gambling Blocklist",
 			"description": "Blocks gambling content.",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists#gambling",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_47.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
-			"timeAdded": 1692228213114,
-			"timeUpdated": 1719284780329
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
+			"timeAdded": "2023-08-17T02:23:33+0300",
+			"timeUpdated": "2024-06-25T14:38:47+0300"
 		},
 		{
-			"filterId": "shadowwhisperers_dating_list",
-			"id": 57,
+			"filterKey": "shadowwhisperers_dating_list",
+			"filterId": 57,
+			"groupId": 2,
 			"name": "ShadowWhisperer's Dating List",
 			"description": "Blocks dating sites.",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/ShadowWhisperer/BlockLists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_57.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Dating",
-			"timeAdded": 1711559958639,
-			"timeUpdated": 1716307550419
+			"subscriptionUrl": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Dating",
+			"timeAdded": "2024-03-27T20:19:18+0300",
+			"timeUpdated": "2024-06-25T14:38:51+0300"
 		},
 		{
-			"filterId": "hagezi_xiaomi_tracking_blocklist",
-			"id": 60,
+			"filterKey": "hagezi_xiaomi_tracking_blocklist",
+			"filterId": 60,
 			"name": "HaGeZi's Xiaomi Tracker Blocklist",
 			"description": "Blocks Xiaomi native broadband tracker that track your activity.",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_60.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt",
-			"timeAdded": 1718722888966,
-			"timeUpdated": 1718856379730
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.xiaomi.txt",
+			"timeAdded": "2024-06-18T18:01:28+0300",
+			"timeUpdated": "2024-06-25T14:38:51+0300"
 		},
 		{
-			"filterId": "dandelion_sprouts_game_console_adblock_list",
-			"id": 6,
+			"filterKey": "dandelion_sprouts_game_console_adblock_list",
+			"filterId": 6,
+			"groupId": 2,
 			"name": "Dandelion Sprout's Game Console Adblock List",
 			"description": "List for blocking ads on videogame consoles that use AdGuard Home",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/DandelionSprout/adfilt",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_6.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1715218149860
+			"subscriptionUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:52+0300"
 		},
 		{
-			"filterId": "perflyst_dandelion_sprout_smart_tv_blocklist_for_adguard_home",
-			"id": 7,
+			"filterKey": "perflyst_dandelion_sprout_smart_tv_blocklist_for_adguard_home",
+			"filterId": 7,
+			"groupId": 2,
 			"name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
 			"description": "List for preventing smart TVs from sending metadata to the vendor, and for blocking ads in apps and movie services",
 			"tags": [
-				"purpose:other"
+				4
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/Perflyst/PiHoleBlocklist",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569827852
+			"subscriptionUrl": "https://raw.githubusercontent.com/Perflyst/PiHoleBlocklist/master/SmartTV-AGH.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:52+0300"
 		},
 		{
-			"filterId": "NOR_dandelion_sprouts_anti_malware_list",
-			"id": 13,
+			"filterKey": "NOR_dandelion_sprouts_anti_malware_list",
+			"filterId": 13,
+			"groupId": 3,
 			"name": "NOR: Dandelion Sprouts nordiske filtre",
 			"description": "Dandelion Sprout's Nordic Filters (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)",
 			"tags": [
-				"purpose:regional",
-				"lang:no"
+				3,
+				100
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/DandelionSprout/adfilt",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_13.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712786762830
+			"subscriptionUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:52+0300"
 		},
 		{
-			"filterId": "POL_polish_filters_for_pi_hole",
-			"id": 14,
+			"filterKey": "POL_polish_filters_for_pi_hole",
+			"filterId": 14,
+			"groupId": 3,
 			"name": "POL: Polish filters for Pi-hole",
 			"description": "Polish filters for Pi-hole.",
 			"tags": [
-				"purpose:regional",
-				"lang:pl"
+				3,
+				101
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://www.certyficate.it/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_14.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569827907
+			"subscriptionUrl": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:52+0300"
 		},
 		{
-			"filterId": "KOR_youslist",
-			"id": 15,
+			"filterKey": "KOR_youslist",
+			"filterId": 15,
+			"groupId": 3,
 			"name": "KOR: YousList",
 			"description": "List for blocking ads mainly on Korean websites",
 			"tags": [
-				"purpose:regional",
-				"lang:ko"
+				3,
+				102
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/yous/YousList",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_15.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1717243637918
+			"subscriptionUrl": "https://raw.githubusercontent.com/yous/YousList/master/hosts.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:52+0300"
 		},
 		{
-			"filterId": "VNM_abpvn",
-			"id": 16,
+			"filterKey": "VNM_abpvn",
+			"filterId": 16,
+			"groupId": 3,
 			"name": "VNM: ABPVN List",
 			"description": "List for blocking ads on Vietnamese websites",
 			"tags": [
-				"purpose:regional",
-				"lang:vn"
+				3,
+				103
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "http://abpvn.com/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_16.txt",
-			"sourceUrl": "https://abpvn.com/android/abpvn.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719162327005
+			"subscriptionUrl": "https://abpvn.com/android/abpvn.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:53+0300"
 		},
 		{
-			"filterId": "SWE_frellwit_swedish_hosts_file",
-			"id": 17,
+			"filterKey": "SWE_frellwit_swedish_hosts_file",
+			"filterId": 17,
+			"groupId": 3,
 			"name": "SWE: Frellwit's Swedish Hosts File",
 			"description": "List for blocking ads, tracking, scams & malware mainly on Swedish websites",
 			"tags": [
-				"purpose:regional",
-				"lang:sv"
+				3,
+				104
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/lassekongo83/Frellwits-filter-lists/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_17.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719205547207
+			"subscriptionUrl": "https://raw.githubusercontent.com/lassekongo83/Frellwits-filter-lists/master/Frellwits-Swedish-Hosts-File.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:55+0300"
 		},
 		{
-			"filterId": "IRN_unwanted_iranian_domains",
-			"id": 19,
+			"filterKey": "IRN_unwanted_iranian_domains",
+			"filterId": 19,
+			"groupId": 3,
 			"name": "IRN: PersianBlocker list",
 			"description": "Optimal and extensive list for blocking ads and trackers on Persian language sites",
 			"tags": [
-				"purpose:regional",
-				"lang:ir"
+				3,
+				106
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/MasterKia/PersianBlocker",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_19.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719173203870
+			"subscriptionUrl": "https://raw.githubusercontent.com/MasterKia/PersianBlocker/main/PersianBlockerHosts.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:56+0300"
 		},
 		{
-			"filterId": "MKD_macedonian_pi_hole_blocklist",
-			"id": 20,
+			"filterKey": "MKD_macedonian_pi_hole_blocklist",
+			"filterId": 20,
+			"groupId": 3,
 			"name": "MKD: Macedonian Pi-hole Blocklist",
 			"description": "List for blocking ads on Macedonian websites",
 			"tags": [
-				"purpose:regional",
-				"lang:mk"
+				3,
+				107
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/cchevy/macedonian-pi-hole-blocklist",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_20.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569830142
+			"subscriptionUrl": "https://raw.githubusercontent.com/cchevy/macedonian-pi-hole-blocklist/master/hosts.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:56+0300"
 		},
 		{
-			"filterId": "CHN_anti_ad",
-			"id": 21,
+			"filterKey": "CHN_anti_ad",
+			"filterId": 21,
+			"groupId": 3,
 			"name": "CHN: anti-AD",
 			"description": "List for blocking ads in the Chinese region. Aims at privacy protection.",
 			"tags": [
-				"purpose:regional",
-				"lang:zh"
+				3,
+				108
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://anti-ad.net/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_21.txt",
-			"sourceUrl": "https://anti-ad.net/adguard.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719083181658
+			"subscriptionUrl": "https://anti-ad.net/adguard.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:56+0300"
 		},
 		{
-			"filterId": "IDN_abpindo",
-			"id": 22,
+			"filterKey": "IDN_abpindo",
+			"filterId": 22,
+			"groupId": 3,
 			"name": "IDN: ABPindo",
 			"description": "Filter complementary to EasyList for blocking ads on Indonesian and Malaysian websites",
 			"tags": [
-				"purpose:regional",
-				"lang:id"
+				3,
+				109
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/ABPindo/indonesianadblockrules",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_22.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/aghome.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1718677093519
+			"subscriptionUrl": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/aghome.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:57+0300"
 		},
 		{
-			"filterId": "KOR_list_kr",
-			"id": 25,
+			"filterKey": "KOR_list_kr",
+			"filterId": 25,
+			"groupId": 3,
 			"name": "KOR: List-KR DNS",
 			"description": "A DNS version of List-KR, a filter for websites in the Korean language",
 			"tags": [
-				"purpose:regional",
-				"lang:ko"
+				3,
+				102
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/List-KR/List-KR",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_25.txt",
-			"sourceUrl": "https://github.com/List-KR/List-KR",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1716959197661
+			"subscriptionUrl": "https://github.com/List-KR/List-KR",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:58+0300"
 		},
 		{
-			"filterId": "TUR_turk_adlist",
-			"id": 26,
+			"filterKey": "TUR_turk_adlist",
+			"filterId": 26,
+			"groupId": 3,
 			"name": "TUR: turk-adlist",
 			"description": "List for blocking ads and annoying elements on Turkish websites",
 			"tags": [
-				"purpose:regional",
-				"lang:tr"
+				3,
+				110
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/bkrucarci/turk-adlist",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_26.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569831313
+			"subscriptionUrl": "https://raw.githubusercontent.com/bkrucarci/turk-adlist/master/hosts",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:58+0300"
 		},
 		{
-			"filterId": "CHN_adrules",
-			"id": 29,
+			"filterKey": "CHN_adrules",
+			"filterId": 29,
+			"groupId": 3,
 			"name": "CHN: AdRules DNS List",
 			"description": "List for blocking ads in the Chinese region",
 			"tags": [
-				"purpose:regional",
-				"lang:zh"
+				3,
+				108
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/Cats-Team/AdRules",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_29.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719274872648
+			"subscriptionUrl": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:38:58+0300"
 		},
 		{
-			"filterId": "HUN_hufilter",
-			"id": 35,
+			"filterKey": "HUN_hufilter",
+			"filterId": 35,
+			"groupId": 3,
 			"name": "HUN: Hufilter",
 			"description": "The Hungarian Adblock List.",
 			"tags": [
-				"purpose:regional",
-				"lang:hu"
+				3,
+				112
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hufilter/hufilter",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_35.txt",
-			"sourceUrl": "https://cdn.jsdelivr.net/gh/hufilter/hufilter@gh-pages/hufilter-dns.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719218598462
+			"subscriptionUrl": "https://cdn.jsdelivr.net/gh/hufilter/hufilter@gh-pages/hufilter-dns.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:00+0300"
 		},
 		{
-			"filterId": "LIT_easylist_lithuania",
-			"id": 36,
+			"filterKey": "LIT_easylist_lithuania",
+			"filterId": 36,
+			"groupId": 3,
 			"name": "LIT: EasyList Lithuania",
 			"description": "This is a (currently pretty small and not much tested) version of EasyList Lithuania designed for use with domains-based tools.",
 			"tags": [
-				"purpose:regional",
-				"lang:lt"
+				3,
+				113
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/EasyList-Lithuania/easylist_lithuania",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_36.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/EasyListLithuaniaHosts.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569832484
+			"subscriptionUrl": "https://raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/EasyListLithuaniaHosts.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:01+0300"
 		},
 		{
-			"filterId": "TUR_turkish_ad_hosts",
-			"id": 40,
+			"filterKey": "TUR_turkish_ad_hosts",
+			"filterId": 40,
+			"groupId": 3,
 			"name": "TUR: Turkish Ad Hosts",
 			"description": "Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.",
 			"tags": [
-				"purpose:regional",
-				"lang:tr"
+				3,
+				110
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/symbuzzer/Turkish-Ad-Hosts",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_40.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/symbuzzer/Turkish-Ad-Hosts/main/adguard/filter.txt",
-			"timeAdded": 1676647387443,
-			"timeUpdated": 1715497525095
+			"subscriptionUrl": "https://raw.githubusercontent.com/symbuzzer/Turkish-Ad-Hosts/main/adguard/filter.txt",
+			"timeAdded": "2023-02-17T18:23:07+0300",
+			"timeUpdated": "2024-06-25T14:39:01+0300"
 		},
 		{
-			"filterId": "POL_cert_polska_list_of_malicious_domains",
-			"id": 41,
+			"filterKey": "POL_cert_polska_list_of_malicious_domains",
+			"filterId": 41,
+			"groupId": 3,
 			"name": "POL: CERT Polska List of malicious domains",
 			"description": "CERT Polska deals with incidents and threats originating or aiming at systems in the .pl domain or connected to NASK's or other Polish Internet provider's network.",
 			"tags": [
-				"purpose:regional",
-				"lang:pl"
+				3,
+				101
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://cert.pl/posts/2020/03/ostrzezenia_phishing/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
-			"sourceUrl": "https://hole.cert.pl/domains/v2/domains_adblock.txt",
-			"timeAdded": 1678201318112,
-			"timeUpdated": 1719317313877
+			"subscriptionUrl": "https://hole.cert.pl/domains/v2/domains_adblock.txt",
+			"timeAdded": "2023-03-07T18:01:58+0300",
+			"timeUpdated": "2024-06-25T14:39:01+0300"
 		},
 		{
-			"filterId": "ISR_easyList_hebrew",
-			"id": 43,
+			"filterKey": "ISR_easyList_hebrew",
+			"filterId": 43,
+			"groupId": 3,
 			"name": "ISR: EasyList Hebrew",
 			"description": "List for blocking ads in Hebrew.",
 			"tags": [
-				"purpose:regional",
-				"lang:he"
+				3,
+				114
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/easylist/EasyListHebrew",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_43.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/hosts.txt",
-			"timeAdded": 1686347802719,
-			"timeUpdated": 1718975203895
+			"subscriptionUrl": "https://raw.githubusercontent.com/easylist/EasyListHebrew/master/hosts.txt",
+			"timeAdded": "2023-06-10T00:56:42+0300",
+			"timeUpdated": "2024-06-25T14:39:03+0300"
 		},
 		{
-			"filterId": "scam_blocklist_by_durablenapkin",
-			"id": 10,
+			"filterKey": "scam_blocklist_by_durablenapkin",
+			"filterId": 10,
+			"groupId": 4,
 			"name": "Scam Blocklist by DurableNapkin",
 			"description": "List for blocking untrustworthy websites",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/durablenapkin/scamblocklist",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_10.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719291942186
+			"subscriptionUrl": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:03+0300"
 		},
 		{
-			"filterId": "urlhaus_filter_online",
-			"id": 11,
+			"filterKey": "urlhaus_filter_online",
+			"filterId": 11,
+			"groupId": 4,
 			"name": "Malicious URL Blocklist (URLHaus)",
 			"description": "Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://urlhaus.abuse.ch/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt",
-			"sourceUrl": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719279128911
+			"subscriptionUrl": "https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:03+0300"
 		},
 		{
-			"filterId": "dandelion_sprouts_anti_malware_list",
-			"id": 12,
+			"filterKey": "dandelion_sprouts_anti_malware_list",
+			"filterId": 12,
+			"groupId": 4,
 			"name": "Dandelion Sprout's Anti-Malware List",
 			"description": "Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/DandelionSprout/adfilt",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1718863629302
+			"subscriptionUrl": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:05+0300"
 		},
 		{
-			"filterId": "phishing_army",
-			"id": 18,
+			"filterKey": "phishing_army",
+			"filterId": 18,
+			"groupId": 4,
 			"name": "Phishing Army",
 			"description": "The blocklist to filter phishing domains",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://phishing.army/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt",
-			"sourceUrl": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
-			"timeAdded": 1689805499960,
-			"timeUpdated": 1719295634931
+			"subscriptionUrl": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+			"timeAdded": "2023-07-20T01:24:59+0300",
+			"timeUpdated": "2024-06-25T14:39:05+0300"
 		},
 		{
-			"filterId": "curben_phishing_filter",
-			"id": 30,
+			"filterKey": "curben_phishing_filter",
+			"filterId": 30,
+			"groupId": 4,
 			"name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
 			"description": "Blocklist of phishing websites, based on PhishTank and OpenPhish lists",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://gitlab.com/malware-filter/phishing-filter",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt",
-			"sourceUrl": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1719279130760
+			"subscriptionUrl": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:08+0300"
 		},
 		{
-			"filterId": "staklerware_indicators_list",
-			"id": 31,
+			"filterKey": "staklerware_indicators_list",
+			"filterId": 31,
+			"groupId": 4,
 			"name": "Stalkerware Indicators List",
 			"description": "Indicators of compromise on Stalkerware applications for Android and iOS.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/AssoEchap/stalkerware-indicators",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
-			"timeAdded": 1660743805268,
-			"timeUpdated": 1717247150730
+			"subscriptionUrl": "https://raw.githubusercontent.com/AssoEchap/stalkerware-indicators/master/generated/hosts",
+			"timeAdded": "2022-08-17T16:43:25+0300",
+			"timeUpdated": "2024-06-25T14:39:09+0300"
 		},
 		{
-			"filterId": "shadowwhisperers_malware_list",
-			"id": 42,
+			"filterKey": "shadowwhisperers_malware_list",
+			"filterId": 42,
+			"groupId": 4,
 			"name": "ShadowWhisperer's Malware List",
 			"description": "Malicious Sites, PUPs, Malware, Browser Hijackers, Phishing Sites",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/ShadowWhisperer/BlockLists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware",
-			"timeAdded": 1681400345355,
-			"timeUpdated": 1719245171607
+			"subscriptionUrl": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Malware",
+			"timeAdded": "2023-04-13T18:39:05+0300",
+			"timeUpdated": "2024-06-25T14:39:09+0300"
 		},
 		{
-			"filterId": "hagezi_threat_intelligence_feeds",
-			"id": 44,
+			"filterKey": "hagezi_threat_intelligence_feeds",
+			"filterId": 44,
+			"groupId": 4,
 			"name": "HaGeZi's Threat Intelligence Feeds",
 			"description": "Increases security significantly! Blocks Malware, Cryptojacking, Spam, Scam and Phishing.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_44.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
-			"timeAdded": 1692186669090,
-			"timeUpdated": 1719284796130
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.txt",
+			"timeAdded": "2023-08-16T14:51:09+0300",
+			"timeUpdated": "2024-06-25T14:39:10+0300"
 		},
 		{
-			"filterId": "ublock_badware_risks",
-			"id": 50,
+			"filterKey": "ublock_badware_risks",
+			"filterId": 50,
+			"groupId": 4,
 			"name": "uBlock₀ filters – Badware risks",
 			"description": "For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/uBlockOrigin/uAssets",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
-			"timeAdded": 1695145147610,
-			"timeUpdated": 1719313591716
+			"subscriptionUrl": "https://raw.githubusercontent.com/uBlockOrigin/uAssets/master/filters/badware.txt",
+			"timeAdded": "2023-09-19T20:39:07+0300",
+			"timeUpdated": "2024-06-25T14:39:21+0300"
 		},
 		{
-			"filterId": "hagezi_encrypted_dns_vpn_tor_proxy_bypass",
-			"id": 52,
+			"filterKey": "hagezi_encrypted_dns_vpn_tor_proxy_bypass",
+			"filterId": 52,
+			"groupId": 4,
 			"name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
 			"description": "Prevents methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, and proxies. Prevention of bypassing is not guaranteed.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists#bypass",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_52.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
-			"timeAdded": 1698232782837,
-			"timeUpdated": 1719284796538
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
+			"timeAdded": "2023-10-25T14:19:42+0300",
+			"timeUpdated": "2024-06-25T14:39:21+0300"
 		},
 		{
-			"filterId": "hagezi_dyndns_blocklist",
-			"id": 54,
+			"filterKey": "hagezi_dyndns_blocklist",
+			"filterId": 54,
+			"groupId": 4,
 			"name": "HaGeZi's DynDNS Blocklist",
 			"description": "Blocks dynamic DNS services to protect against malicious use in phishing campaigns and others.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_54.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
-			"timeAdded": 1703182917830,
-			"timeUpdated": 1719284796634
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/dyndns.txt",
+			"timeAdded": "2023-12-21T21:21:57+0300",
+			"timeUpdated": "2024-06-25T14:39:22+0300"
 		},
 		{
-			"filterId": "hagezi_badware_hoster_blocklist",
-			"id": 55,
+			"filterKey": "hagezi_badware_hoster_blocklist",
+			"filterId": 55,
+			"groupId": 4,
 			"name": "HaGeZi's Badware Hoster Blocklist",
 			"description": "Blocks known free hosters that also host badware via user content to prevent the use of these hosters for malicious purposes.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_55.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
-			"timeAdded": 1710348213970,
-			"timeUpdated": 1718770010900
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/hoster.txt",
+			"timeAdded": "2024-03-13T19:43:33+0300",
+			"timeUpdated": "2024-06-25T14:39:22+0300"
 		},
 		{
-			"filterId": "hagezi_the_worlds_most_abused_tlds",
-			"id": 56,
+			"filterKey": "hagezi_the_worlds_most_abused_tlds",
+			"filterId": 56,
+			"groupId": 4,
 			"name": "HaGeZi's The World's Most Abused TLDs",
 			"description": "The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hagezi/dns-blocklists",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_56.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds.txt",
-			"timeAdded": 1710348896473,
-			"timeUpdated": 1719284796790
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds.txt",
+			"timeAdded": "2024-03-13T19:54:56+0300",
+			"timeUpdated": "2024-06-25T14:39:22+0300"
 		},
 		{
-			"filterId": "nocoin_filter_list",
-			"id": 8,
+			"filterKey": "nocoin_filter_list",
+			"filterId": 8,
+			"groupId": 4,
 			"name": "NoCoin Filter List",
 			"description": "List for blocking browser-based crypto mining",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/hoshsadiq/adblock-nocoin-list/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569846375
+			"subscriptionUrl": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:22+0300"
 		},
 		{
-			"filterId": "the_big_list_of_hacked_malware_web_sites",
-			"id": 9,
+			"filterKey": "the_big_list_of_hacked_malware_web_sites",
+			"filterId": 9,
+			"groupId": 4,
 			"name": "The Big List of Hacked Malware Web Sites",
 			"description": "List of websites that are hacked with malware, ransomware or trojans",
 			"tags": [
-				"purpose:security"
+				2
 			],
+			"languages": [],
+			"version": "1.0.0.0",
 			"homepage": "https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
-			"sourceUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts",
-			"timeAdded": 1622639343000,
-			"timeUpdated": 1712569846469
+			"subscriptionUrl": "https://raw.githubusercontent.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites/master/hosts",
+			"timeAdded": "2021-06-02T16:09:03+0300",
+			"timeUpdated": "2024-06-25T14:39:23+0300"
 		}
 	],
 	"tags": [
@@ -990,6 +1157,28 @@
 		{
 			"tagId": 114,
 			"keyword": "lang:he"
+		}
+	],
+	"groups": [
+		{
+			"groupId": 1,
+			"groupName": "General",
+			"displayNumber": 1
+		},
+		{
+			"groupId": 2,
+			"groupName": "Other",
+			"displayNumber": 2
+		},
+		{
+			"groupId": 3,
+			"groupName": "Regional",
+			"displayNumber": 3
+		},
+		{
+			"groupId": 4,
+			"groupName": "Security",
+			"displayNumber": 4
 		}
 	]
 }
