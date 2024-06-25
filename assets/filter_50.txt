@@ -2,7 +2,7 @@
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-06-25T11:06:31.711Z
+! Last modified: 2024-06-25T21:05:55.362Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -3435,3 +3435,6 @@ thepiratebay3.com^
 ||infinityweet.me^
 ||infinityweet.com^
 ||anyplacehere.online^
+
+! https://sansec.io/research/polyfill-supply-chain-attack
+||polyfill.io^
