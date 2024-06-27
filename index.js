@@ -2,10 +2,13 @@ const path = require('path');
 const builder = require('adguard-hostlists-builder');
 const fs = require('fs/promises');
 
-const { getYmlSourcesBlockedServices, getJsonBlockedServices } = require('./scripts/services/get-services-content');
+const { getJsonBlockedData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
-const { getDifferences, restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
+const { getDifferences } = require('./scripts/helpers/helpers');
+const { restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
+const { addServiceLocalizations } = require('./scripts/services/add-localizations');
+const { groupedServicesSchema } = require('./scripts/services/zod-schemas');
 
 const { logger } = require('./scripts/helpers/logger');
 
@@ -15,6 +18,7 @@ const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
 const inputServicesDir = path.join(__dirname, './services');
 const outputServicesFile = path.join(assetsDir, 'services.json');
+const servicesI18nFile = path.join(assetsDir, 'services_i18n.json');
 
 /**
  * Build services data by reading and processing content from a destination JSON file
@@ -30,14 +34,14 @@ const outputServicesFile = path.join(assetsDir, 'services.json');
 const buildServices = async (sourceDirPath, distFilePath) => {
     try {
         // Read content from the JSON file
-        const distBlockedServices = await getJsonBlockedServices(distFilePath);
+        const [distBlockedServices, distBlockedGroups] = await getJsonBlockedData(distFilePath);
         // Read content from the source YML files
         const sourceBlockedServices = await getYmlSourcesBlockedServices(sourceDirPath);
         // Get the differences between the destination and source data
-        const differences = getDifferences(distBlockedServices, sourceBlockedServices);
+        const servicesDifferences = getDifferences(distBlockedServices, sourceBlockedServices);
         // If there are differences, restore removed source files
-        if (differences) {
-            await restoreRemovedSourceFiles(differences, sourceDirPath);
+        if (servicesDifferences) {
+            await restoreRemovedSourceFiles(servicesDifferences, sourceDirPath);
         }
         // Merge data from the destination and source files
         const mergedServicesData = mergeServicesData(distBlockedServices, sourceBlockedServices);
@@ -45,14 +49,20 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         validateSvgIcons(mergedServicesData);
         // Groups data by keys
         const groupedServicesData = groupServicesData(mergedServicesData);
+        // Get the differences between the destination groups data and source groups data
+        const groupsDifferences = getDifferences(distBlockedGroups, groupedServicesData.groups);
+        // If there are differences, throw warning and add them to the services.json file
+        if (groupsDifferences) {
+            // Get groups name for warning
+            const absentGroups = groupsDifferences.map((group) => group.id);
+            logger.error(`These groups have no services: ${absentGroups.join(', ')}`);
+        }
+        groupedServicesSchema.parse(groupedServicesData);
         // Write the grouped service data to the destination JSON file
-        await fs.writeFile(distFilePath, JSON.stringify(groupedServicesData, null, 2));
-        // Add localizations for service groups
+        await fs.writeFile(distFilePath, `${JSON.stringify(groupedServicesData, null, 2)}\n`);
         logger.success(`Successfully finished building ${distFilePath}`);
-        process.exit(0);
     } catch (error) {
-        logger.error(`Error occurred while building ${distFilePath}`, error.message);
-        process.exit(1);
+        logger.error(`Error occurred while building ${distFilePath}`);
     }
 };
 
@@ -60,7 +70,11 @@ const buildServices = async (sourceDirPath, distFilePath) => {
 (async () => {
     try {
         await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        // build services.json file
         await buildServices(inputServicesDir, outputServicesFile);
+        // add localizations for services groups
+        await addServiceLocalizations(outputServicesFile, localesDir, servicesI18nFile);
+        process.exit(0);
     } catch (error) {
         logger.error('Failed to compile hostlists');
         process.exit(1);
