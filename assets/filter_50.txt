@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.0.27
+! Version: 1.0.0.28
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-06-28T14:05:54.540Z
+! Last modified: 2024-06-28T15:06:01.985Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3452,8 +3452,18 @@ thepiratebay3.com^
 ! https://github.com/uBlockOrigin/uAssets/pull/24255
 ! https://sansec.io/research/polyfill-supply-chain-attack
 ! https://www.bleepingcomputer.com/news/security/polyfillio-javascript-supply-chain-attack-impacts-over-100k-sites/
+! https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/
 ||polyfill.io^
 ||googie-anaiytics.com^
+||bootcdn.net^
+||bootcss.com^
+||staticfile.net^
+||staticfile.org^
+||unionadjs.com^
+||xhsbpza.com^
+||union.macoms.la^
+||newcrbpc.com^
+
 ! https://github.com/uBlockOrigin/uAssets/pull/24272
 ! https://www.bleepingcomputer.com/news/security/polyfill-claims-it-has-been-defamed-returns-after-domain-shut-down/
 ||polyfill.com^
