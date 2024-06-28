@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.0.22
+! Version: 1.0.0.23
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-06-28T09:06:27.623Z
+! Last modified: 2024-06-28T10:06:03.767Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3467,3 +3467,7 @@ thepiratebay3.com^
 
 ! https://github.com/GloriousEggroll/proton-ge-custom?tab=readme-ov-file#myself-gloriouseggroll-and-this-project-proton-ge-are-not-affiliated-with-httpsprotongecom-that-is-a-spamfake-website-there-is-no-existing-website-for-proton-ge-other-than-this-github-repository-proton-ge-does-not-collect-any-user-data-what-so-ever-and-is-not-a-company-or-organization-of-any-type
 ||protonge.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/24262
+! https://www.virustotal.com/gui/file/94587b41a0eb5e2c592976fa283b0bfc0ef2e2c5cec24bba298cda0eb67270de
+||chromnius.com^
