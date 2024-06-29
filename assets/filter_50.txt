@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.0.39
+! Version: 1.0.0.40
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-06-29T02:17:49.541Z
+! Last modified: 2024-06-29T03:06:29.653Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3465,12 +3465,15 @@ thepiratebay3.com^
 ||2d45b3cf2299d8ba038f45cb38aca4f2ecfbcb8d264ba28432ae5c51.com^
 ||corroercl.xyz^
 
-! https://github.com/GloriousEggroll/proton-ge-custom?tab=readme-ov-file#myself-gloriouseggroll-and-this-project-proton-ge-are-not-affiliated-with-httpsprotongecom-that-is-a-spamfake-website-there-is-no-existing-website-for-proton-ge-other-than-this-github-repository-proton-ge-does-not-collect-any-user-data-what-so-ever-and-is-not-a-company-or-organization-of-any-type
+! https://github.com/GloriousEggroll/proton-ge-custom#myself-gloriouseggroll-and-this-project-proton-ge-are-not-affiliated-with-httpsprotongecom-that-is-a-spamfake-website-there-is-no-existing-website-for-proton-ge-other-than-this-github-repository-proton-ge-does-not-collect-any-user-data-what-so-ever-and-is-not-a-company-or-organization-of-any-type
 ||protonge.com^
-
-! https://github.com/uBlockOrigin/uAssets/issues/24262
 ! https://www.virustotal.com/gui/file/94587b41a0eb5e2c592976fa283b0bfc0ef2e2c5cec24bba298cda0eb67270de
 ||chromnius.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24283
 ||premium-x-notes.com^
+
+! https://github.com/uBlockOrigin/uAssets/issues/24296
+! https://www.virustotal.com/gui/url/95c95990e40d0859a1766b2da6047f64d2faecee65d74669243d443c7c185ebf
+! https://www.urlvoid.com/scan/teslafond.io/
+||teslafond.io^
