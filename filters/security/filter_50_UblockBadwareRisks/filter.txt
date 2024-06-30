@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.0.66
+! Version: 1.0.0.67
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-06-30T05:06:04.778Z
+! Last modified: 2024-06-30T06:07:03.478Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3233,6 +3233,9 @@ thepiratebay3.com^
 ||wz-2-allegro-4dv.pages.dev^
 
 ! amazon
+||amazon-*.shop^
+||amazon-shopping.shop^
+||amazon-mena.shop^
 ||amazonl3.com^
 ||amazon-onboarding.com^
 ||cc35rt8.top^
@@ -3268,9 +3271,14 @@ thepiratebay3.com^
 ||conveyancingportal.com^
 ! https://infosec.exchange/@urldna/112362770153826421
 ||solutionfun.info^
+||notificationbyfacebook.
+||notificationbyfacebook.firebaseapp.com^
+||notificationbyfacebook.web.app^
 ||business-facebook-*.pages.dev^
 ||unusualaccountcnfrmpages.github.io^
 ||page-facebook.go-midfer.com^
+||facebook.prantiksoft.com^
+||facebook-guidelines.com^
 ! https://infosec.exchange/@urldna/112476842252816959
 ||www-mfacebook.vn^
 ! https://infosec.exchange/@urldna/112560479201333529
@@ -3279,6 +3287,9 @@ thepiratebay3.com^
 ||vww-facebook.com.vn^
 ! https://www.virustotal.com/gui/url/e5632b7ebd4d9ef4899155af4a8cf218797bd59972c231a7897b603b32ccccb1
 ||govern-assessment-validation-njbujm.vercel.app^
+! instagram
+||verifity-instagram.com^
+||instagramshshjsjsjssjjsjsjshsb.blogspot.com^
 ||lazada.bbc6666.com^
 ||conttonik.vip^
 ||sp.aircsgo.com^
@@ -3288,6 +3299,10 @@ thepiratebay3.com^
 ||sp.26skins.com^
 ! https://infosec.exchange/@urldna/112663344254245028
 ||steamommunity.com^
+! https://www.virustotal.com/gui/url/dee8baf8c608eb1f7eb711c578f05de928801d1526196e9ab692971cc29bbec4
+||steam.workshop-item.com^
+! https://www.virustotal.com/gui/url/d16f07ca49e9334d080d427294630f22f10d8925de8ae73df2128e0bdbd434a9
+||steam.communityart-work.com^
 ! pubg
 ||pubg-arena.top^
 ||pubgm.kraftonevent.com^
@@ -3295,19 +3310,25 @@ thepiratebay3.com^
 
 ! google
 ||bxzxenzidrmrksu.jiongcao.cn^
+||google-stare.com^
 ! https://infosec.exchange/@urldna/112294350751277558
 ||datahub.center^
 ! https://infosec.exchange/@urldna/112435554388872743
 ||channelhub.info^
 
 ! microsoft
+||microsoft*.dfautomotive.de^
+||microsoft.dfautomotive.de^
+||microsoft.account.dfautomotive.de^
 ||whfdny.org^
 ||microsoft-login.zapier.app^
 ||outlook-office.zapier.app^
 ||infos4.yolasite.com^
 ||policija64.wixsite.com^
-||microsoft.dfautomotive.de^
 ||exchange.add-solution.de^
+||microsoft-bec7e0.webflow.io^
+||your-officeo365.webflow.io^
+||outlookoffice365team.webflow.io^
 ! https://www.virustotal.com/gui/url/20d6a5b64d26edeb2e5caae3aa19c00ebd83a6d4dac9e41486c823751e875030
 ||johnhstngs4.wixsite.com^
 ! https://infosec.exchange/@urldna/112689768399095978
