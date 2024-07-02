@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.1.20
+! Version: 1.0.1.21
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-02T11:06:07.795Z
+! Last modified: 2024-07-02T12:09:05.071Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -842,6 +842,9 @@ thepiratebay3.com^
 ||lokasjc.cfd^
 ||sertyuurs.xyz^
 ||u87yuo9ojh.world^
+||theipfire.co^
+||securecracked.info^
+||sushilprajapati.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/11394
 ||theannoyingsite.com^
@@ -3421,12 +3424,6 @@ thepiratebay3.com^
 ||waredot.com^
 ||waredot.us^
 
-! https://github.com/uBlockOrigin/uAssets/issues/24043
-||hfr67jhqrw8.com^
-||tbao684tryo.com^
-||5wzgtq8dpk.com^
-||65spy7rgcu.com^
-
 ! https://github.com/uBlockOrigin/uAssets/issues/24107
 ||meltedpleasandtws.shop^
 
@@ -3470,7 +3467,6 @@ thepiratebay3.com^
 ! https://sansec.io/research/polyfill-supply-chain-attack
 ! https://www.bleepingcomputer.com/news/security/polyfillio-javascript-supply-chain-attack-impacts-over-100k-sites/
 ! https://www.bleepingcomputer.com/news/security/polyfillio-bootcdn-bootcss-staticfile-attack-traced-to-1-operator/
-||polyfill.io^
 ||googie-anaiytics.com^
 ||bootcdn.net^
 ||bootcss.com^
