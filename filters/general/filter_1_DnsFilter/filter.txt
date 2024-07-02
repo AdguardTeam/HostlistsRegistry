@@ -1,9 +1,9 @@
 !
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
-! Version: 1.0.1.19
+! Version: 1.0.1.20
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2024-07-02T10:05:28.234Z
+! Last modified: 2024-07-02T11:05:32.283Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -16,7 +16,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2024-07-02T06:01:25.113Z
+! Last modified: 2024-07-02T10:50:27.174Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -1379,6 +1379,7 @@
 ! Bad: ||legitwebsite.com^$third-party (should be in adservers.txt)
 !
 !
+||ad.twinrdengine.com^
 ||d2lg0swrp15nsj.cloudfront.net^
 ||dpeqm8xv96fuc.cloudfront.net^
 ||d127s3e8wcl3q6.cloudfront.net^
@@ -40702,12 +40703,14 @@ vkcdnservice.appspot.com^
 ||bc98ad.xyz^
 ||bcbe.site^
 ||bd5a57.xyz^
+||c31133f7.xyz^
 ||ca3d.site^
 ||ca9246.xyz^
 ||caa2c4.xyz^
 ||cd57296e.xyz^
 ||ce357c.xyz^
 ||cfb98a.xyz^
+||d23d450d.xyz^
 ||d477275c.xyz^
 ||d84bc26d.site^
 ||d8b0a5.xyz^
@@ -68843,6 +68846,8 @@ analytics-*.aasaam.com
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1717
+@@||sax.sina.com.cn^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1709
 ! Blocked by CNAME postaffiliatepro.com
 @@||linka.page^|
