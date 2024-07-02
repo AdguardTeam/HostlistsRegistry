@@ -1,0 +1,19 @@
+{
+    "name": "1Hosts (Pro)",
+    "description": "List for blocking pesky ads, trackers, and malware. Strict version: has some minimal breakages, prioritizes privacy & safety (adblocking) over UX e.g blocks graph.facebook.com.",
+    "homepage": "https://badmojr.github.io/1Hosts/",
+    "sources": [
+      {
+        "name": "1Hosts (Pro)",
+        "source": "https://o0.pages.dev/Pro/adblock.txt",
+        "type": "adblock",
+        "transformations": [
+          "Validate",
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }
