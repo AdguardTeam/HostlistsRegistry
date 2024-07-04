@@ -1,0 +1,20 @@
+{
+    "name": "No Amazon",
+    "description": "Completely blocks all Amazon-related domains.",
+    "homepage": "https://github.com/nickspaargaren/no-amazon",
+    "sources": [
+        {
+            "name": "No Amazon",
+            "source": "https://raw.githubusercontent.com/nickspaargaren/no-amazon/master/amazon-adguard.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}

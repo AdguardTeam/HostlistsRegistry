@@ -1,0 +1,20 @@
+{
+    "name": "No Microsoft",
+    "description": "Completely blocks all Microsoft-related domains.",
+    "homepage": "https://github.com/safing/intel-data",
+    "sources": [
+        {
+            "name": "No Microsoft",
+            "source": "https://raw.githubusercontent.com/safing/intel-data/master/lists/big-tech/microsoft.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}

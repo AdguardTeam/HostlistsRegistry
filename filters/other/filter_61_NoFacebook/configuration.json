@@ -1,0 +1,20 @@
+{
+    "name": "No Facebook",
+    "description": "Block FB and FB related / owned services",
+    "homepage": "https://github.com/blocklistproject/Lists",
+    "sources": [
+        {
+            "name": "No Facebook",
+            "source": "https://blocklistproject.github.io/Lists/adguard/facebook-ags.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
