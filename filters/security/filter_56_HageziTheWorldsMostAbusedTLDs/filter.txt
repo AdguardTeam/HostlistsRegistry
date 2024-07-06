@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.2.20
+! Version: 1.0.2.21
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-07-06T15:06:24.097Z
+! Last modified: 2024-07-06T16:05:50.589Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,16 +22,15 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 06 Jul 2024 10:32 UTC
-! Version: 2024.0706.1032.22
+! Last modified: 06 Jul 2024 15:29 UTC
+! Version: 2024.0706.1529.42
 ! Syntax: AdGuard
-! Number of latin TLDs: 248 - punycode TLDs: 151
+! Number of latin TLDs: 246 - punycode TLDs: 151
 !
 ||*.af^$denyallow=google.com.af
 ||*.africa^
 ||*.agency^$denyallow=baam.agency|battlefield.agency|robotzebra.agency|uphotel.agency|ws.agency
 ||*.airbus^
-||*.ao^$denyallow=google.co.ao
 ||*.asia^$denyallow=amzn.asia|dbankcloud.asia
 ||*.autos^
 ||*.aw^
@@ -64,7 +63,6 @@
 ||*.careers^
 ||*.casa^
 ||*.cash^
-||*.cc^$denyallow=fanbox.cc|megaf.cc|mydaddy.cc|ors.cc|rapidcdn.cc|shottr.cc|vern.cc|wallhaven.cc|zcyph.cc
 ||*.cd^$denyallow=google.cd
 ||*.center^
 ||*.cf^$denyallow=acap.cf|google.cf
@@ -214,7 +212,7 @@
 ||*.sew^
 ||*.shop^$denyallow=11ts.shop|eventix.shop|munu.shop|terminal.shop|urlbluemedia.shop
 ||*.shopping^
-||*.site^$denyallow=dodi-repacks.site|fitgirl-repacks.site|notion.site|reddit-doesnt-like-this.site
+||*.site^$denyallow=dodi-repacks.site|fitgirl-repacks.site|gov-img.site|notion.site|reddit-doesnt-like-this.site
 ||*.skin^
 ||*.sl^$denyallow=google.com.sl
 ||*.sm^$denyallow=google.sm
