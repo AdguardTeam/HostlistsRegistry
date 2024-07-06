@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.2.14
+! Version: 1.0.2.15
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-06T09:06:04.622Z
+! Last modified: 2024-07-06T10:06:15.738Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3157,6 +3157,9 @@ thepiratebay3.com^
 ||conveyancingportal.com^
 ! https://infosec.exchange/@urldna/112362770153826421
 ||solutionfun.info^
+
+! facebook
+! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,domain=vn
 ||notificationbyfacebook.
 ||notificationbyfacebook.firebaseapp.com^
 ||notificationbyfacebook.web.app^
@@ -3165,6 +3168,11 @@ thepiratebay3.com^
 ||facebook.prantiksoft.com^
 ||facebook-guidelines.com^
 ||hotvideoustiktok2021.blogspot.com^
+||www-mfacebook.
+||www-facebooks.
+||www-facebook-
+||www-facebook.
+||vww-facebook.
 ! https://infosec.exchange/@urldna/112476842252816959
 ||www-mfacebook.vn^
 ! https://infosec.exchange/@urldna/112560479201333529
@@ -3172,6 +3180,8 @@ thepiratebay3.com^
 ! https://urldna.io/scan/666037369f1ea64bf06cebf2
 ! https://www.virustotal.com/gui/url/668171c7e2792344e6f1258ad7c1ab14e94b6192dfa1a1e98fb798c938244caa
 ||vww-facebook.com.vn^
+! https://www.virustotal.com/gui/url/381b8a23c755c95909382d1b4dc80bfd4e4c89b0f1c0e48ef626c16723ff88c1
+||www-facebooks.com.vn^
 ! https://www.virustotal.com/gui/url/e5632b7ebd4d9ef4899155af4a8cf218797bd59972c231a7897b603b32ccccb1
 ||govern-assessment-validation-njbujm.vercel.app^
 ||lazada.bbc6666.com^
