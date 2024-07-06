@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.2.15
+! Version: 1.0.2.16
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-07-06T10:06:16.044Z
+! Last modified: 2024-07-06T11:05:57.885Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,10 +22,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 05 Jul 2024 22:45 UTC
-! Version: 2024.0705.2245.38
+! Last modified: 06 Jul 2024 10:32 UTC
+! Version: 2024.0706.1032.22
 ! Syntax: AdGuard
-! Number of latin TLDs: 245 - punycode TLDs: 151
+! Number of latin TLDs: 248 - punycode TLDs: 151
 !
 ||*.af^$denyallow=google.com.af
 ||*.africa^
@@ -64,6 +64,7 @@
 ||*.careers^
 ||*.casa^
 ||*.cash^
+||*.cc^$denyallow=fanbox.cc|megaf.cc|mydaddy.cc|ors.cc|rapidcdn.cc|shottr.cc|vern.cc|wallhaven.cc|zcyph.cc
 ||*.cd^$denyallow=google.cd
 ||*.center^
 ||*.cf^$denyallow=acap.cf|google.cf
@@ -94,6 +95,7 @@
 ||*.degree^$denyallow=opf.degree|three60.degree
 ||*.dental^
 ||*.desi^$denyallow=xhamster.desi
+||*.digital^$denyallow=cariad.digital|eberry.digital|iagl.digital|russmedia.digital|swm.digital
 ||*.directory^$denyallow=2fa.directory|passkeys.directory
 ||*.discount^$denyallow=real.discount
 ||*.download^
@@ -134,7 +136,7 @@
 ||*.health^
 ||*.healthcare^
 ||*.homes^
-||*.house^
+||*.house^$denyallow=nature.house
 ||*.icu^$denyallow=lunar.icu
 ||*.ink^$denyallow=ishortn.ink|next.ink|short.ink
 ||*.international^
@@ -150,7 +152,7 @@
 ||*.ltd^
 ||*.makeup^$denyallow=bird.makeup
 ||*.management^
-||*.market^$denyallow=digiseller.market|otto.market|plati.market|warframe.market
+||*.market^$denyallow=digiseller.market|otto.market|plati.market|spotim.market|warframe.market
 ||*.markets^
 ||*.mc^
 ||*.men^
@@ -226,6 +228,7 @@
 ||*.style^
 ||*.su^
 ||*.supply^
+||*.support^
 ||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|quran.surf|s-wings.surf
 ||*.sx^$denyallow=filemoon.sx|voe.sx
 ||*.sz^
