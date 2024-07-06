@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.2.10
+! Version: 1.0.2.11
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-06T05:06:31.410Z
+! Last modified: 2024-07-06T06:06:49.181Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3126,15 +3126,9 @@ thepiratebay3.com^
 
 ! amazon
 ||amazon-*.shop^
-||amazon-shop.site^
 ||amazon-shopping.shop^
-||amazon-mena.shop^
 ||amazonl3.com^
-||amazon-onboarding.com^
-||cc35rt8.top^
-||miaoniter.com^
 ||tepoty.com^
-||anuihafw369.xyz^
 ! ebay
 ||c.vn-ebayn.vip^
 ||vn-ebay.quxlpuj.cn^
@@ -3144,9 +3138,6 @@ thepiratebay3.com^
 ||51eabay.com^
 ! https://infosec.exchange/@urldna/112476252310873324
 ||135buy.com^
-
-! rakuten
-||rakutenpluss.com^
 ||diwapa3051.wixsite.com^
 ||idhnochalter.wixsite.com^
 ||cajewar736.wixsite.com^
@@ -3157,7 +3148,6 @@ thepiratebay3.com^
 ||ewueuweudsjdjsdjjd.weeblysite.com^
 ||maiil-myatt.weeblysite.com^
 ||rtm-att.directly.com^
-||tbscott212.bubbleapps.io^
 ! https://www.virustotal.com/gui/url/b78d7c493e891ae1dbc5b9ea30d22c50792b6d5a55104e33f5ba37e78ab658a1
 ||dones9.wixsite.com^
 ! https://infosec.exchange/@urldna/112465871317727388
@@ -3172,7 +3162,6 @@ thepiratebay3.com^
 ||notificationbyfacebook.web.app^
 ||business-facebook-*.pages.dev^
 ||unusualaccountcnfrmpages.github.io^
-||page-facebook.go-midfer.com^
 ||facebook.prantiksoft.com^
 ||facebook-guidelines.com^
 ||hotvideoustiktok2021.blogspot.com^
@@ -3180,28 +3169,22 @@ thepiratebay3.com^
 ||www-mfacebook.vn^
 ! https://infosec.exchange/@urldna/112560479201333529
 ||www-facebook-com.vn^
-! https://infosec.exchange/@urldna/112565669576311621
+! https://urldna.io/scan/666037369f1ea64bf06cebf2
+! https://www.virustotal.com/gui/url/668171c7e2792344e6f1258ad7c1ab14e94b6192dfa1a1e98fb798c938244caa
 ||vww-facebook.com.vn^
 ! https://www.virustotal.com/gui/url/e5632b7ebd4d9ef4899155af4a8cf218797bd59972c231a7897b603b32ccccb1
 ||govern-assessment-validation-njbujm.vercel.app^
 ||lazada.bbc6666.com^
-||conttonik.vip^
-
-! game sites
-! https://www.virustotal.com/gui/url/eb23a1313dca59bd74228b42bd82fa26d9ef8e83928fbed9cd840d65aa86d9c6
-||aiwiwd.vrlnnew2023.biz.id^
 ||sp.aircsgo.com^
 ||st.aircsgo.com^
 ||steamfiller.ru^
 ||11steam.com^
 ||sp.26skins.com^
-! https://infosec.exchange/@urldna/112663344254245028
+! https://urldna.io/scan/6677498cbecc3349716ec446
+! https://www.virustotal.com/gui/url/04a4187b81f801e1dcafed01b49229ddae5bd5406c6f170b0b2c4b2b4fdae712
 ||steamommunity.com^
 ! https://www.virustotal.com/gui/url/d16f07ca49e9334d080d427294630f22f10d8925de8ae73df2128e0bdbd434a9
 ||steam.communityart-work.com^
-! https://infosec.exchange/@urldna/112703688212678712
-! https://www.virustotal.com/gui/url/570741850fda8e41512e1c94f60dd344f18355f3f5d097e6f1c8c39557e8df26
-||steaemcoonmmunnltly.com^
 ! pubg
 ||pubg-arena.top^
 ||pubgm.kraftonevent.com^
@@ -3220,20 +3203,19 @@ thepiratebay3.com^
 ||microsoft.dfautomotive.de^
 ||microsoft.account.dfautomotive.de^
 ||whfdny.org^
-||microsoft-login.zapier.app^
 ||outlook-office.zapier.app^
 ||infos4.yolasite.com^
 ||policija64.wixsite.com^
 ||outlook20239.wixsite.com^
 ||exchange.add-solution.de^
-||microsoft-bec7e0.webflow.io^
 ||your-officeo365.webflow.io^
 ||outlookoffice365team.webflow.io^
 ||exceklcmicrosftprotection.pages.dev^
 ||microsoft-datamaturity.noisehq.nl^
 ! https://www.virustotal.com/gui/url/20d6a5b64d26edeb2e5caae3aa19c00ebd83a6d4dac9e41486c823751e875030
 ||johnhstngs4.wixsite.com^
-! https://infosec.exchange/@urldna/112689768399095978
+! https://urldna.io/scan/667d384ad611a65623a4c272
+! https://www.virustotal.com/gui/url/08c0a664528400e7f69613f0d67cd32eaa27c172e61b59729af5fd808fb52737
 ||wwwservicemsnlive-*.hubspotpagebuilder.com^
 
 ! telegram
@@ -3295,7 +3277,6 @@ thepiratebay3.com^
 
 ! https://baochinhphu.vn/canh-bao-mot-so-website-gia-mao-lua-dao-nguoi-dung-internet-can-tranh-102240219171043932.htm
 ||vuabem.com^
-/^https:\/\/[a-z]+bem\.com\/auth\/login/
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23559
 ||wasabiwallet.is^
