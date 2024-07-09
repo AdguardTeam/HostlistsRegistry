@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.2.79
+! Version: 1.0.2.80
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-09T04:06:59.716Z
+! Last modified: 2024-07-09T05:05:54.380Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -1097,6 +1097,8 @@ thepiratebay3.com^
 ||if-eku3a-fp.com^
 ! https://x.com/masaomi346/status/1809392837009797363
 ||ilar.cn^
+! https://x.com/masaomi346/status/1810444367792140346
+||lunarserver.cn^
 
 ! https://onijima.jp/?p=54165
 ||pocket-888.com^
@@ -2790,9 +2792,6 @@ thepiratebay3.com^
 ||lianashepard.autos^
 ||nihongirl.online^
 
-! https://insight-jp.nttsecurity.com/post/102ic6o/webgoogle-chrome
-||gateway.pinata.cloud^
-
 ! https://twitter.com/genegene1234561/status/1647164176438280192
 ||japanonlinebroadcast.live^
 
@@ -3187,13 +3186,17 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/381b8a23c755c95909382d1b4dc80bfd4e4c89b0f1c0e48ef626c16723ff88c1
 ||www-facebooks.com.vn^
 ! https://www.virustotal.com/gui/url/e5632b7ebd4d9ef4899155af4a8cf218797bd59972c231a7897b603b32ccccb1
-||govern-assessment-validation-njbujm.vercel.app^
+||govern-assessment-validation-*.vercel.app^
+! https://www.virustotal.com/gui/url/54cb07a8f7961f2a9b2e5aac8c8a7a3f7a3f816f56f799382b672929fabc32b4
+||support-center-for-business-page-caseid-*.vercel.app^
 ! https://www.virustotal.com/gui/url/6091a6693b5581524198c73b1f84c58e9272f1b100d7e68d7ed5fae7d05a06e2
 ||request-page-violation-*.surge.sh^
 ! https://www.virustotal.com/gui/url/a9ef0c410c76df46d4871a247df980ac912b93df02d7c7012477107171c78964
 ||violation-*.surge.sh^
 ! https://www.virustotal.com/gui/url/6eeee02278ccbecd060a66c9948c69d98b79c249876e03f7ff410180fa4b4057
 ||copyrights-*.surge.sh^
+! instagram
+||instagam.xyz^
 ||lazada.bbc6666.com^
 ||shopee-mall.cc^
 ||sp.aircsgo.com^
@@ -3237,6 +3240,7 @@ thepiratebay3.com^
 ||outlookoffice365team.webflow.io^
 ||exceklcmicrosftprotection.pages.dev^
 ||microsoft-datamaturity.noisehq.nl^
+||mblholdings.com^
 ! https://www.virustotal.com/gui/url/20d6a5b64d26edeb2e5caae3aa19c00ebd83a6d4dac9e41486c823751e875030
 ||johnhstngs4.wixsite.com^
 ! https://urldna.io/scan/667d384ad611a65623a4c272
@@ -3244,16 +3248,26 @@ thepiratebay3.com^
 ||wwwservicemsnlive-*.hubspotpagebuilder.com^
 ! https://www.virustotal.com/gui/url/6842be99947bd0db1671500f4ab7774846e34f7d951b190be9e58b9e84536f39
 ||hergunavantaj.com.tr^
-! https://www.virustotal.com/gui/url/121614b7a02a5f9bfe0df6bea30184ef2c28a03df07b6ae41c489de241554344?nocache=1
+! https://www.virustotal.com/gui/url/121614b7a02a5f9bfe0df6bea30184ef2c28a03df07b6ae41c489de241554344
 ||irrigationservices.co^
 ! https://www.virustotal.com/gui/url/49d7a628c9179a385101a8b2375318dd7659b95ecaa8c35fe8a04383f3414809
 ||antivhelp.com^
+! https://www.virustotal.com/gui/url/a718d596ee202aef01133915018feedcb6b3402730a4246dd4c7329d60729faf
+||adobesecurequotelink.ru^
 
 ! telegram
 ||telegramhcn.com^
 ||web.telegram.data-bees.cn^
 ||telegramkv.com^
 ||haveplentymusic.com^
+||telewebk.xyz^
+||jzrx-spins.com^
+||newappmssg.ru^
+||tele-gramotno.ru^
+||usps.posttrackingservice.top^
+! https://urldna.io/scan/6683cfb811bd32bf9fb75225
+! https://www.virustotal.com/gui/url/25aea0e999fad6210accce6965b498b4794ae442233ece87290293486f17d432
+||zxb.bgd.mybluehost.me^
 ||web3mainnetdapp.pages.dev^
 ||web3connectfix.pages.dev^
 ! https://infosec.exchange/@urldna/112246221074509842
@@ -3266,6 +3280,9 @@ thepiratebay3.com^
 ||cprapid.com^
 ! https://www.virustotal.com/gui/url/0fded7ccb337703e58ddc34b8a7c89f87fdcb102a543136e434b4f1783d37935
 ||utahpolicetraining.*.mybluehost.me^
+
+! https://khonggianmang.vn/uploads/2024_CBT_09_4c59decfba.pdf
+||chamsockhachhang-
 ||cskh-vib-
 ||cskh-vib.
 ||chamsockhachang-
