@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.3.28
+! Version: 1.0.3.29
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-11T05:06:03.502Z
+! Last modified: 2024-07-11T06:07:42.724Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3118,13 +3118,20 @@ thepiratebay3.com^
 ||vnote-*.myqcloud.com^
 ||clickhereecraigslist.tripod.com^
 ||mobilelegendsmycode.com^
+! https://www.virustotal.com/gui/url/ebeac4c7ddb6874d20a7e65eed7aca19ee9c6a02b15f49cf5c3fea342701faa5
+||booking.inn-
+! airbnb
+||air-bnb.check-
 
 ! allegro
 ||allegrostore.cc^
 ||allegrostu.com^
 ||allegrostroe.vip^
 ||allegrocolombia.com^
+||allegro-online.ru^
 ||wz-2-allegro-4dv.pages.dev^
+! https://www.virustotal.com/gui/url/5975c42165c85ec63e69ace75cee43783d33c4c65adb47f64eaa0ba09b56b232
+||allegro.huui.pl^
 
 ! amazon
 ||amazon-*.shop^
@@ -3162,6 +3169,7 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/1fe0b555268165f11563bcb714b79f2ee12e72bec0ff0d29d63480dcdf6297f3
 ||contactsupport.10ffc20.wcomhost.com^
 ||conveyancingportal.com^
+||recompensaszurichsantander.com.mx^
 ! https://infosec.exchange/@urldna/112362770153826421
 ||solutionfun.info^
 
@@ -3204,6 +3212,16 @@ thepiratebay3.com^
 ||violation-*.surge.sh^
 ! https://www.virustotal.com/gui/url/6eeee02278ccbecd060a66c9948c69d98b79c249876e03f7ff410180fa4b4057
 ||copyrights-*.surge.sh^
+! https://www.virustotal.com/gui/url/d8475ddede9ae4d82634b3b67f477e08dac8e9ed1f71e217485c81e64b325440
+||content-voilation-
+! https://www.virustotal.com/gui/url/740e678d35aa4d230791e3e9bc98d3be1d94c5269a72b35892676c606e64c326
+||appeal-account-copyright-case-review.
+! https://www.virustotal.com/gui/url/d67ee76e5dee301886e8acf659a38d3489da3815c63592ae63659fae81242a41
+||community-flagged-
+! https://www.virustotal.com/gui/url/fe473e84c16dfd81c6cbcdb00562002219c69e1c814fb03b95c35fa692d8e061
+||appealcasesid.com^
+! https://www.virustotal.com/gui/url/727aea44e0ab1a53aa0f6471b838d7391f6b4404c388b308ad3add44e5b5d65c
+||metabussines.com^
 ! instagram
 ||instagam.xyz^
 ||lazada.bbc6666.com^
@@ -3221,10 +3239,14 @@ thepiratebay3.com^
 ||steam.communityart-work.com^
 ! https://www.virustotal.com/gui/url/5f18b92ca5ebc697646cb8d0fdd19ec8d7ed1e76fa8095b35ab65721a9018b6b
 ||steancommunlity.com^
-! https://www.virustotal.com/gui/url/1fe0b555268165f11563bcb714b79f2ee12e72bec0ff0d29d63480dcdf6297f3
+! https://www.virustotal.com/gui/url/36e76d099126816835fd59041ad706d0a3d446f538ce4e230218cd2edb23e50e
 ||steamcomnumllty.com^
-! https://www.virustotal.com/gui/url/1fe0b555268165f11563bcb714b79f2ee12e72bec0ff0d29d63480dcdf6297f3
+! https://www.virustotal.com/gui/url/b59bdd5c31c3f2b83ea801e89165ba67842073827a53bd9570e81fde999b8e25
 ||steanmcommunity.com^
+! https://www.virustotal.com/gui/url/23b9eb25910fe02ba6a4ec93e795203205afff1cb784ff265f41711dacb95755
+||stearnccommunity.com^
+! https://www.virustotal.com/gui/url/193529305a403b318c68513d9ca0bbf9869ab475004de21dd79b9746a98fc1d2
+||steamcomuniry.com^
 ! pubg
 ||pubg-arena.top^
 ||pubgm.kraftonevent.com^
@@ -3281,6 +3303,8 @@ thepiratebay3.com^
 ||newappmssg.ru^
 ||tele-gramotno.ru^
 ||usps.posttrackingservice.top^
+! https://www.virustotal.com/gui/url/42539b15d452c49ed504ad45697d8aa74ef2ca4165b4562801c794a74abe3cff
+||uszq.iafedoec.top^
 ! https://urldna.io/scan/6683cfb811bd32bf9fb75225
 ! https://www.virustotal.com/gui/url/25aea0e999fad6210accce6965b498b4794ae442233ece87290293486f17d432
 ||zxb.bgd.mybluehost.me^
@@ -3318,6 +3342,10 @@ thepiratebay3.com^
 ||arnaudpairoto.com^
 ||puttyconnect.info^
 ||astrosphere.world^
+
+! https://khonggianmang.vn/uploads/2024_CBT_27_5b8aa10967.pdf
+||uudaikhachhang-
+||nang-hang-
 
 ! https://checkmarx.com/blog/over-170k-users-affected-by-attack-using-fake-python-infrastructure/
 ! https://www.virustotal.com/gui/domain/files.pythanhosted.org
