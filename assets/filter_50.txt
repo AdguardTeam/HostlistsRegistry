@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.4.47
+! Version: 1.0.4.48
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-16T04:07:30.600Z
+! Last modified: 2024-07-16T05:05:59.508Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3260,6 +3260,8 @@ thepiratebay3.com^
 ||steamcommunlyt.com^
 ! https://www.virustotal.com/gui/url/ca2d5df746dc848767d695b04a59af02042fd44ac1829daa4df2da6acdf9834e
 ||steam.workshopstyle.com^
+! https://www.virustotal.com/gui/url/ce3d17a9e4612fac947fb2562ae1a65792b5d2decd2cae8c84bc447e81c47e86
+||steam.communitybrowserpowered.com^
 ! pubg
 ||pubg-arena.top^
 ||pubgm.kraftonevent.com^
@@ -3284,6 +3286,7 @@ thepiratebay3.com^
 ||infos4.yolasite.com^
 ||policija64.wixsite.com^
 ||outlook20239.wixsite.com^
+||microsoftupdate67.wixsite.com^
 ||exchange.add-solution.de^
 ||your-officeo365.webflow.io^
 ||outlookoffice365team.webflow.io^
@@ -3334,6 +3337,7 @@ thepiratebay3.com^
 ||base-swap-frontend-*.vercel.app^
 ! https://www.virustotal.com/gui/url/7ef12f181e0c1d09475f2fd51b19b06ff393f4c686abfb89b312cd47447ac7bf
 ||metamask*.webflow.io^
+||paypal-complete.com^
 ! https://www.virustotal.com/gui/url/51313f8d841a87fbda4029330b190c9e5f4bd4c70646f2a73b10771d677a8ab2
 ||cursorltd.com^
 ! https://www.virustotal.com/gui/url/5ff91c73c62cc4bd5af699518d73ecffe9bdd0830c4052e4da1405568495c4df
@@ -3356,6 +3360,9 @@ thepiratebay3.com^
 
 ! https://khonggianmang.vn/uploads/2024_CBT_26_3710292cc3.pdf
 ||vn156475p.com^
+
+! https://khonggianmang.vn/uploads/2024_CBT_28_97c3eaa00a.pdf
+||govnn.cc^
 
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/new-go-loader-pushes-rhadamanthys
 ! https://safeweb.norton.com/report/show?url=https:%2F%2Farnaudpairoto.com%2F
