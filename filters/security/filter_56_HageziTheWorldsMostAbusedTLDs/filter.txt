@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.4.99
+! Version: 1.0.5.0
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-07-18T08:07:39.747Z
+! Last modified: 2024-07-18T09:06:04.034Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,8 +22,8 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 17 Jul 2024 21:35 UTC
-! Version: 2024.0717.2135.35
+! Last modified: 18 Jul 2024 08:43 UTC
+! Version: 2024.0718.0843.35
 ! Syntax: AdGuard
 ! Number of latin TLDs: 187 - punycode TLDs: 151
 !
@@ -34,27 +34,27 @@
 ||*.baby^
 ||*.bank^
 ||*.bar^$denyallow=fap.bar
-||*.beauty^$denyallow=homelab.beauty|vipbj.beauty
+||*.beauty^$denyallow=vipbj.beauty
 ||*.best^$denyallow=epg.best
 ||*.bet^
 ||*.bid^
 ||*.bike^
 ||*.bingo^
 ||*.bio^
-||*.biz^$denyallow=beiniz.biz|bonial.biz|cloudns.biz|cyberciti.biz|dzeta.biz|epson.biz|iimwf.biz|localise.biz|luckysbarbershop.biz|movabletype.biz|panasonic.biz|slussen.biz|wyborcza.biz|yoox.biz
+||*.biz^$denyallow=beiniz.biz|bonial.biz|cloudns.biz|cyberciti.biz|epson.biz|iimwf.biz|localise.biz|luckysbarbershop.biz|movabletype.biz|panasonic.biz|slussen.biz|wyborcza.biz|yoox.biz
 ||*.boats^
 ||*.bond^
 ||*.boo^
 ||*.boston^
 ||*.boutique^
-||*.buzz^$denyallow=allthe.buzz|awful.buzz|cliq.buzz|montpellier.buzz|sideb.buzz|williamsonday.buzz
+||*.buzz^$denyallow=sideb.buzz
 ||*.cam^
 ||*.capital^$denyallow=scalable.capital
 ||*.careers^
 ||*.casa^$denyallow=nabu.casa
 ||*.cash^
 ||*.center^
-||*.cfd^$denyallow=frcoal.cfd|freedium.cfd
+||*.cfd^$denyallow=freedium.cfd
 ||*.charity^
 ||*.christmas^
 ||*.church^
@@ -62,7 +62,7 @@
 ||*.claims^
 ||*.click^$denyallow=xcine.click
 ||*.clothing^
-||*.club^$denyallow=mbcherohub.club|pdfmagazines.club|reolink.club
+||*.club^$denyallow=mbcherohub.club|pdfmagazines.club
 ||*.computer^$denyallow=neat.computer
 ||*.cool^
 ||*.coupons^
@@ -87,16 +87,16 @@
 ||*.finance^
 ||*.financial^
 ||*.fishing^
-||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|thebene.fit|union.fit
+||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|union.fit
 ||*.foo^$denyallow=helloworld.foo
 ||*.fund^
-||*.fyi^$denyallow=apollo.fyi|better.fyi|canonn.fyi|iusearchlinux.fyi|lunar.fyi|vercel.fyi
+||*.fyi^$denyallow=apollo.fyi|better.fyi|iusearchlinux.fyi|lunar.fyi|vercel.fyi
 ||*.gdn^$denyallow=cst.gdn|pss.gdn
 ||*.gent^
 ||*.gift^$denyallow=discord.gift
 ||*.gives^
 ||*.giving^
-||*.glass^
+||*.glass^$denyallow=domain.glass
 ||*.gold^
 ||*.gratis^
 ||*.green^
@@ -116,7 +116,7 @@
 ||*.llp^
 ||*.loan^
 ||*.loans^
-||*.lol^$denyallow=broke.lol|browser.lol|charms.lol|discourse.lol|hubcloud.lol|limetorrents.lol|nos.lol|objection.lol|omg.lol|paste.lol|profile.lol|proven.lol|social.lol|staff.lol|status.lol|timeline.lol|url.lol|weblog.lol
+||*.lol^$denyallow=broke.lol|browser.lol|hubcloud.lol|limetorrents.lol|nos.lol|objection.lol|omg.lol|paste.lol|proven.lol|social.lol|status.lol|weblog.lol
 ||*.love^
 ||*.ltd^
 ||*.makeup^$denyallow=bird.makeup
@@ -124,10 +124,10 @@
 ||*.market^$denyallow=digiseller.market|otto.market|plati.market|spotim.market|warframe.market
 ||*.markets^
 ||*.men^
-||*.ml^$denyallow=aire.ml|amap.ml|beatbump.ml|debula.ml|fedi.ml|fmhy.ml|ghostcloud.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|nothingprivate.ml|precure.ml|prompt.ml
+||*.ml^$denyallow=aire.ml|amap.ml|beatbump.ml|fmhy.ml|ghostcloud.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|precure.ml|prompt.ml
 ||*.mom^
 ||*.money^
-||*.monster^$denyallow=cloudcdn.monster|egybest.monster|fedi.monster|mortgage.monster|rollenspiel.monster|tts.monster|vipbj.monster|yts.monster
+||*.monster^$denyallow=cloudcdn.monster|fedi.monster|mortgage.monster|rollenspiel.monster|tts.monster|vipbj.monster|yts.monster
 ||*.motorcycles^
 ||*.mov^$denyallow=david.mov|spankbang.mov
 ||*.name^
@@ -152,7 +152,7 @@
 ||*.post^
 ||*.prof^$denyallow=casey.prof
 ||*.promo^
-||*.quest^$denyallow=amble.quest|bookshelf.quest|dice.quest|dont-panic.quest|epochal.quest|federation.quest|galaxy.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest|teacher.quest|theculture.quest|toot.quest
+||*.quest^$denyallow=dice.quest|epochal.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest
 ||*.realtor^
 ||*.recipes^
 ||*.red^
@@ -162,7 +162,7 @@
 ||*.review^
 ||*.rich^
 ||*.rip^$denyallow=medium.rip
-||*.rodeo^$denyallow=raypeat.rodeo
+||*.rodeo^
 ||*.rugby^
 ||*.run^$denyallow=winget.run
 ||*.sale^
@@ -176,19 +176,19 @@
 ||*.skin^
 ||*.software^$denyallow=brave.software
 ||*.solar^$denyallow=forecast.solar
-||*.space^$denyallow=carstens.space|dragonscave.space|drgns.space|hf.space|httpjames.space|hullseals.space|ippen.space|link.space|monitorburz.space|oldbytes.space|searx.space
+||*.space^$denyallow=dragonscave.space|drgns.space|hf.space|httpjames.space|hullseals.space|ippen.space|link.space|monitorburz.space|oldbytes.space|searx.space
 ||*.sport^
 ||*.store^$denyallow=androeed.store|g-h.store|shoplazza.store
 ||*.style^
 ||*.support^
-||*.surf^$denyallow=bloom.surf|glowing.surf|kayaking.surf|quran.surf|s-wings.surf
+||*.surf^$denyallow=s-wings.surf
 ||*.tattoo^
 ||*.tax^
 ||*.taxi^
-||*.tk^$denyallow=adistance.tk|bonzibuddy.tk|bryla.tk|bstweaker.tk|budterence.tk|censurion.tk|c-r-t.tk|google.tk|goshujin.tk|gotofap.tk|graph.tk|kabi.tk|pube.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
+||*.tk^$denyallow=adistance.tk|bonzibuddy.tk|bstweaker.tk|budterence.tk|c-r-t.tk|google.tk|goshujin.tk|gotofap.tk|graph.tk|kabi.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
 ||*.today^$denyallow=archive.today|oldweb.today
 ||*.tokyo^
-||*.top^$denyallow=1stream.top|ambr.top|audioforyou.top|awavenue.top|caitlin.top|callmebymygender.top|castlevania.top|chillx.top|corriente.top|gdtot.top|magocoro.top|mastodon.top|nicenature.top|pdcdn1.top|pegelinux.top|pressplay.top|reminder.top|reyhub.top|shucks.top|strims.top|suiten.top|thedesk.top|vsdb.top
+||*.top^$denyallow=1stream.top|ambr.top|caitlin.top|chillx.top|corriente.top|mastodon.top|nicenature.top|pegelinux.top|pressplay.top|reminder.top|shucks.top|strims.top|suiten.top|thedesk.top|vsdb.top
 ||*.trade^$denyallow=composer.trade|kite.trade
 ||*.trading^
 ||*.uno^
@@ -209,11 +209,11 @@
 ||*.wine^
 ||*.work^$denyallow=elphago.work|frame.work|koding.work|searx.work
 ||*.world^$denyallow=calckey.world|camhub.world|lemmy.world|mastodon.world|shitposter.world|userstyles.world|wetdry.world
-||*.wtf^$denyallow=akko.wtf|myip.wtf|plooshiesaresocute.wtf|tigress.wtf|wxx.wtf
+||*.wtf^$denyallow=akko.wtf|myip.wtf|tigress.wtf|wxx.wtf
 ||*.xin^
 ||*.yachts^$denyallow=sinking.yachts
 ||*.you^
-||*.zip^$denyallow=community.zip|financialstatement.zip|lemmy.zip|redecanaistv.zip|redecanais.zip|umowa.zip|url.zip
+||*.zip^$denyallow=community.zip|financialstatement.zip|lemmy.zip|redecanaistv.zip|redecanais.zip|url.zip
 ||*.xn--p1acf^
 ||*.xn--11b4c3d^
 ||*.xn--1ck2e1b^
