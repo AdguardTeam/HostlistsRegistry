@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.5.38
+! Version: 1.0.5.39
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2024-07-19T23:05:48.666Z
+! Last modified: 2024-07-20T00:21:37.991Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -12,7 +12,7 @@
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
 ! Title: 💊 Dandelion Sprout's Anti-Malware List (for AdGuard Home, AdGuard for Android/Windows/macOS' DNS filtering, and Pi-Hole FTL ≥5.22)
-! Version: 12July2024v1
+! Version: 16July2024v1
 ! Expires: 2 days
 ! Description: This list goes the extra kilometer to prevent more malware than other mainstream anti-malware lists. It blocks heavily abused top-level domains (and even search engine results for them), blocks domains used in malware redirection trains and in domain parking schemes, blocks sponsored Windows PUP nags on PC guide articles, uses mass blocking of domains belonging to bad IPs, and has many other subcategories that give it a solid advantage over similar lists out there.
 ! For other security-specific lists I've made, check out https://github.com/DandelionSprout/adfilt/tree/master/Special%20security%20lists
@@ -25464,6 +25464,8 @@
 
 
 
+! Visibly fake item descriptions and prices
+||amaskiphirescotland.co.uk^
 
 ! ——— Horrendously bad copypasted Android rooting "guides" (often with fake titles) that bricked two of my phones ———
 ! Most of the guides haven't even accounted for how modern phones have replaced the recovery environment with an extra boot environment, leading to very critical Fastboot commands not working and/or bricking the phone.
