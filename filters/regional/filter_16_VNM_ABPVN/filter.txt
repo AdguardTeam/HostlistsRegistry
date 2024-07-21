@@ -1,9 +1,9 @@
 !
 ! Title: VNM: ABPVN List
 ! Description: List for blocking ads on Vietnamese websites
-! Version: 1.0.5.78
+! Version: 1.0.5.79
 ! Homepage: http://abpvn.com/
-! Last modified: 2024-07-21T15:06:08.059Z
+! Last modified: 2024-07-21T16:06:40.028Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -208,6 +208,8 @@
 0.0.0.0 r1.ykimg.com
 0.0.0.0 sd.domob.cn
 0.0.0.0 51.la
+0.0.0.0 adjust.com
+0.0.0.0 adjust.io
 0.0.0.0 cmcore.com
 0.0.0.0 irs01.com
 0.0.0.0 madmini.com
@@ -1181,7 +1183,6 @@
 0.0.0.0 xml.affiliate.rakuten.co.jp
 0.0.0.0 rat.rakuten.co.jp
 0.0.0.0 secure.rat.rakuten.co.jp
-0.0.0.0 ads.facebook.com
 0.0.0.0 an.facebook.com
 0.0.0.0 pixel.facebook.com
 0.0.0.0 o.update.fbsbx.com
@@ -1195,7 +1196,6 @@
 0.0.0.0 ads-api.twitter.com
 0.0.0.0 ads-bidder-api.twitter.com
 0.0.0.0 ads.twitter.com
-0.0.0.0 analytics.twitter.com
 0.0.0.0 ads-twitter.com
 0.0.0.0 static.ads-twitter.com
 0.0.0.0 adeventtracker.spotify.com
@@ -3828,10 +3828,8 @@
 0.0.0.0 reklamstore.com
 0.0.0.0 pixel.reklamstore.com
 0.0.0.0 img.reklamstore.com
-0.0.0.0 addtoany.com
 0.0.0.0 static.addtoany.com
 0.0.0.0 stats.addtoany.com
-0.0.0.0 www.addtoany.com
 0.0.0.0 cdn.staticstuff.net
 0.0.0.0 hello.staticstuff.net
 0.0.0.0 spy.staticstuff.net
@@ -6639,14 +6637,6 @@
 0.0.0.0 hadsipz.com
 0.0.0.0 hadskiz.com
 0.0.0.0 hadsokz.com
-0.0.0.0 adjust.com
-0.0.0.0 app.adjust.com
-0.0.0.0 atom.adjust.com
-0.0.0.0 events.adjust.com
-0.0.0.0 s2s.adjust.com
-0.0.0.0 view.adjust.com
-0.0.0.0 adjust.io
-0.0.0.0 app.adjust.io
 0.0.0.0 aas-nv-a.aaxads.com
 0.0.0.0 aaxads.com
 0.0.0.0 bidder-east.aaxads.com
@@ -9972,10 +9962,6 @@
 0.0.0.0 analytics.bigdata.samsung.com
 0.0.0.0 adconsent.samsungrs.com
 0.0.0.0 sspapi-prd.samsungrs.com
-0.0.0.0 edge-geo.nc0.co
-0.0.0.0 nc0.co
-0.0.0.0 pixel.nc0.co
-0.0.0.0 t.nc0.co
 0.0.0.0 reactful.com
 0.0.0.0 tracking.reactful.com
 0.0.0.0 visitor.reactful.com
@@ -17631,6 +17617,7 @@
 0.0.0.0 ofhappinyer.com
 0.0.0.0 ofleafeona.com
 0.0.0.0 ofnumeltor.com
+0.0.0.0 ofplredpogw.com
 0.0.0.0 ofqaqsazxli.com
 0.0.0.0 ofqopmnpia.com
 0.0.0.0 ofsyuxaveckulgf.com
@@ -20453,6 +20440,8 @@
 0.0.0.0 api2.poperblocker.com
 0.0.0.0 apolloprogram.io
 0.0.0.0 app-analytics-services.com
+0.0.0.0 app.adjust.com
+0.0.0.0 app.adjust.io
 0.0.0.0 app.adjust.net.in
 0.0.0.0 app.adjust.world
 0.0.0.0 app.posthog.com
@@ -20784,6 +20773,7 @@
 0.0.0.0 pixel.gliacloud.com
 0.0.0.0 pixel.homeapp.team
 0.0.0.0 pixel.ipinfo.io
+0.0.0.0 pixel.nc0.co
 0.0.0.0 pixel.pointmediatracker.com
 0.0.0.0 pixel.s3xified.com
 0.0.0.0 pixel.wp.com
