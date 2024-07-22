@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.5.92
+! Version: 1.0.5.93
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-22T05:06:32.148Z
+! Last modified: 2024-07-22T06:08:03.187Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3162,6 +3162,7 @@ thepiratebay3.com^
 ||ebayasean.com^
 ||vilbuy.com^
 ||ebaydw.com^
+||show.naturecircle.shop^
 ! https://www.reddit.com/r/Scams/comments/1cux08b/whatsapp_telegram_instagram_work_from_home_posts/
 ||51eabay.com^
 ! https://infosec.exchange/@urldna/112476252310873324
@@ -3195,6 +3196,8 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/991fe449cae5b7f070cba12bf8b7ab0f9058c8d1a0c5857cee1f5f1ec775d1a8
 ||leatherqueen.shop^
 
+! instagram
+||instagram-mail.net^
 ! facebook
 ! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,domain=vn
 ||notificationbyfacebook.
@@ -3202,6 +3205,7 @@ thepiratebay3.com^
 ||notificationbyfacebook.web.app^
 ||business-facebook-*.pages.dev^
 ||unusualaccountcnfrmpages.github.io^
+||review-your-page.000.pe^
 ||facebook.prantiksoft.com^
 ||facebook-guidelines.com^
 ||www-mfacebook.
@@ -3279,6 +3283,7 @@ thepiratebay3.com^
 ||steam.workshopstyle.com^
 ! https://www.virustotal.com/gui/url/ce3d17a9e4612fac947fb2562ae1a65792b5d2decd2cae8c84bc447e81c47e86
 ||steam.communitybrowserpowered.com^
+||rewards-ff-garenaa.ru^
 ! pubg
 ||pubg-arena.top^
 ||register-turnamen.free.nf^
@@ -3337,14 +3342,18 @@ thepiratebay3.com^
 ! telegram
 ||telegramhcn.com^
 ||web.telegram.data-bees.cn^
-||telegramkv.com^
 ||haveplentymusic.com^
 ||newappmssg.ru^
 ||telegrambotsolution.pages.dev^
+||telegramkv.com^
 ! https://www.virustotal.com/gui/url/06c0aafaca0d59712ddd82ceeacef7b4bb31ecf44fb43584a45fd400416aa913
 ! https://bazaar.abuse.ch/sample/bdb84b702752c4065fa36f7c6f7038eed2bfda6d09c32d69512896077b66c097/
 ||telegramkp.com^
 ||cdn-telegram.com^
+! https://www.virustotal.com/gui/url/696c0e59cdfe8b6eb634f93187fac9886fe3f2b1925df6890f4292c734eb675d
+! https://www.virustotal.com/gui/file/fd1e8e0dfcb553cae96a6ab8869e2d8de9a67ffcbf3492d4a2e1c26ce02b82e1
+||telegramkd.com^
+||telegram-zhongwen.com^
 ! https://www.virustotal.com/gui/url/dfc0c0423f0e994148d39d8458893a35bb024fdeeabfd7a82dd0d4e50ce68ace
 ||rr.nu^
 ! https://www.virustotal.com/gui/url/42539b15d452c49ed504ad45697d8aa74ef2ca4165b4562801c794a74abe3cff
