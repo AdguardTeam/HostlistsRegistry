@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.6.0
+! Version: 1.0.6.1
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-22T13:08:18.289Z
+! Last modified: 2024-07-22T14:06:14.288Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3533,6 +3533,8 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/95c95990e40d0859a1766b2da6047f64d2faecee65d74669243d443c7c185ebf
 ! https://www.urlvoid.com/scan/teslafond.io/
 ||teslafond.io^
+! https://github.com/uBlockOrigin/uAssets/issues/24590
+||teslacore.io^
 ||bloxstrapmenu.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24390
@@ -3583,3 +3585,10 @@ thepiratebay3.com^
 
 ! https://blog.sucuri.net/2024/07/attackers-abuse-swap-file-to-steal-credit-cards.html
 ||amazon-analytic.com^
+
+! https://www.gdatasoftware.com/blog/2024/06/37947-badspace-backdoor
+! https://x.com/GroupIB_TI/status/1790230873285242992
+||elamoto.com^
+||kongtuke.com^
+||egisela.com^
+||uhsee.com^
