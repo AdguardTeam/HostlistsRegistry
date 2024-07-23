@@ -1,9 +1,9 @@
 !
 ! Title: POL: Polish filters for Pi-hole
 ! Description: Polish filters for Pi-hole.
-! Version: 1.0.6.22
+! Version: 1.0.6.23
 ! Homepage: https://www.certyficate.it/
-! Last modified: 2024-07-23T12:08:53.637Z
+! Last modified: 2024-07-23T13:07:50.843Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -199,7 +199,7 @@
 ||render.geozo.com^
 ||mustreadfeed.com^
 ||newssomesun.com^
-||userload.co/maroc.js$script^
+# 0.0.0.0 userload.co/maroc.js$script
 ||allepharm.com^
 ||trichomist.store^
 ||mostnewsfeed.com^
@@ -221,7 +221,7 @@
 ||behavioralengine.com^
 ||caringcast.com^
 ||cassini.efigence.com^
-||cdn.cookielaw.org^
+# 0.0.0.0 cdn.cookielaw.org
 ||clickcounters.com^
 ||clickmatic.pl^
 ||clickmeter.com^
@@ -280,6 +280,7 @@
 ||stats.asp24.pl^
 ||stats.goldenline.pl^
 ||stats.landingi.com^
+# 0.0.0.0 stg.wp.pl$script
 ||sylaba.net^
 ||tealium.hs.llnwd.net^
 ||track.buybox.click^
