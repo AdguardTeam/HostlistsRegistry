@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.6.13
+! Version: 1.0.6.14
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-23T03:06:44.582Z
+! Last modified: 2024-07-23T04:06:59.530Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3154,8 +3154,9 @@ thepiratebay3.com^
 ||amazonl3.com^
 ||tepoty.com^
 ||daroznel.com^
-||shop73.online^
 ||ecommrce-web-amazon.netlify.app^
+||shop73.online^
+||syae3289.top^
 ! ebay
 ||c.vn-ebayn.vip^
 ||vn-ebay.quxlpuj.cn^
@@ -3199,6 +3200,7 @@ thepiratebay3.com^
 ! instagram
 ||instagram-mail.net^
 ! facebook
+||mait.inhhome.top^
 ! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,domain=vn
 ||notificationbyfacebook.
 ||notificationbyfacebook.firebaseapp.com^
@@ -3318,6 +3320,7 @@ thepiratebay3.com^
 ||graettingerlaw.com^
 ||hab-sharepoint.weebly.com^
 ||iamnew.powerappsportals.com^
+||post.nationalrent.ru^
 ! https://www.virustotal.com/gui/url/20d6a5b64d26edeb2e5caae3aa19c00ebd83a6d4dac9e41486c823751e875030
 ||johnhstngs4.wixsite.com^
 ! https://urldna.io/scan/667d384ad611a65623a4c272
@@ -3338,11 +3341,14 @@ thepiratebay3.com^
 ! https://urldna.io/scan/669b8ab77cf5beafb5dbcf99
 ! https://www.virustotal.com/gui/url/1092dfb23e71f252516b56e8d516e92df4233b5d7e7a5178393f7a1ae02b9ff3
 ||microsofthotmailsi1.wixsite.com^
+! https://www.virustotal.com/gui/url/d0a30d63d6975b69762e024ddb89c252a8f2822bddb8b4d171bf3495261dc479
+||supplieradvisor.ciamlogin.com^
 
 ! telegram
 ||telegramhcn.com^
 ||web.telegram.data-bees.cn^
 ||haveplentymusic.com^
+||sozdor9s.com^
 ||newappmssg.ru^
 ||telegrambotsolution.pages.dev^
 ||telegramkv.com^
@@ -3376,6 +3382,9 @@ thepiratebay3.com^
 ||utahpolicetraining.*.mybluehost.me^
 ! https://www.virustotal.com/gui/url/9f231accf3d50c30fce7fce728a16d934814f1bd3256dcaacc115ef1e9a3b13a
 ||dropbox*.weebly.com^
+
+! https://khonggianmang.vn/uploads/2023_CBT_50_f8da1fd477.pdf
+||khach-hang-the-
 
 ! https://khonggianmang.vn/uploads/2024_CBT_03_4aa7fe1b3c.pdf
 ||lazada.gg^
@@ -3447,9 +3456,6 @@ thepiratebay3.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/23674
 ||examated.co.in^
-
-! https://github.com/uBlockOrigin/uAssets/issues/23823
-||clientarea-loginauth.com^
 
 ! https://www.cyberdaily.au/security/10614-vigilante-hacks-scam-call-centre-proceeds-to-warn-victims
 ||waredot.com^
