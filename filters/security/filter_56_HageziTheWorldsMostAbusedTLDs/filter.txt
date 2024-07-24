@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.6.37
+! Version: 1.0.6.38
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-07-24T03:06:25.300Z
+! Last modified: 2024-07-24T04:06:42.825Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,14 +22,14 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 23 Jul 2024 15:25 UTC
-! Version: 2024.0723.1525.23
+! Last modified: 24 Jul 2024 03:01 UTC
+! Version: 2024.0724.0301.07
 ! Syntax: AdGuard
 ! Number of latin TLDs: 187 - punycode TLDs: 151
 !
 ||*.africa^
 ||*.agency^$denyallow=baam.agency|battlefield.agency|byteful.agency|robotzebra.agency|uphotel.agency|usenet.agency|ws.agency
-||*.asia^$denyallow=amzn.asia|dbankcloud.asia|pansci.asia
+||*.asia^$denyallow=amzn.asia|bandainamcoent.asia|dbankcloud.asia|pansci.asia
 ||*.autos^
 ||*.baby^
 ||*.bank^
@@ -60,10 +60,10 @@
 ||*.church^
 ||*.city^
 ||*.claims^
-||*.click^$denyallow=xcine.click
+||*.click^$denyallow=popcat.click|popdog.click|xcine.click
 ||*.clothing^
-||*.club^$denyallow=mbcherohub.club|pdfmagazines.club
-||*.computer^$denyallow=neat.computer
+||*.club^$denyallow=mbcherohub.club|pdfmagazines.club|thelemmy.club
+||*.computer^$denyallow=neat.computer|silly.computer
 ||*.cool^
 ||*.coupons^
 ||*.cymru^
@@ -82,7 +82,7 @@
 ||*.eco^
 ||*.esq^$denyallow=erika.esq
 ||*.events^
-||*.fan^
+||*.fan^$denyallow=lemmy.fan
 ||*.fashion^
 ||*.finance^
 ||*.financial^
@@ -116,7 +116,7 @@
 ||*.llp^
 ||*.loan^
 ||*.loans^
-||*.lol^$denyallow=broke.lol|browser.lol|hubcloud.lol|library.lol|limetorrents.lol|nos.lol|objection.lol|omg.lol|paste.lol|proven.lol|social.lol|status.lol|weblog.lol
+||*.lol^$denyallow=broke.lol|browser.lol|hubcloud.lol|io.lol|kizuki.lol|lemy.lol|library.lol|limetorrents.lol|nos.lol|objection.lol|omg.lol|paste.lol|proven.lol|social.lol|status.lol|weblog.lol
 ||*.love^
 ||*.ltd^
 ||*.makeup^$denyallow=bird.makeup
@@ -139,9 +139,9 @@
 ||*.ooo^$denyallow=toast.ooo
 ||*.partners^
 ||*.parts^
-||*.party^$denyallow=mstdn.party
+||*.party^$denyallow=ducks.party|mstdn.party|nezumi.party
 ||*.pet^$denyallow=kickthespy.pet|kuma.pet
-||*.pharmacy^
+||*.pharmacy^$denyallow=safe.pharmacy
 ||*.phd^$denyallow=rafael.phd
 ||*.photos^
 ||*.pics^
@@ -176,7 +176,7 @@
 ||*.skin^
 ||*.software^$denyallow=brave.software
 ||*.solar^$denyallow=forecast.solar
-||*.space^$denyallow=dragonscave.space|drgns.space|hf.space|httpjames.space|hullseals.space|ippen.space|link.space|monitorburz.space|oldbytes.space|searx.space
+||*.space^$denyallow=dragonscave.space|drgns.space|hf.space|httpjames.space|hullseals.space|ippen.space|link.space|melmac.space|monitorburz.space|oldbytes.space|qwik.space|searx.space
 ||*.sport^
 ||*.store^$denyallow=androeed.store|g-h.store|iqunix.store|shoplazza.store|timberjacks.store
 ||*.style^
@@ -186,7 +186,7 @@
 ||*.tax^
 ||*.taxi^
 ||*.tk^$denyallow=adistance.tk|bonzibuddy.tk|bstweaker.tk|budterence.tk|c-r-t.tk|google.tk|goshujin.tk|gotofap.tk|graph.tk|kabi.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
-||*.today^$denyallow=archive.today|oldweb.today
+||*.today^$denyallow=archive.today|futurology.today|lemmy.today|oldweb.today
 ||*.tokyo^
 ||*.top^$denyallow=1stream.top|ambr.top|caitlin.top|chillx.top|corriente.top|mastodon.top|pegelinux.top|pressplay.top|reminder.top|shucks.top|strims.top|suiten.top|thedesk.top|vsdb.top
 ||*.trade^$denyallow=composer.trade|kite.trade
@@ -208,8 +208,8 @@
 ||*.win^
 ||*.wine^
 ||*.work^$denyallow=elphago.work|frame.work|koding.work|searx.work
-||*.world^$denyallow=calckey.world|camhub.world|lemmy.world|mastodon.world|shitposter.world|userstyles.world|wetdry.world
-||*.wtf^$denyallow=akko.wtf|myip.wtf|tigress.wtf|wxx.wtf
+||*.world^$denyallow=calckey.world|camhub.world|lemmy.world|mastodon.world|maxwellcat.world|shitposter.world|userstyles.world|wetdry.world
+||*.wtf^$denyallow=akko.wtf|lemmy.wtf|myip.wtf|tigress.wtf|wxx.wtf|xo.wtf
 ||*.xin^
 ||*.yachts^$denyallow=sinking.yachts
 ||*.you^
