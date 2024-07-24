@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.6.41
+! Version: 1.0.6.42
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-24T07:06:10.577Z
+! Last modified: 2024-07-24T08:07:34.093Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3041,6 +3041,17 @@ thepiratebay3.com^
 ||web3projects.substack.com^
 ||webpublic.substack.com^
 
+! https://github.com/uBlockOrigin/uAssets/issues/24296
+! https://www.virustotal.com/gui/url/95c95990e40d0859a1766b2da6047f64d2faecee65d74669243d443c7c185ebf
+! https://www.urlvoid.com/scan/teslafond.io/
+||teslafond.io^
+! https://github.com/uBlockOrigin/uAssets/issues/24590
+||teslacore.io^
+
+! https://www.reddit.com/r/uBlockOrigin/comments/1eavbzp/block_domain_crypto_scam/
+! https://www.virustotal.com/gui/url/86ca88185325798e9fd033a05ecbeb52c1064ba3abb5f17e8a013744a5ae680a
+||crypto-drop24.com^
+
 ! Phishing - See https://bbs.kafan.cn/thread-2264505-1-1.html
 ! https://github.com/uBlockOrigin/uAssets/pull/21759
 ||counter-strike2-official.net^
@@ -3546,13 +3557,6 @@ thepiratebay3.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24283
 ||premium-x-notes.com^
-
-! https://github.com/uBlockOrigin/uAssets/issues/24296
-! https://www.virustotal.com/gui/url/95c95990e40d0859a1766b2da6047f64d2faecee65d74669243d443c7c185ebf
-! https://www.urlvoid.com/scan/teslafond.io/
-||teslafond.io^
-! https://github.com/uBlockOrigin/uAssets/issues/24590
-||teslacore.io^
 ||bloxstrapmenu.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/24390
