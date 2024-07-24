@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.6.43
+! Version: 1.0.6.44
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-24T09:06:00.239Z
+! Last modified: 2024-07-24T10:06:19.031Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -2660,6 +2660,7 @@ thepiratebay3.com^
 ||desk-dictionary.com^
 ||event-experiment.com^
 ||final-future.com^
+||t-uraaka.site^
 
 ! https://twitter.com/1ZRR4H/status/1623067548781539339
 ||soft-pro.site^
@@ -2822,6 +2823,7 @@ thepiratebay3.com^
 ||lianashepard.autos^
 ||nihongirl.online^
 ||technosoft35.ru^
+||tube-dvm.com^
 
 ! https://twitter.com/genegene1234561/status/1647164176438280192
 ||japanonlinebroadcast.live^
@@ -3154,6 +3156,15 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/dce13fec61cd1b81b55c8d126b99266efbb6166d1a0bba02d4b8482ed53401b1
 ||vnote-*.myqcloud.com^
 ||clickhereecraigslist.tripod.com^
+
+! paypal
+||paypal-complete.com^
+! https://www.virustotal.com/gui/url/cef8e619ca51273786cf72dab8a9d2daea04ce6fee978f0a42522fe10709785d
+||prizegift.top^
+
+! fedex
+! https://www.virustotal.com/gui/url/3236050c1e12c8c10e6b905c61d2ed45f5a8fa393f560a96f98383565e57e78f
+||fedexridn.com^
 ! airbnb
 ||air-bnb.check-
 ||conf1rm.ru^
@@ -3176,12 +3187,14 @@ thepiratebay3.com^
 ||ecommrce-web-amazon.netlify.app^
 ||shop73.online^
 ||syae3289.top^
+||ww26mb8.top^
 ! ebay
 ||c.vn-ebayn.vip^
 ||vn-ebay.quxlpuj.cn^
 ||ebayasean.com^
 ||vilbuy.com^
 ||ebaydw.com^
+||ebayhelpre.org^
 ||show.naturecircle.shop^
 ! https://www.reddit.com/r/Scams/comments/1cux08b/whatsapp_telegram_instagram_work_from_home_posts/
 ||51eabay.com^
@@ -3218,6 +3231,8 @@ thepiratebay3.com^
 
 ! instagram
 ||instagram-mail.net^
+! https://www.virustotal.com/gui/url/8fb4a3808af3e2dc52bb055171b6750d8141871cd7e7a1e8bb3457294ddd5437
+||privrendom.com^
 ! facebook
 ||mait.inhhome.top^
 ! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,domain=vn
@@ -3305,6 +3320,12 @@ thepiratebay3.com^
 ||steam.workshopstyle.com^
 ! https://www.virustotal.com/gui/url/ce3d17a9e4612fac947fb2562ae1a65792b5d2decd2cae8c84bc447e81c47e86
 ||steam.communitybrowserpowered.com^
+
+! game sites
+||battlegrounds-bgmi-reward.events-games.com^
+! garena
+! https://infosec.exchange/@urldna/112226284936503649
+! https://infosec.exchange/@urldna/112354748681058897
 ||rewards-ff-garenaa.ru^
 ! pubg
 ||pubg-arena.top^
@@ -3396,7 +3417,6 @@ thepiratebay3.com^
 ||base-swap-frontend-*.vercel.app^
 ! https://www.virustotal.com/gui/url/7ef12f181e0c1d09475f2fd51b19b06ff393f4c686abfb89b312cd47447ac7bf
 ||metamask*.webflow.io^
-||paypal-complete.com^
 ! https://www.virustotal.com/gui/url/51313f8d841a87fbda4029330b190c9e5f4bd4c70646f2a73b10771d677a8ab2
 ||cursorltd.com^
 ! https://www.virustotal.com/gui/url/5ff91c73c62cc4bd5af699518d73ecffe9bdd0830c4052e4da1405568495c4df
