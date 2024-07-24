@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.6.34
+! Version: 1.0.6.35
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-24T00:23:04.848Z
+! Last modified: 2024-07-24T01:32:34.647Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -544,7 +544,6 @@ thepiratebay3.com^
 ||adultminglenight.click^
 ||miallafun.com^
 ||derriks.site^
-||mikkim.top^
 ||butya.top^
 ||onenightfindertm.com^
 ||datenaughtysingles.click^
@@ -555,6 +554,14 @@ thepiratebay3.com^
 ||olosex.pics^
 ||painfont.cyou^
 ||m.jubilantrefreshingvisit.buzz^
+! https://github.com/uBlockOrigin/uAssets/issues/24602
+! https://www.virustotal.com/gui/url/ce2b833adda2f862d77398203bbe33ea331097ba2a803d1a763492d2ac0d5a60
+! https://safeweb.norton.com/report/show?url=discordvip.createsocialcard.top
+! https://safeweb.norton.com/report/show?url=discordvip.pages.dev
+||mikkim.top^
+||discordvip.createsocialcard.top^
+||discordvip.pages.dev^
+||onenightchicko.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8378
 ||ogtrk.net^
