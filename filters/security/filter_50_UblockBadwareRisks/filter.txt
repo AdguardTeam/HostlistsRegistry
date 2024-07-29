@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.7.57
+! Version: 1.0.7.58
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-07-29T03:06:36.678Z
+! Last modified: 2024-07-29T04:07:08.763Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3050,10 +3050,6 @@ thepiratebay3.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/24590
 ||teslacore.io^
 
-! https://www.reddit.com/r/uBlockOrigin/comments/1eavbzp/block_domain_crypto_scam/
-! https://www.virustotal.com/gui/url/86ca88185325798e9fd033a05ecbeb52c1064ba3abb5f17e8a013744a5ae680a
-||crypto-drop24.com^
-
 ! Phishing - See https://bbs.kafan.cn/thread-2264505-1-1.html
 ! https://github.com/uBlockOrigin/uAssets/pull/21759
 ||counter-strike2-official.net^
@@ -3154,8 +3150,6 @@ thepiratebay3.com^
 ||paypal-complete.com^
 ! https://www.virustotal.com/gui/url/cef8e619ca51273786cf72dab8a9d2daea04ce6fee978f0a42522fe10709785d
 ||prizegift.top^
-
-! fedex
 ! https://www.virustotal.com/gui/url/3236050c1e12c8c10e6b905c61d2ed45f5a8fa393f560a96f98383565e57e78f
 ||fedexridn.com^
 ! airbnb
@@ -3171,6 +3165,7 @@ thepiratebay3.com^
 ||allegrocns.com^
 ||allegro-005.com^
 ||allegro-online.ru^
+||allegro-reinigung.de^
 ||allegroshop.shop^
 ||allegrocn.shop^
 
@@ -3225,6 +3220,7 @@ thepiratebay3.com^
 ! https://urldna.io/scan/66a0280430f40d4a2e1cdbfd
 ! https://www.virustotal.com/gui/url/dd581161abc02c436e7f1d3096ebc651b98bf4ff3eeea81cff8ba76b6b9ca277
 ||play.funfourmob.com^
+! instagram
 ! https://www.virustotal.com/gui/url/8fb4a3808af3e2dc52bb055171b6750d8141871cd7e7a1e8bb3457294ddd5437
 ||privrendom.com^
 ! facebook
@@ -3255,8 +3251,12 @@ thepiratebay3.com^
 ||facabook.vn^
 ! https://www.virustotal.com/gui/url/a24e6d09475f940801ec755023c330f6d299e652b2806ef764e1bb2d29ff8adb
 ||facebooks-com.vn^
+! https://www.virustotal.com/gui/url/4136e69c1844f4da9b6c8aeaa81579b3ec932df00e03615ca0c369666e18b23e
+||mobile-facebook.com.vn^
 ! https://www.virustotal.com/gui/url/62cf2706dfcd1c711c43e9005635631a02d6d8529603f0b700ff8e1b9eafd932
 ||ifbsmetaiidentiityconfirms.com^
+! https://www.virustotal.com/gui/url/70b1f08a4bf8b6c4a5ec3dec8c4a31f2534275e072c5fe9614c148ea2497d25f
+||ad-activity-center.com^
 ! https://www.virustotal.com/gui/url/e5632b7ebd4d9ef4899155af4a8cf218797bd59972c231a7897b603b32ccccb1
 ||govern-assessment-validation-*.vercel.app^
 ! https://www.virustotal.com/gui/url/54cb07a8f7961f2a9b2e5aac8c8a7a3f7a3f816f56f799382b672929fabc32b4
@@ -3283,6 +3283,9 @@ thepiratebay3.com^
 ! https://urldna.io/scan/66983eea0498ab650fb7f81a
 ! https://www.virustotal.com/gui/url/24b304e37ceace8f0b2d4ed4587af156618393eabecad1eb1aa1809b9876ceb0
 ||transparency-business.com^
+! https://www.virustotal.com/gui/url/0e4de7ac483088234981cd80049c18f2102970271a741b004182aece70bff443
+! https://www.virustotal.com/gui/url/a0ebabdbc92c508cb157cea7c79ab728d5f9686b55d208e628d61e097050d015
+||mediacontrolcenters.com^
 ||business-help-temp-
 ||business-center-
 ||lazada.bbc6666.com^
@@ -3292,10 +3295,10 @@ thepiratebay3.com^
 ||st.aircsgo.com^
 ||steamfiller.ru^
 ||11steam.com^
-||st-invite.com^
 ||gtm.you1.cn^
 ||steamxiazai.cn^
 ||s.team-pn.com^
+||steam.zssjsq.com^
 ||steamcommunitylog.chez.com^
 ||steam.workshop*.com^
 !#endif
@@ -3312,6 +3315,11 @@ thepiratebay3.com^
 ||steemcommuntiy.com^
 ! https://www.virustotal.com/gui/url/bcbbfae046e7d8b62418da2234556524170cf156f2ac5c9d25f1b7fb4bfc64e1
 ||workshop-users.com^
+! https://www.virustotal.com/gui/url/4aba296c6d702d985b991365bdbe66ee72256a29c46ab9db1dc0dd1f25e0fbbe
+||st-friends.com^
+||st-invite.com^
+||cn-steam.com^
+!#endif
 
 ! game sites
 ||battlegrounds-bgmi-reward.events-games.com^
@@ -3359,6 +3367,7 @@ thepiratebay3.com^
 ||iamnew.powerappsportals.com^
 ||post.nationalrent.ru^
 ||gocolonial.local-user.com^
+||skype-com.cn^
 ! https://www.virustotal.com/gui/url/20d6a5b64d26edeb2e5caae3aa19c00ebd83a6d4dac9e41486c823751e875030
 ||johnhstngs4.wixsite.com^
 ! https://urldna.io/scan/667d384ad611a65623a4c272
