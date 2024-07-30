@@ -1,8 +1,8 @@
 # AdGuard Search Engine Safe Search Rewrites
 #
 # Bing
-|www.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
 |edgeservices.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
+|www.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
 #
 # DuckDuckGo
 |duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
