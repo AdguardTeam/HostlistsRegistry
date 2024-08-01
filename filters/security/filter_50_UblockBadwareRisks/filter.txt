@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.8.31
+! Version: 1.0.8.32
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-08-01T04:07:00.029Z
+! Last modified: 2024-08-01T05:06:15.938Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3194,8 +3194,9 @@ thepiratebay3.com^
 ||vn-ebay.quxlpuj.cn^
 ||ebayasean.com^
 ||vilbuy.com^
-||ebay-european.com^
 ||show.naturecircle.shop^
+||ebay-european.com^
+||ebay-shopprogj.com^
 ! https://www.reddit.com/r/Scams/comments/1cux08b/whatsapp_telegram_instagram_work_from_home_posts/
 ||51eabay.com^
 ! https://infosec.exchange/@urldna/112476252310873324
@@ -3235,7 +3236,7 @@ thepiratebay3.com^
 ||privrendom.com^
 ! facebook
 ||mait.inhhome.top^
-! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,domain=vn
+! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,to=vn
 ||notificationbyfacebook.
 ||notificationbyfacebook.firebaseapp.com^
 ||notificationbyfacebook.web.app^
@@ -3327,6 +3328,8 @@ thepiratebay3.com^
 ||steemcommuntiy.com^
 ! https://www.virustotal.com/gui/url/bcbbfae046e7d8b62418da2234556524170cf156f2ac5c9d25f1b7fb4bfc64e1
 ||workshop-users.com^
+! https://www.virustotal.com/gui/url/b4c7bfd1ab926a388185db7effe7e911538d58319cb7750a7d2f16eda54e59b0
+||steam.poweredworkcreate.com^
 ! https://www.virustotal.com/gui/url/4aba296c6d702d985b991365bdbe66ee72256a29c46ab9db1dc0dd1f25e0fbbe
 ||st-friends.com^
 ||st-invite.com^
@@ -3334,6 +3337,8 @@ thepiratebay3.com^
 
 ! game sites
 ||battlegrounds-bgmi-reward.events-games.com^
+! https://www.virustotal.com/gui/url/2a8c1e3938f32196a745973d7bcf61507a04a62b656acae329e0522df9f92dec
+||limited-eventkrafton.com^
 ! garena
 ! https://infosec.exchange/@urldna/112226284936503649
 ! https://infosec.exchange/@urldna/112354748681058897
@@ -3379,6 +3384,7 @@ thepiratebay3.com^
 ||post.nationalrent.ru^
 ||gocolonial.local-user.com^
 ||skype-com.cn^
+||login.sby48.com^
 ! https://www.virustotal.com/gui/url/20d6a5b64d26edeb2e5caae3aa19c00ebd83a6d4dac9e41486c823751e875030
 ||johnhstngs4.wixsite.com^
 ! https://urldna.io/scan/667d384ad611a65623a4c272
@@ -3405,6 +3411,8 @@ thepiratebay3.com^
 ||supp0rt.co.za^
 ! https://www.virustotal.com/gui/url/80a4ef21bdad71086be4131d0781e1578b59f2d3565ac48cd5d30aa7e2b2e398
 ||ariabcon.com^
+! https://www.virustotal.com/gui/url/001206894d1c51fed2957043775dd6b567f35f7223b755b536d8828cfc43403c
+||todordigital.co.uk^
 ! https://urldna.io/scan/66a893d548fc8e7672fbf688
 ! https://www.virustotal.com/gui/url/caa8a01a2f1c8511f8a5e2ac367ec62beaf35db464b564e1ce9450a4a4923fb4
 ||enexdirecto.com^
@@ -3413,6 +3421,7 @@ thepiratebay3.com^
 ||telegramhcn.com^
 ||web.telegram.data-bees.cn^
 ||newappmssg.ru^
+||brawllstars.ru^
 ||telegrambotsolution.pages.dev^
 ||telegramkv.com^
 ! https://www.virustotal.com/gui/url/06c0aafaca0d59712ddd82ceeacef7b4bb31ecf44fb43584a45fd400416aa913
@@ -3425,6 +3434,8 @@ thepiratebay3.com^
 ||telegram-zhongwen.com^
 ! https://www.virustotal.com/gui/url/dfc0c0423f0e994148d39d8458893a35bb024fdeeabfd7a82dd0d4e50ce68ace
 ||rr.nu^
+! https://www.virustotal.com/gui/url/e85da5d54f4a36f43637c19a228ded51657f858575d9ea1761fc28a8e1e0be29
+||joinxtelegram.com^
 ! https://www.virustotal.com/gui/url/42539b15d452c49ed504ad45697d8aa74ef2ca4165b4562801c794a74abe3cff
 ||uszq.iafedoec.top^
 ||web3mainnetdapp.pages.dev^
@@ -3481,8 +3492,6 @@ thepiratebay3.com^
 ||flikois.com^
 ||f997.sbs^
 ||371j.xyz^
-
-! https://khonggianmang.vn/uploads/2024_CBT_30_e40c892174.pdf
 
 ! https://www.malwarebytes.com/blog/threat-intelligence/2024/03/new-go-loader-pushes-rhadamanthys
 ! https://safeweb.norton.com/report/show?url=https:%2F%2Farnaudpairoto.com%2F
