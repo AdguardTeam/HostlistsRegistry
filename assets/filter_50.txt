@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.8.56
+! Version: 1.0.8.57
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-08-02T04:06:51.660Z
+! Last modified: 2024-08-02T05:06:01.413Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3188,6 +3188,8 @@ thepiratebay3.com^
 ||ecommrce-web-amazon.netlify.app^
 ||shop73.online^
 ||syae3289.top^
+! https://www.virustotal.com/gui/url/86279ddc548eead6c227e6d493e9cfcf4af0b28ccceae50c2f6420542a8d6fe7
+||adswip.com^
 
 ! ebay
 ||c.vn-ebayn.vip^
@@ -3236,6 +3238,7 @@ thepiratebay3.com^
 ||privrendom.com^
 ! facebook
 ||mait.inhhome.top^
+||mail.pages.exchange-midasbuy.com^
 ! /^https:\/\/[vw]ww-[a-z]?facebook[a-z]?([.-]com)?\.vn\//$doc,to=vn
 ||notificationbyfacebook.
 ||notificationbyfacebook.firebaseapp.com^
@@ -3306,6 +3309,8 @@ thepiratebay3.com^
 ||thepatrones.blob.core.windows.net^
 ||m-isist-emai-nmu-ne-*.vercel.app^
 ||lazada.bbc6666.com^
+! shopee
+||shopeas.cc^
 ||vivanoticiando.com^
 ||virtualnoticiasaqui.com^
 ||sp.aircsgo.com^
@@ -3420,6 +3425,8 @@ thepiratebay3.com^
 ! https://urldna.io/scan/66a893d548fc8e7672fbf688
 ! https://www.virustotal.com/gui/url/caa8a01a2f1c8511f8a5e2ac367ec62beaf35db464b564e1ce9450a4a4923fb4
 ||enexdirecto.com^
+! https://www.virustotal.com/gui/url/823f191614433b0f353b678994fe7399aebddf541c26f7434e630a352da61054
+/\.com\.[a-z]{2}\/wp-includes\/images\/smilies\/images?\/smili?es\/[a-z]{25,35}\.html/
 
 ! telegram
 ||telegramhcn.com^
