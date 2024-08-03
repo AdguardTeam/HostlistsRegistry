@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
 ! Description: Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies. Prevention of bypassing is not guaranteed.
-! Version: 1.0.8.78
+! Version: 1.0.8.79
 ! Homepage: https://github.com/hagezi/dns-blocklists#bypass
-! Last modified: 2024-08-03T03:05:58.498Z
+! Last modified: 2024-08-03T04:06:49.538Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -13,15 +13,15 @@
 !
 ! Title: HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass DNS Blocklist
 ! Description: Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies.
-! Note: To ensure the bootstrap is your DNS server: Redirect standard DNS outbound (UDP 53) to an internal server. Block all DoT (TCP 853) outbound.
+! Note: To ensure the bootstrap is your DNS server: Redirect standard DNS outbound (UDP 53) to an internal server. Block all DoT/DoQ (TCP/UDP 853) outbound.
 ! Homepage: https://github.com/hagezi/dns-blocklists
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 7 days
-! Last modified: 30 Jul 2024 21:41 UTC
-! Version: 2024.0730.2141.53
+! Last modified: 02 Aug 2024 22:08 UTC
+! Version: 2024.0802.2208.46
 ! Syntax: AdBlock
-! Number of entries: 3079
+! Number of entries: 3077
 !
 ||ns.00dani.me^
 ||cdn.0ms.dev^
@@ -249,7 +249,6 @@
 ||vps.avc.cx^
 ||adguard.avdkishore.dev^
 ||avira-vpn.com^
-||avoidance.info^
 ||awabo.com^
 ||award-vpn.com^
 ||awebproxy.com^
@@ -287,7 +286,6 @@
 ||beetvpn.com^
 ||beevpn.com^
 ||adguard.beliefanx.cn^
-||bellproxy.com^
 ||dns.belnet.be^
 ||dns.benpro.fr^
 ||bestfreevpn.com^
