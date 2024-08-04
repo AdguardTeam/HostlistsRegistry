@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.9.14
+! Version: 1.0.9.15
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-08-04T15:06:16.355Z
+! Last modified: 2024-08-04T16:05:51.251Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3218,6 +3218,7 @@ thepiratebay3.com^
 ||ebayasean.com^
 ||vilbuy.com^
 ||epayu.cc^
+||ebaymerchant.shop^
 ||show.naturecircle.shop^
 ||ebay-european.com^
 ||ebay-shopprogj.com^
@@ -3258,6 +3259,7 @@ thepiratebay3.com^
 ! instagram
 ! https://www.virustotal.com/gui/url/8fb4a3808af3e2dc52bb055171b6750d8141871cd7e7a1e8bb3457294ddd5437
 ||privrendom.com^
+
 ! facebook
 ||mait.inhhome.top^
 ||mail.pages.exchange-midasbuy.com^
@@ -3291,6 +3293,8 @@ thepiratebay3.com^
 ||facebooks-com.vn^
 ! https://www.virustotal.com/gui/url/4136e69c1844f4da9b6c8aeaa81579b3ec932df00e03615ca0c369666e18b23e
 ||mobile-facebook.com.vn^
+! https://www.virustotal.com/gui/url/ef9755fcb211a668986b9afc5187577c92fb8c8bf62057bf9d0b59333827a35a
+||m-facebookk.com.vn^
 ! https://www.virustotal.com/gui/url/62cf2706dfcd1c711c43e9005635631a02d6d8529603f0b700ff8e1b9eafd932
 ||ifbsmetaiidentiityconfirms.com^
 ! https://www.virustotal.com/gui/url/70b1f08a4bf8b6c4a5ec3dec8c4a31f2534275e072c5fe9614c148ea2497d25f
@@ -3324,8 +3328,12 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/0e4de7ac483088234981cd80049c18f2102970271a741b004182aece70bff443
 ! https://www.virustotal.com/gui/url/a0ebabdbc92c508cb157cea7c79ab728d5f9686b55d208e628d61e097050d015
 ||mediacontrolcenters.com^
+! https://www.virustotal.com/gui/url/716a89cc252d3d4475a12c3eded7e4d571a9375f691ca27488676cebe59e49ca
+||supportcreatorportal.com^
 ||business-help-temp-
 ||business-center-
+! https://www.virustotal.com/gui/url/a7fd00beea3a206574a55ebcc91d1c0c73330e31c5a38d602d6f82e14d646bff
+||helps-center-page-number-
 ! https://github.com/uBlockOrigin/uAssets/issues/24719
 ||xyzxyz55.xyz^
 ||thepatrones.blob.core.windows.net^
@@ -3346,6 +3354,7 @@ thepiratebay3.com^
 ||steam.zssjsq.com^
 ||steamtopup.ru^
 ||steamcommunitylog.chez.com^
+||steamcommunity.com.co^
 ||steam.workshop*.com^
 ! https://www.virustotal.com/gui/url/d16f07ca49e9334d080d427294630f22f10d8925de8ae73df2128e0bdbd434a9
 ||steam.communityart-work.com^
@@ -3451,7 +3460,8 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/caa8a01a2f1c8511f8a5e2ac367ec62beaf35db464b564e1ce9450a4a4923fb4
 ||enexdirecto.com^
 ! https://www.virustotal.com/gui/url/823f191614433b0f353b678994fe7399aebddf541c26f7434e630a352da61054
-/\.com\.[a-z]{2}\/wp-includes\/images\/smilies\/images?\/smili?es\/[a-z]{25,35}\.html/
+! https://www.virustotal.com/gui/url/bbab15ebcb0f684e6448edf35d469b5c411c6e3c7877387d16666e8a26fc3e8e
+/\.com(\.[a-z]{2})?\/wp-includes\/images\/smilies\/images?\/smili?es\/[a-z]{25,35}\.html/
 
 ! telegram
 ||telegramhcn.com^
