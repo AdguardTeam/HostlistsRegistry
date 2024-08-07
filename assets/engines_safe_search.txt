@@ -1,12 +1,16 @@
 # AdGuard Search Engine Safe Search Rewrites
 #
 # Bing
+|edgeservices.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
 |www.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
 #
 # DuckDuckGo
 |duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
 |start.duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
 |www.duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
+#
+# Ecosia
+|www.ecosia.org^$dnsrewrite=NOERROR;CNAME;strict-safe-search.ecosia.org
 #
 # Google
 |www.google.ad^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
@@ -57,6 +61,9 @@
 |www.google.co.uz^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
 |www.google.co.ve^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
 |www.google.co.vi^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
+|www.google.co.za^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
+|www.google.co.zm^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
+|www.google.co.zw^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
 |www.google.com.af^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
 |www.google.com.ag^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
 |www.google.com.ai^$dnsrewrite=NOERROR;CNAME;forcesafesearch.google.com
@@ -203,6 +210,9 @@
 #
 # Pixabay
 |pixabay.com^$dnsrewrite=NOERROR;CNAME;safesearch.pixabay.com
+#
+# Qwant
+|api.qwant.com^$dnsrewrite=NOERROR;CNAME;safeapi.qwant.com
 #
 # Yandex
 |www.xn--d1acpjx3f.xn--p1ai^$dnsrewrite=NOERROR;A;213.180.193.56
