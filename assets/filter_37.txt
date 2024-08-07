@@ -1,9 +1,9 @@
 !
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
-! Version: 1.0.9.79
+! Version: 1.0.9.80
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2024-08-07T07:05:48.945Z
+! Last modified: 2024-08-07T08:07:12.837Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -12,7 +12,6 @@
 ! Source: https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt
 !
 ||adgoogle.net^
-||baseremoteconfig.googleapis.comadometry.com^
 ||crashlytics.com^
 ||google-analytics-cn.com^
 ||google-analytics.com^
@@ -26,7 +25,6 @@
 ||googlevads-cn.com^
 ! Android
 ||android.com^
-||google.com.onion^
 ! Area120
 ||kormo.com^
 ||rivet.area120.com^
@@ -306,19 +304,12 @@
 ||goolge.com^
 ||gooogle.com^
 ||gstatic.org^
-||id.google.au^
-||id.google.br^
-||id.google.il^
 ||id.google.in^
 ||id.google.jp^
 ||id.google.pk^
 ||igoogle.com^
 ||kaggle.com^
 ||looker.com^
-||maps.google.com.ls^
-||maps.google.com.th^
-||maps.google.com.tn^
-||maps.google.ir^
 ||near.by^
 ||ns-tld1.charlestonroadregistry.com^
 ||papy.co.jp^
@@ -338,7 +329,6 @@
 ||promotionbuildr.com^
 ||promotionsbuildr.com^
 ||promotionshq.com^
-||proofing.gmsdrops.goog^
 ||quantumai.google^
 ||remote-settings.nonprod.webservices.mozgcp.net^
 ||remote-settings.prod.webservices.mozgcp.net^
@@ -355,20 +345,14 @@
 ||sre.google^
 ||stories.google^
 ||syndicatedsearch.goog^
-||tpc.googlesyndicytion.com^
 ||translate.goog^
 ||tv.google^
 ||tveweb-appsvcs-aetnd-com-8ff57.firebaseapp.com^
 ||urbanengines.com^
 ||urchin.fr^
-||useg.nextdigital.com.hk^
 ||walkthrough-tool.firebaseapp.com^
-||www.google.com.ls^
-||www.google.com.th^
 ||www.google.com.tn^
-||www.google.ir^
 ||www.google.it.ao^
-||www.sO.2mdn.net^
 ||youtube-3rd-party.com^
 ! Doubleclick
 ||doubleclick.com^
@@ -376,8 +360,6 @@
 ||doubleclick.ne.jp^
 ||doubleclick.net^
 ||doubleclickbygoogle.com^
-||static.doubleclick.netnod^
-||www.ad.doubleclick.ne^
 ! Fiber
 ||googlefiber.net^
 ! Firebase
@@ -532,29 +514,23 @@
 ||admob.no^
 ||admob.pt^
 ||admob.sg^
-||admob.tk^
 ||admob.tw^
 ||admob.vn^
 ||ads.cc^
 ||ads.cc-dt.com^
 ||adsense.com^
-||adservice.google.au^
 ||adservice.google.aw^
 ||adservice.google.ax^
-||adservice.google.br^
-||adservice.google.il^
 ||adservice.google.in^
 ||adservice.google.jp^
 ||adservice.google.ma^
 ||adservice.google.pk^
-||adservice.google.tr^
 ||adservice.google.tw^
 ||adservice.google.ua^
 ||adups.com^
 ||advertisercommunity.com^
 ||adwords-community.com^
 ||adwords.com^
-||adwords.google^
 ||adwordsexpress.com^
 ||aglgqf4qs7.com^
 ||agoogleaday.com^
@@ -564,7 +540,6 @@
 ||amwbp6elqd.com^
 ||an5ywmva51.com^
 ||api-googlemaps.net^
-||appassets.androidplatform.net^
 ||appliedsemantics.com^
 ||apps5.oingo.com^
 ||appspot.com^
@@ -573,9 +548,6 @@
 ||autodraw.com^
 ||ayz0l8b0ew.com^
 ||b42mt0jrxf.com^
-||beacons-handoff.gcp.gvt5.com^
-||beacons.gcp.gvt5.com^
-||beacons.gvt5.com^
 ||beacons.gvt9.com^
 ||beacons5.gvt9.com^
 ||bg016rsivc.com^
@@ -584,7 +556,6 @@
 ||blog.google^
 ||blogger.com^
 ||blogspot.com^
-||blogspot.l.googleusercontent.co^
 ||blogspot.ru^
 ||blxhg9ozow.com^
 ||bmb0.com^
@@ -612,11 +583,8 @@
 ||clickserve.eu.dartsearch.net^
 ||clickserve.uk.dartsearch.net^
 ||clickserve.us2.dartsearch.net^
-||Cliens-2.google.com^
 ||cnaiezv38i.com^
 ||cobrasearch.com^
-||com.gemini.google^
-||com.xd.gemini.google^
 ||conversion-pixel.invitemedia.com^
 ||creative.cc-dt.com^
 ||crr0kvp1vv.com^
@@ -700,9 +668,6 @@
 ||googleadapis.com^
 ||googleads-cn.com^
 ||googleads.com^
-||googleadservices.co.uk^
-||googleadservices.org^
-||googleadservices.ru^
 ||googleadsserving.cn^
 ||googleailesi.com^
 ||googleapis.com^
@@ -718,7 +683,6 @@
 ||googleusercontent.com^
 ||googlevideo.com^
 ||googlew.com^
-||googleweather.infogooglewifi.com^
 ||googlezip.net^
 ||gooogleapi.com^
 ||gp3gie1qbl.com^
@@ -870,9 +834,7 @@
 ||qwc27wrzmn.com^
 ||qxhtkxwwlp.com^
 ||qxujyohb78.com^
-||R1.sn-2a0noxu-ajt1.gvt1.com^
 ||rec4gno8he.com^
-||redirector.gvt5.com^
 ||registry.google^
 ||rjscu4as3k.com^
 ||rlfqaqqhzg.com^
@@ -957,13 +919,11 @@
 ||wpgp9m68yu.com^
 ||wq4bmoaedv.com^
 ||wv1xpwzpk2.com^
-||www.google-docs.org^
 ||www.google.com.do^
 ||www.google.com.ly^
 ||www.google.com.na^
 ||www.google.com.vc^
 ||www.recaptcha.net^
-||www.support.google^
 ||x6mh5eo6jr.com^
 ||x706fc7pqy.com^
 ||x8sqkqod8h.com^
@@ -1535,7 +1495,6 @@
 ! Short Links
 ||g.co^
 ||goo.gl^
-||goog.le^
 ||youtu.be^
 ||yt.be^
 ||withyoutube.com^
@@ -1552,25 +1511,9 @@
 ||youtubegaming.com^
 ||ytimg.com^
 ! Fitbit
-||APVPNEast.corp.fitbit.com^
-||AWS01-NF-01.corp.fitbit.com^
-||BUH0102-NF-02.corp.fitbit.com^
-||EUVPNEast.corp.fitbit.com^
-||EUVPNEAST.corp.fitbit.com^
-||EUVPNMsq.corp.fitbit.com^
-||EUVPNMSQ.corp.fitbit.com^
 ||fitbit.com^
 ||GCP02-NF-01.corp.fitbit.com^
-||GCP03-NF-01.corp.fitbit.com^
 ||GlobalVPN.corp.fitbit.com^
-||MSQ0106-NF-02.corp.fitbit.com^
-||MSQ0106-NF-02C.corp.fitbit.com^
-||MSQ0106-NF-02V.corp.fitbit.com^
-||SAC01-SCEP-01.corp.fitbit.com^
-||SAC01-SCEP-02.corp.fitbit.com^
-||SAC01-SCEP.corp.fitbit.com^
-||SAC0101-NF-03.corp.fitbit.com^
-||TOK01-NF-01.corp.fitbit.com^
 ||USVPNEast.corp.fitbit.com^
 ||USVPNEAST.corp.fitbit.com^
 ||USVPNWest.corp.fitbit.com^
@@ -1578,140 +1521,55 @@
 ! Nest
 ||accounts.nest.com^
 ||admin-migration.nest.com^
-||admin.ftwest.nest.com^
 ||admin.nest.com^
-||alx-api.nest.com^
-||apps-weather.ftwest.nest.com^
 ||apps-weather.nest.com^
-||apps-weather.staging.nest.com^
 ||apt.hq.nest.com^
-||arifactory02.core-svcs01.iad01.hq.nest.com^
-||artifactory02.core-svcs01.iad01.hq.nest.com^
-||atlasdb-ssl01.data01.iad01.hq.nest.com^
 ||auth.nest.com^
-||aventurine.nest.com^
-||axa-be.nest.com^
 ||bootunlocker.hq.nest.com^
 ||camera.nest.com^
 ||cellular-coverage.nest.com^
-||cellular.nest.com^
 ||certified.nest.com^
-||chisel-api.trial.nest.com^
-||communications.nest.com^
 ||community.nest.com^
-||deletion01.service01.iad01.meprod.nest.com^
-||developer-api-ft.nest.com^
-||developer-api-ftwest.nest.com^
-||developer-api.nest.com^
-||developer.ftwest.nest.com^
 ||developer.nest.com^
-||developers.ftwest.nest.com^
 ||developers.nest.com^
-||devsite.nest.com^
 ||downloads.nest.com^
-||email-token-data.nest.com^
 ||email1.nest.com^
-||energy-partners.api.nest.com^
-||energy-partners.nest.com^
-||energy-partners.staging.nest.com^
-||energy-partners.trial.nest.com^
 ||energy.api.nest.com^
-||entapi.nest.com^
-||enterprise-api.ftwest.nest.com^
-||enterprise-api.nest.com^
-||enterprise-api.staging.nest.com^
-||enterprise-partners.ftwest.nest.com^
-||enterprise-partners.nest.com^
-||enterprise-partners.staging.nest.com^
-||enterprise.api.nest.com^
-||enterprise.nest.com^
-||entitle-esp.nest.com^
-||entitle-esp.nest.comentitle-ilb.nest.com^
-||entitle-grpc.nest.com^
-||entitle-ilb.nest.com^
-||entitle.ftwest.nest.com^
-||entitle.nest.com^
 ||frontdoor.nest.com^
 ||ft.nest.com^
-||ga-api.nest.com^
-||google-ldap.hq.nest.com^
 ||googlenestcommunity.com^
-||hashsvc.hq.nest.com^
-||hashsvcq2.hq.nest.com^
 ||home-assistant.df.nest.com^
 ||home-assistant.nest.com^
-||home.ftwest.nest.com^
 ||home.nest.com^
-||home.staging.nest.com^
-||home.trial.nest.com^
 ||hvac-diag.nest.com^
-||hvac.nest.com^
 ||images.mail.nest.com^
-||jiradb01.data-pdx01.pdx01.hq.nest.com^
-||keyring.nest.com^
-||ldap.hq.nest.com^
-||login.nest.com^
-||logistics.nest.com^
 ||logsink.devices.nest.com^
-||mailhost.nest.com^
 ||marketing-assets.nest.com^
-||marketing-cms.nest.com^
 ||myaccount.nest.com^
-||nessus-mgr-dev01.vmp01.iad02.hq.nest.com^
-||nessus-mgr-prod01.vmp01.iad02.hq.nest.com^
 ||nssbridge.nest.com^
-||offers.nest.com^
-||opensource.nest.com^
-||outage-tracker.hq.nest.com^
 ||pdb-mysql-proxy01.data01.iad01.hq.nest.com^
 ||pdb-mysql-proxy02.data01.iad01.hq.nest.com^
-||pdb-mysql-proxy03.data01.iad01.hq.nest.com^
-||pro-store.nest.com^
 ||pro.nest.com^
-||promotions.nest.com^
-||resizer.ftwest.nest.com^
-||resizer.nest.com^
-||resource-gateway-us-central1.api.nest.com^
-||resource-gateway-us-east4.api.nest.com^
 ||resource-gateway.api.nest.com^
-||reviews.nest.com^
 ||shield-home.nest.com^
-||spinnaker.hq.nest.com^
-||splunk-ldap.hq.nest.com^
 ||squeakydoor.nest.com^
 ||status.nest.com^
-||store.ftwest.nest.com^
-||store.learningthermostat.nest.com^
 ||store.nest.com^
 ||support-assets.nest.com^
 ||support.nest.com^
-||techtonics.hq.nest.com^
-||telegraph.ftwest.nest.com^
-||telegraph.nest.com^
 ||time.nest.com^
 ||training.nest.com^
-||transport.nest.com^
-||transport.staging.nest.com^
-||transport.trial.nest.com^
 ||updates.nest.com^
-||utility-api.nest.com^
-||video.ftwest.nest.com^
 ||video.nest.com^
 ||weather.nest.com^
 ||weave-logsink.nest.com^
 ||welcome.nest.com^
-||widgets.ftwest.nest.com^
 ||widgets.nest.com^
 ||workswith.nest.com^
-||wulfsec.hq.nest.com^
 ||wulfview.nest.com^
 ||wulfview01.admin01.iad01.hq.nest.com^
-||wwn-api-df.nest.com^
 ||wwn-api-ft.nest.com^
 ||wwn-api.nest.com^
-||wwn-catalog-api.nest.com^
-||wwn5-api.nest.com^
-||www-video.nest.com^
 ||www.nest.com^
 ! Jibemobile
 ||jibemobile.com^
