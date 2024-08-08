@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.10.3
+! Version: 1.0.10.4
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-08-08T06:08:11.475Z
+! Last modified: 2024-08-08T07:06:13.487Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3301,6 +3301,8 @@ thepiratebay3.com^
 ||mobile-facebook.com.vn^
 ! https://www.virustotal.com/gui/url/ef9755fcb211a668986b9afc5187577c92fb8c8bf62057bf9d0b59333827a35a
 ||m-facebookk.com.vn^
+! https://www.virustotal.com/gui/url/c4ced71c1d4e2b4e3532c4cc561b005104f0c36fa0cf17989e1fc43f4275f5d8
+||mfacebook.net.vn^
 ! https://www.virustotal.com/gui/url/62cf2706dfcd1c711c43e9005635631a02d6d8529603f0b700ff8e1b9eafd932
 ||ifbsmetaiidentiityconfirms.com^
 ! https://www.virustotal.com/gui/url/70b1f08a4bf8b6c4a5ec3dec8c4a31f2534275e072c5fe9614c148ea2497d25f
@@ -3478,6 +3480,8 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/823f191614433b0f353b678994fe7399aebddf541c26f7434e630a352da61054
 ! https://www.virustotal.com/gui/url/bbab15ebcb0f684e6448edf35d469b5c411c6e3c7877387d16666e8a26fc3e8e
 /\.com(\.[a-z]{2})?\/wp-includes\/images\/smilies\/images?\/smili?es\/[a-z]{25,35}\.html/
+! https://www.virustotal.com/gui/url/aa20e18faa34e87cefdd3540d18ac6f030f17d501460f771e84a70b07e66e8aa
+||mlcrosoftonline.com.eu-secured.com^
 
 ! telegram
 ||telegramhcn.com^
