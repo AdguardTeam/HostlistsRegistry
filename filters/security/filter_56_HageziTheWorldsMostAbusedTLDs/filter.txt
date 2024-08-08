@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.10.13
+! Version: 1.0.10.14
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-08-08T15:06:08.449Z
+! Last modified: 2024-08-08T16:06:24.574Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,10 +22,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 07 Aug 2024 21:40 UTC
-! Version: 2024.0807.2140.31
+! Last modified: 08 Aug 2024 14:42 UTC
+! Version: 2024.0808.1442.39
 ! Syntax: AdGuard
-! Number of latin TLDs: 186 - punycode TLDs: 151
+! Number of latin TLDs: 185 - punycode TLDs: 151
 !
 ||*.africa^
 ||*.agency^$denyallow=baam.agency|battlefield.agency|byteful.agency|robotzebra.agency|uphotel.agency|usenet.agency|ws.agency
@@ -57,7 +57,7 @@
 ||*.cfd^$denyallow=freedium.cfd
 ||*.charity^
 ||*.christmas^
-||*.church^
+||*.church^$denyallow=host.church
 ||*.city^
 ||*.claims^
 ||*.click^$denyallow=popcat.click|popdog.click|xcine.click
@@ -135,7 +135,6 @@
 ||*.new^$denyallow=git.new
 ||*.non^
 ||*.okinawa^
-||*.onl^
 ||*.ooo^$denyallow=toast.ooo
 ||*.partners^
 ||*.parts^
@@ -155,7 +154,7 @@
 ||*.quest^$denyallow=dice.quest|epochal.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest
 ||*.realtor^
 ||*.recipes^
-||*.red^
+||*.red^$denyallow=bunkr.red
 ||*.rehab^
 ||*.rest^$denyallow=crystals.rest|nect.rest
 ||*.restaurant^
@@ -207,7 +206,7 @@
 ||*.win^
 ||*.wine^
 ||*.work^$denyallow=elphago.work|frame.work|koding.work|searx.work
-||*.world^$denyallow=calckey.world|camhub.world|lemmy.world|mastodon.world|maxwellcat.world|shitposter.world|userstyles.world|wetdry.world
+||*.world^$denyallow=calckey.world|camhub.world|lemmy.world|mastodon.world|maxwellcat.world|shitposter.world|userstyles.world|wetdry.world|wiz.world
 ||*.wtf^$denyallow=akko.wtf|lemmy.wtf|myip.wtf|squid.wtf|tigress.wtf|wxx.wtf|xo.wtf
 ||*.xin^
 ||*.yachts^$denyallow=sinking.yachts
