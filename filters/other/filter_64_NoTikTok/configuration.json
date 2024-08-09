@@ -1,0 +1,20 @@
+{
+    "name": "No TikTok",
+    "description": "Completely blocks all TikTok-related domains.",
+    "homepage": "https://github.com/blocklistproject/Lists",
+    "sources": [
+        {
+            "name": "No TikTok",
+            "source": "https://blocklistproject.github.io/Lists/adguard/tiktok-ags.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
