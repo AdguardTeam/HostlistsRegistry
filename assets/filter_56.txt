@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.10.73
+! Version: 1.0.10.74
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-08-11T03:06:44.122Z
+! Last modified: 2024-08-11T04:07:32.763Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,12 +22,12 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 09 Aug 2024 16:20 UTC
-! Version: 2024.0809.1620.26
+! Last modified: 11 Aug 2024 01:59 UTC
+! Version: 2024.0811.0159.18
 ! Syntax: AdGuard
 ! Number of latin TLDs: 185 - punycode TLDs: 151
 !
-||*.africa^
+||*.africa^$denyallow=nation.africa
 ||*.agency^$denyallow=baam.agency|battlefield.agency|byteful.agency|robotzebra.agency|uphotel.agency|usenet.agency|ws.agency
 ||*.asia^$denyallow=amzn.asia|bandainamcoent.asia|dbankcloud.asia|pansci.asia
 ||*.autos^
@@ -90,7 +90,7 @@
 ||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|union.fit
 ||*.foo^$denyallow=helloworld.foo
 ||*.fund^
-||*.fyi^$denyallow=apollo.fyi|better.fyi|iusearchlinux.fyi|lunar.fyi|vercel.fyi
+||*.fyi^$denyallow=apollo.fyi|better.fyi|genderdysphoria.fyi|iusearchlinux.fyi|lunar.fyi|vercel.fyi
 ||*.gdn^$denyallow=cst.gdn|pss.gdn
 ||*.gent^
 ||*.gift^$denyallow=discord.gift
