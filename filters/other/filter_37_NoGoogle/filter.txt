@@ -1,9 +1,9 @@
 !
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
-! Version: 1.0.11.49
+! Version: 1.0.11.50
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2024-08-14T08:09:30.024Z
+! Last modified: 2024-08-14T09:06:08.889Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -11,6 +11,8 @@
 ! Source name: No Google
 ! Source: https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt
 !
+||*-android-context-data.googleapis.com^
+||*-chromecontentsuggestions-pa.googleapis.com^
 ||adgoogle.net^
 ||crashlytics.com^
 ||google-analytics-cn.com^
@@ -23,6 +25,7 @@
 ||googletagmanager.com^
 ||googletagservices.com^
 ||googlevads-cn.com^
+||speechs3proto*-pa.googleapis.com^
 ! Android
 ||android.com^
 ! Area120
@@ -36,10 +39,8 @@
 ||KQu0cL-dnsotls-ds.metric.gstatic.com^
 ||2mdn-cn.net^
 ||2mdn.net^
-||affiliate-script-pr.firebaseapp.com^
 ||agnss.goog^
 ||ai.com^
-||analytics.firebaseapp.com^
 ||apigee.com^
 ||apigee.net^
 ||app-measurement.com^
@@ -347,25 +348,30 @@
 ||syndicatedsearch.goog^
 ||translate.goog^
 ||tv.google^
-||tveweb-appsvcs-aetnd-com-8ff57.firebaseapp.com^
 ||urbanengines.com^
 ||urchin.fr^
-||walkthrough-tool.firebaseapp.com^
 ||www.google.com.tn^
 ||www.google.it.ao^
 ||youtube-3rd-party.com^
 ! Doubleclick
+||doubleclick-cn.net^
 ||doubleclick.com^
 ||doubleclick.de^
 ||doubleclick.ne.jp^
 ||doubleclick.net^
 ||doubleclickbygoogle.com^
+||doubleclicksearch.com^
+||doubleclickusercontent.com^
+||googledoubleclick.net^
 ! Fiber
 ||googlefiber.net^
 ! Firebase
 ||firebase.com^
+||firebase.dev^
+||firebase.io^
+||firebaseanalytics.com^
+||firebaseapp.com^
 ||firebaseio.com^
-||s-usc1a-nss-2023.firebase.io^
 ! Fonts
 ! General
 ||00hrf5vjtk.com^
@@ -496,6 +502,10 @@
 ||abc.xyz^
 ||abcdefghijklmnopqrstuvwxyz.com^
 ||about.google^
+||acceleratewithgoogle.com^
+||admeld.at^
+||admeld.com^
+||admob-cn.com^
 ||admob.biz^
 ||admob.co.kr^
 ||admob.co.nz^
@@ -516,9 +526,20 @@
 ||admob.sg^
 ||admob.tw^
 ||admob.vn^
+||admobanalytics.com^
+||admobapplicationnetwork.com^
+||adometry.com^
+||adrollo.com^
 ||ads.cc^
 ||ads.cc-dt.com^
+||adsbygoogle.com^
+||adscapemediainventory.net^
+||adscapemediainventorytest.net^
+||adsenceforvideo.com^
 ||adsense.com^
+||adsensecustomsearchads.com^
+||adsensecustomsearchads.org^
+||adsenseformobileapps.com^
 ||adservice.google.aw^
 ||adservice.google.ax^
 ||adservice.google.in^
@@ -527,21 +548,46 @@
 ||adservice.google.pk^
 ||adservice.google.tw^
 ||adservice.google.ua^
+||adsextramilage.co.uk^
+||adsextramileage.com^
+||adsgoogle.com^
 ||adups.com^
+||advertiseondish.com^
 ||advertisercommunity.com^
+||advertiserscommunity.com^
+||adwhirl.com^
+||adwordizing.com^
 ||adwords-community.com^
+||adwords-international.biz^
+||adwords-pme.com^
+||adwords-select.com^
+||adwords-select.us^
 ||adwords.com^
+||adwordschile.com^
+||adwordscouponarea.com^
+||adwordsexample.com^
 ||adwordsexpress.com^
+||adwordsgearbox.com^
+||adwordsgoogle.com^
+||adwordsmarketing.co^
+||adwordsmasters.com^
+||adwordsperformanceforum.com^
+||adwordsprofessionals.co^
+||agence-adwords.com^
+||agenceadwords.org^
 ||aglgqf4qs7.com^
 ||agoogleaday.com^
 ||ai.google^
 ||al5bdfhvlv.com^
+||amp.dev^
 ||ampproject.org^
 ||amwbp6elqd.com^
 ||an5ywmva51.com^
 ||api-googlemaps.net^
+||app-measurement-cn.com^
 ||appliedsemantics.com^
 ||apps5.oingo.com^
+||appsenterprisecustomers.com^
 ||appspot.com^
 ||asrnokeoxr.com^
 ||at7yu7v8qg.com^
@@ -552,6 +598,7 @@
 ||beacons5.gvt9.com^
 ||bg016rsivc.com^
 ||bi3yxyr9ps.com^
+||bigquery.com^
 ||bjh7mu2jk4.com^
 ||blog.google^
 ||blogger.com^
@@ -562,6 +609,7 @@
 ||bq14tacgy9.com^
 ||bt7gxxpmaf.com^
 ||businessmessages.google^
+||buygoogle.biz^
 ||bx3nibkay2.com^
 ||bylda126kb.com^
 ||byvkqw3se6.com^
@@ -579,14 +627,13 @@
 ||ck9d5ok0ww.com^
 ||ckdpieqz7a.com^
 ||clickserve.cc-dt.com^
-||clickserve.dartsearch.net^
-||clickserve.eu.dartsearch.net^
-||clickserve.uk.dartsearch.net^
-||clickserve.us2.dartsearch.net^
+||cloudburstresearch.com^
+||cloudpartnerservices.goog^
 ||cnaiezv38i.com^
 ||cobrasearch.com^
-||conversion-pixel.invitemedia.com^
+||cookiechoices.org^
 ||creative.cc-dt.com^
+||crossmediapanel.com^
 ||crr0kvp1vv.com^
 ||crvkqnmovj.com^
 ||cy0n3rjf69.com^
@@ -594,14 +641,19 @@
 ||cyy25u6lo1.com^
 ||d6noxwrgdg.com^
 ||d77thhk8qm.com^
+||dartsearch-cn.net^
+||dartsearch.net^
 ||db408yef6a.com^
 ||deepmind.com^
 ||deepmind.google^
+||deliver-peak-performance.co.uk^
+||deliverpeakperformance.co.uk^
 ||design.google^
 ||DeSKtoP.google.com^
 ||dh2yuuwr45.com^
 ||dh5txcojmw.com^
 ||dialogflow.com^
+||digital-google.com^
 ||diversity.google^
 ||dlhaxa82xp.com^
 ||dlut31p12z.com^
@@ -621,6 +673,10 @@
 ||elqip64e59.com^
 ||em0n.com^
 ||emn0.com^
+||engageforagencies.com^
+||enterprisedemo-google.com^
+||enterprisedemogoogle.org^
+||enterprisemarketingportal.google^
 ||ert1d91zeq.com^
 ||esmxz14mvy.com^
 ||et7df5ynve.com^
@@ -631,12 +687,15 @@
 ||f1kq6f6o4k.com^
 ||f1lip1zgkt.com^
 ||f4b7xaxmah.com^
+||famebit.com^
+||families.google^
 ||feedburner.com^
 ||firehunt.com^
 ||fl04oiwlyp.com^
 ||flutter.dev^
 ||flutter.io^
 ||fpik3ohegr.com^
+||freebase.com^
 ||fsehahqwg1.com^
 ||fuoypffm3j.com^
 ||fvq1.com^
@@ -650,13 +709,20 @@
 ||gceq9i4p37.com^
 ||geh7lu6d0k.com^
 ||getmdl.io^
+||getongoogle.net^
 ||gfv7a0oq3y.com^
 ||ghi85bv7kx.com^
 ||gi9utq8fro.com^
 ||gib6606kgt.com^
 ||gioa5a3ukb.com^
+||goog-ad-development.com^
+||google-anallytics.info^
 ||google-analytics.bi.owox.com^
+||google-analytycs.com^
 ||google-pagerank.net^
+||google-partners.net^
+||google-syndicatedsearch.net^
+||google-syndication.com^
 ||google.cx^
 ||google.dev^
 ||google.eu^
@@ -669,14 +735,23 @@
 ||googleads-cn.com^
 ||googleads.com^
 ||googleadsserving.cn^
+||googleadwords.com^
 ||googleailesi.com^
 ||googleapis.com^
 ||googleartproject.com^
+||googleoptimizasyonu.biz^
+||googlepartnerconnect.com^
+||googlepartners.info^
+||googleplacement.net^
 ||googleplex.com^
+||googlesandbox-cn.com^
 ||googlesciencefair.com^
 ||googlesites.net^
 ||googlesource.com^
 ||googlesucks.com^
+||googlesuggest.com^
+||googlesyndicatedsearch.cl^
+||googlesyndicatedsearch.com^
 ||googletagservices-cn.com^
 ||googletraveladservices-cn.com^
 ||googletraveladservices.com^
@@ -688,8 +763,10 @@
 ||gp3gie1qbl.com^
 ||grow.google^
 ||gseacnw61z.com^
+||gtp.izatcloud.net^
 ||gv.com^
 ||gvt1.com^
+||gvt2-cn.com^
 ||gvt2.com^
 ||gvt3.com^
 ||gvw6potuej.com^
@@ -716,6 +793,14 @@
 ||ikknil4o42.com^
 ||IMAGEs.google.com^
 ||img1.blogblog.com^
+||incentelligence.com^
+||incentivetargeting.com^
+||incentivetargeting.net^
+||inviteaudience.com^
+||inviteinsight.com^
+||invitemedia.com^
+||invitemediainc.com^
+||invitmedia.com^
 ||io.google^
 ||j2zyd2pet8.com^
 ||jd6iaikyda.com^
@@ -740,7 +825,9 @@
 ||kx4h26m8sw.com^
 ||kyf64h04e9.com^
 ||l6vnark77s.com^
+||labs.google^
 ||like.com^
+||limelightaffiliates.com^
 ||llpg1z2gzz.com^
 ||llzphczipl.com^
 ||localguidesconnect.com^
@@ -775,6 +862,8 @@
 ||mucmvo8nz9.com^
 ||mv4sjysfhq.com^
 ||mv99azr2lu.com^
+||mycloudaudit.com^
+||mysearchhistorygoogle.com^
 ||mzkdkfvrak.com^
 ||n122jzr3vo.com^
 ||n339.asp-cc.com^
@@ -813,6 +902,7 @@
 ||p1xjhr2ipa.com^
 ||p698ke6uwk.com^
 ||p98vobrqwd.com^
+||pageadgooglesyndication.com^
 ||pagespeedmobilizer.com^
 ||panoramio.com^
 ||phpjo3qe79.com^
@@ -860,12 +950,15 @@
 ||soif55q623.com^
 ||sp9d9q3o8f.com^
 ||stadia.com^
+||statadvertising.com^
 ||stjp98c3hu.com^
 ||storegoogle.com^
 ||su4xxf9ea6.com^
+||suggestgoogle.biz^
 ||t0wu1fqv4l.com^
 ||t6g9bjnn5i.com^
 ||tc7mup3b8h.com^
+||teracent.net^
 ||tezkyhazrq.com^
 ||thinkwithgoogle.com^
 ||tkzzb68bgu.com^
