@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.11.90
+! Version: 1.0.11.91
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-08-16T03:07:33.166Z
+! Last modified: 2024-08-16T04:07:03.583Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,8 +22,8 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 13 Aug 2024 03:28 UTC
-! Version: 2024.0813.0328.47
+! Last modified: 15 Aug 2024 22:09 UTC
+! Version: 2024.0815.2209.05
 ! Syntax: AdGuard
 ! Number of latin TLDs: 187 - punycode TLDs: 151
 !
@@ -72,7 +72,7 @@
 ||*.dance^
 ||*.date^$denyallow=endoflife.date
 ||*.dating^
-||*.deals^
+||*.deals^$denyallow=gg.deals
 ||*.degree^$denyallow=opf.degree|three60.degree
 ||*.dental^
 ||*.desi^$denyallow=xhamster.desi
