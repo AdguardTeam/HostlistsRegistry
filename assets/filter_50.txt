@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.12.16
+! Version: 1.0.12.17
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-08-17T05:05:47.074Z
+! Last modified: 2024-08-17T06:07:12.933Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -3357,6 +3357,8 @@ thepiratebay3.com^
 /\.com(\.[a-z]{2})?\/wp-includes\/images\/smilies\/images?\/smili?es\/[a-z]{25,35}\.html/
 ! https://www.virustotal.com/gui/url/aa20e18faa34e87cefdd3540d18ac6f030f17d501460f771e84a70b07e66e8aa
 ||mlcrosoftonline.com.eu-secured.com^
+! https://www.virustotal.com/gui/url/1ed7b40b8d5a921616df1e5b651f0a8d055766eaa36d3ce73b5823cf6acb01b7
+||hr-systemmet.dk^
 
 ! telegram
 ||telegramhcn.com^
@@ -3365,6 +3367,7 @@ thepiratebay3.com^
 ||brawllstars.ru^
 ||webz.dev^
 ||telegremapp.me^
+||telegerasm.work^
 ||telegrambotsolution.pages.dev^
 ||telegramkv.com^
 ! https://www.virustotal.com/gui/url/06c0aafaca0d59712ddd82ceeacef7b4bb31ecf44fb43584a45fd400416aa913
