@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.13.60
+! Version: 1.0.13.61
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-08-23T04:07:43.005Z
+! Last modified: 2024-08-23T05:06:32.427Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -569,6 +569,8 @@ thepiratebay3.com^
 ||miahershberger.buzz^
 ||sanjuanitaliscano.click^
 ||viktoriadelenick.za.com^
+! https://www.virustotal.com/gui/url/8cf51404736d06441fdd527108bfb65cf97bd4801698e4a3ff91cfc605baded9
+||c0nt4ct-me.pages.dev^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/8378
 ||ogtrk.net^
@@ -3192,6 +3194,8 @@ thepiratebay3.com^
 ! https://urldna.io/scan/66a0280430f40d4a2e1cdbfd
 ! https://www.virustotal.com/gui/url/dd581161abc02c436e7f1d3096ebc651b98bf4ff3eeea81cff8ba76b6b9ca277
 ||play.funfourmob.com^
+! instagram
+||instagramofficialaccount10.blogspot.com^
 
 ! facebook
 ||slimhealth.us^
@@ -3403,10 +3407,8 @@ thepiratebay3.com^
 
 ! telegram
 ||telegramhcn.com^
-||web.telegram.data-bees.cn^
 ||newappmssg.ru^
 ||brawllstars.ru^
-||webz.dev^
 ||telegremapp.me^
 ||telegerasm.work^
 ||webtelegram.eu.org^
@@ -3422,8 +3424,6 @@ thepiratebay3.com^
 ||telegram-zhongwen.com^
 ! https://www.virustotal.com/gui/url/dfc0c0423f0e994148d39d8458893a35bb024fdeeabfd7a82dd0d4e50ce68ace
 ||rr.nu^
-! https://www.virustotal.com/gui/url/e85da5d54f4a36f43637c19a228ded51657f858575d9ea1761fc28a8e1e0be29
-||joinxtelegram.com^
 ! https://www.virustotal.com/gui/url/a2d5a343a14439ce2cab0c3a9aa1136b9bc94a9b35785bcab2dcaf542cb94aaf
 ||xrphealthcare.com^
 ||web3mainnetdapp.pages.dev^
