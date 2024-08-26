@@ -55,8 +55,9 @@ const listFiltersDirs = async function (baseDir) {
  * @return {String}
  */
 const calculateRevisionHash = function (compiled) {
-  const data = compiled.filter(s => !(s.startsWith('! Last modified:') || s.startsWith('! Version')))
+  const data = compiled.filter(s => !(s.startsWith('! Last modified:') || s.startsWith('! Version:')))
     .join('\n');
+
   return Buffer.from(md5(data, { asString: true })).toString('base64').trim();
 }
 
