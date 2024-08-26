@@ -1,5 +1,5 @@
 const path = require('path');
-const builder = require('adguard-hostlists-builder');
+const builder = require('../hostlists-builder');
 const fs = require('fs/promises');
 
 const {
