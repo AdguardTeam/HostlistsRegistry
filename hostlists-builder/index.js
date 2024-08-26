@@ -5,7 +5,7 @@ const fs = require('fs');
 const md5 = require('md5');
 const dayjs = require('dayjs');
 const hostlistCompiler = require('@adguard/hostlist-compiler');
-const mastodonServerlistCompiler = require('adguard-hostlists-builder/mastodon');
+const mastodonServerlistCompiler = require('./mastodon');
 const { listDirs, writeFile, readFile, DeferredRunner } = require('./utils/io');
 const Revision = require('./utils/revision');
 const TagsMetadataUtils = require('./utils/tags');
@@ -48,14 +48,15 @@ const listFiltersDirs = async function (baseDir) {
 
 /**
  * Calculates revision for compiled rules.
- * NOTE: "! Last modified:" comment is excluded from the calculation because it's updating each time hostlist-compiler invoked
+ * NOTE: "! Last modified:" and "! Version" lines are excluded from the calculation because these fields updating each time hostlist-compiler invoked
  *
  * @param compiled Array with compiled rules
  *
  * @return {String}
  */
 const calculateRevisionHash = function (compiled) {
-  const data = compiled.filter(s => !s.startsWith('! Last modified:')).join('\n');
+  const data = compiled.filter(s => !(s.startsWith('! Last modified:') || s.startsWith('! Version')))
+    .join('\n');
   return Buffer.from(md5(data, { asString: true })).toString('base64').trim();
 }
 
