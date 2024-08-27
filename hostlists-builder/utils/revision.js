@@ -45,7 +45,7 @@ class Revision {
   }
 
   /**
-   * Set an incremented version or an initial version if object is new. 
+   * Set an incremented version or an initial version if object is new.
    */
   setVersionCandidate() {
     if (!this[versionIsNew]) {
