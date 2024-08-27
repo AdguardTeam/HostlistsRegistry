@@ -7,27 +7,36 @@ const versionIsNew = Symbol('Version is new?');
  * `revision.json` representation
  */
 class Revision {
+  #timeUpdatedCandidate;
+  #versionCandidate;
+
+  #originalTimeUpdated;
+  #originalVersion;
+  #originalHash;
+
   /**
-   * @param {Revision|undefined} object JSON representation
+   * If the object is constructed with empty fields, initial values will be assigned.
+   * 
+   * @param {{ version: string|undefined, hash: string, timeUpdated: string } | undefined} object JSON representation
    */
   constructor(object = undefined) {
     if (!object) {
-      this.timeUpdated = new Date().getTime();
-      this.version = versionUtils.START_VERSION;
-      this.hash = undefined;
+      this.#originalTimeUpdated = new Date().getTime();
+      this.#originalVersion = versionUtils.START_VERSION;
+      this.#originalHash = undefined;
 
       this[versionIsNew] = true;
       this[revisionIsNew] = true;
     } else {
-      this.timeUpdated = object.timeUpdated;
-      this.hash = object.hash;
+      this.#originalTimeUpdated = object.timeUpdated;
+      this.#originalHash = object.hash;
 
       // Revision can be old, but not have a version field
       if (!object.version) {
-        this.version = versionUtils.START_VERSION;
+        this.#originalVersion = versionUtils.START_VERSION;
         this[versionIsNew] = true;
       } else {
-        this.version = object.version;
+        this.#originalVersion = object.version;
         this[versionIsNew] = false;
       }
 
@@ -36,40 +45,74 @@ class Revision {
   }
 
   /**
-   * Increments version if it wasn't new.
+   * Set an incremented version or an initial version if object is new.
    */
-  safelyIncrementVersion() {
+  setVersionCandidate() {
     if (!this[versionIsNew]) {
-      this.version = versionUtils.increment(this.version);
+      this.#versionCandidate = versionUtils.increment(this.#originalVersion); 
+    } else {
+      this.#versionCandidate = versionUtils.START_VERSION;
     }
   }
 
   /**
-   * Sets hash string
-   *
-   * @param {string} hash
+   * Sets a "timeUpdated" candidate
    */
-  setHash(hash) {
-    this.hash = hash;
+  setTimeUpdatedCandidate() {
+    if (!this.#timeUpdatedCandidate) {
+      this.#timeUpdatedCandidate = this.#originalTimeUpdated;
+    }
   }
 
   /**
-   * Updates timeUpdated revision wasn't new
+   * @return {string|undefined}
    */
-  safelyUpdateTime() {
-    if (!this[revisionIsNew]) {
-      this.timeUpdated = new Date().getTime();
-    }
+  getOriginalHash() {
+    return this.#originalHash;
+  }
+
+  /**
+   * @return {string}
+   */
+  getOriginalVersion() {
+    return this.#originalVersion;
+  }
+
+  /**
+   * @return {string}
+   */
+  getOriginalTimeUpdated() {
+    return this.#originalTimeUpdated;
+  }
+
+  /**
+   * @return {string}
+   */
+  getVersionCandidate() {
+    return this.#versionCandidate;
+  }
+
+  /**
+   * This makes a new Revision object from candidate fields and new hash
+   * 
+   * @param {string} newHash
+   */
+  makeNewRevisionFromCandidates(newHash) {
+    return new Revision({
+      hash: newHash,
+      timeUpdated: this.#timeUpdatedCandidate,
+      version: this.#versionCandidate
+    });
   }
   
   /**
-   * Makes plain object
+   * Makes plain object from original (or initial) values
    */
-  makePlainObject() {
+  makePlainObjectFromOriginalValues() {
     return {
-      version: this.version,
-      timeUpdated: this.timeUpdated,
-      hash: this.hash,
+      version: this.#originalVersion,
+      timeUpdated: this.#originalTimeUpdated,
+      hash: this.#originalHash,
     }
   }
 }

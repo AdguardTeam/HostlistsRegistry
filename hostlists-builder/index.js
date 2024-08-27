@@ -153,6 +153,12 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
     // Reads the current revision information.
     const revisionFile = path.join(filterDir, REVISION_FILE);
     const revision = new Revision(JSON.parse(await readFile(revisionFile)));
+    /**
+     * A new filter revision
+     * 
+     * @type {Revision|undefined}
+     */
+    let newRevision;
 
     if (typeof metadata.filterId === 'undefined') {
       throw new Error('You should use `filterId` instead of `id` in metadata.json');
@@ -166,19 +172,20 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
     // existing one.
     if (!metadata.disabled) {
       try {
-        revision.safelyIncrementVersion();
-        revision.safelyUpdateTime();
+        revision.setVersionCandidate();
+        revision.setTimeUpdatedCandidate();
 
         const hostlistCompiled = await hostlistCompiler({
           ...hostlistConfiguration,
-          version: revision.version,
+          version: revision.getVersionCandidate(),
         });
 
         const hash = calculateRevisionHash(hostlistCompiled);
 
         // Rewrites the filter if it's actually changed.
-        if (revision.hash !== hash) {
-          revision.setHash(hash);
+        if (revision.getOriginalHash() !== hash) {
+          // Make new revision here
+          newRevision = revision.makeNewRevisionFromCandidates(hash);
           const assetsFilterFile = path.join(assetsDir, filterName);
           const filterFile = path.join(filterDir, 'filter.txt');
           const content = hostlistCompiled.join('\n');
@@ -187,7 +194,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
           // We will do it after all filters have been successfully compiled
           deferredRunner.push(async () => {
             return Promise.all([
-              writeFile(revisionFile, revision.makePlainObject()),
+              writeFile(revisionFile, newRevision.makePlainObjectFromOriginalValues()),
               writeFile(assetsFilterFile, content),
               writeFile(filterFile, content),
             ]);
@@ -216,14 +223,14 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
       description: metadata.description,
       tags: tagsMetadataUtils.mapTagKeywordsToTheirIds(metadata.tags),
       languages: tagsMetadataUtils.parseLangTag(metadata.tags),
-      version: revision.version,
+      version: (newRevision || revision).getOriginalVersion(),
       homepage: metadata.homepage,
       expires: replaceExpires(metadata.expires),
       displayNumber: metadata.displayNumber,
       downloadUrl,
       subscriptionUrl,
       timeAdded: dayjs(metadata.timeAdded).format(OUTPUT_DATE_FORMAT),
-      timeUpdated: dayjs(revision.timeUpdated).format(OUTPUT_DATE_FORMAT),
+      timeUpdated: dayjs((newRevision || revision).getOriginalTimeUpdated()).format(OUTPUT_DATE_FORMAT),
     };
 
     if (metadata.environment === 'prod') {
