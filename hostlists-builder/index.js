@@ -194,7 +194,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
           // We will do it after all filters have been successfully compiled
           deferredRunner.push(async () => {
             return Promise.all([
-              writeFile(revisionFile, revision.makePlainObjectFromOriginalValues()),
+              writeFile(revisionFile, newRevision.makePlainObjectFromOriginalValues()),
               writeFile(assetsFilterFile, content),
               writeFile(filterFile, content),
             ]);
