@@ -60,7 +60,7 @@ class Revision {
    */
   setTimeUpdatedCandidate() {
     if (!this.#timeUpdatedCandidate) {
-      this.#timeUpdatedCandidate = this.#originalTimeUpdated;
+      this.#timeUpdatedCandidate = new Date().getTime();
     }
   }
 
