@@ -64,7 +64,7 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
   - `description` — filter description
   - `timeAdded` — time when this filter was added to the registry; milliseconds since January 1, 1970; you can exec `new Date().getTime()` in the browser console to get the current time
   - `homepage` — filter website/homepage
-  - `deprecated` - optional, boolean, filter is deprecated and should not be used by the products,
+  - `deprecated` — optional, boolean, filter is deprecated and should not be used by the products,
       but filter is still available, i.e. not removed
   - `expires` — filter's default expiration period
   - `displayNumber` — this number is used when AdGuard sorts available filters (GUI)
