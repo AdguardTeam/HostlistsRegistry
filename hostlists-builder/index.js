@@ -220,6 +220,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
       filterId: metadata.filterId,
       groupId: metadata.groupId,
       name: metadata.name,
+      deprecated: Boolean(metadata.deprecated),
       description: metadata.description,
       tags: tagsMetadataUtils.mapTagKeywordsToTheirIds(metadata.tags),
       languages: tagsMetadataUtils.parseLangTag(metadata.tags),
