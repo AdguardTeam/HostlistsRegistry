@@ -1,9 +1,9 @@
 !
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
-! Version: 1.0.14.45
+! Version: 1.0.14.46
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-08-28T10:05:46.985Z
+! Last modified: 2024-08-31T16:05:39.885Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -12,16 +12,18 @@
 ! Source: https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/AWAvenue-Ads-Rule.txt
 !
 !Title: AWAvenue Ads Rule
-!Last modified: 2024-08-28T10:03:07.980291+00:00
+!Last modified: 2024-08-31T15:07:01.652074+00:00
 !--------------------------------------
-!Total lines: 633
-!Version: 1.5.1-release
+!Total lines: 665
+!Version: 1.5.2-release
 
 !Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
 !License: https://github.com/TG-Twilight/AWAvenue-Ads-Rule/blob/main/LICENSE
 
 
 ||1010pic.com^
+||16dd-advertise-1252317822.file.myqcloud.com^
+||16dd-advertise-1252317822.image.myqcloud.com^
 ||8le8le.com^
 ||a0.app.xiaomi.com^
 ||aaid.umeng.com^
@@ -41,6 +43,7 @@
 ||ad.richmob.cn^
 ||ad.tencentmusic.com^
 ||ad.toutiao.com^
+||ad.v3mh.com^
 ||ad.winrar.com.cn^
 ||ad.xelements.cn^
 ||ad.xiaomi.com^
@@ -79,6 +82,7 @@
 ||ads.oppomobile.com^
 ||ads.pinterest.com^
 ||ads.service.kugou.com^
+||ads.v3mh.com^
 ||ads3-normal-hl.zijieapi.com^
 ||ads3-normal-lf.zijieapi.com^
 ||ads3-normal-lq.zijieapi.com^
@@ -130,6 +134,7 @@
 ||aiseet.aa.atianqi.com^
 ||ali-ad.a.yximgs.com^
 ||alog.umeng.com^
+||als.baidu.com^
 ||amdcopen.m.taobao.com^
 ||an.facebook.com^
 ||analysis.yozocloud.cn^
@@ -156,9 +161,11 @@
 ||api-access.pangolin-sdk-toutiao5.com^
 ||api-ad-product.huxiu.com^
 ||api-adservices.apple.com^
+||api.e.kuaishou.com^
 ||api.htp.hubcloud.com.cn^
 ||api.hzsanjiaomao.com^
 ||api.installer.xiaomi.com^
+||api.jietuhb.com^
 ||api.kingdata.ksyun.com^
 ||api.statsig.com^
 ||api5-normal-quic-lf.ixigua.com^
@@ -180,10 +187,12 @@
 ||beaconcdn.qq.com^
 ||beacons.gvt2.com^
 ||beizi.biz^
+||bgg.baidu.com^
 ||bianxian.com^
 ||bingads.microsoft.com^
 ||bj.ad.track.66mobi.com^
 ||books-analytics-events.apple.com^
+||bossaudioandcomic-1252317822.image.myqcloud.com^
 ||bsrv.qq.com^
 ||bugly.qq.com^
 ||business-api.tiktok.com^
@@ -196,11 +205,13 @@
 ||catalog.fjwhcbsh.com^
 ||ccs.umeng.com^
 ||cctv.adsunion.com^
+||cdn-ad.wtzw.com^
 ||cdn-ads.oss-cn-shanghai.aliyuncs.com^
 ||cdn.ynuf.aliapp.org^
 ||cfg.imtt.qq.com^
 ||chat1.jd.com^
 ||chiq-cloud.com^
+||cj.qidian.com^
 ||clog.miguvideo.com^
 ||cnzz.com^
 ||collect.kugou.com^
@@ -250,6 +261,7 @@
 ||gdfp.gifshow.com^
 ||gemini.yahoo.com^
 ||geo.yahoo.com^
+||getui.com^
 ||ggx.cmvideo.cn^
 ||ggx01.miguvideo.com^
 ||ggx03.miguvideo.com^
@@ -270,6 +282,7 @@
 ||hiboard-drcn.ai.dbankcloud.cn^
 ||hm.baidu.com^
 ||hmma.baidu.com^
+||houyi.kkmh.com^
 ||hpplay.cn^
 ||httpdns.bcelive.com^
 ||httpdns.ocloud.oppomobile.com^
@@ -288,13 +301,18 @@
 ||iadworkbench.apple.com^
 ||ifacelog.iqiyi.com^
 ||ifs.tanx.com^
+||ii.gdt.qq.com^
+||imag8.pubmatic.com^
+||imag86.pubmatic.com^
 ||image-ad.sm.cn^
 ||imageplus.baidu.com^
+||images.outbrainimg.com^
 ||images.pinduoduo.com^
 ||img-c.heytapimage.com^
 ||img.adnyg.com^
 ||img.adnyg.com.w.kunlungr.com^
 ||imtmp.net^
+||ipv4.kkmh.com^
 ||irc.qubiankeji.com^
 ||itv2-up.openspeech.cn^
 ||ixav-cse.avlyun.com^
@@ -346,9 +364,12 @@
 ||logservice1.hicloud.com^
 ||logtj.kugou.com^
 ||logupdate.avlyun.sec.miui.com^
+||m.ad.zhangyue.com^
 ||m.atm.youku.com^
 ||m.kubiqq.com^
 ||m1.ad.10010.com^
+||magev6.if.qidian.com^
+||manhua.acimg.cn^
 ||mapi.m.jd.com^
 ||masdkv6.3g.qq.com^
 ||mazu.m.qq.com^
@@ -408,6 +429,7 @@
 ||pglstatp-toutiao.com^
 ||pig.pupuapi.com^
 ||pixon.ads-pixiv.net^
+||plbslog.umeng.com^
 ||pms.mb.qq.com^
 ||policy.video.ptqy.gitv.tv^
 ||proxy.advp.apple.com^
@@ -430,6 +452,7 @@
 ||s1.qq.com^
 ||s2.qq.com^
 ||s3.qq.com^
+||saad.ms.zhangyue.net^
 ||samsung-com.112.2o7.net^
 ||samsungads.com^
 ||sanme2.taisantech.com^
@@ -465,10 +488,12 @@
 ||sigmob.com^
 ||skdisplay.jd.com^
 ||slb-p2p.vcloud.ks-live.com^
+||smad.ms.zhangyue.net^
 ||smart-tv.cn^
 ||smartad.10010.com^
 ||smetrics.samsung.com^
 ||sngmta.qq.com^
+||snowflake.qq.com^
 ||stat.dongqiudi.com^
 ||stat.y.qq.com^
 ||static.ads-twitter.com^
@@ -492,6 +517,7 @@
 ||tj.b.qq.com^
 ||tj.video.qq.com^
 ||tmead.y.qq.com^
+||tmeadcomm.y.qq.com^
 ||tmfmazu-wangka.m.qq.com^
 ||tmfmazu.m.qq.com^
 ||tmfsdk.m.qq.com^
@@ -521,6 +547,7 @@
 ||tz.sec.xiaomi.com^
 ||udc.yahoo.com^
 ||udcm.yahoo.com^
+||uedas.qidian.com^
 ||ulog-sdk.gifshow.com^
 ||ulogjs.gifshow.com^
 ||ulogs.umeng.com^
@@ -528,6 +555,7 @@
 ||umengacs.m.taobao.com^
 ||umengjmacs.m.taobao.com^
 ||umsns.com^
+||union.baidu.cn^
 ||union.baidu.com^
 ||update.avlyun.sec.miui.com^
 ||update.lejiao.tv^
@@ -574,8 +602,10 @@
 ||weather-analytics-events.apple.com^
 ||weather-community-drcn.weather.dbankcloud.cn^
 ||webstat.qiumibao.com^
+||widgets.outbrain.com^
 ||widgets.pinterest.com^
 ||win.gdt.qq.com^
+||wn.pos.baidu.com^
 ||wn.x.jd.com^
 ||ws.sj.qq.com^
 ||www42.zskwai.com^
@@ -587,6 +617,7 @@
 ||wxsnsdythumb.wxs.qq.com^
 ||xc.gdt.qq.com^
 ||xiaomi-dtv.m.cn.miaozhen.com^
+||xiaoshuo.wtzw.com^
 ||xlivrdr.com^
 ||xlmzc.cnjp-exp.com^
 ||xlog.jd.com^
