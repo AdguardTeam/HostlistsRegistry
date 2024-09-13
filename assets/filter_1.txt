@@ -1,9 +1,9 @@
 !
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
-! Version: 1.0.15.11
+! Version: 1.0.15.12
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2024-09-13T12:08:47.673Z
+! Last modified: 2024-09-13T15:05:34.705Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -16,7 +16,7 @@
 ! Description: Filter composed of several other filters (AdGuard Base filter, Social media filter, Tracking Protection filter, Mobile ads filter, EasyList, EasyPrivacy, etc) and simplified specifically to be better compatible with DNS-level ad blocking.
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
 ! License: https://github.com/AdguardTeam/AdguardSDNSFilter/blob/master/LICENSE
-! Last modified: 2024-09-13T12:01:33.705Z
+! Last modified: 2024-09-13T14:24:51.097Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.24
 !
@@ -60650,6 +60650,8 @@ inapps.appsflyersdk.com^
 ||jhlnlt.xyz^
 ||nhjn788.fun^
 ||kdicked.top^
+||fq05.shop^
+||jy07.shop^
 ||egesdashb8.fun^
 ||iuuwuk.xyz^
 ||vdsdsf2.fun^
@@ -66416,6 +66418,8 @@ analytics-*.aasaam.com
 ! Source name: Exception rules
 ! Source: Filters/exceptions.txt
 !
+! https://github.com/AdguardTeam/AdguardFilters/issues/187801
+@@||res.ads.nicovideo.jp^|
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1720
 ! Blocked by CNAME data.adobedc.net
 ! https://github.com/AdguardTeam/AdGuardSDNSFilter/issues/1717
