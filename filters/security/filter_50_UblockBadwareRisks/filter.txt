@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.14.88
+! Version: 1.0.14.89
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-09-18T12:09:40.855Z
+! Last modified: 2024-09-19T13:10:03.778Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -2978,9 +2978,6 @@ thepiratebay3.com^
 ! https://github.com/uBlockOrigin/uAssets/issues/22268
 ||skinboxs.com^
 
-! https://github.com/RPiList/specials/issues/1492
-||okun.shop^
-
 ! https://github.com/uBlockOrigin/uAssets/discussions/23094
 ! https://blog.sucuri.net/2024/02/web3-crypto-malware-angel-drainer.html
 ! https://www.virustotal.com/gui/url/2bf2e7500e2b15877f866b0a782436df8621b2c20f81e3d66f51e394f6ff6f30
@@ -3829,3 +3826,6 @@ thepiratebay3.com^
 
 ! https://github.com/uBlockOrigin/uAssets/issues/25113
 ||sunpass-etoll-id.kupu.desa.id^
+
+! https://unit42.paloaltonetworks.com/rare-phishing-page-delivery-header-refresh/
+||tracker.club-os.com^
