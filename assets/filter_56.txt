@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.14.67
+! Version: 1.0.14.68
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-09-19T04:07:18.128Z
+! Last modified: 2024-09-24T08:08:14.480Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -22,17 +22,20 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 18 Sep 2024 21:54 UTC
-! Version: 2024.0918.2154.54
+! Last modified: 24 Sep 2024 07:56 UTC
+! Version: 2024.0924.0756.26
 ! Syntax: AdGuard
-! Number of latin TLDs: 187 - punycode TLDs: 151
+! Number of latin TLDs: 193 - punycode TLDs: 151
 !
+||*.actor^
 ||*.africa^$denyallow=nation.africa
 ||*.agency^$denyallow=apptoro.agency|baam.agency|battlefield.agency|byteful.agency|robotzebra.agency|uphotel.agency|usenet.agency|ws.agency
 ||*.army^$denyallow=phishing.army
 ||*.asia^$denyallow=amzn.asia|bandainamcoent.asia|dbankcloud.asia|pansci.asia
+||*.auction^
 ||*.autos^
 ||*.baby^
+||*.band^
 ||*.bar^$denyallow=fap.bar
 ||*.beauty^$denyallow=vipbj.beauty
 ||*.best^$denyallow=epg.best
@@ -40,7 +43,6 @@
 ||*.bid^
 ||*.bike^$denyallow=rapido.bike
 ||*.bingo^
-||*.bio^
 ||*.biz^$denyallow=anonymurl.biz|beiniz.biz|bonial.biz|cloudns.biz|cyberciti.biz|epson.biz|ette.biz|gimmeporn.biz|iimwf.biz|localise.biz|luckysbarbershop.biz|movabletype.biz|panasonic.biz|slussen.biz|wyborcza.biz|yoox.biz
 ||*.boats^
 ||*.bond^
@@ -82,6 +84,7 @@
 ||*.eco^
 ||*.esq^$denyallow=erika.esq
 ||*.events^$denyallow=ticketco.events
+||*.expert^
 ||*.fan^$denyallow=lemmy.fan
 ||*.fashion^
 ||*.finance^
@@ -89,6 +92,8 @@
 ||*.fishing^
 ||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|union.fit
 ||*.foo^$denyallow=helloworld.foo
+||*.forsale^
+||*.foundation^
 ||*.fund^
 ||*.fyi^$denyallow=apollo.fyi|better.fyi|genderdysphoria.fyi|iusearchlinux.fyi|levels.fyi|lunar.fyi|vercel.fyi
 ||*.gdn^$denyallow=cst.gdn|pss.gdn
@@ -125,6 +130,7 @@
 ||*.market^$denyallow=digiseller.market|otto.market|plati.market|spotim.market|warframe.market
 ||*.markets^
 ||*.men^
+||*.miami^
 ||*.ml^$denyallow=aire.ml|amap.ml|fmhy.ml|ghostcloud.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|precure.ml|prompt.ml
 ||*.mom^
 ||*.money^$denyallow=flowyour.money
