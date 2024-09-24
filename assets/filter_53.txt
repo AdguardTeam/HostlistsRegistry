@@ -1,9 +1,9 @@
 !
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
-! Version: 1.0.14.53
+! Version: 1.0.14.54
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-09-23T02:28:37.593Z
+! Last modified: 2024-09-24T03:10:17.719Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -13,7 +13,7 @@
 !
 !Title: AWAvenue Ads Rule
 !--------------------------------------
-!Total lines: 679
+!Total lines: 697
 !Version: 1.5.3-release
 
 !Homepage: https://github.com/TG-Twilight/AWAvenue-Ads-Rule
@@ -57,6 +57,7 @@
 ||adcolony.com^
 ||adexpo.tencentmusic.com^
 ||adfilter.imtt.qq.com^
+||adfstat.yandex.ru^
 ||adguanggao.eee114.com^
 ||adjust.cn^
 ||adjust.com^
@@ -78,12 +79,15 @@
 ||ads.huan.tv^
 ||ads.huantest.com^
 ||ads.icloseli.cn^
+||ads.linkedin.com^
 ||ads.music.126.net^
 ||ads.oppomobile.com^
 ||ads.pinterest.com^
 ||ads.servebom.com^
 ||ads.service.kugou.com^
+||ads.tiktok.com^
 ||ads.v3mh.com^
+||ads.youtube.com^
 ||ads3-normal-hl.zijieapi.com^
 ||ads3-normal-lf.zijieapi.com^
 ||ads3-normal-lq.zijieapi.com^
@@ -93,6 +97,7 @@
 ||ads5-normal-lq.zijieapi.com^
 ||ads5-normal.zijieapi.com^
 ||adsense.google.cn^
+||adserver.unityads.unity3d.com^
 ||adservice.google.cn^
 ||adservice.google.com^
 ||adserviceretry.kugou.com^
@@ -146,10 +151,13 @@
 ||analytics.95516.com^
 ||analytics.google.com^
 ||analytics.pinterest.com^
+||analytics.pointdrive.linkedin.com^
 ||analytics.query.yahoo.com^
 ||analytics.rayjump.com^
+||analytics.s3.amazonaws.com^
 ||analytics.tiktok.com^
 ||analytics.woozooo.com^
+||analyticsengine.s3.amazonaws.com^
 ||analyze.lemurbrowser.com^
 ||andrqd.play.aiseet.atianqi.com^
 ||ap.dongqiudi.com^
@@ -180,6 +188,7 @@
 ||applog.uc.cn^
 ||applog.zijieapi.com^
 ||ata-sdk-uuid-report.dreport.meituan.net^
+||auction.unityads.unity3d.com^
 ||audid-api.taobao.com^
 ||audid.umeng.com^
 ||azr.footprintdns.com^
@@ -218,11 +227,14 @@
 ||chat1.jd.com^
 ||chiq-cloud.com^
 ||cj.qidian.com^
+||click.googleanalytics.com^
+||click.oneplus.cn^
 ||clog.miguvideo.com^
 ||cnzz.com^
 ||collect.kugou.com^
 ||commdata.v.qq.com^
 ||config.chsmarttv.com^
+||config.unityads.unity3d.com^
 ||conn-service-cn-03.allawntech.com^
 ||conn-service-cn-04.allawntech.com^
 ||conn-service-cn-05.allawntech.com^
@@ -260,8 +272,11 @@
 ||errnewlog.umeng.com^
 ||event.tradplusad.com^
 ||events-drcn.op.dbankcloud.cn^
+||events.reddit.com^
+||events.redditmedia.com^
 ||firebaselogging-pa.googleapis.com^
 ||flurry.com^
+||freshmarketer.com^
 ||g-staic.ganjingworld.com^
 ||g2.ganjing.world^
 ||game.loveota.com^
@@ -319,6 +334,8 @@
 ||img.adnyg.com^
 ||img.adnyg.com.w.kunlungr.com^
 ||imtmp.net^
+||iot-eu-logser.realme.com^
+||iot-logser.realme.com^
 ||ipv4.kkmh.com^
 ||irc.qubiankeji.com^
 ||itv2-up.openspeech.cn^
@@ -507,6 +524,7 @@
 ||static.ads-twitter.com^
 ||statics.woozooo.com^
 ||stats.qiumibao.com^
+||stats.wp.com^
 ||statsigapi.net^
 ||success.ctobsnssdk.com^
 ||syh-imp.cdnjtzy.com^
@@ -615,6 +633,7 @@
 ||weather-analytics-events.apple.com^
 ||weather-community-drcn.weather.dbankcloud.cn^
 ||webstat.qiumibao.com^
+||webview.unityads.unity3d.com^
 ||widgets.outbrain.com^
 ||widgets.pinterest.com^
 ||win.gdt.qq.com^
@@ -645,7 +664,6 @@
 /.*\.a\.market\.xiaomi\.com/
 /.*\.data\.hicloud\.com/
 /.*\.log\.aliyuncs\.com/
-/.*\.shouji\.sogou\.com/
 /[a-zA-Z0-9.-]*-ad-[a-zA-Z0-9.-]*\.byteimg\.com/
 /[a-zA-Z0-9.-]*-ad\.sm\.cn/
 /[a-zA-Z0-9.-]*-ad\.video\.yximgs\.com/
