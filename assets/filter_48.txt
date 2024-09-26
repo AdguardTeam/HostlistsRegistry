@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Pro Blocklist
 ! Description: Big broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.
-! Version: 1.0.14.78
+! Version: 1.0.14.79
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-09-26T04:07:19.104Z
+! Last modified: 2024-09-26T11:05:26.229Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -17,10 +17,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 1 day
-! Last modified: 26 Sep 2024 01:21 UTC
-! Version: 2024.0926.0121.20
+! Last modified: 26 Sep 2024 09:57 UTC
+! Version: 2024.0926.0957.30
 ! Syntax: AdBlock
-! Number of entries: 170716
+! Number of entries: 170755
 !
 ||0.org^
 ||0.to^
@@ -18778,6 +18778,7 @@
 ||matomo.attitude-manche.fr^
 ||attivertura.com^
 ||cdn.attn.tv^
+||samsung.attn.tv^
 ||ma.attollo.se^
 ||attorchica.com^
 ||attorney-client.org^
@@ -41312,7 +41313,9 @@
 ||save.salary.com.au^
 ||salesdoubler.com.ua^
 ||analytics.sampatrevoimoveis.com.br^
+||cn-api.mcsvc.samsung.com.cn^
 ||smetrics.samsung.com.cn^
+||push.samsungosp.com.cn^
 ||samuraistudio.com.mx^
 ||trk.sana.com.tr^
 ||oznlro.sanity.com.au^
@@ -55526,6 +55529,8 @@
 ||e-interactransfer.com^
 ||analytics.e-it-c.ch^
 ||e-kaiseki.com^
+||akcjasamsung.e-kei.pl^
+||samsung-akcja.e-kei.pl^
 ||e-kino.tv^
 ||analytics.e-langhamhotels.com^
 ||tr.info.e-leclerc.com^
@@ -56327,6 +56332,7 @@
 ||econtinuedidg.com^
 ||tracking.ecookie.fr^
 ||rrzjma.ecoprodukt.sk^
+||samsung.ecorebates.com^
 ||static.ecorebates.com^
 ||ecorevivestore.com^
 ||ecorideplus.com^
@@ -60132,6 +60138,13 @@
 ||analytics.everest.com^
 ||everestads.net^
 ||trk.everestblowers.com^
+||samsungemea.everestengagement.com^
+||samsungeu.everestengagement.com^
+||samsungmy.everestengagement.com^
+||samsungsg.everestengagement.com^
+||samsungth.everestengagement.com^
+||samsungusa.everestengagement.com^
+||samsungvn.everestengagement.com^
 ||everestjs.net^
 ||everestnote.com^
 ||everestop.io^
@@ -73859,6 +73872,7 @@
 ||analytics.hattersheim-stadt.de^
 ||sp.hattiesburgamerican.com^
 ||sxjfhh.hattiesburgamerican.com^
+||hattingener-rohrreinigung.de^
 ||hatwasallo.com^
 ||hatwasallokmv.info^
 ||hatzhq.net^
@@ -84285,6 +84299,9 @@
 ||qc.japo.vn^
 ||japootchust.net^
 ||analytics.jappos.net^
+||conn-v2.samsung.japps.cn^
+||report-v2.samsung.japps.cn^
+||sis-v2.samsung.japps.cn^
 ||japw.cloud^
 ||jaqacvonparh.com^
 ||analytics.jar.land^
@@ -133343,6 +133360,7 @@
 ||tracking.europe.business.samsung.com^
 ||seao.business.samsung.com^
 ||channelusa.samsung.com^
+||dc.dqa.samsung.com^
 ||event-tracking.samsung.com^
 ||bldr.mkt.samsung.com^
 ||analytics.mpay.samsung.com^
@@ -133358,7 +133376,17 @@
 ||samsungadhub.com^
 ||samsungads.com^
 ||samsungallstore.com^
+||acr-au-prd.samsungcloud.tv^
+||acr-br-prd.samsungcloud.tv^
+||acr-ca-prd.samsungcloud.tv^
+||acr-eu-prd.samsungcloud.tv^
+||acr-in-prd.samsungcloud.tv^
+||acr-kr-prd.samsungcloud.tv^
+||acr-mx-prd.samsungcloud.tv^
+||acr-us-prd.samsungcloud.tv^
+||devicelog.samsungcloudsolution.net^
 ||prderrordumphsm.samsungcloudsolution.com^
+||prderrordumpssm.samsungcloudsolution.net^
 ||diagmon-policy.samsungdm.com^
 ||diagmon-serviceapi.samsungdm.com^
 ||report.gras.samsungdm.com^
@@ -133375,18 +133403,27 @@
 ||samsungfocusforum.net^
 ||samsunggp.com^
 ||shealth-analytics-api.samsunghealth.com^
+||shealth-analytics-stg-api.samsunghealth.com^
+||analytics-dev-api.test.samsunghealth.com^
 ||analytics-api.samsunghealthcn.com^
 ||invitation.samsungiotcloud.com^
 ||analytics.samsungknox.com^
+||analytics-stg.samsungknox.com^
 ||api-analytics.samsungknox.com^
+||api-analytics-qa.samsungknox.com^
+||b2banalytics.samsungknox.com^
 ||metrics.samsunglife.com^
 ||smetrics.samsunglife.com^
 ||banner.samsungmembers.com^
 ||nmetrics.samsungmobile.com^
+||gld.samsungosp.com^
+||stats.samsungpass.com^
 ||samsungpleomax.com^
 ||samsungprod.xyz^
 ||osb.samsungqbe.com^
 ||osb-krsvc.samsungqbe.com^
+||samsungr.com^
+||samsungrm.com^
 ||test.samsungrm.net^
 ||sspapi-prd.samsungrs.com^
 ||matomo.samsungsdibs.at^
@@ -145297,6 +145334,8 @@
 ||swwpush.com^
 ||swxun.com^
 ||gvmomuqjv1.swyftx.com^
+||api-samsung.swypeconnect.com^
+||lbs-samsung.swypeconnect.com^
 ||swzydgm.com^
 ||tj.sxber.com^
 ||sxbexrv.cn^
