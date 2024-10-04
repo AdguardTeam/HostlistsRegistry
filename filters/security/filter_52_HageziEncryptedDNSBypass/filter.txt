@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
 ! Description: Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies. Prevention of bypassing is not guaranteed.
-! Version: 1.0.14.76
+! Version: 1.0.14.77
 ! Homepage: https://github.com/hagezi/dns-blocklists#bypass
-! Last modified: 2024-10-04T04:07:37.519Z
+! Last modified: 2024-10-04T12:09:47.078Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -18,10 +18,10 @@
 ! License: https://github.com/hagezi/dns-blocklists/blob/main/LICENSE
 ! Issues: https://github.com/hagezi/dns-blocklists/issues
 ! Expires: 7 days
-! Last modified: 03 Oct 2024 22:05 UTC
-! Version: 2024.1003.2205.17
+! Last modified: 04 Oct 2024 07:09 UTC
+! Version: 2024.1004.0709.21
 ! Syntax: AdBlock
-! Number of entries: 3398
+! Number of entries: 3404
 !
 ||003153.xyz^
 ||ns.00dani.me^
@@ -234,6 +234,10 @@
 ||doh.apad.pro^
 ||ag.apollohct.com^
 ||doh.dns.apple.com^
+||mask-api.fe.apple-dns.net^
+||mask-api.fe2.apple-dns.net^
+||mask.apple-dns.net^
+||mask-t.apple-dns.net^
 ||appleproxy.com^
 ||dns.applewebkit.dev^
 ||doh.applied-privacy.net^
@@ -1390,6 +1394,8 @@
 ||icitek.com^
 ||mask.icloud.com^
 ||mask-api.icloud.com^
+||mask-boot.icloud.com^
+||mask-canary.icloud.com^
 ||mask-h2.icloud.com^
 ||icpsuawn1zy5amys.com^
 ||tienpham.id.vn^
