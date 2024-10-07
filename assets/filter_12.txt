@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.14.48
+! Version: 1.0.14.49
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2024-10-05T13:08:37.002Z
+! Last modified: 2024-10-07T00:26:24.580Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.26
 !
@@ -12,7 +12,7 @@
 ! Source: https://raw.githubusercontent.com/DandelionSprout/adfilt/master/Alternate%20versions%20Anti-Malware%20List/AntiMalwareAdGuardHome.txt
 !
 ! Title: 💊 Dandelion Sprout's Anti-Malware List (for AdGuard Home, AdGuard for Android/Windows/macOS' DNS filtering, and Pi-Hole FTL ≥5.22)
-! Version: 05October2024v1
+! Version: 07October2024v2
 ! Expires: 1 day
 ! Description: This list goes the extra kilometer to prevent more malware than other mainstream anti-malware lists. It blocks heavily abused top-level domains (and even search engine results for them), blocks domains used in malware redirection trains and in domain parking schemes, blocks sponsored Windows PUP nags on PC guide articles, uses mass blocking of domains belonging to bad IPs, and has many other subcategories that give it a solid advantage over similar lists out there.
 ! For other security-specific lists I've made, check out https://github.com/DandelionSprout/adfilt/tree/master/Special%20security%20lists
@@ -32,7 +32,7 @@
 ! Palau (Put on break due to too many whitelistings being needed)
 !!!||pw^$denyallow=libgen.pw|petridish.pw|palaugov.pw|dpc.pw|buttercup.pw|rezka.pw|darkcrystal.pw|xor.pw|fullhdfilmizlesene.pw|gopass.pw|vost.pw|core.pw|bittor.pw|plutonium.pw|nitter.pw|kge.pw
 ! Legitimate use is almost non-existent, but has a tiny userbase in Japan. Its extreme common-ness in malware redirections means that the entry will be kept forever.
-||*.top^$dnstype=~CNAME,denyallow=caitlin.top|callmebymygender.top|corriente.top|gdtot.top|nicenature.top|reminder.top|magocoro.top|castlevania.top|suiten.top|shucks.top|1stream.top|ambr.top|techblog.top|changlam10.top|changlam11.top|pdcdn1.top|mastodon.top|pressplay.top|chillx.top|strims.top|thedesk.top|audioforyou.top|pegelinux.top|awavenue.top|reyhub.top|iboxs.top
+||*.top^$dnstype=~CNAME,denyallow=caitlin.top|callmebymygender.top|corriente.top|gdtot.top|nicenature.top|reminder.top|magocoro.top|castlevania.top|suiten.top|shucks.top|1stream.top|ambr.top|techblog.top|changlam10.top|changlam11.top|pdcdn1.top|mastodon.top|pressplay.top|chillx.top|strims.top|thedesk.top|audioforyou.top|pegelinux.top|awavenue.top|reyhub.top|iboxs.top|adrules.top
 ! International topical domains that have consistently horrendous scores on watchlists of bad TLDs, and whose use for legit purposes is practically non-existent.
 ||*.loan^$dnstype=~CNAME
 !!!||agency^$denyallow=battlefield.agency|baam.agency|robotzebra.agency|uphotel.agency|ws.agency (Can't remember the last time I saw it used in a redirection train.)
@@ -41,7 +41,7 @@
 !!!||ooo^$denyallow=toast.ooo
 ! (https://github.com/DandelionSprout/adfilt/issues/999)
 !!!@@://oo*.ooo/
-! https://bgp.he•net/AS202492#_prefixes (17/07/2022)
+! https://bgp•he•net/AS202492#_prefixes (17/07/2022)
 !!!||monster^$denyallow=egybest.monster|yts.monster|cloudcdn.monster|fedi.monster|rollenspiel.monster|tts.monster|geometry.monster
 ! https://github.com/AdguardTeam/AdguardFilters/issues/131156
 !!!||sbs^$denyallow=ecopulse.sbs
@@ -208,27 +208,6 @@
 ||ps1games.online^
 ||roms-download.com^
 ||gamesgx.net^
-
-! ——— Entries from «abuse.ch ZeuS Blocklist», which was discontinued on the 8th of July 2019. ———
-||afobal.cl^
-||alvoportas.com.br^
-
-||bright.su^
-||domnicpeter.in.net^
-||dzitech.net^
-||fadzulani.com^
-||hruner.com^
-||interlogistics.com.vn^
-||ivansaru.418.com1.ru^
-||jangasm.org^
-||ns511849.ip-192-99-19.net^
-||ns513726.ip-192-99-148.net^
-||servmill.com^
-||ssl.sinergycosmetics.com^
-||telefonfiyatlari.org^
-||update.rifugiopontese.it^
-||vodahelp.sytes.net^
-||witkey.com^
 
 ! ——— Browser extension store entries for notoriously poor or malicious adblocker forks ———
 ! Note: Currently the Chrome Web Store entries only work properly for Chrome users on AdGuard for Windows/Mac, due to limitations placed on browser extensions; see https://github.com/gorhill/uBlock/wiki/Privileged-Pages
@@ -4611,7 +4590,7 @@
 ||daque.cn^
 ! https://www•huorong.cn/info/1598957552515.html
 ||dabaicai.com^
-! https://www•huorong.cn/info/1617368984641.html
+! https://www•huorong•cn/info/1617368984641.html
 ||qqfzn.com^
 ! https://github.com/uBlockOrigin/uAssets/pull/10017
 ||flash.cn^
@@ -4623,11 +4602,11 @@
 ! https://github.com/DandelionSprout/adfilt/issues/63#issuecomment-986306768
 ||chess-progress.ru^
 ||ouhastay.net^
-! https://scammer.info/t/there-are-things-in-the-game-that-will-interest-you-trojan/84908
+! https://scammer•info/t/there-are-things-in-the-game-that-will-interest-you-trojan/84908
 ||askara.super.site^
 
 
-! https://scammer.info/t/fake-facebook-login-page/84939
+! https://scammer•info/t/fake-facebook-login-page/84939
 
 ! https://github.com/DandelionSprout/adfilt/issues/63#issuecomment-988127908
 ! https://www•tek.no/i/lVeQAe/
@@ -4641,7 +4620,7 @@
 
 ||34.201.22.10^
 
-! https://scammer.info/t/crypto-scammers-onceagain/85354
+! https://scammer•info/t/crypto-scammers-onceagain/85354
 
 ! https://www•virustotal•com/gui/file/12013662c71da69de977c04cd7021f13a70cf7bed4ca6c82acbc100464d4b0ef/community
 ||123.10.225.196^
@@ -4664,7 +4643,7 @@
 ||onemacusa.net^
 ! https://github.com/DevSpen/links/pull/3
 ||systemupdatecontrol.com^
-! https://bazaar.abuse.ch/sample/357226dff2f3309f8271b5a7c2cc816aa8fb779275357dce9b98b30357951210/
+! https://bazaar•abuse•ch/sample/357226dff2f3309f8271b5a7c2cc816aa8fb779275357dce9b98b30357951210/
 ||mozicrack.com^
 ||download-srvr.xyz^
 ||134.122.115.190^
@@ -4679,7 +4658,7 @@
 ||findes.co^
 
 
-! https://bazaar.abuse.ch/sample/84d93b2fd2597da5d611165cbad0b252569a837c56a94a42849f2bedc8af033a/
+! https://bazaar•abuse•ch/sample/84d93b2fd2597da5d611165cbad0b252569a837c56a94a42849f2bedc8af033a/
 ||freeprosoftz.com^
 
 
@@ -4723,7 +4702,7 @@
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/111970
 /(^|\.|://)[a-z0-9-]{2,}trk\.xyz(/|$)/
-! https://bazaar.abuse.ch/sample/d7308dab0110ae3bc79fd15024f5ccfcbd6e676b7c42b27a0112506e8357a6dc/ → https://app.any.run/tasks/bc53e7a9-5fd7-4682-894d-11e48e9ea89a#
+! https://bazaar•abuse•ch/sample/d7308dab0110ae3bc79fd15024f5ccfcbd6e676b7c42b27a0112506e8357a6dc/ → https://app•any•run/tasks/bc53e7a9-5fd7-4682-894d-11e48e9ea89a#
 ||pccrackworld.com^
 ||calsign.xyz^
 ||jwq98u.xyz^
@@ -4748,13 +4727,13 @@
 ||maanews.xyz^
 ||newsdeals.xyz^
 ||dreamdigimedia.blogspot.com^
-! https://bazaar.abuse.ch/sample/b959fb160dac2a15b8e65c15e2b1738d356c03e13623588bc70aab825c57660a/
+! https://bazaar•abuse•ch/sample/b959fb160dac2a15b8e65c15e2b1738d356c03e13623588bc70aab825c57660a/
 ||activatorwin.com^
 ||freeversioncrack.com^
 ||top3hostngc.xyz^
 ||198.199.120.251^
 
-! https://www•telia.no/kundeservice/mobil/malware-flubot-android/
+! https://www•telia•no/kundeservice/mobil/malware-flubot-android/
 !+ NOT_OPTIMIZED
 /^https?://(www\.)?[a-z0-9-]{1,}\.[a-z]{2,17}/[a-z0-9]/\?[a-z0-9.-]{8,}$/
 ! A Discord conversation I had about Throneful
@@ -5155,7 +5134,7 @@
 
 ||95.211.26.202^
 
-! https://kommunikasjon.ntb.no/pressemelding/power-advarer-mot-sms-svindel?publisherId=17847615&releaseId=17937583
+! https://kommunikasjon•ntb•no/pressemelding/power-advarer-mot-sms-svindel?publisherId=17847615&releaseId=17937583
 ||bzsx.link^
 ||dfvd.link^
 ||dsvs.link^
@@ -5173,10 +5152,10 @@
 ||165.227.168.212^
 
 
-! https://www•reddit.com/r/engrish/comments/w6u4uy/received_this_text_message_yesterday_i_am_very/
+! https://new•reddit•com/r/engrish/comments/w6u4uy/received_this_text_message_yesterday_i_am_very/
 ://162.241.115.
 
-! https://dinside.dagbladet.no/mobil/ikke-la-deg-friste/76730599
+! https://dinside•dagbladet•no/mobil/ikke-la-deg-friste/76730599
 ||k-yw.com^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/125285
 ||fearconic.com^
@@ -5389,6 +5368,15 @@
 ||influencer2020.com^
 ||vooculok.com^
 
+||edaukooru.net^
+||mauzanapsusi.net^
+||nucmagnotoal.com^
+||phacmeptaus.net^
+||seepsoaceva.net^
+||staudsees.net^
+||stelronsi.net^
+||tadaickaipt.com^
+||vekeltaizy.net^
 ||139.45.197.236^
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/128029
@@ -7469,7 +7457,7 @@
 
 ! https://github.com/AdguardTeam/AdguardFilters/issues/136390
 ||glthub.
-! https://app.any.run/tasks/67907c11-6877-4c38-932f-2cf09ee4e434
+! https://app•any•run/tasks/67907c11-6877-4c38-932f-2cf09ee4e434
 ||adblock-chrome.net^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/137635
 ||aaolh.icu^
@@ -9567,13 +9555,13 @@
 
 ||194.110.247.242^
 
-! https://new.reddit.com/r/engrish/comments/10zs6f6/low_budget_scam/
+! https://new•reddit•com/r/engrish/comments/10zs6f6/low_budget_scam/
 ||ups-addressed.me^
 ||ups-quote.me^
 ||meta-whatsapp.me^
 ||54.219.218.169^
 
-! https://new.reddit.com/r/engrish/comments/10z8r2u/well_you_tried/
+! https://new•reddit•com/r/engrish/comments/10z8r2u/well_you_tried/
 ||0365alert.com^
 ||0365online.com^
 ||365-notifcation.com^
@@ -10005,7 +9993,7 @@
 ||yourorderupdate.com^
 ||64.132.201.92^
 
-! https://www•adressa.no/nyheter/trondheim/i/BWkdkw/trodde-hun-skulle-faa-en-pakke-i-posten-ble-lurt-for-titusener
+! https://www•adressa•no/nyheter/trondheim/i/BWkdkw/trodde-hun-skulle-faa-en-pakke-i-posten-ble-lurt-for-titusener
 ||acessmygov.online^
 ||centerlinkmygov.com^
 ||centierssl.us^
@@ -10737,7 +10725,7 @@
 ||54.204.83.105^
 
 ! https://github.com/DandelionSprout/adfilt/issues/808
-! https://www•mandiant.com/resources/blog/tracking-evolution-gootloader-operations (26/01/2023)
+! https://www•mandiant•com/resources/blog/tracking-evolution-gootloader-operations (26/01/2023)
 ||jonathanbartz.com^
 ||jp.imonitorsoft.com^
 ||junk-bros.com^
@@ -11438,7 +11426,7 @@
 ||tiujejhexe.click^
 ||vuegebjexe.click^
 ||xauhusjexe.click^
-! https://new.reddit.com/r/engrish/comments/15080hg/a_message_i_just_got_from_a_scammer/
+! https://new•reddit•com/r/engrish/comments/15080hg/a_message_i_just_got_from_a_scammer/
 ||tzn03.me^
 ! https://github.com/AdguardTeam/AdguardFilters/issues/156573
 ||707.su^
@@ -17096,7 +17084,7 @@
 ||wmptengate.com^
 ||93.93.51.223^
 ||github.sale^
-! https://www•tv2.no/nyheter/innenriks/advarer-ikke-klikk-pa-lenken/16040614/
+! https://www•tv2•no/nyheter/innenriks/advarer-ikke-klikk-pa-lenken/16040614/
 ||0nedr1ved0cumentonline.com^
 ||88godetailsvc.com^
 ||amexmobileupdate.cc^
@@ -17320,7 +17308,7 @@
 ||no-oppdatere.
 ||no-oppdatert.
 ||179.43.189.62
-! https://new.reddit.com/r/engrish/comments/16lg4i1/seems_legit/
+! https://new•reddit•com/r/engrish/comments/16lg4i1/seems_legit/
 ||authde.us^
 ||dc-r.us^
 ||de-po.us^
@@ -22967,7 +22955,7 @@
 ||amoxycillin1st.com^
 ! The Jerma985 Discord server
 ||crazycrabreedville.com^
-! https://flclever.weebly•com/pixie-hollow-mini-games•html (06/05/2021)
+! https://flclever•weebly•com/pixie-hollow-mini-games•html (06/05/2021)
 ||messium.info^
 ! Various Google searches
 ://hullcitytigers.com^
@@ -24561,7 +24549,7 @@
 
 /^(https?://)?192\.243\.59\.\d{1,3}($|/)/
 
-! rule34hentai.net when uBlock Filters and AdGuard Base are turned off
+! rule34hentaiNET when uBlock Filters and AdGuard Base are turned off
 ||eivbjsegbino.com^
 ||jpjmpqaupc.com^
 ||qrclevrfjw.com^
@@ -25266,10 +25254,10 @@
 ||medicinehelp.news^
 ||147.135.16.27^
 
-! https://www•google.no/search?q=mlp+g5&newwindow=1&tbm=isch&oq=mlp+g5&sclient=img
+! https://www•google•no/search?q=mlp+g5&newwindow=1&tbm=isch&oq=mlp+g5&sclient=img
 ||ingeniovirtual.com^
 ! Spambot posts on Tumblr (19/09/2022)
-! https://scambiofigu.forumcommunity•net/?t=57482915
+! https://scambiofigu•forumcommunity•net/?t=57482915
 ||scambiofigu.net^
 ! Only links to another site's (APKPure) APKs, yet tries to promote its own browser extension on the alleged download pages, which comes across as suspicious
 ! Google results for 'Katy and Bob: Cake Café powerpc' (04/11/2022)
@@ -25421,16 +25409,16 @@
 ||tvbxrr4ym3.click^
 ||8ebtdbsjsu.click^
 ||eicxz6jfjaw.click^
-! https://app.any.run/tasks/679e9afa-eb19-4414-a086-e280a779a448 and https://tria.ge/230217-xd8nksgc9x/behavioral2
+! https://app•any•run/tasks/679e9afa-eb19-4414-a086-e280a779a448 and https://tria•ge/230217-xd8nksgc9x/behavioral2
 ||ru-torproject.ru^
 
 ! https://forums•malwarebytes•com/topic/295588-support-scam-supportclientexe-and-screenconnectwindowsclientexe/ (account required)
 ! https://forums•malwarebytes•com/topic/295605-techsupport-scam/ (account required)
-! https://app.any.run/tasks/0f8b5786-177a-45c0-a1de-32e0d68beff2
+! https://app•any•run/tasks/0f8b5786-177a-45c0-a1de-32e0d68beff2
 ||123secure.org^
 ! https://github.com/RPiList/specials/issues/948#issuecomment-1458739160
 ||yuppdownload.com^
-! Commonly set as a proxy on hacked devices (https://www.virustotal.com/gui/url/e610e7d09c614529cb8c64185717769946f5c86044ac5c31c6608e604995f577/detection)
+! Commonly set as a proxy on hacked devices (https://www•virustotal•com/gui/url/e610e7d09c614529cb8c64185717769946f5c86044ac5c31c6608e604995f577/detection)
 ||34.80.59.191^
 
 ||megabooru.com^
