@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Samsung Tracker Blocklist",
+    "description": "Blocks Samsung native broadband tracker that track your activity.",
+    "homepage": "https://github.com/hagezi/dns-blocklists",
+    "sources": [
+        {
+            "name": "HaGeZi's Samsung Tracker Blocklist",
+            "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.samsung.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
