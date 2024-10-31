@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.15.35
+! Version: 1.0.15.36
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-10-31T04:08:29.731Z
+! Last modified: 2024-10-31T07:06:34.151Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -2950,9 +2950,12 @@ thepiratebay3.com^
 ||re-captha-version-
 ! https://github.com/uBlockOrigin/uAssets/issues/24944
 ||valid-check-tl-
+! https://github.com/uBlockOrigin/uAssets/issues/25858
+! https://www.virustotal.com/gui/url/346513820edf167da7ee220fef88802fcc6568b8c7d42802d6c47796a455abc2
 ! https://blog.sucuri.net/2024/05/mal-metrica-redirects-users-to-scam-sites.html
 ! http://teluguodu.com/om-bheem-bush-movie-review/ - example site
-||check-tl-ver-
+||psh-static.b-cdn.net^
+||check-tl-
 ||tech4u.app^
 ||cloud.tnewstraffic.com^
 ||cache.cloudswiftcdn.com^
