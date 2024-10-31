@@ -1,31 +1,31 @@
 [
 	{
-		"hostlist.1.name": "مرشح AdGuard DNS",
-		"hostlist.1.description": "قائمة تتكون من عدة فلاتر (فلتر قاعدة AdGuard، فلتر مواقع ووسائل التواصل الاجتماعي، فلتر الحماية من التتبع، فلتر إعلانات الجوال، EasyList و EasyPrivacy) ومبسطة خصيصاً لتكون متوافقة بشكل أفضل مع مستوى DNS وحظر الإعلانات"
+		"hostlist.1.name": "فلتر AdGuard DNS",
+		"hostlist.1.description": "قائمة مكونة من عدة فلاتر (فلتر AdGuard الأساسي وفلتر الوسائط الاجتماعية وفلتر الحماية من التتبع وفلتر إعلانات الجوال وفلتر EasyList و EasyPrivacy) وتم تبسيطها خصيصًا لتكون متوافقة بشكل أفضل مع حظر الإعلانات على مستوى DNS"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
-		"hostlist.3.description": "قائمة الحجب مع الأسماء المضيفة للإعلانات وخوادم التتبع"
+		"hostlist.3.description": "قائمة الحظر التي تحتوي على أسماء المضيفين لخوادم الإعلانات والتتبع"
 	},
 	{
 		"hostlist.4.name": "Dan Pollock's List",
 		"hostlist.4.description": "قائمة لحظر الإعلانات ومنع تتبع المستخدم"
 	},
 	{
-		"hostlist.5.name": "OISD Blocklist Basic",
-		"hostlist.5.description": "قائمة لحظر الإعلانات والمتتبعين. يعطي الأولوية للوظائف على الحظر."
+		"hostlist.5.name": "OISD Blocklist Small",
+		"hostlist.5.description": "قائمة لمنع الإعلانات وأجهزة التتبع. يعطي الأولوية للوظائف على الحظر."
 	},
 	{
-		"hostlist.6.name": "Dandelion Sprout's Game Console Adblock List",
+		"hostlist.6.name": "قائمة حظر الإعلانات لجهاز لعب Dandelion Sprout",
 		"hostlist.6.description": "قائمة لمنع الإعلانات على وحدات تحكم ألعاب الفيديو التي تستخدم AdGuard Home"
 	},
 	{
-		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
-		"hostlist.7.description": "قائمة لمنع أجهزة التلفزيون الذكية من إرسال البيانات الوصفية إلى البائع، ولحظر الإعلانات في التطبيقات وخدمات الأفلام"
+		"hostlist.7.name": "قائمة حظر التلفزيون الذكي لـ Perflyst و Dandelion Sprout",
+		"hostlist.7.description": "قائمة لمنع أجهزة التلفاز الذكية من إرسال البيانات الوصفية إلى البائع، ولحظر الإعلانات في التطبيقات وخدمات الأفلام"
 	},
 	{
-		"hostlist.8.name": "NoCoin Filter List",
-		"hostlist.8.description": "هذه قائمة حظر الإعلانات لمنع تعدين التشفير المستند إلى المتصفح"
+		"hostlist.8.name": "قائمة فلاتر NoCoin",
+		"hostlist.8.description": "قائمة لمنع تعدين العملات المشفرة عبر المتصفح"
 	},
 	{
 		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
@@ -62,6 +62,10 @@
 	{
 		"hostlist.17.name": "SWE: Frellwit's Swedish Hosts File",
 		"hostlist.17.description": "قائمة لحظر الإعلانات والتتبع والاحتيال والبرامج الضارة بشكل أساسي على مواقع الويب السويدية"
+	},
+	{
+		"hostlist.18.name": "جيش التصيد الاحتيالي",
+		"hostlist.18.description": "قائمة الحظر لتصفية نطاقات الاحتيال"
 	},
 	{
 		"hostlist.19.name": "IRN: Unwanted Iranian domains",
@@ -108,15 +112,15 @@
 		"hostlist.30.description": "قائمة حظر مواقع التصيد الاحتيالي، استنادا إلى قوائم PhishTank وOpenPhish"
 	},
 	{
-		"hostlist.31.name": "Stalkerware Indicators List",
+		"hostlist.31.name": "قائمة مؤشرات الملاحقة",
 		"hostlist.31.description": "مؤشرات التسوية على تطبيقات Stalkerware لنظامي Android و iOS."
 	},
 	{
-		"hostlist.32.name": "The NoTracking blocklist",
+		"hostlist.32.name": "قائمة حظر التتبع",
 		"hostlist.32.description": "قائمة الحظر NoTracking هي قائمة عوامل تصفية تعتمد على DNS لحظر الإعلانات والبرامج الضارة والتصيد وغيرها من القمامة عبر الإنترنت."
 	},
 	{
-		"hostlist.33.name": "Steven Black's List",
+		"hostlist.33.name": "قائمة ستيفن بلاك",
 		"hostlist.33.description": "ملف المضيفين الموحد (ادواري + البرامج الضارة)."
 	},
 	{
@@ -154,5 +158,61 @@
 	{
 		"hostlist.42.name": "ShadowWhisperer's Malware List",
 		"hostlist.42.description": "المواقع الخبيثة ، PUPs ، البرامج الضارة ، خاطفو المتصفح ، مواقع التصيد الاحتيالي"
+	},
+	{
+		"hostlist.43.name": "ISR: EasyList للعبرية",
+		"hostlist.43.description": "قائمة لحظر الإعلانات باللغة العبرية."
+	},
+	{
+		"hostlist.44.name": "تغذية تهديدات HaGeZi",
+		"hostlist.44.description": "يزيد من الأمان بشكل كبير! يحظر البرمجيات الخبيثة، وقرصنة التشفير، والبريد المزعج، والاحتيال، والتصيد الاحتيالي."
+	},
+	{
+		"hostlist.45.name": "إحالة قائمة السماح لـ HaGeZi",
+		"hostlist.45.description": "هذه القائمة ترفع الحظر عن روابط الشركاء والتتبع التي تظهر في الرسائل، نتائج البحث الخ."
+	},
+	{
+		"hostlist.46.name": "قائمة حظر مكافحة القرصنة لـ HaGeZi",
+		"hostlist.46.description": "يحظر مواقع وخدمات تستخدم أساسًا لتوزيع المحتوى المحمي بحقوق الطبع والنشر بشكل غير قانوني."
+	},
+	{
+		"hostlist.47.name": "قائمة حظر القمار لـ HaGeZi",
+		"hostlist.47.description": "يحظر محتوى المقامرة."
+	},
+	{
+		"hostlist.48.name": "قائمة حظر مكافحة القرصنة لـ HaGeZi",
+		"hostlist.48.description": "مِكْنَسَة كبيرة - تنظف الإنترنت وتحمي خصوصيتك! تحظر الإعلانات، الشركات التابعة، المتعقبون، المقاييس، القياس عن بعد، الاحتيال، برمجيات الخبيثة، الاحتيال، التزييف، العملات المعدنية وغيرها من الفضلات."
+	},
+	{
+		"hostlist.49.name": "قائمة حظر HaGeZi النهائية",
+		"hostlist.49.description": "المِكْنَسَة النهائية - تنظف الإنترنت بدقة وتحمي خصوصيتك! تحظر الإعلانات، الشركات التابعة، التتبع (+ الإحالة)، المقاييس، القياس عن بعد، الصيد الاحتيالي، البرمجيات الخبيثة، الاحتيال، مضيف مجاني، التزييف، العملات المعدنية وغيرها من الفضلات."
+	},
+	{
+		"hostlist.50.name": "uBlock₀ الفلاتر - مخاطر البرامج الضارة",
+		"hostlist.50.description": "بالنسبة للمواقع الموثقة التي تعرض المستخدمين لخطر تثبيت برامج ضارة / برامج زائدة / برمجيات خبيثة، وسرقة بيانات تسجيل الدخول، الخ. الغرض هو التأكد على الأقل من تحذير المستخدم من المخاطر المتعلقة."
+	},
+	{
+		"hostlist.51.name": "قائمة حظر HaGeZi's Pro++",
+		"hostlist.51.description": "مِكْنَسَة - تنظف الإنترنت بشكل عدواني وتحمي خصوصيتك! تحظر الإعلانات، الشركات التابعة، التتبع، المقاييس، القياس عن بعد، الاحتيال،رمجيات الخبيثة،لاحتيال، لتزييف، العملات المعدنية وغيرها من الفضلات."
+	},
+	{
+		"hostlist.52.name": "تجاوز HaGeZi المشفر DNS/VPN/TOR/Proxy",
+		"hostlist.52.description": "يمنع طرق تجاوز DNS الخاص بك، ويحظر DNS المشفر، وVPN، وTOR، والبروكسي. منع التجاوز غير مضمون."
+	},
+	{
+		"hostlist.53.name": "قاعدة إعلانات AWAvenue",
+		"hostlist.53.description": "يستخدم بناء جملة Adblock لمحاربة مجموعة متنوعة من SDKs الإعلانية في تطبيقات Android على مستوى الشبكة، مما يمنع تحميلها."
+	},
+	{
+		"hostlist.54.name": "قائمة حظر مكافحة القرصنة لـ HaGeZi DynDNS",
+		"hostlist.54.description": "يحظر خِدْمَات DNS الديناميكية لحماية ضد الاستخدام الشرير في حملات الاحتيال وغيرها."
+	},
+	{
+		"hostlist.55.name": "قائمة حظر مضيفي برامج الضار التابعة لـ HaGeZi",
+		"hostlist.55.description": "يحظر المضيفين المجانيين المعروفين الذين يستضيفون أيضًا برامج ضارة عبر محتوى المستخدم لمنع استخدام هؤلاء المضيفين لأغراض خبيثة."
+	},
+	{
+		"hostlist.56.name": "نطاقات TLD الأكثر إساءة استخدامًا في العالم من HaGeZi",
+		"hostlist.56.description": "نطاقات المستوى الأعلى الأكثر تعرضًا للانتهاك، تم دمجها من HaGeZi وYokoffing وDandelionSprout وSpamHAUS."
 	}
 ]
