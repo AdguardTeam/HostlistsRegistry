@@ -1,35 +1,47 @@
 [
 	{
-		"hostlist.1.name": "Filtre AdGuard Noms de Domaine Simplifiés  (DNS)."
+		"hostlist.1.name": "Filtre AdGuard Noms de Domaine Simplifiés  (DNS).",
+		"hostlist.1.description": "Liste composée de plusieurs filtres ( filtre AdGuard de base, filtre médias sociaux, filtre anti-suivi des URL, celui des publicités pour mobiles, EasyList et EasyPrivacy) et simplifiée spécifiquement pour être davantage compatible avec le blocage des annonces au niveau DNS"
 	},
 	{
-		"hostlist.3.name": "Peter Lowe's Blocklist"
+		"hostlist.3.name": "Peter Lowe's Blocklist",
+		"hostlist.3.description": "Liste de blocage avec les noms d'hôte des serveurs de publicité et de suivi"
 	},
 	{
-		"hostlist.4.name": "La liste de Dan Pollock"
+		"hostlist.4.name": "La liste de Dan Pollock",
+		"hostlist.4.description": "Liste pour bloquer les publicités et empêcher le suivi des utilisateurs"
 	},
 	{
-		"hostlist.5.name": "OISD Blocklist Small"
+		"hostlist.5.name": "OISD Blocklist Small",
+		"hostlist.5.description": "Liste pour bloquer les publicités et les traqueurs. Donne la priorité à la fonctionnalité plutôt qu'au blocage."
 	},
 	{
-		"hostlist.6.name": "Liste de blocage pour console de jeu de Dandelion Sprout"
+		"hostlist.6.name": "Liste de blocage pour console de jeu de Dandelion Sprout",
+		"hostlist.6.description": "Liste de blocage des publicités sur les consoles de jeux vidéo utilisant AdGuard Home"
 	},
 	{
 		"hostlist.7.name": "Listes de blocage de Perflyst et Dandelion Sprout pour téléviseurs intelligents",
 		"hostlist.7.description": "Liste pour empêcher les téléviseurs intelligents d'envoyer des métadonnées au fournisseur et pour bloquer les publicités dans les applications et les services de films"
 	},
 	{
-		"hostlist.8.name": "Liste de filtres NoCoin",
+		"hostlist.8.name": "NoCoin Filter List",
 		"hostlist.8.description": "Liste pour bloquer le minage de crypto-monnaies par le navigateur"
 	},
 	{
-		"hostlist.9.name": "The Big List of Hacked Malware Web Sites"
+		"hostlist.9.name": "The Big List of Hacked Malware Web Sites",
+		"hostlist.9.description": "Une liste de sites web piratés avec des maliciels, des rançongiciels ou des chevaux de Troie"
 	},
 	{
-		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)"
+		"hostlist.10.name": "Scam Blocklist by DurableNapkin",
+		"hostlist.10.description": "Liste de blocage des sites web douteux"
 	},
 	{
-		"hostlist.12.name": "Liste Anti-Malware de Dandelion Sprout"
+		"hostlist.11.name": "Malicious URL Blocklist (URLHaus)",
+		"hostlist.11.description": "Liste de blocage des sites web malveillants basée sur le vidage de la base de données d'Abuse.ch URLhaus"
+	},
+	{
+		"hostlist.12.name": "Liste Anti-Malware de Dandelion Sprout",
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (Filtrage DNS dans AdGuard Home, AdGuard pour Android et AdGuard pour Windows)"
 	},
 	{
 		"hostlist.13.name": "NOR : Filtres nordiques de Dandelion Sprout",
@@ -40,23 +52,36 @@
 		"hostlist.14.description": "Filtres polonais pour Pi-hole."
 	},
 	{
-		"hostlist.15.name": "KOR : YousList"
+		"hostlist.15.name": "KOR : YousList",
+		"hostlist.15.description": "Liste pour bloquer les publicités principalement sur les sites web coréens"
 	},
 	{
-		"hostlist.16.name": "VNM : Liste ABPVN"
+		"hostlist.16.name": "VNM : Liste ABPVN",
+		"hostlist.16.description": "Liste pour bloquer les publicités sur les sites web vietnamiens"
 	},
 	{
-		"hostlist.17.name": "SWE : Fichiers hosts suédois de Frellwit"
+		"hostlist.17.name": "SWE : Fichiers hosts suédois de Frellwit",
+		"hostlist.17.description": "Liste pour bloquer les publicités, le suivi, les escroqueries et les maliciels principalement sur les sites web suédois"
 	},
 	{
-		"hostlist.19.name": "IRN : Domaines iraniens indésirables"
+		"hostlist.18.name": "Phishing Army",
+		"hostlist.18.description": "La liste de blocage pour filtrer les domaines d'hameçonnage"
+	},
+	{
+		"hostlist.19.name": "IRN : Domaines iraniens indésirables",
+		"hostlist.19.description": "Liste optimale et complète pour bloquer les publicités et les traqueurs sur les sites en persan"
+	},
+	{
+		"hostlist.20.name": "MKD: Macedonian Pi-hole Blocklist",
+		"hostlist.20.description": "Liste de blocage des publicités sur les sites Web macédoniens"
 	},
 	{
 		"hostlist.21.name": "CHN : anti-AD",
 		"hostlist.21.description": "Engagé à être la liste de filtrage des publicités avec le taux de réussite le plus élevé de la région chinoise, en offrant un blocage précis des publicités et une protection de la confidentialité."
 	},
 	{
-		"hostlist.22.name": "IDN : ABPindo"
+		"hostlist.22.name": "IDN : ABPindo",
+		"hostlist.22.description": "Filtre complémentaire à EasyList pour bloquer les publicités sur les sites Web indonésiens et malais"
 	},
 	{
 		"hostlist.23.name": "WindowsSpyBlocker - Règles d’espionnage de l’hôte",
@@ -139,44 +164,79 @@
 		"hostlist.43.description": "Liste de blocage des publicités en hébreu."
 	},
 	{
-		"hostlist.44.name": "Flux de renseignements sur les menaces de HaGeZi"
+		"hostlist.44.name": "Flux de renseignements sur les menaces de HaGeZi",
+		"hostlist.44.description": "Augmente significativement la sécurité ! Bloque les maliciels, le Cryptojacking, le Spam, les arnaques et l'hameçonnage."
 	},
 	{
-		"hostlist.45.name": "HaGeZi's Allowlist Referral"
+		"hostlist.45.name": "HaGeZi's Allowlist Referral",
+		"hostlist.45.description": "Cette liste débloque les liens d'affiliation et de suivi qui apparaissent dans les e-mails, les résultats de recherche, etc."
 	},
 	{
-		"hostlist.46.name": "HaGeZi's Anti-Piracy Blocklist"
+		"hostlist.46.name": "HaGeZi's Anti-Piracy Blocklist",
+		"hostlist.46.description": "Bloque les sites Web et les services principalement utilisés pour la distribution illégale de contenus protégés par le droit d'auteur."
 	},
 	{
 		"hostlist.47.name": "HaGeZi's Gambling Blocklist",
 		"hostlist.47.description": "Bloque les jeux d'argent."
 	},
 	{
-		"hostlist.48.name": "HaGeZi's Pro Blocklist"
+		"hostlist.48.name": "HaGeZi's Pro Blocklist",
+		"hostlist.48.description": "Big Broom - Nettoie l'Internet et protège votre confidentialité ! Il bloque les publicités, les liens affiliés, les traqueurs, la télémétrie, l'hameçonnage, les maliciels, les arnaques, le faux, les Coins et les autres nuisances."
 	},
 	{
-		"hostlist.49.name": "HaGeZi's Ultimate Blocklist"
+		"hostlist.49.name": "HaGeZi's Ultimate Blocklist",
+		"hostlist.49.description": "Ultimate Sweeper - Nettoie rigoureusement l'Internet et protège votre confidentialité ! Bloque les publicités, les traqueurs ( +affiliations), les métriques, la télémétrie, l'hameçonnage, les maliciels, les arnaques, les hébergeurs gratuits, le faux, les Coins et autres nuisances."
 	},
 	{
+		"hostlist.50.name": "Filtres uBlock₀ – Risques liés aux logiciels malveillants",
 		"hostlist.50.description": "Pour les sites dont il est établi qu'ils exposent les utilisateurs au risque d'installation de logiciels publicitaires, de logiciels malveillants, de vol des identifiants de connexion, etc. L'objectif est de s'assurer au moins que l'utilisateur est averti des risques qu'il encourt."
 	},
 	{
-		"hostlist.51.name": "HaGeZi's Pro++ Blocklist"
+		"hostlist.51.name": "HaGeZi's Pro++ Blocklist",
+		"hostlist.51.description": "Sweeper - Nettoie méticuleusement l'Internet et protège votre confidentialité ! Bloque les publicités, les affiliations, le pistage, les mesures, la télémétrie, l'hameçonnage, les maliciels, les arnaques, le faux, les Coins et autres nuisances."
 	},
 	{
-		"hostlist.52.name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass"
+		"hostlist.52.name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+		"hostlist.52.description": "Empêche les méthodes permettant de contourner votre DNS, bloque les DNS cryptés, les VPN, TOR et les proxy. La prévention du contournement n’est pas garantie."
 	},
 	{
+		"hostlist.53.name": "Règle AWAvenue Ads Rule",
 		"hostlist.53.description": "Utilise la syntaxe Adblock pour lutter contre divers SDK publicitaires dans les applications Android au niveau du réseau, en les empêchant de se charger."
 	},
 	{
-		"hostlist.54.name": "HaGeZi's DynDNS Blocklist"
+		"hostlist.54.name": "HaGeZi's DynDNS Blocklist",
+		"hostlist.54.description": "Bloque les services DNS dynamiques pour vous protéger contre toute utilisation malveillante dans les campagnes d'hameçonnage et autres."
 	},
 	{
-		"hostlist.55.name": "HaGeZi's Badware Hoster Blocklist"
+		"hostlist.55.name": "HaGeZi's Badware Hoster Blocklist",
+		"hostlist.55.description": "Bloque les hébergeurs gratuits connus qui hébergent également des maliciels via le contenu utilisateur pour empêcher l'utilisation de ces hébergeurs à des fins malveillantes."
 	},
 	{
 		"hostlist.56.name": "HaGeZi's The World's Most Abused TLDs",
 		"hostlist.56.description": "Les domaines de premier niveau les plus abusés, fusionnés à partir de HaGeZi, Yokoffing, DandelionSprout et SpamHAUS."
+	},
+	{
+		"hostlist.57.name": "ShadowWhisperer's Dating List",
+		"hostlist.57.description": "Bloque les sites de rencontres."
+	},
+	{
+		"hostlist.59.name": "AdGuard DNS Popup Hosts filter",
+		"hostlist.59.description": "Le filtre inclut des règles pour les sites qui s'ouvrent dans une nouvelle fenêtre, composées de filtres AdGuard, EasyList, ABPindo et améliorées pour la compatibilité avec le blocage des pop-ups au niveau DNS."
+	},
+	{
+		"hostlist.60.name": "HaGeZi's Xiaomi Tracker Blocklist",
+		"hostlist.60.description": "Bloque les traqueurs hauts débits natifs Xiaomi qui suivent votre activité."
+	},
+	{
+		"hostlist.61.name": "HaGeZi's Samsung Tracker Blocklist",
+		"hostlist.61.description": "Bloque les traqueurs hauts débits natifs Samsung qui suivent votre activité."
+	},
+	{
+		"hostlist.62.name": "Ukrainian Security Filter",
+		"hostlist.62.description": "Filtre les ressources Web malveillantes (hameçonnage, fraude en ligne, maliciel, etc.) visant les citoyens ukrainiens"
+	},
+	{
+		"hostlist.63.name": "HaGeZi's Windows/Office Tracker Blocklist",
+		"hostlist.63.description": "Bloque les traqueurs hauts débits natifs de Windows/Office qui suivent votre activité."
 	}
 ]
