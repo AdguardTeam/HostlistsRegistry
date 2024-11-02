@@ -1,9 +1,9 @@
 !
 ! Title: POL: CERT Polska List of malicious domains
 ! Description: CERT Polska deals with incidents and threats originating or aiming at systems in the .pl domain or connected to NASK's or other Polish Internet provider's network.
-! Version: 1.0.28.42
+! Version: 1.0.28.43
 ! Homepage: https://cert.pl/posts/2020/03/ostrzezenia_phishing/
-! Last modified: 2024-11-02T17:05:36.890Z
+! Last modified: 2024-11-02T18:07:08.942Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -11,10 +11,16 @@
 ! Source name: CERT Polska List of malicious domains
 ! Source: https://hole.cert.pl/domains/v2/domains_adblock.txt
 !
-! Version: 202411021704
+! Version: 202411021806
 ! Title: CERT.PL's Warning List
 ! Expires: 1 hours (update frequency)
 ! Homepage: https://cert.pl/news/single/ostrzezenia_phishing/
+||drop-u.sbs^
+||aec6b.com^
+||lift3r.sbs^
+||ojx.04230569.xyz^
+||blrger.com^
+||cialisgf.com^
 ||hanadol.com^
 ||ollx.8536230.com^
 ||oolx.183647.xyz^
@@ -43818,12 +43824,3 @@
 ||7bu.xc1i.sbs^
 ||0st.xc1i.sbs^
 ||p9w.xc1i.sbs^
-||np8.tc5i.cfd^
-||15y.xc1i.sbs^
-||87a.xc1i.sbs^
-||cashyo5.wixsite.com^
-||impakter.click^
-||olx.orders140520w0313.org^
-||gyn.tc5i.cfd^
-||pao.tc5i.cfd^
-||taxo.surveyprizecentral.com^
