@@ -11,6 +11,10 @@ module.exports = function makeFilterKeyValidator() {
      */
     return {
         validate(filterKey) {
+            if (!filterKey) {
+                throw new Error("Empty filter key encountered");
+            }
+
             if (set.has(filterKey)) {
                 throw new Error(`Filter key "${filterKey}" already encountered earlier`);
             }
