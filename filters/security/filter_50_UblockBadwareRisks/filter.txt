@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.15.60
+! Version: 1.0.15.61
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-11-12T05:06:34.667Z
+! Last modified: 2024-11-12T13:10:32.403Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -1083,9 +1083,6 @@ thepiratebay3.com^
 ||amaeex.one^
 ! https://x.com/harugasumi/status/1838519663145468074
 ||ec2-13-230-253-66.ap-northeast-1.compute.amazonaws.com^
-
-! https://onijima.jp/?p=54165
-||pocket-888.com^
 
 ! scam sites
 ||webuzz.me^
@@ -3474,6 +3471,11 @@ thepiratebay3.com^
 ||amazonl0.com^
 ||amazoni2.com^
 
+! https://khonggianmang.vn/uploads/2024_CBT_44_c16e3ef30d.pdf
+||cskhtructuyen-
+||shopamzselling.com^
+||brvgov.com^
+
 ! https://social.immibis.com/notice/AjwiBkDIwtyORTzsAq
 ||msk.su^
 
@@ -3604,7 +3606,6 @@ thepiratebay3.com^
 ! https://www.virustotal.com/gui/url/dec6d9d61fd01d20623f190e52acccf2bef004ec1cd11324efa93e70d417a1b5
 ! https://www.urlvoid.com/scan/marketplace-item-352983165488.000.pe/
 ||marketplace-item-*.000.pe^
-||midjourney.co^
 
 ! https://blog.talosintelligence.com/coralraider-targets-socialmedia-accounts/
 ! https://www.virustotal.com/gui/url/4084d02e0b9a73221be4a32e853f87471ca45c5a80f8c7e461e640e025503512
@@ -3968,8 +3969,6 @@ thepiratebay3.com^
 ! https://dojy0dg181308.cloudfront.net/f999531.js
 ||dojy0dg181308.cloudfront.net^
 ||d9cshxmf0qazr.cloudfront.net^
-! stage 2
-||jb*img.top^
 ||fhkjgkh.top^
 ||justdakota.top^
 
@@ -3986,3 +3985,6 @@ thepiratebay3.com^
 ||jqueri.at^
 ||jsdelivr.at^
 ||gstatis.co^
+
+! https://github.com/uBlockOrigin/uAssets/issues/26010
+||securevault.top^
