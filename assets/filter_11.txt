@@ -1,9 +1,9 @@
 !
 ! Title: Malicious URL Blocklist (URLHaus)
 ! Description: Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus
-! Version: 1.0.15.95
+! Version: 1.0.15.96
 ! Homepage: https://urlhaus.abuse.ch/
-! Last modified: 2024-11-15T13:11:20.957Z
+! Last modified: 2024-11-16T01:33:53.836Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -12,7 +12,7 @@
 ! Source: https://malware-filter.gitlab.io/malware-filter/urlhaus-filter-agh.txt
 !
 ! Title: Malicious URL Blocklist (AdGuard Home)
-! Updated: 2024-11-15T12:09:01Z
+! Updated: 2024-11-16T00:09:18Z
 ! Expires: 1 day (update frequency)
 ! Homepage: https://gitlab.com/malware-filter/urlhaus-filter
 ! License: https://gitlab.com/malware-filter/urlhaus-filter#license
@@ -26,6 +26,7 @@
 ||103.230.121.12.sslip.io^
 ||1312services.ru^
 ||13194.funian.life^
+||139520.aioc.qbgxl.com^
 ||14stirling.dyndns.org^
 ||162-19-214-220-10cdn.eyeohost.net^
 ||162-19-214-220-11cdn.eyeohost.net^
@@ -71,11 +72,9 @@
 ||4b16.trctrc.click^
 ||4bankmell.buzz^
 ||4v.wtf^
-||5-157-110-232.dyn.eolo.it^
 ||51-159-29-96.cprapid.com^
 ||51-159-29-96.rev.poneytelecom.eu^
 ||53456464343.pages.dev^
-||58yongzhe.com^
 ||594mu.com^
 ||5bnkmlat.buzz^
 ||64.149.167.72.host.secureserver.net^
@@ -136,6 +135,7 @@
 ||aarzoomarine.com^
 ||aav3.dyndns.tv^
 ||abc.sdnt.xyz^
+||abissnet.net^
 ||academistrasbourg.duckdns.org^
 ||access-htaccess.com^
 ||acess.mailcffemx.com^
@@ -221,7 +221,6 @@
 ||appload.icu^
 ||appnotrix.com^
 ||apslline.com^
-||apzzz-20c7e.kxcdn.com^
 ||aquadelta.net^
 ||aquadream.rs^
 ||arcsystem.rodopibg.net^
@@ -243,7 +242,6 @@
 ||aterecierais.ru.com^
 ||atordeg.com.br^
 ||atsknightsbridge.in^
-||aulist.com^
 ||aureanet.com^
 ||authmex.github.io^
 ||autogm.net^
@@ -306,6 +304,7 @@
 ||bitcut.in^
 ||bitkiselurunsiparis.com^
 ||bitwelly.design^
+||bkzj.wang^
 ||blackhattoolz.com^
 ||blaconmachine.com^
 ||blathertom.info^
@@ -382,6 +381,7 @@
 ||cache.ussc.org^
 ||cacw.therapy.emergencepsychservices.com^
 ||cajgtus.com^
+||campingkaymakis.ath.forthnet.gr^
 ||campingplatz-goldbergersee.de^
 ||camposacessoria.online^
 ||campuspersever.es^
@@ -494,6 +494,7 @@
 ||creditunionfund.net^
 ||creo.dancingwithbaker.com^
 ||cribasa.cl^
+||crickout.com^
 ||crossback.cl^
 ||crstvda.com^
 ||cruz-contribution-lewis-h.trycloudflare.com^
@@ -528,6 +529,7 @@
 ||dcdsecurity.com^
 ||dcmxz.duckdns.org^
 ||dcuok.rooms.fierceatfifty.com^
+||dcwblida.dz^
 ||ddec1-0-en-ctp.trendmicro.com^
 ||ddl.safone.dev^
 ||ddy333.cn^
@@ -686,7 +688,6 @@
 ||eosoldesign.ro^
 ||epanpano.com^
 ||epb.shades.whatisaweekend.com^
-||epei77.direct.quickconnect.to^
 ||epicradio.com.ar^
 ||epsemaq.com.pe^
 ||epsys.ro^
@@ -968,6 +969,7 @@
 ||ignetwork.us^
 ||ii71dw.am.files.1drv.com^
 ||iilp.b-cdn.net^
+||ikincielesyaciankara.com.tr^
 ||ili.ink^
 ||illuminazioneproduzione.it^
 ||iloveschweppes.shop^
@@ -1009,7 +1011,6 @@
 ||invasion-prisoners-inns-aging.trycloudflare.com^
 ||invictaindia.com^
 ||invoiceposs.shop^
-||ip207.ip-91-121-59.eu^
 ||ipoil.contest.printondemandmerchandise.com^
 ||ipos.mycpanel.rs^
 ||ipsolutions.com.ar^
@@ -1089,6 +1090,7 @@
 ||klfs.synology.me^
 ||klikercentar.rs^
 ||klingdow.com^
+||klkl9.b-cdn.net^
 ||kmsaksesuar.com^
 ||korea.addnt.ru^
 ||kortatay.myz.info^
@@ -1101,7 +1103,6 @@
 ||kykgenot.com^
 ||lab.free.thebitmeister.com^
 ||lakadmakatdg.shop^
-||laposte-fr.network^
 ||lar-8.com^
 ||laracat.com^
 ||larpawards.sa.com^
@@ -1125,8 +1126,10 @@
 ||lifesuma.com^
 ||limacamposadv.online^
 ||lindnerelektroanlagen.de^
+||linkvilleplayers.org^
 ||lipa.willowsoaks.com^
 ||litexcheats.netlify.app^
+||livetrack.in^
 ||lj5aga.db.files.1drv.com^
 ||llfusoes.online^
 ||llooadd.com^
@@ -1184,7 +1187,6 @@
 ||medcolemantang.nl^
 ||medises.co.kr^
 ||medsourceglobal.com^
-||meeweb.com^
 ||megaarmshop.com^
 ||megamart.mywire.org^
 ||megazdownloaddatas.com^
@@ -1201,7 +1203,6 @@
 ||meta-exezip.b-cdn.net^
 ||meteolab.it^
 ||meticulousfinance.top^
-||mexicoupsusa.sbs^
 ||mexs.xyz^
 ||mfpusadev.wpengine.com^
 ||mg-plant.com^
@@ -1214,6 +1215,8 @@
 ||microsoftcomdefenderupdate.vercel.app^
 ||mijpostontvangen.nl^
 ||milan77burn.top^
+||mininews.kpzip.com^
+||miracle-receives-lightbox-brighton.trycloudflare.com^
 ||mirailover.ddns.net^
 ||miraitest31.duckdns.org^
 ||mirakleeeman.duckdns.org^
@@ -1288,6 +1291,7 @@
 ||newunioncredit.org^
 ||newvideo.link^
 ||nexipay-app.icu^
+||nexoproducciones.cl^
 ||next-level-verify-01.b-cdn.net^
 ||nftg.here-for-more.info^
 ||nftg.is-a-bruinsfan.org^
@@ -1356,6 +1360,7 @@
 ||oootorgline.ru^
 ||op.shiped.de^
 ||op.tq5.best^
+||opolis.io^
 ||orange-loris-425181.hostingersite.com^
 ||ordenata.org^
 ||orderhangthai.com^
@@ -1406,6 +1411,7 @@
 ||payconiqs.co^
 ||payhostmsa.shop^
 ||payinstant.ca^
+||paytest.infinitegalaxy.cn^
 ||pb.agnt.ru^
 ||pdfdocu.standard.us-east-1.oortech.com^
 ||pelentions.com^
@@ -1446,12 +1452,14 @@
 ||polipastosmexico.com.mx^
 ||popipg.com^
 ||popunder.b-cdn.net^
+||postposted-dat-realistic-email.trycloudflare.com^
 ||pouya.blob.core.windows.net^
 ||powercx1.wetolink.com^
 ||ppzdn.events.socalpocis.org^
 ||prime-yulgang.com^
 ||primo-investment.com^
 ||privatefinancetoday.net^
+||proanuncios.mx^
 ||processoeconsulta.online^
 ||prodesarrolloapurimac.pe^
 ||productbucket3.s3.amazonaws.com^
@@ -1625,6 +1633,7 @@
 ||ser.nrovn.xyz^
 ||ser0xen.com^
 ||serbacetak.com^
+||server-64-235-45-196.da.direct^
 ||server.dico-inside.com^
 ||server.eye-network.ru^
 ||server.fuerer-net.ru^
@@ -1731,7 +1740,6 @@
 ||ssh.shopland.cloud^
 ||ssl.ftp21.cc^
 ||ssn.house.zionanakwenze.com^
-||stagingbyvdveen.com^
 ||stak.pages.dev^
 ||starcountry.net^
 ||starforgemirai.duckdns.org^
@@ -1852,6 +1860,7 @@
 ||tougn.website^
 ||tp2.5ee.mytemp.website^
 ||tpbq.podcast.lisameyerson.com^
+||tqne.events.socalpocis.org^
 ||tqshoes.shop^
 ||trackingshipmentt.xyz^
 ||trackmyshipeng.site^
@@ -2020,6 +2029,7 @@
 ||www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com^
 ||www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com^
 ||wynecare.com^
+||wz.3911.com^
 ||xemhang.vn^
 ||xemir.pw^
 ||xf.mzwh6.ru.com^
