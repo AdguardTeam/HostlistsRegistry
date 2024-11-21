@@ -175,10 +175,17 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
         revision.setVersionCandidate();
         revision.setTimeUpdatedCandidate();
 
-        const hostlistCompiled = await hostlistCompiler({
+        let hostlistCompiled = await hostlistCompiler({
           ...hostlistConfiguration,
           version: revision.getVersionCandidate(),
         });
+
+        if (!metadata.trusted) {
+          // Remove $dnsrewrite rules if the filter is not trusted.
+          hostlistCompiled = hostlistCompiled.filter((line) => {
+            return !line.includes('dnsrewrite=');
+          });
+        }
 
         const hash = calculateRevisionHash(hostlistCompiled);
 
