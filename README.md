@@ -71,6 +71,7 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
   - `environment` - either `dev` or `prod`. Only `prod` lists are available in AdGuard DNS.
   - `disabled` - if set to `true`, the blocklist won't be updated.
   - `tags` — a list of [tags](#tags)
+  - `trusted` - a flag that allows using `$dnsrewrite` rules for this filter. If the filter is not trusted, `$dnsrewrite` rules will be removed from the compiled filter.
 
     <details>
       <summary>Metadata example</summary>
@@ -86,7 +87,8 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
     "expires": "4 days",
     "displayNumber": 3,
     "environment": "prod",
-    "tags": []
+    "tags": [],
+    "trusted": true
   }
   ```
 
