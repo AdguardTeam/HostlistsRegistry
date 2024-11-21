@@ -183,7 +183,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
         if (!metadata.trusted) {
           // Remove $dnsrewrite rules if the filter is not trusted.
           hostlistCompiled = hostlistCompiled.filter((line) => {
-            return !line.includes('dnsrewrite');
+            return !line.includes('dnsrewrite=');
           });
         }
 
