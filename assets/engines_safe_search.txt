@@ -4,6 +4,9 @@
 |edgeservices.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
 |www.bing.com^$dnsrewrite=NOERROR;CNAME;strict.bing.com
 #
+# Brave
+|search.brave.com^$dnsrewrite=NOERROR;CNAME;safesearch.brave.com
+#
 # DuckDuckGo
 |duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
 |start.duckduckgo.com^$dnsrewrite=NOERROR;CNAME;safe.duckduckgo.com
@@ -267,9 +270,3 @@
 |yandex.tj^$dnsrewrite=NOERROR;A;213.180.193.56
 |yandex.tm^$dnsrewrite=NOERROR;A;213.180.193.56
 |yandex.uz^$dnsrewrite=NOERROR;A;213.180.193.56
-#
-# Brave
-|search.brave.com^$dnsrewrite=NOERROR;CNAME;safe.search.brave.com
-#
-# Ecosia
-|www.ecosia.org^$dnsrewrite=NOERROR;CNAME;strict-safe-search.ecosia.org
