@@ -211,6 +211,8 @@
 # Pixabay
 |pixabay.com^$dnsrewrite=NOERROR;CNAME;safesearch.pixabay.com
 #
+! Startpage
+|www.startpage.com^$dnsrewrite=NOERROR;CNAME;safe.startpage.com
 # Qwant
 |api.qwant.com^$dnsrewrite=NOERROR;CNAME;safeapi.qwant.com
 #
