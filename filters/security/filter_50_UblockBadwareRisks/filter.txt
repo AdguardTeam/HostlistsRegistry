@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.15.88
+! Version: 1.0.15.89
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2024-11-26T13:12:48.378Z
+! Last modified: 2024-11-26T14:06:38.357Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -2836,6 +2836,10 @@ thepiratebay3.com^
 
 ! apple
 ||buscaapp.com^
+! https://urldna.io/scan/6744068e8007f7be43de908c
+! https://www.virustotal.com/gui/url/c2f79189f12bde8e6f32e61a4b5d7bf1948f04c8eab5a8a11df8c546b7bda019
+||apples-24x7-*.pages.dev^
+||apples-24x7-customer-help-line.pages.dev^
 ||apples-24x7-help.pages.dev^
 
 ! fedex
@@ -2934,6 +2938,9 @@ thepiratebay3.com^
 ! https://urldna.io/scan/6693a1b55395ffdd02f65177
 ! https://www.virustotal.com/gui/url/b8064a06e570bfccdd2a896b02734c2282e5e0d51ebd0b6324c694d87b57b7e8
 ||att5h6.wixsite.com^
+! https://urldna.io/scan/673ea1444fe8fdf8db4e9294
+! https://www.virustotal.com/gui/url/f94b29d8e5114772c3ac5717d625c57295232b759022b97170cb21d1c51cae92
+||attonlineservice*.wixstudio.com^
 ! https://urldna.io/scan/66f3c4afbc383e66ff108ce9
 ! https://www.virustotal.com/gui/url/6f610568e5af6a3841ade330487906294e9895cd1a17dd0ff428c2a6258ae1bc
 ||currentlyatt*.weebly.com^
@@ -3206,6 +3213,7 @@ thepiratebay3.com^
 ||dxyezzxkrvqf.top^
 ||telergaom.top^
 ||telergctm.vip^
+||teiegram.work^
 ||telegrambotsolution.pages.dev^
 ||telegramkv.com^
 ! https://www.virustotal.com/gui/url/06c0aafaca0d59712ddd82ceeacef7b4bb31ecf44fb43584a45fd400416aa913
