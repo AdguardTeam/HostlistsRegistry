@@ -1,15 +1,11 @@
 !
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
-! Version: 1.0.14.43
+! Version: 1.0.14.44
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2024-10-30T15:27:30.167Z
+! Last modified: 2024-11-27T12:37:38.234Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
-!
-!
-! Source name: No Google
-! Source: https://raw.githubusercontent.com/nickspaargaren/no-google/master/pihole-google-adguard.txt
 !
 ||*-android-context-data.googleapis.com^
 ||*-chromecontentsuggestions-pa.googleapis.com^
@@ -26,14 +22,11 @@
 ||googletagservices.com^
 ||googlevads-cn.com^
 ||speechs3proto*-pa.googleapis.com^
-! Android
 ||android.com^
-! Area120
 ||kormo.com^
 ||rivet.area120.com^
 ||staykeen.com^
 ||tangi.co^
-! DNS
 ||gstatic.com^
 ||gstatic.net^
 ||KQu0cL-dnsotls-ds.metric.gstatic.com^
@@ -353,7 +346,6 @@
 ||www.google.com.tn^
 ||www.google.it.ao^
 ||youtube-3rd-party.com^
-! Doubleclick
 ||doubleclick-cn.net^
 ||doubleclick.com^
 ||doubleclick.de^
@@ -363,17 +355,13 @@
 ||doubleclicksearch.com^
 ||doubleclickusercontent.com^
 ||googledoubleclick.net^
-! Fiber
 ||googlefiber.net^
-! Firebase
 ||firebase.com^
 ||firebase.dev^
 ||firebase.io^
 ||firebaseanalytics.com^
 ||firebaseapp.com^
 ||firebaseio.com^
-! Fonts
-! General
 ||00hrf5vjtk.com^
 ||01seifw7uv.com^
 ||08jjhe3a9g.com^
@@ -1059,7 +1047,6 @@
 ||zwh5vlqtb4.com^
 ||zx2nndxnz8.com^
 ||zyvwtasyon.com^
-! Mail
 ||email-insights.co.uk^
 ||gmail-for-your-domain.info^
 ||gmail.co^
@@ -1077,7 +1064,6 @@
 ||gmailtechnicalsupport.net^
 ||gmailtechsupport.org^
 ||googlemail.com^
-! Pagelink
 ||0utlookmxupdates1.page.link^
 ||0utlookmxverification1.page.link^
 ||0utlookmxverification2.page.link^
@@ -1577,15 +1563,12 @@
 ||zdgg2n2.page.link^
 ||zfreebonusopros20.page.link^
 ||zzzfreebonusopros20.page.link^
-! Products
 ||chrome.com^
 ||coral.ai^
 ||domains.google^
 ||idx.dev^
 ||waze.com^
 ||www.tiltbrush.com^
-! Proxies
-! Short Links
 ||g.co^
 ||goo.gl^
 ||youtu.be^
@@ -1603,7 +1586,6 @@
 ||youtubeeducation.com^
 ||youtubegaming.com^
 ||ytimg.com^
-! Fitbit
 ||fitbit.com^
 ||GCP02-NF-01.corp.fitbit.com^
 ||GlobalVPN.corp.fitbit.com^
@@ -1611,7 +1593,6 @@
 ||USVPNEAST.corp.fitbit.com^
 ||USVPNWest.corp.fitbit.com^
 ||USVPNWEST.corp.fitbit.com^
-! Nest
 ||accounts.nest.com^
 ||admin-migration.nest.com^
 ||admin.nest.com^
@@ -1664,5 +1645,4 @@
 ||wwn-api-ft.nest.com^
 ||wwn-api.nest.com^
 ||www.nest.com^
-! Jibemobile
 ||jibemobile.com^
