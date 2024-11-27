@@ -1,17 +1,12 @@
 !
 ! Title: Dan Pollock's List
 ! Description: List for blocking ads and preventing user tracking
-! Version: 1.0.14.58
+! Version: 1.0.14.59
 ! Homepage: https://someonewhocares.org/
-! Last modified: 2024-11-24T19:06:11.023Z
+! Last modified: 2024-11-27T12:37:35.240Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
-!
-! Source name: Dan Pollock's List
-! Source: https://someonewhocares.org/hosts/zero/hosts
-!
-# For example, to block unpleasant pages, try:
 0.0.0.0 goatse.cx       # More information on sites such as 
 0.0.0.0 www.goatse.cx   # these can be found in this article
 0.0.0.0 oralse.cx       # en.wikipedia.org/wiki/List_of_shock_sites
@@ -196,13 +191,6 @@
 0.0.0.0 www.zentastic.com
 0.0.0.0 youaresogay.com
 0.0.0.0 zentastic.com
-# The sites ads234.com and ads345.com -- These sites hijack internet explorer 
-# and redirect all requests through their servers. You may need to use spyware 
-# removal programs such as SpyBotS&amp;D, AdAware or HijackThis to remove this 
-# nasty parasite. It's possible that blocking these sites using a hosts file 
-# may not work, in which case you should remove the following lines from this
-# file and try the tools listed above immediately. Don't forget to reboot 
-# after a scan.
 0.0.0.0 ads234.com
 0.0.0.0 ads345.com
 0.0.0.0 www.ads234.com
@@ -1447,7 +1435,6 @@
 0.0.0.0 xyz.freelogs.com
 0.0.0.0 zz.cqcounter.com
 
-# sites with known trojans, phishing, or other malware
 0.0.0.0 0.nextyourcontent.com
 0.0.0.0 05tz2e9.com
 0.0.0.0 1-bmo-client-login.com
@@ -3358,7 +3345,6 @@
 0.0.0.0 telstra.imrworldwide.com
 0.0.0.0 www.redsheriff.com
 
-# cydoor -- server side tracking
 0.0.0.0 cydoor.com
 0.0.0.0 j.2004cms.com
 0.0.0.0 jbaventures.cjt1.net
@@ -3884,7 +3870,6 @@
 0.0.0.0 ziffdavisglobal.112.2o7.net
 0.0.0.0 ziffdavispennyarcade.112.2o7.net
 
-# oewabox.at -- 'Austrian Webanalysis Society'
 0.0.0.0 1000ps.oewabox.at
 0.0.0.0 afinder.oewabox.at
 0.0.0.0 alphalux.oewabox.at
@@ -4011,7 +3996,6 @@
 0.0.0.0 wohnnet.oewabox.at
 0.0.0.0 zfm.oewabox.at
 
-# Pegasus spyware sites.
 0.0.0.0 24-7clinic.com
 0.0.0.0 365redirect.co
 0.0.0.0 a-redirect.com
@@ -10787,7 +10771,6 @@
 0.0.0.0 in.yimg.com
 0.0.0.0 us.a1.yimg.com
 
-# hitbox.com web bugs
 0.0.0.0 adminec1.hitbox.com
 0.0.0.0 ads.hitbox.com
 0.0.0.0 ai.hitbox.com
@@ -11080,7 +11063,6 @@
 0.0.0.0 yang.hitbox.com
 0.0.0.0 ying.hitbox.com
 
-# www.extreme-dm.com tracking
 0.0.0.0 extreme-dm.com
 0.0.0.0 reports.extreme-dm.com
 0.0.0.0 t.extreme-dm.com
@@ -11104,7 +11086,6 @@
 0.0.0.0 z0.extreme-dm.com
 0.0.0.0 z1.extreme-dm.com
 
-# realmedia.com's Open Ad Stream
 0.0.0.0 ap.oasfile.aftenposten.no
 0.0.0.0 oas-central.east.realmedia.com
 0.0.0.0 oas-central.realmedia.com
@@ -11217,10 +11198,8 @@
 0.0.0.0 oascentral.zwire.com
 0.0.0.0 oascentralnx.comcast.net
 
-# fastclick banner ads
 0.0.0.0 fastclick.net
 
-# belo interactive ads
 0.0.0.0 te.about.com
 0.0.0.0 te.adlandpro.com
 0.0.0.0 te.advance.net
@@ -11244,7 +11223,6 @@
 0.0.0.0 te.trb.com
 0.0.0.0 te.versiontracker.com
 
-# popup traps -- sites that bounce you around or won't let you leave
 0.0.0.0 adultfriendfinder.com
 0.0.0.0 incestland.com
 0.0.0.0 lesview.com
@@ -11782,7 +11760,6 @@
 0.0.0.0 zyrtec.3.p2l.info
 0.0.0.0 zyrtec.4.p2l.info
 
-# Windows 10 reporting domains. 
 0.0.0.0 a.ads2.msads.net
 0.0.0.0 adnexus.net
 0.0.0.0 aidps.atdmt.com
@@ -11808,37 +11785,4 @@
 0.0.0.0 statsfe2.ws.microsoft.com
 0.0.0.0 wes.df.telemetry.microsoft.com
 
-# Acknowledgements
-# I'd like to thank the following people for submitting sites, and
-# helping promote the site.
 
-# Bill Allison, Harj Basi, Lance Russhing, Marshall Drew-Brook, 
-#  Leigh Brasington, Scott Terbush, Cary Newfeldt, Kaye, Jeff
-#  Scrivener, Mark Hudson, Matt Bells, T. Kim Nguyen, Lino Demasi,
-#  Marcelo Volmaro, Troy Martin, Donald Kerns, B.Patten-Walsh,
-#  bobeangi, Chris Maniscalco, George Gilbert, Kim Nilsson, zeromus,
-#  Robert Petty, Rob Morrison, Clive Smith, Cecilia Varni, OleKing 
-#  Cole, William Jones, Brian Small, Raj Tailor, Richard Heritage,
-#  Alan Harrison, Ordorica, Crimson, Joseph Cianci, sirapacz, 
-#  Dvixen, Matthew Craig, Tobias Hessem, Kevin F. Quinn, Thomas 
-#  Corthals, Chris McBee, Jaime A. Guerra, Anders Josefson, 
-#  Simon Manderson, Spectre Ghost, Darren Tay, Dallas Eschenauer, Cecilia
-#  Varni, Adam P. Cole, George Lefkaditis, grzesiek, Adam Howard, Mike 
-#  Bizon, Samuel P. Mallare, Leinweber, Walter Novak, Stephen Genus, 
-#  Zube, Johny Provoost, Peter Grafton, Johann Burkard, Magus, Ron Karner,
-#  Fredrik Dahlman, Michele Cybula, Bernard Conlu, Riku B, Twillers, 
-#  Shaika-Dzari, Vartkes Goetcherian, Michael McCown, Garth, Richard Nairn,
-#  Exzar Reed, Robert Gauthier, Floyd Wilder, Mark Drissel, Kenny Lyons,
-#  Paul Dunne, Tirath Pannu, Mike Lambert, Dan Kolcun, Daniel Aleksandersen,
-#  Chris Heegard, Miles Golding, Daniel Bisca, Frederic Begou, Charles 
-#  Fordyce, Mark Lehrer, Sebastien Nadeau-Jean, Russell Gordon, Alexey 
-#  Gopachenko, Stirling Pearson, Alan Segal, Bobin Joseph, Chris Wall, Sean
-#  Flesch, Brent Getz, Jerry Cain, Brian Micek, Lee Hancock, Kay Thiele,
-#  Kwan Ting Chan, Wladimir Labeikovsky, Lino Demasi, Bowie Bailey, Andreas 
-#  Marschall, Michael Tompkins, Michael O'Donnell, Jos&eacute; Lucas Teixeira
-#  de Oliveira, M. &Ouml;mer G&ouml;lgeli, and Anthony Gelibert for helping to build 
-#  the hosts file.
-# Russell O'Connor for OS/2 information
-# kwadronaut for Windows 7 and Vista information
-# John Mueller and Lawrence H Smith for Mac Pre-OSX information
-# Jesse Baird for the Cisco IOS script
