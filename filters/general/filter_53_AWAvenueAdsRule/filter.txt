@@ -1,9 +1,9 @@
 !
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
-! Version: 1.0.14.75
+! Version: 1.0.14.76
 ! Homepage: https://awavenue.top/
-! Last modified: 2024-11-27T12:37:36.871Z
+! Last modified: 2024-11-30T13:09:24.409Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -31,6 +31,7 @@
 ||ad.bwton.com^
 ||ad.cctv.com^
 ||ad.cyapi.cn^
+||ad.doubleclick.net^
 ||ad.partner.gifshow.com^
 ||ad.qingting.fm^
 ||ad.qq.com^
@@ -92,16 +93,22 @@
 ||ads5-normal-lf.zijieapi.com^
 ||ads5-normal-lq.zijieapi.com^
 ||ads5-normal.zijieapi.com^
+||adse.test.ximalaya.com^
+||adse.wsa.ximalaya.com^
+||adse.ximalaya.com^
+||adsebs.ximalaya.com^
 ||adsense.google.cn^
 ||adserver.unityads.unity3d.com^
 ||adservice.google.cn^
 ||adservice.google.com^
 ||adserviceretry.kugou.com^
 ||adsfile.bssdlbig.kugou.com^
+||adsfile.qq.com^
 ||adsfilebssdlbig.ali.kugou.com^
 ||adsfileretry.service.kugou.com^
 ||adsfs-sdkconfig.heytapimage.com^
 ||adsfs.oppomobile.com^
+||adslvfile.qq.com^
 ||adsmart.konka.com^
 ||adsmind.gdtimg.com^
 ||adsmind.ugdtimg.com^
@@ -288,6 +295,7 @@
 ||ggx01.miguvideo.com^
 ||ggx03.miguvideo.com^
 ||google-analytics.com^
+||googleads.g.doubleclick.net^
 ||googleadservices-cn.com^
 ||googleadservices.com^
 ||googletagservices-cn.com^
@@ -666,6 +674,7 @@
 ||ykad-gateway.youku.com^
 ||youku-acs.m.taobao.com^
 ||youxi.kugou.com^
+||zhihu-web-analytics.zhihu.com^
 /.*\.*\.shouji\.sogou\.com/
 /.*\.[a-zA-Z0-9.-]skwai\.com/
 /.*\.a\.market\.xiaomi\.com/
