@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.10
+! Version: 1.0.0.11
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-12-14T05:06:25.410Z
+! Last modified: 2024-12-23T17:05:51.791Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -147,7 +147,10 @@
 ||clarity.microsoft.com^
 ||events.data.microsoft.com^
 ||events-sandbox.data.microsoft.com^
+||settings.data.microsoft.com^
 ||settings-sandbox.data.microsoft.com^
+||settings-win.data.microsoft.com^
+||settings-win-ppe.data.microsoft.com^
 ||vortex.data.microsoft.com^
 ||vortex-sandbox.data.microsoft.com^
 ||vortex-win.data.microsoft.com^
@@ -258,6 +261,7 @@
 ||agps-location-livenet.trafficmanager.net^
 ||analytics.trafficmanager.net^
 ||analytics-listener.trafficmanager.net^
+||atm-settingsfe-prod-geo2.trafficmanager.net^
 ||beacons.trafficmanager.net^
 ||bf-analytics-tracker-tm.trafficmanager.net^
 ||bf-tracker-release-tm.trafficmanager.net^
@@ -290,6 +294,8 @@
 ||sconsentit9.trafficmanager.net^
 ||self-events-data.trafficmanager.net^
 ||settingsfd-geo.trafficmanager.net^
+||settingsfd-ppe.trafficmanager.net^
+||settingsfd-sandbox.trafficmanager.net^
 ||ssp-prod-eastus-nonmutt.trafficmanager.net^
 ||stats-partner.trafficmanager.net^
 ||teams-events-data.trafficmanager.net^
