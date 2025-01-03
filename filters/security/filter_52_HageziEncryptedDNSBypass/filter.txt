@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
 ! Description: Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies. Prevention of bypassing is not guaranteed.
-! Version: 1.0.15.81
+! Version: 1.0.15.82
 ! Homepage: https://github.com/hagezi/dns-blocklists#bypass
-! Last modified: 2025-01-03T05:06:46.205Z
+! Last modified: 2025-01-03T13:09:47.046Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -1327,6 +1327,7 @@
 ||dns.api.staging.globuscs.info^
 ||dns.api.test.globuscs.info^
 ||agh.gloom.nexus^
+||dns.glorydns.com^
 ||glype.com^
 ||dns.gnb09.id^
 ||privacydns.go6lab.si^
@@ -1514,7 +1515,6 @@
 ||icitek.com^
 ||mask.icloud.com^
 ||mask-api.icloud.com^
-||mask-boot.icloud.com^
 ||mask-canary.icloud.com^
 ||mask-h2.icloud.com^
 ||icpsuawn1zy5amys.com^
@@ -2890,14 +2890,9 @@
 ||ams1.startpage.com^
 ||ams2.startpage.com^
 ||eu-browse.startpage.com^
-||eu-proxy.startpage.com^
 ||eu2-browse.startpage.com^
-||proxy.startpage.com^
-||proxy1.startpage.com^
-||proxy2.startpage.com^
-||proxy3.startpage.com^
+||error.proxy.startpage.com^
 ||us-browse.startpage.com^
-||us-proxy.startpage.com^
 ||dns.startupstack.tech^
 ||starvpn.com^
 ||staticnetcontent.com^
