@@ -1,16 +1,16 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.14.63
+! Version: 1.0.14.64
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2024-12-27T15:50:26.316Z
+! Last modified: 2025-01-04T20:06:13.595Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
 
 
 
-||*.top^$dnstype=~CNAME,denyallow=caitlin.top|callmebymygender.top|corriente.top|gdtot.top|nicenature.top|reminder.top|magocoro.top|castlevania.top|suiten.top|shucks.top|1stream.top|ambr.top|changlam10.top|changlam11.top|pdcdn1.top|pressplay.top|chillx.top|strims.top|thedesk.top|audioforyou.top|awavenue.top|reyhub.top|iboxs.top|adrules.top
+||*.top^$dnstype=~CNAME,denyallow=caitlin.top|callmebymygender.top|corriente.top|gdtot.top|nicenature.top|reminder.top|magocoro.top|castlevania.top|suiten.top|shucks.top|1stream.top|ambr.top|changlam10.top|changlam11.top|pdcdn1.top|pressplay.top|chillx.top|strims.top|thedesk.top|audioforyou.top|awavenue.top|reyhub.top|iboxs.top|adrules.top|hostingowy.top
 @@||masto*.top^
 @@/^.*(tech|project|linux).*\.top(/[a-z0-9_-]?.*)?$/
 @@://blog.*.top^
@@ -22045,6 +22045,20 @@
 
 
 
+
+||iuxxx.com^
+||tuusi.com^
+||messageme.life^
+||lonelygirls.life^
+||sexcham.com^
+||lonelyones.online^
+||mastur.life^
+||areameye.life^
+||happygirls.life^
+||dowemeet.online^
+||chatly.life^
+||invites.life^
+||girlselfies.online^
 
 ||unofficialtwrp.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
 ||androidweblog.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
