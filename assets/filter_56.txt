@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.15.38
+! Version: 1.0.15.39
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-01-04T02:26:33.090Z
+! Last modified: 2025-01-04T20:06:21.028Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -122,7 +122,7 @@
 ||*.management^
 ||*.market^$denyallow=digiseller.market|otto.market|plati.market|spotim.market|warframe.market
 ||*.markets^
-||*.men^
+||*.men^$denyallow=virgile.men
 ||*.miami^
 ||*.ml^$denyallow=aire.ml|amap.ml|fmhy.ml|ghostcloud.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|precure.ml|prompt.ml
 ||*.moda^
