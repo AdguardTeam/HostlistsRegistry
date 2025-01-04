@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.17
+! Version: 1.0.0.18
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2024-12-27T15:50:19.160Z
+! Last modified: 2025-01-04T02:26:15.139Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.29
 !
@@ -13,13 +13,9 @@
 ||dc.applicationinsights.azure.us^
 ||in.applicationinsights.azure.cn^
 ||in.applicationinsights.azure.us^
-||live.applicationinsights.azure.cn^
-||azsc-bingads-centralus.centralus.cloudapp.azure.com^
 ||inference-app-gateway.eastus2.cloudapp.azure.com^
 ||inference-app-gateway.koreacentral.cloudapp.azure.com^
 ||inference-app-gateway.northeurope.cloudapp.azure.com^
-||azsc-edge-bingads-southeastasia.southeastasia.cloudapp.azure.com^
-||azsc-edge-bingads-westeurope.westeurope.cloudapp.azure.com^
 ||azsc-bingads-westus.westus.cloudapp.azure.com^
 ||collector.azure.cn^
 ||js.monitor.azure.com^
@@ -46,7 +42,6 @@
 ||auc-visio-telemetry.officeapps.live.com^
 ||brc-visio-telemetry.officeapps.live.com^
 ||cac-visio-telemetry.officeapps.live.com^
-||chc-visio-telemetry.officeapps.live.com^
 ||dec-visio-telemetry.officeapps.live.com^
 ||euc-excel-telemetry.officeapps.live.com^
 ||euc-onenote-telemetry.officeapps.live.com^
@@ -62,7 +57,6 @@
 ||ffc-word-telemetry.officeapps.live.com^
 ||frc-visio-telemetry.officeapps.live.com^
 ||inc-visio-telemetry.officeapps.live.com^
-||jpc-visio-telemetry.officeapps.live.com^
 ||nexus.officeapps.live.com^
 ||nexusrules.officeapps.live.com^
 ||noc-visio-telemetry.officeapps.live.com^
@@ -129,10 +123,8 @@
 ||ssw.live.com^
 ||watson.live.com^
 ||ads.microsoft.com^
-||ads-int.microsoft.com^
+||help.ads-int.microsoft.com^
 ||adsdk.microsoft.com^
-||adsstatic.microsoft.com^
-||adsstatic-int.microsoft.com^
 ||advertising.microsoft.com^
 ||analyticspixel.microsoft.com^
 ||applicationinsights.microsoft.com^
@@ -141,7 +133,6 @@
 ||azurewatson.microsoft.com^
 ||azurewatsontest.microsoft.com^
 ||bingads.microsoft.com^
-||bingadseditor.microsoft.com^
 ||c1.microsoft.com^
 ||track.notif.careersppe.microsoft.com^
 ||clarity.microsoft.com^
@@ -156,8 +147,6 @@
 ||vortex-win.data.microsoft.com^
 ||vortex-win-sandbox.data.microsoft.com^
 ||api.edgeoffer.microsoft.com^
-||adsdisplay.glbdns2.microsoft.com^
-||bingads.glbdns2.microsoft.com^
 ||ieonline.microsoft.com^
 ||location.microsoft.com^
 ||redir.metaservices.microsoft.com^
@@ -266,9 +255,7 @@
 ||bf-analytics-tracker-tm.trafficmanager.net^
 ||bf-tracker-release-tm.trafficmanager.net^
 ||bingads.trafficmanager.net^
-||bingadsresources.trafficmanager.net^
 ||cas-telemetry.trafficmanager.net^
-||collection-location-livenet.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^
 ||events.data.trafficmanager.net^
@@ -303,7 +290,6 @@
 ||tenmax-ads.trafficmanager.net^
 ||tm-analytics-pr.trafficmanager.net^
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
-||us-mesh-events-data-leafs.trafficmanager.net^
 ||euc-excel-telemetry.wac.trafficmanager.net^
 ||euc-powerpoint-telemetry.wac.trafficmanager.net^
 ||euc-word-telemetry.wac.trafficmanager.net^
@@ -324,14 +310,11 @@
 ||weus2watcab02.blob.core.windows.net^
 ||cache.datamart.windows.com^
 ||sa.windows.com^
-||adsdktelemetry-prod.servicebus.windows.net^
 ||analytics-dev-lleap-events.servicebus.windows.net^
 ||analytics-dev-simpad-events.servicebus.windows.net^
 ||analyticsehnwe.servicebus.windows.net^
-||analyticsiot-prod-simpad-ehn.servicebus.windows.net^
 ||btv-du-dev-eventhub-streamanalytics.servicebus.windows.net^
 ||btv-du-prod-eventhub-streamanalytics.servicebus.windows.net^
-||chem4wordtelemetry.servicebus.windows.net^
 ||citrixanalyticseh.servicebus.windows.net^
 ||citrixanalyticseh-alias.servicebus.windows.net^
 ||citrixanalyticseh2.servicebus.windows.net^
@@ -346,7 +329,6 @@
 ||citrixtelemetryeheu-alias.servicebus.windows.net^
 ||ffg-analyticsk3nvxfne4dp4s.servicebus.windows.net^
 ||hme-live-loganalytics-namespace.servicebus.windows.net^
-||jetanalytics.servicebus.windows.net^
 ||nexxtv-events.servicebus.windows.net^
 ||ppm-licensingtelemetry.servicebus.windows.net^
 ||prod-eh-v1-analytics.servicebus.windows.net^
