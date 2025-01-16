@@ -1,13 +1,20 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.21
+! Version: 1.0.0.22
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-01-15T20:06:38.717Z
+! Last modified: 2025-01-16T21:05:46.491Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.34
 !
 ||in.appcenter.ms^
+||js.cdn.applicationinsights.io^
+||js0.cdn.applicationinsights.io^
+||js1.cdn.applicationinsights.io^
+||js2.cdn.applicationinsights.io^
+||js0.tst.applicationinsights.io^
+||js1.tst.applicationinsights.io^
+||js2.tst.applicationinsights.io^
 ||applicationinsights.azure.com^
 ||dc.applicationinsights.azure.cn^
 ||dc.applicationinsights.azure.us^
@@ -32,7 +39,6 @@
 ||commerce.bing.com^
 ||g.bing.com^
 ||raka.bing.com^
-||js.monitor.azure.com.com^
 ||measure.office.net.edgesuite.net^
 ||collector.azure.eaglex.ic.gov^
 ||analytics.live.com^
