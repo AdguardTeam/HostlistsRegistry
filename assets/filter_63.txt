@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.24
+! Version: 1.0.0.25
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-01-19T20:05:49.385Z
+! Last modified: 2025-01-20T14:05:58.867Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.34
 !
@@ -23,12 +23,14 @@
 ||inference-app-gateway.eastus2.cloudapp.azure.com^
 ||inference-app-gateway.koreacentral.cloudapp.azure.com^
 ||inference-app-gateway.northeurope.cloudapp.azure.com^
-||azsc-edge-bingads-westeurope.westeurope.cloudapp.azure.com^
 ||azsc-bingads-westus.westus.cloudapp.azure.com^
 ||collector.azure.cn^
 ||js.monitor.azure.com^
+||adsdkpreprod.azureedge.net^
 ||adsdkprod.azureedge.net^
+||adsdkpreprod.afd.azureedge.net^
 ||adsdkprod.afd.azureedge.net^
+||cjs-diagnostics-office-com-gvdhgwfwbbfsd9g3.z01.azurefd.net^
 ||location-microsoft-com.b-0005.b-msedge.net^
 ||a4.bing.com^
 ||ads.bing.com^
@@ -88,7 +90,6 @@
 ||pgtmx1-word-telemetry-vip.officeapps.live.com^
 ||pgtsg1-excel-telemetry-vip.officeapps.live.com^
 ||pgtsg1-powerpoint-telemetry-vip.officeapps.live.com^
-||pgtsg1-word-telemetry-vip.officeapps.live.com^
 ||pgtus1-excel-telemetry-vip.officeapps.live.com^
 ||pgtus1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtus1-word-telemetry-vip.officeapps.live.com^
@@ -169,6 +170,7 @@
 ||telemetry.microsoft.com^
 ||telemetrycollector.microsoft.com^
 ||telemetry.urs.microsoft.com^
+||telemetry.visualstudio.microsoft.com^
 ||watson.microsoft.com^
 ||statsfe1.ws.microsoft.com^
 ||statsfe2.ws.microsoft.com^
@@ -176,6 +178,8 @@
 ||msads.net^
 ||fp.msedge.net^
 ||win10-trt.msedge.net^
+||ac2.msn.com^
+||ac3.msn.com^
 ||ad.msn.com^
 ||adevents.msn.com^
 ||ads.msn.com^
@@ -186,6 +190,11 @@
 ||metric.appex-rf.msn.com^
 ||c.ar.msn.com^
 ||arc.msn.com^
+||arc-emea.msn.com^
+||arc1.msn.com^
+||arc2.msn.com^
+||arc3.msn.com^
+||arc9.msn.com^
 ||c.at.msn.com^
 ||c.be.msn.com^
 ||c.br.msn.com^
@@ -249,6 +258,7 @@
 ||c.uk.msn.com^
 ||c.za.msn.com^
 ||zmetrics.msn.com^
+||diagnostics.office.com^
 ||measure.office.com^
 ||measure.office.net^
 ||hubblecontent.osi.office.net^
@@ -320,7 +330,6 @@
 ||analytics-dev-lleap-events.servicebus.windows.net^
 ||analytics-dev-simpad-events.servicebus.windows.net^
 ||analyticsehnwe.servicebus.windows.net^
-||analyticsiot-prod-simpad-ehn.servicebus.windows.net^
 ||btv-du-dev-eventhub-streamanalytics.servicebus.windows.net^
 ||btv-du-prod-eventhub-streamanalytics.servicebus.windows.net^
 ||citrixanalyticseh.servicebus.windows.net^
