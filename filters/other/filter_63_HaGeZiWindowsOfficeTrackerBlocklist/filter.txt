@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.26
+! Version: 1.0.0.27
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-01-24T21:05:39.816Z
+! Last modified: 2025-02-01T04:07:16.754Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.34
 !
@@ -28,7 +28,6 @@
 ||js.monitor.azure.com^
 ||adsdkpreprod.azureedge.net^
 ||adsdkprod.azureedge.net^
-||adsdkpreprod.afd.azureedge.net^
 ||adsdkprod.afd.azureedge.net^
 ||cjs-diagnostics-office-com-gvdhgwfwbbfsd9g3.z01.azurefd.net^
 ||location-microsoft-com.b-0005.b-msedge.net^
@@ -131,6 +130,7 @@
 ||watson.live.com^
 ||ads.microsoft.com^
 ||adsdk.microsoft.com^
+||adsstatic.microsoft.com^
 ||advertising.microsoft.com^
 ||analyticspixel.microsoft.com^
 ||applicationinsights.microsoft.com^
@@ -271,7 +271,6 @@
 ||bf-analytics-tracker-tm.trafficmanager.net^
 ||bf-tracker-release-tm.trafficmanager.net^
 ||bingads.trafficmanager.net^
-||cas-telemetry.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^
 ||events.data.trafficmanager.net^
