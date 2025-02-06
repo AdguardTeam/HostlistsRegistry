@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.15.67
+! Version: 1.0.15.68
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-02-02T04:07:25.293Z
+! Last modified: 2025-02-06T06:09:00.374Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.34
 !
@@ -37,7 +37,7 @@
 ||*.cam^
 ||*.capital^$denyallow=scalable.capital
 ||*.care^
-||*.careers^
+||*.careers^$denyallow=commonspirit.careers
 ||*.casa^$denyallow=nabu.casa
 ||*.cash^
 ||*.casino^
@@ -159,7 +159,7 @@
 ||*.post^
 ||*.prof^$denyallow=casey.prof
 ||*.promo^
-||*.pub^$denyallow=infosec.pub|wapo.pub
+||*.pub^$denyallow=infosec.pub|static.pub|wapo.pub
 ||*.quest^$denyallow=dice.quest|epochal.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest|squash.quest
 ||*.realtor^
 ||*.recipes^
