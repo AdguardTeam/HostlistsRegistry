@@ -73,8 +73,9 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
   - `tags` — a list of [tags](#tags)
   - `trusted` - a flag that allows using `$dnsrewrite` rules for this filter. If the filter is not trusted, `$dnsrewrite` rules will be removed from the compiled filter.
 
-    <details>
-      <summary>Metadata example</summary>
+<details>
+
+  <summary>Metadata example</summary>
 
   ```json
   {
@@ -92,7 +93,7 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
   }
   ```
 
-    </details>
+</details>
 
 - `revision.json`
 
@@ -151,11 +152,10 @@ The `services.json` file combines information about services received from separ
 
 - Adding a new service: to add a new service to `services.json` it is necessary to add `.yml` file to the services directory, after the script is run the file will be updated.
 
-**WARNING!**
-
-- Deletion of files is strictly forbidden. If a service file is deleted, the script will restore it from a previous version of the `services.json` file.
-
-- It is also forbidden to change service `id` inside the `.yml` file.
+> [!WARNING]  
+> Deletion of files is strictly forbidden. If a service file is deleted, the script will restore it from a previous version of the `services.json` file.
+>
+> It is also forbidden to change service `id` inside the `.yml` file.
 
 Service metadata includes `id`, `name`, `rules`, `icon_svg`:
 
