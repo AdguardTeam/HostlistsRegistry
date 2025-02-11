@@ -73,27 +73,27 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
   - `tags` — a list of [tags](#tags)
   - `trusted` - a flag that allows using `$dnsrewrite` rules for this filter. If the filter is not trusted, `$dnsrewrite` rules will be removed from the compiled filter.
 
-<details>
-
-  <summary>Metadata example</summary>
-
-  ```json
-  {
-    "filterKey": "adguard_dns_filter",
-    "filterId": 1,
-    "name": "AdGuard DNS filter",
-    "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
-    "timeAdded": 1404115015843,
-    "homepage": "https://kb.adguard.com/general/adguard-ad-filters",
-    "expires": "4 days",
-    "displayNumber": 3,
-    "environment": "prod",
-    "tags": [],
-    "trusted": true
-  }
-  ```
-
-</details>
+    <details>
+    
+      <summary>Metadata example</summary>
+    
+      ```json
+      {
+        "filterKey": "adguard_dns_filter",
+        "filterId": 1,
+        "name": "AdGuard DNS filter",
+        "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
+        "timeAdded": 1404115015843,
+        "homepage": "https://kb.adguard.com/general/adguard-ad-filters",
+        "expires": "4 days",
+        "displayNumber": 3,
+        "environment": "prod",
+        "tags": [],
+        "trusted": true
+      }
+      ```
+    
+    </details>
 
 - `revision.json`
 
