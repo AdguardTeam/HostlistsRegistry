@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.14.69
+! Version: 1.0.14.70
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2025-02-07T02:28:00.924Z
+! Last modified: 2025-02-11T21:05:58.230Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.34
 !
@@ -234,7 +234,7 @@
 ||proserpina-zeb.com^
 ||lordagty.com^
 ||madagty.com^
-||zeroredirect5.com^$denyallow=malware-redirection-trains.*
+||zeroredirect5.com^$denyallow=malware_redirection_trains.*
 ||54.209.22.226^
 
 ||54.91.125.197^
@@ -3214,8 +3214,8 @@
 
 ||gogle.net^
 ||extragifis.site^
-||best-prizes-202*.com^$denyallow=malware-site.*
-||all-best-prize-202*.com^$denyallow=malware-site.*
+||best-prizes-202*.com^$denyallow=malware_site.*
+||all-best-prize-202*.com^$denyallow=malware_site.*
 ||captcharesolving-universe.com^
 ||captcharesolver.com^
 ||instantfwding.com^
@@ -3473,7 +3473,7 @@
 ||apsolutamente.com^
 ||renewal-software-update.com^
 ||pushmeup.art^
-||trc.*.co^$denyallow=malware-redirection-trains.*
+||trc.*.co^$denyallow=malware_redirection_trains.*
 ||artofads.co^
 ||pc-my-protection.xyz^
 ||beta-news.org^
@@ -3585,9 +3585,9 @@
 ||data-px.services^
 ||newsvot.com^
 ||adalgard-wol.com^
-||trkk4.com^$denyallow=malware-redirection-trains.*
+||trkk4.com^$denyallow=malware_redirection_trains.*
 ||secure-access-*.gate23.xyz^
-||hosting-redirect.com^$denyallow=malware-redirection-trains.*
+||hosting-redirect.com^$denyallow=malware_redirection_trains.*
 
 ||gogles.com^
 ||flexroll.online^
@@ -4074,15 +4074,15 @@
 ||sandhyapi.online^
 
 ||goprotectpc.com^
-||cpmrevdirect.com^$denyallow=malware-redirection-trains.*
-||rtbverdirect.com^$denyallow=malware-redirection-trains.*
+||cpmrevdirect.com^$denyallow=malware_redirection_trains.*
+||rtbverdirect.com^$denyallow=malware_redirection_trains.*
 ||fsalfrwdr.com^
-||cpmvrdirect.com^$denyallow=malware-redirection-trains.*
-||fadverdirect.com^$denyallow=malware-redirection-trains.*
-||cpmrvdirect.com^$denyallow=malware-redirection-trains.*
-||rtbrevdirect.com^$denyallow=malware-redirection-trains.*
-||rtbvrdirect.com^$denyallow=malware-redirection-trains.*
-||cpmverdirect.com^$denyallow=malware-redirection-trains.*
+||cpmvrdirect.com^$denyallow=malware_redirection_trains.*
+||fadverdirect.com^$denyallow=malware_redirection_trains.*
+||cpmrvdirect.com^$denyallow=malware_redirection_trains.*
+||rtbrevdirect.com^$denyallow=malware_redirection_trains.*
+||rtbvrdirect.com^$denyallow=malware_redirection_trains.*
+||cpmverdirect.com^$denyallow=malware_redirection_trains.*
 ||15.197.244.48^
 
 ||96.47.230.67^
@@ -9214,7 +9214,7 @@
 ||uthyr-que.com^
 
 ||zp-dom.com^
-||redirect.newprogrammatic.click^$denyallow=likely-a-malware-redirection.*
+||redirect.newprogrammatic.click^$denyallow=likely_a_malware_redirection.*
 ||arcad-hoh.com^
 ||eadri-fnr.com^
 ||gerhi-psv.com^
@@ -30158,7 +30158,7 @@
 ||okmx.org^
 ||nickswheels.com^
 ||spizzicopizza.net^
-||redirectme.net^$denyallow=malware-redirection-trains.*
+||redirectme.net^$denyallow=malware_redirection_trains.*
 ||anthargo.com^
 
 ||csgocup.ru^
@@ -32876,13 +32876,13 @@
 ||zwyxilru.com^
 ||zzamawwinr.com^
 
-||unofficialtwrp.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
-||androidweblog.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
-||androidgreek.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
-||ytechb.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
-||gadgetstwist.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
-||gadgetsfarms.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
-||techorfy.com^$denyallow=had-not-updated-their-root-guides-to-reflect-a-b-partition-phones-as-of-2021.*
+||unofficialtwrp.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||androidweblog.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||androidgreek.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||ytechb.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||gadgetstwist.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||gadgetsfarms.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||techorfy.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
 
 
 |pizzaseo.com|
@@ -32892,52 +32892,52 @@
 |1x1.cz|
 
 
-://ww4.$denyallow=ww4.ikea.com|ww4.sig-ge.ch|ww4.autotask.net
+://ww4.$denyallow=ww4.ikea.com|ww4.sig-ge.ch|ww4.autotask.net|ww4.pornhoarder.org
 ://ww5.$denyallow=ww5.ikea.com|ww5.msu.ac.zw|ww5.autotask.net
 ://ww6.$denyallow=ww6.generali.pt|ww6.autotask.net
 ://ww7.$denyallow=ww7.be|ww7.readsnk.com|ww7.autotask.net
 ://ww9.$denyallow=ww9.ikea.com|ww9.tiki.ne.jp|ww9.sakura.ne.jp|ww9.generali.pt|ww9.itau.com.br|ww9.autotask.net
-://ww10.$denyallow=ww10.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww11.$denyallow=ww11.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww12.$denyallow=ww12.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww13.$denyallow=ww13.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww14.$denyallow=ww14.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww15.$denyallow=ww15.nl|ww15.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww16.$denyallow=ww16.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww17.$denyallow=ww17.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww18.$denyallow=ww18.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww19.$denyallow=ww19.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww20.$denyallow=ww20.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww21.$denyallow=ww21.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww22.$denyallow=ww22.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww23.$denyallow=ww23.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww24.$denyallow=ww24.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww25.$denyallow=ww25.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww26.$denyallow=ww26.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww27.$denyallow=ww27.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww28.$denyallow=ww28.autotask.net|practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww29.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww30.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww31.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww32.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww33.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww34.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww35.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww36.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww37.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww38.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww39.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww40.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww41.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww42.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww43.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww44.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww45.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww46.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww47.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww48.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww49.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
-://ww50.$denyallow=practically-always-leads-to-a-domain-parking-service-known-for-malware.*
+://ww10.$denyallow=ww10.autotask.net|w10.pornhoarder.tv|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww11.$denyallow=ww11.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww12.$denyallow=ww12.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww13.$denyallow=ww13.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww14.$denyallow=ww14.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww15.$denyallow=ww15.nl|ww15.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww16.$denyallow=ww16.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww17.$denyallow=ww17.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww18.$denyallow=ww18.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww19.$denyallow=ww19.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww20.$denyallow=ww20.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww21.$denyallow=ww21.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww22.$denyallow=ww22.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww23.$denyallow=ww23.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww24.$denyallow=ww24.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww25.$denyallow=ww25.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww26.$denyallow=ww26.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww27.$denyallow=ww27.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww28.$denyallow=ww28.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww29.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww30.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww31.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww32.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww33.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww34.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww35.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww36.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww37.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww38.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww39.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww40.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww41.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww42.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww43.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww44.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww45.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww46.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww47.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww48.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww49.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww50.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
 
 
 
