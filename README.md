@@ -74,24 +74,25 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
   - `trusted` - a flag that allows using `$dnsrewrite` rules for this filter. If the filter is not trusted, `$dnsrewrite` rules will be removed from the compiled filter.
 
     <details>
+    
       <summary>Metadata example</summary>
-
-  ```json
-  {
-    "filterKey": "adguard_dns_filter",
-    "filterId": 1,
-    "name": "AdGuard DNS filter",
-    "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
-    "timeAdded": 1404115015843,
-    "homepage": "https://kb.adguard.com/general/adguard-ad-filters",
-    "expires": "4 days",
-    "displayNumber": 3,
-    "environment": "prod",
-    "tags": [],
-    "trusted": true
-  }
-  ```
-
+    
+      ```json
+      {
+        "filterKey": "adguard_dns_filter",
+        "filterId": 1,
+        "name": "AdGuard DNS filter",
+        "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
+        "timeAdded": 1404115015843,
+        "homepage": "https://kb.adguard.com/general/adguard-ad-filters",
+        "expires": "4 days",
+        "displayNumber": 3,
+        "environment": "prod",
+        "tags": [],
+        "trusted": true
+      }
+      ```
+    
     </details>
 
 - `revision.json`
@@ -151,11 +152,10 @@ The `services.json` file combines information about services received from separ
 
 - Adding a new service: to add a new service to `services.json` it is necessary to add `.yml` file to the services directory, after the script is run the file will be updated.
 
-**WARNING!**
-
-- Deletion of files is strictly forbidden. If a service file is deleted, the script will restore it from a previous version of the `services.json` file.
-
-- It is also forbidden to change service `id` inside the `.yml` file.
+> [!WARNING]  
+> Deletion of files is strictly forbidden. If a service file is deleted, the script will restore it from a previous version of the `services.json` file.
+>
+> It is also forbidden to change service `id` inside the `.yml` file.
 
 Service metadata includes `id`, `name`, `rules`, `icon_svg`:
 
