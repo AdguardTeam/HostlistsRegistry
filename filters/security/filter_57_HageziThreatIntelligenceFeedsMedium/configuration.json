@@ -1,0 +1,21 @@
+{
+    "name": "HaGeZi's Threat Intelligence Feeds - Medium version",
+    "description": "A medium version of the Threat Intelligence Feeds list. Designed for Adblockers that have problems with the size of the full TIF list.",
+    "homepage": "https://github.com/hagezi/dns-blocklists",
+    "sources": [
+      {
+        "name": "HaGeZi's Threat Intelligence Feeds - Medium version",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/tif.medium.txt",
+        "type": "adblock",
+        "transformations": [
+          "RemoveModifiers",
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "RemoveComments",
+      "Deduplicate",
+      "Compress"
+    ]
+}
