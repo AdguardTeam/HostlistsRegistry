@@ -1,0 +1,21 @@
+{
+  "name": "HaGeZi's Light DNS Blocklist",
+  "description": "Hand brush - Cleans the Internet and protects your privacy! Blocks Ads, Tracking, Metrics and some Badware.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi's Light DNS Blocklist",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/light.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}

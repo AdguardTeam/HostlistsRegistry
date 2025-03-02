@@ -1,0 +1,21 @@
+{
+  "name": "HaGeZi's Pro mini DNS/Browser Blocklist",
+  "description": "Size-optimised version for DNS/Browser adblockers, e.g. for devices with less RAM.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi's Pro mini DNS/Browser Blocklist",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.mini.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
