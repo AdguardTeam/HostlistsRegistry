@@ -1,0 +1,21 @@
+{
+  "name": "1Hosts (Pro)",
+  "description": "Safeguard your device(s) against pesky ads, trackers, and malware. (strict; has some minimal breakages, prioritizes privacy & safety (adblocking) over UX e.g blocks graph.facebook.com.)",
+  "homepage": "https://badmojr.github.io/1Hosts/",
+  "sources": [
+    {
+      "name": "1Hosts (Pro)",
+      "source": "https://badmojr.github.io/1Hosts/Pro/adblock.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
