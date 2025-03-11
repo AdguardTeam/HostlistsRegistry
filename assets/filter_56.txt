@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.15.83
+! Version: 1.0.15.84
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-03-06T11:28:48.751Z
+! Last modified: 2025-03-11T17:06:40.266Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -41,6 +41,7 @@
 ||*.cash^
 ||*.casino^
 ||*.center^$denyallow=priv.center
+||*.ceo^
 ||*.cfd^$denyallow=freedium.cfd
 ||*.charity^
 ||*.christmas^
@@ -50,6 +51,7 @@
 ||*.click^$denyallow=buybox.click|popcat.click|popdog.click|qr-code.click|ravelin.click|xcine.click
 ||*.clothing^
 ||*.club^$denyallow=baby-beamup.club|clovius.club|digipres.club|hd-olimpo.club|mbcherohub.club|pdfmagazines.club|skin.club|thelemmy.club
+||*.college^
 ||*.computer^$denyallow=libre.computer|neat.computer|silly.computer
 ||*.cool^$denyallow=cnyes.cool|shirtz.cool
 ||*.coupons^
@@ -62,10 +64,13 @@
 ||*.day^$denyallow=hubcloud.day
 ||*.deals^$denyallow=gg.deals
 ||*.degree^$denyallow=opf.degree|three60.degree
+||*.delivery^
 ||*.dental^
 ||*.desi^$denyallow=xhamster.desi
 ||*.directory^$denyallow=2fa.directory|fedi.directory|passkeys.directory|reactnative.directory
 ||*.discount^$denyallow=real.discount
+||*.diy^
+||*.dog^
 ||*.download^$denyallow=caido.download|mkvtoolnix.download|up4ever.download
 ||*.eco^$denyallow=play.eco
 ||*.esq^$denyallow=erika.esq
@@ -110,6 +115,7 @@
 ||*.legal^$denyallow=doctolib.legal|wbs.legal
 ||*.lgbt^$denyallow=tech.lgbt
 ||*.life^$denyallow=2ch.life|akamaicdn.life|circles.life|colorgame.life|digitalcitizen.life|iboost.life|lifetime.life|loveinfaith.life|stepone.life|via.life|yiff.life
+||*.lifestyle^
 ||*.llp^
 ||*.loan^
 ||*.loans^
@@ -159,6 +165,7 @@
 ||*.prof^$denyallow=casey.prof
 ||*.promo^
 ||*.pub^$denyallow=infosec.pub|static.pub|wapo.pub
+||*.qpon^
 ||*.quest^$denyallow=dice.quest|epochal.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest|squash.quest
 ||*.realtor^
 ||*.recipes^
@@ -188,6 +195,7 @@
 ||*.space^$denyallow=dragonscave.space|drgns.space|hf.space|httpjames.space|hullseals.space|hyper.space|infosec.space|ippen.space|keyboard-test.space|latent.space|link.space|mapstodon.space|melmac.space|mempool.space|metahub.space|monitorburz.space|ocr.space|oldbytes.space|qwik.space|realcushion.space|searx.space|takeb1nzyto.space|truepeople.space
 ||*.sport^
 ||*.store^$denyallow=adidashardware.store|androeed.store|cleanmasters.store|g-h.store|iqunix.store|shoplazza.store|stan.store|tatemcraeeu.store|tatemcrae.store|timberjacks.store
+||*.studio^
 ||*.style^
 ||*.su^$denyallow=catflix.su|encode.su|jpg4.su|lucida.su|promportal.su
 ||*.support^$denyallow=ada.support|jitsi.support
@@ -200,6 +208,7 @@
 ||*.today^$denyallow=archive.today|futurology.today|lemmy.today|oldweb.today
 ||*.tokyo^
 ||*.top^$denyallow=1stream.top|ambr.top|arjun.top|caitlin.top|chillx.top|corriente.top|doubledouble.top|edgeless.top|mastodon.top|mianbeian.top|nfmirrorcdn.top|pegelinux.top|pressplay.top|reminder.top|saltwood.top|shucks.top|strims.top|suiten.top|techblog.top|thedesk.top|vsdb.top
+||*.town^
 ||*.trade^$denyallow=composer.trade|kite.trade
 ||*.trading^
 ||*.uno^$denyallow=platform.uno
