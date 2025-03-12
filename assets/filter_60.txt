@@ -1,14 +1,17 @@
 !
 ! Title: HaGeZi's Xiaomi Tracker Blocklist
 ! Description: Blocks Xiaomi native broadband tracker that track your activity.
-! Version: 1.0.14.70
+! Version: 1.0.14.71
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-03-08T05:05:44.828Z
+! Last modified: 2025-03-12T08:08:34.822Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
 ||traffic-media.co.uk^
+||mistat.india.xiaomi.com.edgesuite.net^
 ||ad.intl.xiaomi.com.edgesuite.net^
+||mistat.intl.xiaomi.com.edgesuite.net^
+||mistat.rus.xiaomi.com.edgesuite.net^
 ||auth.api.gitv.tv^
 ||pb.bi.gitv.tv^
 ||appstore.ptmi.gitv.tv^
@@ -34,13 +37,15 @@
 ||us.micardapi.micloud.xiaomi.net.iberostar.com^
 ||us.noteapi.micloud.xiaomi.net.iberostar.com^
 ||us.pdc.micloud.xiaomi.net.iberostar.com^
+||mistat.xiaomi.com.download.ks-cdn.com^
+||mistat.india.xiaomi.com.ksyna.net^
 ||ad.intl.xiaomi.com.ksyna.net^
+||mistat.intl.xiaomi.com.ksyna.net^
+||mistat.rus.xiaomi.com.ksyna.net^
 ||kuyun.com^
 ||ad.mi.com^
 ||ads.mi.com^
-||staging.admin.e.mi.com^
-||api.e.mi.com^
-||site.e.mi.com^
+||e.mi.com^
 ||d.g.mi.com^
 ||video.kts.g.mi.com^
 ||migc.g.mi.com^
@@ -230,7 +235,7 @@
 ||pi.ias.xiaomi.com^
 ||sdkconfig.ad.india.xiaomi.com^
 ||controller.india.xiaomi.com^
-||data.mistat.india.xiaomi.com^
+||mistat.india.xiaomi.com^
 ||sys.tv.india.xiaomi.com^
 ||api.installer.xiaomi.com^
 ||ad.intl.xiaomi.com^
