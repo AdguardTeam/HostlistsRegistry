@@ -1,23 +1,62 @@
 !
 ! Title: HaGeZi's Samsung Tracker Blocklist
 ! Description: Blocks Samsung native broadband trackers that track your activity.
-! Version: 1.0.0.17
+! Version: 1.0.0.18
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-03-08T05:05:44.911Z
+! Last modified: 2025-03-12T08:08:34.899Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
 ||samsung-com.112.2o7.net^
 ||metric.account-samsung.com^
+||adgear.com^
+||adgrx.com^
 ||samsungcard.data.adobedc.net^
 ||samsungads.adsmeasurement.com^
+||aibixby.com^
+||adgrx.com.tech.akadns.net^
+||euprd-klms-elm-tls12-48142684.eu-west-1.elb.amazonaws.com^
+||k8s-kcseuprd-ingressa-1d152aad2c-811798639.eu-west-1.elb.amazonaws.com^
+||ec2-n66-svoice-rel1-414732760.us-east-1.elb.amazonaws.com^
+||k8s-kcsusprd-ingressa-0361671a75-190147245.us-west-2.elb.amazonaws.com^
+||usprd-klms-elm-tls12-473738987.us-west-2.elb.amazonaws.com^
 ||samsung.appnext.com^
 ||samsungrum.beusable.net^
 ||samsungscript.beusable.net^
 ||samsung.bimtrackapp.co^
-||cn-api.mcsvc.samsung.com.cn^
+||bixbydevelopers.com^
+||au-odc.samsungapps.com.gslb.cdnetworks.net^
+||hk-odc.samsungapps.com.gslb.cdnetworks.net^
+||id-odc.samsungapps.com.gslb.cdnetworks.net^
+||in-odc.samsungapps.com.gslb.cdnetworks.net^
+||kr-odc.samsungapps.com.gslb.cdnetworks.net^
+||my-odc.samsungapps.com.gslb.cdnetworks.net^
+||th-odc.samsungapps.com.gslb.cdnetworks.net^
+||tw-odc.samsungapps.com.gslb.cdnetworks.net^
+||us-odc.samsungapps.com.gslb.cdnetworks.net^
+||vn-odc.samsungapps.com.gslb.cdnetworks.net^
+||acradminprd.cloudapp.net^
+||br-odc.samsungapps.com.cdn.cloudflare.net^
+||de-odc.samsungapps.com.cdn.cloudflare.net^
+||es-odc.samsungapps.com.cdn.cloudflare.net^
+||fr-odc.samsungapps.com.cdn.cloudflare.net^
+||it-odc.samsungapps.com.cdn.cloudflare.net^
+||pl-odc.samsungapps.com.cdn.cloudflare.net^
+||ru-odc.samsungapps.com.cdn.cloudflare.net^
+||sa-odc.samsungapps.com.cdn.cloudflare.net^
+||tr-odc.samsungapps.com.cdn.cloudflare.net^
+||uk-odc.samsungapps.com.cdn.cloudflare.net^
+||us-odc.samsungapps.com.cdn.cloudflare.net^
+||analytics-api-external-alb-222534322.cn-north-1.elb.amazonaws.com.cn^
+||bjprdaws-elm-alb-862843980.cn-north-1.elb.amazonaws.com.cn^
+||bjprdaws-tds-alb-1740123845.cn-north-1.elb.amazonaws.com.cn^
+||k8s-knox-bbc-eb6a6f029f-1814433862.cn-north-1.elb.amazonaws.com.cn^
+||mcsvc.samsung.com.cn^
 ||smetrics.samsung.com.cn^
 ||push.samsungosp.com.cn^
+||china-b2c-klm.secb2b.com.cn^
+||china-elm.secb2b.com.cn^
+||china-klm.secb2b.com.cn^
 ||samsungott.sora.yoyi.com.cn^
 ||samsung.demdex.net^
 ||samsung-benelux.demdex.net^
@@ -64,6 +103,7 @@
 ||samsungvn.everestengagement.com^
 ||samsung.telemetry.eyeo.com^
 ||ehg-samsungusa.hitbox.com^
+||sun-apps.prod.inovatel.net^
 ||conn-v2.samsung.japps.cn^
 ||report-v2.samsung.japps.cn^
 ||sis-v2.samsung.japps.cn^
@@ -90,6 +130,7 @@
 ||zneysvtqyfhzf6n4p-samsungeurope.siteintercept.qualtrics.com^
 ||config-api.internet.apps.samsung.com^
 ||sia.internet.apps.samsung.com^
+||api.mop.apps.samsung.com^
 ||dls-account.di.atlas.samsung.com^
 ||images.b2bindia.samsung.com^
 ||analytics.bigdata.samsung.com^
@@ -117,9 +158,12 @@
 ||images.ssbusiness.samsung.com^
 ||bigdata.ssp.samsung.com^
 ||target-us.samsung.com^
+||samsung-svoice.com^
 ||samsungacr.com^
 ||samsungadhub.com^
+||samsungads.ca^
 ||samsungads.com^
+||samsungads.events^
 ||samsungallstore.com^
 ||acr-au-prd.samsungcloud.tv^
 ||acr-br-prd.samsungcloud.tv^
@@ -129,13 +173,16 @@
 ||acr-kr-prd.samsungcloud.tv^
 ||acr-mx-prd.samsungcloud.tv^
 ||acr-us-prd.samsungcloud.tv^
+||acr.samsungcloudsolution.com^
 ||acr0.samsungcloudsolution.com^
 ||devicelog.samsungcloudsolution.net^
 ||prderrordumphsm.samsungcloudsolution.com^
 ||prderrordumpssm.samsungcloudsolution.net^
+||samsungconsent.com^
 ||diagmon-policy.samsungdm.com^
 ||diagmon-serviceapi.samsungdm.com^
 ||report.gras.samsungdm.com^
+||samsungdmroute.com^
 ||analytics.samsungedo.com^
 ||apu.samsungelectronics.com^
 ||bpu.samsungelectronics.com^
@@ -158,6 +205,7 @@
 ||b2banalytics.samsungknox.com^
 ||nmetrics.samsungmobile.com^
 ||gld.samsungosp.com^
+||push.samsungosp.com^
 ||stats.samsungpass.com^
 ||osb.samsungqbe.com^
 ||osb-krsvc.samsungqbe.com^
@@ -170,8 +218,20 @@
 ||tracking.mkt-email.samsungsds.com^
 ||samsungtvads.com^
 ||business.samsungusa.com^
+||sbixby.com^
+||eu-elm.secb2b.com^
+||eu-prod-klm.secb2b.com^
+||eu-prod-klm-b2c.secb2b.com^
+||euprod-knoxlog.secb2b.com^
+||prod-knoxlog.secb2b.com^
+||us-elm.secb2b.com^
+||us-prod-klm.secb2b.com^
+||us-prod-klm-b2c.secb2b.com^
+||usprod-knoxlog.secb2b.com^
+||sun-apps.sfr.com^
 ||api-samsung.swypeconnect.com^
 ||lbs-samsung.swypeconnect.com^
+||acrapiprdnew.trafficmanager.net^
 ||samsungau.api.useinsider.com^
 ||samsungca.api.useinsider.com^
 ||samsunghk.api.useinsider.com^
@@ -202,3 +262,4 @@
 ||samsunguk.api.useinsider.com^
 ||samsungusa.api.useinsider.com^
 ||samsungvn.api.useinsider.com^
+||bixbydevelopers.zendesk.com^
