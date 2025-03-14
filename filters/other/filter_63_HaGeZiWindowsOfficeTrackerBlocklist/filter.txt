@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.35
+! Version: 1.0.0.36
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-03-08T05:05:45.056Z
+! Last modified: 2025-03-14T05:06:56.205Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -25,12 +25,12 @@
 ||inference-app-gateway.eastus2.cloudapp.azure.com^
 ||inference-app-gateway.koreacentral.cloudapp.azure.com^
 ||inference-app-gateway.northeurope.cloudapp.azure.com^
+||azsc-edge-bingads-westeurope.westeurope.cloudapp.azure.com^
 ||azsc-bingads-westus.westus.cloudapp.azure.com^
 ||collector.azure.cn^
 ||js.monitor.azure.com^
 ||adsdkpreprod.azureedge.net^
 ||adsdkprod.azureedge.net^
-||adsdkpreprod.afd.azureedge.net^
 ||adsdkprod.afd.azureedge.net^
 ||cjs-diagnostics-office-com-gvdhgwfwbbfsd9g3.z01.azurefd.net^
 ||location-microsoft-com.b-0005.b-msedge.net^
@@ -74,7 +74,6 @@
 ||pgtbr1-excel-telemetry-vip.officeapps.live.com^
 ||pgtbr1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtbr1-word-telemetry-vip.officeapps.live.com^
-||pgtbr2-excel-telemetry-vip.officeapps.live.com^
 ||pgtca1-excel-telemetry-vip.officeapps.live.com^
 ||pgtca1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtca1-word-telemetry-vip.officeapps.live.com^
@@ -180,6 +179,7 @@
 ||statsfe2.ws.microsoft.com^
 ||gateway.bingviz.microsoftapp.net^
 ||msads.net^
+||az667904.vo.msecnd.net^
 ||fp.msedge.net^
 ||win10-trt.msedge.net^
 ||ac2.msn.com^
@@ -308,6 +308,7 @@
 ||tenmax-ads.trafficmanager.net^
 ||tm-analytics-pr.trafficmanager.net^
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
+||vstelemetry.trafficmanager.net^
 ||euc-excel-telemetry.wac.trafficmanager.net^
 ||euc-powerpoint-telemetry.wac.trafficmanager.net^
 ||euc-word-telemetry.wac.trafficmanager.net^
