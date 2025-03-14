@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.36
+! Version: 1.0.0.37
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-03-14T05:06:56.205Z
+! Last modified: 2025-03-14T06:08:51.703Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -31,6 +31,7 @@
 ||js.monitor.azure.com^
 ||adsdkpreprod.azureedge.net^
 ||adsdkprod.azureedge.net^
+||adsdkpreprod.afd.azureedge.net^
 ||adsdkprod.afd.azureedge.net^
 ||cjs-diagnostics-office-com-gvdhgwfwbbfsd9g3.z01.azurefd.net^
 ||location-microsoft-com.b-0005.b-msedge.net^
@@ -74,6 +75,7 @@
 ||pgtbr1-excel-telemetry-vip.officeapps.live.com^
 ||pgtbr1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtbr1-word-telemetry-vip.officeapps.live.com^
+||pgtbr2-excel-telemetry-vip.officeapps.live.com^
 ||pgtca1-excel-telemetry-vip.officeapps.live.com^
 ||pgtca1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtca1-word-telemetry-vip.officeapps.live.com^
@@ -265,6 +267,7 @@
 ||diagnostics.office.com^
 ||measure.office.com^
 ||measure.office.net^
+||ads-msn-com-profile.trafficmanager.net^
 ||adsdk.trafficmanager.net^
 ||agps-location-livenet.trafficmanager.net^
 ||analytics.trafficmanager.net^
