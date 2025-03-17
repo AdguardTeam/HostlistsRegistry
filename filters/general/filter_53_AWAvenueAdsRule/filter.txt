@@ -1,9 +1,9 @@
 !
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
-! Version: 1.0.15.8
+! Version: 1.0.15.9
 ! Homepage: https://awavenue.top/
-! Last modified: 2025-03-12T10:06:46.925Z
+! Last modified: 2025-03-17T06:09:03.106Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -17,7 +17,6 @@
 ||a0.app.xiaomi.com^
 ||aaid.umeng.com^
 ||abtest-ch.snssdk.com^
-||ad-cache.dopool.com^
 ||ad-cdn.qingting.fm^
 ||ad-cmp.hismarttv.com^
 ||ad-download.hismarttv.com^
@@ -32,6 +31,7 @@
 ||ad.cctv.com^
 ||ad.cyapi.cn^
 ||ad.doubleclick.net^
+||ad.hpplay.cn^
 ||ad.partner.gifshow.com^
 ||ad.qingting.fm^
 ||ad.qq.com^
@@ -48,11 +48,14 @@
 ||adapi.izuiyou.com^
 ||adapi.yynetwk.com^
 ||adashbc.ut.taobao.com^
+||adc.hpplay.cn^
+||adcdn.hpplay.cn^
 ||adcdn.tencentmusic.com^
 ||adclick.g.doubleclick.net^
 ||adclick.tencentmusic.com^
 ||adcolony.com^
 ||addata.jd.com^
+||adeng.hpplay.cn^
 ||adexpo.tencentmusic.com^
 ||adfilter.imtt.qq.com^
 ||adfstat.yandex.ru^
@@ -144,7 +147,6 @@
 ||adx-open-service.youku.com^
 ||adx-os.anythinktech.com^
 ||adxlog-adnet.vivo.com.cn^
-||adxlog-adnet.vivo.com.cn.dsa.dnsv1.com.cn^
 ||adxserver.ad.cmvideo.cn^
 ||aegis.qq.com^
 ||afs.googlesyndication.com^
@@ -194,7 +196,6 @@
 ||api.yfanads.com^
 ||api5-normal-quic-lf.ixigua.com^
 ||apiyd.my91app.com^
-||apks.webxiaobai.top^
 ||app-measurement.com^
 ||appcfg.v.qq.com^
 ||appcloud2.in.zhihu.com^
@@ -243,6 +244,7 @@
 ||cdn-ads.oss-cn-shanghai.aliyuncs.com^
 ||cdn-plugin-sync-upgrade-juui.hismarttv.com^
 ||cdn.aiclk.com^
+||cdn.hpplay.com.cn^
 ||cdn.ynuf.aliapp.org^
 ||cfg.imtt.qq.com^
 ||chat1.jd.com^
@@ -257,6 +259,7 @@
 ||cnzz.com^
 ||collect.kugou.com^
 ||commdata.v.qq.com^
+||conf.hpplay.cn^
 ||config.chsmarttv.com^
 ||config.unityads.unity3d.com^
 ||cpc-service-square.aiclk.com^
@@ -304,6 +307,7 @@
 ||fxgate.baidu.com^
 ||g-adnet.hiaiabc.com^
 ||g-staic.ganjingworld.com^
+||g.dtv.cn.miaozhen.com^
 ||g2.ganjing.world^
 ||game.loveota.com^
 ||gdfp.gifshow.com^
@@ -326,16 +330,19 @@
 ||grs.dbankcloud.com^
 ||grs.hicloud.com^
 ||grs.platform.dbankcloud.ru^
+||gslb.hpplay.cn^
 ||gvideo.qpic.cn^
 ||h-adashx.ut.taobao.com^
+||h5.hpplay.com.cn^
 ||hanlanad.com^
 ||heads-ak.spotify.com.edgesuite.net^
 ||heads-fa.spotify.com^
 ||hexagon-analytics.com^
 ||hm.baidu.com^
 ||hmma.baidu.com^
+||hotupgrade.hpplay.cn^
 ||houyi.kkmh.com^
-||hpplay.cn^
+||hpplay.cdn.cibn.cc^
 ||httpdns.bcelive.com^
 ||httpdns.ocloud.oppomobile.com^
 ||hugelog.fcbox.com^
@@ -357,14 +364,15 @@
 ||imag8.pubmatic.com^
 ||imag86.pubmatic.com^
 ||image-ad.sm.cn^
+||image.hpplay.cn^
 ||imageplus.baidu.com^
 ||images.outbrainimg.com^
 ||images.pinduoduo.com^
+||imdns.hpplay.cn^
 ||img-c.heytapimage.com^
 ||img-x.jd.com^
 ||img.adnyg.com^
 ||img.adnyg.com.w.kunlungr.com^
-||imtmp.net^
 ||in.treasuredata.com^
 ||iot-eu-logser.realme.com^
 ||iot-logser.realme.com^
@@ -496,6 +504,7 @@
 ||pgdt.ugdtimg.com^
 ||pglstatp-toutiao.com^
 ||pig.pupuapi.com^
+||pin.hpplay.cn^
 ||pixon.ads-pixiv.net^
 ||pkoplink.com^
 ||plbslog.umeng.com^
@@ -520,6 +529,7 @@
 ||rlog.popin.cc^
 ||rms-drcn.platform.dbankcloud.cn^
 ||roi.soulapp.cn^
+||rp.hpplay.cn^
 ||rpt.gdt.qq.com^
 ||rtb.voiceads.cn^
 ||s.amazon-adsystem.com^
@@ -541,6 +551,7 @@
 ||sdk.hzsanjiaomao.com^
 ||sdk.markmedia.com.cn^
 ||sdk.mobads.adwangmai.com^
+||sdkauth.hpplay.cn^
 ||sdkconf.avlyun.com^
 ||sdkconfig.ad.intl.xiaomi.com^
 ||sdkconfig.play.aiseet.atianqi.com^
@@ -562,6 +573,7 @@
 ||sigmob.cn^
 ||sigmob.com^
 ||skdisplay.jd.com^
+||sl.hpplay.cn^
 ||slb-p2p.vcloud.ks-live.com^
 ||smad.ms.zhangyue.net^
 ||smart-tv.cn^
@@ -572,7 +584,6 @@
 ||stat.dongqiudi.com^
 ||stat.y.qq.com^
 ||static.ads-twitter.com^
-||static.wxqcloud.qq.com.cn^
 ||statics.woozooo.com^
 ||stats.qiumibao.com^
 ||stats.wp.com^
@@ -622,6 +633,7 @@
 ||tracking.miui.com^
 ||tracking.rus.miui.com^
 ||tsvrv.com^
+||tvapp.hpplay.cn^
 ||tvuser-ch.cedock.com^
 ||tx-ad.a.yximgs.com^
 ||tx-kmpaudio.pull.yximgs.com^
@@ -659,6 +671,7 @@
 ||video-ad.sm.cn^
 ||video-dsp.pddpic.com^
 ||video.dispatch.tc.qq.com^
+||vipauth.hpplay.cn^
 ||virusinfo-cloudscan-cn.heytapmobi.com^
 ||vlive.qqvideo.tc.qq.com^
 ||vungle.com^
