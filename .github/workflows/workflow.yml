@@ -30,9 +30,9 @@ jobs:
       - name: yarn lint
         run: yarn lint
 
-      - name: run compose
-        run: |
-          node scripts/compose.js
+      - name: yarn compose
+        run: yarn compose
+          
 
       - name: Commit & Push changes
         uses: actions-js/push@v1.5
