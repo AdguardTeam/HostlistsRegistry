@@ -231,7 +231,7 @@ The build result can be found in the `assets` directory.
 
 ## <a id="how-to-compress"></a> How to Compress
 
-Once a year, we will compress the repository to reduce its size. We will delete all remote branches and overwrite the master branch with a squashed history. The compression script will retain the first N commits in their original order in the history. All other commits (except the first one) will be squashed into a single commit.
+Once a year, we will compress the repository to reduce its size. We will delete all remote branches and overwrite the main branch with a squashed history. The compression script will retain the first N commits in their original order in the history. All other commits (except the first one) will be squashed into a single commit.
 
 ### 1. Squash all old commits
 
@@ -242,10 +242,10 @@ yarn compress [commits_to_keep]
 
 It will retain the first `[commits_to_keep]` (default is 10000, which is approximately one year of history) commits, starting from now, in their original order in the history. All other older commits (except the very first one) will be squashed into a single commit.
 
-### 2. Overwrite master branch
+### 2. Overwrite main branch
 
 ```bash
-git push --set-upstream origin --force master
+git push --set-upstream origin --force main
 ```
 
 ### 3. List all remote branches
