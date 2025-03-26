@@ -12,6 +12,7 @@
     "dayjs": "^1.11.11",
     "js-yaml": "^4.1.0",
     "md5": "^2.3.0",
+    "simple-git": "^3.27.0",
     "xmldom": "^0.6.0"
   },
   "scripts": {
@@ -19,6 +20,7 @@
     "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "cd scripts/translations ; ./download.sh",
     "locales:upload": "cd scripts/translations ; ./upload.sh",
+    "compress": "node scripts/repository/compress.js",
     "lint": "eslint ."
   },
   "devDependencies": {

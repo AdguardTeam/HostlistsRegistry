@@ -6,6 +6,7 @@
 - [Services Metadata](#services-meta)
 - [Safe Search Filters](#safe-search)
 - [How to Build](#how-to-build)
+- [Hot to Compress](#how-to-compress)
 - [Localizations](#localizations)
 
 This repository contains the known hosts blocklists that are made available to the users of AdGuard products ([AdGuard DNS](https://adguard-dns.com/), [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome), etc).
@@ -227,6 +228,65 @@ yarn run compose
 ```
 
 The build result can be found in the `assets` directory.
+
+## <a id="how-to-compress"></a> How to Compress
+
+Once a year, we will compress the repository to reduce its size. We will delete all remote branches and overwrite the master branch with a squashed history. The compression script will retain the first N commits in their original order in the history. All other commits (except the first one) will be squashed into a single commit.
+
+### 1. Squash all old commits
+
+```bash
+yarn install
+yarn compress [commits_to_keep]
+```
+
+It will retain the first `[commits_to_keep]` (default is 10000, which is approximately one year of history) commits, starting from now, in their original order in the history. All other older commits (except the very first one) will be squashed into a single commit.
+
+### 2. Overwrite master branch
+
+```bash
+git push --set-upstream origin --force master
+```
+
+### 3. List all remote branches
+
+```bash
+git ls-remote --heads origin
+```
+
+### 4. Remove remote branches
+
+Remove remote branches that are no longer needed locally
+and push the removal to the remote repository:
+
+```bash
+git push origin --delete branchName
+```
+
+Replace `branchName` with the name of the branch you want to delete.
+
+### 5. Prune remote branches
+
+Use git remote prune origin to remove references to remote branches that have been deleted on the remote repository.
+This keeps your local repository in sync with the remote:
+
+```bash
+git remote prune origin
+```
+
+### 6. Clean the reflog
+
+Over time, Git can accumulate references in the reflog that are no longer needed.
+You can clean the reflog using the following command:
+
+```bash
+git reflog expire --expire=now --all
+git gc --aggressive --prune=now
+```
+
+This will remove unnecessary entries from the reflog and perform garbage collection.
+
+After this procedure git repository will reduce it's size.
 
 ## <a id="localizations"></a> Localizations
 
