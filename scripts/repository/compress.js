@@ -112,12 +112,12 @@ async function squashAndPush() {
     }
 
     // Step 8: Return to the 'master' branch
-    await git.checkout('master');
-    console.log('Step 8: Returned to the "master" branch');
+    await git.checkout('main');
+    console.log('Step 8: Returned to the "main" branch');
 
     // Step 9: Reset 'master' to our new rebased 'master'
     await git.reset(['--hard', 'squashed']);
-    console.log('Step 9: Reset "master" to the new rebased "master"');
+    console.log('Step 9: Reset "main" to the new rebased "main"');
 
     console.log('Git actions for compression completed successfully.');
 }
