@@ -1,0 +1,19 @@
+{
+  "name": "IDN: ABPindo",
+  "description": "Filter complementary to EasyList for blocking ads on Indonesian and Malaysian websites",
+  "homepage": "https://github.com/ABPindo/indonesianadblockrules",
+  "sources": [
+    {
+      "name": "ABPindo",
+      "source": "https://raw.githubusercontent.com/ABPindo/indonesianadblockrules/master/subscriptions/aghome.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

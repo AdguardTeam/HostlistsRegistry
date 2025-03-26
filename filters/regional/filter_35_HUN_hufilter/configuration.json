@@ -1,0 +1,19 @@
+{
+  "name": "HUN: Hufilter",
+  "description": "The Hungarian Adblock List.",
+  "homepage": "https://github.com/hufilter/hufilter",
+  "sources": [
+    {
+      "name": "The Hungarian Adblock List",
+      "source": "https://cdn.jsdelivr.net/gh/hufilter/hufilter@gh-pages/hufilter-dns.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Scam Blocklist by DurableNapkin",
+  "description": "List for blocking untrustworthy websites",
+  "homepage": "https://github.com/durablenapkin/scamblocklist",
+  "sources": [
+    {
+      "name": "Scam Blocklist by DurableNapkin",
+      "source": "https://raw.githubusercontent.com/durablenapkin/scamblocklist/master/adguard.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

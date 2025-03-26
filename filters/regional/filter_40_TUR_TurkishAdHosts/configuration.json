@@ -1,0 +1,19 @@
+{
+    "name": "TUR: Turkish Ad Hosts",
+    "description": "Necessary hosts file to block tracking and possibly advertising networks in commonly used mobile apps (and possibly web pages) in Turkey.",
+    "homepage": "https://github.com/symbuzzer/Turkish-Ad-Hosts",
+    "sources": [
+      {
+        "name": "Turkish Ad Hosts",
+        "source": "https://raw.githubusercontent.com/symbuzzer/Turkish-Ad-Hosts/main/adguard/filter.txt",
+        "type": "adblock",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }

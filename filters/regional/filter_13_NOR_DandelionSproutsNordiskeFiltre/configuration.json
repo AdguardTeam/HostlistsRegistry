@@ -1,0 +1,20 @@
+{
+  "name": "NOR: Dandelion Sprouts nordiske filtre",
+  "description": "Dandelion Sprout's Nordic Filters (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)",
+  "homepage": "https://github.com/DandelionSprout/adfilt",
+  "sources": [
+    {
+      "name": "Dandelion Sprouts nordiske filtre",
+      "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/NorwegianExperimentalList%20alternate%20versions/NordicFiltersAdGuardHome.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

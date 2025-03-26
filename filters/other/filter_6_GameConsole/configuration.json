@@ -1,0 +1,20 @@
+{
+  "name": "Dandelion Sprout's Game Console Adblock List",
+  "description": "List for blocking ads on videogame consoles that use AdGuard Home",
+  "homepage": "https://github.com/DandelionSprout/adfilt",
+  "sources": [
+    {
+      "name": "Dandelion Sprout's Game Console Adblock List",
+      "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/GameConsoleAdblockList.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

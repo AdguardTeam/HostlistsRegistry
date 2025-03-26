@@ -1,0 +1,7 @@
+# AdGuard YouTube Safe Search Rewrites
+#
+|m.youtube.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|www.youtube-nocookie.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|www.youtube.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|youtube.googleapis.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com
+|youtubei.googleapis.com^$dnsrewrite=NOERROR;CNAME;restrictmoderate.youtube.com

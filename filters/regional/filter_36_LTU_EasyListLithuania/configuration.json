@@ -1,0 +1,19 @@
+{
+  "name": "LIT: EasyList Lithuania",
+  "description": "This is a (currently pretty small and not much tested) version of EasyList Lithuania designed for use with domains-based tools.",
+  "homepage": "https://github.com/EasyList-Lithuania/easylist_lithuania",
+  "sources": [
+    {
+      "name": "EasyList Lithuania (Hosts)",
+      "source": "https://raw.githubusercontent.com/EasyList-Lithuania/easylist_lithuania/master/EasyListLithuaniaHosts.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

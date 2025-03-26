@@ -1,0 +1,57 @@
+name: Blocklist request
+description: Request adding a new blocklist to AdGuard DNS and AdGuard Home.
+labels: ["blocklist"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To avoid invalid requests, please check and confirm following checkboxes.
+      options:
+        - label: The blocklist is created specifically for DNS-level blockers;
+          required: true
+        - label: The blocklist is regularly updated (at least 10 updates per month);
+          required: true
+        - label: The blocklist is known and popular;
+          required: true
+        - label: The blocklist satisfies [the repo requirements](https://github.com/AdguardTeam/HostlistsRegistry#-what-blocklists-can-be-added-here);
+          required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Blocklist name
+      description: Enter the blocklist name.
+      placeholder: Blocklist name
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Blocklist category
+      multiple: true
+      options:
+        - Ad blocking
+        - Trackers blocking
+        - Malware&phishing blocking
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Homepage
+      description: Enter the URL of the blocklist's homepage.
+      placeholder: https://example.com/
+    validations:
+      required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Explanation
+      description: Explain why you think this blocklist should be included.
+    validations:
+      required: true

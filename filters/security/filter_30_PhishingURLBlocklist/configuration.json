@@ -1,0 +1,20 @@
+{
+  "name": "Phishing URL Blocklist (PhishTank and OpenPhish)",
+  "description": "Blocklist of phishing websites, based on PhishTank and OpenPhish lists",
+  "homepage": "https://gitlab.com/malware-filter/phishing-filter",
+  "sources": [
+    {
+      "name": "Online Malicious URL Blocklist",
+      "source": "https://malware-filter.gitlab.io/malware-filter/phishing-filter-agh.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

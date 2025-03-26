@@ -1,0 +1,19 @@
+{
+  "name": "AdGuard DNS Popup Hosts filter",
+  "description": "Filter includes rules for sites that open in a new window, composed from AdGuard, EasyList, ABPindo filters and improved for compatibility with DNS-level pop-up blocking.",
+  "homepage": "https://github.com/AdguardTeam/AdguardSDNSFilter",
+  "sources": [
+    {
+      "name": "AdGuard DNS Popup Hosts filter",
+      "source": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/adguard_popup_filter.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

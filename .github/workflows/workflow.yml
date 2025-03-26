@@ -1,0 +1,39 @@
+name: Build Hostlists Registry
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 * * * *"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+
+      - name: yarn install
+        run: yarn install
+
+      - name: yarn lint
+        run: yarn lint
+
+      - name: run compose
+        run: |
+          node scripts/compose.js
+
+      - name: Commit & Push changes
+        uses: actions-js/push@master
+        if: github.ref == 'refs/heads/main' && github.repository == 'AdguardTeam/HostlistsRegistry'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: "main"
+          message: "skip ci: auto-build"

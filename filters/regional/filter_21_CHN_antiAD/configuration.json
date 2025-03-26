@@ -1,0 +1,19 @@
+{
+  "name": "CHN: anti-AD",
+  "description": "List for blocking ads in the Chinese region. Aims at privacy protection.",
+  "homepage": "https://anti-ad.net/",
+  "sources": [
+    {
+      "name": "anti-AD",
+      "source": "https://anti-ad.net/adguard.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

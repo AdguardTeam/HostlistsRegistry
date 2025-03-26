@@ -1,0 +1,28 @@
+{
+  "name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+  "description": "Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies. Prevention of bypassing is not guaranteed.",
+  "homepage": "https://github.com/hagezi/dns-blocklists#bypass",
+  "sources": [
+    {
+      "name": "HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/doh-vpn-proxy-bypass.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "exclusions": [
+    "||adguard.io^",
+    "||dns.adguard.com^",
+    "||dns-family.adguard.com^",
+    "||dns-unfiltered.adguard.com^",
+    "||adguard-dns.com^",
+    "||adguard-vpn.com^"
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "name": "HaGeZi's The World's Most Abused TLDs",
+    "description": "The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.",
+    "homepage": "https://github.com/hagezi/dns-blocklists",
+    "sources": [
+      {
+        "name": "HaGeZi's The World's Most Abused TLDs",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds.txt",
+        "type": "adblock",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate"
+    ]
+  }

@@ -1,0 +1,20 @@
+{
+    "name": "Dandelion Sprout's Anti Push Notifications",
+    "description": "Aims to remove push notifications on sites. Combines eligible rules from AdGuard Popups Filter's anti-push sections and Fanboy's Notifications Blocking List.",
+    "homepage": "https://github.com/DandelionSprout/adfilt",
+    "sources": [
+        {
+            "name": "Dandelion Sprout's Anti Push Notifications",
+            "source": "https://raw.githubusercontent.com/DandelionSprout/adfilt/master/AdGuard%20Home%20Compilation%20List/AdGuardHomeCompilationList-Notifications.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}

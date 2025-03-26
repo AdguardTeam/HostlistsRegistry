@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Ultimate Blocklist",
+    "description": "Ultimate Sweeper - Strictly cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking (+Referral), Metrics, Telemetry, Phishing, Malware, Scam, Free Hoster, Fake, Coins and other Crap.",
+    "homepage": "https://github.com/hagezi/dns-blocklists",
+    "sources": [
+      {
+        "name": "HaGeZi's Ultimate Blocklist",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
+        "type": "adblock",
+        "transformations": [
+          "RemoveModifiers",
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }

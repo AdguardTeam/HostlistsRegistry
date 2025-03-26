@@ -1,0 +1,20 @@
+{
+  "name": "CHN: AdRules DNS List",
+  "description": "List for blocking ads in the Chinese region",
+  "homepage": "https://github.com/Cats-Team/AdRules",
+  "sources": [
+    {
+      "name": "AdRules DNS List",
+      "source": "https://raw.githubusercontent.com/Cats-Team/AdRules/main/dns.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

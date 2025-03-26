@@ -1,0 +1,18 @@
+{
+  "name": "NoCoin Filter List",
+  "description": "List for blocking browser-based crypto mining",
+  "homepage": "https://github.com/hoshsadiq/adblock-nocoin-list/",
+  "sources": [
+    {
+      "name": "NoCoin Filter List",
+      "source": "https://raw.githubusercontent.com/hoshsadiq/adblock-nocoin-list/master/hosts.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate"
+  ]
+}

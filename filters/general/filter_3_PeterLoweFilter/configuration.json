@@ -1,0 +1,20 @@
+{
+  "name": "Peter Lowe's Blocklist",
+  "description": "Blocklist with hostnames of ad and tracking servers",
+  "homepage": "https://pgl.yoyo.org/adservers/",
+  "sources": [
+    {
+      "name": "Peter Lowe's Blocklist",
+      "source": "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=adblockplus&showintro=1&mimetype=plaintext",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "name": "OISD Blocklist Big",
+  "description": "List for blocking ads and trackers. Prioritizes functionality over blocking. Risks of incorrect blocking are higher than in the small version of OISD Blocklist.",
+  "homepage": "https://oisd.nl/",
+  "sources": [
+    {
+      "name": "OISD Blocklist Big",
+      "source": "https://big.oisd.nl/",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

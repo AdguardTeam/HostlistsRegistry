@@ -1,0 +1,21 @@
+{
+  "name": "Dan Pollock's List",
+  "description": "List for blocking ads and preventing user tracking",
+  "homepage": "https://someonewhocares.org/",
+  "sources": [
+    {
+      "name": "Dan Pollock's List",
+      "source": "https://someonewhocares.org/hosts/zero/hosts",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ],
+      "exclusions": [
+		  "localhost.localdomain"
+		  ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate"
+  ]
+}

@@ -1,0 +1,31 @@
+name: Service request
+description: Request adding a new "Blocked service" to AdGuard DNS and AdGuard Home.
+labels: ["service"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Prerequisites
+      description: |
+        To avoid invalid requests, please check and confirm following checkboxes.
+      options:
+        - label: The service is not included in the list of [Blocked services](https://github.com/AdguardTeam/HostlistsRegistry/blob/main/assets/services.json).
+          required: true
+        - label: This is a popular service and it makes sense to have it blocked;
+          required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Service name
+      description: Enter the blocklist name.
+      placeholder: Blocklist name
+    validations:
+      required: true
+
+  - type: textarea
+    id: comments
+    attributes:
+      label: Explanation
+      description: Explain why you think this service should be included.
+    validations:
+      required: true

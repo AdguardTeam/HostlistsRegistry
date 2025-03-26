@@ -1,0 +1,19 @@
+{
+  "name": "POL: Polish filters for Pi-hole",
+  "description": "Polish filters for Pi-hole.",
+  "homepage": "https://www.certyficate.it/",
+  "sources": [
+    {
+      "name": "Polish filters for Pi-hole",
+      "source": "https://raw.githubusercontent.com/MajkiIT/polish-ads-filter/master/polish-pihole-filters/hostfile.txt",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

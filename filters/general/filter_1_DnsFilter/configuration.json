@@ -1,0 +1,19 @@
+{
+  "name": "AdGuard DNS filter",
+  "description": "List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking",
+  "homepage": "https://github.com/AdguardTeam/AdguardSDNSFilter",
+  "sources": [
+    {
+      "name": "AdGuard DNS filter",
+      "source": "https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

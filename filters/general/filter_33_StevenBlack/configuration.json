@@ -1,0 +1,21 @@
+{
+    "name": "Steven Black's List",
+    "description": "Unified hosts file (adware + malware).",
+    "homepage": "https://github.com/StevenBlack/hosts",
+    "sources": [
+        {
+            "name": "Steven Black's List",
+            "source": "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts",
+            "type": "hosts",
+            "transformations": [
+                "Validate"
+            ],
+            "exclusions": [
+		        "localhost.localdomain"
+		    ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate"
+    ]
+}

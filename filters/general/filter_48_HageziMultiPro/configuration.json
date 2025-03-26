@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Pro Blocklist",
+    "description": "Big broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.",
+    "homepage": "https://github.com/hagezi/dns-blocklists",
+    "sources": [
+      {
+        "name": "HaGeZi's Pro Blocklist",
+        "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt",
+        "type": "adblock",
+        "transformations": [
+          "RemoveModifiers",
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "Deduplicate",
+      "Compress"
+    ]
+  }

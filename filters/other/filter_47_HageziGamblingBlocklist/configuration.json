@@ -1,0 +1,20 @@
+{
+    "name": "HaGeZi's Gambling Blocklist",
+    "description": "Blocks gambling content.",
+    "homepage": "https://github.com/hagezi/dns-blocklists#gambling",
+    "sources": [
+        {
+            "name": "HaGeZi's Gambling Blocklist",
+            "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/gambling.txt",
+            "type": "adblock",
+            "transformations": [
+                "RemoveModifiers",
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "Deduplicate",
+        "Compress"
+    ]
+}
