@@ -208,7 +208,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
           });
         }
       } catch (ex) {
-        throw new Error(`Failed to compile ${metadata.filterId}: ${ex}`);
+        throw new Error(`Failed to compile ${metadata.filterId}:`, ex);
       }
     }
 
