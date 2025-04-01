@@ -1,9 +1,9 @@
 !
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
-! Version: 1.0.23.3
+! Version: 1.0.23.4
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2025-04-01T06:10:00.127Z
+! Last modified: 2025-04-01T12:12:17.924Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -85454,7 +85454,6 @@ vkcdnservice.appspot.com^
 ||analytics.slidesai.io^
 ||idat.production.ippen.space^
 ||snowy.bellroy.com^
-||res.regoo.com^
 ||analytics.crea.ca^
 ||stat.airdroid.com^
 ||tracker.ranker.com^
@@ -87267,7 +87266,7 @@ inapps.appsflyersdk.com^
 ||int.vlancaa.fun^
 ||tok.vaicore.xyz^
 ||ulog-sdk.gifshow.com^
-||ulogs*.gifshow.com^
+||ulog*.gifshow.com^
 ||logapi-and.zhipin.com^
 ||hilton.data.adobedc.net^
 ||asanalytics.booking.com^
@@ -92416,6 +92415,7 @@ inapps.appsflyersdk.com^
 ||azol.de^
 ||twiago.com^
 ||bauernative.com^
+||telecome.cn^
 ||aizhantj.com^
 ||sm-cloud.yunsafe.top^
 ||dwyeuy.com^
@@ -92645,6 +92645,7 @@ inapps.appsflyersdk.com^
 ||ulukaris.com^
 ||itadapi.ithome.com.tw^
 ||zjgfq.com^
+/^(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.so\d{1,6}koaq\.com$/
 ||xmm.wxc.cc^
 ||srtb.msn.cn^
 ||ad*.on.cc^
