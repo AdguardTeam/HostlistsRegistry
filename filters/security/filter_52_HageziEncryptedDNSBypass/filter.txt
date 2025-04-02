@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
 ! Description: Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies. Prevention of bypassing is not guaranteed.
-! Version: 1.0.16.94
+! Version: 1.0.16.95
 ! Homepage: https://github.com/hagezi/dns-blocklists#bypass
-! Last modified: 2025-04-02T05:08:40.239Z
+! Last modified: 2025-04-02T08:10:12.244Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -170,12 +170,9 @@
 ||ahoj.email^
 ||airdns.org^
 ||airvpn.org^
-||apple-relay.akamaized.net^
 ||akunssh.net^
 ||dns.albony.xyz^
 ||aldhaferi.store^
-||dnsnl.alekberg.net^
-||dnsse.alekberg.net^
 ||alhapi.com^
 ||alhvp.com^
 ||alidns.com^
@@ -246,10 +243,14 @@
 ||ad.anym0re.ru^
 ||doh.apad.pro^
 ||ag.apollohct.com^
-||apple-relay.apple.com^
 ||doh.dns.apple.com^
 ||mask-api.fe2.apple-dns.net^
-||mask.apple-dns.net^
+||canary.mask.apple-dns.net^
+||africa-mask.wrr.mask.apple-dns.net^
+||apac-mask.wrr.mask.apple-dns.net^
+||emea-mask.wrr.mask.apple-dns.net^
+||north-america-mask.wrr.mask.apple-dns.net^
+||south-america-mask.wrr.mask.apple-dns.net^
 ||appleproxy.com^
 ||dns.applewebkit.dev^
 ||doh.applied-privacy.net^
@@ -538,9 +539,7 @@
 ||cloaker.us^
 ||cloakvpn.com^
 ||cloudbenders.fun^
-||apple-relay.cloudfare.com^
 ||dns.cloudfiction.eu^
-||apple-relay.cloudflare.com^
 ||dns.233py.com.cdn.cloudflare.net^
 ||dns.cloudflare.com^
 ||cloudflare-dns.com^
@@ -1158,7 +1157,6 @@
 ||fastestvpn.info^
 ||fastfoxvpn.com^
 ||fastfreeproxy.info^
-||apple-relay.fastly-edge.com^
 ||fastp.org^
 ||fastpro.info^
 ||fastproxy.nl^
@@ -2634,6 +2632,7 @@
 ||proxyist.com^
 ||proxyium.com^
 ||proxyium.org^
+||www-cdn.proxyiumi.com^
 ||proxylister.com^
 ||proxylistpro.com^
 ||proxyload.net^
