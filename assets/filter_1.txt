@@ -1,9 +1,9 @@
 !
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
-! Version: 1.0.23.20
+! Version: 1.0.23.21
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2025-04-05T12:10:04.790Z
+! Last modified: 2025-04-05T18:07:57.024Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -92937,6 +92937,7 @@ inapps.appsflyersdk.com^
 ||itadapi.ithome.com.tw^
 ||zjgfq.com^
 ||207.148.44.179^
+/^(mon|tue|wed|thu|fri|sat|sun)\d{1,2}\.\w{2}\d{1,6}\w{4}\.com$/
 ||xmm.wxc.cc^
 ||srtb.msn.cn^
 ||ad*.on.cc^
@@ -99708,6 +99709,7 @@ inapps.appsflyersdk.com^
 ||pvvxfh.top^
 ||ifqn.cn^
 ||anzeretp.com^
+||jeyd.cn^
 ||ilcq.cn^
 ||rptdhu.top^
 ||okikwul.icu^
