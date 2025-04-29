@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.16.17
+! Version: 1.0.16.18
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-04-28T03:25:04.106Z
+! Last modified: 2025-04-29T20:08:40.368Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -18,6 +18,7 @@
 ||*.band^
 ||*.bar^$denyallow=fap.bar|strem.bar
 ||*.beauty^
+||*.beer^
 ||*.best^$denyallow=epg.best
 ||*.bet^
 ||*.bid^
@@ -43,6 +44,7 @@
 ||*.center^$denyallow=priv.center
 ||*.ceo^
 ||*.cfd^$denyallow=freedium.cfd
+||*.channel^
 ||*.charity^
 ||*.cheap^
 ||*.christmas^
@@ -54,6 +56,7 @@
 ||*.club^$denyallow=digipres.club|hd-olimpo.club|mbcherohub.club|skin.club|thelemmy.club
 ||*.college^
 ||*.computer^$denyallow=libre.computer|neat.computer|silly.computer
+||*.consulting^
 ||*.cool^$denyallow=cnyes.cool|shirtz.cool|upbitit.cool
 ||*.coupons^
 ||*.cymru^
@@ -75,10 +78,15 @@
 ||*.download^$denyallow=caido.download|mkvtoolnix.download|up4ever.download|upfiles.download
 ||*.eco^$denyallow=elli.eco|play.eco
 ||*.engineer^
+||*.enterprises^
+||*.equipment^
 ||*.esq^
 ||*.events^$denyallow=ticketco.events
+||*.exchange^
 ||*.expert^$denyallow=bahn.expert|booking.expert|malware.expert
+||*.exposed^
 ||*.faith^
+||*.family^
 ||*.fan^$denyallow=lemmy.fan
 ||*.fashion^
 ||*.finance^
@@ -87,10 +95,12 @@
 ||*.fit^$denyallow=appetit.fit|clubb.fit|justget.fit|pridegym.fit|union.fit
 ||*.fitness^
 ||*.foo^$denyallow=helloworld.foo
+||*.forex^
 ||*.forsale^
 ||*.foundation^$denyallow=e.foundation|grapheneos.foundation|jp.foundation|player.foundation
 ||*.fund^
 ||*.fyi^$denyallow=apollo.fyi|better.fyi|genderdysphoria.fyi|iusearchlinux.fyi|levels.fyi|lunar.fyi|vercel.fyi
+||*.games^
 ||*.gdn^$denyallow=cst.gdn
 ||*.gent^
 ||*.gift^$denyallow=discord.gift
@@ -113,6 +123,8 @@
 ||*.ink^$denyallow=filepress.ink|ishortn.ink|next.ink|rdl.ink|shrinkme.ink|sumerian.ink|work.ink
 ||*.international^
 ||*.irish^
+||*.jewelry^
+||*.joburg^
 ||*.kim^
 ||*.lat^
 ||*.legal^$denyallow=doctolib.legal|wbs.legal
@@ -173,18 +185,22 @@
 ||*.qpon^
 ||*.quest^$denyallow=dice.quest|epochal.quest|mhn.quest|mylegendary.quest|prometheus.quest|raccoon.quest
 ||*.realtor^
+||*.realty^
 ||*.recipes^
 ||*.red^$denyallow=bunkr.red|sci-hub.red|xvideos.red
 ||*.rehab^
 ||*.ren^
 ||*.rent^$denyallow=srv.rent
+||*.repair^
 ||*.rest^$denyallow=insomnia.rest|nect.rest
 ||*.restaurant^
 ||*.review^
+||*.reviews^
 ||*.rich^
 ||*.rip^$denyallow=highquality.rip|medium.rip|nest.rip|scribe.rip
 ||*.rodeo^
 ||*.rugby^
+||*.ryukyu^
 ||*.sale^
 ||*.sbs^
 ||*.schule^
@@ -211,6 +227,7 @@
 ||*.tattoo^
 ||*.tax^
 ||*.taxi^
+||*.tienda^
 ||*.tk^$denyallow=bstweaker.tk|budterence.tk|c-r-t.tk|google.tk|goshujin.tk|kabi.tk|sironi.tk|tokelau-info.tk|xn--qubec-csa.tk|zete.tk
 ||*.today^$denyallow=archive.today|futurology.today|lemmy.today|oldweb.today
 ||*.tokyo^
@@ -218,6 +235,7 @@
 ||*.town^
 ||*.trade^$denyallow=composer.trade|dx.trade|kite.trade
 ||*.trading^
+||*.tube^
 ||*.uno^$denyallow=platform.uno
 ||*.vacations^
 ||*.vegas^
@@ -228,6 +246,7 @@
 ||*.vlaanderen^
 ||*.vote^$denyallow=arizona.vote
 ||*.voto^
+||*.wales^
 ||*.wang^
 ||*.webcam^
 ||*.website^$denyallow=acro.website|bestmotherfucking.website|eddie.website|thatsup.website|tilde.website|uphold.website
