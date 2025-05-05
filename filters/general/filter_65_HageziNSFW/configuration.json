@@ -1,0 +1,21 @@
+{
+  "name": "HaGeZi's NSFW Blocklist",
+  "description": "Blocks adult content.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi's NSFW Blocklist",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/adblock/nsfw.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
