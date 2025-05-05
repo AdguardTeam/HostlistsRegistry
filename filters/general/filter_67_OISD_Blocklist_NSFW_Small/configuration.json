@@ -1,0 +1,21 @@
+{
+  "name": "OISD Blocklist NSFW Small",
+  "description": "List for blocking orn/shock/adult sites.",
+  "homepage": "https://oisd.nl/",
+  "sources": [
+    {
+      "name": "OISD Blocklist NSFW Small",
+      "source": "https://nsfw-small.oisd.nl/",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
