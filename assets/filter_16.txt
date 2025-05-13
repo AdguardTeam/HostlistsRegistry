@@ -1,9 +1,9 @@
 !
 ! Title: VNM: ABPVN List
 ! Description: List for blocking ads on Vietnamese websites
-! Version: 1.0.15.96
+! Version: 1.0.15.97
 ! Homepage: http://abpvn.com/
-! Last modified: 2025-05-08T08:10:45.953Z
+! Last modified: 2025-05-13T03:26:10.240Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -4600,6 +4600,7 @@
 0.0.0.0 cm.rdr.creativecdn.com
 0.0.0.0 creativecdn.com
 0.0.0.0 eu.creativecdn.com
+0.0.0.0 invstatic101.creativecdn.com
 0.0.0.0 phx.creativecdn.com
 0.0.0.0 prebid-asia.creativecdn.com
 0.0.0.0 prebid-eu.creativecdn.com
@@ -4774,25 +4775,26 @@
 0.0.0.0 iad-usadmm.dotomi.com
 0.0.0.0 login-ds.dotomi.com
 0.0.0.0 media-ams5.msg.dotomi.com
-0.0.0.0 medianet-match.dotomi.com
 0.0.0.0 media-sj2.msg.dotomi.com
+0.0.0.0 medianet-match.dotomi.com
 0.0.0.0 openx2-match.dotomi.com
 0.0.0.0 prebid-match.dotomi.com
+0.0.0.0 proc.ad.cpe.dotomi.com
 0.0.0.0 pubmatic-match.dotomi.com
 0.0.0.0 pulsepoint-match.dotomi.com
 0.0.0.0 purch-match.dotomi.com
 0.0.0.0 rubicon-match.dotomi.com
+0.0.0.0 s-usweb.dotomi.com
 0.0.0.0 sjc-login.dotomi.com
 0.0.0.0 sortable-match.dotomi.com
 0.0.0.0 spotx-match.dotomi.com
 0.0.0.0 stx-match.dotomi.com
-0.0.0.0 s-usweb.dotomi.com
 0.0.0.0 synacor-match.dotomi.com
 0.0.0.0 tpt.dotomi.com
-0.0.0.0 tubemogul-sync.dotomi.com
 0.0.0.0 tremor-match.dotomi.com
-0.0.0.0 usadmm.dotomi.com
+0.0.0.0 tubemogul-sync.dotomi.com
 0.0.0.0 usadmm-ds.dotomi.com
+0.0.0.0 usadmm.dotomi.com
 0.0.0.0 usweb.dotomi.com
 0.0.0.0 vcm-match.dotomi.com
 0.0.0.0 1rx.io
@@ -6114,10 +6116,12 @@
 0.0.0.0 s-rtb.send.microadinc.com
 0.0.0.0 ssp.send.microadinc.com
 0.0.0.0 microad.jp
+0.0.0.0 aid.send.microad.jp
+0.0.0.0 cache.send.microad.jp
 0.0.0.0 cdn.microad.jp
 0.0.0.0 cm.send.microad.jp
-0.0.0.0 s-rtb.send.microad.jp
 0.0.0.0 s-rtb-pb.send.microad.jp
+0.0.0.0 s-rtb.send.microad.jp
 0.0.0.0 ssp.send.microad.jp
 0.0.0.0 universe.send.microad.jp
 0.0.0.0 i.microad.net
@@ -6713,6 +6717,7 @@
 0.0.0.0 wp-static.publift.com
 0.0.0.0 www.publift.com
 0.0.0.0 cdn.id5-sync.com
+0.0.0.0 diagnostics.id5-sync.com
 0.0.0.0 id5-sync.com
 0.0.0.0 www.id5-sync.com
 0.0.0.0 eu-1-id5-sync.com
@@ -7311,9 +7316,13 @@
 0.0.0.0 cdn.blueadss.com
 0.0.0.0 www.blueadss.com
 0.0.0.0 ezodn.com
+0.0.0.0 bshr.ezodn.com
 0.0.0.0 g.ezodn.com
 0.0.0.0 go.ezodn.com
 0.0.0.0 www.ezodn.com
+0.0.0.0 ezoic.net
+0.0.0.0 g.ezoic.net
+0.0.0.0 go.ezoic.net
 0.0.0.0 api.relap.io
 0.0.0.0 cdn.relap.io
 0.0.0.0 relap.io
@@ -9840,6 +9849,12 @@
 0.0.0.0 go.hpyrdr.com
 0.0.0.0 hpyrdr.com
 0.0.0.0 wl.hpyrdr.com
+0.0.0.0 blcdog.com
+0.0.0.0 creative.blcdog.com
+0.0.0.0 go.blcdog.com
+0.0.0.0 creative.xlirdr.com
+0.0.0.0 go.xlirdr.com
+0.0.0.0 xlirdr.com
 0.0.0.0 analytics.polarbyte.com
 0.0.0.0 api.polarbyte.com
 0.0.0.0 cdn.polarbyte.com
@@ -10354,6 +10369,7 @@
 0.0.0.0 wren.condenastdigital.com
 0.0.0.0 ab1n.net
 0.0.0.0 tk6if76q.ab1n.net
+0.0.0.0 b1sync.zemanta.com
 0.0.0.0 p1.zemanta.com
 0.0.0.0 zemanta.com
 0.0.0.0 bquildna43.site
@@ -10947,6 +10963,30 @@
 0.0.0.0 incoming.telemetry.mozilla.org
 0.0.0.0 provenpixel.com
 0.0.0.0 upx.provenpixel.com
+0.0.0.0 esp.rtbhouse.com
+0.0.0.0 rtbhouse.com
+0.0.0.0 oa.openxcdn.net
+0.0.0.0 openxcdn.net
+0.0.0.0 cdn.prod.uidapi.com
+0.0.0.0 prod.uidapi.com
+0.0.0.0 fastclick.net
+0.0.0.0 secure.cdn.fastclick.net
+0.0.0.0 ccgateway.net
+0.0.0.0 analytics.ccgateway.net
+0.0.0.0 carbon-cdn.ccgateway.net
+0.0.0.0 ingestion-router-api.ccgateway.net
+0.0.0.0 privacy-location-edge.ccgateway.net
+0.0.0.0 script-api.ccgateway.net
+0.0.0.0 ust-ad.com
+0.0.0.0 ad.ust-ad.com
+0.0.0.0 adjs.ust-ad.com
+0.0.0.0 rcv.ust-ad.com
+0.0.0.0 impact-ad.jp
+0.0.0.0 aw.dw.impact-ad.jp
+0.0.0.0 y.one.impact-ad.jp
+0.0.0.0 bid.ssp.bance.jp
+0.0.0.0 js.ssp.bance.jp
+0.0.0.0 tr.ssp.bance.jp
 0.0.0.0 adtimaserver.vn
 0.0.0.0 api.adtimaserver.vn
 0.0.0.0 log.adtimaserver.vn
@@ -13975,6 +14015,7 @@
 0.0.0.0 bans.bride.ru
 0.0.0.0 baresi.xyz
 0.0.0.0 barnesandnoble.bfast.com
+0.0.0.0 barometercorrodingunease.com
 0.0.0.0 barscreative1.com
 0.0.0.0 basebanner.com
 0.0.0.0 basepush.com
@@ -14228,6 +14269,7 @@
 0.0.0.0 camp.purchase-shop.com
 0.0.0.0 campaign.bharatmatrimony.com
 0.0.0.0 campaigns.williamhill.com
+0.0.0.0 cams.gratis
 0.0.0.0 can-get-so.me
 0.0.0.0 canangafierier.uno
 0.0.0.0 caniamedia.com
@@ -14524,6 +14566,7 @@
 0.0.0.0 copycarpenter.com
 0.0.0.0 copyrightaccesscontrols.com
 0.0.0.0 coremetrics.com
+0.0.0.0 correctdilutetrophy.com
 0.0.0.0 correlationcocktailinevitably.com
 0.0.0.0 count.rin.ru
 0.0.0.0 count.west263.com
@@ -14604,6 +14647,7 @@
 0.0.0.0 culturalsameunbridle.com
 0.0.0.0 culwcoam.com
 0.0.0.0 cupidonmedia.com
+0.0.0.0 cupoabie.net
 0.0.0.0 curioushingefast.com
 0.0.0.0 curlyhomes.com
 0.0.0.0 curtaincows.com
@@ -14792,6 +14836,7 @@
 0.0.0.0 displaycontentprofit.com
 0.0.0.0 displayformatcontent.com
 0.0.0.0 displayvertising.com
+0.0.0.0 disprovefacilityjolt.com
 0.0.0.0 disqusads.com
 0.0.0.0 disrespectpreceding.com
 0.0.0.0 dist.belnk.com
@@ -14824,6 +14869,7 @@
 0.0.0.0 doruffletr.com
 0.0.0.0 dotranquilla.com
 0.0.0.0 dotsonian.org
+0.0.0.0 dotyruntchan.com
 0.0.0.0 doubleadserve.com
 0.0.0.0 doubleclick.com
 0.0.0.0 doubleclick.de
@@ -15027,6 +15073,7 @@
 0.0.0.0 extreme-dm.com
 0.0.0.0 extremetracking.com
 0.0.0.0 exxohwvxupjv.com
+0.0.0.0 ey43.com
 0.0.0.0 eyeblaster.com
 0.0.0.0 eyebrowscrambledlater.com
 0.0.0.0 eyereturn.com
@@ -15057,7 +15104,6 @@
 0.0.0.0 fashmuqpi.com
 0.0.0.0 fastbuy.biz
 0.0.0.0 fastclick.com
-0.0.0.0 fastclick.net
 0.0.0.0 fatcoil.com
 0.0.0.0 fatsosjogs.com
 0.0.0.0 faukeeshie.com
@@ -15097,6 +15143,7 @@
 0.0.0.0 fistofzeus.com
 0.0.0.0 fixespreoccupation.com
 0.0.0.0 fkabzoarsoz.com
+0.0.0.0 fkwnnfwhvjmubrl.com
 0.0.0.0 flagmantensity.com
 0.0.0.0 flakyfeast.com
 0.0.0.0 fleraprt.com
@@ -15454,6 +15501,7 @@
 0.0.0.0 holahupa.com
 0.0.0.0 homepageking.de
 0.0.0.0 homespotaudience.com
+0.0.0.0 hoocaumakopaibu.com
 0.0.0.0 hookawep.net
 0.0.0.0 hoowooze.net
 0.0.0.0 hostedads.realitykings.com
@@ -15495,6 +15543,7 @@
 0.0.0.0 hypermusk.com
 0.0.0.0 hypertracker.com
 0.0.0.0 hypertusk.com
+0.0.0.0 hz.methylstewed.com
 0.0.0.0 i-lookup.com
 0.0.0.0 i.cdnkimg.com
 0.0.0.0 i1media.no
@@ -15548,7 +15597,6 @@
 0.0.0.0 immensehoney.com
 0.0.0.0 immerseweariness.com
 0.0.0.0 immoxdzdke.com
-0.0.0.0 impact-ad.jp
 0.0.0.0 impactmobile.com
 0.0.0.0 impeccablewriter.com
 0.0.0.0 importedincrease.com
@@ -15932,6 +15980,7 @@
 0.0.0.0 lumpbackstage.com
 0.0.0.0 lumupu.xyz
 0.0.0.0 lunarads.com
+0.0.0.0 lutoorgourgi.com
 0.0.0.0 luxope.com
 0.0.0.0 lvtuucmyfpz.com
 0.0.0.0 lwddlhcdwmr.com
@@ -16190,6 +16239,7 @@
 0.0.0.0 muwmedia.com
 0.0.0.0 mw19c3mi5a.com
 0.0.0.0 mwejhobumo.com
+0.0.0.0 mwekuzaj.com
 0.0.0.0 mxptint.net
 0.0.0.0 mxvp-ad-config-prod-1.zenmxapps.com
 0.0.0.0 mxvp-feature-toggle-prod-1.zenmxapps.com
@@ -16298,6 +16348,7 @@
 0.0.0.0 nextmillmedia.com
 0.0.0.0 nfucujozv.com
 0.0.0.0 ng3.ads.warnerbros.com
+0.0.0.0 nhusjhrshwxvl.com
 0.0.0.0 nicksstevmark.com
 0.0.0.0 nicohgokppuj.com
 0.0.0.0 nightmareirene.com
@@ -16868,6 +16919,7 @@
 0.0.0.0 ptukasti.com
 0.0.0.0 ptumsess.com
 0.0.0.0 ptuxapow.com
+0.0.0.0 ptuzrywmega.com
 0.0.0.0 ptygunjk.com
 0.0.0.0 pu1.biz
 0.0.0.0 pu3.biz
@@ -17009,6 +17061,7 @@
 0.0.0.0 rapleaf.com
 0.0.0.0 raresummer.com
 0.0.0.0 rate.ru
+0.0.0.0 raunoaptotoaw.com
 0.0.0.0 razzedwhimsic.website
 0.0.0.0 rbkhpjfwtmirk.com
 0.0.0.0 rcvlink.com
@@ -17153,6 +17206,7 @@
 0.0.0.0 rot.spotsniper.ru
 0.0.0.0 rotabol.com
 0.0.0.0 rotumal.com
+0.0.0.0 roumaniangravelnot.com
 0.0.0.0 rounddescribe.com
 0.0.0.0 roundspaniardindefinitely.com
 0.0.0.0 rounuatedanximum.com
@@ -17561,6 +17615,7 @@
 0.0.0.0 supportiverarity.com
 0.0.0.0 surecheapermoisture.com
 0.0.0.0 surfmusik-adserver.de
+0.0.0.0 surtaultathoado.com
 0.0.0.0 susifhfh2d8ldn09.com
 0.0.0.0 suspectedadvisor.com
 0.0.0.0 suwcaxazzn.com
@@ -17875,6 +17930,7 @@
 0.0.0.0 tzegilo.com
 0.0.0.0 tzhrmcnidxqwrb.com
 0.0.0.0 tzirtatakoqf.com
+0.0.0.0 tzwtzygxslrk.com
 0.0.0.0 u1pmt.com
 0.0.0.0 u9axpzf50.com
 0.0.0.0 uarating.com
@@ -18499,7 +18555,6 @@
 0.0.0.0 analytics.archive.org
 0.0.0.0 analytics.avcdn.net
 0.0.0.0 analytics.bitrix.info
-0.0.0.0 analytics.ccgateway.net
 0.0.0.0 analytics.cdn.live
 0.0.0.0 analytics.clickdimensions.com
 0.0.0.0 analytics.cloudron.io
@@ -18598,7 +18653,6 @@
 0.0.0.0 cankaowang.com
 0.0.0.0 cc-api-data.adobe.io
 0.0.0.0 cc.swiftype.com
-0.0.0.0 ccgateway.net
 0.0.0.0 cdn.c-i.as
 0.0.0.0 cdn.counter.dev
 0.0.0.0 cdn.lr-ingest.io
@@ -18918,7 +18972,6 @@
 0.0.0.0 ponos.zeronaught.com
 0.0.0.0 poole-collector-prod.n3twork.com
 0.0.0.0 popupmaker.com
-0.0.0.0 prod.uidapi.com
 0.0.0.0 prodregistryv2.org
 0.0.0.0 promotionengine.com
 0.0.0.0 prooffactor.com
