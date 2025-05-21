@@ -1,9 +1,9 @@
 !
 ! Title: AWAvenue Ads Rule
 ! Description: Use Adblock syntax to fight against various advertising SDKs in Android applications from the network level , prevent them from loading.
-! Version: 1.0.15.28
+! Version: 1.0.15.29
 ! Homepage: https://awavenue.top/
-! Last modified: 2025-05-19T10:08:57.762Z
+! Last modified: 2025-05-21T01:35:47.094Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -39,7 +39,6 @@
 ||ad.toutiao.com^
 ||ad.v3mh.com^
 ||ad.winrar.com.cn^
-||ad.xiaomi.com^
 ||ad.ximalaya.com^
 ||ad.zijieapi.com^
 ||ad2.ettoday.net^
@@ -62,7 +61,6 @@
 ||adguanggao.eee114.com^
 ||adjust.cn^
 ||adjust.com^
-||adkwai.com^
 ||adlink-api.huan.tv^
 ||adm.funshion.com^
 ||ads-api-o.api.leiniao.com^
@@ -130,7 +128,6 @@
 ||adtago.s3.amazonaws.com^
 ||adtech.yahooinc.com^
 ||adtrack.quark.cn^
-||adukwai.com^
 ||adv.fjtv.net^
 ||adv.sec.intl.miui.com^
 ||adv.sec.miui.com^
@@ -192,6 +189,7 @@
 ||api-ad-product.huxiu.com^
 ||api-adservices.apple.com^
 ||api-gd.hiaiabc.com^
+||api.ad.xiaomi.com^
 ||api.e.kuaishou.com^
 ||api.htp.hubcloud.com.cn^
 ||api.hzsanjiaomao.com^
@@ -205,14 +203,13 @@
 ||apiyd.my91app.com^
 ||app-measurement.com^
 ||appcfg.v.qq.com^
-||appcloud2.in.zhihu.com^
 ||applog.lc.quark.cn^
 ||applog.uc.cn^
 ||applog.zijieapi.com^
 ||applovin.com^
 ||applvn.com^
+||appversion.115.com^
 ||aspect-upush.umeng.com^
-||ata-sdk-uuid-report.dreport.meituan.net^
 ||auction.unityads.unity3d.com^
 ||audid-api.taobao.com^
 ||audid.umeng.com^
@@ -255,6 +252,7 @@
 ||cdn-ads.oss-cn-shanghai.aliyuncs.com^
 ||cdn-f.adsmoloco.com^
 ||cdn-plugin-sync-upgrade-juui.hismarttv.com^
+||cdn.ad.xiaomi.com^
 ||cdn.aiclk.com^
 ||cdn.chinaliftoff-creatives.io^
 ||cdn.hpplay.com.cn^
@@ -294,6 +292,7 @@
 ||data.mistat.xiaomi.com^
 ||datk.anythinktech.com^
 ||de.tynt.com^
+||diagnosis.ad.xiaomi.com^
 ||dig.bdurl.net^
 ||dl.zuimeitianqi.com^
 ||dlogs.bwton.com^
@@ -306,10 +305,10 @@
 ||dsp-x.jd.com^
 ||dsp.fcbox.com^
 ||dualstack-logs.amap.com^
-||dutils.com^
 ||dxp.baidu.com^
 ||dyp2p-ali.douyucdn.cn^
 ||dyp2p-hw.douyucdn.cn^
+||e.ad.xiaomi.com^
 ||eclick.baidu.com^
 ||edge.ads.twitch.tv^
 ||ef-dongfeng.tanx.com^
@@ -339,22 +338,20 @@
 ||geo.yahoo.com^
 ||getui.cn^
 ||getui.com^
-||getui.net^
 ||ggx.cmvideo.cn^
 ||ggx01.miguvideo.com^
 ||ggx03.miguvideo.com^
+||globalapi.ad.xiaomi.com^
 ||google-analytics.com^
 ||googleads.g.doubleclick.com^
 ||googleads.g.doubleclick.net^
 ||googleadservices-cn.com^
 ||googleadservices.com^
 ||googletagservices-cn.com^
-||googletagservices.com^
 ||gorgon.youdao.com^
 ||gromore.pangolin-sdk-toutiao.com^
 ||grs.dbankcloud.com^
 ||grs.hicloud.com^
-||grs.platform.dbankcloud.ru^
 ||gslb.hpplay.cn^
 ||gvideo.qpic.cn^
 ||h-adashx.ut.taobao.com^
@@ -377,7 +374,6 @@
 ||hw-p2p-pull.video-voip.com^
 ||hw-p2p.pull.yximgs.com^
 ||hwpub-s01-drcn.cloud.dbankcloud.cn^
-||hya.comp.360os.com^
 ||hybrid.miniapp.taobao.com^
 ||hye.comp.360os.com^
 ||hyt.comp.360os.com^
@@ -389,7 +385,6 @@
 ||iadworkbench.apple.com^
 ||ifacelog.iqiyi.com^
 ||ifs.tanx.com^
-||igexin.com^
 ||ii.gdt.qq.com^
 ||imag8.pubmatic.com^
 ||imag86.pubmatic.com^
@@ -429,7 +424,6 @@
 ||ks-p2p.pull.yximgs.com^
 ||ks.ferlytc.com^
 ||ks.pull.yximgs.com^
-||kuiniuca.com^
 ||lh3.googleadsserving.cn^
 ||litchiads.com^
 ||liveats-vod.video.ptqy.gitv.tv^
@@ -447,7 +441,9 @@
 ||log-sdk.ksapisrv.com^
 ||log-upload-os.hoyoverse.com^
 ||log-upload.mihoyo.com^
+||log-verify.dutils.com^
 ||log-verify.hiaiabc.com^
+||log.ad.xiaomi.com^
 ||log.aispeech.com^
 ||log.amemv.com^
 ||log.appstore3.huan.tv^
@@ -483,7 +479,6 @@
 ||masdkv6.3g.qq.com^
 ||mazu.m.qq.com^
 ||mbdlog.iqiyi.com^
-||metrics.apple.com^
 ||metrics.data.hicloud.com^
 ||metrics.icloud.com^
 ||metrics.mzstatic.com^
@@ -505,7 +500,6 @@
 ||mobaliyun.res.mgtv.com^
 ||mobile.da.mgtv.com^
 ||mobilelog.upqzfile.com^
-||mobileservice.cn^
 ||mon.zijieapi.com^
 ||monitor-ads-test.huan.tv^
 ||monitor-uu.play.aiseet.atianqi.com^
@@ -539,10 +533,13 @@
 ||outlookads.live.com^
 ||p.l.qq.com^
 ||p.s.360.cn^
+||p1-lm.adkwai.com^
+||p2-lm.adkwai.com^
 ||p2pchunk-table.douyucdn.cn^
 ||p2plive-ali.douyucdn.cn^
 ||p2pupdate.gamedl.qq.com^
 ||p2pupgrade.gamedl.qq.com^
+||p3-lm.adkwai.com^
 ||p3-tt.byteimg.com^
 ||pagead2.googlesyndication.com^
 ||pangolin-sdk-toutiao-b.com^
@@ -567,7 +564,6 @@
 ||q.i.gdt.qq.com^
 ||qn-cdnfile1pcdn.msstatic.com^
 ||qqdata.ab.qq.com^
-||qwapi.apple.com^
 ||qzs.gdtimg.com^
 ||recommend-drcn.hms.dbankcloud.cn^
 ||report.tv.kohesport.qq.com^
@@ -586,9 +582,6 @@
 ||rpt.gdt.qq.com^
 ||rtb.voiceads.cn^
 ||s.amazon-adsystem.com^
-||s1.qq.com^
-||s2.qq.com^
-||s3.qq.com^
 ||s8t.teads.tv^
 ||saad.ms.zhangyue.net^
 ||saas.hpplay.cn^
@@ -596,7 +589,6 @@
 ||samsungads.com^
 ||sanme2.taisantech.com^
 ||saxysec.com^
-||scdown.qq.com^
 ||scs.openspeech.cn^
 ||sdk-ab-config.qquanquan.com^
 ||sdk-cache.video.ptqy.gitv.tv^
@@ -610,6 +602,7 @@
 ||sdkauth.hpplay.cn^
 ||sdkconf.avlyun.com^
 ||sdkconfig.ad.intl.xiaomi.com^
+||sdkconfig.ad.xiaomi.com^
 ||sdkconfig.play.aiseet.atianqi.com^
 ||sdkconfig.video.qq.com^
 ||sdkoptedge.chinanetcenter.com^
@@ -655,6 +648,7 @@
 ||t-dsp.pinduoduo.com^
 ||t.l.qq.com^
 ||t.teads.tv^
+||t.track.ad.xiaomi.com^
 ||t002.ottcn.com^
 ||t1.a.market.xiaomi.com^
 ||t1.teads.tv^
@@ -669,6 +663,7 @@
 ||telemetry.sdk.inmobi.com^
 ||tencent-dtv.m.cn.miaozhen.com^
 ||terms-drcn.platform.dbankcloud.cn^
+||test.ad.xiaomi.com^
 ||tj.b.qq.com^
 ||tj.video.qq.com^
 ||tmead.y.qq.com^
@@ -720,7 +715,6 @@
 ||umengacs.m.taobao.com^
 ||umengjmacs.m.taobao.com^
 ||umini.shujupie.com^
-||umsns.com^
 ||union.baidu.cn^
 ||union.baidu.com^
 ||update.avlyun.sec.miui.com^
@@ -783,8 +777,6 @@
 ||xc.gdt.qq.com^
 ||xcultur.com^
 ||xiaomi-dtv.m.cn.miaozhen.com^
-||xlivrdr.com^
-||xlmzc.cnjp-exp.com^
 ||xlog.jd.com^
 ||xlviiirdr.com^
 ||xlviirdr.com^
@@ -793,8 +785,8 @@
 ||ykad-data.youku.com^
 ||ykad-gateway.youku.com^
 ||youku-acs.m.taobao.com^
-||youxi.kugou.com^
 ||ytx-file.110route.cn^
+||zeus.ad.xiaomi.com^
 ||zhihu-web-analytics.zhihu.com^
 /.*\.*\.shouji\.sogou\.com/
 /.*\.1rtb\.com/
