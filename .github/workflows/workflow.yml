@@ -54,7 +54,7 @@ jobs:
         with:
           status: failure
           fields: workflow, repo, message, commit, author, eventName, ref, job
-          job_name: Run AGLint
+          job_name: Run build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
