@@ -48,13 +48,13 @@ jobs:
     needs: build
     # Run this job only if the previous job failed and the event was triggered by the 'AdguardTeam/HostlistsRegistry' repository
     # Note: 'always()' is needed to run the notify job even if the build job was failed
-    if: ${{ always() && needs.build.result == 'failure' && github.repository == 'AdguardTeam/HostlistsRegistry' && (github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository)) }}
+    if: ${{ always() && needs.build.result == 'failure' && github.repository == 'AdguardTeam/HostlistsRegistry' && (github.event_name == 'push' || github.event.pull_request.head.repo.full_name == github.repository) }}
     steps:
       - uses: 8398a7/action-slack@v3
         with:
           status: failure
           fields: workflow, repo, message, commit, author, eventName, ref, job
-          job_name: Run build
+          job_name: Run AGLint
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
