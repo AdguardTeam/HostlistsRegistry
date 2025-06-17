@@ -1,9 +1,9 @@
 !
 ! Title: NOR: Dandelion Sprouts nordiske filtre
 ! Description: Dandelion Sprout's Nordic Filters (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.14.63
+! Version: 1.0.14.64
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2025-06-14T15:06:46.009Z
+! Last modified: 2025-06-17T03:29:47.931Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -822,5 +822,15 @@ butikksoslo.com^
 
 ||tvs.telenor.net^$dnstype=AAAA
 ||s3.eu-west-1.amazonaws.com^$dnstype=AAAA
+|toba.bankidapis.no|$dnstype=AAAA
+|stoeapp.no|$dnstype=AAAA
+|ws.snla-it.no|$dnstype=AAAA
+|app.eika.no|$dnstype=AAAA
+|www.eika.no|$dnstype=AAAA
+||nexus-websocket-a.intercom.io^$dnstype=AAAA
+||events.mapbox.com^$dnstype=AAAA
+||api.mapbox.com^$dnstype=AAAA
+||atb-prod.api.mittatb.no^$dnstype=AAAA
+||vdemedo2-android.mobile-messenger.intercom.com^$dnstype=AAAA
 
 ||if-a-large-hosts-file-contains-this-entry-then-it.uses-dandelion-sprouts-nordic-domains-as-a-source-list.data^
