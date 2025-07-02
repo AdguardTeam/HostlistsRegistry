@@ -1,0 +1,21 @@
+{
+  "name": "HaGeZi's Vivo Tracker Blocklist",
+  "description": "Blocks Vivo native broadband trackers that track your activity.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi's Vivo Tracker Blocklist",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/native.vivo.txt",
+      "type": "adblock",
+      "transformations": [
+          "RemoveModifiers",
+          "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
