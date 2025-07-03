@@ -1,12 +1,13 @@
 !
 ! Title: AdGuard DNS Popup Hosts filter
 ! Description: Filter includes rules for sites that open in a new window, composed from AdGuard, EasyList, ABPindo filters and improved for compatibility with DNS-level pop-up blocking.
-! Version: 1.0.16.61
+! Version: 1.0.16.62
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2025-07-03T06:11:12.456Z
+! Last modified: 2025-07-03T12:13:11.347Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
+||wissekeygroup.com^$dnsrewrite=ad-block.dns.adguard.com
 ||crakrevenue.xyz^$dnsrewrite=ad-block.dns.adguard.com
 ||wmctjd.com^$dnsrewrite=ad-block.dns.adguard.com
 ||buoydeparturediscontent.com^$dnsrewrite=ad-block.dns.adguard.com
