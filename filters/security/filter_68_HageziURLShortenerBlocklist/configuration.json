@@ -1,6 +1,6 @@
 {
   "name": "HaGeZi's URL Shortener Blocklist",
-  "description": "This list blocks url shorteners.",
+  "description": "This list blocks URL shorteners.",
   "homepage": "https://github.com/hagezi/dns-blocklists",
   "sources": [
     {
@@ -15,7 +15,6 @@
   ],
   "transformations": [
     "RemoveComments",
-    "Deduplicate",
-    "Compress"
+    "Deduplicate"
   ]
 }
