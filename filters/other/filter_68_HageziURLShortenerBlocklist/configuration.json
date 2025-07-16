@@ -1,0 +1,21 @@
+{
+  "name": "HaGeZi's URL Shortener Blocklist",
+  "description": "This list blocks url shorteners.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi's URL Shortener Blocklist",
+      "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/urlshortener.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
