@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.18.62
+! Version: 1.0.18.63
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2025-07-21T01:38:15.730Z
+! Last modified: 2025-07-21T13:20:07.979Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -2307,7 +2307,10 @@
 
 ||recompensaszurichsantander.com.mx^
 ||santander.*.fino.digital^
+||santander.cf.sandbox.motrada.ch^
 ||santanderpod.*.co.uk^
+
+||dhl.*.potabox.com^
 ||dhl-event.app^
 ||dhexpress.weebly.com^
 ||ltlweight.trgr.me^
@@ -2315,6 +2318,8 @@
 ||dhl-rpa-portal.infanion.com^
 ||leatherqueen.shop^
 ||dhl-express-ppd.infanion.com^
+||mtm.rnz.mybluehost.me^
+||mpinsureit.com^
 ||delivery-globaldhlauth.github.io^
 ||myjobdhl.earcu.com^
 
@@ -2600,6 +2605,12 @@
 ||pancakeswap.finance.expolorer.im^
 ||pancake.run^
 ||pay8-2v-*-gmailcom.vercel.app^
+
+||sso-nndax-io-auth.webflow.io^
+||public---sso--ndax--x---cdn.webflow.io^
+||sso-*.webflow.io^
+-sso-*.webflow.io^
+-ndax-*.webflow.io^
 
 ||mmitalianbeef.square.site^
 ||bigbauer.com^
