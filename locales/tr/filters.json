@@ -1,7 +1,7 @@
 [
 	{
 		"hostlist.1.name": "AdGuard DNS filtresi",
-		"hostlist.1.description": "Birkaç filtreden (AdGuard Temel filtresi, Sosyal Medya filtresi, İzleme Koruması filtresi, Mobil Reklamlar filtresi, EasyList ve EasyPrivacy) oluşan ve DNS düzeyinde reklam engellemeyle daha iyi uyumlu olması için özel olarak basitleştirilmiş liste"
+		"hostlist.1.description": "AdGuard Temel filtresi, Sosyal Medya filtresi, İzleme Koruması filtresi, Mobil Reklam filtresi, EasyList ve EasyPrivacy gibi çeşitli filtrelerden oluşan ve DNS düzeyinde reklam engelleme ile daha iyi uyumlu olması için özel olarak sadeleştirilmiş liste"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
@@ -9,7 +9,7 @@
 	},
 	{
 		"hostlist.4.name": "Dan Pollock's List",
-		"hostlist.4.description": "Reklamları engelleme ve kullanıcı izlemeyi önleme listesi"
+		"hostlist.4.description": "Reklam engelleme ve kullanıcı izlemeyi önleme listesi"
 	},
 	{
 		"hostlist.5.name": "OISD Blocklist Small",
@@ -21,7 +21,7 @@
 	},
 	{
 		"hostlist.7.name": "Perflyst and Dandelion Sprout's Smart-TV Blocklist",
-		"hostlist.7.description": "Akıllı TV'lerin satıcıya meta veri göndermesini önleme, uygulamalarda ve film hizmetlerinde reklamları engelleme listesi"
+		"hostlist.7.description": "Akıllı TV'lerin üreticiye meta veri göndermesini önleyen, uygulama ve film hizmetlerindeki reklamları engelleme listesi"
 	},
 	{
 		"hostlist.8.name": "NoCoin Filter List",
@@ -37,11 +37,11 @@
 	},
 	{
 		"hostlist.11.name": "Online Malicious URL Blocklist",
-		"hostlist.11.description": "Abuse.ch URLhaus'un Veri tabanı yığınına dayanan kötü amaçlı sitelerin engel listesi"
+		"hostlist.11.description": "Abuse.ch URLhaus veri tabanını temel alan kötü amaçlı siteleri engelleme listesi"
 	},
 	{
 		"hostlist.12.name": "Dandelion Sprout's Anti-Malware List",
-		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (AdGuard Home, Windows ve Android için AdGuard DNS filtreleme)"
+		"hostlist.12.description": "Dandelion Sprout's Anti-Malware List (AdGuard Home, Android için AdGuard ve Windows için AdGuard'da DNS filtreleme)"
 	},
 	{
 		"hostlist.13.name": "NOR: Dandelion Sprouts nordiske filtre",
@@ -101,7 +101,7 @@
 	},
 	{
 		"hostlist.27.name": "OISD Blocklist Big",
-		"hostlist.27.description": "Reklamları ve izleyicileri engelleme listesi. Engelleme yerine işlevselliğe öncelik verir. Yanlış engelleme riskleri OISD Blocklist'in küçük sürümüne göre daha yüksektir."
+		"hostlist.27.description": "Reklamları ve izleyicileri engelleme listesi. Engelleme yerine işlevselliğe öncelik verir. Yanlış engelleme olasılığı OISD Blocklist'in küçük sürümüne göre daha yüksektir."
 	},
 	{
 		"hostlist.29.name": "CHN: AdRules DNS ListCHN: AdRules DNS List",
@@ -113,11 +113,11 @@
 	},
 	{
 		"hostlist.31.name": "Stalkerware Indicators List",
-		"hostlist.31.description": "Android ve iOS için İzleme yazılımı uygulamalarında uzlaşma göstergeleri."
+		"hostlist.31.description": "Android ve iOS için Stalkerware uygulamasına ait saldırılar."
 	},
 	{
 		"hostlist.32.name": "The NoTracking blocklist",
-		"hostlist.32.description": "The NoTracking blocklist, reklamları, kötü amaçlı yazılımları, kimlik avını ve diğer çevrimiçi atık verilerini engellemek için DNS tabanlı bir filtre listesidir."
+		"hostlist.32.description": "The NoTracking blocklist, reklamları, kötü amaçlı yazılımları, kimlik avını ve diğer çevrimiçi istenmeyen içerikleri engellemek için DNS tabanlı bir filtre listesidir."
 	},
 	{
 		"hostlist.33.name": "Steven Black's List",
@@ -125,7 +125,7 @@
 	},
 	{
 		"hostlist.34.name": "HaGeZi's Normal Blocklist",
-		"hostlist.34.description": "Broom - İnterneti temizler ve gizliliğinizi korur! Reklamları, Ortaklık, İzleme, Ölçümler, Telemetri, Kimlik Avı, Kötü Amaçlı Yazılım, Dolandırıcılık, Sahte, Paralar ve diğer Saçmalıkları engeller."
+		"hostlist.34.description": "Broom - İnterneti temizler ve gizliliğinizi korur! Reklamları, satış ortaklığını, izlemeyi, ölçümleri, telemetriyi, kimlik avını, kötü amaçlı yazılımı, dolandırıcılığı, sahteciliği, kripto paraları ve diğer benzerlerini engeller."
 	},
 	{
 		"hostlist.35.name": "HUN: Hufilter",
@@ -177,7 +177,7 @@
 	},
 	{
 		"hostlist.48.name": "HaGeZi's Pro Blocklist",
-		"hostlist.48.description": "Büyük temizlik - İnterneti temizler ve gizliliğinizi korur! Reklamları, ortaklık bağlantılarını, izleyicileri, ölçümleri, telemetrileri, dolandırıcılıkları, kötü amaçlı yazılımları, aldatmacaları, sahtekarlıkları, kripto paraları ve diğer istenmeyen içerikleri engeller."
+		"hostlist.48.description": "Big broom - İnterneti temizler ve gizliliğinizi korur! Reklamları, satış ortaklığını, izlemeyi, ölçümleri, telemetriyi, kimlik avını, kötü amaçlı yazılımı, dolandırıcılığı, sahteciliği, kripto paraları ve diğer benzerlerini engeller."
 	},
 	{
 		"hostlist.49.name": "HaGeZi's Ultimate Blocklist",
@@ -204,7 +204,8 @@
 		"hostlist.54.description": "Kimlik avı kampanyalarında ve diğerlerinde kötü amaçlı kullanıma karşı koruma sağlamak için dinamik DNS hizmetlerini engeller."
 	},
 	{
-		"hostlist.55.name": "HaGeZi's Badware Hoster Blocklist"
+		"hostlist.55.name": "HaGeZi's Badware Hoster Blocklist",
+		"hostlist.55.description": "Kullanıcı içeriği aracılığıyla zararlı yazılım bulundurduğu bilinen ücretsiz sağlayıcılara erişimi engelleyerek, bunların kötü amaçlı kullanımını önler."
 	},
 	{
 		"hostlist.56.name": "HaGeZi's The World's Most Abused TLDs",
@@ -233,5 +234,25 @@
 	{
 		"hostlist.64.name": "1Hosts (Pro)",
 		"hostlist.64.description": "Rahatsız edici reklamları, izleyicileri ve kötü amaçlı yazılımları engelleme listesi. Sıkı sürüm: minimum kesintilere sahiptir, kullanıcı deneyimi yerine gizlilik ve güvenliğe (reklam engelleme) öncelik verir, örneğin `graph.facebook.com` alan adını engeller."
+	},
+	{
+		"hostlist.65.name": "HaGeZi's Vivo Tracker Blocklist",
+		"hostlist.65.description": "Etkinliğinizi izleyen Vivo yerel geniş bant izleyicilerini engeller."
+	},
+	{
+		"hostlist.66.name": "HaGeZi's OPPO & Realme Tracker Blocklist",
+		"hostlist.66.description": "Etkinliğinizi izleyen OPPO ve Realme yerel geniş bant izleyicilerini engeller."
+	},
+	{
+		"hostlist.67.name": "HaGeZi's Apple Tracker Blocklist",
+		"hostlist.67.description": "Etkinliğinizi izleyen Apple yerel geniş bant izleyicilerini engeller."
+	},
+	{
+		"hostlist.68.name": "HaGeZi's URL Shortener Blocklist",
+		"hostlist.68.description": "URL kısaltıcılarını engeller."
+	},
+	{
+		"hostlist.69.name": "ShadowWhisperer Tracking List",
+		"hostlist.69.description": "Analiz, tanılama, metrikler, konum ve genel IP tespit etmeyle ilgili alan adlarını engeller."
 	}
 ]
