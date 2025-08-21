@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.18.96
+! Version: 1.0.18.97
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2025-08-20T12:13:27.265Z
+! Last modified: 2025-08-21T11:07:35.484Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -2002,8 +2002,6 @@
 ||telegramm.site^
 ||web-telegram.net^
 
-/^https:\/\/[a-z]+\.com\/away\.php\?url=[%0-9A-z]{100,}$/
-
 ||a-new86.com^
 ||koi2ru.com^
 ||room2021.net^
@@ -2025,18 +2023,14 @@
 ||stb-media.xyz^
 ||theweddingmahotsav.com^
 ||hodllane.com^
-||165-227-173-120.plesk.page^
 ||pushlandings.b-cdn.net^
-||64-226-126-114.plesk.page^
 ||fastndio.s3.eu-central-1.amazonaws.com^
 ||pub-77106c9273be4f3fbec6b6d6c3c51b7f.r2.dev^
 ||setkuttina.pages.dev^
 ||certificate-certificate.gettrials.com^
-||boring-tesla.149-102-231-176.plesk.page^
 ||xbasugigqiuegiwqdbsx.s3.ap-northeast-1.amazonaws.com^
 ||uwqghwfdwqywetqwfghewqeqweig.s3.ap-southeast-2.amazonaws.com^
 ||fantastic-salamander-c721cb.netlify.app^
-||jp-helplineweb-chrsmjinfgtizonedswebs-01.s3.ap-southeast-2.amazonaws.com^
 ||germanytechsupport.pages.dev^
 ||systemsupport.pages.dev^
 ||techsupport-ev2.pages.dev^
@@ -2302,6 +2296,14 @@
 ||2025*maintenance.weebly.com^
 ||plum-binder-*.typedream.app^
 ||dichvucong*.top^
+
+||antai-gouv-fr.troliga.sk^
+||amz.boy.mybluehost.me^
+||vmb.wvs.mybluehost.me^
+||kby.oqp.mybluehost.me^
+||vdv.oqp.mybluehost.me^
+||impotsgouv.*.wcomhost.com^
+||amandes*.serv00.net^
 ||vdbank.com.vn^
 ||conveyancingportal.com^
 ||bmoreferral.com^
@@ -3551,3 +3553,5 @@
 ||faciet.client-ac.com^
 
 ||lazada.hnjqpm.com^
+
+||sasktel.mmspos.com^
