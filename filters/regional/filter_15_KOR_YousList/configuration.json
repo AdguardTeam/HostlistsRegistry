@@ -13,6 +13,11 @@
     }
   ],
   "transformations": [
+    "RemoveComments",
     "Deduplicate"
+  ],
+  "exclusions": [
+    "*.veta.naver.com",
+    "veta.naver.com"
   ]
 }

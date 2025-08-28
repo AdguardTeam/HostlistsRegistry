@@ -1,0 +1,19 @@
+{
+  "name": "ShadowWhisperer Tracking List",
+  "description": "Blocks domains related to analytics, diagnostics, metrics, location, and public IP detection.",
+  "homepage": "https://github.com/ShadowWhisperer/BlockLists",
+  "sources": [
+    {
+      "name": "ShadowWhisperer Tracking List",
+      "source": "https://raw.githubusercontent.com/ShadowWhisperer/BlockLists/master/Lists/Tracking",
+      "type": "hosts",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

@@ -9,7 +9,6 @@
   'use strict';
 
   const fs = require('fs');
-  const path = require('path');
 
   /**
    * Reads file to string

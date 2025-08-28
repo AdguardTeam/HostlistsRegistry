@@ -6,6 +6,7 @@
 - [Services Metadata](#services-meta)
 - [Safe Search Filters](#safe-search)
 - [How to Build](#how-to-build)
+- [Hot to Compress](#how-to-compress)
 - [Localizations](#localizations)
 
 This repository contains the known hosts blocklists that are made available to the users of AdGuard products ([AdGuard DNS](https://adguard-dns.com/), [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome), etc).
@@ -58,25 +59,28 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
 
   Filter metadata. Includes name, description, etc.
 
-  - `filterId` — unique human-readable filter identifier (string)
-  - `id` - unique internal filter identifier (integer)
+  - `filterKey` — unique human-readable filter identifier (string)
+  - `filterId` - unique internal filter identifier (integer)
   - `name` — filter name; can be localized
   - `description` — filter description
   - `timeAdded` — time when this filter was added to the registry; milliseconds since January 1, 1970; you can exec `new Date().getTime()` in the browser console to get the current time
   - `homepage` — filter website/homepage
+  - `deprecated` — optional, boolean, filter is deprecated and should not be used by the products,
+      but filter is still available, i.e. not removed
   - `expires` — filter's default expiration period
   - `displayNumber` — this number is used when AdGuard sorts available filters (GUI)
   - `environment` - either `dev` or `prod`. Only `prod` lists are available in AdGuard DNS.
   - `disabled` - if set to `true`, the blocklist won't be updated.
   - `tags` — a list of [tags](#tags)
+  - `trusted` - a flag that allows using `$dnsrewrite` rules for this filter. If the filter is not trusted, `$dnsrewrite` rules will be removed from the compiled filter.
 
     <details>
       <summary>Metadata example</summary>
 
   ```json
   {
-    "filterId": "adguard_dns_filter",
-    "id": 1,
+    "filterKey": "adguard_dns_filter",
+    "filterId": 1,
     "name": "AdGuard DNS filter",
     "description": "Filter composed of several other filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking.",
     "timeAdded": 1404115015843,
@@ -84,7 +88,8 @@ The files `/assets/filters.json` and `/assets/filters-dev.json` must not be edit
     "expires": "4 days",
     "displayNumber": 3,
     "environment": "prod",
-    "tags": []
+    "tags": [],
+    "trusted": true
   }
   ```
 
@@ -240,6 +245,65 @@ yarn run compose
 ```
 
 The build result can be found in the `assets` directory.
+
+## <a id="how-to-compress"></a> How to Compress
+
+Once a year, we will compress the repository to reduce its size. We will delete all remote branches and overwrite the main branch with a squashed history. The compression script will retain the first N commits in their original order in the history. All other commits (except the first one) will be squashed into a single commit.
+
+### 1. Squash all old commits
+
+```bash
+yarn install
+yarn compress [commits_to_keep]
+```
+
+It will retain the first `[commits_to_keep]` (default is 10000, which is approximately one year of history) commits, starting from now, in their original order in the history. All other older commits (except the very first one) will be squashed into a single commit.
+
+### 2. Overwrite main branch
+
+```bash
+git push --set-upstream origin --force main
+```
+
+### 3. List all remote branches
+
+```bash
+git ls-remote --heads origin
+```
+
+### 4. Remove remote branches
+
+Remove remote branches that are no longer needed locally
+and push the removal to the remote repository:
+
+```bash
+git push origin --delete branchName
+```
+
+Replace `branchName` with the name of the branch you want to delete.
+
+### 5. Prune remote branches
+
+Use git remote prune origin to remove references to remote branches that have been deleted on the remote repository.
+This keeps your local repository in sync with the remote:
+
+```bash
+git remote prune origin
+```
+
+### 6. Clean the reflog
+
+Over time, Git can accumulate references in the reflog that are no longer needed.
+You can clean the reflog using the following command:
+
+```bash
+git reflog expire --expire=now --all
+git gc --aggressive --prune=now
+```
+
+This will remove unnecessary entries from the reflog and perform garbage collection.
+
+After this procedure git repository will reduce it's size.
 
 ## <a id="localizations"></a> Localizations
 

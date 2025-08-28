@@ -20,7 +20,7 @@
      *
      * @type {Promise<Response>}
      */
-    let servers = await (await fetch('https://api.joinmastodon.org/servers'))
+     let servers = await (await fetch('https://api.joinmastodon.org/servers'))
         .json();
 
         // Sort servers by total_users
@@ -55,7 +55,7 @@ const compile = async function () {
     if (!element.hasOwnProperty('domain')) {
         throw Error("Domain key not found in server list")
     }
-    
+
     return `||${element.domain}^`
     });
 

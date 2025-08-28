@@ -11,14 +11,19 @@ on:
 
 jobs:
   build:
-    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    name: Build Hostlists Registry
+    if: '!contains(github.event.head_commit.message, ''skip ci'')'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js
-        uses: actions/setup-node@v3
+      - name: Checkout repo with depth 1
+        uses: actions/checkout@v4
         with:
-          node-version: 18.x
+          fetch-depth: 1
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
 
       - name: yarn install
         run: yarn install
@@ -26,14 +31,43 @@ jobs:
       - name: yarn lint
         run: yarn lint
 
-      - name: run compose
-        run: |
-          node index.js
+      - name: yarn compose
+        run: yarn compose
 
       - name: Commit & Push changes
-        uses: actions-js/push@master
+        uses: actions-js/push@v1.5
         if: github.ref == 'refs/heads/main' && github.repository == 'AdguardTeam/HostlistsRegistry'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: "main"
+          branch: main
           message: "skip ci: auto-build"
+
+  notify:
+    name: Send Slack notification on failure
+    runs-on: ubuntu-latest
+    needs: build
+    # Run even if the build job failed, but only for our own repo
+    if:
+      ${{
+        always() &&
+        needs.build.result == 'failure' &&
+        github.repository == 'AdguardTeam/HostlistsRegistry' &&
+        (
+          github.event_name == 'push' ||
+          github.event_name == 'schedule' ||
+          github.event_name == 'workflow_dispatch' ||
+          (
+            github.event_name == 'pull_request' &&
+            github.event.pull_request.head.repo.full_name == github.repository
+          )
+        )
+      }}
+    steps:
+      - uses: 8398a7/action-slack@v3
+        with:
+          status: failure
+          fields: workflow,repo,message,commit,author,eventName,ref,job
+          job_name: Build Hostlists Registry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

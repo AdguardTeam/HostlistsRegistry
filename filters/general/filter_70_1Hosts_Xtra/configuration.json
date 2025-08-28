@@ -1,0 +1,19 @@
+{
+  "name": "1Hosts (Xtra)",
+  "description": "Aggressive version - maximum blocking against emerging privacy threats. May (occasionally) disrupt legit sites or services.",
+  "homepage": "https://badmojr.github.io/1Hosts/",
+  "sources": [
+    {
+      "name": "1Hosts (Xtra)",
+      "source": "https://cdn.jsdelivr.net/gh/badmojr/1Hosts@master/Xtra/adblock.txt",
+      "type": "adblock",
+      "transformations": [
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "Deduplicate",
+    "Compress"
+  ]
+}

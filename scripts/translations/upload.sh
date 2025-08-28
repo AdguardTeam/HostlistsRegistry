@@ -31,4 +31,18 @@ for locale in "${locales[@]}"; do
     rm filters.json
 done
 
+for locale in "${locales[@]}"; do
+    echo "Moving groups.json for $locale locale"
+    cp -f $workDir/locales/$locale/groups.json messages.json
+
+    echo "Exporting groups.json for $locale locale"
+    node converter.js export messages.json $locale groups.json
+
+    echo "Uploading groups.json for $locale locale"
+    curl -XPOST "${SERVICE_URL}upload" -F "format=json" -F "language=${locale}" -F "filename=groups.json" -F "project=hostlists-registry" -F "file=@./groups.json"
+
+    rm messages.json
+    rm groups.json
+done
+
 echo "Upload finished"

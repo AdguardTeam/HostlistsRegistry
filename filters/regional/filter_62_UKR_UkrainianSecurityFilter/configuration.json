@@ -1,0 +1,20 @@
+{
+    "name": "Ukrainian Security Filter",
+    "description": "Filters malicious web resources (phishing, online fraud, malware, etc.) targeting Ukrainian citizens",
+    "homepage": "https://github.com/braveinnovators/ukrainian-security-filter",
+    "sources": [
+        {
+            "name": "Ukrainian Security Filter",
+            "source": "https://raw.githubusercontent.com/braveinnovators/ukrainian-security-filter/main/lists/domains.txt",
+            "type": "hosts",
+            "transformations": [
+                "Validate"
+            ]
+        }
+    ],
+    "transformations": [
+        "RemoveComments",
+        "Deduplicate",
+        "Compress"
+    ]
+}

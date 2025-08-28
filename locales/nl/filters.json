@@ -64,7 +64,8 @@
 		"hostlist.17.description": "Lijst voor het blokkeren van advertenties, tracking, oplichting en malware, voornamelijk op Zweedse websites"
 	},
 	{
-		"hostlist.18.name": "Phishing-leger"
+		"hostlist.18.name": "Phishing Army",
+		"hostlist.18.description": "De blokkeerlijst om phishing-domeinen te filteren"
 	},
 	{
 		"hostlist.19.name": "IRN: PersianBlocker-lijst",
@@ -123,7 +124,7 @@
 		"hostlist.33.description": "Unified hosts-bestand (adware + malware)."
 	},
 	{
-		"hostlist.34.name": "HaGeZi Multi NORMAL",
+		"hostlist.34.name": "HaGeZi's Normal Blocklist",
 		"hostlist.34.description": "Broom - Reinigt het internet en beschermt jouw privacy! Blokkeert advertenties, affiliate, volgers, statistieken, telemetrie, phishing, malware, oplichterij, nep, munten en andere onzin."
 	},
 	{
@@ -137,10 +138,6 @@
 	{
 		"hostlist.37.name": "Geen Google",
 		"hostlist.37.description": "Blokkeert volledig alle Google-gerelateerde domeinen (inclusief YouTube)."
-	},
-	{
-		"hostlist.38.name": "1Hosts (mini)",
-		"hostlist.38.description": "Lijst voor het blokkeren van vervelende advertenties, volgers en malware. Milde versie: deblokkeert een aantal advertenties en volgers voor in-app-beloningen, anti-AdBlock, enz."
 	},
 	{
 		"hostlist.39.name": "Dandelion Sprout's Anti Push Notificaties",
@@ -195,13 +192,71 @@
 		"hostlist.51.description": "Sweeper - Agressief reinigt het internet en beschermt jouw privacy! Blokkeert advertenties, aangesloten bedrijven, volgers, statistieken, telemetrie, phishing, malware, oplichting, nep, munten en andere onzin."
 	},
 	{
-		"hostlist.52.name": "HaGeZi's versleutelde DNS/VPN/TOR/Proxy Bypass"
+		"hostlist.52.name": "HaGeZi's versleutelde DNS/VPN/TOR/Proxy Bypass",
+		"hostlist.52.description": "Voorkomt methoden om jouw DNS te omzeilen, blokkeert gecodeerde DNS, VPN, TOR, proxy's. Het voorkomen van bypassing is niet gegarandeerd."
 	},
 	{
-		"hostlist.53.name": "AWAvenue-advertentieregel"
+		"hostlist.53.name": "AWAvenue-advertentieregel",
+		"hostlist.53.description": "Gebruikt Adblock-syntax om verschillende SDK's voor reclame in Android-apps te bestrijden vanaf het netwerkniveau en te voorkomen dat ze worden geladen."
 	},
 	{
 		"hostlist.54.name": "HaGeZi's DynDNS-blokkeerlijst",
 		"hostlist.54.description": "Blokkeert dynamische DNS-diensten om te beschermen tegen kwaadwillig gebruik in onder andere phishing-campagnes."
+	},
+	{
+		"hostlist.55.name": "HaGeZi's Badware Hoster Blokkeerlijst",
+		"hostlist.55.description": "Blokkeert bekende gratis hosters die ook badware hosten via gebruikersinhoud om te voorkomen dat deze hosters voor kwaadaardige doeleinden worden gebruikt."
+	},
+	{
+		"hostlist.56.name": "HaGeZi's 's werelds meest misbruikte TLD's",
+		"hostlist.56.description": "De meest misbruikte Top Level Domains, samengevoeging van HaGeZi, Yokoffing, DandelionSprout en SpamHAUS."
+	},
+	{
+		"hostlist.59.name": "AdGuard DNS Pop-up Hosts filter",
+		"hostlist.59.description": "Filter bevat regels voor sites die in een nieuw venster worden geopend, samengesteld uit AdGuard, EasyList, ABPindo-filters en verbeterd voor compatibiliteit met pop-upblokkering op DNS-niveau."
+	},
+	{
+		"hostlist.60.name": "HaGeZi's Xiaomi Tracker Blokkeerlijst",
+		"hostlist.60.description": "Blokkeert de oorspronkelijke breedband volgers van Xiaomi die jouw activiteit volgen."
+	},
+	{
+		"hostlist.61.name": "HaGeZi's Samsung Tracker Blokkeerlijst",
+		"hostlist.61.description": "Blokkeert native breedbandtrackers van Samsung die je activiteit bijhouden."
+	},
+	{
+		"hostlist.62.name": "Oekraïens Beveiligingsfilter",
+		"hostlist.62.description": "Filtert kwaadaardige webbronnen (phishing, online fraude, malware, enz.) die gericht zijn op Oekraïense burgers."
+	},
+	{
+		"hostlist.63.name": "HaGeZi's Windows/Office Tracker Blokkeerlijst",
+		"hostlist.63.description": "Blokkeert Windows/Office-native breedbandtrackers die jouw activiteit volgen."
+	},
+	{
+		"hostlist.64.name": "1Hosts (Pro)",
+		"hostlist.64.description": "Lijst voor het blokkeren van vervelende advertenties, volgers en malware. Strikte versie: heeft minimale onderbrekingen, prioriteert privacy en beveiliging (advertentieblokkering) boven UX, bijv. blokkeert `graph.facebook.com`."
+	},
+	{
+		"hostlist.65.name": "HaGeZi's Vivo Volgersblokkeerlijst",
+		"hostlist.65.description": "Blokkeert de oorspronkelijke breedband volgers van Vivo die jouw activiteit volgen."
+	},
+	{
+		"hostlist.66.name": "HaGeZi's OPPO & Realme Volgersblokkeerlijst",
+		"hostlist.66.description": "Blokkeert de oorspronkelijke breedband volgers van OPPO & Realme die jouw activiteit volgen."
+	},
+	{
+		"hostlist.67.name": "HaGeZi's Apple Volgersblokkeerlijst",
+		"hostlist.67.description": "Blokkeert de oorspronkelijke breedband volgers van Apple die jouw activiteit volgen."
+	},
+	{
+		"hostlist.68.name": "HaGeZi's URL-verkorterblokkeerlijst",
+		"hostlist.68.description": "Blokkeert URL-verkorters."
+	},
+	{
+		"hostlist.69.name": "ShadowWhisperer Volgerslijst",
+		"hostlist.69.description": "Blokkeert domeinen die te maken hebben met analyses, diagnostiek, statistieken, locatie en openbare IP-detectie."
+	},
+	{
+		"hostlist.70.name": "1Hosts (Xtra)",
+		"hostlist.70.description": "Agressieve versie - maximale blokkering tegen opkomende privacybedreigingen. Kan (af en toe) legitieme sites of diensten verstoren."
 	}
 ]
