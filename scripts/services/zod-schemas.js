@@ -7,11 +7,13 @@ const { z } = require('zod');
  *
  * @example { 'servicesgroup.cdn.name': 'Content Delivery Network' }
  */
-const translationSchema = z.record(
-    z.string().regex(/^servicesgroup\.[a-z_]+\.name$/),
-    z.string(),
-).refine((obj) => Object.keys(obj).length === 1, {
-    message: 'Object must have exactly 1 property',
+const translationSchema = z.object({}).catchall(
+    z.string()
+).refine((obj) => {
+    const keys = Object.keys(obj);
+    return keys.length === 1 && keys[0].match(/^servicesgroup\.[a-z_]+\.name$/);
+}, {
+    message: 'Object must have exactly 1 property with key matching servicesgroup.*.name pattern',
 });
 
 /**

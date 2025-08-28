@@ -222,70 +222,157 @@ const getLocales = async (localesFolder) => {
 };
 
 /**
- * Checks if translations exist for groups from the services file in the base locale.
+ * Check if all translations are present in the base locale.
+ * If translations are missing, add placeholder to the base locale file.
  *
- * @param {string} servicesFile - Path to the file containing service data.
- * @param {string} translationsFile - Path to the file containing base locale translations.
- * @returns {Promise<void>} - A promise that resolves once the operation is complete.
+ * @param {string} baseTranslationsPath - Path to the base translations file
+ * @param {Map<string, Set<string>>} serviceGroupsTranslations - Map of service groups to translations
+ * @returns {Promise<void>}
  */
-const checkBaseTranslations = async (servicesFile, translationsFile) => {
+async function checkBaseTranslations(baseTranslationsPath, serviceGroupsTranslations) {
     try {
-        // Read service data and translations from files
-        const servicesData = JSON.parse(await fs.readFile(servicesFile));
-        const { groups } = servicesData;
-        const translations = JSON.parse(await fs.readFile(translationsFile));
-        // Create a set of translation IDs
-        const translationsIds = new Set(translations.map((translation) => Object.keys(translation)[0]));
-        const missingLocales = [];
-        // Check each group for missing translations
-        groups.forEach((group) => {
-            const groupString = `servicesgroup.${group.id}.name`;
-            if (!translationsIds.has(groupString)) {
-                missingLocales.push({ [groupString]: `TODO: name for group ${group.id}` });
+        // Read the base translations file
+        let baseTranslationsContent;
+        let baseTranslations = [];
+        
+        try {
+            baseTranslationsContent = await fs.readFile(baseTranslationsPath, 'utf8');
+            baseTranslations = JSON.parse(baseTranslationsContent);
+            
+            // Validate that baseTranslations is an array
+            if (!Array.isArray(baseTranslations)) {
+                logger.warning(`Base translations file is not an array, converting to array: ${baseTranslationsPath}`);
+                // If it's not an array but an object, convert it to an array with one item
+                if (typeof baseTranslations === 'object' && baseTranslations !== null) {
+                    baseTranslations = [baseTranslations];
+                } else {
+                    baseTranslations = [];
+                }
             }
-        });
-        // If there are no translations for some groups - TODO comment is added
-        if (missingLocales.length > 0) {
-            // Sort existing translations and missing translations
-            const sortedTranslations = sortByFirstKeyName([...translations, ...missingLocales]);
-            // Write sorted translations back to the translations file
-            translationSchema.parse(sortedTranslations);
-            await fs.writeFile(translationsFile, `${JSON.stringify(sortedTranslations, null, 4)}\n`);
-            logger.warning(
-                'Please do not forget to add missing translations to the base locale',
+        } catch (error) {
+            // If the file doesn't exist or has invalid JSON, start with an empty array
+            logger.warning(`Could not read base translations file or invalid JSON: ${error.message}`);
+            baseTranslations = [];
+        }
+
+        // Create a map of all translation keys in the base locale
+        const baseTranslationKeys = new Set();
+        
+        // Validate each translation object in the array
+        for (const translationObj of baseTranslations) {
+            try {
+                // Validate the translation object against the schema
+                const result = translationSchema.safeParse(translationObj);
+                
+                if (!result.success) {
+                    logger.error(`Invalid translation object in base locale: ${JSON.stringify(result.error.errors)}`);
+                    continue;
+                }
+                
+                // Add the key to the set of known keys
+                const key = Object.keys(translationObj)[0];
+                baseTranslationKeys.add(key);
+            } catch (error) {
+                logger.error(`Error validating translation object: ${error.message}`);
+            }
+        }
+
+        // Check if all required translations are present in the base locale
+        const missingTranslations = [];
+        let translationsAdded = false;
+        
+        for (const [serviceGroup, translations] of serviceGroupsTranslations.entries()) {
+            for (const translation of translations) {
+                if (!baseTranslationKeys.has(translation)) {
+                    missingTranslations.push(`${translation} (${serviceGroup})`);
+                    
+                    // Create a new translation object with a placeholder value
+                    const newTranslation = {};
+                    newTranslation[translation] = `[TODO: Add translations] ${serviceGroup}`;
+                    
+                    // Add it to the base translations array
+                    baseTranslations.push(newTranslation);
+                    translationsAdded = true;
+                    
+                    logger.warning(`Added missing translation placeholder: ${translation} for group ${serviceGroup}`);
+                }
+            }
+        }
+
+        // If translations were added, write the updated file
+        if (translationsAdded) {
+            // Ensure the directory exists
+            const dir = path.dirname(baseTranslationsPath);
+            await fs.mkdir(dir, { recursive: true });
+            
+            // Write the updated translations back to the file
+            await fs.writeFile(
+                baseTranslationsPath,
+                JSON.stringify(baseTranslations, null, 2),
+                'utf8'
             );
+            
+            logger.success(`Updated base translations file with ${missingTranslations.length} new placeholder translations`);
+        }
+
+        if (missingTranslations.length > 0) {
+            logger.warning(`Added placeholder for missing translations in base locale: ${missingTranslations.join(', ')}`);
+        } else {
+            logger.success('All translations are present in the base locale');
         }
     } catch (error) {
-        // Handle any errors that occurred during the operation
-        logger.error('Error when checking for translations in base locale:', error.message);
+        logger.error(`Error when checking for translations in base locale: ${error.message}`);
+        throw error;
     }
-};
+}
 
 /**
  * Asynchronously retrieves grouped translations for different locales based on specified directories
- * and writes the localizations to a specified file path.
+ * and writes them to a combined translations file.
  *
- * @param {string} outputServicesFile - The file path to the services file.
- * @param {string} localesFolder - The base path to the folder containing locale directories.
- * @param {string} i18nFilePath - The file path where the localizations will be written.
- * @returns {Promise<void>} A promise that resolves when the localizations are successfully written to the file.
- *
- * @throws {Error} If there is an issue finding directories, retrieving grouped translations,
- * or writing the localizations to the file.
+ * @param {string} outputServicesFile - Path to the file containing service data.
+ * @param {string} localesFolder - Path to the folder containing locale-specific translations.
+ * @param {string} i18nFilePath - Path to the file where combined translations will be written.
+ * @returns {Promise<void>} - A promise that resolves once the operation is complete.
  */
 const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFilePath) => {
     try {
+        // Read service data
+        const servicesData = JSON.parse(await fs.readFile(outputServicesFile));
+        const { groups } = servicesData;
+        
+        // Create a map of service groups to translations
+        const serviceGroupsTranslations = new Map();
+        groups.forEach((group) => {
+            const translationKey = `servicesgroup.${group.id}.name`;
+            if (!serviceGroupsTranslations.has(group.id)) {
+                serviceGroupsTranslations.set(group.id, new Set());
+            }
+            serviceGroupsTranslations.get(group.id).add(translationKey);
+        });
+        
         // Check if translations are present for all groups in the base locale
-        await checkBaseTranslations(outputServicesFile, SERVICES_BASE_TRANSLATION_FILEPATH);
+        // If not, placeholders will be added automatically
+        await checkBaseTranslations(SERVICES_BASE_TRANSLATION_FILEPATH, serviceGroupsTranslations);
+        
         // Get grouped translations from different locales for service groups
         const localizations = await getLocales(localesFolder);
-        servicesI18Schema.parse(localizations);
+        
+        // Validate the localizations against the schema
+        try {
+            servicesI18Schema.parse(localizations);
+        } catch (error) {
+            logger.error(`Error validating localizations: ${error.message}`);
+            logger.error(JSON.stringify(error.errors || [], null, 2));
+            throw error;
+        }
+        
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, `${JSON.stringify(localizations, null, 4)}\n`);
         logger.success('Successfully added localizations');
     } catch (error) {
-        logger.error(`Error adding localizations: ${error}`);
-        throw new Error(error);
+        logger.error(`Error adding localizations: ${error.message}`);
+        throw error;
     }
 };
 

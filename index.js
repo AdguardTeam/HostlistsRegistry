@@ -1,5 +1,5 @@
 const path = require('path');
-const builder = require('adguard-hostlists-builder');
+const builder = require('./hostlists-builder');
 const fs = require('fs/promises');
 
 const { getJsonBlockedData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
@@ -16,6 +16,7 @@ const filtersDir = path.join(__dirname, './filters');
 const assetsDir = path.join(__dirname, './assets');
 const tagsDir = path.join(__dirname, './tags');
 const localesDir = path.join(__dirname, './locales');
+const groupsDir = path.join(__dirname, './groups');
 const inputServicesDir = path.join(__dirname, './services');
 const outputServicesFile = path.join(assetsDir, 'services.json');
 const servicesI18nFile = path.join(assetsDir, 'services_i18n.json');
@@ -69,14 +70,14 @@ const buildServices = async (sourceDirPath, distFilePath) => {
 // Compile hostlists.
 (async () => {
     try {
-        await builder.build(filtersDir, tagsDir, localesDir, assetsDir);
+        await builder.build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir);
         // build services.json file
         await buildServices(inputServicesDir, outputServicesFile);
         // add localizations for services groups
         await addServiceLocalizations(outputServicesFile, localesDir, servicesI18nFile);
         process.exit(0);
     } catch (error) {
-        logger.error('Failed to compile hostlists');
+        logger.error('Failed to compile hostlists', error);
         process.exit(1);
     }
 })();

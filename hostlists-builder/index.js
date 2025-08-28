@@ -148,7 +148,7 @@ async function build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir) {
     const metadata = JSON.parse(await readFile(path.join(filterDir, METADATA_FILE)));
 
     // Validate filterKey field
-    filterKeyValidator.validate(metadata.filterKey);
+    filterKeyValidator.validate(metadata.filterKey, metadata.filterId);
 
     // Reads the current revision information.
     const revisionFile = path.join(filterDir, REVISION_FILE);
