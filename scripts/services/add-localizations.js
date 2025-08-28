@@ -234,11 +234,11 @@ async function checkBaseTranslations(baseTranslationsPath, serviceGroupsTranslat
         // Read the base translations file
         let baseTranslationsContent;
         let baseTranslations = [];
-        
+
         try {
             baseTranslationsContent = await fs.readFile(baseTranslationsPath, 'utf8');
             baseTranslations = JSON.parse(baseTranslationsContent);
-            
+
             // Validate that baseTranslations is an array
             if (!Array.isArray(baseTranslations)) {
                 logger.warning(`Base translations file is not an array, converting to array: ${baseTranslationsPath}`);
@@ -257,66 +257,74 @@ async function checkBaseTranslations(baseTranslationsPath, serviceGroupsTranslat
 
         // Create a map of all translation keys in the base locale
         const baseTranslationKeys = new Set();
-        
+
         // Validate each translation object in the array
-        for (const translationObj of baseTranslations) {
+        baseTranslations.forEach((translationObj) => {
             try {
                 // Validate the translation object against the schema
                 const result = translationSchema.safeParse(translationObj);
-                
+
                 if (!result.success) {
                     logger.error(`Invalid translation object in base locale: ${JSON.stringify(result.error.errors)}`);
-                    continue;
+                    return;
                 }
-                
+
                 // Add the key to the set of known keys
                 const key = Object.keys(translationObj)[0];
                 baseTranslationKeys.add(key);
             } catch (error) {
                 logger.error(`Error validating translation object: ${error.message}`);
             }
-        }
+        });
 
         // Check if all required translations are present in the base locale
         const missingTranslations = [];
         let translationsAdded = false;
-        
-        for (const [serviceGroup, translations] of serviceGroupsTranslations.entries()) {
-            for (const translation of translations) {
+
+        // [serviceGroup, translations]
+        Array.from(serviceGroupsTranslations.entries()).forEach(([serviceGroup, translations]) => {
+            Array.from(translations).forEach((translation) => {
                 if (!baseTranslationKeys.has(translation)) {
                     missingTranslations.push(`${translation} (${serviceGroup})`);
-                    
+
                     // Create a new translation object with a placeholder value
                     const newTranslation = {};
                     newTranslation[translation] = `[TODO: Add translations] ${serviceGroup}`;
-                    
+
                     // Add it to the base translations array
                     baseTranslations.push(newTranslation);
                     translationsAdded = true;
-                    
+
                     logger.warning(`Added missing translation placeholder: ${translation} for group ${serviceGroup}`);
                 }
-            }
-        }
+            });
+        });
 
         // If translations were added, write the updated file
         if (translationsAdded) {
             // Ensure the directory exists
             const dir = path.dirname(baseTranslationsPath);
             await fs.mkdir(dir, { recursive: true });
-            
+
+            // Sort the translations before writing them
+            const sortedTranslations = sortByFirstKeyName(baseTranslations);
+
             // Write the updated translations back to the file
             await fs.writeFile(
                 baseTranslationsPath,
-                JSON.stringify(baseTranslations, null, 2),
-                'utf8'
+                JSON.stringify(sortedTranslations, null, 2),
+                'utf8',
             );
-            
-            logger.success(`Updated base translations file with ${missingTranslations.length} new placeholder translations`);
+
+            logger.success(
+                `Updated base translations file with ${missingTranslations.length} new placeholder translations`,
+            );
         }
 
         if (missingTranslations.length > 0) {
-            logger.warning(`Added placeholder for missing translations in base locale: ${missingTranslations.join(', ')}`);
+            logger.warning(
+                `Added placeholder for missing translations in base locale: ${missingTranslations.join(', ')}`,
+            );
         } else {
             logger.success('All translations are present in the base locale');
         }
@@ -340,7 +348,7 @@ const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFi
         // Read service data
         const servicesData = JSON.parse(await fs.readFile(outputServicesFile));
         const { groups } = servicesData;
-        
+
         // Create a map of service groups to translations
         const serviceGroupsTranslations = new Map();
         groups.forEach((group) => {
@@ -350,14 +358,14 @@ const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFi
             }
             serviceGroupsTranslations.get(group.id).add(translationKey);
         });
-        
+
         // Check if translations are present for all groups in the base locale
         // If not, placeholders will be added automatically
         await checkBaseTranslations(SERVICES_BASE_TRANSLATION_FILEPATH, serviceGroupsTranslations);
-        
+
         // Get grouped translations from different locales for service groups
         const localizations = await getLocales(localesFolder);
-        
+
         // Validate the localizations against the schema
         try {
             servicesI18Schema.parse(localizations);
@@ -366,7 +374,7 @@ const addServiceLocalizations = async (outputServicesFile, localesFolder, i18nFi
             logger.error(JSON.stringify(error.errors || [], null, 2));
             throw error;
         }
-        
+
         // Write translations to combined translations file
         await fs.writeFile(i18nFilePath, `${JSON.stringify(localizations, null, 4)}\n`);
         logger.success('Successfully added localizations');

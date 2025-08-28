@@ -8,7 +8,7 @@ const { z } = require('zod');
  * @example { 'servicesgroup.cdn.name': 'Content Delivery Network' }
  */
 const translationSchema = z.object({}).catchall(
-    z.string()
+    z.string(),
 ).refine((obj) => {
     const keys = Object.keys(obj);
     return keys.length === 1 && keys[0].match(/^servicesgroup\.[a-z_]+\.name$/);
