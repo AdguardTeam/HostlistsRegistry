@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.17.38
+! Version: 1.0.17.39
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-08-28T04:09:27.053Z
+! Last modified: 2025-08-29T05:08:32.664Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -141,7 +141,7 @@
 ||*.lgbt^$denyallow=lex.lgbt|tech.lgbt
 ||*.life^$denyallow=2ch.life|billo.life|circles.life|colorgame.life|digitalcitizen.life|iboost.life|lifetime.life|loveinfaith.life|stepone.life|via.life|yiff.life
 ||*.lifestyle^
-||*.llc^
+||*.llc^$denyallow=ratcloud.llc
 ||*.llp^
 ||*.loan^
 ||*.loans^
