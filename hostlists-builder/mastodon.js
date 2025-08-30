@@ -55,7 +55,7 @@ const compile = async function () {
     if (!element.hasOwnProperty('domain')) {
         throw Error("Domain key not found in server list")
     }
-    
+
     return `||${element.domain}^`
     });
 
