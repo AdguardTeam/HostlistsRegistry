@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.17.45
+! Version: 1.0.17.46
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-09-01T04:14:48.033Z
+! Last modified: 2025-09-01T17:07:07.111Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -16,7 +16,7 @@
 ||*.auction^
 ||*.autos^
 ||*.baby^
-||*.band^
+||*.band^$denyallow=flying-circus.band
 ||*.bar^$denyallow=fap.bar|strem.bar
 ||*.beauty^
 ||*.beer^
@@ -232,7 +232,7 @@
 ||*.skin^$denyallow=quermbbd.skin
 ||*.solar^$denyallow=forecast.solar|optimizer.solar
 ||*.soy^
-||*.space^$denyallow=dragonscave.space|drgns.space|embed-player.space|hf.space|httpjames.space|hullseals.space|hyper.space|infosec.space|ippen.space|keyboard-test.space|latent.space|link.space|mapstodon.space|melmac.space|mempool.space|metahub.space|momonster.space|monitorburz.space|ocr.space|oldbytes.space|qwik.space|scurra.space|searx.space|takeb1nzyto.space|telegram.space|truepeople.space|uexcorp.space
+||*.space^$denyallow=dragonscave.space|drgns.space|embed-player.space|hf.space|httpjames.space|hullseals.space|hyper.space|infosec.space|ippen.space|keyboard-test.space|latent.space|link.space|mapstodon.space|melmac.space|mempool.space|metahub.space|momonster.space|monitorburz.space|ocr.space|oldbytes.space|qwik.space|scurra.space|searx.space|slashtw.space|snapapi.space|takeb1nzyto.space|telegram.space|truepeople.space|uexcorp.space
 ||*.sport^
 ||*.srl^
 ||*.store^$denyallow=adidashardware.store|beyondagency.store|bigtimerush.store|bigtimerushuk.store|cleanmasters.store|ettoresoftware.store|g-h.store|glitchproductions.store|hacksmith.store|heavysaurus.store|iqunix.store|pbshop.store|rokomari.store|shoplazza.store|stan.store|tatemcraeeu.store|tatemcrae.store|timberjacks.store
