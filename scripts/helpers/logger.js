@@ -34,6 +34,15 @@ const logger = {
     warning: (message) => {
         console.log(chalk.bold.yellow(message));
     },
+
+    /**
+     * Log a info message with blue bold text.
+     *
+     * @param {string} message - The info message to be logged
+     */
+    info: (message) => {
+        console.log(chalk.bold.blue(message));
+    },
 };
 
 module.exports = {

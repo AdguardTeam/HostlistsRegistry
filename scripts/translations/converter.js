@@ -121,10 +121,10 @@
     writeFile(outFile, JSON.stringify(result, null, '\t'));
   };
 
-  return {
-    importFile: importFile,
-    exportFile: exportFile
-  };
+return {
+  importFile,
+  exportFile
+};
 })();
 
 const args = process.argv;
@@ -141,3 +141,5 @@ if (action === 'import') {
 } else if (action === 'export') {
   converter.exportFile(locale, path.join(__dirname, file), path.join(__dirname, out));
 }
+
+module.exports = { converter };
