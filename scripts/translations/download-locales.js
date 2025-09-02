@@ -39,8 +39,15 @@ function getLocalesFromConfig() {
         }
     } catch (error) {
         logger.error(`Error reading .twosky.json: ${error.message}`);
-        process.exit(1);
     }
+
+    // Fallback to default locales if config can't be read
+    return [
+        'en', 'ru', 'ar', 'bg', 'ca', 'zh_CN', 'zh_TW', 'hr', 'da', 'nl',
+        'fi', 'fr', 'de', 'he', 'hu', 'id', 'it', 'ja', 'ko', 'no',
+        'fa', 'pl', 'pt', 'pt_BR', 'pt_PT', 'sr', 'sk', 'es', 'sv',
+        'tr', 'uk', 'vi', 'be', 'sl'
+    ];
 }
 
 /**

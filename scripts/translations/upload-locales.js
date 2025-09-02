@@ -8,6 +8,8 @@
  *
  */
 import fs from 'fs';
+import axios from 'axios';
+import FormData from 'form-data';
 import { logger } from '../helpers/logger.js';
 import { converter } from './converter.js';
 
