@@ -1,7 +1,7 @@
 /**
- * @file download-locales.js
+ * @file
  * This file is part of the HostlistsRegistry translation system.
- * It handles the download of translation files (tags, filters, groups) from the TwoSky translation service.
+ * It handles the download of translation files (tags, filters, groups) from the translation service.
  *
  * The script downloads locale files from the translation service, converts them to the required format,
  * and saves them to the appropriate locations in the repository.
@@ -13,27 +13,46 @@ import axios from 'axios';
 import { logger } from '../helpers/logger.js';
 import { converter } from './converter.js';
 
-import { 
+import {
     LOCALES_DOWNLOAD_URL,
     LOCALES_DIR,
-    TEMP_CONVERTED_FILE 
+    TEMP_CONVERTED_FILE,
+    TEMP_MESSAGES_FILE
 } from './locales-constants.js'
 
 /**
- * List of locales to download
+ * Get locales from .twosky.json configuration
  * 
+ * @returns {string[]} Array of locale codes
+ */
+function getLocalesFromConfig() {
+    const twoskyPath = path.resolve(__dirname, '.twosky.json');
+    
+    try {
+        const twoskyConfig = JSON.parse(fs.readFileSync(twoskyPath, 'utf8'));
+        if (
+            Array.isArray(twoskyConfig)
+            && twoskyConfig.length > 0
+            && twoskyConfig[0].languages
+        ) {
+            return Object.keys(twoskyConfig[0].languages);
+        }
+    } catch (error) {
+        logger.error(`Error reading .twosky.json: ${error.message}`);
+        process.exit(1);
+    }
+}
+
+/**
+ * List of locales to download
+ *
  * @typedef {LOCALES[number]} Locale
  */
-const LOCALES = [
-  'en', 'ru', 'ar', 'bg', 'ca', 'zh_CN', 'zh_TW', 'hr', 'da', 'nl',
-  'fi', 'fr', 'de', 'he', 'hu', 'id', 'it', 'ja', 'ko', 'no',
-  'fa', 'pl', 'pt', 'pt_BR', 'pt_PT', 'sr', 'sk', 'es', 'sv',
-  'tr', 'uk', 'vi', 'be', 'sl'
-];
+const LOCALES = getLocalesFromConfig();
 
 /**
  * Translation files configuration
- * 
+ *
  * @typedef {typeof TRANSLATION_FILES[number]} TranslationFileConfig
  */
 const TRANSLATION_FILES = [
@@ -56,7 +75,7 @@ const TRANSLATION_FILES = [
 
 /**
  * Downloads a file from the translation service
- * 
+ *
  * @param {Locale} locale - locale to download
  * @param {string} filename - filename on the server
  * @returns {Promise<boolean>} - whether the download was successful
@@ -83,7 +102,7 @@ async function downloadFile(locale, filename) {
 
 /**
  * Processes a translation file for a specific locale
- * 
+ *
  * @param {Locale} locale - locale to process
  * @param {TranslationFileConfig} fileConfig - file configuration
  */

@@ -1,7 +1,7 @@
 /**
- * @file upload-locales.js
+ * @file
  * This file is part of the HostlistsRegistry translation system.
- * It handles the upload of translation files (tags, filters, groups) to the TwoSky translation service.
+ * It handles the upload of translation files (tags, filters, groups) to the translation service.
  *
  * The script processes locale files from the repository, converts them to the required format,
  * and prepares them for upload to the translation service.
@@ -21,7 +21,7 @@ import {
 /**
  * List of files with translations
  * that belongs to the hostlists-registry content
- * 
+ *
  * @typedef {typeof TRANSLATION_DATA[number]} TranslationData
  */
 const TRANSLATION_DATA = [
@@ -31,8 +31,8 @@ const TRANSLATION_DATA = [
 ];
 
 /**
- * Uploads a translation file to the TwoSky translation service
- * 
+ * Uploads a translation file to the translation service
+ *
  * @param {string} baseLocale - Base locale
  * @param {TranslationData} file - File to upload
  */
