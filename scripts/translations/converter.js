@@ -121,10 +121,10 @@
     writeFile(outFile, JSON.stringify(result, null, '\t'));
   };
 
-return {
-  importFile,
-  exportFile
-};
+  return {
+    importFile,
+    exportFile
+  };
 })();
 
 const args = process.argv;
