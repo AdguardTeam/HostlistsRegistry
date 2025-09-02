@@ -118,7 +118,7 @@ async function processTranslationFile(locale, fileConfig) {
 
     const success = await downloadFile(locale, fileConfig.filename);
     if (!success) {
-        logger.warning(`Skipping ${fileConfig.name} for ${locale} due to download error`);
+        logger.warn(`Skipping ${fileConfig.name} for ${locale} due to download error`);
         return;
     }
 

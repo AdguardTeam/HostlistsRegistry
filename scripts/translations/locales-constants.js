@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 // API constants
 const API_URL = 'https://twosky.int.agrd.dev/api/v1/';
 const LOCALES_DOWNLOAD_URL = `${API_URL}download`;
-const LOCALES_UPLOAD_URL = `${API_URL}/upload`;
+const LOCALES_UPLOAD_URL = `${API_URL}upload`;
 
 // Locale constants
 const BASE_LOCALE = 'en';
@@ -22,6 +22,7 @@ const TEMP_CONVERTED_FILE = 'converted.json';
 
 export {
     BASE_LOCALE,
+    API_URL,
     LOCALES_DOWNLOAD_URL,
     LOCALES_UPLOAD_URL,
     LOCALES_DIR,

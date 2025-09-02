@@ -31,7 +31,7 @@ const logger = {
      *
      * @param {string} message - The warning message to be logged
      */
-    warning: (message) => {
+    warn: (message) => {
         console.log(chalk.bold.yellow(message));
     },
 

@@ -142,4 +142,6 @@ if (action === 'import') {
   converter.exportFile(locale, path.join(__dirname, file), path.join(__dirname, out));
 }
 
-module.exports = { converter };
+if (require.main !== module) {
+  module.exports = { converter };
+}
