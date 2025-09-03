@@ -24,6 +24,7 @@ import {
  * Get locales from .twosky.json configuration
  *
  * @returns {string[]} Array of locale codes
+ * @throws {Error} If .twosky.json is missing or invalid
  */
 function getLocalesFromConfig() {
     const twoskyPath = path.resolve(__dirname, '.twosky.json');
@@ -31,23 +32,18 @@ function getLocalesFromConfig() {
     try {
         const twoskyConfig = JSON.parse(fs.readFileSync(twoskyPath, 'utf8'));
         if (
-            Array.isArray(twoskyConfig)
-            && twoskyConfig.length > 0
-            && twoskyConfig[0].languages
+            !Array.isArray(twoskyConfig) ||
+            twoskyConfig.length === 0 ||
+            !twoskyConfig[0].languages
         ) {
-            return Object.keys(twoskyConfig[0].languages);
+            throw new Error('Invalid .twosky.json format: missing languages configuration');
         }
+        
+        return Object.keys(twoskyConfig[0].languages);
     } catch (error) {
-        logger.error(`Error reading .twosky.json: ${error.message}`);
+        // Rethrow with more context instead of falling back to defaults
+        throw new Error(`Failed to load locales from .twosky.json: ${error.message}`);
     }
-
-    // Fallback to default locales if config can't be read
-    return [
-        'en', 'ru', 'ar', 'bg', 'ca', 'zh_CN', 'zh_TW', 'hr', 'da', 'nl',
-        'fi', 'fr', 'de', 'he', 'hu', 'id', 'it', 'ja', 'ko', 'no',
-        'fa', 'pl', 'pt', 'pt_BR', 'pt_PT', 'sr', 'sk', 'es', 'sv',
-        'tr', 'uk', 'vi', 'be', 'sl'
-    ];
 }
 
 /**
