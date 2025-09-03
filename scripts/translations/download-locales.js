@@ -22,12 +22,12 @@ import {
 
 /**
  * Get locales from .twosky.json configuration
- * 
+ *
  * @returns {string[]} Array of locale codes
  */
 function getLocalesFromConfig() {
     const twoskyPath = path.resolve(__dirname, '.twosky.json');
-    
+
     try {
         const twoskyConfig = JSON.parse(fs.readFileSync(twoskyPath, 'utf8'));
         if (
@@ -52,8 +52,6 @@ function getLocalesFromConfig() {
 
 /**
  * List of locales to download
- *
- * @typedef {LOCALES[number]} Locale
  */
 const LOCALES = getLocalesFromConfig();
 

@@ -123,7 +123,7 @@
 
   return {
     importFile,
-    exportFile
+    exportFile,
   };
 })();
 
