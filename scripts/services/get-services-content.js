@@ -22,7 +22,7 @@ const { logger } = require('../helpers/logger');
  * @throws {Error} Throws an error if there is an issue reading the file, if blocked services data is undefined,
  *   if blocked services data is not an array, or if blocked groups data is not an array.
  */
-const getJsonBlockedData = async (distFilePath) => {
+const getJsonBlockedServicesData = async (distFilePath) => {
     let blockedServices;
     let blockedGroups;
 
@@ -107,5 +107,5 @@ const getYmlSourcesBlockedServices = async (folderPath) => {
 
 module.exports = {
     getYmlSourcesBlockedServices,
-    getJsonBlockedData,
+    getJsonBlockedServicesData,
 };

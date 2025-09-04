@@ -2,7 +2,7 @@ const path = require('path');
 const fs = require('fs/promises');
 const builder = require('./hostlists-builder');
 
-const { getJsonBlockedData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
+const { getJsonBlockedServicesData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
 const { getDifferences } = require('./scripts/helpers/helpers');
 const { restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
@@ -35,7 +35,7 @@ const servicesI18nFile = path.join(assetsDir, 'services_i18n.json');
 const buildServices = async (sourceDirPath, distFilePath) => {
     try {
         // Read content from the JSON file
-        const [distBlockedServices, distBlockedGroups] = await getJsonBlockedData(distFilePath);
+        const [distBlockedServices, distBlockedGroups] = await getJsonBlockedServicesData(distFilePath);
         // Read content from the source YML files
         const sourceBlockedServices = await getYmlSourcesBlockedServices(sourceDirPath);
         // Get the differences between the destination and source data
@@ -70,7 +70,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
 // Compile hostlists.
 (async () => {
     try {
-        await builder.build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir);
+        // await builder.build(filtersDir, tagsDir, localesDir, assetsDir, groupsDir);
         // build services.json file
         await buildServices(inputServicesDir, outputServicesFile);
         // add localizations for services groups
