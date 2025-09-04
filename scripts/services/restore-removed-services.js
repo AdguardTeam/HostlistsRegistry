@@ -32,7 +32,7 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
         await restoreRemovedSourceFiles(restObjects);
     }
     const removedServices = differences.map((difference) => difference.id);
-    logger.warning(`These services have been removed: ${removedServices.join(', ')}, and were restored`);
+    logger.warn(`These services have been removed: ${removedServices.join(', ')}, and were restored`);
 };
 
 module.exports = {
