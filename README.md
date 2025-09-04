@@ -166,20 +166,21 @@ Service metadata includes `id`, `name`, `rules`, `icon_svg`, `group`:
 - `icon_svg` — svg icon (string)
 - `group` - semantic group for service. Possible values:
 
-| Full Name                   | Key       | Definition                                                                              |
-|-----------------------------|-----------|-----------------------------------------------------------------------------------------|
-| AI                          | `ai`      | Provides AI-powerd tools                                                                |
-| CDN                         | `cdn`     | Optimizes content delivery for websites through caching and strategic distribution.    |
-| Dating                      | `dating`  | Connects individuals seeking romantic relationships based on shared interests and preferences. |
-| Gambling                    | `gambling`| Provides online gaming experiences with the chance to win prizes through casino games and |
-| Gaming                      | `gaming`  | Offers a diverse range of video and online games for entertainment purposes.               |
-| Hosting                     | `hosting` | Offers server space and resources for hosting websites, applications, and digital content. |
-| Messengers                  | `messenger` | Facilitates instant communication through text, voice, and video.                           |
-| Privacy                     | `privacy` | Prioritizes user data protection and privacy through encryption and strict measures.        |
-| Shopping                    | `shopping`| Enables online commerce with features like secure payment options and order tracking.        |
-| Social media                | `social_network` | Connects individuals for interactions, community-building, and sharing personal and professional information |
-| Software                    | `software`| Provides tools and platforms for software development, coding, and project management.      |
-| Streaming                   | `streaming`| Delivers real-time audio, video, or other content for immediate access and enjoyment.       |
+| Full Name                     | Key              | Definition                                                                                                  |
+|-------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------|
+| Artificial intelligence       | `ai`             | Provides AI-powered tools and intelligent solutions for automation, analysis, and content-making.        |
+| Content delivery networks (CDN)| `cdn`           | Optimizes content delivery for websites through caching, load balancing, and strategic distribution.       |
+| Dating services               | `dating`         | Connects individuals seeking romantic relationships based on shared interests and preferences.            |
+| Gambling and betting          | `gambling`       | Offers online gaming and betting experiences with the chance to win prizes through casino games and sports wagering. |
+| Gaming                        | `gaming`         | Provides a diverse range of video and online games for entertainment purposes.                             |
+| Web hosting                   | `hosting`        | Offers server space and resources for hosting websites, applications, and digital content.                 |
+| Messaging services            | `messenger`      | Facilitates instant communication through text, voice, and video messaging.                                |
+| Privacy tools                 | `privacy`        | Prioritizes user data protection and privacy through encryption and strict security measures.              |
+| Shopping                      | `shopping`       | Enables online commerce with secure payment options, order tracking, and personalized shopping experiences.|
+| Social networks               | `social_network` | Connects individuals for interactions, community-building, and sharing personal and professional information.|
+| Software development          | `software`       | Provides tools, platforms, and frameworks for software development, coding, and project management.       |
+| Streaming services            | `streaming`      | Delivers real-time audio, video, and other digital content for immediate access and entertainment.         |
+
 
 <details>
 
