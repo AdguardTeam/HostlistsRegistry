@@ -56,7 +56,7 @@ const groupServicesData = (combinedServiceContent) => {
             return combinedGroups;
         });
         if (invalidGroupNames.length > 0) {
-            const errorMessage = `Services with id: ${invalidGroupNames.join(', ')} has an empty or missing 'group' key.`;
+            const errorMessage = `${invalidGroupNames.join(', ')} services has an empty or missing 'group' key.`;
             throw new Error(errorMessage);
         }
         // Sort the combined groups array lexicographically by 'id'
