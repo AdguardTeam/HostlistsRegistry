@@ -8,6 +8,7 @@
  *
  */
 import fs from 'fs';
+import { promises as fsPromises } from 'fs';
 import axios from 'axios';
 import path from 'path';
 import FormData from 'form-data';
@@ -44,16 +45,16 @@ const uploadLocaleFile = async (file) => {
 
     // create temp dir
     try {
-        fs.statfsSync(TEMP_CONVERTED_DIR)
+        await fsPromises.stat(TEMP_CONVERTED_DIR);
     } catch (e) {
-        fs.mkdirSync(TEMP_CONVERTED_DIR, { recursive: true });
+        await fsPromises.mkdir(TEMP_CONVERTED_DIR, { recursive: true });
     }
 
     const outputFile = path.resolve(TEMP_CONVERTED_DIR, file);
     const tempFile = path.resolve(TEMP_CONVERTED_DIR, TEMP_MESSAGES_FILE)
 
     logger.info(`Moving ${file} for ${BASE_LOCALE} locale`);
-    fs.copyFileSync(localeFile, tempFile);
+    await fsPromises.copyFile(localeFile, tempFile);
 
     logger.info(`Exporting ${file} for ${BASE_LOCALE} locale`);
     converter.exportFile(BASE_LOCALE, localeFile, outputFile);
@@ -79,22 +80,24 @@ const uploadLocaleFile = async (file) => {
     }
 
     // clean up temporary files
-    if (fs.existsSync(tempFile)) {
-        fs.unlinkSync(tempFile);
-    }
+    try {
+        if (await fsPromises.stat(tempFile).catch(() => false)) {
+            await fsPromises.unlink(tempFile);
+        }
 
-    if (fs.existsSync(outputFile)) {
-        fs.unlinkSync(outputFile);
+        if (await fsPromises.stat(outputFile).catch(() => false)) {
+            await fsPromises.unlink(outputFile);
+        }
+    } catch (e) {
+        logger.error(`Error cleaning up temporary files: ${e.message}`);
     }
 
     // remove temp dir
     try {
-        fs.statfsSync(TEMP_CONVERTED_DIR);
-        fs.rmdirSync(TEMP_CONVERTED_DIR);
+        await fsPromises.rmdir(TEMP_CONVERTED_DIR);
     } catch (e) {
        /* do nothing, dir does not exist */
     }
-
 };
 
 const upload = async () => {

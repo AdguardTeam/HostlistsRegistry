@@ -7,12 +7,11 @@
  * and saves them to the appropriate locations in the repository.
  */
 
-import fs from 'fs';
+import { promises as fs } from 'fs';
 import path from 'path';
 import axios from 'axios';
 import { logger } from '../helpers/logger.js';
 import { converter } from './converter.js';
-import { fileURLToPath } from 'url';
 
 import {
     LOCALES_DOWNLOAD_URL,
@@ -22,19 +21,16 @@ import {
     TWOSKY_FILE_PATH
 } from './locales-constants.js'
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
 /**
  * Get locales from .twosky.json configuration
  *
- * @returns {string[]} Array of locale codes
+ * @returns {Promise<string[]>} Array of locale codes
  * @throws {Error} If .twosky.json is missing or invalid
  */
-function getLocalesFromConfig() {
+async function getLocalesFromConfig() {
     try {
-        console.log(TWOSKY_FILE_PATH)
-        const twoskyConfig = JSON.parse(fs.readFileSync(TWOSKY_FILE_PATH, 'utf8'));
+        const data = await fs.readFile(TWOSKY_FILE_PATH, 'utf8');
+        const twoskyConfig = JSON.parse(data);
         if (
             !Array.isArray(twoskyConfig)
             || twoskyConfig.length === 0
@@ -54,7 +50,7 @@ function getLocalesFromConfig() {
  * List of locales to download
  * @typedef {typeof LOCALES[number]} Locale
  */
-const LOCALES = getLocalesFromConfig();
+let LOCALES;
 
 /**
  * Translation files configuration
@@ -98,7 +94,7 @@ async function downloadFile(locale, filename) {
             responseType: 'text'
         });
 
-        fs.writeFileSync(TEMP_MESSAGES_FILE, response.data);
+        await fs.writeFile(TEMP_MESSAGES_FILE, response.data);
         return true;
     } catch (error) {
         logger.error(`Error downloading ${filename} for ${locale}: ${error.message}`);
@@ -132,8 +128,10 @@ async function processTranslationFile(locale, fileConfig) {
     // Ensure the locale directory exists
     const localeDir = path.join(LOCALES_DIR, destinationLocale);
 
-    if (!fs.existsSync(localeDir)) {
-        fs.mkdirSync(localeDir, { recursive: true });
+    try {
+        await fs.stat(localeDir);
+    } catch (e) {
+        await fs.mkdir(localeDir, { recursive: true });
     }
 
     // Parse the downloaded file
@@ -142,24 +140,26 @@ async function processTranslationFile(locale, fileConfig) {
 
     // Move the file to the destination
     logger.info(`Moving ${fileConfig.name} for ${locale} locale to ${localeDir}`);
-    fs.copyFileSync(TEMP_CONVERTED_FILE, path.join(localeDir, fileConfig.name));
+    await fs.copyFile(TEMP_CONVERTED_FILE, path.join(localeDir, fileConfig.name));
 
     // Handle special cases for pt locale
     if (locale === 'pt') {
         const ptPTDir = path.join(LOCALES_DIR, 'pt_PT');
-        if (!fs.existsSync(ptPTDir)) {
-            fs.mkdirSync(ptPTDir, { recursive: true });
+        try {
+            await fs.stat(ptPTDir);
+        } catch (e) {
+            await fs.mkdir(ptPTDir, { recursive: true });
         }
         logger.info(`Copying ${fileConfig.name} for pt_PT locale`);
-        fs.copyFileSync(TEMP_CONVERTED_FILE, path.join(ptPTDir, fileConfig.name));
+        await fs.copyFile(TEMP_CONVERTED_FILE, path.join(ptPTDir, fileConfig.name));
     }
 
     // Clean up temporary files
-    if (fs.existsSync(TEMP_MESSAGES_FILE)) {
-        fs.unlinkSync(TEMP_MESSAGES_FILE);
-    }
-    if (fs.existsSync(TEMP_CONVERTED_FILE)) {
-        fs.unlinkSync(TEMP_CONVERTED_FILE);
+    try {
+        await fs.unlink(TEMP_MESSAGES_FILE).catch(() => {});
+        await fs.unlink(TEMP_CONVERTED_FILE).catch(() => {});
+    } catch (e) {
+        logger.error(`Error cleaning up temporary files: ${e.message}`);
     }
 }
 
@@ -168,6 +168,9 @@ async function processTranslationFile(locale, fileConfig) {
  */
 async function downloadLocales() {
   logger.info('Starting download of translation files');
+  
+  // Initialize LOCALES
+  LOCALES = await getLocalesFromConfig();
 
   for (const fileConfig of TRANSLATION_FILES) {
     for (const locale of LOCALES) {
