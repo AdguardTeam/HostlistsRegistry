@@ -18,8 +18,8 @@
   "scripts": {
     "compose": "node scripts/compose.js",
     "locales:prepare": "node scripts/translations/prepare.js",
-    "locales:download": "cd scripts/translations ; ./download.sh",
-    "locales:upload": "cd scripts/translations ; ./upload.sh",
+    "locales:download": "node scripts/translations/download-locales.js",
+    "locales:upload": "node scripts/translations/upload-base-locale.js",
     "compress": "node scripts/repository/compress.js",
     "lint": "eslint ."
   },

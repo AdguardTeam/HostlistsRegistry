@@ -19,6 +19,10 @@ const LOCALES_DIR = path.resolve(__dirname, LOCALES_RELATIVE_PATH);
 // Temporary file constants
 const TEMP_MESSAGES_FILE = 'messages.json';
 const TEMP_CONVERTED_FILE = 'converted.json';
+const TEMP_CONVERTED_DIR = 'temp';
+
+// Translation keys file path
+const TWOSKY_FILE_PATH = path.resolve(__dirname, '../../.twosky.json');
 
 export {
     BASE_LOCALE,
@@ -27,5 +31,7 @@ export {
     LOCALES_UPLOAD_URL,
     LOCALES_DIR,
     TEMP_MESSAGES_FILE,
-    TEMP_CONVERTED_FILE
+    TEMP_CONVERTED_FILE,
+    TWOSKY_FILE_PATH,
+    TEMP_CONVERTED_DIR
 }

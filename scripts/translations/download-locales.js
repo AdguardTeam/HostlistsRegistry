@@ -12,13 +12,18 @@ import path from 'path';
 import axios from 'axios';
 import { logger } from '../helpers/logger.js';
 import { converter } from './converter.js';
+import { fileURLToPath } from 'url';
 
 import {
     LOCALES_DOWNLOAD_URL,
     LOCALES_DIR,
     TEMP_CONVERTED_FILE,
-    TEMP_MESSAGES_FILE
+    TEMP_MESSAGES_FILE,
+    TWOSKY_FILE_PATH
 } from './locales-constants.js'
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * Get locales from .twosky.json configuration
@@ -27,18 +32,17 @@ import {
  * @throws {Error} If .twosky.json is missing or invalid
  */
 function getLocalesFromConfig() {
-    const twoskyPath = path.resolve(__dirname, '.twosky.json');
-
     try {
-        const twoskyConfig = JSON.parse(fs.readFileSync(twoskyPath, 'utf8'));
+        console.log(TWOSKY_FILE_PATH)
+        const twoskyConfig = JSON.parse(fs.readFileSync(TWOSKY_FILE_PATH, 'utf8'));
         if (
-            !Array.isArray(twoskyConfig) ||
-            twoskyConfig.length === 0 ||
-            !twoskyConfig[0].languages
+            !Array.isArray(twoskyConfig)
+            || twoskyConfig.length === 0
+            || !twoskyConfig[0].languages
         ) {
             throw new Error('Invalid .twosky.json format: missing languages configuration');
         }
-        
+
         return Object.keys(twoskyConfig[0].languages);
     } catch (error) {
         // Rethrow with more context instead of falling back to defaults
@@ -48,6 +52,7 @@ function getLocalesFromConfig() {
 
 /**
  * List of locales to download
+ * @typedef {typeof LOCALES[number]} Locale
  */
 const LOCALES = getLocalesFromConfig();
 
@@ -139,16 +144,7 @@ async function processTranslationFile(locale, fileConfig) {
     logger.info(`Moving ${fileConfig.name} for ${locale} locale to ${localeDir}`);
     fs.copyFileSync(TEMP_CONVERTED_FILE, path.join(localeDir, fileConfig.name));
 
-    // Handle special cases for es and pt locales
-    if (locale === 'es') {
-        const esESDir = path.join(LOCALES_DIR, 'es_ES');
-        if (!fs.existsSync(esESDir)) {
-            fs.mkdirSync(esESDir, { recursive: true });
-        }
-        logger.info(`Copying ${fileConfig.name} for es_ES locale`);
-        fs.copyFileSync(TEMP_CONVERTED_FILE, path.join(esESDir, fileConfig.name));
-    }
-
+    // Handle special cases for pt locale
     if (locale === 'pt') {
         const ptPTDir = path.join(LOCALES_DIR, 'pt_PT');
         if (!fs.existsSync(ptPTDir)) {
