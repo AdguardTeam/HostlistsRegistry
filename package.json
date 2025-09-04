@@ -18,12 +18,14 @@
   "scripts": {
     "compose": "node scripts/compose.js",
     "locales:prepare": "node scripts/translations/prepare.js",
-    "locales:download": "cd scripts/translations ; ./download.sh",
-    "locales:upload": "cd scripts/translations ; ./upload.sh",
+    "locales:download": "node scripts/translations/download-locales.mjs",
+    "locales:upload": "node scripts/translations/upload-base-locale.mjs",
     "compress": "node scripts/repository/compress.js",
     "lint": "eslint ."
   },
   "devDependencies": {
+    "axios": "^1.6.0",
+    "form-data": "^4.0.0",
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",

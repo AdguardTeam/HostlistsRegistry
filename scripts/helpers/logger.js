@@ -31,8 +31,17 @@ const logger = {
      *
      * @param {string} message - The warning message to be logged
      */
-    warning: (message) => {
+    warn: (message) => {
         console.log(chalk.bold.yellow(message));
+    },
+
+    /**
+     * Log a info message with blue bold text.
+     *
+     * @param {string} message - The info message to be logged
+     */
+    info: (message) => {
+        console.log(chalk.bold.blue(message));
     },
 };
 

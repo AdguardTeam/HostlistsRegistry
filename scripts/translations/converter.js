@@ -122,8 +122,8 @@
   };
 
   return {
-    importFile: importFile,
-    exportFile: exportFile
+    importFile,
+    exportFile,
   };
 })();
 
@@ -140,4 +140,8 @@ if (action === 'import') {
   converter.importFile(locale, path.join(__dirname, file), path.join(__dirname, out), mask);
 } else if (action === 'export') {
   converter.exportFile(locale, path.join(__dirname, file), path.join(__dirname, out));
+}
+
+if (require.main !== module) {
+  module.exports = { converter };
 }
