@@ -1,6 +1,26 @@
 const { z } = require('zod');
 
 /**
+ * List of valid service group names.
+ *
+ * IMPORTANT: readme should be updated if this list is changed.
+ */
+const VALID_GROUP_NAMES = [
+    'ai',
+    'cdn',
+    'dating',
+    'gambling',
+    'gaming',
+    'hosting',
+    'messenger',
+    'privacy',
+    'shopping',
+    'social_network',
+    'software',
+    'streaming',
+];
+
+/**
  * Zod schema for translating a specific service group.
  * The key should start with 'servicesgroup.' and end with '.name' and the value should be a string.
  * Should be only one property in the object.
@@ -11,9 +31,19 @@ const translationSchema = z.object({}).catchall(
     z.string(),
 ).refine((obj) => {
     const keys = Object.keys(obj);
-    return keys.length === 1 && keys[0].match(/^servicesgroup\.[a-z_]+\.name$/);
+    if (keys.length !== 1) {
+        return false;
+    }
+    const key = keys[0];
+    const match = key.match(/^servicesgroup\.([a-z_]+)\.name$/);
+    if (!match) {
+        return false;
+    }
+    const groupName = match[1];
+    return VALID_GROUP_NAMES.includes(groupName);
 }, {
-    message: 'Object must have exactly 1 property with key matching servicesgroup.*.name pattern',
+    message: 'Service group translation object must have exactly 1 property with key matching servicesgroup.*.name '
+        + `where * is one of: ${VALID_GROUP_NAMES.join(', ')}`,
 });
 
 /**

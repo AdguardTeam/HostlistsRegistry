@@ -12,7 +12,7 @@ const SERVICES_BASE_TRANSLATION_FILEPATH = path.join(BASE_LOCALE_DIR, SERVICES_T
  * Returns only directories names from folder
  *
  * @param {string} folderPath folder path
- * @returns {Array<string>} only directories names in folder
+ * @returns {Promise<Array>} only directories names in folder
  */
 const getDirNames = async (folderPath) => {
     try {
@@ -120,6 +120,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
             // Check if id and sign are present
             if (prefix !== 'servicesgroup' || !id || sign !== 'name') {
                 invalidKeys.push(key);
+                return;
             }
             // { name: "Cdn" }
             translate[sign] = value;
@@ -132,9 +133,12 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
         // Merge component locales into the groupedFileObjects
         Object.assign(groupedFileObjects, componentLocalesTranslate);
     });
-    return (invalidKeys.length > 0)
-        ? logger.error(`Invalid key format: ${invalidKeys.join(', ')}. Expected format: 'servicesgroup.id.name'`)
-        : groupedFileObjects;
+
+    if (invalidKeys.length > 0) {
+        throw new Error(`Invalid key format: ${invalidKeys.join(', ')}. Expected format: 'servicesgroup.id.name'`);
+    }
+
+    return groupedFileObjects;
 };
 /**
  * @typedef {{ name: string }} TranslationName

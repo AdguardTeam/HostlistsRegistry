@@ -26,7 +26,7 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
 
     await fs.writeFile(
         path.join(`${sourceDirPath}/${removedObject.id}${YML_FILE_EXTENSION}`),
-        yaml.dump(removedObject, `${{ lineWidth: -1 }}\n`),
+        yaml.dump(removedObject, { lineWidth: -1 }),
     );
     if (sourceDirPath.length > 1) {
         await restoreRemovedSourceFiles(restObjects);

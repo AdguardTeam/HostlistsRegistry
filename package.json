@@ -17,7 +17,7 @@
     "zod": "^4.1.4"
   },
   "scripts": {
-    "compose": "node ./index.js",
+    "compose": "node ./compose.js",
     "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "node scripts/translations/download-locales.mjs",
     "locales:upload": "node scripts/translations/upload-base-locale.mjs",

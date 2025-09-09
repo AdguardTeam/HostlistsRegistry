@@ -12,9 +12,9 @@
  * or null if no differences exist.
  */
 const getDifferences = (targetCollection, sourceCollection) => {
-    const differences = targetCollection.filter(
-        (distObject) => !sourceCollection.find((sourceObject) => sourceObject.id === distObject.id),
-    );
+    // Build a fast lookup set of source IDs to avoid O(n*m) scans
+    const sourceIds = new Set(sourceCollection.map(({ id }) => id));
+    const differences = targetCollection.filter(({ id }) => !sourceIds.has(id));
     return differences.length > 0 ? differences : null;
 };
 
