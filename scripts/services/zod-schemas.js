@@ -97,7 +97,9 @@ const serviceSchema = z.object({
     name: z.string(),
     rules: z.array(z.string()),
     icon_svg: z.string(),
-    group: z.string(),
+    group: z.string().refine((val) => VALID_GROUP_NAMES.includes(val), {
+        message: `Group must be one of: ${VALID_GROUP_NAMES.join(', ')}`,
+    }),
 }).strict();
 
 /**

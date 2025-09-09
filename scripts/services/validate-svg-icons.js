@@ -40,7 +40,7 @@ const checkSVG = (svgIcon, serviceId) => {
         return svgErrors;
     }
     const svgDocumentElement = svgNode.documentElement;
-    
+
     // Check if the SVG has a viewBox attribute
     if (!svgDocumentElement.hasAttribute('viewBox')) {
         svgErrors.push(`${serviceId} : The icon must have a viewBox attribute.`);
@@ -57,7 +57,7 @@ const checkSVG = (svgIcon, serviceId) => {
             svgErrors.push(`${serviceId} : The icon must have a square shape.`);
         }
     }
-    
+
     // Checks if the SVG tag contains 'width' and 'height' attributes.
     // If 'width' or 'height' attributes are present, the error is written to an array.
     if (svgDocumentElement.hasAttribute('height') || svgDocumentElement.hasAttribute('width')) {
