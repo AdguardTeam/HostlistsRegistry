@@ -64,6 +64,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         logger.success(`Successfully finished building ${distFilePath}`);
     } catch (error) {
         logger.error(`Error occurred while building ${distFilePath}`);
+        logger.error(error.message);
     }
 };
 
