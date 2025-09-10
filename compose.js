@@ -9,6 +9,7 @@ const { restoreRemovedSourceFiles } = require('./scripts/services/restore-remove
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 const { addServiceLocalizations } = require('./scripts/services/add-localizations');
 const { groupedServicesSchema } = require('./scripts/services/zod-schemas');
+const { VALID_GROUP_NAMES_ARRAY } = require('./scripts/services/zod-schemas');
 
 const { logger } = require('./scripts/helpers/logger');
 
@@ -58,7 +59,25 @@ const buildServices = async (sourceDirPath, distFilePath) => {
             const absentGroups = groupsDifferences.map((group) => group.id);
             logger.error(`These groups have no services: ${absentGroups.join(', ')}`);
         }
-        groupedServicesSchema.parse(groupedServicesData);
+
+        // Find services with invalid groups
+        const invalidService = groupedServicesData.blocked_services.find(
+            (service) => !VALID_GROUP_NAMES_ARRAY.includes(service.group),
+        );
+
+        if (invalidService) {
+            logger.error(`Invalid group "${invalidService.group}" for service "${invalidService.id}".`);
+            // Exit the process with error code
+            process.exit(1);
+        }
+
+        // Proceed with validation
+        try {
+            groupedServicesSchema.parse(groupedServicesData);
+        } catch (error) {
+            logger.error(`Validation error: ${error.message}`);
+            process.exit(1);
+        }
         // Write the grouped service data to the destination JSON file
         await fs.writeFile(distFilePath, `${JSON.stringify(groupedServicesData, null, 2)}\n`);
         logger.success(`Successfully finished building ${distFilePath}`);
