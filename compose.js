@@ -8,8 +8,7 @@ const { getDifferences } = require('./scripts/helpers/helpers');
 const { restoreRemovedSourceFiles } = require('./scripts/services/restore-removed-services');
 const { validateSvgIcons } = require('./scripts/services/validate-svg-icons');
 const { addServiceLocalizations } = require('./scripts/services/add-localizations');
-const { groupedServicesSchema } = require('./scripts/services/zod-schemas');
-const { VALID_GROUP_NAMES_ARRAY } = require('./scripts/services/zod-schemas');
+const { groupedServicesSchema, VALID_GROUP_NAMES_SET } = require('./scripts/services/zod-schemas');
 
 const { logger } = require('./scripts/helpers/logger');
 
@@ -62,7 +61,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
 
         // Find services with invalid groups
         const invalidService = groupedServicesData.blocked_services.find(
-            (service) => !VALID_GROUP_NAMES_ARRAY.includes(service.group),
+            (service) => !VALID_GROUP_NAMES_SET.has(service.group),
         );
 
         if (invalidService) {

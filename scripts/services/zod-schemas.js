@@ -1,11 +1,11 @@
 const { z } = require('zod');
 
 /**
- * Array of valid service group names.
+ * Set of valid service group names.
  *
- * IMPORTANT: readme should be updated if this array is changed.
+ * IMPORTANT: readme should be updated if this set is changed.
  */
-const VALID_GROUP_NAMES_ARRAY = [
+const VALID_GROUP_NAMES_SET = new Set([
     'ai',
     'cdn',
     'dating',
@@ -18,14 +18,14 @@ const VALID_GROUP_NAMES_ARRAY = [
     'social_network',
     'software',
     'streaming',
-];
+]);
 
 /**
  * Enum of valid service group names.
  *
  * IMPORTANT: readme should be updated if this enum is changed.
  */
-const VALID_GROUP_NAMES = z.enum(VALID_GROUP_NAMES_ARRAY);
+const VALID_GROUP_NAMES = z.enum([...VALID_GROUP_NAMES_SET]);
 
 /**
  * Zod schema for translating a specific service group.
@@ -47,10 +47,10 @@ const translationSchema = z.object({}).catchall(
         return false;
     }
     const groupName = match[1];
-    return VALID_GROUP_NAMES_ARRAY.includes(groupName);
+    return VALID_GROUP_NAMES_SET.has(groupName);
 }, {
     message: 'Service group translation object must have exactly 1 property with key matching servicesgroup.*.name '
-        + `where * is one of: ${VALID_GROUP_NAMES_ARRAY.join(', ')}`,
+        + `where * is one of: ${[...VALID_GROUP_NAMES_SET].join(', ')}`,
 });
 
 /**
@@ -123,5 +123,5 @@ module.exports = {
     servicesI18Schema,
     serviceSchema,
     groupedServicesSchema,
-    VALID_GROUP_NAMES_ARRAY,
+    VALID_GROUP_NAMES_SET,
 };
