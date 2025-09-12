@@ -158,12 +158,29 @@ The `services.json` file combines information about services received from separ
 
 - It is also forbidden to change service `id` inside the `.yml` file.
 
-Service metadata includes `id`, `name`, `rules`, `icon_svg`:
+Service metadata includes `id`, `name`, `rules`, `icon_svg`, `group`:
 
 - `id` — unique human-readable service identifier (string, as `snake_case`)
 - `name` — service name (string)
 - `rules` — list of domain rules in Adblock syntax (list of strings)
 - `icon_svg` — svg icon (string)
+- `group` - semantic group for service. Possible values:
+
+| Full Name                     | Key              | Definition                                                                                                  |
+|-------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------|
+| Artificial intelligence       | `ai`             | Provides AI-powered tools and intelligent solutions for automation, analysis, and content-making.        |
+| Content delivery networks (CDN)| `cdn`           | Optimizes content delivery for websites through caching, load balancing, and strategic distribution.       |
+| Dating services               | `dating`         | Connects individuals seeking romantic relationships based on shared interests and preferences.            |
+| Gambling and betting          | `gambling`       | Offers online gaming and betting experiences with the chance to win prizes through casino games and sports wagering. |
+| Gaming                        | `gaming`         | Provides a diverse range of video and online games for entertainment purposes.                             |
+| Web hosting                   | `hosting`        | Offers server space and resources for hosting websites, applications, and digital content.                 |
+| Messaging services            | `messenger`      | Facilitates instant communication through text, voice, and video messaging.                                |
+| Privacy tools                 | `privacy`        | Prioritizes user data protection and privacy through encryption and strict security measures.              |
+| Shopping                      | `shopping`       | Enables online commerce with secure payment options, order tracking, and personalized shopping experiences.|
+| Social networks               | `social_network` | Connects individuals for interactions, community-building, and sharing personal and professional information.|
+| Software development          | `software`       | Provides tools, platforms, and frameworks for software development, coding, and project management.       |
+| Streaming services            | `streaming`      | Delivers real-time audio, video, and other digital content for immediate access and entertainment.         |
+
 
 <details>
 
@@ -176,7 +193,8 @@ services.json - wechat object
     "id": "wechat",
     "name": "WeChat",
     "rules": ["||wechat.com^", "||weixin.qq.com^", "||wx.qq.com^"],
-    "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"d-none\"><symbol id=\"service_wechat\" viewBox=\"0 0 50 50\" fill=\"currentColor\"><path d=\"M 19 6 C 9.625 6 2 12.503906 2 20.5 C 2 24.769531 4.058594 28.609375 7.816406 31.390625 L 5.179688 39.304688 L 13.425781 34.199219 C 15.714844 34.917969 18.507813 35.171875 21.203125 34.875 C 23.390625 39.109375 28.332031 42 34 42 C 35.722656 42 37.316406 41.675781 38.796875 41.234375 L 45.644531 45.066406 L 43.734375 38.515625 C 46.3125 36.375 48 33.394531 48 30 C 48 23.789063 42.597656 18.835938 35.75 18.105469 C 34.40625 11.152344 27.367188 6 19 6 Z M 13 14 C 14.101563 14 15 14.898438 15 16 C 15 17.101563 14.101563 18 13 18 C 11.898438 18 11 17.101563 11 16 C 11 14.898438 11.898438 14 13 14 Z M 25 14 C 26.101563 14 27 14.898438 27 16 C 27 17.101563 26.101563 18 25 18 C 23.898438 18 23 17.101563 23 16 C 23 14.898438 23.898438 14 25 14 Z M 34 20 C 40.746094 20 46 24.535156 46 30 C 46 32.957031 44.492188 35.550781 42.003906 37.394531 L 41.445313 37.8125 L 42.355469 40.933594 L 39.105469 39.109375 L 38.683594 39.25 C 37.285156 39.71875 35.6875 40 34 40 C 27.253906 40 22 35.464844 22 30 C 22 24.535156 27.253906 20 34 20 Z M 29.5 26 C 28.699219 26 28 26.699219 28 27.5 C 28 28.300781 28.699219 29 29.5 29 C 30.300781 29 31 28.300781 31 27.5 C 31 26.699219 30.300781 26 29.5 26 Z M 38.5 26 C 37.699219 26 37 26.699219 37 27.5 C 37 28.300781 37.699219 29 38.5 29 C 39.300781 29 40 28.300781 40 27.5 C 40 26.699219 39.300781 26 38.5 26 Z\" /></symbol></svg>"
+    "icon_svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" className=\"d-none\"><symbol id=\"service_wechat\" viewBox=\"0 0 50 50\" fill=\"currentColor\"><path d=\"M 19 6 C 9.625 6 2 12.503906 2 20.5 C 2 24.769531 4.058594 28.609375 7.816406 31.390625 L 5.179688 39.304688 L 13.425781 34.199219 C 15.714844 34.917969 18.507813 35.171875 21.203125 34.875 C 23.390625 39.109375 28.332031 42 34 42 C 35.722656 42 37.316406 41.675781 38.796875 41.234375 L 45.644531 45.066406 L 43.734375 38.515625 C 46.3125 36.375 48 33.394531 48 30 C 48 23.789063 42.597656 18.835938 35.75 18.105469 C 34.40625 11.152344 27.367188 6 19 6 Z M 13 14 C 14.101563 14 15 14.898438 15 16 C 15 17.101563 14.101563 18 13 18 C 11.898438 18 11 17.101563 11 16 C 11 14.898438 11.898438 14 13 14 Z M 25 14 C 26.101563 14 27 14.898438 27 16 C 27 17.101563 26.101563 18 25 18 C 23.898438 18 23 17.101563 23 16 C 23 14.898438 23.898438 14 25 14 Z M 34 20 C 40.746094 20 46 24.535156 46 30 C 46 32.957031 44.492188 35.550781 42.003906 37.394531 L 41.445313 37.8125 L 42.355469 40.933594 L 39.105469 39.109375 L 38.683594 39.25 C 37.285156 39.71875 35.6875 40 34 40 C 27.253906 40 22 35.464844 22 30 C 22 24.535156 27.253906 20 34 20 Z M 29.5 26 C 28.699219 26 28 26.699219 28 27.5 C 28 28.300781 28.699219 29 29.5 29 C 30.300781 29 31 28.300781 31 27.5 C 31 26.699219 30.300781 26 29.5 26 Z M 38.5 26 C 37.699219 26 37 26.699219 37 27.5 C 37 28.300781 37.699219 29 38.5 29 C 39.300781 29 40 28.300781 40 27.5 C 40 26.699219 39.300781 26 38.5 26 Z\" /></symbol></svg>",
+    "group": "social_network"
   }
   ```
 
@@ -184,14 +202,15 @@ wechat.yml
 
   ```yml
   id: wechat
-name: WeChat
-rules:
-  - '||wechat.com^'
-  - '||weixin.qq.com^'
-  - '||weixin.qq.com.cn^'
-  - '||weixinbridge.com^'
-  - '||wx.qq.com^'
-icon_svg: <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 50 50"><path d="M 19 6 C 9.625 6 2 12.503906 2 20.5 C 2 24.769531 4.058594 28.609375 7.816406 31.390625 L 5.179688 39.304688 L 13.425781 34.199219 C 15.714844 34.917969 18.507813 35.171875 21.203125 34.875 C 23.390625 39.109375 28.332031 42 34 42 C 35.722656 42 37.316406 41.675781 38.796875 41.234375 L 45.644531 45.066406 L 43.734375 38.515625 C 46.3125 36.375 48 33.394531 48 30 C 48 23.789063 42.597656 18.835938 35.75 18.105469 C 34.40625 11.152344 27.367188 6 19 6 Z M 13 14 C 14.101563 14 15 14.898438 15 16 C 15 17.101563 14.101563 18 13 18 C 11.898438 18 11 17.101563 11 16 C 11 14.898438 11.898438 14 13 14 Z M 25 14 C 26.101563 14 27 14.898438 27 16 C 27 17.101563 26.101563 18 25 18 C 23.898438 18 23 17.101563 23 16 C 23 14.898438 23.898438 14 25 14 Z M 34 20 C 40.746094 20 46 24.535156 46 30 C 46 32.957031 44.492188 35.550781 42.003906 37.394531 L 41.445313 37.8125 L 42.355469 40.933594 L 39.105469 39.109375 L 38.683594 39.25 C 37.285156 39.71875 35.6875 40 34 40 C 27.253906 40 22 35.464844 22 30 C 22 24.535156 27.253906 20 34 20 Z M 29.5 26 C 28.699219 26 28 26.699219 28 27.5 C 28 28.300781 28.699219 29 29.5 29 C 30.300781 29 31 28.300781 31 27.5 C 31 26.699219 30.300781 26 29.5 26 Z M 38.5 26 C 37.699219 26 37 26.699219 37 27.5 C 37 28.300781 37.699219 29 38.5 29 C 39.300781 29 40 28.300781 40 27.5 C 40 26.699219 39.300781 26 38.5 26 Z" /></svg>
+  name: WeChat
+  rules:
+    - '||wechat.com^'
+    - '||weixin.qq.com^'
+    - '||weixin.qq.com.cn^'
+    - '||weixinbridge.com^'
+    - '||wx.qq.com^'
+  icon_svg: <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 50 50"><path d="M 19 6 C 9.625 6 2 12.503906 2 20.5 C 2 24.769531 4.058594 28.609375 7.816406 31.390625 L 5.179688 39.304688 L 13.425781 34.199219 C 15.714844 34.917969 18.507813 35.171875 21.203125 34.875 C 23.390625 39.109375 28.332031 42 34 42 C 35.722656 42 37.316406 41.675781 38.796875 41.234375 L 45.644531 45.066406 L 43.734375 38.515625 C 46.3125 36.375 48 33.394531 48 30 C 48 23.789063 42.597656 18.835938 35.75 18.105469 C 34.40625 11.152344 27.367188 6 19 6 Z M 13 14 C 14.101563 14 15 14.898438 15 16 C 15 17.101563 14.101563 18 13 18 C 11.898438 18 11 17.101563 11 16 C 11 14.898438 11.898438 14 13 14 Z M 25 14 C 26.101563 14 27 14.898438 27 16 C 27 17.101563 26.101563 18 25 18 C 23.898438 18 23 17.101563 23 16 C 23 14.898438 23.898438 14 25 14 Z M 34 20 C 40.746094 20 46 24.535156 46 30 C 46 32.957031 44.492188 35.550781 42.003906 37.394531 L 41.445313 37.8125 L 42.355469 40.933594 L 39.105469 39.109375 L 38.683594 39.25 C 37.285156 39.71875 35.6875 40 34 40 C 27.253906 40 22 35.464844 22 30 C 22 24.535156 27.253906 20 34 20 Z M 29.5 26 C 28.699219 26 28 26.699219 28 27.5 C 28 28.300781 28.699219 29 29.5 29 C 30.300781 29 31 28.300781 31 27.5 C 31 26.699219 30.300781 26 29.5 26 Z M 38.5 26 C 37.699219 26 37 26.699219 37 27.5 C 37 28.300781 37.699219 29 38.5 29 C 39.300781 29 40 28.300781 40 27.5 C 40 26.699219 39.300781 26 38.5 26 Z" /></svg>
+  group: social_network
   ```
 
 </details>

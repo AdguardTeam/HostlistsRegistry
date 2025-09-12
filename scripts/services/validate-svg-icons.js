@@ -40,17 +40,24 @@ const checkSVG = (svgIcon, serviceId) => {
         return svgErrors;
     }
     const svgDocumentElement = svgNode.documentElement;
-    const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
-    // Checks if SVG has the viewBox attribute.
-    // If SVG does not have this attribute, the error is written to an array.
-    if (svgViewBox.length < 4) {
+
+    // Check if the SVG has a viewBox attribute
+    if (!svgDocumentElement.hasAttribute('viewBox')) {
         svgErrors.push(`${serviceId} : The icon must have a viewBox attribute.`);
+    } else {
+        const svgViewBox = svgDocumentElement.getAttribute('viewBox').split(' ');
+        // Checks if SVG has the viewBox attribute with proper dimensions.
+        // If SVG does not have this attribute, the error is written to an array.
+        if (svgViewBox.length < 4) {
+            svgErrors.push(`${serviceId} : The icon must have a viewBox attribute with proper dimensions.`);
+        }
+        // Checks if the SVG is square by comparing the viewBox dimensions.
+        // If the SVG is not square, the error is written to an array.
+        if (svgViewBox[2] !== svgViewBox[3]) {
+            svgErrors.push(`${serviceId} : The icon must have a square shape.`);
+        }
     }
-    // Checks if the SVG is square by comparing the viewBox dimensions.
-    // If the SVG is not square, the error is written to an array.
-    if (svgViewBox[2] !== svgViewBox[3]) {
-        svgErrors.push(`${serviceId} : The icon must have a square shape.`);
-    }
+
     // Checks if the SVG tag contains 'width' and 'height' attributes.
     // If 'width' or 'height' attributes are present, the error is written to an array.
     if (svgDocumentElement.hasAttribute('height') || svgDocumentElement.hasAttribute('width')) {
@@ -82,8 +89,8 @@ const validateSvgIcons = (servicesArray) => {
         }
     });
     if (errorReports.length > 0) {
-        const formattedReports = errorReports.map((report) => `\t${report}`);
-        throw new Error(`\n${formattedReports.join('\n')}`);
+        const formattedReports = errorReports.map((report) => `${report}`);
+        throw new Error(`${formattedReports.join('\n')}`);
     }
 };
 
