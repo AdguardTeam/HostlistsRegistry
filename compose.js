@@ -81,8 +81,7 @@ const buildServices = async (sourceDirPath, distFilePath) => {
         await fs.writeFile(distFilePath, `${JSON.stringify(groupedServicesData, null, 2)}\n`);
         logger.success(`Successfully finished building ${distFilePath}`);
     } catch (error) {
-        logger.error(`Error occurred while building ${distFilePath}`);
-        logger.error(error.message);
+        logger.error(`Error occurred while building ${distFilePath} due to ${error.message}`);
     }
 };
 

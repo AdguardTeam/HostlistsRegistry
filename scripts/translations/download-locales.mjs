@@ -168,7 +168,7 @@ async function processTranslationFile(locale, fileConfig) {
  */
 async function downloadLocales() {
   logger.info('Starting download of translation files');
-  
+
   // Initialize LOCALES
   LOCALES = await getLocalesFromConfig();
 

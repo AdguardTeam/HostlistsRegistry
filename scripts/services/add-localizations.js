@@ -12,7 +12,7 @@ const SERVICES_BASE_TRANSLATION_FILEPATH = path.join(BASE_LOCALE_DIR, SERVICES_T
  * Returns only directories names from folder
  *
  * @param {string} folderPath folder path
- * @returns {Promise<Array>} only directories names in folder
+ * @returns {Promise<Array<string>>} only directories names in folder
  */
 const getDirNames = async (folderPath) => {
     try {

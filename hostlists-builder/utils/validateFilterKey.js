@@ -10,12 +10,12 @@ module.exports = function makeFilterKeyValidator() {
      * Validates filter key. Throws error if validation fails
      *
      * @param {string} filterKey - The filter key to validate
-     * @param {string|number} filterId - The filter ID for reference in error messages
+     * @param {number} filterId - The filter ID for reference in error messages
      */
     return {
         validate(filterKey, filterId) {
             if (!filterKey) {
-                logger.error(`Empty filter key encountered`, `Filter ID: ${filterId}`);
+                logger.error('Empty filter key encountered', `Filter ID: ${filterId}`);
                 throw new Error("Empty filter key encountered", filterId);
             }
 
