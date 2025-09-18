@@ -65,7 +65,7 @@ const TRANSLATION_FILES = [
     },
     {
         name: 'filters.json',
-        filename: 'hostlists.json',
+        filename: 'filters.json',
         prefix: 'hostlist.'
     },
     {
@@ -168,7 +168,7 @@ async function processTranslationFile(locale, fileConfig) {
  */
 async function downloadLocales() {
   logger.info('Starting download of translation files');
-  
+
   // Initialize LOCALES
   LOCALES = await getLocalesFromConfig();
 
