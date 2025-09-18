@@ -1,6 +1,6 @@
 [
 	{
-		"hostlist.1.name": "فلتر AdGuard DNS",
+		"hostlist.1.name": "مرشح AdGuard DNS",
 		"hostlist.1.description": "قائمة مكونة من عدة فلاتر (فلتر AdGuard الأساسي وفلتر الوسائط الاجتماعية وفلتر الحماية من التتبع وفلتر إعلانات الجوال وفلتر EasyList و EasyPrivacy) وتم تبسيطها خصيصًا لتكون متوافقة بشكل أفضل مع حظر الإعلانات على مستوى DNS"
 	},
 	{
@@ -24,7 +24,7 @@
 		"hostlist.7.description": "قائمة لمنع أجهزة التلفاز الذكية من إرسال البيانات الوصفية إلى البائع، ولحظر الإعلانات في التطبيقات وخدمات الأفلام"
 	},
 	{
-		"hostlist.8.name": "قائمة فلاتر NoCoin",
+		"hostlist.8.name": "NoCoin Filter List",
 		"hostlist.8.description": "قائمة لمنع تعدين العملات المشفرة عبر المتصفح"
 	},
 	{
@@ -210,5 +210,57 @@
 	{
 		"hostlist.56.name": "نطاقات TLD الأكثر إساءة استخدامًا في العالم من HaGeZi",
 		"hostlist.56.description": "نطاقات المستوى الأعلى الأكثر تعرضًا للانتهاك، تم دمجها من HaGeZi وYokoffing وDandelionSprout وSpamHAUS."
+	},
+	{
+		"hostlist.59.name": "فلتر AdGuard DNS للنوافذ المنبثقة",
+		"hostlist.59.description": "الفلتر يحتوي على قواعد للمواقع التي تفتح في نافذة جديدة، مكونة من فلاتر AdGuard و EasyList و ABPindo، ومحسّنة للتوافق مع حظر النوافذ المنبثقة على مستوى DNS."
+	},
+	{
+		"hostlist.60.name": "HaGeZi's Xiaomi Tracker Blocklist",
+		"hostlist.60.description": "يتم حظر متتبعي النطاق العريض الأصلي من شاومي الذين يتتبعون نشاطك."
+	},
+	{
+		"hostlist.61.name": "HaGeZi's Samsung Tracker Blocklist",
+		"hostlist.61.description": "يتم حظر المتعقبات الأصلية من سامسونج التي تتعقب نشاطك."
+	},
+	{
+		"hostlist.62.name": "فلتر الأمان الأوكراني",
+		"hostlist.62.description": "يقوم بتصفية الموارد الإلكترونية الخبيثة (التصيد الاحتيالي، الاحتيال عبر الإنترنت، البرمجيات الخبيثة، إلخ) التي تستهدف المواطنين الأوكرانيين."
+	},
+	{
+		"hostlist.63.name": "HaGeZi's Samsung Tracker Blocklist",
+		"hostlist.63.description": "يتم حظر أدوات التتبع الأصلية الخاصة بـ Windows و Office التي تراقب نشاطك."
+	},
+	{
+		"hostlist.64.name": "1Hosts (Pro)",
+		"hostlist.64.description": "قائمة لحظر الإعلانات المزعجة، المتعقبات، والبرمجيات الخبيثة. النسخة الصارمة: تحتوي على أقل قدر من الفواصل، وتعطي الأولوية للخصوصية والأمان (حظر الإعلانات) على تجربة المستخدم، مثلًا تقوم بحظر graph.facebook.com."
+	},
+	{
+		"hostlist.65.name": "HaGeZi's Vivo Tracker Blocklist",
+		"hostlist.65.description": "يحظر أجهزة تتبع النطاق العريض الأصلية من Vivo التي تتعقب نشاطك."
+	},
+	{
+		"hostlist.66.name": "HaGeZi's OPPO & Realme Tracker Blocklist",
+		"hostlist.66.description": "يتم حظر المتعقبين الأصليين للنطاق العريض في OPPO و REALME الذين يتتبعون نشاطك."
+	},
+	{
+		"hostlist.67.name": "HaGeZi's Apple Tracker Blocklist",
+		"hostlist.67.description": "يحظر أجهزة تتبع النطاق العريض الأصلية من Apple التي تتعقب نشاطك."
+	},
+	{
+		"hostlist.68.name": "HaGeZi's URL Shortener Blocklist",
+		"hostlist.68.description": "يحظر مُختصرات الروابط."
+	},
+	{
+		"hostlist.69.name": "ShadowWhisperer Tracking List",
+		"hostlist.69.description": "يحظر نطاقات تتعلق بالتحليلات، والتشخيصات، والقياسات، والموقع، واكتشاف IP العام."
+	},
+	{
+		"hostlist.70.name": "1Hosts (Xtra)",
+		"hostlist.70.description": "إصدار قوي - أقصى قدر من الحماية ضد تهديدات الخصوصية الناشئة. قد يُعطّل (أحيانًا) المواقع أو الخدمات الموثوقة."
+	},
+	{
+		"hostlist.71.name": "HaGeZi's DNS Rebind Protection",
+		"hostlist.71.description": "DNS Rebind Protection هي آلية أمان تمنع المهاجمين من التلاعب باستجابات DNS لجعل المجال يحل عناوين IP الخاصة أو المحلية ، وبالتالي منع البرامج النصية الضارة من الوصول إلى الشبكات الداخلية من خلال هجمات إعادة ربط DNS."
 	}
 ]
