@@ -931,14 +931,14 @@
 				101
 			],
 			"languages": [],
-			"version": "1.0.96.2",
+			"version": "1.0.96.3",
 			"homepage": "https://cert.pl/posts/2020/03/ostrzezenia_phishing/",
 			"expires": 345600,
 			"displayNumber": 4,
 			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_41.txt",
 			"subscriptionUrl": "https://hole.cert.pl/domains/v2/domains_adblock.txt",
 			"timeAdded": "2023-03-07T15:01:58+0000",
-			"timeUpdated": "2025-09-19T09:09:02+0000"
+			"timeUpdated": "2025-09-19T10:01:22+0000"
 		},
 		{
 			"filterKey": "ISR_easyList_hebrew",
@@ -1260,6 +1260,26 @@
 			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/urlshortener.txt",
 			"timeAdded": "2025-07-16T11:05:19+0000",
 			"timeUpdated": "2025-09-19T09:09:14+0000"
+		},
+		{
+			"filterKey": "hagezi_dns_rebind_protection",
+			"filterId": 71,
+			"groupId": 4,
+			"name": "HaGeZi's DNS Rebind Protection",
+			"deprecated": false,
+			"description": "DNS Rebind Protection is a security mechanism that prevents attackers from manipulating DNS responses to make a domain resolve to private or local IP addresses, thereby blocking malicious scripts from accessing internal networks through DNS rebinding attacks.",
+			"tags": [
+				2
+			],
+			"languages": [],
+			"version": "1.0.0.1",
+			"homepage": "https://github.com/hagezi/dns-blocklists",
+			"expires": 345600,
+			"displayNumber": 4,
+			"downloadUrl": "https://adguardteam.github.io/HostlistsRegistry/assets/filter_71.txt",
+			"subscriptionUrl": "https://raw.githubusercontent.com/hagezi/dns-blocklists/refs/heads/main/adguard/dns-rebind-protection.txt",
+			"timeAdded": "2025-09-10T13:50:31+0000",
+			"timeUpdated": "2025-09-12T18:10:08+0000"
 		},
 		{
 			"filterKey": "nocoin_filter_list",
