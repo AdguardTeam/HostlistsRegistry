@@ -32,7 +32,8 @@ import {
 const TRANSLATION_DATA = [
     'groups.json',
     'filters.json',
-    'tags.json'
+    'tags.json',
+    'services.json'
 ];
 
 /**
