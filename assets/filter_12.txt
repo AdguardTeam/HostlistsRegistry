@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.15.0
+! Version: 1.0.15.1
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2025-09-20T00:29:36.288Z
+! Last modified: 2025-09-22T21:07:23.798Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -49,8 +49,8 @@
 ||willyousurvive.com^
 ||underthegarden.com^
 ||fileplanet.com^
-||inputmapper.com^$denyallow=stolen_by_casino_spammers.*
-||henrypp.org^$denyallow=stolen_by_casino_spammers.*
+||inputmapper.com^
+||henrypp.org^
 ||funeducation.com^
 ||iq-research.info^
 ||iq-test.co.uk^
@@ -105,7 +105,7 @@
 ||ortrun-adi.com^
 ||paramonos-oha.com^
 ||photios-raj.com^
-||zeroredirect5.com^$denyallow=malware_redirection_trains.*
+||zeroredirect5.com^
 ||54.209.22.226^
 ||54.91.125.197^
 ||52.202.53.245^
@@ -115,6 +115,10 @@
 ||3.226.8.132^
 ||3.216.243.46^
 ||roamingclicks.com^
+||collectfasttracks.com^
+||track.vcdc.com^
+||track.tkbo.com^
+||track.traffic.club^
 ||lasvegas-vacations.net^
 ||ndsplitter.com^
 ||ns1.trafficclub.com^
@@ -525,6 +529,7 @@
 /^(https?://)?(www\.)?cunt[a-z]{3,8}\.com(/.*)?$/
 ||fres-news.com^
 ||workerz-news.com^
+||zredir.com^
 ||178.128.142.109^
 ||findmedia.biz^
 ||backtonews.biz^
@@ -564,11 +569,12 @@
 /^(https?://)?\d\d?\.[a-z0-9-]{1,}\.biz(/.*)?$/
 ||safe-offers.net^
 ||gogle.net^
-||best-prizes-202*.com^$denyallow=malware_site.*
-||all-best-prize-202*.com^$denyallow=malware_site.*
+||best-prizes-202*.com^
+||all-best-prize-202*.com^
 ||instantfwding.com^
 ||fwdservice.com^
 ||kmip.net^
+||0redirc.com^
 ||iuqerfsodp9ifjaposdfjhgosurijfaewrwergwff.com^
 ||5.8.34.26^
 ||5.8.47.3^
@@ -669,6 +675,7 @@
 ||mediagetplus.com^
 ||mgmgmg.com^
 ||temp74.com^
+||trackwebclick.com^
 ||23.111.31.137^
 ||23.111.88.207^
 ||onesafesoftware.com^
@@ -680,7 +687,7 @@
 ||lucdream.com^
 ||pesoaniz.com^
 ||apsolutamente.com^
-||trc.*.co^$denyallow=malware_redirection_trains.*
+||trc.*.co^
 ||artofads.co^
 ||dashwoodestates.com^
 ||192.3.110.170^
@@ -875,6 +882,7 @@
 ||delicate-tame-angora.glitch.me^
 ||secureinvoice.glitch.me^
 ||holy-ruddy-brace.glitch.me^
+||instagramcomphoto212paaatrk.glitch.me^
 ||instafollow.glitch.me^
 ||loving-discovered-swordfish.glitch.me^
 ||aquamarine-cotton-impala.glitch.me^
@@ -963,6 +971,7 @@
 ||worldcoolfeed.com^
 ||lucymods.com^
 ||gluegames.xyz^
+/^(.*\.|.*://)?[a-z0-9-]{2,}trk\.xyz(/.*)?$/
 ||newsjump.xyz^
 ||newsmaven.xyz^
 ||dreamdigimedia.blogspot.com^
@@ -978,7 +987,7 @@
 ||195.201.253.130^
 ||195.201.253.131^
 ||installiq.com^
-||cpmverdirect.com^$denyallow=malware_redirection_trains.*
+||cpmverdirect.com^
 ||15.197.244.48^
 ||96.47.230.67^
 ||96.47.230.68^
@@ -991,8 +1000,10 @@
 /^46\.161\.27\.[12]?\d?\d$/
 /^78\.128\.112\.[12]?\d?\d$/
 /^179\.60\.146\.[12]?\d?\d$/
+||trafredirtds.com^
 ||pu020ev.com^
 ||kadam.net^
+||kdtrk.net^
 ||clcpb.net^
 ||kadxin.net^
 ||kdmrqw.com^
@@ -1110,6 +1121,10 @@
 ||spins-game.icu^
 ||spintogreen.com^
 ||toprefgtbvatv.com^
+||track2it4.icu^
+||trackerry.com^
+||trackgdi.com^
+||trckrry.com^
 ||udlwwle.site^
 ||video-stream.club^
 ||winn-ex.icu^
@@ -1823,6 +1838,7 @@
 ||keyrug.com^
 ||keysschools.net^
 ||keystonehoops.com^
+||keywebtracker.com^
 ||keywordadvisetoolplus.com^
 ||kickoff.cm^
 ||kindfirls.com^
@@ -2724,6 +2740,7 @@
 ||alspearowa.com^
 ||beskittyan.com^
 ||cadbitff.com^
+||clicktracklink.com^
 ||getsurv2youu.com^
 ||ggetsurveey.com^
 ||gggtrenks.com^
@@ -2763,6 +2780,7 @@
 ||link.sv^
 ||4.fo^
 ||kckb.st^
+-trk.xyz^
 ||gsecurecontent.com^
 ||pressizer.net^
 ||sapino.net^
@@ -3958,8 +3976,9 @@
 ||thor-pom.com^
 ||thutm-bru.com^
 ||uthyr-que.com^
+||zeroredirect1.com^
 ||zp-dom.com^
-||redirect.newprogrammatic.click^$denyallow=likely_a_malware_redirection.*
+||redirect.newprogrammatic.click^
 ||arcad-hoh.com^
 ||eadri-fnr.com^
 ||gerhi-psv.com^
@@ -4303,6 +4322,8 @@
 ||pw-show-ad.com^
 ||pw-show-main.com^
 ||pw-show-test.com^
+||pwredir-*.com^
+||redir-pw*.com^
 ||rich-people-club.com^
 ||search-top-videos.com^
 ||secret-casino-site.com^
@@ -4659,9 +4680,11 @@
 ||online-notifications.com^
 ||openthenotification.com^
 ||pclkpackg.xyz^
+||pclkredrct.xyz^
 ||popular-messages.com^
 ||premium-news-for.me^
 ||premium-shops-around.me^
+||pushapitracker.com^
 ||read-and-reveal.com^
 ||read-before-the-rest.com^
 ||read-new-post.com^
@@ -4711,6 +4734,7 @@
 ||trending-celeb-news.com^
 ||trending-gossip.com^
 ||trends-celebs.com^
+||ts-tracker.me^
 ||updates-news-magazine.com^
 ||videochatonlinesite.com^
 ||viralvidoes-buzz-blog.com^
@@ -4734,6 +4758,18 @@
 ||collecl.cc^
 ||defre.net^
 ||puredi.net^
+||redic.net^
+||redic2.net^
+||redic3.com^
+||redic4.com^
+||redir2.net^
+||redir3.net^
+||redir4.net^
+||redir5.net^
+||redir6.net^
+||redir7.net^
+||redir8.net^
+||redir9.net^
 ||rejco.online^
 ||spinwincas.online^
 ||tapore.net^
@@ -5251,6 +5287,7 @@
 ||rahfnq.com^
 ||raybhi.com^
 ||rcqmrz.com^
+||redirected1.com^
 ||rfduik.com^
 ||rgitpv.com^
 ||riaeqd.com^
@@ -5773,6 +5810,7 @@
 ||searchassured.com^
 ||searchequivalents.com^
 ||searchexcellent.com^
+||searchingredirect.com^
 ||searchinquire.com^
 ||searchsimilars.com^
 ||searchstarters.com^
@@ -9454,6 +9492,7 @@
 ||charutboll.com^
 ||chaseverifications.com^
 ||cloud-network.online^
+||cmcmdirrect.com^
 ||coltersaidas.com^
 ||com-96-hours.com^
 ||com-96hours.com^
@@ -9577,6 +9616,7 @@
 ||paywide.cards^
 ||promo-carte-avantages.com^
 ||qc1.site^
+||redirect2url.com^
 ||revoiut-cy.com^
 ||revoke.money^
 ||richiediilrimborso.com^
@@ -9781,6 +9821,12 @@
 ||usqtvc.com
 ||usutnr.top
 ||204.44.92.187
+://ap-trk.
+://cw-trk.
+://cw-trak.
+://ktraks.
+://flow-clck.
+://apps-trk.
 ||betzykrisesenter.no^
 ||citra2010oslo.no^
 ||digiter.no^
@@ -19812,6 +19858,11 @@
 ||filinnetirt.com^
 ||freshsubz.com^
 ||52.15.34.25^
+||203.188.171.156^
+||soft-gets.com^
+||reaitek.com^
+||fastdomain-uoemathhvq.workers.dev^
+||dev.ip.organica.tv^
 ||downloadprovider.me^
 ||cash93.com^
 ||a4alig.com^
@@ -20887,7 +20938,7 @@
 ||okmx.org^
 ||nickswheels.com^
 ||spizzicopizza.net^
-||redirectme.net^$denyallow=malware_redirection_trains.*
+||redirectme.net^
 ||anthargo.com^
 ||csgocup.ru^
 ||csgogf*.xyz^
@@ -21489,6 +21540,7 @@
 ||highlandnews.com^
 ||genuinescansupport.com^
 ||diverseflowlink.com^
+||redirectedflow.com^
 ||pcbasicstrength.com^
 ||varietyflow.com^
 ||securecertainflow.com^
@@ -21599,6 +21651,7 @@
 ||awesomewinner.com^
 ||awesomewinner.net^
 ||awesomewinners.net^
+||b2ztrk.com^
 ||beastgadget.net^
 ||beastoffer.net^
 ||beastoffrs.com^
@@ -21918,6 +21971,7 @@
 ||winnerssite.net^
 ||xyzoffer.net^
 ||yasdoodl.com^
+||ym3trk.com^
 ||youwanthis.com^
 ||zebramode.com^
 ||zebraoffers.net^
@@ -26021,7 +26075,13 @@
 ||147.93.63.211^
 ||154.223.16.232^
 ||az-partners.net^
-||divingshop.nl^$denyallow=bank_transaction_scammers.*
+||divingshop.nl^
+||gitcoin-passport.
+||passport-gitcoin.
+||gitcoin-developers.
+||github-foundation.
+||gitcoin-grants.
+||foundation-github.
 ||0network.com^
 ||100conversions.com^
 ||1tag.ai^
@@ -26222,16 +26282,16 @@
 ||103.67.200.64^
 ||198.134.116.17^
 ||198.134.116.30^
-||driverpack.io^$denyallow=has_extreme_amounts_of_pup_in_it.*
+||driverpack.io^
 ||doh-gov.com^
 ||doh-gov.ph^
-||unofficialtwrp.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
-||androidweblog.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
-||androidgreek.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
-||ytechb.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
-||gadgetstwist.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
-||gadgetsfarms.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
-||techorfy.com^$denyallow=had_not_updated_their_root_guides_to_reflect_a_b_partition_phones_as_of_2021.*
+||unofficialtwrp.com^
+||androidweblog.com^
+||androidgreek.com^
+||ytechb.com^
+||gadgetstwist.com^
+||gadgetsfarms.com^
+||techorfy.com^
 ||version.bind|
 ||hostname.bind|
 |pizzaseo.com|
@@ -26278,28 +26338,28 @@
 ://ww26.$denyallow=ww26.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
 ://ww27.$denyallow=ww27.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
 ://ww28.$denyallow=ww28.autotask.net|practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww29.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww30.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww31.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww32.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww33.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww34.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww35.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww36.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww37.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww38.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww39.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww40.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww41.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww42.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww43.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww44.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww45.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww46.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww47.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww48.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww49.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
-://ww50.$denyallow=practically_always_leads_to_a_domain_parking_service_known_for_malware.*
+://ww29.
+://ww30.
+://ww31.
+://ww32.
+://ww33.
+://ww34.
+://ww35.
+://ww36.
+://ww37.
+://ww38.
+://ww39.
+://ww40.
+://ww41.
+://ww42.
+://ww43.
+://ww44.
+://ww45.
+://ww46.
+://ww47.
+://ww48.
+://ww49.
+://ww50.
 ||1800sweepstakes.com^
 ||2soft.com^
 ||4gateway.net^
