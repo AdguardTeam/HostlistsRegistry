@@ -65,7 +65,7 @@ const TRANSLATION_FILES = [
     },
     {
         name: 'filters.json',
-        filename: 'hostlists.json',
+        filename: 'filters.json',
         prefix: 'hostlist.'
     },
     {

@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.63
+! Version: 1.0.0.66
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-08-30T01:34:52.178Z
+! Last modified: 2025-09-19T21:07:02.359Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -29,9 +29,6 @@
 ||inference-app-gateway.eastus2.cloudapp.azure.com^
 ||inference-app-gateway.koreacentral.cloudapp.azure.com^
 ||inference-app-gateway.northeurope.cloudapp.azure.com^
-||azsc-edge-bingads-southeastasia.southeastasia.cloudapp.azure.com^
-||azsc-edge-bingads-westeurope.westeurope.cloudapp.azure.com^
-||azsc-bingads-westus.westus.cloudapp.azure.com^
 ||collector.azure.cn^
 ||js.monitor.azure.com^
 ||adsdkpreprod.azureedge.net^
@@ -155,7 +152,7 @@
 ||dmc.ads-int.microsoft.com^
 ||ui.ads-int.microsoft.com^
 ||adsdk.microsoft.com^
-||adsstatic.microsoft.com^
+||beta.adsstatic.microsoft.com^
 ||adsstatic-int.microsoft.com^
 ||advertising.microsoft.com^
 ||analyticspixel.microsoft.com^
@@ -182,7 +179,6 @@
 ||ieonline.microsoft.com^
 ||location.microsoft.com^
 ||redir.metaservices.microsoft.com^
-||geover-prod.do.dsp.mp.microsoft.com^
 ||track.mp.microsoft.com^
 ||msadsscale.microsoft.com^
 ||oca.microsoft.com^
@@ -265,8 +261,6 @@
 ||g00.msn.com^
 ||c.gr.msn.com^
 ||h.msn.com^
-||h1.msn.com^
-||h2.msn.com^
 ||h6.msn.com^
 ||c.hk.msn.com^
 ||c.id.msn.com^
@@ -330,7 +324,6 @@
 ||beacons.trafficmanager.net^
 ||bf-analytics-tracker-tm.trafficmanager.net^
 ||bingads.trafficmanager.net^
-||bingadsresources.trafficmanager.net^
 ||collection-location-livenet.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^

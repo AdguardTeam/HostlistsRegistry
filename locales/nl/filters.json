@@ -1,19 +1,19 @@
 [
 	{
-		"hostlist.1.name": "AdGuard DNS filter",
+		"hostlist.1.name": "AdGuard DNS-filter",
 		"hostlist.1.description": "Lijst samengesteld uit verschillende filters (AdGuard Basisfilter, Sociale Mediafilter, Tracking Protectiefilter, Mobiele Advertentiefilter, EasyList en EasyPrivacy) en specifiek vereenvoudigd om beter compatibel te zijn met advertentieblokkering op DNS-niveau"
 	},
 	{
 		"hostlist.3.name": "Peter Lowe's Blocklist",
-		"hostlist.3.description": "Blokkeerlijst met hostnamen van advertentie- en trackingservers"
+		"hostlist.3.description": "Blokkeerlijst met hostnamen van advertentie- en volgservers"
 	},
 	{
 		"hostlist.4.name": "Dan Pollock's lijst",
-		"hostlist.4.description": "Lijst voor het blokkeren van advertenties en het voorkomen van gebruikerstracking"
+		"hostlist.4.description": "Lijst voor het blokkeren van advertenties en het voorkomen van het volgen van gebruikers"
 	},
 	{
 		"hostlist.5.name": "OISD Blocklist Small",
-		"hostlist.5.description": "Lijst voor het blokkeren van advertenties en trackers. Geeft prioriteit aan functionaliteit boven blokkering."
+		"hostlist.5.description": "Lijst voor het blokkeren van advertenties en volgers. Geeft prioriteit aan functionaliteit boven blokkering."
 	},
 	{
 		"hostlist.6.name": "Dandelion Sprout's lijst met advertentieblokkeringen voor gameconsoles",
@@ -61,7 +61,7 @@
 	},
 	{
 		"hostlist.17.name": "SWE: Frellwit's Zweeds hosts-bestand",
-		"hostlist.17.description": "Lijst voor het blokkeren van advertenties, tracking, oplichting en malware, voornamelijk op Zweedse websites"
+		"hostlist.17.description": "Lijst voor het blokkeren van advertenties, volgers, oplichting en malware, voornamelijk op Zweedse websites"
 	},
 	{
 		"hostlist.18.name": "Phishing Army",
@@ -69,7 +69,7 @@
 	},
 	{
 		"hostlist.19.name": "IRN: PersianBlocker-lijst",
-		"hostlist.19.description": "Optimale en uitgebreide lijst voor het blokkeren van advertenties en trackers op sites in de Perzische taal"
+		"hostlist.19.description": "Optimale en uitgebreide lijst voor het blokkeren van advertenties en volgers op sites in de Perzische taal"
 	},
 	{
 		"hostlist.20.name": "MKD: Macedonische Pi-hole blokkeerlijst",
@@ -85,7 +85,7 @@
 	},
 	{
 		"hostlist.23.name": "WindowsSpyBlocker - Hosts spionageregels",
-		"hostlist.23.description": "Lijst voor het blokkeren van spionage en tracking op Windows"
+		"hostlist.23.description": "Lijst voor het blokkeren van spionage en volgers op Windows"
 	},
 	{
 		"hostlist.24.name": "1Hosts (Lite)",
@@ -108,7 +108,7 @@
 		"hostlist.29.description": "Lijst voor het blokkeren van advertenties in de Chinese regio"
 	},
 	{
-		"hostlist.30.name": "Phishing URL-blokkeringslijst (PhishTank en OpenPhish)",
+		"hostlist.30.name": "Phishing URL-blokkeerlijst (PhishTank en OpenPhish)",
 		"hostlist.30.description": "Blokkeerlijst van phishing-websites, gebaseerd op de PhishTank- en OpenPhish-lijsten"
 	},
 	{
@@ -116,7 +116,7 @@
 		"hostlist.31.description": "Indicatoren van compromis op Stalkerware-applicaties voor Android en iOS."
 	},
 	{
-		"hostlist.32.name": "NoTracking blokkeerlijst",
+		"hostlist.32.name": "NoTracking-blokkeerlijst",
 		"hostlist.32.description": "De NoTracking-blokkeerlijst is een op DNS gebaseerde filterlijst voor het blokkeren van advertenties, malware, phishing en ander online troep."
 	},
 	{
@@ -141,7 +141,7 @@
 	},
 	{
 		"hostlist.39.name": "Dandelion Sprout's Anti Push Notificaties",
-		"hostlist.39.description": "Heeft tot doel pushmeldingen op sites te verwijderen. Combineert in aanmerking komende regels uit de anti-pushsecties van het AdGuard Popups-filter en de blokkeringslijst voor meldingen van Fanboy."
+		"hostlist.39.description": "Heeft tot doel pushmeldingen op sites te verwijderen. Combineert in aanmerking komende regels uit de anti-pushsecties van het AdGuard Popups-filter en de blokkeerlijst voor meldingen van Fanboy."
 	},
 	{
 		"hostlist.40.name": "TUR: Turkse advertentiehosts",
@@ -258,5 +258,9 @@
 	{
 		"hostlist.70.name": "1Hosts (Xtra)",
 		"hostlist.70.description": "Agressieve versie - maximale blokkering tegen opkomende privacybedreigingen. Kan (af en toe) legitieme sites of diensten verstoren."
+	},
+	{
+		"hostlist.71.name": "HaGeZi's DNS Rebind Protection",
+		"hostlist.71.description": "DNS Rebind Protection is een beveiligingsmechanisme dat voorkomt dat aanvallers DNS-reacties manipuleren om een domein te laten verwijzen naar privé- of lokale IP-adressen. Zo wordt voorkomen dat schadelijke scripts toegang krijgen tot interne netwerken via DNS-rebindingaanvallen."
 	}
 ]
