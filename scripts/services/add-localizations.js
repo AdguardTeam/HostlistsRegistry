@@ -103,11 +103,8 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
     // Initialize an empty object to store grouped translations
     const groupedFileObjects = {};
     const invalidKeys = [];
+    
     fileObjects.forEach((fileObject) => {
-        // Initialize empty objects for translation, locales, and component locales (groups id)
-        const translate = {};
-        const localesTranslate = {};
-        const componentLocalesTranslate = {};
         // { "servicesgroup.cdn.name": "Cdn" }
         Object.entries(fileObject).forEach(([key, value]) => {
             // Skip TODO comments
@@ -122,16 +119,18 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
                 invalidKeys.push(key);
                 return;
             }
-            // { name: "Cdn" }
-            translate[sign] = value;
-            // locale - directory name
-            // {en: { name: "Cdn" } }
-            localesTranslate[locale] = translate;
-            // {cdn : {en: { name: "Cdn" } } }
-            componentLocalesTranslate[id] = localesTranslate;
+            
+            // Initialize the nested structure if it doesn't exist
+            if (!groupedFileObjects[id]) {
+                groupedFileObjects[id] = {};
+            }
+            if (!groupedFileObjects[id][locale]) {
+                groupedFileObjects[id][locale] = {};
+            }
+            
+            // Set the translation value
+            groupedFileObjects[id][locale][sign] = value;
         });
-        // Merge component locales into the groupedFileObjects
-        Object.assign(groupedFileObjects, componentLocalesTranslate);
     });
 
     if (invalidKeys.length > 0) {
@@ -140,6 +139,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
 
     return groupedFileObjects;
 };
+
 /**
  * @typedef {{ name: string }} TranslationName
  */
