@@ -17,19 +17,20 @@
     "zod": "^4.1.4"
   },
   "scripts": {
-    "compose": "node ./compose.js",
-    "locales:prepare": "node scripts/translations/prepare.js",
-    "locales:download": "node scripts/translations/download-locales.mjs",
-    "locales:upload": "node scripts/translations/upload-base-locale.mjs",
-    "compress": "node scripts/repository/compress.js",
+    "compose": "node scripts/check/check-node-version.js && node ./compose.js",
+    "locales:prepare": "node scripts/check/check-node-version.js && node scripts/translations/prepare.js",
+    "locales:download": "node scripts/check/check-node-version.js && node scripts/translations/download-locales.mjs",
+    "locales:upload": "node scripts/check/check-node-version.js && node scripts/translations/upload-base-locale.mjs",
+    "compress": "node scripts/check/check-node-version.js && node scripts/repository/compress.js",
     "lint": "eslint ."
   },
   "devDependencies": {
     "axios": "^1.6.0",
-    "form-data": "^4.0.0",
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",
-    "eslint-plugin-jsdoc": "^46.8.2"
+    "eslint-plugin-jsdoc": "^46.8.2",
+    "form-data": "^4.0.0",
+    "semver": "^7.7.2"
   }
 }

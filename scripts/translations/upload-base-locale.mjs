@@ -21,7 +21,7 @@ import {
     LOCALES_DIR,
     TEMP_MESSAGES_FILE,
     TEMP_CONVERTED_DIR
-} from './locales-constants.js'
+} from './locales-constants.mjs'
 
 /**
  * List of files with translations
