@@ -13,10 +13,11 @@
     "js-yaml": "^4.1.0",
     "md5": "^2.3.0",
     "simple-git": "^3.27.0",
-    "xmldom": "^0.6.0"
+    "xmldom": "^0.6.0",
+    "zod": "^4.1.4"
   },
   "scripts": {
-    "compose": "node scripts/compose.js",
+    "compose": "node ./compose.js",
     "locales:prepare": "node scripts/translations/prepare.js",
     "locales:download": "node scripts/translations/download-locales.mjs",
     "locales:upload": "node scripts/translations/upload-base-locale.mjs",

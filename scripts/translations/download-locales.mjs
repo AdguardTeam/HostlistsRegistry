@@ -72,6 +72,11 @@ const TRANSLATION_FILES = [
         name: 'groups.json',
         filename: 'groups.json',
         prefix: 'hostlistgroup.'
+    },
+    {
+        name: 'services.json',
+        filename: 'services.json',
+        prefix: 'servicesgroup.'
     }
 ];
 

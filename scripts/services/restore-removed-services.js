@@ -2,27 +2,13 @@ const { promises: fs } = require('fs');
 const path = require('path');
 const yaml = require('js-yaml');
 const { logger } = require('../helpers/logger');
+const { serviceSchema } = require('./zod-schemas');
 
 const YML_FILE_EXTENSION = '.yml';
 
 /**
  * @typedef {require('./type-defs').Service} Service
  */
-
-/**
- * Get the differences between blocked services and source service files based on their 'id' property.
- *
- * @param {Service[]} distServices - An array of objects representing service data from the destination.
- * @param {Service[]} sourceServices - An array of objects representing service files from the source.
- * @returns {Service[] | null} - An array containing objects representing the differences,
- * or null if no differences exist.
- */
-const getDifferences = (distServices, sourceServices) => {
-    const differences = distServices.filter(
-        (distObject) => !sourceServices.find((sourceObject) => sourceObject.id === distObject.id),
-    );
-    return differences.length > 0 ? differences : null;
-};
 
 // TODO: rewrite the function to avoid using recursion
 /**
@@ -36,6 +22,8 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
         return;
     }
     const [removedObject, ...restObjects] = differences;
+    serviceSchema.parse(removedObject);
+
     await fs.writeFile(
         path.join(`${sourceDirPath}/${removedObject.id}${YML_FILE_EXTENSION}`),
         yaml.dump(removedObject, { lineWidth: -1 }),
@@ -48,6 +36,5 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
 };
 
 module.exports = {
-    getDifferences,
     restoreRemovedSourceFiles,
 };
