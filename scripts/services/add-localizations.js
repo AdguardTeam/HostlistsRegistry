@@ -103,7 +103,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
     // Initialize an empty object to store grouped translations
     const groupedFileObjects = {};
     const invalidKeys = [];
-    
+
     fileObjects.forEach((fileObject) => {
         // { "servicesgroup.cdn.name": "Cdn" }
         Object.entries(fileObject).forEach(([key, value]) => {
@@ -119,7 +119,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
                 invalidKeys.push(key);
                 return;
             }
-            
+
             // Initialize the nested structure if it doesn't exist
             if (!groupedFileObjects[id]) {
                 groupedFileObjects[id] = {};
@@ -127,7 +127,7 @@ const groupFileContentByTranslations = (fileObjects, locale) => {
             if (!groupedFileObjects[id][locale]) {
                 groupedFileObjects[id][locale] = {};
             }
-            
+
             // Set the translation value
             groupedFileObjects[id][locale][sign] = value;
         });
