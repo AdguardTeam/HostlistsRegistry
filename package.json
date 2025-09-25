@@ -17,11 +17,11 @@
     "zod": "^4.1.4"
   },
   "scripts": {
-    "compose": "node scripts/check/check-node-version.js && node ./compose.js",
-    "locales:prepare": "node scripts/check/check-node-version.js && node scripts/translations/prepare.js",
-    "locales:download": "node scripts/check/check-node-version.js && node scripts/translations/download-locales.mjs",
-    "locales:upload": "node scripts/check/check-node-version.js && node scripts/translations/upload-base-locale.mjs",
-    "compress": "node scripts/check/check-node-version.js && node scripts/repository/compress.js",
+    "compose": "node ./compose.js",
+    "locales:prepare": "node scripts/translations/prepare.js",
+    "locales:download": "node scripts/translations/download-locales.mjs",
+    "locales:upload": "node scripts/translations/upload-base-locale.mjs",
+    "compress": "node scripts/repository/compress.js",
     "lint": "eslint ."
   },
   "devDependencies": {
