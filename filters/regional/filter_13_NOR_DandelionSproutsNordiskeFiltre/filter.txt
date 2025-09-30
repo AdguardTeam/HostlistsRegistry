@@ -1,9 +1,9 @@
 !
 ! Title: NOR: Dandelion Sprouts nordiske filtre
 ! Description: Dandelion Sprout's Nordic Filters (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.14.71
+! Version: 1.0.14.72
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2025-09-04T04:08:47.456Z
+! Last modified: 2025-09-30T18:10:56.110Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -662,6 +662,11 @@
 ||tnord.click^
 ||tnord.qpon^
 ||tnordh.shop^
+||dk-sundhed.com^
+||sundhed-info.com^
+||sundhedinfo.com^
+||info-sundhed.com^
+||infopostdk.com^
 ||1.14.61.188^
 ||3.248.18.175^
 ||5.39.217.206^
@@ -714,6 +719,18 @@
 ||47.76.132.29^
 ||212.224.107.120^
 ||196.251.85.197^
+||158.94.209.89^
+/^104\.160\.10\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^165\.231\.154\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^165\.231\.10\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^165\.231\.152\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^196\.196\.52\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^196\.196\.155\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^196\.240\.121\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^196\.242\.179\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^196\.245\.52\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^196\.245\.56\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
+/^193\.143\.1\.(1?\d{1,2}|2[0-4]\d|25[0-5])$/
 ||vg.no.$dnstype=~CNAME
 ||elkjop.no.$dnstype=~CNAME
 ||coop.no.$dnstype=~CNAME
