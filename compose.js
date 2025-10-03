@@ -2,6 +2,8 @@ const path = require('path');
 const fs = require('fs/promises');
 const builder = require('./hostlists-builder');
 
+require('./scripts/check/check-node-version');
+
 const { getJsonBlockedServicesData, getYmlSourcesBlockedServices } = require('./scripts/services/get-services-content');
 const { mergeServicesData, groupServicesData } = require('./scripts/services/merge-services-data');
 const { getDifferences } = require('./scripts/helpers/helpers');

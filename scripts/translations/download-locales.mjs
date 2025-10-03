@@ -19,7 +19,7 @@ import {
     TEMP_CONVERTED_FILE,
     TEMP_MESSAGES_FILE,
     TWOSKY_FILE_PATH
-} from './locales-constants.js'
+} from './locales-constants.mjs'
 
 /**
  * Get locales from .twosky.json configuration
