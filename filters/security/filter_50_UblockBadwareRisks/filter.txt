@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.19.78
+! Version: 1.0.19.79
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2025-10-03T15:08:24.563Z
+! Last modified: 2025-10-04T07:07:13.780Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -3502,3 +3502,17 @@
 
 /^https?:\/\/www\.[a-z]{8,11}\.com\/product\/(?:[0-9a-z]+-)*(?:%[%0-9a-z]{8,}-)+(?:[0-9a-z]+-)*(?:[%0-9a-z]{8,}-)*[%0-9a-z]+\/$/$doc,match-case,ipaddress=/^173\.2(08|32)\.\d{3}\.\d{3}$/
 ||serenoirs.com^
+
+||exoduswallet.at^
+||setup-ledger.live^
+||official-ledger-app.live^
+||ai-atomic.org^
+||htex-panel.at^
+||simpleswap.ac^
+||simpleswap.to^
+||simpleswap.at^
+||simpleswap.ltd^
+||simpleswap.online^
+||rarible.io-nft.guru^
+||rarible.nft-markets.org^
+||pddeploy.com^
