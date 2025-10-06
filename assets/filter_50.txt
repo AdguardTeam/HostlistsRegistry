@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.19.80
+! Version: 1.0.19.81
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2025-10-04T15:06:59.974Z
+! Last modified: 2025-10-06T14:08:47.053Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -3501,7 +3501,8 @@
 ||network-jpn.com^
 ||statswpmy.com^
 
-/^https?:\/\/www\.[a-z]{8,11}\.com\/product\/(?:[0-9a-z]+-)*(?:%[%0-9a-z]{8,}-)+(?:[0-9a-z]+-)*(?:[%0-9a-z]{8,}-)*[%0-9a-z]+\/$/$doc,match-case,ipaddress=/^173\.2(08|32)\.\d{3}\.\d{3}$/
+/^https?:\/\/www\.[a-z]{8,11}\.com\/product\/(?:[0-9a-z]+-)*(?:%[%0-9a-z]{8,}-)+(?:[0-9a-z]+-)*(?:[%0-9a-z]{8,}-)*[%0-9a-z]+\/?$/$doc,match-case,ipaddress=/^173\.2(08|32)\.\d{3}\.\d{3}$/
+/^https?:\/\/[a-z]{7}\.[a-z]{8,11}\.com\/products\/(?:[0-9a-z]+-)*(?:%[%0-9A-F]{8,}-)+(?:[0-9a-z]+-)*(?:[%0-9A-F]{8,}-)*[-%0-9A-Fa-z]+\/?$/$doc,match-case,ipaddress=/^23\.2\d{2}\.\d{2}\.\d{2}$/
 ||serenoirs.com^
 
 ||exoduswallet.at^
