@@ -1,0 +1,21 @@
+{
+  "name": "uBlock Origin - HUGE AI Blocklist",
+  "description": "A huge blocklist of manually curated sites that contain AI generated imagery for uBlock Origin & uBlacklist.",
+  "homepage": "https://github.com/laylavish/uBlockOrigin-HUGE-AI-Blockist",
+  "sources": [
+    {
+      "name": "uBlock Origin - HUGE AI Blocklist",
+      "source": "https://raw.githubusercontent.com/laylavish/uBlockOrigin-HUGE-AI-Blocklist",
+      "type": "aiblocker",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
