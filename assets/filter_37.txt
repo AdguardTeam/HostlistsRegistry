@@ -1,14 +1,12 @@
 !
 ! Title: No Google
 ! Description: Completely blocks all Google-related domains (including YouTube).
-! Version: 1.0.14.55
+! Version: 1.0.14.56
 ! Homepage: https://github.com/nickspaargaren/no-google
-! Last modified: 2025-07-14T21:07:43.219Z
+! Last modified: 2025-10-13T16:08:55.910Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
-||*-android-context-data.googleapis.com^
-||*-chromecontentsuggestions-pa.googleapis.com^
 ||adgoogle.net^
 ||crashlytics.com^
 ||google-analytics-cn.com^
@@ -29,7 +27,6 @@
 ||tangi.co^
 ||gstatic.com^
 ||gstatic.net^
-||KQu0cL-dnsotls-ds.metric.gstatic.com^
 ||2mdn-cn.net^
 ||2mdn.net^
 ||agnss.goog^
@@ -45,6 +42,7 @@
 ||bg-call-donation-dev.goog^
 ||bg-call-donation.goog^
 ||brightbytes.net^
+||chronicle.security^
 ||chromecastexperiments.com^
 ||chromeenterprise.google^
 ||chromexperiments.com^
@@ -971,6 +969,7 @@
 ||urchin.com^
 ||urkkqhhehq.com^
 ||us-central1-events-d07ac.cloudfunctions.net^
+||us-central1-ipgeolocation-414906.cloudfunctions.net^
 ||uv9l56g4e9.com^
 ||uyxk2yye5z.com^
 ||uyxyuxj198.com^
@@ -1587,11 +1586,6 @@
 ||youtubegaming.com^
 ||ytimg.com^
 ||fitbit.com^
-||GCP02-NF-01.corp.fitbit.com^
-||USVPNEast.corp.fitbit.com^
-||USVPNEAST.corp.fitbit.com^
-||USVPNWest.corp.fitbit.com^
-||USVPNWEST.corp.fitbit.com^
 ||accounts.nest.com^
 ||admin-migration.nest.com^
 ||admin.nest.com^
