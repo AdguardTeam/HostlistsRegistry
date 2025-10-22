@@ -169,6 +169,7 @@ Service metadata includes `id`, `name`, `rules`, `icon_svg`, `group`:
 | Full Name                     | Key              | Definition                                                                                                  |
 |-------------------------------|-----------------|-------------------------------------------------------------------------------------------------------------|
 | Artificial intelligence       | `ai`             | Provides AI-powered tools and intelligent solutions for automation, analysis, and content-making.        |
+| Application stores            | `app_stores`     | Enables users to securely discover, download, and update mobile apps.                                     |
 | Content delivery networks (CDN)| `cdn`           | Optimizes content delivery for websites through caching, load balancing, and strategic distribution.       |
 | Dating services               | `dating`         | Connects individuals seeking romantic relationships based on shared interests and preferences.            |
 | Gambling and betting          | `gambling`       | Offers online gaming and betting experiences with the chance to win prizes through casino games and sports wagering. |

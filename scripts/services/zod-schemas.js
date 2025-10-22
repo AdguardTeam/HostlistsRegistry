@@ -7,6 +7,7 @@ const { z } = require('zod');
  */
 const VALID_GROUP_NAMES_SET = new Set([
     'ai',
+    'app_stores',
     'cdn',
     'dating',
     'gambling',
