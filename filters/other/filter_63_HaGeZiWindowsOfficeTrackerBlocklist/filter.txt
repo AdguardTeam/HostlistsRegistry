@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.72
+! Version: 1.0.0.73
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2025-10-24T11:07:22.975Z
+! Last modified: 2025-10-31T12:14:03.558Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -23,6 +23,7 @@
 ||dc.applicationinsights.azure.us^
 ||in.applicationinsights.azure.cn^
 ||in.applicationinsights.azure.us^
+||live.applicationinsights.azure.cn^
 ||inference-app-gateway.eastus2.cloudapp.azure.com^
 ||inference-app-gateway.koreacentral.cloudapp.azure.com^
 ||inference-app-gateway.northeurope.cloudapp.azure.com^
@@ -297,6 +298,7 @@
 ||beacons.trafficmanager.net^
 ||bf-analytics-tracker-tm.trafficmanager.net^
 ||bingads.trafficmanager.net^
+||ch-asimov-leafs-events-data.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^
 ||events.data.trafficmanager.net^
@@ -366,6 +368,7 @@
 ||citrixtelemetryeheu.servicebus.windows.net^
 ||citrixtelemetryeheu-alias.servicebus.windows.net^
 ||ffg-analyticsk3nvxfne4dp4s.servicebus.windows.net^
+||hme-live-loganalytics-namespace.servicebus.windows.net^
 ||nexxtv-events.servicebus.windows.net^
 ||ppm-licensingtelemetry.servicebus.windows.net^
 ||prod-eh-v1-analytics.servicebus.windows.net^
