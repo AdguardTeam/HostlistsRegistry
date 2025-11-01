@@ -1,15 +1,14 @@
 !
 ! Title: HaGeZi's Encrypted DNS/VPN/TOR/Proxy Bypass
 ! Description: Prevent methods to bypass your DNS, blocks encrypted DNS, VPN, TOR, Proxies. Prevention of bypassing is not guaranteed.
-! Version: 1.0.22.13
+! Version: 1.0.22.14
 ! Homepage: https://github.com/hagezi/dns-blocklists#bypass
-! Last modified: 2025-10-31T19:07:22.860Z
+! Last modified: 2025-11-01T11:06:50.034Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
 ||ss.0001.xyz^
 ||003153.xyz^
-||adguard.007terminal.com^
 ||ns.00dani.me^
 ||dns.010812.xyz^
 ||dns.080590.xyz^
@@ -83,7 +82,6 @@
 ||cloud.198.games^
 ||guard.19kom.de^
 ||1and1-dns.de^
-||1banproxy.com^
 ||1clickvpn.com^
 ||1clickvpn.net^
 ||1ee.top^
@@ -4982,6 +4980,7 @@
 ||013e3c534c88b5cd7a353788a8e3177da6c71993-m.proxy1.startpage.com^
 ||019e22f0ef4b511732a5bbf511018f4d3bd041cb-m.proxy1.startpage.com^
 ||01c7a317e695eec5c3d135f46a07c04120de1a14-m.proxy1.startpage.com^
+||021e31a3ba9fe7eac43fdcd96e615527be4f3bad-m.proxy1.startpage.com^
 ||024d28103860decc870dd004f386ad7a479e5c5c-m.proxy1.startpage.com^
 ||02f09ae524da4f3230e515b611bc7f1e5743ae4a-m.proxy1.startpage.com^
 ||08a7a547b16047321c94a5eee0d68d11646d2325-m.proxy1.startpage.com^
@@ -4993,36 +4992,50 @@
 ||0e4300ee1e4db6a7d0af50fc516b730f9398e356-m.proxy1.startpage.com^
 ||0f3caf224084913fc8044490eebfdceb28c85e1a-m.proxy1.startpage.com^
 ||0fd62165a361fbe7a13d6fc190725c5e2ffed1f6-m.proxy1.startpage.com^
+||1008738605b0fde2f8c4c103565b0ed4c4646b46-m.proxy1.startpage.com^
+||1014c8e8b5ee5ea98fab994587834117b0161b0d-m.proxy1.startpage.com^
 ||102e89a1c55e7d744b31c3f879417e4c68d75aca-m.proxy1.startpage.com^
 ||108b6afdb5b03dc5ee7c97d25cf8b43dc2159296-m.proxy1.startpage.com^
 ||10a327190b5f61179b41117e180ad4c05a4b459b-m.proxy1.startpage.com^
 ||10b7052f01d2159db98d8af39ecff0802ced373d-m.proxy1.startpage.com^
 ||10e5fd2b345859b044351dd1526e087830d5bc24-m.proxy1.startpage.com^
+||12efe71dfeb4364d2f392c406c533b1a9a96b4a0-m.proxy1.startpage.com^
 ||13266810a416ca26083878473e054ea925c017a6-m.proxy1.startpage.com^
 ||13c1605964a7a488d6f825e109ae39d86fef67e4-m.proxy1.startpage.com^
 ||13ceeb9acbe8650e1934979b44552f09523cba62-m.proxy1.startpage.com^
+||149abe5d3319752aff5d7456a6571d3be1b8c611-m.proxy1.startpage.com^
+||160561691884be7ea923cc4f1cabd19dbd8f83bc-m.proxy1.startpage.com^
 ||16d3105c31b4fe26f2fb85d3e7d9af45ef150e29-m.proxy1.startpage.com^
+||1781f4342781c1df9cd5aaf4d4872a63ef00493c-m.proxy1.startpage.com^
 ||1ab16f52c8b042d85ad2bfa11cd0ea642198b142-m.proxy1.startpage.com^
 ||1b43a782309df3e8faa7cf0484b2547b9e1525d6-m.proxy1.startpage.com^
 ||1dfc159277898cafb521ca47a5740f7ddecd7fb1-m.proxy1.startpage.com^
 ||2010ca9b884f640acb73446093b590bf0cec43c7-m.proxy1.startpage.com^
+||2225a3da4d5fb11f1764326c90478d048cce52aa-m.proxy1.startpage.com^
+||23e31c47dbd22cfdb3cdb88f6b6ff101d3ebe5dc-m.proxy1.startpage.com^
 ||255f2f98c6a3b3b59794b0c1d95b4610be326873-m.proxy1.startpage.com^
 ||2597c3383de73c13b25e0428480328b6a08f16ff-m.proxy1.startpage.com^
 ||264b22614cbcd2d469c6cee655a184748df22318-m.proxy1.startpage.com^
 ||26e12761bfa367a7de713e129548ba6380f52082-m.proxy1.startpage.com^
+||2b6fc30da67f7ec9eeb446210df9751fc5b08060-m.proxy1.startpage.com^
 ||2bb879c8362f9d43b57a9091866308ccdf8c1e47-m.proxy1.startpage.com^
 ||2d2b56f88127394931eb33916ba38de92247e200-m.proxy1.startpage.com^
+||2e45ea8241c8c3f4ea09fb721ebb65cd29a74e4b-m.proxy1.startpage.com^
 ||2f3e81012c8a64bd0761d9d9d383cf70fd719e13-m.proxy1.startpage.com^
 ||2fdc006580451b31285e70f86cd487ed744be6af-m.proxy1.startpage.com^
 ||2ffa1f174d339edaabef7850cb5d73b26ea8e8f8-m.proxy1.startpage.com^
 ||30b8304c2e78a5cb8e9059183cbf1c70c0f6c562-m.proxy1.startpage.com^
 ||3192b5f92443f1ea6ea4ac8ef376b7ff8a116f88-m.proxy1.startpage.com^
 ||319331ae34917fc0c61815ae9a823231d52f7dd9-m.proxy1.startpage.com^
+||31e94715c97732c2d5a36a43100871d9cf37c673-m.proxy1.startpage.com^
+||31f9c08a2bb284fb5313a1a720825d269586d687-m.proxy1.startpage.com^
 ||362065e26d31544f850ca1212b3ec405950a4bbf-m.proxy1.startpage.com^
 ||37ac135b5d313fbfa195ed7197d8bd0056908760-m.proxy1.startpage.com^
 ||37e5f323806fd01955dec9d9781cf39365bff181-m.proxy1.startpage.com^
 ||37fdb3eda79abbe5ea1f6037284246161e02a42d-m.proxy1.startpage.com^
 ||38240a94cf992a566b9348f372617b1423845f3e-m.proxy1.startpage.com^
+||3b06568483b727172edbef6488e712a33453b1cc-m.proxy1.startpage.com^
+||3b5b59cc10a6505f435faac89cb9a1473d3cf892-m.proxy1.startpage.com^
 ||3d120377e57541115b8c6869e75bccd4bb2b8476-m.proxy1.startpage.com^
 ||3d2d2bc8049777f2cbf7a4fa2f4e61eb5713d89f-m.proxy1.startpage.com^
 ||3d8ec11e56ac83972ea47831661782c6e07a2911-m.proxy1.startpage.com^
@@ -5031,6 +5044,7 @@
 ||4105ef8e2ee19f1a0c4b56f0fa437dbf2c5c6095-m.proxy1.startpage.com^
 ||42a7fcfd4867d2af67d7f08f2fc233b0c5ce9ebf-m.proxy1.startpage.com^
 ||45d775367fa0eb0f3592eb965e8055b4f27a3cbb-m.proxy1.startpage.com^
+||467f2245dd2dd377e8d6d5a8423a14895f2f8682-m.proxy1.startpage.com^
 ||47a65f857ca6bd68a6a96fe83a80a383471056ed-m.proxy1.startpage.com^
 ||4902b4b52633c448adcf8b71711f02a975b66c7f-m.proxy1.startpage.com^
 ||496f6f6a0da74098911cbe901ad54c9657283047-m.proxy1.startpage.com^
@@ -5047,6 +5061,7 @@
 ||557d5ea4772d3e5a79e90a49b6bd7c6bbd6187cd-m.proxy1.startpage.com^
 ||578ca5650ff8fa51637bce837b8b7d9dc78c2679-m.proxy1.startpage.com^
 ||57eb8327d743eac035df93a40df55b90bebb0429-m.proxy1.startpage.com^
+||583927c5c9741c783283440abc888123095b66e7-m.proxy1.startpage.com^
 ||58e92a7b812f98b409e6c37f12718082946ac52f-m.proxy1.startpage.com^
 ||5a59887250b0430aba174ca67731f06377b08b41-m.proxy1.startpage.com^
 ||5a76a9f5d144f87edb52911ddeb18ce7af7c961e-m.proxy1.startpage.com^
@@ -5062,12 +5077,16 @@
 ||64d3977108cec94b55a57d6727434a0859f76188-m.proxy1.startpage.com^
 ||65367caee6e43ed417994b038b1a722ac5482841-m.proxy1.startpage.com^
 ||6845420dd98bfdcd56742215712bd6c8dc87f073-m.proxy1.startpage.com^
+||6ade43cc5a6d8b2bda27baa2037b7d754a8418e1-m.proxy1.startpage.com^
 ||6b42defe7d560c7d50b828c04d4319749373e61e-m.proxy1.startpage.com^
+||6b59c6c5a7cc4b5ca2a39a9bd3673a6f278694c8-m.proxy1.startpage.com^
 ||6bc02f06493d51553b1e04f15c51f65155d0f40a-m.proxy1.startpage.com^
 ||6c2e6876dad63a0f256e17ea1df1eb40e8d67035-m.proxy1.startpage.com^
 ||6c7e102956428dc2012df3990563abd44e7cf6dc-m.proxy1.startpage.com^
 ||6c98e6cbefb812263b2045d8946ac9e29906d208-m.proxy1.startpage.com^
+||6e4c0246425ab6f02bdf459c5a7fc624f76cc42c-m.proxy1.startpage.com^
 ||6e56e0e98c672d028693a87e97a8a92d98cb2e27-m.proxy1.startpage.com^
+||6e6724af8dacb494dfdddbf2ad349c6322a23a5a-m.proxy1.startpage.com^
 ||6f9d52c1158f79cd425ace1004ec418dc639d844-m.proxy1.startpage.com^
 ||70644d30178f75e84aae94f41b93f4ee7cc2a498-m.proxy1.startpage.com^
 ||711978c42ac04ba56ead2a950892829d54d6c693-m.proxy1.startpage.com^
@@ -5094,6 +5113,7 @@
 ||82d75e0ab04333941d8000c12be258727fd58dbb-m.proxy1.startpage.com^
 ||83c4953b8fec9b8e9aae7725c3d4f3de87d75fbb-m.proxy1.startpage.com^
 ||83f20fd3d15b1cf6c5d05c77b921ae85fe2f57b6-m.proxy1.startpage.com^
+||84cd3f6c8ba7ac36b3a53739545cadbc36da129d-m.proxy1.startpage.com^
 ||85615bbaf20c6a3731fb148cf6032b209758275e-m.proxy1.startpage.com^
 ||87a13eaaf0e57b5341318b0ae22d329931c19517-m.proxy1.startpage.com^
 ||8856097b022f15db4ef2aea093b0ea9c7eff90ae-m.proxy1.startpage.com^
@@ -5101,6 +5121,7 @@
 ||89481fc58e0118c68bad2be55a923625b4bdea84-m.proxy1.startpage.com^
 ||8a7263eb14a85fbbb39b969302db50ebec60f271-m.proxy1.startpage.com^
 ||8a89154d5f78d6e476de6070042b5a552c2eee38-m.proxy1.startpage.com^
+||8ad0c44f27c5b60d8e033c0adf7343beadaaa4fc-m.proxy1.startpage.com^
 ||8c88cd3b4339859b3fa978dc3f0ae46579342b1f-m.proxy1.startpage.com^
 ||8c94d4d3516f78fd7ad134c9c0be0fdb94e6b01f-m.proxy1.startpage.com^
 ||8d6737de59fc8a54be2e60d362cfa42d71f696f3-m.proxy1.startpage.com^
@@ -5113,19 +5134,23 @@
 ||919ed5a5ed5f10d2172ed2bcee08ae011fc5169c-m.proxy1.startpage.com^
 ||929b224a858090e40444510627c76ce68fa7fada-m.proxy1.startpage.com^
 ||93c502972562a4f6e49d6992b71371e3d87e62d6-m.proxy1.startpage.com^
+||940aa4e23297ffa293025474d05df884baadce79-m.proxy1.startpage.com^
 ||944a0cf79ea7437145ee899206ace76302fb04bd-m.proxy1.startpage.com^
 ||9508ca30039d6addd66cc91d5df0e673525e62f0-m.proxy1.startpage.com^
+||964cb1cd2ca88ab10f2430e201185470ca306854-m.proxy1.startpage.com^
 ||9873b1ddb415af0cea7d907e6230595bc41c1374-m.proxy1.startpage.com^
 ||9880978af7d029bca7d03de705350941b56d7dc3-m.proxy1.startpage.com^
 ||988cd1a7cff49d7761e5f02e95e8c6229fd61871-m.proxy1.startpage.com^
 ||99ab1423398669d0c86f946c9e6b688d77beeaeb-m.proxy1.startpage.com^
 ||9add96bf141d97234f348a9bd516e758a33e7af7-m.proxy1.startpage.com^
+||9beeea1658c7f61445e5230a6afa1ceb7e798911-m.proxy1.startpage.com^
 ||9d5329b36e5b6397f43429c7d93528db072007c8-m.proxy1.startpage.com^
 ||9d5dbebbcab3b392a0d790aaa540160f15e7410a-m.proxy1.startpage.com^
 ||9d8b4bfe384cb76586c7e891257580e1737ecbb8-m.proxy1.startpage.com^
 ||9f544ab59f7015a263d0b33d2fb80a6e0194c0c8-m.proxy1.startpage.com^
 ||a00413fed5ab2b7b86bd01c5023196cfc38c83b7-m.proxy1.startpage.com^
 ||a01ec0cf99b812b44eb1d078130632e4e9e0216b-m.proxy1.startpage.com^
+||a21c85c4bc7293de3db90f8cc8b8c48c00372166-m.proxy1.startpage.com^
 ||a2bd8315b73d9cee05c7f0c2e050852379357d20-m.proxy1.startpage.com^
 ||a3394f4727efd09d3c70c3ecbe8fe2664ca8f817-m.proxy1.startpage.com^
 ||a3e62f9db521964c26b9d5d3cfb10ee643a70e36-m.proxy1.startpage.com^
@@ -5145,6 +5170,7 @@
 ||b234aa3e44cad2c2a994ccfaac79a958d7b0d2ef-m.proxy1.startpage.com^
 ||b441a7c5504b36529ddf46b5296b82583d1e61e9-m.proxy1.startpage.com^
 ||b689402c4ac19884f59c59b6e0cbc979f7d3ad1b-m.proxy1.startpage.com^
+||b9d9ad6a2cb4d20fd27aca5b34bee6f54e483f49-m.proxy1.startpage.com^
 ||ba2fc96da15ba0bb9e5f8961e49ef1f7c815737b-m.proxy1.startpage.com^
 ||ba96918b2d87d58f104a2df96f69b2e392c91bed-m.proxy1.startpage.com^
 ||bb82fe3f3ec503211629d43851129267da2a3dc6-m.proxy1.startpage.com^
@@ -5155,12 +5181,14 @@
 ||bf007058faf147b5f8b325f06f50cee52b1ea90d-m.proxy1.startpage.com^
 ||c1dc4798a58464f11588dde5a8b31fe9512c40b4-m.proxy1.startpage.com^
 ||c23a94040bd37aa6ed87bc832730a954f76fb368-m.proxy1.startpage.com^
+||c2da7925e077902556c4d23105ee6ef78b4926e1-m.proxy1.startpage.com^
 ||c43aaa69e20b22e41c384b6699847b1deb1400d9-m.proxy1.startpage.com^
 ||c43cff9cc7cb99b1eb3656b029ddaa414bfaa0f7-m.proxy1.startpage.com^
 ||c4ad7e05f0868711d2463b44b080f54ed444f2bf-m.proxy1.startpage.com^
 ||c754fe6ba5a471435396799601305ad08d2cad17-m.proxy1.startpage.com^
 ||c95345568b02cae7a9a19dfb9784eb6f6ab59d95-m.proxy1.startpage.com^
 ||c9b53ce0d15033e4e1bc07e7beb040953f21f633-m.proxy1.startpage.com^
+||cb9f3afd9900f4743bd497fc89e69e51c5333777-m.proxy1.startpage.com^
 ||cf7b63b09c053c77546480aae414d7e743e58f63-m.proxy1.startpage.com^
 ||d0008a93452e73c6cf0aeab388ba511846cc05ba-m.proxy1.startpage.com^
 ||d0afa083f964b7514699c542877e85be8705dfd6-m.proxy1.startpage.com^
@@ -5172,8 +5200,11 @@
 ||d5dfe8363c4ac93cb1d98f7a6fe866defd745eed-m.proxy1.startpage.com^
 ||d6379c6a58ceed8c887458a9d7981a5a9daed454-m.proxy1.startpage.com^
 ||d733dab90acc574ec44c5aeee26a98870898b2be-m.proxy1.startpage.com^
+||db0f8f03060649cfe5607e343a30149f1eb70961-m.proxy1.startpage.com^
 ||db20e8e95fa21abe9b775d9f29a698e4e89ad731-m.proxy1.startpage.com^
+||dc9cb6e969539c737c82d92eb69e8b8cf001a90c-m.proxy1.startpage.com^
 ||dee413d3b42eb78e8e9ebc73181fe9a6c05a710d-m.proxy1.startpage.com^
+||dfbd30df77c7c2b6734b8b0bc9d46fbc9444d457-m.proxy1.startpage.com^
 ||dfce335b4155333da2d6d5e61599867db03bd72d-m.proxy1.startpage.com^
 ||e0c08d69c2c30b1ca08c16a4ef5e6b224a5d416f-m.proxy1.startpage.com^
 ||e1136172ab11df964dd4ceca8b46ec913b5127f0-m.proxy1.startpage.com^
@@ -5182,14 +5213,17 @@
 ||e354337b1967b1ec3b1a9dbc6edc4fdea30eb355-m.proxy1.startpage.com^
 ||e516bed6462a66cd40a52c04f001ab66b6806ab9-m.proxy1.startpage.com^
 ||e5a431f48ba5cdfa78ab0834e688f217b5bf05de-m.proxy1.startpage.com^
+||e64eb340587ae894b050115ea0f6d8830812e584-m.proxy1.startpage.com^
 ||e8363b4b897fe298ebba3225755bbf6434b7a4e8-m.proxy1.startpage.com^
 ||e8a24967fbe2bb8cf2a2071259585f29abb0d169-m.proxy1.startpage.com^
 ||eb863dba8709f630f0173217027713c5b1e3ea1b-m.proxy1.startpage.com^
+||eb99faf56b292c36302b84fc049be33926c6c836-m.proxy1.startpage.com^
 ||ebbfbce090e36774eaca3a685361e25a39cc4f8a-m.proxy1.startpage.com^
 ||ecd614203557fd230666d9368397cf05fa1feeaf-m.proxy1.startpage.com^
 ||ee07fa436cac71509b76b7c506539fb69a6250fa-m.proxy1.startpage.com^
 ||ef955ec7c0a9f2911092915719d961471464cb61-m.proxy1.startpage.com^
 ||efa337190cd97b9c75cc97d66135bdf9ee0d3959-m.proxy1.startpage.com^
+||efc858b53e08105bbc142c4a188e9c18040e927f-m.proxy1.startpage.com^
 ||external.proxy1.startpage.com^
 ||f026c113e17d180ca87fd67e7fccf78ce5ff2853-m.proxy1.startpage.com^
 ||f308cee76d16e41ba9bb90b7220d79c6cfabf312-m.proxy1.startpage.com^
