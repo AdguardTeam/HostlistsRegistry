@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.15.7
+! Version: 1.0.15.8
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2025-11-09T01:35:58.412Z
+! Last modified: 2025-11-09T02:39:31.749Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -12036,6 +12036,7 @@
 ||actressact.com^
 ||adoptdischarged.com^
 ||adriftstressful.com^
+.advancedhosters.com^$denyallow=mirror.advancedhosters.com|www.advancedhosters.com
 ||ahwrin88tl.com^
 ||ajjhtetv87.com^
 ||allayravage.com^
@@ -14461,7 +14462,6 @@
 /^https://gitcoin-[a-z]{1,}\.com/?$/
 /^https://[a-z]{1,}-gitcoin\.com/?$/
 ||paradlgm.com^
-/^http.*\.com//?secureproxy(\.php)?\?e=(ping|/)[a-z_]{0,}$/
 ||gitcoin-developers.
 ||github-foundation.
 ||gitcoin-grants.
