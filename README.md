@@ -6,7 +6,7 @@
 - [Services Metadata](#services-meta)
 - [Safe Search Filters](#safe-search)
 - [How to Build](#how-to-build)
-- [Hot to Compress](#how-to-compress)
+- [How to Compress](#how-to-compress)
 - [Localizations](#localizations)
 
 This repository contains the known hosts blocklists that are made available to the users of AdGuard products ([AdGuard DNS](https://adguard-dns.com/), [AdGuard Home](https://github.com/AdguardTeam/AdGuardHome), etc).
