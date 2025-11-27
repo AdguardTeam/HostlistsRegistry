@@ -1,9 +1,9 @@
 !
 ! Title: uBlock₀ filters – Badware risks
 ! Description: For sites documented to put users at risk of installing adware/crapware/malware, having login credentials stolen, etc. The purpose is to at least ensure a user is warned of the risks ahead.
-! Version: 1.0.20.42
+! Version: 1.0.20.43
 ! Homepage: https://github.com/uBlockOrigin/uAssets
-! Last modified: 2025-11-27T14:08:47.290Z
+! Last modified: 2025-11-27T15:08:48.467Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -3366,6 +3366,8 @@
 ||lookblock.pages.dev^
 ||xblocklist*.pages.dev^
 ||xchekersite.pages.dev^
+||xsuki*.pages.dev^
+||bxchx.pages.dev^
 ||lastpassrecovery.com^
 ||mypasskey.info^
 ||passkeysetup.com^
@@ -3400,8 +3402,7 @@
 ||git44share.quest^
 
 ||survey.dawn.com^
-/\.[a-z][a-z][a-z]-adguard\.pro\//
-/\.[a-z][a-z][a-z]-defender\.pro\//
+/^https://d[0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z][0-9a-z]\.[a-z][a-z][a-z]-[a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]?\.pro\/xm\/xm[0-9]\/\?/
 ||expleboted.com^
 ||hoplariumped.com^
 ||dsu-adguard.pro^
