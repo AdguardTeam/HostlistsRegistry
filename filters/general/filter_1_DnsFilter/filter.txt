@@ -1,9 +1,9 @@
 !
 ! Title: AdGuard DNS filter
 ! Description: List composed of several filters (AdGuard Base filter, Social Media filter, Tracking Protection filter, Mobile Ads filter, EasyList and EasyPrivacy) and simplified specifically to be better compatible with DNS-level ad blocking
-! Version: 1.0.50.86
+! Version: 1.0.50.87
 ! Homepage: https://github.com/AdguardTeam/AdguardSDNSFilter
-! Last modified: 2026-01-02T16:09:06.724Z
+! Last modified: 2026-01-02T17:07:10.955Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
@@ -56308,7 +56308,6 @@ vkcdnservice.appspot.com^
 ||ads-config-engine-noneu.truecaller.com^
 ||ad.inston.ltd^
 ||ad.deepthought.industries^
-||ad.bandlab.io^
 ||ads.cocomobi.com^
 ||inmense.site^
 ||dollphoin.site^
@@ -56921,6 +56920,8 @@ vkcdnservice.appspot.com^
 ||ib.snssdk.com^
 ||xlog.snssdk.com^
 ||log.snssdk.com^
+||rtbuniverse.com^
+||gw-usa-tracker.zmaticoo.com^
 ||data.deep-content.io^
 ||pingpong.us^
 ||protected-api.branch.io^
@@ -125503,6 +125504,7 @@ analytics-*.aasaam.com
 ||torvind.com^
 ||a4.overclockers.ua^
 ||novunu.football-plyus.net^
+@@||sedge.nfl.com^|
 @@||data.orders.costco.com^|
 @@||link.meet5.net^|
 @@||link.nzz.ch^|
