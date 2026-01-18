@@ -1,0 +1,21 @@
+{
+  "name": "IndianList",
+  "description": "This is an adblock filter list supplement for EasyList designed to block advertising on Indian websites.",
+  "homepage": "https://github.com/mediumkreation/IndianList",
+  "sources": [
+    {
+      "name": "IndianList",
+      "source": "https://easylist-downloads.adblockplus.org/indianlist.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
