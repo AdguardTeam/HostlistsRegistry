@@ -7,13 +7,12 @@
     "node": ">=18"
   },
   "dependencies": {
-    "@adguard/hostlist-compiler": "^1.0.39",
-    "axios": "^1.13.4",
+    "@adguard/hostlist-compiler": "^1.0.35",
     "chalk": "^4.0.0",
     "dayjs": "^1.11.11",
     "js-yaml": "^4.1.0",
     "md5": "^2.3.0",
-    "simple-git": "^3.30.0",
+    "simple-git": "^3.27.0",
     "xmldom": "^0.6.0",
     "zod": "^4.1.4"
   },
@@ -26,6 +25,7 @@
     "lint": "eslint ."
   },
   "devDependencies": {
+    "axios": "^1.6.0",
     "eslint": "^8.49.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.28.1",
