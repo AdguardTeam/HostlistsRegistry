@@ -1,15 +1,15 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.15.17
+! Version: 1.0.15.18
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2026-02-26T06:29:47.503Z
+! Last modified: 2026-02-26T16:25:45.372Z
 !
 ! Compiled by @adguard/hostlist-compiler v1.0.35
 !
 ||*.top^$dnstype=~CNAME,denyallow=caitlin.top|callmebymygender.top|corriente.top|gdtot.top|nicenature.top|reminder.top|magocoro.top|castlevania.top|suiten.top|shucks.top|1stream.top|ambr.top|changlam10.top|changlam11.top|pdcdn1.top|pressplay.top|chillx.top|strims.top|thedesk.top|audioforyou.top|awavenue.top|reyhub.top|iboxs.top|adrules.top|hostingowy.top|to|yggtorrent.top|asiaon.top|voxel.top|passt.top|polar.top|rifton.top|rugaming.top|doubledouble.top|hedon-haven.top
 @@||masto*.top^
-@@/^.*(tech|project|linux).*\.top(/[a-z0-9_-]?.*)?$/
+@@/^.*(tech|project|linux).*\.top$/
 @@://blog.*.top^
 @@://pyrofork.*.top^
 @@||wceui.top^
