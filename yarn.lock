@@ -2,11 +2,29 @@
 # yarn lockfile v1
 
 
-"@adguard/hostlist-compiler@^1.0.35":
-  version "1.0.35"
-  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-1.0.35.tgz#39b0d84ea21f1549e72d29cf2dc5aacebfa84035"
-  integrity sha512-EveBdBmS8wgqwtUqsP4g6GBR+2KUtCR9XdVImzvs79dyFCloPkrizaEpaXPWbbeTLrtJQ5N3t5KPlwPq4FX/Gg==
+"@adguard/diff-builder@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@adguard/diff-builder/-/diff-builder-1.1.2.tgz#4ddd6531077b8bf3cfb231959bb477ec76baadd3"
+  integrity sha512-ueNXW4UL6v6d9j+HzdUD9br3eCK48wewI6KprIiT84G8kCg/aqxGkUhbn/1KoY+rmQl19Hib4AXs6tLpXDUdmw==
   dependencies:
+    commander "^11.1.0"
+    crypto-js "^4.2.0"
+
+"@adguard/filters-downloader@^2.3.1":
+  version "2.4.2"
+  resolved "https://registry.yarnpkg.com/@adguard/filters-downloader/-/filters-downloader-2.4.2.tgz#88223c96000b30ab69fdcf294654137dc9648d4e"
+  integrity sha512-efloe2ZGHaO4GK+4xQiI8B7FGIlDbMKT05X4g9XAXNfG7uWmXF0OnaaAN8312wYc1q1OXRS4SGwYwN+wocyGBw==
+  dependencies:
+    "@adguard/diff-builder" "1.1.2"
+    axios "1.6.2"
+    crypto-js "^4.2.0"
+
+"@adguard/hostlist-compiler@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@adguard/hostlist-compiler/-/hostlist-compiler-2.0.0.tgz#350b13e48989e1aa82cfd256a74670ddc2980587"
+  integrity sha512-pxaqiR9PLG1QAN0J2iB7yVYT3+XR+0HBStkqUmX/yUQ41OfN3RziFm781TIGC8UJZ/Skxkm8zC2mGkKAWeoaVg==
+  dependencies:
+    "@adguard/filters-downloader" "^2.3.1"
     ajv "^6.12.0"
     ajv-errors "^1.0.1"
     axios "^0.19.2"
@@ -277,6 +295,15 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
+axios@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-1.6.2.tgz#de67d42c755b571d3e698df1b6504cde9b0ee9f2"
+  integrity sha512-7i24Ri4pmDRfJTR7LDBhsOTtcm+9kjX5WiY1X3wIisx6G9So3pfMkEiU7emUBe46oceVImccTEM3k6C5dbVW8A==
+  dependencies:
+    follow-redirects "^1.15.0"
+    form-data "^4.0.0"
+    proxy-from-env "^1.1.0"
+
 axios@^0.19.2:
   version "0.19.2"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.2.tgz#3ea36c5d8818d0d5f8a8a97a6d36b86cdc00cb27"
@@ -420,6 +447,11 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
+commander@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/commander/-/commander-11.1.0.tgz#62fdce76006a68e5c1ab3314dc92e800eb83d906"
+  integrity sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==
+
 comment-parser@1.4.1:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/comment-parser/-/comment-parser-1.4.1.tgz#bdafead37961ac079be11eb7ec65c4d021eaf9cc"
@@ -458,6 +490,11 @@ crypt@0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/crypt/-/crypt-0.0.2.tgz#88d7ff7ec0dfb86f713dc87bbb42d044d3e6c41b"
   integrity sha512-mCxBlsHFYh9C+HVpiEacem8FEBnMXgU9gy4zmNC+SXAZNB/1idgp/aulFJ4FgCi7GPEVbfyng092GqL2k2rmow==
+
+crypto-js@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/crypto-js/-/crypto-js-4.2.0.tgz#4d931639ecdfd12ff80e8186dba6af2c2e856631"
+  integrity sha512-KALDyEYgpY+Rlob/iriUtjV6d5Eq+Y191A5g4UqLAi8CyGP9N1+FdVbkc1SxKc2r4YAYqG8JzO2KGL+AizD70Q==
 
 data-view-buffer@^1.0.1:
   version "1.0.1"
@@ -930,7 +967,7 @@ follow-redirects@1.5.10:
   dependencies:
     debug "=3.1.0"
 
-follow-redirects@^1.15.6:
+follow-redirects@^1.15.0, follow-redirects@^1.15.6:
   version "1.15.11"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.15.11.tgz#777d73d72a92f8ec4d2e410eb47352a56b8e8340"
   integrity sha512-deG2P0JfjrTxl50XGCDyfI97ZGVCxIpfKYmfyrQ54n5FO/0gfIES8C/Psl6kWVDolizcaaxZJnTS0QSMxvnsBQ==

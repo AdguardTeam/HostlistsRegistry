@@ -6,7 +6,10 @@
       {
         "name": "HaGeZi's The World's Most Abused TLDs",
         "source": "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/spam-tlds.txt",
-        "type": "adblock"
+        "type": "adblock",
+      "transformations": [
+        "ValidateAllowPublicSuffix"
+      ]
       }
     ],
     "transformations": [
