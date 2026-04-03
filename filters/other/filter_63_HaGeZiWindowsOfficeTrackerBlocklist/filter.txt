@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.0.92
+! Version: 1.0.0.93
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-04-03T14:00:53.081Z
+! Last modified: 2026-04-03T19:20:57.073Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.0.0
 !
@@ -19,6 +19,7 @@
 ||js1.tst.applicationinsights.io^
 ||js2.tst.applicationinsights.io^
 ||applicationinsights.azure.com^
+||api.applicationinsights.azure.cn^
 ||dc.applicationinsights.azure.cn^
 ||dc.applicationinsights.azure.us^
 ||in.applicationinsights.azure.cn^
@@ -151,6 +152,7 @@
 ||watson.live.com^
 ||ads.microsoft.com^
 ||adsdk.microsoft.com^
+||www.adsinapps.microsoft.com^
 ||advertising.microsoft.com^
 ||analyticspixel.microsoft.com^
 ||applicationinsights.microsoft.com^
@@ -177,6 +179,7 @@
 ||msadsscale.microsoft.com^
 ||oca.microsoft.com^
 ||watson.officeint.microsoft.com^
+||rad.microsoft.com^
 ||telem-edge.smartscreen.microsoft.com^
 ||i1.services.social.microsoft.com^
 ||spynet2.microsoft.com^
@@ -224,6 +227,10 @@
 ||ad.msn.com^
 ||adevents.msn.com^
 ||ads.msn.com^
+||www.a.ads1.msn.com^
+||www.b.ads1.msn.com^
+||www.ads1.msn.com^
+||www.a.ads2.msn.com^
 ||metric.appex-rf.msn.com^
 ||c.ar.msn.com^
 ||arc.msn.com^
@@ -231,6 +238,7 @@
 ||arc1.msn.com^
 ||arc2.msn.com^
 ||arc3.msn.com^
+||arc5.msn.com^
 ||arc9.msn.com^
 ||c.at.msn.com^
 ||c.be.msn.com^
