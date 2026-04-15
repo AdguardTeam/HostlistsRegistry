@@ -1,9 +1,9 @@
 !
 ! Title: Malicious URL Blocklist (URLHaus)
 ! Description: Blocklist of malicious websites based on the Database dump of Abuse.ch URLhaus
-! Version: 1.0.26.2
+! Version: 1.0.26.3
 ! Homepage: https://urlhaus.abuse.ch/
-! Last modified: 2026-04-14T13:40:37.891Z
+! Last modified: 2026-04-15T00:55:08.968Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.0.0
 !
@@ -59,7 +59,6 @@
 ||132.red-81-42-249.staticip.rima-tde.net^
 ||139-162-20-230.ip.linodeusercontent.com^
 ||13nq2ksp.lunarbridge.digital^
-||14-0-204-188.static.pccw-hkt.com^
 ||141-98-10-64.cprapid.com^
 ||14sm.yardcloud.in.net^
 ||150.co.il^
@@ -182,6 +181,7 @@
 ||45.135.194.29.ptr.pfcloud.network^
 ||4563j5v.hostingvar.in.net^
 ||45hd.veltraxis.in.net^
+||46.107.230.43.in-addr.arpa^
 ||48bc.tockentrue.in.net^
 ||48leal.gontake.in.net^
 ||48z9.lakeweb.in.net^
@@ -221,6 +221,7 @@
 ||55-j30.bryzand.in.net^
 ||55aa11.quobix.in.net^
 ||55wmwoni.bramblepath.in.net^
+||56.63.32.95.dsl-dynamic.vsi.ru^
 ||568sx.momentumbloomera.in.net^
 ||56lr0t2n.moondev.digital^
 ||56lwuq98.xyz^
@@ -480,6 +481,7 @@
 ||aftwizk.starforge.in.net^
 ||ag3nt1-lab.besthire.in.net^
 ||age-logic.lookyouthful.in.net^
+||agence-immobiliere-lyon.com^
 ||agent-client-stoarge.webredirect.org^
 ||agent-proxy.catalyticprocess.in.net^
 ||agent188menyala.shop^
@@ -652,24 +654,34 @@
 ||api.znet.homes^
 ||api2-call.drumavex.in.net^
 ||api2-call.quv7maren.in.net^
+||api2-call.tul7moran.in.net^
+||api2-cert.bri7tanon.in.net^
 ||api2-cert.sox9liven.in.net^
 ||api2-cloud.8rivastyinfamy.in.net^
 ||api2-delta.zorvelixan.in.net^
 ||api2-dns.bry3loxan.in.net^
+||api2-dns.qen4varix.in.net^
 ||api2-info.norxavin.in.net^
+||api2-info.vex3litor.in.net^
 ||api2-jump.norqelix.in.net^
 ||api2-knot.exhib1torknot.in.net^
 ||api2-load.travexin.in.net^
+||api2-meta.prax6tolin.in.net^
 ||api2-meta.vo2xeral.in.net^
+||api2-node.zor5liven.in.net^
 ||api2-patch.voxi3tral.in.net^
 ||api2-patch.zeq7moral.in.net^
+||api2-path.xel2mavor.in.net^
+||api2-port.kry8navel.in.net^
 ||api2-port.travemox.in.net^
 ||api2-push.pra6lixon.in.net^
 ||api2-route.xelvarinox.in.net^
 ||api2-score.creep-score.in.net^
 ||api2-stage.veq4tralis.in.net^
+||api2-stat.dru9laxen.in.net^
 ||api2-stat.qul9merox.in.net^
 ||api2-test.krinaxon.in.net^
+||api2-test.nor4vexil.in.net^
 ||api2-unit.consiliumundu-lat.in.net^
 ||api2edge.primanode.in.net^
 ||api2sync.flexonode.in.net^
@@ -774,6 +786,7 @@
 ||arkcrest7is.currvers.in.net^
 ||arkcrestex4.capslock.in.net^
 ||arkdraa4.aurorift.in.net^
+||arkflux7is.mor5laxis.in.net^
 ||arkfluxal.qorvy3nal.in.net^
 ||arkfluxor.vouayger.in.net^
 ||arkfluxos9.gl1mmeroak.in.net^
@@ -887,6 +900,7 @@
 ||auth-z1.motiongravity.in.net^
 ||auth-z7-gate.schnellnetz.in.net^
 ||auth-z9-user.mondofuturo.in.net^
+||auth1-user.nor4vexil.in.net^
 ||auth1-user.sox9liven.in.net^
 ||auth3user.durogrid.in.net^
 ||auth3user.fondoviva.in.net^
@@ -1115,6 +1129,7 @@
 ||bildify.co^
 ||bin-monitor.recycleroach.in.net^
 ||bin4-data.qul9merox.in.net^
+||bin4-swap.kry8navel.in.net^
 ||bin4ry-ring.quillspire.in.net^
 ||bin5-exec.bryo2maxil.in.net^
 ||binar-vector.redpit.in.net^
@@ -1157,6 +1172,7 @@
 ||bju1b4zl.websphere.digital^
 ||bkg-fix.com^
 ||bkng-updt.com^
+||bkngextranetreservcontrolpanel.com^
 ||bkumfd.clean-sorted.in.net^
 ||bl0om-dock.gablewagon.in.net^
 ||blackfire.darkfire.coupons^
@@ -1178,8 +1194,10 @@
 ||blessdayservices.org^
 ||blitz-deal.blaukraft.coupons^
 ||blob4-data.sox9liven.in.net^
+||blob4-host.tul7moran.in.net^
 ||block-sensor.metropolitangrid.in.net^
 ||block-storage.alignmentstorage.in.net^
+||block2-text.prime-sector-unit.in.net^
 ||blogs.sokun.jp^
 ||blood-unit.dialectblood.in.net^
 ||blood04.dialectblood.in.net^
@@ -1216,7 +1234,6 @@
 ||bobik-peak.bobikcleavage.in.net^
 ||bobik-sys.bobikcleavage.in.net^
 ||bobnet.exiled.fit^
-||bogenevent.at^
 ||bois-vert.clairforet.coupons^
 ||bold4-loop.chandelh2lifa.in.net^
 ||boldoffe.zenithharbinger.in.net^
@@ -1238,6 +1255,7 @@
 ||botanical-research-archive.wildfern.ru^
 ||box1-state.drumavex.in.net^
 ||box4-file.bri2xalon.in.net^
+||box4-file.bri7tanon.in.net^
 ||boxflow.fig08box.coupons^
 ||boxlayer.box1fig7.coupons^
 ||boxstore.plum63box.coupons^
@@ -1267,6 +1285,7 @@
 ||bran-gen.gobright.in.net^
 ||branch-node.leavedistribut.in.net^
 ||branchpubli.vouayger.in.net^
+||brand5-post.global-export-base.in.net^
 ||brandpackage.cobalt-ridge.in.net^
 ||brandpale.ironvale.in.net^
 ||brandquo.vexu3larn.in.net^
@@ -1300,6 +1319,7 @@
 ||bridgecampa.x7lora.in.net^
 ||bridgeroad.maverickpreviews.com^
 ||bridgsock.rassvet.in.net^
+||brief3-form.global-export-base.in.net^
 ||brigh-orche.mosslark.in.net^
 ||bright-9.solariana.in.net^
 ||bright-beam.luminflux.in.net^
@@ -1349,7 +1369,6 @@
 ||bundleser.di5honorman.in.net^
 ||bundstar.cuffsorbsky.in.net^
 ||bunq.appswifthub.com^
-||burger-cx-free-work.fun^
 ||burgqbgk.xyz^
 ||bursaelektriktamir.com^
 ||bus-bridge.circuitflux.in.net^
@@ -1473,7 +1492,6 @@
 ||catalogsca.n1mbleoak.in.net^
 ||catbaparadisehotel.com.vn^
 ||catch-node.fighttrapper.in.net^
-||cause-impact.com^
 ||caustic-api.alkalineelement.in.net^
 ||cav-base.cavalieroral.in.net^
 ||cav-oral.cavalieroral.in.net^
@@ -1504,6 +1522,7 @@
 ||cdn.novoline.top^
 ||cdn.semifinal-matching.coupons^
 ||cdn.xiaoduoai.com^
+||cdn1-fast.qen4varix.in.net^
 ||cdn2-fetch.praxo6lin.in.net^
 ||cdn3dist.primanode.in.net^
 ||cdn3edge.flexonode.in.net^
@@ -1600,6 +1619,7 @@
 ||cinem-graph.xelvorimax.in.net^
 ||cinemagarden.crestfall.in.net^
 ||cipherdepo.conferen-cesman.in.net^
+||cipherengin.mor5laxis.in.net^
 ||ciphersha.inven-tornon.in.net^
 ||cipmem.cutlog.in.net^
 ||ciqc7g6.qy7mral.in.net^
@@ -1834,6 +1854,7 @@
 ||cliencampa.radiantpatronage.in.net^
 ||client-gate.howaskfor.in.net^
 ||client-gro.learnstingray.in.net^
+||client1-zone.smart-logic-trade.in.net^
 ||clif-lagoo.thorncairn.in.net^
 ||cliff-gate.pinecliff.in.net^
 ||cliff-hinge.bry5laxon.in.net^
@@ -1890,6 +1911,7 @@
 ||cmavixjw.devopsn.in.net^
 ||cmd1-task.qul9merox.in.net^
 ||cmomy7g.vo3xiran.in.net^
+||cmvpokng.qul4xorin.in.net^
 ||cn.bossjy.cc.cd^
 ||cn.unionlever.com^
 ||cnc.frtewq.online^
@@ -2157,6 +2179,7 @@
 ||cybdh.foxrunet.in.net^
 ||cyber-node.tectoniview.in.net^
 ||cycle-monitor.orbitforge.in.net^
+||cycle5-time.urban-motion-app.in.net^
 ||d.14yaa.com^
 ||d.kpzip.com^
 ||d.wanyouxi7.com^
@@ -2194,6 +2217,7 @@
 ||daili.1756520.xyz^
 ||daily-poser.sync-structre-mn-inter.in.net^
 ||dam-basename-performances-mph.trycloudflare.com^
+||damiancollier.com^
 ||dance-v9.dancingvcr.in.net^
 ||dance-vault.choreograpshrew.in.net^
 ||dance-vcr.dancingvcr.in.net^
@@ -2220,6 +2244,7 @@
 ||darkpath.grayford.in.net^
 ||darkriver.swiftmotion.coupons^
 ||darksky.eastmoon.coupons^
+||darkspark.zen4qorin.in.net^
 ||darkspice.bakhkondach.in.net^
 ||darktimber.deepwood.in.net^
 ||darkview.nightvision.coupons^
@@ -2288,6 +2313,7 @@
 ||db-z12-point.mondosicuro.in.net^
 ||db-z3-point.medivault.in.net^
 ||db3-storage.drumekal.in.net^
+||db4-cache.prax6tolin.in.net^
 ||db4-cache.travemox.in.net^
 ||db4-store.drumavex.in.net^
 ||db4static.flexonode.in.net^
@@ -2569,6 +2595,7 @@
 ||dialkwik.in^
 ||did8.qul2marox.in.net^
 ||digitalauralab.com^
+||digitalonline.cl^
 ||digitsgroup.com^
 ||dih0t.drumoxel.in.net^
 ||dindong.tos-cn-hongkong.volces.com^
@@ -2586,6 +2613,7 @@
 ||discovership.worldcla.in.net^
 ||discovery.brav7mon3ky.ru^
 ||disk.accord1key.cn^
+||disk4-data.qen4varix.in.net^
 ||disk4-path.zeq7moral.in.net^
 ||disp-vector.gl1mmeroak.in.net^
 ||dispatc-puls.ironbay.in.net^
@@ -2621,6 +2649,7 @@
 ||dl.vidconvert.io^
 ||dla.zhuayoukong.com^
 ||dlied6.bytes.tcdnos.com^
+||dlied6.yz.tcdnos.com^
 ||dlnhov4.granulatetouch.in.net^
 ||dm.pminer.top^
 ||dmaii.co^
@@ -2746,6 +2775,7 @@
 ||dubapkg.cmcmcdn.com^
 ||ducond.brisklume.in.net^
 ||duhsv690.cinderpouch.ru^
+||dump.win^
 ||dune-logic-base.rapiddune.ru^
 ||dusdyna.dombove.in.net^
 ||duskgrand.paragonbloomera.in.net^
@@ -2779,6 +2809,7 @@
 ||dynlineal3.yellglass.in.net^
 ||dynlineum5.dotnet.in.net^
 ||dynlithar4.thornbyte.in.net^
+||dynmarka2.zen4qorin.in.net^
 ||dynmarkon.cr0wnfern.in.net^
 ||dynnexet.tatneft.in.net^
 ||dynnexos.getlight.in.net^
@@ -2909,6 +2940,7 @@
 ||entry2sync.centralmetric.in.net^
 ||entry4link.metracore.in.net^
 ||entry4link.metravolta.in.net^
+||entry6-site.smart-logic-trade.in.net^
 ||enzym-nod.copyvrok.in.net^
 ||enzyrne-craft.crumpledzev.in.net^
 ||eopulls.silvermeadow.in.net^
@@ -3237,7 +3269,6 @@
 ||eyioyqhi.xyz^
 ||eyw3w.darkboll.in.net^
 ||ezjs.cl0udmere.in.net^
-||f02a622c8252f4766d56d5c9267c2e47.pages.dev^
 ||f0fjv96k.demogsystemat.digital^
 ||f0res-frame.travixon.in.net^
 ||f0rmate.para5itrecal.in.net^
@@ -3286,6 +3317,7 @@
 ||falldusk.mossbyte.in.net^
 ||fallgateway.zenithpatron.in.net^
 ||fallshie.stonefield.in.net^
+||falzberger-shop.at^
 ||famba-co.com^
 ||fame-api.boyishglorified.in.net^
 ||farm-api.ryesears.in.net^
@@ -3383,6 +3415,7 @@
 ||file1-raw.cloud-storage-unit.in.net^
 ||file1-swap.travemox.in.net^
 ||file2-obj.bryo2maxil.in.net^
+||file4-path.vex3litor.in.net^
 ||file4-svc.8rivastyinfamy.in.net^
 ||filebulldogs.com^
 ||files.codecguide.com^
@@ -3426,6 +3459,7 @@
 ||flamemanifest.chandelh2lifa.in.net^
 ||flamemarket.blueoak.in.net^
 ||flat-buffer.compressionlayer.in.net^
+||flatpower.at^
 ||flee-peta.farngo.in.net^
 ||fleestrict.bravo1nixu.in.net^
 ||flerai.dombove.in.net^
@@ -3532,6 +3566,7 @@
 ||frame-buffer.pixelengine.in.net^
 ||frame-build.structuralcore.in.net^
 ||frame-hub.shapeprimrose.in.net^
+||frame3-work.prime-sector-unit.in.net^
 ||framsun.grosstao.in.net^
 ||free-99.silvura.in.net^
 ||free-imgislropw.icu^
@@ -3544,6 +3579,7 @@
 ||freightdynam.faultmincin8.in.net^
 ||freightrap.bry5laxon.in.net^
 ||freightvalley.darkbay.in.net^
+||freigoak.norxelav.in.net^
 ||freiheit.drim9sol3ka.ru^
 ||fresh-air.miravento.in.net^
 ||fresh-cliff-high.freshcliff.ru^
@@ -3680,31 +3716,40 @@
 ||gate4sync.globalprotocol.in.net^
 ||gate6-api.digital-verify-pro.in.net^
 ||gate6-app.data-metric-flow.in.net^
+||gate6-area.nor4vexil.in.net^
 ||gate6-area.norxavin.in.net^
 ||gate6-box.cloud-storage-unit.in.net^
 ||gate6-cmd.smart-system-check.in.net^
 ||gate6-hub.consiliumundu-lat.in.net^
 ||gate6-hub.creep-score.in.net^
+||gate6-hub.prax6tolin.in.net^
 ||gate6-hub.secure-proxy-way.in.net^
 ||gate6-hub.xelvarinox.in.net^
 ||gate6-io.web-traffic-trace.in.net^
 ||gate6-ip.remote-access-node.in.net^
 ||gate6-link.sox9liven.in.net^
+||gate6-link.xel2mavor.in.net^
 ||gate6-link.zeq7moral.in.net^
 ||gate6-main.cesura-wate7y.in.net^
 ||gate6-main.global-server-sync.in.net^
 ||gate6-main.pra6lixon.in.net^
+||gate6-main.qen4varix.in.net^
 ||gate6-main.quv7maren.in.net^
 ||gate6-main.urban-growth-data.in.net^
 ||gate6-map.bri2xalon.in.net^
+||gate6-pipe.vex3litor.in.net^
 ||gate6-point.semiunder-lear.in.net^
 ||gate6-port.travexin.in.net^
 ||gate6-post.bry3loxan.in.net^
+||gate6-post.zor5liven.in.net^
 ||gate6-post.zorvelixan.in.net^
 ||gate6-root.draxolin.in.net^
 ||gate6-root.krinaxon.in.net^
+||gate6-root.tul7moran.in.net^
+||gate6-site.kry8navel.in.net^
 ||gate6-site.qul9merox.in.net^
 ||gate6-way.active-service-hub.in.net^
+||gate6-way.bri7tanon.in.net^
 ||gate6-way.don2tdouching.in.net^
 ||gate6-way.p1aster-voice.in.net^
 ||gate6-way.smart-home-verify.in.net^
@@ -3712,6 +3757,7 @@
 ||gate6-way.travel-point-trace.in.net^
 ||gate6-way.vo2xeral.in.net^
 ||gate6-web.tech-support-desk.in.net^
+||gate6-zone.dru9laxen.in.net^
 ||gate6-zone.drumavex.in.net^
 ||gate7.solid-build-trace.in.net^
 ||gateext.tuneone.in.net^
@@ -3809,6 +3855,7 @@
 ||gig0wg7.tempiso.in.net^
 ||git33.matchexact.in.net^
 ||git4-repo.vo2xeral.in.net^
+||git4-repo.xel2mavor.in.net^
 ||git5-pull.voxi3tral.in.net^
 ||github.guru^
 ||givs1.fabledock.in.net^
@@ -3870,6 +3917,7 @@
 ||go.stillesee.coupons^
 ||go5z.my^
 ||go6.my^
+||gohelpertechnologies.in^
 ||gohpit.lol^
 ||golbyte.ra8gera.in.net^
 ||gold-day.luminos.in.net^
@@ -3902,6 +3950,7 @@
 ||googmeetinginvitation.com^
 ||goplanet.digital^
 ||goragalo.live^
+||gossipband.ie^
 ||goto.stnts.com^
 ||governofederal.io^
 ||goynetfiles.duckdns.org^
@@ -3984,6 +4033,7 @@
 ||grupomcperu.com^
 ||gss3j.tr1bekit.in.net^
 ||gtedijfp.xyz^
+||gtps4change.org^
 ||gu1d-phase.bonflac.in.net^
 ||gu4r2-field.cl0verbyte.in.net^
 ||gu5t-spark.trustdom.in.net^
@@ -3999,6 +4049,7 @@
 ||guess-node.inferentialcore.in.net^
 ||guest-access.nexushaven.in.net^
 ||guest-node.againstvisitor.in.net^
+||guest2-area.smart-logic-trade.in.net^
 ||guid-route.greentea.in.net^
 ||guide-path.polarisbloom.in.net^
 ||guidecoral.idealgo.in.net^
@@ -4184,6 +4235,7 @@
 ||host1store.datacentricnode.in.net^
 ||host2-entry.xelvorinax.in.net^
 ||host2remote.datacentricnode.in.net^
+||host3-link.zor5liven.in.net^
 ||host3dev.datacentricnode.in.net^
 ||host4link.datacentricnode.in.net^
 ||hostingcdn.click^
@@ -4280,6 +4332,7 @@
 ||hvxpnc.thistlecore.in.net^
 ||hw62b.danger-style.in.net^
 ||hw94h.backlog.in.net^
+||hwgeneralins.com^
 ||hx9-mv33.quartzhorizon.in.net^
 ||hxfpc.infosafe.in.net^
 ||hydro-run.aquastream.in.net^
@@ -4293,6 +4346,7 @@
 ||hyper-14b.granulatetouch.in.net^
 ||hyper-4uth.oakwhisper.in.net^
 ||hyper-5i1ver.fineon1y.in.net^
+||hyper-a5h.zen4qorin.in.net^
 ||hyper-f4ll.paragonforge.in.net^
 ||hyper-guid3.botslap.in.net^
 ||hyper-opt1.momentumprospera.in.net^
@@ -4310,6 +4364,7 @@
 ||hyperenergy.in^
 ||hyperobs.nexuspatronage.in.net^
 ||hyrfnqqh.fullgate.in.net^
+||hz7cbx.mor5laxis.in.net^
 ||hzovbscu.xyz^
 ||hzxcaq-github-io.pages.dev^
 ||i.404.pm^
@@ -4396,6 +4451,7 @@
 ||inbibulf.xyz^
 ||incomexrps.com^
 ||index-master.foundationmetric.in.net^
+||index3-page.smart-logic-trade.in.net^
 ||indiasproperty.com^
 ||infant-woodgrid.infantwoodman.in.net^
 ||infer-api.inferentrixhub.in.net^
@@ -4562,7 +4618,6 @@
 ||jacwcvqt.xyz^
 ||jaido.armeniansgrate.in.net^
 ||javascriptupdate.com^
-||jawaratekno.com^
 ||jbstvz.oaknet.in.net^
 ||jd-forever.com^
 ||jd4ftwmb.stoneweir.digital^
@@ -4721,7 +4776,6 @@
 ||kinetic-io.dynamismjuply.in.net^
 ||kinetiqa.space^
 ||king-logic.monarchold.in.net^
-||kis.marketing^
 ||kittycom.doxxing.online^
 ||kiwinode.kiwi5pack.coupons^
 ||kiwitalk.ship46kiwi.coupons^
@@ -4853,6 +4907,7 @@
 ||layerpine.intellectnail.in.net^
 ||layerstone.stonecraft.coupons^
 ||layotra.appcheck.in.net^
+||lb1-state.tul7moran.in.net^
 ||lb2area.silicanet.in.net^
 ||lb2base.fondoviva.in.net^
 ||lb2core.ventaserv.in.net^
@@ -4886,6 +4941,7 @@
 ||ledgermacr.vo8xalon.in.net^
 ||legacy-bridge.foundationmetric.in.net^
 ||legend.griv8ton5za.ru^
+||legitserver.theworkpc.com^
 ||leindisncieamrocea-1341831283.cos.sa-saopaulo.myqcloud.com^
 ||lejrmakei.com^
 ||lejrmakei.net^
@@ -4935,6 +4991,7 @@
 ||limit-gate.kokotkasquand.in.net^
 ||limit-less.exaltedinfinate.in.net^
 ||linchens.com^
+||lindenappliances.co.za^
 ||lindnerelektroanlagen.de^
 ||line-secure.systematiclayer.in.net^
 ||line-secure.systemologyhub.in.net^
@@ -5221,6 +5278,7 @@
 ||m1w1mwdm.dozerebelt.digital^
 ||m2-infra-b4.versicodex.in.net^
 ||m2-q8v.flint09marko.coupons^
+||m29058.contaboserver.net^
 ||m2q9x.dropout.in.net^
 ||m3di-sheet.quick-fern.in.net^
 ||m3q7v.clint9vargo.coupons^
@@ -5351,11 +5409,11 @@
 ||markpeak.premiumtos.in.net^
 ||markterminal.grosstao.in.net^
 ||marlin204.promoportal4.coupons^
+||maro033.identifypls.us.com^
 ||marsalek.cy^
 ||marshfiel.dreswaoaky.in.net^
 ||marshlagoon.stayflat.in.net^
 ||mass-logic.basaltloading.in.net^
-||massiv.net^
 ||massivepatte.latticeprospera.in.net^
 ||massivereagen.highligh.in.net^
 ||master-index.conceptmatrix.in.net^
@@ -5396,6 +5454,7 @@
 ||meat-store.balkarbelyashi.in.net^
 ||med-node.goingsick.in.net^
 ||medi3-graph.lakecrest.in.net^
+||media4-file.smart-logic-trade.in.net^
 ||medises.co.kr^
 ||meeller.com^
 ||meeting-app.sbs^
@@ -5549,7 +5608,6 @@
 ||mirror-sync.symmetricalflow.in.net^
 ||miryyjn.com^
 ||missed-picnic-purpose-daily.trycloudflare.com^
-||missileperformance.hu^
 ||mist-base.mistgrove.in.net^
 ||mist-logic.goodwork.in.net^
 ||mist-net.mistgrove.in.net^
@@ -5601,6 +5659,7 @@
 ||mogimall.com^
 ||mold-engine.syntheticpolymer.in.net^
 ||mon-tresor.noitresor.coupons^
+||mon1-audit.kry8navel.in.net^
 ||mon1-check.xelvarinox.in.net^
 ||mon1point.densapoint.in.net^
 ||mon1point.sinapsov.in.net^
@@ -5760,6 +5819,7 @@
 ||nelark.icu^
 ||nelavohomet.com^
 ||nelees.com^
+||nenkines-attachments.top^
 ||neo-3xpo.velqo7rin.in.net^
 ||neo-5ound.caseoptional.in.net^
 ||neo-5tor.overtmantram.in.net^
@@ -5798,6 +5858,7 @@
 ||net-v8-access.medivault.in.net^
 ||net-v8-global.metropunto.in.net^
 ||net-v88-global.foco-global.in.net^
+||net1-flow.vex3litor.in.net^
 ||net3local.densapoint.in.net^
 ||net3local.sinapsov.in.net^
 ||net6-access.xelvorinax.in.net^
@@ -5924,23 +5985,32 @@
 ||node3-blob.vo2xeral.in.net^
 ||node3-call.p1aster-voice.in.net^
 ||node3-core.krynexor.in.net^
+||node3-core.tul7moran.in.net^
 ||node3-core.xelvarinox.in.net^
 ||node3-fast.drumavex.in.net^
+||node3-fast.prax6tolin.in.net^
 ||node3-flag.bri2xalon.in.net^
+||node3-flag.xel2mavor.in.net^
 ||node3-join.krinaxon.in.net^
 ||node3-link.consiliumundu-lat.in.net^
 ||node3-link.norxavin.in.net^
 ||node3-link.travemox.in.net^
+||node3-list.bri7tanon.in.net^
 ||node3-list.zeq7moral.in.net^
+||node3-pack.dru9laxen.in.net^
 ||node3-pack.sox9liven.in.net^
 ||node3-peer.bry3loxan.in.net^
+||node3-peer.qen4varix.in.net^
 ||node3-play.creep-score.in.net^
 ||node3-push.norqelix.in.net^
+||node3-read.kry8navel.in.net^
 ||node3-read.qul9merox.in.net^
 ||node3-soft.pra6lixon.in.net^
 ||node3-soft.quv7maren.in.net^
+||node3-unit.vex3litor.in.net^
 ||node3-vault.8rivastyinfamy.in.net^
 ||node3-view.exhib1torknot.in.net^
+||node3-view.nor4vexil.in.net^
 ||node3-view.travexin.in.net^
 ||node3-view.veq4tralis.in.net^
 ||node3.travemox.in.net^
@@ -6161,6 +6231,7 @@
 ||ops-gate.lumitron.in.net^
 ||ops-unit.dynastis.in.net^
 ||ops-unit.lumitron.in.net^
+||ops1-view.xel2mavor.in.net^
 ||ops4-base.travexin.in.net^
 ||ops4-cache.voxi3tral.in.net^
 ||opt1-chain.radiantventurex.in.net^
@@ -6209,6 +6280,7 @@
 ||order-svc.systematrixhub.in.net^
 ||order-svc.systemicitylayer.in.net^
 ||order-svc.systemoraengine.in.net^
+||order1-list.global-export-base.in.net^
 ||orga-sync.organiclink.in.net^
 ||organ-sync.maknothplacenta.in.net^
 ||organizecourier.stayflat.in.net^
@@ -6220,6 +6292,7 @@
 ||os6dx651.xyz^
 ||osn.lunxe.live^
 ||ossapp.suning.com^
+||otpj4gh.norxelav.in.net^
 ||otter-aut.x7lora.in.net^
 ||ottercultu.fluxhaven.in.net^
 ||otyhyn.gorun.in.net^
@@ -6479,6 +6552,7 @@
 ||pkr.greenenergygroup.org^
 ||pl.avgkrbw.com^
 ||pl5-zw18.siliconcanyon.in.net^
+||place6-hub.urban-motion-app.in.net^
 ||plain-ivo.crestfall.in.net^
 ||plain-net.frostplain.in.net^
 ||plain-site.frostplain.in.net^
@@ -6544,6 +6618,7 @@
 ||point-v.velante.in.net^
 ||point-x2-scan.altotensione.in.net^
 ||point1proc.virtualresource.in.net^
+||point2-map.urban-motion-app.in.net^
 ||point2power.virtualresource.in.net^
 ||point3local.virtualresource.in.net^
 ||point4work.virtualresource.in.net^
@@ -6558,6 +6633,7 @@
 ||pool-access.midgetplunge.in.net^
 ||pool-manager.datacascade.in.net^
 ||pop-x88-node.optico-voda.in.net^
+||pop1-edge.zor5liven.in.net^
 ||pornily.ai^
 ||port-fol.makuhaportfol.in.net^
 ||port-gate.basaltloading.in.net^
@@ -6805,6 +6881,7 @@
 ||q-set.extension-health-sync.coupons^
 ||q1-core-rock.secretovalle.in.net^
 ||q16zhmu.histo-ricthe.in.net^
+||q1tnk.qul4xorin.in.net^
 ||q4-dev-host.terralibre.in.net^
 ||q4-sys-grid.basalticnode.in.net^
 ||q4m8v.believein41fant.coupons^
@@ -6898,6 +6975,7 @@
 ||quin-v11.quintura.in.net^
 ||quor-forgear.metaphysixhub.in.net^
 ||quor-spireon.tempiso.in.net^
+||quor-tidear.qul4xorin.in.net^
 ||quor-valeis.farman.in.net^
 ||quorcore1a.conferen-cesman.in.net^
 ||quorcore5et.highligh.in.net^
@@ -6916,6 +6994,7 @@
 ||quormarkal8.habe7dpermanent.in.net^
 ||quormarkis8.autumnbrook.in.net^
 ||quormarkix.appcheck.in.net^
+||quormeshar.qul4xorin.in.net^
 ||quormeshos3.babrevea1ing.in.net^
 ||quornex1en.foxbyte.in.net^
 ||quornexum.lakeweb.in.net^
@@ -6991,6 +7070,7 @@
 ||radio-freq.signalforge.in.net^
 ||radio-freq.signalvector.in.net^
 ||radius-spoke-investments-cst.trycloudflare.com^
+||rai16-track.zen4qorin.in.net^
 ||raibark.highjoke.in.net^
 ||raiffeisenbbonusprogramma.info^
 ||rail-glaci.eskimotsutsik.in.net^
@@ -7043,6 +7123,7 @@
 ||rbcroyalbank-homese.info^
 ||rbmbhgpn.xyz^
 ||rbvjsji.octagonon.in.net^
+||rc3ba.qul4xorin.in.net^
 ||rdm.91yunma.cn^
 ||re-use-svc.recycleroach.in.net^
 ||re4g3-dock.crestfall.in.net^
@@ -7058,7 +7139,6 @@
 ||real-io.ontofluxion.in.net^
 ||real-time-io.ontologicalflux.in.net^
 ||real-time-io.ontologicstream.in.net^
-||realityv3.redirectme.net^
 ||reauthenticator.com^
 ||reb.greenenergygroup.org^
 ||rec2-record.travexon.in.net^
@@ -7225,6 +7305,7 @@
 ||rktqwhu.copyvrok.in.net^
 ||rkxv.keysum.in.net^
 ||rl90o.z7hire.in.net^
+||rlovrqd.mor5laxis.in.net^
 ||rmly.onelight.in.net^
 ||rmvofu.embassyotolaryn.in.net^
 ||rmxkmnrk.xyz^
@@ -7250,6 +7331,7 @@
 ||ro4d-stream.jokerun.in.net^
 ||road-gate.cdmilestone.in.net^
 ||road-to-hell.top^
+||road5-field.mor5laxis.in.net^
 ||roadrunner.fastlane.coupons^
 ||roadspring.gramsup.in.net^
 ||robertrowe.com^
@@ -7311,6 +7393,7 @@
 ||route-api.infovector.in.net^
 ||route-engine.navigationalpath.in.net^
 ||route-spa.windfield.in.net^
+||route1-path.urban-motion-app.in.net^
 ||routercanva.bluelight.in.net^
 ||routing.apple2dispatch.coupons^
 ||roverbot.info^
@@ -7360,6 +7443,7 @@
 ||run-log.naminkaprocess.in.net^
 ||run-svc.athleticscrew.in.net^
 ||run1-exec.zeq7moral.in.net^
+||run1-task.prax6tolin.in.net^
 ||runti5-flow.br1ghtmere.in.net^
 ||runtim-grid.oakstart.in.net^
 ||runvv4-forge.starpit.in.net^
@@ -7432,6 +7516,7 @@
 ||salonmarketing.ca^
 ||salt-buffer.alkalineelement.in.net^
 ||salt4-byte.bry3loxan.in.net^
+||salt4-byte.nor4vexil.in.net^
 ||salt4-byte.zeq9lora.in.net^
 ||saltcalc.oceansync.coupons^
 ||saltreef.deepwave.in.net^
@@ -7462,7 +7547,6 @@
 ||sat4link.infravariable.in.net^
 ||sat4link.termocenter.in.net^
 ||sat4link.terracore.in.net^
-||satuatlas.com^
 ||save-node.savingssit.in.net^
 ||save.jnrsmcu.com^
 ||sbstorage.cfd^
@@ -7738,6 +7822,7 @@
 ||signal.clint9vargo.coupons^
 ||signal.matrix8piano.coupons^
 ||signalcraft.appdeck.in.net^
+||sile-reel.norxelav.in.net^
 ||silen-node.amperesilence.in.net^
 ||silen-v05.amperesilence.in.net^
 ||silenparser.deepglom.in.net^
@@ -7845,6 +7930,7 @@
 ||soft-svc.emissarysooth.in.net^
 ||soft-touch.velante.in.net^
 ||soft.110route.com^
+||soft3-ring.zen4qorin.in.net^
 ||soft4-base.plu8moran.in.net^
 ||softbank126023203236.bbtec.net^
 ||softbreeze.gentlewind.coupons^
@@ -8000,7 +8086,6 @@
 ||splitboos.decktop.in.net^
 ||splitcrim.dotnet.in.net^
 ||splitmedi.tr1bekit.in.net^
-||spoar.org.in^
 ||spooldiscover.silvermeadow.in.net^
 ||spoolfox.invulshuga.in.net^
 ||sport-vault.athleticscrew.in.net^
@@ -8028,6 +8113,7 @@
 ||srv-x12-unit.enzymecore.in.net^
 ||srv-z44-meta.schnellestat.in.net^
 ||srv-z901-node.turboflow.in.net^
+||srv1471368.hstgr.cloud^
 ||srv1infra.resourcevalidator.in.net^
 ||srv1meta.cloudinfrastructure.in.net^
 ||srv1node.flexonode.in.net^
@@ -8073,6 +8159,8 @@
 ||staff-portal-1.mondolibre.in.net^
 ||staff-portal-5.petitbureau.in.net^
 ||staff-portal-x.ondeviva.in.net^
+||staff5-help.smart-logic-trade.in.net^
+||stage6-main.global-export-base.in.net^
 ||stagesandbo.f0xharbor.in.net^
 ||stajestetice.top^
 ||star-build.novaforge.in.net^
@@ -8102,6 +8190,8 @@
 ||stat5-info.qul7vexar.in.net^
 ||state-api.dialectrixengine.in.net^
 ||state-svc.dialectosphere.in.net^
+||static-103-160-197-181.unpl.net^
+||static-119-15-248-43.dnt.net.pk^
 ||static-assets-srv.stillesee.coupons^
 ||static-cdn.digiframe.in.net^
 ||static-cdn.digisphere.in.net^
@@ -8160,6 +8250,7 @@
 ||stocforg.fablegrove.in.net^
 ||stock-node.selzovestments.in.net^
 ||stock-out.confoundsoldout.in.net^
+||stock2-item.global-export-base.in.net^
 ||stockhub.box671plum.coupons^
 ||stolively.vexu3larn.in.net^
 ||stone-api.ministobelisk.in.net^
@@ -8186,6 +8277,7 @@
 ||storagegust.keystonebloom.in.net^
 ||storapowe.sunnode.in.net^
 ||store-vault.ryesears.in.net^
+||store4-data.urban-motion-app.in.net^
 ||storebet77.games^
 ||storebet77resmi.com^
 ||storebet77resmi.net^
@@ -8556,8 +8648,10 @@
 ||svc5-auth.bry3loxan.in.net^
 ||svc5-auth.tech-support-desk.in.net^
 ||svc5-base.consiliumundu-lat.in.net^
+||svc5-base.xel2mavor.in.net^
 ||svc5-cdn.cloud-storage-unit.in.net^
 ||svc5-dns.remote-access-node.in.net^
+||svc5-edge.nor4vexil.in.net^
 ||svc5-edge.norxavin.in.net^
 ||svc5-edge.sox9liven.in.net^
 ||svc5-flow.norqelix.in.net^
@@ -8565,16 +8659,19 @@
 ||svc5-git.global-server-sync.in.net^
 ||svc5-hub.semiunder-lear.in.net^
 ||svc5-info.bri2xalon.in.net^
+||svc5-info.dru9laxen.in.net^
 ||svc5-info.vo2xeral.in.net^
 ||svc5-link.secure-proxy-way.in.net^
 ||svc5-mark.exhib1torknot.in.net^
 ||svc5-match.creep-score.in.net^
+||svc5-mesh.prax6tolin.in.net^
 ||svc5-mesh.xelvarinox.in.net^
 ||svc5-net.active-service-hub.in.net^
 ||svc5-pid.smart-system-check.in.net^
 ||svc5-pin.web-traffic-trace.in.net^
 ||svc5-ready.drumavex.in.net^
 ||svc5-relay.global-health-check.in.net^
+||svc5-relay.kry8navel.in.net^
 ||svc5-relay.l2vashs-calpel.in.net^
 ||svc5-relay.local-market-hub.in.net^
 ||svc5-relay.office-task-sync.in.net^
@@ -8587,12 +8684,17 @@
 ||svc5-relay.travexin.in.net^
 ||svc5-row.data-metric-flow.in.net^
 ||svc5-rule.krynexor.in.net^
+||svc5-rule.zor5liven.in.net^
 ||svc5-scan.travemox.in.net^
 ||svc5-secure.cesura-wate7y.in.net^
+||svc5-send.vex3litor.in.net^
 ||svc5-site.krinaxon.in.net^
+||svc5-site.tul7moran.in.net^
 ||svc5-solar.green-energy-flow.in.net^
 ||svc5-ssl.digital-verify-pro.in.net^
+||svc5-step.qen4varix.in.net^
 ||svc5-step.qul9merox.in.net^
+||svc5-task.bri7tanon.in.net^
 ||svc5-task.veq4tralis.in.net^
 ||svc5-unit.zeq7moral.in.net^
 ||svc5y.prime-media-gate.in.net^
@@ -8762,7 +8864,6 @@
 ||tank-gate.representtank.in.net^
 ||tank05.representtank.in.net^
 ||tanscarattorneys.co.tz^
-||taoday.net^
 ||tar973lz.cl0verbyte.in.net^
 ||tarcanv.larkspin.in.net^
 ||target-api.fighttrapper.in.net^
@@ -8779,6 +8880,7 @@
 ||tb2mod.com^
 ||tcf5.plor9vexi.in.net^
 ||tcp.newyworlds.com^
+||tcp1-join.dru9laxen.in.net^
 ||tcp1-send.bry3loxan.in.net^
 ||tcp4-send.krinoxel.in.net^
 ||tdejb.com^
@@ -8941,11 +9043,11 @@
 ||tmcksa.com^
 ||tmnpixbs.xyz^
 ||tmp4-path.bryo2maxil.in.net^
+||tmp4-root.dru9laxen.in.net^
 ||tmp4-root.norxavin.in.net^
 ||tmzmig.redpit.in.net^
 ||tnocf.uptrend.in.net^
 ||tobecation.github.io^
-||todayallmatchprediction.com^
 ||tok3-array.exceptionpong.in.net^
 ||tokcheck.manchustill.in.net^
 ||toke-plate.xeltronix.in.net^
@@ -8977,6 +9079,7 @@
 ||torren5-plate.quillridge.in.net^
 ||torrentink.checkbro.in.net^
 ||torship.velorune.in.net^
+||total4-view.global-export-base.in.net^
 ||toutsavoir.f2bricat9sar.ru^
 ||tower-sync.ministobelisk.in.net^
 ||tower-sync.signalcrest.in.net^
@@ -9028,6 +9131,7 @@
 ||track-hub.pairingreptile.in.net^
 ||track-node.firstbeasts.in.net^
 ||track1-io.8rivastyinfamy.in.net^
+||track3-info.urban-motion-app.in.net^
 ||tracking.vifespoir.coupons^
 ||trackorbit.orbitalmap.coupons^
 ||trackpolicy.xyz^
@@ -9088,6 +9192,7 @@
 ||tridraar2.backyard.in.net^
 ||triflux3ar.morphinve8et.in.net^
 ||trifluxos.skylint.in.net^
+||triforgea.qul4xorin.in.net^
 ||triforgea4.cinderbay.in.net^
 ||triforgeix.chromeflack.in.net^
 ||triline7en.yardnext.in.net^
@@ -9253,6 +9358,7 @@
 ||uplink-r2-sat.prismaviva.in.net^
 ||uploads.otzo.com^
 ||uppxbwm.foxglade.in.net^
+||upzr.zen4qorin.in.net^
 ||uralmetalloprokat.ru^
 ||urb4n-frame.n1mbleoak.in.net^
 ||urb4n-gate.inkpit.in.net^
@@ -9385,6 +9491,7 @@
 ||vault4-info.smart-home-verify.in.net^
 ||vault4-io.cloud-storage-unit.in.net^
 ||vault4-key.quv7maren.in.net^
+||vault4-key.zor5liven.in.net^
 ||vault4-on.secure-proxy-way.in.net^
 ||vault4-root.consiliumundu-lat.in.net^
 ||vault4-root.local-market-hub.in.net^
@@ -9470,7 +9577,6 @@
 ||verse-svc.ontoversegrid.in.net^
 ||vertical-data-flow.brightcliff.in.net^
 ||veryboys.com^
-||vexium.vip^
 ||vf16.stoppit.in.net^
 ||vfjpe.liberalpilka.in.net^
 ||vgbf.trustdom.in.net^
@@ -9482,6 +9588,7 @@
 ||vhg5e.fluxhaven.in.net^
 ||vhktvgtf.xyz^
 ||vi5u4l-branch.bravo1nixu.in.net^
+||vialinn.mor5laxis.in.net^
 ||vibr-flow.vibrante.in.net^
 ||vibr-flow.vibratronic.in.net^
 ||vibr-v08.vibrante.in.net^
@@ -9775,6 +9882,7 @@
 ||web-v8-infra.metalloarea.in.net^
 ||web-z7-infra.metallopunto.in.net^
 ||web04zoom.im.web04zoom.us^
+||web1-host.bri7tanon.in.net^
 ||web1-host.norxavin.in.net^
 ||web1-media.prime-media-gate.in.net^
 ||web1-state.cesura-wate7y.in.net^
@@ -9843,6 +9951,7 @@
 ||wildtimber.timberwalk.coupons^
 ||wildtrack.natureway.city^
 ||wilknnson.com^
+||willbeanfeddeals.shop^
 ||willow.art67quarrel.coupons^
 ||willow.bargainhunter.coupons^
 ||win-point.excellsadarma.in.net^
@@ -9957,6 +10066,7 @@
 ||www2.0zz0.com^
 ||www999999asgasg-1327129302.cos.ap-chengdu.myqcloud.com^
 ||www999999safagqwhg-1327129302.cos.ap-chengdu.myqcloud.com^
+||wx3wxihq.norxelav.in.net^
 ||wyabqjml.xyz^
 ||wylzkl.vectorprospera.in.net^
 ||wzbweoau.xyz^
@@ -10107,6 +10217,7 @@
 ||yx16l.n0vabrook.in.net^
 ||yxmptwzw.cutlog.in.net^
 ||yxngqe.cutlog.in.net^
+||yy.kak.is^
 ||yyin.br1ghtmere.in.net^
 ||yz16m.dravonix.in.net^
 ||yzac4fqt.duskvale.digital^
@@ -10190,7 +10301,6 @@
 ||zenven2ix.quantumprospera.in.net^
 ||zephyr41.overplaymarbles.com^
 ||zero-point.cryogenicbuffer.in.net^
-||zhigao5191.com^
 ||zhikey.com^
 ||ziaintegracion.com^
 ||zifg62sw71.ufs.sh^
