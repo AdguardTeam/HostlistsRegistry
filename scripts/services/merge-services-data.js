@@ -16,10 +16,10 @@ const { sortByKey } = require('../helpers/helpers');
  */
 const mergeServicesData = (distServices, sourceServices) => {
     const mergedMap = [...distServices, ...sourceServices].reduce((acc, obj) => {
-        acc[obj.id] = obj;
+        acc.set(obj.id, obj);
         return acc;
-    }, {});
-    return Object.values(mergedMap);
+    }, new Map());
+    return Array.from(mergedMap.values());
 };
 
 /**
