@@ -5,6 +5,7 @@
 - [Filters Metadata](#filters-meta)
 - [Services Metadata](#services-meta)
 - [Safe Search Filters](#safe-search)
+- [Typosquatting Allowlist](#typosquatting-allowlist)
 - [How to Build](#how-to-build)
 - [How to Compress](#how-to-compress)
 - [Localizations](#localizations)
@@ -233,6 +234,38 @@ SVG icon requirements:
   - Yandex
 
 - [`youtube_safe_search.txt`](https://adguardteam.github.io/HostlistsRegistry/assets/youtube_safe_search.txt) contains a set of rules to enforce Safe Search and hide comments on YouTube.
+
+## <a id="typosquatting-allowlist"></a> Typosquatting Allowlist
+
+- [`typosquatting_allowlist.json`](https://adguardteam.github.io/HostlistsRegistry/assets/typosquatting_allowlist.json) contains domain-specific exceptions for the Typosquatting protection feature in AdGuard Private DNS.
+- This file is used as an allowlist for legitimate domains that may look like typos or homograph variants of protected popular domains and therefore must not be treated as suspicious.
+- The protected domains dataset itself is built in a different pipeline. This repository stores only the exception list maintained for that feature.
+
+The file format is JSON:
+
+```json
+{
+  "domains": [
+    {
+      "domain": "discovery.com",
+      "exceptions": ["discover.com"]
+    }
+  ]
+}
+```
+
+Each entry has:
+
+- `domain` — the protected domain, preferably in normalized eTLD+1 form.
+- `exceptions` — a list of domains that are explicitly allowed for this protected domain.
+
+How to work with this file:
+
+1. Add or update an entry in the `domains` array in `typosquatting_allowlist.json`
+1. Set `domain` to the protected domain for which an exception is needed.
+1. Set the `exceptions` array to the list of exception domains.
+1. Submit a PR for review
+1. After merge, the exceptions will be applied on the next scheduled build
 
 ## <a id="how-to-build"></a> How to Build
 
