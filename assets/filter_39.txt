@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti Push Notifications
 ! Description: Aims to remove push notifications on sites. Combines eligible rules from AdGuard Popups Filter's anti-push sections and Fanboy's Notifications Blocking List.
-! Version: 1.0.14.64
+! Version: 1.0.14.65
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2026-04-17T10:06:21.335Z
+! Last modified: 2026-05-05T05:10:31.411Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -63,10 +63,12 @@
 |amp-user-notification-
 |push-worker-
 ||api-push.com^
+||bildirim.com.tr^
 ||bildirimat.com^
 ||bildirnet.com^
 ||braze.com^
 ||cappushino.com^
+||cdn.p-n.io^
 ||cdn.qgr.ph^
 ||cdn.qgraph.io^
 ||centrnotify.com^
@@ -187,7 +189,6 @@
 ||danorenius.com^
 ||digitalpush.org^
 ||edrone.me^
-||face-push.com^
 ||feedify.net^
 ||feraciumus.com^
 ||fernomius.com^
@@ -251,8 +252,16 @@
 ||push.neko-san.fr^
 ||pushme.magellanotech.it^
 ||widget.push.forja.ma^
+|yorker-push-init.js^
 ||sdk.chirpyweb.com^
 .vafrike.ru^
+||townrdwarfer.com^
+||wstpush-mobile.terra.com^
+||martabackrock.com^
+||pushkite.com^
+||smbtnupsh.com^
+||dashboard.bildircin.az^
+||connect.cdnsb.net^
 ||hotbbawese.cc^
 ||qepolax.com^
 ||tel1mekar.com^
@@ -261,7 +270,6 @@
 ||puhyjyf.com^
 ||speraspace.com^
 ||sendpush.net^
-||personaclick.com^
 ||quickalert.org^
 ||ziwelatum.com^
 ||pushly.net^
@@ -313,7 +321,6 @@
 ||cdn.hostpush.info
 ||cdn.letreach.com^
 ||cdn.mxapis.com^
-||cdn.p-n.io^
 ||cdn.siteswithcontent.com^
 ||cdnt.netcoresmartech.com^
 ||celesterium.com^
