@@ -1,0 +1,21 @@
+{
+  "name": "OISD Blocklist NSFW",
+  "description": "List for blocking NSFW Websites.",
+  "homepage": "https://oisd.nl/",
+  "sources": [
+    {
+      "name": "OISD Blocklist NSFW",
+      "source": "https://nsfw.oisd.nl/",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
