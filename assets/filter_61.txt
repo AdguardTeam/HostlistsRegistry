@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Samsung Tracker Blocklist
 ! Description: Blocks Samsung native broadband trackers that track your activity.
-! Version: 1.0.0.40
+! Version: 1.0.0.41
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-05-05T19:39:20.361Z
+! Last modified: 2026-05-13T01:03:52.992Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -20,6 +20,7 @@
 ||smetrics.samsung.com.cn^
 ||push.samsungosp.com.cn^
 ||samsungott.sora.yoyi.com.cn^
+||fast.samsungsingapore.demdex.net^
 ||samsung.demdex.net^
 ||samsung-benelux.demdex.net^
 ||samsung-france.demdex.net^
@@ -47,7 +48,6 @@
 ||samsunglife.demdex.net^
 ||samsungseao.demdex.net^
 ||samsungsec.demdex.net^
-||fast.samsungsingapore.demdex.net^
 ||samsungspain.demdex.net^
 ||samsungthailand.demdex.net^
 ||samsungturkey.demdex.net^
@@ -58,10 +58,9 @@
 ||samsung.ecorebates.com^
 ||samsung.telemetry.eyeo.com^
 ||ehg-samsungusa.hitbox.com^
-||moai-dev-samsung.com^
+||samsung.com.ssl.sc.omtrdc.net^
 ||samsungcard.sc.omtrdc.net^
 ||samsungnorthamerica.sc.omtrdc.net^
-||samsung.com.ssl.sc.omtrdc.net^
 ||samsungafrica.tt.omtrdc.net^
 ||samsungbenelux.tt.omtrdc.net^
 ||samsungcanada.tt.omtrdc.net^
@@ -75,7 +74,6 @@
 ||samsungturkey.tt.omtrdc.net^
 ||samsungus.tt.omtrdc.net^
 ||samsungtv-d.openx.net^
-||qmds-dev-samsung.com^
 ||zn8qwjgdslpyjq5n3-samsungcustomerboard.siteintercept.qualtrics.com^
 ||zn9xowqszdbqtbfwx-seasamsung.siteintercept.qualtrics.com^
 ||znewylzpqds1jt1sh-samsunggdc.siteintercept.qualtrics.com^
@@ -95,30 +93,26 @@
 ||tracking.europe.business.samsung.com^
 ||images.it.business.samsung.com^
 ||seao.business.samsung.com^
-||channelusa.samsung.com^
 ||dc.dqa.samsung.com^
 ||dls-ddc.dqa.samsung.com^
 ||dls-udc.dqa.samsung.com^
-||event-tracking.samsung.com^
 ||images.frbusiness.samsung.com^
 ||bldr.mkt.samsung.com^
 ||analytics.mpay.samsung.com^
-||nmetrics.samsung.com^
 ||images.partnersupport.samsung.com^
-||plbusiness.samsung.com^
 ||api.runestone.samsung.com^
 ||di.runestone.samsung.com^
-||sca.samsung.com^
 ||lp.smartbusiness.samsung.com^
 ||tracking.smartbusiness.samsung.com^
-||smetrics.samsung.com^
 ||images.ssbusiness.samsung.com^
 ||bigdata.ssp.samsung.com^
+||channelusa.samsung.com^
+||event-tracking.samsung.com^
+||nmetrics.samsung.com^
+||plbusiness.samsung.com^
+||sca.samsung.com^
+||smetrics.samsung.com^
 ||target-us.samsung.com^
-||samsungacr.com^
-||samsungadhub.com^
-||samsungads.com^
-||samsungallstore.com^
 ||ureca.samsungapps.com^
 ||acr-au-prd.samsungcloud.tv^
 ||acr-br-prd.samsungcloud.tv^
@@ -133,9 +127,9 @@
 ||devicelog.samsungcloudsolution.net^
 ||prderrordumphsm.samsungcloudsolution.com^
 ||prderrordumpssm.samsungcloudsolution.net^
+||report.gras.samsungdm.com^
 ||diagmon-policy.samsungdm.com^
 ||diagmon-serviceapi.samsungdm.com^
-||report.gras.samsungdm.com^
 ||dev-apigw.samsungdmroute.com^
 ||stg-apigw.samsungdmroute.com^
 ||analytics.samsungedo.com^
@@ -148,9 +142,9 @@
 ||xpu.samsungelectronics.com^
 ||ypu.samsungelectronics.com^
 ||zpu.samsungelectronics.com^
+||analytics-dev-api.test.samsunghealth.com^
 ||shealth-analytics-api.samsunghealth.com^
 ||shealth-analytics-stg-api.samsunghealth.com^
-||analytics-dev-api.test.samsunghealth.com^
 ||analytics-api.samsunghealthcn.com^
 ||invitation.samsungiotcloud.com^
 ||analytics.samsungknox.com^
@@ -162,14 +156,11 @@
 ||stats.samsungpass.com^
 ||osb.samsungqbe.com^
 ||osb-krsvc.samsungqbe.com^
-||samsungr.com^
-||samsungrm.com^
 ||test.samsungrm.net^
 ||sspapi-prd.samsungrs.com^
 ||matomo.samsungsdibs.at^
 ||lp.mkt-email.samsungsds.com^
 ||tracking.mkt-email.samsungsds.com^
-||samsungtvads.com^
 ||business.samsungusa.com^
 ||api-samsung.swypeconnect.com^
 ||lbs-samsung.swypeconnect.com^
@@ -204,3 +195,12 @@
 ||samsungusa.api.useinsider.com^
 ||samsungvn.api.useinsider.com^
 ||h4g3z1-native.samsung.web.app^
+||moai-dev-samsung.com^
+||qmds-dev-samsung.com^
+||samsungacr.com^
+||samsungadhub.com^
+||samsungads.com^
+||samsungallstore.com^
+||samsungr.com^
+||samsungrm.com^
+||samsungtvads.com^

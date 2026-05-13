@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Normal Blocklist
 ! Description: Broom - Cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.
-! Version: 1.0.29.9
+! Version: 1.0.29.10
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-05-12T17:46:22.065Z
+! Last modified: 2026-05-13T01:03:36.830Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -1537,7 +1537,6 @@
 ||media.ad-lps.net^
 ||imp.ad-plus.cn^
 ||dmm.ad-s.org^
-||trk.ad-serving-ads.com^
 ||delivery.ad-sphere.eu^
 ||ad.ad2-one.com^
 ||static.ad2click.in^
@@ -2303,6 +2302,7 @@
 ||event-listener.air.tv^
 ||events.air.tv^
 ||matomo.air-promotion.de^
+||matomo.air-q.com^
 ||gtag.data-prod.aws.air-up.com^
 ||collect.air1.com^
 ||tags.air1.com^
@@ -2477,7 +2477,6 @@
 ||pixel.ad.akamaized.net^
 ||appconf-ocs-eu.heytapdl.com.akamaized.net^
 ||appconf-ocs-sgp.heytapdl.com.akamaized.net^
-||chartboost.com.akamaized.net^
 ||smartadserver.com.akamaized.net^
 ||scripts.clarity.ms.akamaized.net^
 ||analytics2-3-meride-tv.akamaized.net^
@@ -3611,6 +3610,7 @@
 ||l4-logs-http-rum-pub-s1-6386d34262e59173.elb.us-east-1.amazonaws.com^
 ||l4-metrics-agent-s0-7c551d28c9ca34fc.elb.us-east-1.amazonaws.com^
 ||l4-metrics-agent-s1-56401ca284db905a.elb.us-east-1.amazonaws.com^
+||l4-metrics-agent-s2-6d5a12b23a2c8e62.elb.us-east-1.amazonaws.com^
 ||posthog-proxy-service-prod-us-786081f7c4028325.elb.us-east-1.amazonaws.com^
 ||prod-ingress-telemetry-4c22fc0d5ec1dd2e.elb.us-east-1.amazonaws.com^
 ||tracking-production-3e47c89e5c807dd5.elb.us-east-1.amazonaws.com^
@@ -3915,6 +3915,7 @@
 ||bee.andreawhitmer.com^
 ||elk.andrewfomera.com^
 ||umami.andrewru.com^
+||dh.android-authority.com^
 ||dh-widget.android-authority.com^
 ||matomo.andronautic.com^
 ||ads.androworks.org^
@@ -4534,7 +4535,6 @@
 ||23q9j8-inapps.appsflyersdk.com^
 ||23q9j8-launches.appsflyersdk.com^
 ||26tnbp-inapps.appsflyersdk.com^
-||26tnbp-launches.appsflyersdk.com^
 ||29he2o-cdn-settings.appsflyersdk.com^
 ||29he2o-inapps.appsflyersdk.com^
 ||2a7usu-cdn-settings.appsflyersdk.com^
@@ -4563,7 +4563,6 @@
 ||2lpynx-conversions.appsflyersdk.com^
 ||2lpynx-inapps.appsflyersdk.com^
 ||2lpynx-launches.appsflyersdk.com^
-||2o8afb-launches.appsflyersdk.com^
 ||2ouvvx-register.appsflyersdk.com^
 ||2p1czr-launches.appsflyersdk.com^
 ||2pifnn-cdn-settings.appsflyersdk.com^
@@ -4599,7 +4598,6 @@
 ||2zbnhl-inapps.appsflyersdk.com^
 ||2zbnhl-launches.appsflyersdk.com^
 ||2zbnhl-register.appsflyersdk.com^
-||2zl2md-cdn-settings.appsflyersdk.com^
 ||30ysim-cdn-settings.appsflyersdk.com^
 ||30ysim-launches.appsflyersdk.com^
 ||32e5va-cdn-settings.appsflyersdk.com^
@@ -4617,7 +4615,6 @@
 ||3bjjlx-launches.appsflyersdk.com^
 ||3bpq9v-cdn-settings.appsflyersdk.com^
 ||3bsrnd-inapps.appsflyersdk.com^
-||3cymja-inapps.appsflyersdk.com^
 ||3d40sl-cdn-settings.appsflyersdk.com^
 ||3d40sl-launches.appsflyersdk.com^
 ||3dduuj-dlsdk.appsflyersdk.com^
@@ -4770,7 +4767,6 @@
 ||4ojiwy-cdn-settings.appsflyersdk.com^
 ||4ojiwy-launches.appsflyersdk.com^
 ||4pemqv-launches.appsflyersdk.com^
-||4pksuw-launches.appsflyersdk.com^
 ||4rtlop-cdn-settings.appsflyersdk.com^
 ||4rtlop-inapps.appsflyersdk.com^
 ||4rtlop-launches.appsflyersdk.com^
@@ -4822,7 +4818,6 @@
 ||5bfkuq-launches.appsflyersdk.com^
 ||5eg5ws-cdn-settings.appsflyersdk.com^
 ||5ez75j-cdn-settings.appsflyersdk.com^
-||5ez75j-gcdsdk.appsflyersdk.com^
 ||5ez75j-launches.appsflyersdk.com^
 ||5f2tlv-cdn-settings.appsflyersdk.com^
 ||5f2tlv-inapps.appsflyersdk.com^
@@ -4868,7 +4863,6 @@
 ||5re7sr-cdn-settings.appsflyersdk.com^
 ||5re7sr-conversions.appsflyersdk.com^
 ||5rmbj5-cdn-settings.appsflyersdk.com^
-||5szljn-cdn-settings.appsflyersdk.com^
 ||5szljn-launches.appsflyersdk.com^
 ||5tk5tc-cdn-settings.appsflyersdk.com^
 ||5tk5tc-conversions.appsflyersdk.com^
@@ -5154,7 +5148,6 @@
 ||8gxcw4-cdn-settings.appsflyersdk.com^
 ||8hnr2r-cdn-settings.appsflyersdk.com^
 ||8hnr2r-launches.appsflyersdk.com^
-||8igzzx-cdn-settings.appsflyersdk.com^
 ||8jb0hu-cdn-settings.appsflyersdk.com^
 ||8jb0hu-conversions.appsflyersdk.com^
 ||8jb0hu-dynamic-report-api.appsflyersdk.com^
@@ -5202,7 +5195,6 @@
 ||8rigkp-cdn-settings.appsflyersdk.com^
 ||8rigkp-launches.appsflyersdk.com^
 ||8svtep-cdn-settings.appsflyersdk.com^
-||8svtep-launches.appsflyersdk.com^
 ||8swvqx-cdn-settings.appsflyersdk.com^
 ||8swvqx-launches.appsflyersdk.com^
 ||8tnart-cdn-settings.appsflyersdk.com^
@@ -5222,7 +5214,6 @@
 ||8vjssx-cdn-settings.appsflyersdk.com^
 ||8vjssx-inapps.appsflyersdk.com^
 ||8vjssx-launches.appsflyersdk.com^
-||8vst67-cdn-settings.appsflyersdk.com^
 ||8vst67-inapps.appsflyersdk.com^
 ||8vst67-launches.appsflyersdk.com^
 ||8vxqrp-cdn-settings.appsflyersdk.com^
@@ -5331,8 +5322,6 @@
 ||a3bawd-launches.appsflyersdk.com^
 ||a3d95i-cdn-settings.appsflyersdk.com^
 ||a3d95i-launches.appsflyersdk.com^
-||a3hkja-cdn-settings.appsflyersdk.com^
-||a3hkja-launches.appsflyersdk.com^
 ||a3kejz-attr.appsflyersdk.com^
 ||a3kejz-cdn-settings.appsflyersdk.com^
 ||a3kejz-conversions.appsflyersdk.com^
@@ -5348,7 +5337,6 @@
 ||a5hxty-launches.appsflyersdk.com^
 ||a5nlz1-cdn-settings.appsflyersdk.com^
 ||a8dtik-cdn-settings.appsflyersdk.com^
-||a8dtik-conversions.appsflyersdk.com^
 ||a8dtik-launches.appsflyersdk.com^
 ||a92gin-cdn-settings.appsflyersdk.com^
 ||a92gin-conversions.appsflyersdk.com^
@@ -5360,7 +5348,6 @@
 ||abbz9n-launches.appsflyersdk.com^
 ||abnrxb-cdn-settings.appsflyersdk.com^
 ||abzwxy-cdn-settings.appsflyersdk.com^
-||accqw5-inapps.appsflyersdk.com^
 ||accqw5-launches.appsflyersdk.com^
 ||acdcin-cdn-settings.appsflyersdk.com^
 ||acdcin-conversions.appsflyersdk.com^
@@ -5437,7 +5424,6 @@
 ||apklaj-register.appsflyersdk.com^
 ||aq9d0g-inapps.appsflyersdk.com^
 ||aq9d0g-launches.appsflyersdk.com^
-||aqewpj-cdn-settings.appsflyersdk.com^
 ||aqlkbr-cdn-settings.appsflyersdk.com^
 ||ar2fnu-cdn-settings.appsflyersdk.com^
 ||ar2fnu-launches.appsflyersdk.com^
@@ -5534,7 +5520,6 @@
 ||b1guuh-cdn-settings.appsflyersdk.com^
 ||b1guuh-gcdsdk.appsflyersdk.com^
 ||b1guuh-launches.appsflyersdk.com^
-||b265gq-cdn-settings.appsflyersdk.com^
 ||b265gq-inapps.appsflyersdk.com^
 ||b265gq-launches.appsflyersdk.com^
 ||b3h4oz-cdn-settings.appsflyersdk.com^
@@ -5785,6 +5770,7 @@
 ||bxuiiw-cdn-settings.appsflyersdk.com^
 ||bxuiiw-gcdsdk.appsflyersdk.com^
 ||bxuiiw-launches.appsflyersdk.com^
+||byhwea-inapps.appsflyersdk.com^
 ||bylkvh-cdn-settings.appsflyersdk.com^
 ||bylkvh-launches.appsflyersdk.com^
 ||byv8a7-cdn-settings.appsflyersdk.com^
@@ -5969,7 +5955,6 @@
 ||cyd6ha-inapps.appsflyersdk.com^
 ||cyd6ha-launches.appsflyersdk.com^
 ||cyfzwu-cdn-settings.appsflyersdk.com^
-||cz1d9q-cdn-settings.appsflyersdk.com^
 ||czjtlb-cdn-settings.appsflyersdk.com^
 ||czjtlb-inapps.appsflyersdk.com^
 ||czjtlb-launches.appsflyersdk.com^
@@ -6211,7 +6196,6 @@
 ||e0zxsi-skadsdk.appsflyersdk.com^
 ||e1ge8i-cdn-settings.appsflyersdk.com^
 ||e1ge8i-launches.appsflyersdk.com^
-||e52bzs-cdn-settings.appsflyersdk.com^
 ||e52bzs-inapps.appsflyersdk.com^
 ||e52bzs-launches.appsflyersdk.com^
 ||e5iwfs-attr.appsflyersdk.com^
@@ -6313,7 +6297,6 @@
 ||ejmgpm-inapps.appsflyersdk.com^
 ||ejmgpm-launches.appsflyersdk.com^
 ||ejmgpm-skadsdk.appsflyersdk.com^
-||ejs7jr-cdn-settings.appsflyersdk.com^
 ||ejs7jr-launches.appsflyersdk.com^
 ||ek6rpv-cdn-settings.appsflyersdk.com^
 ||ek6rpv-conversions.appsflyersdk.com^
@@ -6346,6 +6329,7 @@
 ||embuku-launches.appsflyersdk.com^
 ||emvn8v-cdn-settings.appsflyersdk.com^
 ||emvn8v-conversions.appsflyersdk.com^
+||emvn8v-inapps.appsflyersdk.com^
 ||emvn8v-launches.appsflyersdk.com^
 ||emxuyn-cdn-settings.appsflyersdk.com^
 ||emxuyn-launches.appsflyersdk.com^
@@ -6470,7 +6454,6 @@
 ||f7k8pv-inapps.appsflyersdk.com^
 ||f7k8pv-launches.appsflyersdk.com^
 ||f7mjzn-cdn-settings.appsflyersdk.com^
-||f7mjzn-launches.appsflyersdk.com^
 ||f8vd4e-cdn-settings.appsflyersdk.com^
 ||f8vd4e-conversions.appsflyersdk.com^
 ||f8vd4e-dynamic-report-api.appsflyersdk.com^
@@ -6914,7 +6897,6 @@
 ||gq8cpx-conversions.appsflyersdk.com^
 ||gqpijo-cdn-settings.appsflyersdk.com^
 ||gqpijo-inapps.appsflyersdk.com^
-||gqpijo-launches.appsflyersdk.com^
 ||gr07em-cdn-settings.appsflyersdk.com^
 ||grrcbn-cdn-settings.appsflyersdk.com^
 ||grrcbn-conversions.appsflyersdk.com^
@@ -7253,7 +7235,6 @@
 ||icko4e-launches.appsflyersdk.com^
 ||icshsl-cdn-settings.appsflyersdk.com^
 ||icshsl-inapps.appsflyersdk.com^
-||icshsl-launches.appsflyersdk.com^
 ||icudox-cdn-settings.appsflyersdk.com^
 ||icudox-launches.appsflyersdk.com^
 ||iexq5h-cdn-settings.appsflyersdk.com^
@@ -7337,7 +7318,6 @@
 ||iodmor-cdn-settings.appsflyersdk.com^
 ||iodmor-inapps.appsflyersdk.com^
 ||iodmor-launches.appsflyersdk.com^
-||iqkx3b-attr.appsflyersdk.com^
 ||iqkx3b-cdn-settings.appsflyersdk.com^
 ||iqkx3b-conversions.appsflyersdk.com^
 ||iqkx3b-dlsdk.appsflyersdk.com^
@@ -7384,7 +7364,6 @@
 ||iuddgy-gcdsdk.appsflyersdk.com^
 ||iuddgy-launches.appsflyersdk.com^
 ||ivaski-cdn-settings.appsflyersdk.com^
-||ivaski-launches.appsflyersdk.com^
 ||ive8im-cdn-settings.appsflyersdk.com^
 ||ive8im-inapps.appsflyersdk.com^
 ||ive8im-launches.appsflyersdk.com^
@@ -7587,8 +7566,6 @@
 ||jqygbo-register.appsflyersdk.com^
 ||jqyn1y-cdn-settings.appsflyersdk.com^
 ||jqyn1y-inapps.appsflyersdk.com^
-||jretdx-cdn-settings.appsflyersdk.com^
-||jretdx-launches.appsflyersdk.com^
 ||jrha09-cdn-settings.appsflyersdk.com^
 ||jrha09-gcdsdk.appsflyersdk.com^
 ||jrha09-inapps.appsflyersdk.com^
@@ -7924,6 +7901,7 @@
 ||l1aubp-inapps.appsflyersdk.com^
 ||l1aubp-launches.appsflyersdk.com^
 ||l1iq3e-cdn-settings.appsflyersdk.com^
+||l1iq3e-inapps.appsflyersdk.com^
 ||l1iq3e-launches.appsflyersdk.com^
 ||l1iq3e-skadsdk.appsflyersdk.com^
 ||l1yo9l-cdn-settings.appsflyersdk.com^
@@ -8027,7 +8005,6 @@
 ||ll0n88-cdn-settings.appsflyersdk.com^
 ||ll0n88-inapps.appsflyersdk.com^
 ||ll0n88-launches.appsflyersdk.com^
-||ll80ta-launches.appsflyersdk.com^
 ||llaqlq-cdn-settings.appsflyersdk.com^
 ||llng3m-inapps.appsflyersdk.com^
 ||llng3m-launches.appsflyersdk.com^
@@ -8266,7 +8243,6 @@
 ||mjn43s-attr.appsflyersdk.com^
 ||mjn43s-cdn-settings.appsflyersdk.com^
 ||mjn43s-conversions.appsflyersdk.com^
-||mjn43s-inapps.appsflyersdk.com^
 ||mjn43s-launches.appsflyersdk.com^
 ||mjrcfv-cdn-settings.appsflyersdk.com^
 ||mjrcfv-conversions.appsflyersdk.com^
@@ -8329,12 +8305,10 @@
 ||msbipz-gcdsdk.appsflyersdk.com^
 ||msbipz-launches.appsflyersdk.com^
 ||msbipz-register.appsflyersdk.com^
-||mssjdu-launches.appsflyersdk.com^
 ||mtktd2-cdn-settings.appsflyersdk.com^
 ||mtktd2-launches.appsflyersdk.com^
 ||mtu0rs-cdn-settings.appsflyersdk.com^
 ||mtu0rs-launches.appsflyersdk.com^
-||mu26dr-cdn-settings.appsflyersdk.com^
 ||mu36fn-cdn-settings.appsflyersdk.com^
 ||mu36fn-inapps.appsflyersdk.com^
 ||mu36fn-launches.appsflyersdk.com^
@@ -8526,9 +8500,9 @@
 ||npkfc6-cdn-settings.appsflyersdk.com^
 ||npkfc6-launches.appsflyersdk.com^
 ||nqwfg9-cdn-settings.appsflyersdk.com^
+||nqwfg9-gcdsdk.appsflyersdk.com^
 ||nqwfg9-inapps.appsflyersdk.com^
 ||nqwfg9-launches.appsflyersdk.com^
-||nqyluk-cdn-settings.appsflyersdk.com^
 ||nqyluk-launches.appsflyersdk.com^
 ||nrnbuy-cdn-settings.appsflyersdk.com^
 ||nrnbuy-conversions.appsflyersdk.com^
@@ -8579,7 +8553,6 @@
 ||nxr7i9-conversions.appsflyersdk.com^
 ||nxr7i9-inapps.appsflyersdk.com^
 ||nxr7i9-launches.appsflyersdk.com^
-||ny8ssd-cdn-settings.appsflyersdk.com^
 ||nyf5mm-cdn-settings.appsflyersdk.com^
 ||nyf5mm-inapps.appsflyersdk.com^
 ||nyf5mm-launches.appsflyersdk.com^
@@ -8656,6 +8629,8 @@
 ||oftyyy-register.appsflyersdk.com^
 ||ofy77s-cdn-settings.appsflyersdk.com^
 ||ofy77s-conversions.appsflyersdk.com^
+||ofy77s-gcdsdk.appsflyersdk.com^
+||ofy77s-inapps.appsflyersdk.com^
 ||ofy77s-launches.appsflyersdk.com^
 ||ofy77s-register.appsflyersdk.com^
 ||ogb3iu-cdn-settings.appsflyersdk.com^
@@ -8670,8 +8645,6 @@
 ||ogcvzt-cdn-settings.appsflyersdk.com^
 ||ogcvzt-launches.appsflyersdk.com^
 ||oglqhq-cdn-settings.appsflyersdk.com^
-||ogrh4u-cdn-settings.appsflyersdk.com^
-||ogrh4u-inapps.appsflyersdk.com^
 ||ogrh4u-launches.appsflyersdk.com^
 ||ohcisi-cdn-settings.appsflyersdk.com^
 ||ohcisi-inapps.appsflyersdk.com^
@@ -8687,7 +8660,6 @@
 ||ojdikx-cdn-settings.appsflyersdk.com^
 ||ojdikx-inapps.appsflyersdk.com^
 ||ojdikx-launches.appsflyersdk.com^
-||ojiklv-cdn-settings.appsflyersdk.com^
 ||ojiklv-launches.appsflyersdk.com^
 ||oju6tp-cdn-settings.appsflyersdk.com^
 ||oju6tp-launches.appsflyersdk.com^
@@ -8705,7 +8677,6 @@
 ||okucz7-cdn-settings.appsflyersdk.com^
 ||okucz7-launches.appsflyersdk.com^
 ||olfqdf-cdn-settings.appsflyersdk.com^
-||olfqdf-conversions.appsflyersdk.com^
 ||olfqdf-launches.appsflyersdk.com^
 ||olmbsv-cdn-settings.appsflyersdk.com^
 ||olmbsv-inapps.appsflyersdk.com^
@@ -8844,7 +8815,6 @@
 ||p0j2xz-launches.appsflyersdk.com^
 ||p0j2xz-register.appsflyersdk.com^
 ||p1lts2-launches.appsflyersdk.com^
-||p3ozie-cdn-settings.appsflyersdk.com^
 ||p3ozie-inapps.appsflyersdk.com^
 ||p3ozie-launches.appsflyersdk.com^
 ||p43vsn-cdn-settings.appsflyersdk.com^
@@ -8946,6 +8916,7 @@
 ||pjh6rp-inapps.appsflyersdk.com^
 ||pjh6rp-launches.appsflyersdk.com^
 ||pkawnc-cdn-settings.appsflyersdk.com^
+||pkawnc-inapps.appsflyersdk.com^
 ||pkawnc-launches.appsflyersdk.com^
 ||pkmmda-cdn-settings.appsflyersdk.com^
 ||pkmmda-inapps.appsflyersdk.com^
@@ -9065,6 +9036,7 @@
 ||q2btq2-launches.appsflyersdk.com^
 ||q2de87-cdn-settings.appsflyersdk.com^
 ||q2de87-launches.appsflyersdk.com^
+||q31j4m-attr.appsflyersdk.com^
 ||q31j4m-cdn-settings.appsflyersdk.com^
 ||q31j4m-conversions.appsflyersdk.com^
 ||q31j4m-dlsdk.appsflyersdk.com^
@@ -9120,7 +9092,6 @@
 ||qaiini-inapps.appsflyersdk.com^
 ||qaiini-launches.appsflyersdk.com^
 ||qapyb2-cdn-settings.appsflyersdk.com^
-||qapyb2-launches.appsflyersdk.com^
 ||qaqftd-cdn-settings.appsflyersdk.com^
 ||qaqftd-conversions.appsflyersdk.com^
 ||qaqftd-inapps.appsflyersdk.com^
@@ -9175,6 +9146,7 @@
 ||qkwnyg-launches.appsflyersdk.com^
 ||ql31xx-cdn-settings.appsflyersdk.com^
 ||ql31xx-conversions.appsflyersdk.com^
+||ql31xx-inapps.appsflyersdk.com^
 ||ql31xx-launches.appsflyersdk.com^
 ||qlhcp1-cdn-settings.appsflyersdk.com^
 ||qlhcp1-inapps.appsflyersdk.com^
@@ -9189,7 +9161,6 @@
 ||qo0pgv-launches.appsflyersdk.com^
 ||qoawtp-cdn-settings.appsflyersdk.com^
 ||qoawtp-inapps.appsflyersdk.com^
-||qoawtp-launches.appsflyersdk.com^
 ||qpmsmo-cdn-settings.appsflyersdk.com^
 ||qpmsmo-inapps.appsflyersdk.com^
 ||qpmsmo-launches.appsflyersdk.com^
@@ -9206,8 +9177,6 @@
 ||qr7wn1-inapps.appsflyersdk.com^
 ||qr7wn1-launches.appsflyersdk.com^
 ||qrlphc-cdn-settings.appsflyersdk.com^
-||qs2rpp-cdn-settings.appsflyersdk.com^
-||qs2rpp-launches.appsflyersdk.com^
 ||qseegv-cdn-settings.appsflyersdk.com^
 ||qseegv-launches.appsflyersdk.com^
 ||qteiyv-cdn-settings.appsflyersdk.com^
@@ -9233,8 +9202,6 @@
 ||qu4nuu-launches.appsflyersdk.com^
 ||qufeca-attr.appsflyersdk.com^
 ||qufeca-cdn-settings.appsflyersdk.com^
-||qufeca-conversions.appsflyersdk.com^
-||qufeca-gcdsdk.appsflyersdk.com^
 ||qufeca-inapps.appsflyersdk.com^
 ||qufeca-launches.appsflyersdk.com^
 ||qupzae-cdn-settings.appsflyersdk.com^
@@ -9393,7 +9360,6 @@
 ||rmlmkh-cdn-settings.appsflyersdk.com^
 ||rmlmkh-conversions.appsflyersdk.com^
 ||rmlmkh-launches.appsflyersdk.com^
-||rmluwl-launches.appsflyersdk.com^
 ||rmoacx-cdn-settings.appsflyersdk.com^
 ||rmoacx-conversions.appsflyersdk.com^
 ||rmoacx-dlsdk.appsflyersdk.com^
@@ -9413,6 +9379,7 @@
 ||rolqxz-cdn-settings.appsflyersdk.com^
 ||rolqxz-inapps.appsflyersdk.com^
 ||rolqxz-launches.appsflyersdk.com^
+||roodho-inapps.appsflyersdk.com^
 ||roodho-launches.appsflyersdk.com^
 ||roovza-cdn-settings.appsflyersdk.com^
 ||roovza-conversions.appsflyersdk.com^
@@ -9543,7 +9510,6 @@
 ||s89mml-inapps.appsflyersdk.com^
 ||s89mml-launches.appsflyersdk.com^
 ||s8ivkz-cdn-settings.appsflyersdk.com^
-||s8ivkz-inapps.appsflyersdk.com^
 ||s8ivkz-launches.appsflyersdk.com^
 ||s9s5bk-cdn-settings.appsflyersdk.com^
 ||s9s5bk-launches.appsflyersdk.com^
@@ -9564,7 +9530,6 @@
 ||scnk4t-launches.appsflyersdk.com^
 ||sco8ek-cdn-settings.appsflyersdk.com^
 ||sco8ek-inapps.appsflyersdk.com^
-||sco8ek-launches.appsflyersdk.com^
 ||sd8ise-cdn-settings.appsflyersdk.com^
 ||sdkock-cdn-settings.appsflyersdk.com^
 ||sdkock-inapps.appsflyersdk.com^
@@ -9665,7 +9630,7 @@
 ||srhply-conversions.appsflyersdk.com^
 ||srhply-launches.appsflyersdk.com^
 ||srrspa-cdn-settings.appsflyersdk.com^
-||srrspa-conversions.appsflyersdk.com^
+||srrspa-gcdsdk.appsflyersdk.com^
 ||srrspa-inapps.appsflyersdk.com^
 ||srrspa-launches.appsflyersdk.com^
 ||ss6gtv-cdn-settings.appsflyersdk.com^
@@ -9729,7 +9694,6 @@
 ||t2gzkx-cdn-settings.appsflyersdk.com^
 ||t2gzkx-inapps.appsflyersdk.com^
 ||t2gzkx-launches.appsflyersdk.com^
-||t3aayx-inapps.appsflyersdk.com^
 ||t6mpto-cdn-settings.appsflyersdk.com^
 ||t6mpto-conversions.appsflyersdk.com^
 ||t6mpto-dynamic-report-api.appsflyersdk.com^
@@ -10171,7 +10135,6 @@
 ||uqyvmu-cdn-settings.appsflyersdk.com^
 ||uqyvmu-launches.appsflyersdk.com^
 ||ur9lu5-cdn-settings.appsflyersdk.com^
-||ur9lu5-inapps.appsflyersdk.com^
 ||urjyig-cdn-settings.appsflyersdk.com^
 ||urjyig-launches.appsflyersdk.com^
 ||usdkti-cdn-settings.appsflyersdk.com^
@@ -10375,16 +10338,12 @@
 ||vq4nsl-conversions.appsflyersdk.com^
 ||vq4nsl-inapps.appsflyersdk.com^
 ||vq4nsl-launches.appsflyersdk.com^
-||vqlbo5-inapps.appsflyersdk.com^
-||vqlbo5-launches.appsflyersdk.com^
 ||vqmlae-cdn-settings.appsflyersdk.com^
 ||vqmmrs-cdn-settings.appsflyersdk.com^
 ||vqmmrs-conversions.appsflyersdk.com^
 ||vqmmrs-inapps.appsflyersdk.com^
 ||vqmmrs-launches.appsflyersdk.com^
 ||vqmmrs-register.appsflyersdk.com^
-||vrznne-cdn-settings.appsflyersdk.com^
-||vrznne-launches.appsflyersdk.com^
 ||vspiz5-cdn-settings.appsflyersdk.com^
 ||vswwyy-attr.appsflyersdk.com^
 ||vswwyy-cdn-settings.appsflyersdk.com^
@@ -10414,10 +10373,7 @@
 ||vwahin-launches.appsflyersdk.com^
 ||vwl7vw-cdn-settings.appsflyersdk.com^
 ||vwl7vw-launches.appsflyersdk.com^
-||vxuset-launches.appsflyersdk.com^
 ||vyo19w-cdn-settings.appsflyersdk.com^
-||vyo19w-inapps.appsflyersdk.com^
-||vyo19w-launches.appsflyersdk.com^
 ||vzxvv3-launches.appsflyersdk.com^
 ||w0rg9x-cdn-settings.appsflyersdk.com^
 ||w1nqiy-cdn-settings.appsflyersdk.com^
@@ -10521,8 +10477,6 @@
 ||wiys4a-inapps.appsflyersdk.com^
 ||wiys4a-launches.appsflyersdk.com^
 ||wjst7t-cdn-settings.appsflyersdk.com^
-||wjuqut-inapps.appsflyersdk.com^
-||wjuqut-launches.appsflyersdk.com^
 ||wkqhny-cdn-settings.appsflyersdk.com^
 ||wkqhny-launches.appsflyersdk.com^
 ||wlbrvx-cdn-settings.appsflyersdk.com^
@@ -10606,7 +10560,6 @@
 ||wtnpns-cdn-settings.appsflyersdk.com^
 ||wtnpns-gcdsdk.appsflyersdk.com^
 ||wtnpns-launches.appsflyersdk.com^
-||wtrhif-inapps.appsflyersdk.com^
 ||wtymj6-cdn-settings.appsflyersdk.com^
 ||wtymj6-launches.appsflyersdk.com^
 ||wu5pz8-attr.appsflyersdk.com^
@@ -10696,7 +10649,6 @@
 ||x9f0e4-cdn-settings.appsflyersdk.com^
 ||xab4ma-gcdsdk.appsflyersdk.com^
 ||xab4ma-inapps.appsflyersdk.com^
-||xab4ma-launches.appsflyersdk.com^
 ||xaduf5-cdn-settings.appsflyersdk.com^
 ||xaduf5-inapps.appsflyersdk.com^
 ||xaduf5-launches.appsflyersdk.com^
@@ -10787,7 +10739,6 @@
 ||xjexcz-conversions.appsflyersdk.com^
 ||xjexcz-dlsdk.appsflyersdk.com^
 ||xjkza5-cdn-settings.appsflyersdk.com^
-||xjkza5-launches.appsflyersdk.com^
 ||xjxiwj-cdn-settings.appsflyersdk.com^
 ||xjxiwj-inapps.appsflyersdk.com^
 ||xjxiwj-launches.appsflyersdk.com^
@@ -10906,7 +10857,6 @@
 ||y1khzn-inapps.appsflyersdk.com^
 ||y1khzn-launches.appsflyersdk.com^
 ||y1sjig-cdn-settings.appsflyersdk.com^
-||y1sjig-conversions.appsflyersdk.com^
 ||y1sjig-launches.appsflyersdk.com^
 ||y4w5gd-cdn-settings.appsflyersdk.com^
 ||y4w5gd-conversions.appsflyersdk.com^
@@ -11104,7 +11054,6 @@
 ||ytfdz2-cdn-settings.appsflyersdk.com^
 ||ytfdz2-conversions.appsflyersdk.com^
 ||ytfdz2-dynamic-report-api.appsflyersdk.com^
-||ytfdz2-inapps.appsflyersdk.com^
 ||ytfdz2-launches.appsflyersdk.com^
 ||ytfdz2-skadsdk.appsflyersdk.com^
 ||ytm3zz-cdn-settings.appsflyersdk.com^
@@ -11800,6 +11749,7 @@
 ||events.asurion.com^
 ||metrics.asurion.com^
 ||smetrics.asurion.com^
+||analytics.asus.com^
 ||stats.asus-linux.org^
 ||a.asvsm.com^
 ||s.asvsm.com^
@@ -12763,7 +12713,6 @@
 ||paimgcdn-feed.baidu.com^
 ||pimlog.baidu.com^
 ||pos.baidu.com^
-||publish-pic-cpu.baidu.com^
 ||qapm.baidu.com^
 ||sclick.baidu.com^
 ||sestat.baidu.com^
@@ -13006,6 +12955,7 @@
 ||telemetry-in.battle.net^
 ||matomo.battlechoc.com^
 ||sp.battlecreekenquirer.com^
+||umami.battlekart.com^
 ||tracking.battleon.com^
 ||matomo.bau-fachmedien.de^
 ||matomo.bauer-natur.de^
@@ -15107,6 +15057,7 @@
 ||xlog-o.byteoversea.com^
 ||xlog-va.byteoversea.com^
 ||xlog-va-useast2a.byteoversea.com^
+||analytics.bytesbourbonbbq.com^
 ||rtc-logger.bytevcloud.com^
 ||analytics.byub.org^
 ||analytics-api.byub.org^
@@ -19993,7 +19944,6 @@
 ||thetopic.co.kr^
 ||ti-center.co.kr^
 ||tpmn.co.kr^
-||trackinho.co.uk^
 ||traffic-media.co.uk^
 ||trbbank-business.co.com^
 ||treasury-simmonsbank.co.com^
@@ -23260,6 +23210,7 @@
 ||hotwire-widget.dailywire.com^
 ||sp.dailyworld.com^
 ||plausible.daim.dev^
+||web-analytics.daimlertruck.com^
 ||trckng.dainese.com^
 ||piwik.dainst.org^
 ||metrics.dairyreporter.com^
@@ -25156,7 +25107,6 @@
 ||eu-pcdn.dengage.com^
 ||event.dengage.com^
 ||pcdn.dengage.com^
-||ru-pcdn.dengage.com^
 ||tr-event.dengage.com^
 ||a.denik.cz^
 ||analytics.denimdream.com^
@@ -27167,6 +27117,7 @@
 ||telemetry-staging.elastic.co^
 ||mau-analytic.ap-southeast-1.elasticbeanstalk.com^
 ||ebenv-074232031867-prod-matomo.eba-sjkgc7ae.eu-central-1.elasticbeanstalk.com^
+||analytics-ingestion-prod.x8um6iuan5.eu-central-1.elasticbeanstalk.com^
 ||adp-live.eu-central-1.elasticbeanstalk.com^
 ||newtail-adserver-api-v5-events-prod.us-east-1.elasticbeanstalk.com^
 ||stats-iobit-com.us-east-1.elasticbeanstalk.com^
@@ -27974,6 +27925,7 @@
 ||analytics.europedigital.cloud^
 ||analytics.europesays.net^
 ||sst.eurorad.de^
+||analytics.euroristorazione.it^
 ||clarity.eurosim.shop^
 ||ssa.eurosport.com^
 ||ssa.eurosport.de^
@@ -28379,6 +28331,7 @@
 ||ads.familyswap.xxx^
 ||panther.familytools.app^
 ||analytics.familywoodfloors.com^
+||analytics.famoid.com^
 ||trx3.famousfix.com^
 ||jzvln.famousfootwear.com^
 ||smetrics.famousfootwear.ca^
@@ -28700,6 +28653,7 @@
 ||ads2.femmefab.nl^
 ||ads.femmexpat.net^
 ||piwik.femu.de^
+||data-api.fenbi.com^
 ||serve.fendixmedia.net^
 ||api-fp-retry-na.fengkongcloud.com^
 ||api-fp-retry-sa.fengkongcloud.com^
@@ -30923,6 +30877,7 @@
 ||analytics.sre.gob.mx^
 ||log.gobankingrates.com^
 ||products.gobankingrates.com^
+||resources-products.gobankingrates.com^
 ||matomo.ingaia.com.br.cdn.gocache.net^
 ||analytics.gocar.be^
 ||analytics.gocar.gr^
@@ -34107,6 +34062,7 @@
 ||posthog.ideawisegroup.com^
 ||plausible.ideclon.uk^
 ||sst.idee-shop.com^
+||analytics.ideenwert.de^
 ||ssc.idelreal.org^
 ||tags.idelreal.org^
 ||analytics.idemedia.com^
@@ -35276,6 +35232,7 @@
 ||tgs.iway.ch^
 ||ipost.iwayvietnam.com^
 ||smetrics.iwceexpo.com^
+||matomo.iwest.de^
 ||ad.iwhop.cn^
 ||tracking.iwhop.cn^
 ||rehadat-tracking.iwmedien.de^
@@ -35785,6 +35742,7 @@
 ||ob.joyrodetoment.com^
 ||leopard.joytotheworld.info^
 ||lianmen1.joyyang.com^
+||analytics.ai.jp.net^
 ||tracking.etidning.jp.se^
 ||ac.prism-world.jp.net^
 ||multiyogaoffer.jp.net^
@@ -38075,6 +38033,7 @@
 ||smetrics.lissage.jp^
 ||top.list.ru^
 ||track.list-finder.jp^
+||countly.lister-studios.com^
 ||statistics-collector-api.listglobally.com^
 ||tracking.listhub.net^
 ||utiq.listisima.com^
@@ -38542,6 +38501,7 @@
 ||smetrics.lululemon.jp^
 ||ijhlca.lulus.com^
 ||ametrics.lumen.com^
+||plausible.lumenfeng.com^
 ||metrics.lumina-intelligence.com^
 ||collector.sst.luminaire.fr^
 ||clientsdk.luminati-china.io^
@@ -38621,6 +38581,7 @@
 ||ens.luzernerzeitung.ch^
 ||track.luzernerzeitung.ch^
 ||tmsgi.lv.com^
+||matomo.lv1871.de^
 ||ads.lvb-software.com^
 ||analytics.lvh0.com^
 ||webanalytics.lvr.de^
@@ -40587,6 +40548,7 @@
 ||i.moshimo.com^
 ||r.moshimo.com^
 ||xml.mostbeautifule.com^
+||umami.mostlylucid.net^
 ||analytics.motabare.ir^
 ||emu.motala.no^
 ||matomo.moteefe.app^
@@ -40841,6 +40803,8 @@
 ||data.msn.com^
 ||flex.msn.com^
 ||g00.msn.com^
+||h1.msn.com^
+||h2.msn.com^
 ||h6.msn.com^
 ||mobileads.msn.com^
 ||mobileleads.msn.com^
@@ -41026,6 +40990,7 @@
 ||stat.gc.my.games^
 ||add.luffy.my.id^
 ||ads.luffy.my.id^
+||analytics.ny4n.my.id^
 ||ad-client-in.skuyapi.my.id^
 ||track.stack.my.id^
 ||1l-view.my.games^
@@ -45623,6 +45588,7 @@
 ||analytics.prm.com^
 ||piwik.prm.name^
 ||c1.prmonline.ru^
+||smetrics.prndl.com^
 ||communicate.prnewswire.com^
 ||rt.prnewswire.com^
 ||trk.prnewswire.com^
@@ -47091,6 +47057,7 @@
 ||analytics.rehasan.app^
 ||matomo.rehashop.de^
 ||somni.rei.com^
+||matomo.reichderseelen.de^
 ||statistic2.reichelt.de^
 ||statistik.reichsburg-cochem.de^
 ||ssgtm.reima.com^
@@ -47916,6 +47883,7 @@
 ||engagement-metrics-dpzmkkxlza-uc.a.run.app^
 ||fodoole-web-analytics-qfan6cresq-ew.a.run.app^
 ||ga-server-side-tagging-latam-k6sb2lwzta-ue.a.run.app^
+||geral-server-side-tagging-prod-4vywrtjr3a-uc.a.run.app^
 ||getsmallbannerads-6egeg2u34q-du.a.run.app^
 ||getsquarebannerads-6egeg2u34q-du.a.run.app^
 ||google-server-side-tag-manager-5s5tlofmdq-ew.a.run.app^
@@ -47956,6 +47924,7 @@
 ||server-side-tagging-35ihqwuxka-nw.a.run.app^
 ||server-side-tagging-37jjnw36na-uc.a.run.app^
 ||server-side-tagging-3a24txdnnq-uc.a.run.app^
+||server-side-tagging-3b3npf7ata-uc.a.run.app^
 ||server-side-tagging-3bgkdfnngq-uc.a.run.app^
 ||server-side-tagging-3cfs2eiaca-uc.a.run.app^
 ||server-side-tagging-3dz7fhh55q-uc.a.run.app^
@@ -48059,6 +48028,7 @@
 ||server-side-tagging-a2q5zdr5na-uc.a.run.app^
 ||server-side-tagging-a4s6lk5yka-uc.a.run.app^
 ||server-side-tagging-a5rx5xe3kq-uc.a.run.app^
+||server-side-tagging-a7aqvs2z4q-uc.a.run.app^
 ||server-side-tagging-abizib43ga-uc.a.run.app^
 ||server-side-tagging-abt4bql2xa-uc.a.run.app^
 ||server-side-tagging-acih5gtfgq-uc.a.run.app^
@@ -48122,6 +48092,7 @@
 ||server-side-tagging-dhhspy46ma-uc.a.run.app^
 ||server-side-tagging-dji2sahn7q-uc.a.run.app^
 ||server-side-tagging-dpo5l334ua-uc.a.run.app^
+||server-side-tagging-dqjj3b63fq-uc.a.run.app^
 ||server-side-tagging-drjozxiowa-uc.a.run.app^
 ||server-side-tagging-dttycfjyxq-uc.a.run.app^
 ||server-side-tagging-e3aocfmlaq-uc.a.run.app^
@@ -48484,6 +48455,7 @@
 ||server-side-tagging-th3lqsn3ia-uc.a.run.app^
 ||server-side-tagging-tl4slf67da-uc.a.run.app^
 ||server-side-tagging-tmvkq3scfa-uc.a.run.app^
+||server-side-tagging-tqdhypg5ua-uc.a.run.app^
 ||server-side-tagging-tqmpzsgt4q-uc.a.run.app^
 ||server-side-tagging-tsdmqdnf3q-uc.a.run.app^
 ||server-side-tagging-ttecrqlbma-uc.a.run.app^
@@ -48611,6 +48583,7 @@
 ||server-side-tagging-zqai4hltia-uc.a.run.app^
 ||server-side-tagging-zrac5cmcvq-uc.a.run.app^
 ||server-side-tagging-zw5px55fvq-uc.a.run.app^
+||server-side-tagging-zxiprkxmga-uc.a.run.app^
 ||server-side-tagging-zy3gxtetba-uc.a.run.app^
 ||server-side-tagging-zzkyurhb6q-uc.a.run.app^
 ||ssgtm-sbyzlt5hyq-ey.a.run.app^
@@ -48651,6 +48624,7 @@
 ||server-side-tagging-724771934193.europe-west2.run.app^
 ||server-side-tagging-764336538604.europe-west2.run.app^
 ||server-side-tagging-uk-for-prod-812470791900.europe-west2.run.app^
+||server-side-tagging-708064772359.europe-west3.run.app^
 ||server-side-tagging-1064454456539.europe-west4.run.app^
 ||server-side-tagging-181347701518.europe-west4.run.app^
 ||server-side-tagging-555503985895.europe-west4.run.app^
@@ -48678,6 +48652,7 @@
 ||server-side-tagging-539248051146.us-central1.run.app^
 ||server-side-tagging-582660599531.us-central1.run.app^
 ||server-side-tagging-633178361708.us-central1.run.app^
+||server-side-tagging-772335485284.us-central1.run.app^
 ||server-side-tagging-773543190699.us-central1.run.app^
 ||server-side-tagging-833949469797.us-central1.run.app^
 ||server-side-tagging-922531518864.us-central1.run.app^
@@ -50641,7 +50616,6 @@
 ||diff.smartadserver.com^
 ||diff3.smartadserver.com^
 ||documentation.smartadserver.com^
-||euw1.smartadserver.com^
 ||euw2.smartadserver.com^
 ||go.smartadserver.com^
 ||help.smartadserver.com^
@@ -54271,6 +54245,7 @@
 ||st.todesk.com^
 ||todesk-log-upload.todesk.com^
 ||data.todoalicante.es^
+||metrics.todoalicante.es^
 ||sadbmetrics.todoalicante.es^
 ||utiq.todoalicante.es^
 ||warbler.todoscout.com^
@@ -55208,7 +55183,6 @@
 ||coyote.txet.ch^
 ||livetech.shopee.com.br.txlivecdn.com^
 ||livetech.shopee.co.id.txlivecdn.com^
-||livetech.shopee.co.th.txlivecdn.com^
 ||livetech.shopee.vn.txlivecdn.com^
 ||analyticsinjest.txni.dev^
 ||umami.txs.studio^
@@ -58112,6 +58086,7 @@
 ||ourtown.westportjournal.com^
 ||sgtm.westsidevw.com^
 ||silkworm.westwoodmbc.org^
+||metrics.wesur.fr^
 ||services.wetek.com^
 ||matomo.wetell.de^
 ||perfsight.wetest.net^
@@ -61220,7 +61195,6 @@
 ||0themastercylinder0.com^
 ||0to1code.com^
 ||0torrent.com^
-||0tw5frw.top^
 ||0u37vw5na9w0.top^
 ||0ul1wlo58s-vu69us-r1u.xyz^
 ||0v0qj9fnwf.top^
@@ -61435,7 +61409,6 @@
 ||1200555.com^
 ||1200koine.com^
 ||1203543ac5ec59c7.com^
-||1205tka.top^
 ||12068651b1a1fcba.com^
 ||1206d935cea350cd.com^
 ||120869c1c133.top^
@@ -61673,7 +61646,6 @@
 ||156688.cfd^
 ||156743coinbase.com^
 ||1575f81fa50bebdb.com^
-||1579mka.top^
 ||15883311095a.top^
 ||158e65a1db.com^
 ||158e8fc3861383c3.com^
@@ -62247,7 +62219,6 @@
 ||1qocqk1fho.com^
 ||1r4g65b63.de^
 ||1rajbet.in^
-||1rdd42e.top^
 ||1redirc.com^
 ||1rljzo9nt.com^
 ||1rolls.com^
@@ -62274,8 +62245,6 @@
 ||1sttheworld.com^
 ||1sweethost.com^
 ||1tds26q95.de^
-||1tf25t2.cfd^
-||1tf2fg2.top^
 ||1traf.ru^
 ||1trust.app^
 ||1ts03.top^
@@ -62404,7 +62373,6 @@
 ||2092176347684534.lat^
 ||2092378549803725.shop^
 ||20962672.cfd^
-||2097lka.top^
 ||2098007a060fc04a940f4a0cce76ebee.top^
 ||20aa74e40cb068ec.com^
 ||20b2355777f0463f.com^
@@ -62423,7 +62391,6 @@
 ||20f88ff7fed4c1a8.click^
 ||20f88ff7fed4c1a8.com^
 ||20f88ff7fed4c1a8.xyz^
-||20gtw5fw.top^
 ||20images36.com^
 ||20l2ldrn2.de^
 ||20mbweb.com^
@@ -62644,7 +62611,6 @@
 ||2481april2024.com^
 ||2481e.com^
 ||2483may2024.com^
-||2483tka.top^
 ||2485may2024.com^
 ||2487may2024.com^
 ||24886.cfd^
@@ -62673,7 +62639,6 @@
 ||24fd5472aa15.top^
 ||24gadget.ru^
 ||24getcash.com^
-||24gew3.top^
 ||24hdeepnude.com^
 ||24kgames.com^
 ||24live.xyz^
@@ -62703,7 +62668,6 @@
 ||24smi.ws^
 ||24smi.xyz^
 ||24support.cc^
-||24wg63.top^
 ||24x360.com^
 ||24x7adservice.com^
 ||24x7report.com^
@@ -62759,7 +62723,6 @@
 ||26397d169639fd67.com^
 ||2639iqjkl.de^
 ||263fc883f27a98d2.com^
-||2648tpo.top^
 ||264b0a99f6.com^
 ||264f0e77a9fa.biz^
 ||264f0e77a9fa.cfd^
@@ -62852,7 +62815,6 @@
 ||285644.cfd^
 ||285f4f5ef99f8cf4.com^
 ||285fc8ae1e82c380.com^
-||286tweg.top^
 ||2878644238.com^
 ||287aa45f0b75.top^
 ||287d4b7hp24innh6.com^
@@ -63469,7 +63431,6 @@
 ||3468735acf9ba8a3.com^
 ||346e7fbc9d5701c1.com^
 ||34710af267.com^
-||3472zke.top^
 ||347367.cfd^
 ||3475e9ccd4524ba7.com^
 ||34810f0b81824c80.com^
@@ -63625,7 +63586,6 @@
 ||3784fee6204b47ed.com^
 ||378c278bfc264c11.com^
 ||3793330f0d0d4ef211b649e6e867812c.cfd^
-||3795hxe.top^
 ||3798.com^
 ||379ef7a7b0f13794.top^
 ||37a9094932fa2b7e.com^
@@ -63926,7 +63886,6 @@
 ||3fdaab2b74f0ad60.com^
 ||3fdaab2b74f0ad60.xyz^
 ||3ff85a0cfd7df3b9.com^
-||3fg25tw.top^
 ||3g25ko2.de^
 ||3gbqdci2.de^
 ||3ge064tt79.com^
@@ -63936,7 +63895,6 @@
 ||3hads4i5hm.com^
 ||3hfmrv8d45.com^
 ||3hg6yh6h0.com^
-||3hv33d.cfd^
 ||3hx1ui2vt.com^
 ||3i3w8hl6do.com^
 ||3ikcnjvsx.com^
@@ -68587,6 +68545,7 @@
 ||aawdlgngyyfhn.online^
 ||aawdlvr.com^
 ||aawfewvoclrhp.online^
+||aawjmrorb.com^
 ||aawpmriyyhaoi.space^
 ||aawspeedy.com^
 ||aaxads.com^
@@ -71736,6 +71695,7 @@
 ||affiliateport.eu^
 ||affiliatepro.it^
 ||affiliateprogramma.eu^
+||affiliates.de^
 ||affiliates.systems^
 ||affiliates-solutions.com^
 ||affiliatescout.com^
@@ -72504,6 +72464,7 @@
 ||ajx291.online^
 ||ajxx98.online^
 ||ajymcnmtnmqwq.website^
+||ajzaqzrfi.in^
 ||ajzupjfxoddqz.love^
 ||ak-is2.net^
 ||ak-tracker.com^
@@ -76269,6 +76230,7 @@
 ||baggycrack.pro^
 ||baggydepreciate.com^
 ||baggymaintenance.com^
+||baggyrepackingrocky.com^
 ||baglan.top^
 ||baglanbize.net^
 ||bagleparnas.shop^
@@ -76554,6 +76516,7 @@
 ||barian-therd.com^
 ||barilliance.net^
 ||barinvent.net^
+||barkequilibrium.com^
 ||barkersceleb.com^
 ||barlear.ru^
 ||barleyconsequently.com^
@@ -80502,6 +80465,7 @@
 ||bxmo.cn^
 ||bxmyyupyexyci.space^
 ||bxnmviazvodeo.space^
+||bxolifojkkbue.space^
 ||bxpryiusu.com^
 ||bxrlptloondxl.space^
 ||bxsdkxjz.shop^
@@ -80781,7 +80745,6 @@
 ||c402d75efa4cdc86.com^
 ||c40b95e0aba139de.com^
 ||c4261b07193d20d4.com^
-||c4317tz3wh89k5tmw7qlejz58.rest^
 ||c43a3cd8f99413891.com^
 ||c4556f7e2a5c.xyz^
 ||c46783d899482a9c.com^
@@ -88473,6 +88436,7 @@
 ||dhawincaged.cyou^
 ||dhbfd8trk.com^
 ||dhbfsbanlrmqm.website^
+||dhcanelzoyomw.space^
 ||dhcqlbteygqeg.site^
 ||dhdebdmvzljbk.site^
 ||dhdpplvtr.com^
@@ -88652,6 +88616,7 @@
 ||dhlyxz.com^
 ||dhm8.com^
 ||dhmpuibct.com^
+||dhobeymanobo.com^
 ||dhobeynandi.com^
 ||dhojmirptkwfy.website^
 ||dhootiepawed.com^
@@ -91502,6 +91467,7 @@
 ||easytracking.de^
 ||easywebsiteanalytics.com^
 ||eatablesquare.com^
+||eatcells.com^
 ||eatfield.top^
 ||eatingclientconfine.com^
 ||eatsidebicep.com^
@@ -94512,7 +94478,6 @@
 ||f8d52a7458335b70.com^
 ||f8e16d099389.top^
 ||f8f1830a2a3b70f0.com^
-||f8izf7xnvhqj1t9fy1oqpv43pj4oni27xz.rest^
 ||f8utp9hqco37j65p21km.cfd^
 ||f9136a8f35f6974fcfcc1785b49890c8.com^
 ||f921e4caa3.com^
@@ -96086,6 +96051,7 @@
 ||finldab.digital^
 ||finmaxbo.com^
 ||finmaxfx.com^
+||finnermahmudi.qpon^
 ||finniertalio.qpon^
 ||finnycannonaudubon.cyou^
 ||finosfin.com^
@@ -97075,7 +97041,6 @@
 ||forstx.org^
 ||fort67.com^
 ||fortbid.pro^
-||fortbox.fun^
 ||fortcase.pro^
 ||forteads.com^
 ||fortfun.pro^
@@ -97130,7 +97095,6 @@
 ||fortunescoltslum.com^
 ||fortuneswhichacceleration.com^
 ||fortvision.com^
-||fortzz.com^
 ||forumdread.com^
 ||forumiklan.com^
 ||forumjav09212026.shop^
@@ -102417,6 +102381,7 @@
 ||hearty-text.pro^
 ||heartymisspell.com^
 ||heartyquit.com^
+||heatenfaster.shop^
 ||heateradvisoraplenty.com^
 ||heaterlumberexploit.com^
 ||heaterprox.com^
@@ -103076,6 +103041,7 @@
 ||hjcpyuivygenx.rocks^
 ||hjdhlpthcezvm.space^
 ||hjdrlkhcnkesl.site^
+||hjfiomdta.com^
 ||hjfvmjuulsdca.com^
 ||hjhtjzugjsizr.com^
 ||hjidtzxvgybjp.site^
@@ -107330,6 +107296,7 @@
 ||jamexport.com^
 ||jamez.site^
 ||jamjamjam.biz^
+||jamony.xyz^
 ||jampacked-cream.com^
 ||jampacked-depth.pro^
 ||jampackedquestion.com^
@@ -107751,6 +107718,7 @@
 ||jerseyload.com^
 ||jerseyyupoo.com^
 ||jertburi.cfd^
+||jerviabrigued.shop^
 ||jerwam.com^
 ||jesfsf.top^
 ||jesjes.xyz^
@@ -109828,7 +109796,6 @@
 ||kizllsirbnysc.space^
 ||kj-qy.com^
 ||kj4gddo30.com^
-||kj5hi7zl3b51152ju6f88qel1vwi.rest^
 ||kjaerra.no^
 ||kjamzqljbwpgk.space^
 ||kjbulizcoofpf.site^
@@ -110385,6 +110352,7 @@
 ||krevn0cq4.com^
 ||krfqlrxvmoyrj.online^
 ||krg4f5bo.xyz^
+||krgirls.beauty^
 ||krhmtdzuxxmsc.space^
 ||kri45879oupj5plpcl.cfd^
 ||krigiamisdeal.click^
@@ -110647,6 +110615,7 @@
 ||kvylquisaduxr.store^
 ||kvysslhsbayel.online^
 ||kvyuqphervyet.store^
+||kvyyxlvn6uc3tin2nhtymrhg.rest^
 ||kvzbonvsutara.website^
 ||kvznoubscgeep.website^
 ||kvzscvzk0t.com^
@@ -113418,6 +113387,7 @@
 ||luhmdpvtncllt.website^
 ||luhoysvkxsewc.xyz^
 ||luhzoywwssycd.online^
+||luiginisalpian.qpon^
 ||luisardo.com^
 ||luizsycwgzmkg.website^
 ||lujtncrtupnq.com^
@@ -114474,6 +114444,7 @@
 ||marvellouspeaches.com^
 ||marvelmanager.com^
 ||marvelmetrix.com^
+||marysth.cyou^
 ||masakeku.com^
 ||masaxe.xyz^
 ||masbpi.com^
@@ -116957,6 +116928,7 @@
 ||mostazoaptoare.net^
 ||mostbet.com^
 ||mostbet-ua5.com^
+||mostbet-uz-kirish-mostbet.com^
 ||mostcolonizetoilet.com^
 ||mostdeport.com^
 ||mostdishy.com^
@@ -119609,7 +119581,6 @@
 ||nnvkh.com^
 ||nnvx.cn^
 ||nnyejjtckhxkp.online^
-||nnzrnbomfjsci.site^
 ||nnztjoistgdfv.site^
 ||nnzz.com^
 ||nnzz2.com^
@@ -120298,6 +120269,7 @@
 ||numpet.com^
 ||nunarzdiwdix.com^
 ||nuncebacked.com^
+||nunceinlacesframea.cyou^
 ||nuncornflower.com^
 ||nunflw.top^
 ||nunqubqafa.com^
@@ -120803,6 +120775,7 @@
 ||occasionalwallencroach.com^
 ||occasionforfeitarray.com^
 ||occidrainb.cyou^
+||occiputumbrinebenzoic.cfd^
 ||occupationattribute.com^
 ||occupationbritain.com^
 ||occupiedstuffgrub.com^
@@ -122841,6 +122814,7 @@
 ||ounc4vqhukctmb4brcp6b3yftwqf.cfd^
 ||ouncht.com^
 ||oundaymitools.org^
+||oundhertobeconsist.org^
 ||oungimuk.net^
 ||ouowhjhuekcnar.com^
 ||ouoyui.win^
@@ -125038,6 +125012,7 @@
 ||pimproll.com^
 ||pimqacihydhna.site^
 ||pimuedrozt.com^
+||pimzqbkblhv.com^
 ||pin-up.casino^
 ||pin2me.com^
 ||pin6d37stu.com^
@@ -125055,6 +125030,7 @@
 ||pinehollow-glade.com^
 ||pinemonumentssaxophone.com^
 ||pinetech.vn^
+||pinewoodriver.com^
 ||ping-fast.com^
 ||pingclock.net^
 ||pingmedia.ru^
@@ -125099,6 +125075,8 @@
 ||pipeofferear.com^
 ||piperharmfuldeclaration.com^
 ||pipermuseum.com^
+||pipesandstogies.com^
+||pipesandstogiesmobilecigarlounge.com^
 ||pipetmosette.com^
 ||pipette22.top^
 ||pipidroods.com^
@@ -125239,6 +125217,7 @@
 ||pkiagqasgbgqx.online^
 ||pkiigvaxvcsqe.online^
 ||pkjevvtqkxuqe.space^
+||pklnau.ru^
 ||pkmexmrmihp.com^
 ||pkmqndveyxjud.site^
 ||pkmyexkljzdfy.site^
@@ -125419,6 +125398,7 @@
 ||plawmkugopluh.online^
 ||play-lg.com^
 ||play-lustgoddess.com^
+||play-ouyitiyu.com^
 ||play4traffic.com^
 ||playamedia.com^
 ||playamethyst.com^
@@ -125426,6 +125406,7 @@
 ||playanimenow.com^
 ||playbisperu.com^
 ||playblisshub.com^
+||playbones.xyz^
 ||playdigo.com^
 ||playdiversionroyalty.com^
 ||playedkindergartencarpenter.com^
@@ -125726,6 +125707,7 @@
 ||pmtveblemefkc.com^
 ||pmudglgcnic.com^
 ||pmur.org^
+||pmvlwjy.cn^
 ||pmwbbhfazupps.space^
 ||pmzer.com^
 ||pmzhtd.icu^
@@ -125735,6 +125717,7 @@
 ||pnckswqpwks.com^
 ||pncloudfl.com^
 ||pnd.gs^
+||pndle.finance^
 ||pndrlgbudvcsy.website^
 ||pndvhjgixorbq.online^
 ||pneumahameil.com^
@@ -125792,6 +125775,7 @@
 ||podatkina.com^
 ||podbex.com^
 ||podcxz.icu^
+||podderofthemonth.com^
 ||podefr2.net^
 ||poder.cloud^
 ||podfeoquhihrvnt.com^
@@ -125884,6 +125868,7 @@
 ||pokersyte.com^
 ||pokerupdate.com^
 ||pokervip.com^
+||pokestores.com^
 ||pokkt.com^
 ||pokoran.com^
 ||pokrutim.ru^
@@ -125943,6 +125928,7 @@
 ||pollutiondespite.com^
 ||polluxcastor.top^
 ||polluxnetwork.com^
+||pollymraket.com^
 ||polnpeople.com^
 ||poloniex.club^
 ||polopoker.xyz^
@@ -126094,10 +126080,12 @@
 ||popunderstar.com^
 ||popunderz.com^
 ||popup.su^
+||popupad.net^
 ||popupaval.com^
 ||popupblocker.com^
 ||popupblockergold.com^
 ||popupblockermax.app^
+||popupchat-live.com^
 ||popupclick.ru^
 ||popupdl.ir^
 ||popupdomination.com^
@@ -126157,6 +126145,7 @@
 ||pornoheat.com^
 ||pornojux.com^
 ||pornokartel.nl^
+||pornomasse.com^
 ||pornonenight.com^
 ||pornorunet.ru^
 ||pornravage.com^
@@ -126168,6 +126157,7 @@
 ||porqbb.icu^
 ||portablern.com^
 ||portableroms.com^
+||portail-vitale.com^
 ||portails-prime.com^
 ||portal-aave.co^
 ||portal-aerodrome.xyz^
@@ -126186,6 +126176,7 @@
 ||portaldossie.com^
 ||portale-ledger.com^
 ||portalentry.ru^
+||portalfinancas-gov.com^
 ||portalhc.com^
 ||portalpj-bradesco.digital^
 ||portals-chainlink.com^
@@ -126261,9 +126252,11 @@
 ||postmedia.app^
 ||postnachsendung.com^
 ||postponeclement.com^
+||postquare.com^
 ||postrelease.com^
 ||postsendungsverfolgung.com^
 ||postsendungsverfolgung.de^
+||postswissapp.com^
 ||postthieve.com^
 ||postuin.bond^
 ||postyourlife.com^
@@ -126271,6 +126264,7 @@
 ||potable-hearing.pro^
 ||potable-original.com^
 ||potabrifru.cyou^
+||potassaseafolk.shop^
 ||potato-mvm.com^
 ||potatoesadept.com^
 ||potatoeshandgrip.com^
@@ -126301,12 +126295,14 @@
 ||pouhwpuqcutlc.online^
 ||poulgilan.com^
 ||poulop.com^
+||pouncelimitsiwearth.cyou^
 ||pouncetusk.com^
 ||poundquandaryabsently.com^
 ||pourbaiser.com^
 ||poureddecree.com^
 ||pouredtoughen.cfd^
 ||pourmajeurs.com^
+||pourpressedcling.com^
 ||poursuspense.com^
 ||poussiepienaarskither.qpon^
 ||poutstow.com^
@@ -126332,6 +126328,7 @@
 ||powerfulcopper.com^
 ||powerfulsensitive.pro^
 ||powerless-total.pro^
+||powerlessspeed.pro^
 ||powerlinks.com^
 ||powerplayz.cc^
 ||powerrobotflower.com^
@@ -126535,6 +126532,7 @@
 ||precipitationdisgracefulpeeks.com^
 ||precipitationsphererobots.com^
 ||precisear.com^
+||precisejoker.com^
 ||preciselytemp.com^
 ||precisionclick.com^
 ||precisioncounter.com^
@@ -126720,6 +126718,7 @@
 ||prgwoke4c462rkz.cfd^
 ||price.ua^
 ||priceburden.com^
+||pricefab.com^
 ||pricelib.ru^
 ||priceynight.com^
 ||priceypies.com^
@@ -126737,6 +126736,7 @@
 ||prigsazerac.com^
 ||prikoly2016.ru^
 ||primarilyresources.com^
+||primarkfrance.fr^
 ||primary-shock.pro^
 ||primaryads.com^
 ||primaryapologizediversity.com^
@@ -126759,6 +126759,7 @@
 ||primedirect.net^
 ||primefut26.com^
 ||primehealthplus.org^
+||primehouse.store^
 ||primeincident.pro^
 ||primeix.net^
 ||primeleech.com^
@@ -126965,6 +126966,7 @@
 ||profit-partner.ru^
 ||profitable-balance.com^
 ||profitable-grocery.com^
+||profitable-turn.com^
 ||profitablebutton.com^
 ||profitablecpmgate.com^
 ||profitablecpmnetwork.com^
@@ -127021,6 +127023,8 @@
 ||progressmove2025.ru^
 ||prohibitedarcher.com^
 ||prohibitedhesitatetransgress.com^
+||prointteractiveltd.com^
+||projeanaliz.com^
 ||project-spacex.com^
 ||project-work-zone.com^
 ||projectagora.net^
@@ -127051,6 +127055,7 @@
 ||prometall-cm.com^
 ||promienzary.com^
 ||prominentpray.com^
+||promiseair.com^
 ||promisespreepanic.com^
 ||promit.ru^
 ||promizer.com^
@@ -127118,6 +127123,7 @@
 ||proper.io^
 ||propermolala.qpon^
 ||property58.top^
+||propertyagent.xyz^
 ||propertyofnews.com^
 ||propertypotato.com^
 ||propertyswordmuttering.com^
@@ -127127,6 +127133,7 @@
 ||proposal-flare.foundation^
 ||proposal-hachiko.com^
 ||proposal-kit.com^
+||proposal-pendle.app^
 ||proposal-pepe.com^
 ||proposal-unipegsv4.com^
 ||proposalchildhoodfulfil.com^
@@ -127216,6 +127223,7 @@
 ||proton.lat^
 ||proton.management^
 ||proton-aoke.com^
+||proton-chemicals.com^
 ||proton-engineering.com^
 ||proton-int.com^
 ||proton-rp.ru^
@@ -127239,6 +127247,7 @@
 ||protondon.cyou^
 ||protondon.xyz^
 ||protoneast.com^
+||protonemasjohor.com^
 ||protoner.pro^
 ||protonet.xyz^
 ||protoneutron.garden^
@@ -127276,6 +127285,7 @@
 ||protonsurge.top^
 ||protontech.online^
 ||protontoothbrush.com^
+||protonvipn.com^
 ||protonvpn.us^
 ||protonvpn76.com^
 ||protonvpnd.com^
@@ -127291,6 +127301,7 @@
 ||protrafficinspector.com^
 ||protrafv2.com^
 ||protrckit.com^
+||proud-garbage.pro^
 ||proudlyfunkywanderer.com^
 ||proudlyhint.com^
 ||proveguard.com^
@@ -127412,6 +127423,7 @@
 ||psnets.com^
 ||psnsbliinngie.space^
 ||psnzone.com^
+||psoamaupsie.net^
 ||psoanegodage.com^
 ||psodugliwe.com^
 ||psomsoorsa.com^
@@ -132458,6 +132470,7 @@
 ||ruminaribonic.qpon^
 ||ruminativxxe.info^
 ||rummagebowlingacheless.com^
+||rummierencamp.qpon^
 ||rummyaffiliates.com^
 ||rumneywhity.com^
 ||rumouruprising.com^
@@ -138973,6 +138986,7 @@
 ||swlvbfovkhela.space^
 ||swmlidloaetad.site^
 ||swmswjvdpc.com^
+||swnppqvw.com^
 ||swnr0b7c.xyz^
 ||swobberrobbervaleryl.cyou^
 ||swoclick.com^
@@ -139226,6 +139240,7 @@
 ||t4reht4hrgdf.shop^
 ||t57u6anx2.com^
 ||t5frbj.lat^
+||t5jg99ytkujltgnp.cfd^
 ||t6ec3seyq.com^
 ||t6mu9n080425f.cfd^
 ||t6riol5563pyzlbqvnpiq1j3cbbn.cfd^
@@ -140198,6 +140213,7 @@
 ||tetird.com^
 ||tetoncarpentry.com^
 ||tetoolbox.com^
+||tetraexpobuild.com^
 ||tetrawicus.com^
 ||tetrylargute.cfd^
 ||tettacrown.com^
@@ -141065,6 +141081,7 @@
 ||tjshanhu.cn^
 ||tjskjndukyk.com^
 ||tjsptech.com^
+||tjsycxwnxpqmu.online^
 ||tjtawartfkjpb.site^
 ||tjtsctymepnds.space^
 ||tjttx.com^
@@ -144030,6 +144047,7 @@
 ||ulteriorreporting.com^
 ||ultima7.fun^
 ||ultimate-captcha.com^
+||ultimateaderaser.com^
 ||ultimateclixx.com^
 ||ultimatecounter.com^
 ||ultingecauyukse.com^
@@ -144054,6 +144072,7 @@
 ||uluhiiotas.com^
 ||ulupimodfpksp.site^
 ||uluuggxnhrxord.com^
+||ulvantamal.shop^
 ||ulvofrestbsjn.com^
 ||ulvqhajbndnty.website^
 ||ulwexxyucrdsm.online^
@@ -144681,6 +144700,7 @@
 ||upbbklofphpay.online^
 ||upbeat-original.com^
 ||upbeatdualyahoo.com^
+||upbeatshellos.cyou^
 ||upbindsswythe.com^
 ||upboresoutar.com^
 ||upcityarles.com^
@@ -144719,6 +144739,7 @@
 ||upengoobsy.net^
 ||upex-crypto.com^
 ||upfataniiujjb.icu^
+||upfieldshive.cfd^
 ||upfithzjdhsii.site^
 ||upflamefeyerstoorey.cfd^
 ||upfleeacraze.com^
@@ -145763,6 +145784,7 @@
 ||vckeyscqjreer.icu^
 ||vckgixqqnyosr.website^
 ||vclouds.com^
+||vclsyumjrbiel.online^
 ||vclunl.icu^
 ||vcluuabdlvgmx.online^
 ||vcmedia.com^
@@ -146159,6 +146181,7 @@
 ||vfdujtvihgnzr.site^
 ||vfedymrbwcsmw.net^
 ||vfegqmbcgyndw.today^
+||vffkhnbxpncce.site^
 ||vffncubbivrcm.website^
 ||vfgbvavljpiwut.com^
 ||vfghc.com^
@@ -147812,6 +147835,7 @@
 ||w0082.com^
 ||w00tmedia.net^
 ||w0kaf7jjg.com^
+||w0of-woof.com^
 ||w0of-woof.net^
 ||w0sqoketsl.sbs^
 ||w0we.com^
@@ -148705,6 +148729,7 @@
 ||wejqzsufiutaa.site^
 ||wejuyf.com^
 ||wek7ipqx359.ru^
+||wekeahzucvmgn.website^
 ||wel-wel-fie.com^
 ||welatera.com^
 ||welbljlrzmoek.top^
@@ -151915,6 +151940,7 @@
 ||xqgvmpalger.com^
 ||xqhfb9hzrs.com^
 ||xqhgkteqenadi.com^
+||xqkllzschtltc.site^
 ||xqkqqtzljvwaj.space^
 ||xqkxhwjirgfky.com^
 ||xqkyaeyjigb.com^
