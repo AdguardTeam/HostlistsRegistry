@@ -1,16 +1,16 @@
 !
 ! Title: HaGeZi's Vivo Tracker Blocklist
 ! Description: Blocks Vivo native broadband trackers that track your activity.
-! Version: 1.0.0.24
+! Version: 1.0.0.25
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-04-24T19:24:17.983Z
+! Last modified: 2026-05-22T18:45:57.551Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
 ||vhs.wwstat.com.eo.unicomcdn.com.cn^
+||az.appstore.vivo.com.cn^
 ||adlog.vivo.com.cn^
 ||adxlog-adnet.vivo.com.cn^
-||az.appstore.vivo.com.cn^
 ||appstore-trace-h5sdk.vivo.com.cn^
 ||dsplog-adnet.vivo.com.cn^
 ||trace-h5sdk.vivo.com.cn^
@@ -21,6 +21,7 @@
 ||vhs.wwstat.com.eo.dnse0.com^
 ||adlog.vivo.com^
 ||ads-api.vivo.com^
+||err.up.vivoglobal.com^
 ||asia-abeacdataonrt-stsdk.vivoglobal.com^
 ||asia-abeacdataort-stsdk.vivoglobal.com^
 ||asia-ad-mkt-vivofs.vivoglobal.com^
@@ -56,24 +57,16 @@
 ||asia-vcode-or.vivoglobal.com^
 ||asia-vpushonrt-stsdk.vivoglobal.com^
 ||asia-vpushort-stsdk.vivoglobal.com^
-||au-vcode-od.vivoglobal.com^
 ||br-p.vivoglobal.com^
-||cl-vcode-od.vivoglobal.com^
 ||cname-ali-asia-stsdk.vivoglobal.com^
 ||cname-asia-comonrt-stsdk.vivoglobal.com^
 ||cname-asia-st-exappupgrade.vivoglobal.com^
 ||cname-asia-stsdk09.vivoglobal.com^
 ||cname-asia02-stsdk.vivoglobal.com^
-||cname-de-stsdk.vivoglobal.com^
 ||cname-in-apport-stsdk.vivoglobal.com^
 ||cname-in-bom01-nginxpool03.vivoglobal.com^
 ||cname-in-ctdbonrt-stsdk.vivoglobal.com^
 ||cname-sin01-stsdk09.vivoglobal.com^
-||co-cota.vivoglobal.com^
-||co-domaincfg.vivoglobal.com^
-||co-err-up.vivoglobal.com^
-||co-onrt-stsdk.vivoglobal.com^
-||co-ort-stsdk.vivoglobal.com^
 ||co-pnrt-stsdk.vivoglobal.com^
 ||co-romsp-unifyconfig.vivoglobal.com^
 ||co-st-sl.vivoglobal.com^
@@ -81,9 +74,7 @@
 ||co-timesync.vivoglobal.com^
 ||co-vcode-api.vivoglobal.com^
 ||co-vcode-od.vivoglobal.com^
-||co-vcode-or.vivoglobal.com^
 ||de-gdpr-err-up.vivoglobal.com^
-||de-gdpr-vcode-od.vivoglobal.com^
 ||err-up.vivoglobal.com^
 ||eu-album-api.vivoglobal.com^
 ||eu-cota.vivoglobal.com^
@@ -105,7 +96,6 @@
 ||ex-romsp-unifyconfig.vivoglobal.com^
 ||id-analyzer-appstore.vivoglobal.com^
 ||id-third-appstore.vivoglobal.com^
-||il-vcode-od.vivoglobal.com^
 ||in-ad-mkt-vivofs.vivoglobal.com^
 ||in-adlog.vivoglobal.com^
 ||in-adreq.vivoglobal.com^
@@ -145,13 +135,10 @@
 ||kz-ort-stsdk.vivoglobal.com^
 ||kz-pnrt-stsdk.vivoglobal.com^
 ||kz-prt-stsdk.vivoglobal.com^
-||kz-romsp-unifyconfig.vivoglobal.com^
 ||kz-st-exappupgrade.vivoglobal.com^
 ||kz-st-sl.vivoglobal.com^
 ||kz-st-sysupgrade.vivoglobal.com^
 ||kz-stsdk.vivoglobal.com^
-||kz-timesync.vivoglobal.com^
-||kz-vcode-api.vivoglobal.com^
 ||kz-vcode-od.vivoglobal.com^
 ||kz-vcode-or.vivoglobal.com^
 ||monitor-stsdk.vivoglobal.com^
@@ -198,13 +185,11 @@
 ||ru-vcode-api.vivoglobal.com^
 ||ru-vcode-od.vivoglobal.com^
 ||ru-vcode-or.vivoglobal.com^
-||sca-cota.vivoglobal.com^
 ||sca-domaincfg.vivoglobal.com^
 ||sca-err-up.vivoglobal.com^
 ||sca-onrt-stsdk.vivoglobal.com^
 ||sca-ort-stsdk.vivoglobal.com^
 ||sca-p.vivoglobal.com^
-||sca-pnrt-stsdk.vivoglobal.com^
 ||sca-romsp-unifyconfig.vivoglobal.com^
 ||sca-st-sl.vivoglobal.com^
 ||sca-stsdk.vivoglobal.com^
@@ -234,7 +219,6 @@
 ||tr-vcode-or.vivoglobal.com^
 ||tr-weather.vivoglobal.com^
 ||uk-timesync.vivoglobal.com^
-||err.up.vivoglobal.com^
 ||xn--ex-adreq-asa-c5b.vivoglobal.com^
 ||xn-ex-adreq-asa-c5b.vivoglobal.com^
 ||za-p.vivoglobal.com^

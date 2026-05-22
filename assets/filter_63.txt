@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.1.1
+! Version: 1.0.1.2
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-05-21T18:46:59.873Z
+! Last modified: 2026-05-22T18:45:57.511Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -23,7 +23,6 @@
 ||dc.applicationinsights.azure.us^
 ||in.applicationinsights.azure.cn^
 ||in.applicationinsights.azure.us^
-||live.applicationinsights.azure.cn^
 ||inference-app-gateway.eastus2.cloudapp.azure.com^
 ||inference-app-gateway.koreacentral.cloudapp.azure.com^
 ||inference-app-gateway.northeurope.cloudapp.azure.com^
@@ -49,7 +48,6 @@
 ||insights.cloud.microsoft^
 ||measure.office.net.edgesuite.net^
 ||collector.azure.eaglex.ic.gov^
-||aec-visio-telemetry.officeapps.live.com^
 ||auc-visio-telemetry.officeapps.live.com^
 ||brc-visio-telemetry.officeapps.live.com^
 ||cac-visio-telemetry.officeapps.live.com^
@@ -192,7 +190,6 @@
 ||az667904.vo.msecnd.net^
 ||a-ring.msedge.net^
 ||a-ring-fallback.msedge.net^
-||a-ring-ipv6only.msedge.net^
 ||b-ring.msedge.net^
 ||b-ring-fallback.msedge.net^
 ||c-ring.msedge.net^
@@ -225,7 +222,6 @@
 ||c.cl.msn.com^
 ||events.data.msn.cn^
 ||events.data.msn.com^
-||events-sandbox.data.msn.cn^
 ||events-sandbox.data.msn.com^
 ||c.de.msn.com^
 ||c.dk.msn.com^
@@ -311,14 +307,12 @@
 ||ppc-powerpoint-telemetry.wac.trafficmanager.net^
 ||ppc-word-telemetry.wac.trafficmanager.net^
 ||word-telemetry.wac.trafficmanager.net^
-||ads-msn-com-profile.trafficmanager.net^
 ||adsdk.trafficmanager.net^
 ||agps-location-livenet.trafficmanager.net^
 ||analytics.trafficmanager.net^
 ||analytics-listener.trafficmanager.net^
 ||beacons.trafficmanager.net^
 ||bingads.trafficmanager.net^
-||ch-asimov-leafs-events-data.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||dsp-ad-cache-tm.trafficmanager.net^
 ||eventservice.trafficmanager.net^
@@ -344,7 +338,6 @@
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
 ||vstelemetry.trafficmanager.net^
 ||win-global-asimov-leafs-events-data.trafficmanager.net^
-||wttwebsiteprodapi-liveevents.trafficmanager.net^
 ||dc.services.visualstudio.com^
 ||h4g3z1-native.winoffice.web.app^
 ||ceuswatcab01.blob.core.windows.net^
@@ -357,14 +350,9 @@
 ||analytics-dev-lleap-events.servicebus.windows.net^
 ||analytics-dev-simpad-events.servicebus.windows.net^
 ||analyticsehnwe.servicebus.windows.net^
-||analyticsiot-prod-simpad-ehn.servicebus.windows.net^
-||btv-du-dev-eventhub-streamanalytics.servicebus.windows.net^
-||btv-du-prod-eventhub-streamanalytics.servicebus.windows.net^
 ||citrixanalyticseh.servicebus.windows.net^
 ||citrixanalyticseh-alias.servicebus.windows.net^
-||citrixanalyticseh2.servicebus.windows.net^
 ||citrixanalyticseh2-alias.servicebus.windows.net^
-||citrixanalyticseh3.servicebus.windows.net^
 ||citrixanalyticseh3-alias.servicebus.windows.net^
 ||citrixanalyticsehaps.servicebus.windows.net^
 ||citrixanalyticsehaps-alias.servicebus.windows.net^
@@ -376,11 +364,10 @@
 ||citrixtelemetryeheu-alias.servicebus.windows.net^
 ||ehtelemetrystaging-alias.servicebus.windows.net^
 ||ffg-analyticsk3nvxfne4dp4s.servicebus.windows.net^
-||hme-live-loganalytics-namespace.servicebus.windows.net^
 ||hme-uat-loganalytics-namespace.servicebus.windows.net^
+||licensingtelemetry-prod.servicebus.windows.net^
 ||nexxtv-events.servicebus.windows.net^
 ||ppm-licensingtelemetry.servicebus.windows.net^
-||prd-qlik-telemetry.servicebus.windows.net^
 ||prod-eh-v1-analytics.servicebus.windows.net^
 ||prod-eventhub-analytics.servicebus.windows.net^
 ||production-jobactivity-analytics.servicebus.windows.net^
