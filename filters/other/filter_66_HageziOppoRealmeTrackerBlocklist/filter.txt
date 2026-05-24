@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's OPPO & Realme Tracker Blocklist
 ! Description: Blocks OPPO & Realme native broadband trackers that track your activity.
-! Version: 1.0.0.21
+! Version: 1.0.0.22
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-05-11T22:29:03.298Z
+! Last modified: 2026-05-24T18:31:01.914Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -123,7 +123,6 @@
 ||storedl3f.nearme.com.cn^
 ||storedl4f.nearme.com.cn^
 ||storedl5f.nearme.com.cn^
-||finosfin.com^
 ||appconf-ocs-eu.heytapdl.com^
 ||appconf-ocs-in.heytapdl.com^
 ||appconf-ocs-sgp.heytapdl.com^
@@ -236,8 +235,6 @@
 ||dhfs-ph.heytapimage.com^
 ||ums-rum-cn.heytapimage.com^
 ||ums-rum-global.heytapimage.com^
-||ads.heytapmobi.com^
-||adsbdfsiad-704007db1.heytapmobi.com^
 ||logforward.browser.heytapmobi.com^
 ||stat.browser.heytapmobi.com^
 ||api-cn.cdo.heytapmobi.com^
@@ -247,9 +244,19 @@
 ||dragate-in.dc.heytapmobi.com^
 ||dragate-sg.dc.heytapmobi.com^
 ||obus-cn.dc.heytapmobi.com^
+||api-id.game.heytapmobi.com^
+||album-cn01a.ocloud.heytapmobi.com^
+||album-sg01a.ocloud.heytapmobi.com^
+||i-cn01a.ocloud.heytapmobi.com^
+||i-sg01a.ocloud.heytapmobi.com^
+||dcintl.push.heytapmobi.com^
+||device-ups.push.heytapmobi.com^
+||id.push.heytapmobi.com^
+||userprofile.push.heytapmobi.com^
+||api-id.theme.heytapmobi.com^
+||ads.heytapmobi.com^
 ||dc-dragate-cn.heytapmobi.com^
 ||dcc-awareness-cn.heytapmobi.com^
-||api-id.game.heytapmobi.com^
 ||iot-earbuds-cn.heytapmobi.com^
 ||mdp-usertrace-cn.heytapmobi.com^
 ||obus-config-cn.heytapmobi.com^
@@ -265,19 +272,35 @@
 ||obus-dcyitai-cn.heytapmobi.com^
 ||obus-dcyitai-in.heytapmobi.com^
 ||obus-jssdk-cn.heytapmobi.com^
-||album-cn01a.ocloud.heytapmobi.com^
-||album-sg01a.ocloud.heytapmobi.com^
-||i-cn01a.ocloud.heytapmobi.com^
-||i-sg01a.ocloud.heytapmobi.com^
 ||omes-sec.heytapmobi.com^
 ||oversea-nebula-in.heytapmobi.com^
 ||oversea-nebula-sg.heytapmobi.com^
-||dcintl.push.heytapmobi.com^
-||device-ups.push.heytapmobi.com^
-||id.push.heytapmobi.com^
-||userprofile.push.heytapmobi.com^
-||api-id.theme.heytapmobi.com^
 ||ums-telemetry-cn.heytapmobi.com^
+||cloudi-in.browser.heytapmobile.com^
+||cloudi-sg.browser.heytapmobile.com^
+||cloudi-th.browser.heytapmobile.com^
+||cloudi-vn.browser.heytapmobile.com^
+||i-in.browser.heytapmobile.com^
+||i-sg.browser.heytapmobile.com^
+||i-th.browser.heytapmobile.com^
+||i-vn.browser.heytapmobile.com^
+||iflow-in.browser.heytapmobile.com^
+||iflow-sg.browser.heytapmobile.com^
+||iflow-th.browser.heytapmobile.com^
+||iflow-vn.browser.heytapmobile.com^
+||api-gl.cdo.heytapmobile.com^
+||api-id.cdo.heytapmobile.com^
+||api-in.cdo.heytapmobile.com^
+||u-id.cpc.heytapmobile.com^
+||api-id.game.heytapmobile.com^
+||report-in.opay.heytapmobile.com^
+||report-sg.opay.heytapmobile.com^
+||api-id.play.heytapmobile.com^
+||bsf.sc.heytapmobile.com^
+||api-id.theme.heytapmobile.com^
+||report-eu.uc.heytapmobile.com^
+||report-in.uc.heytapmobile.com^
+||report-sg.uc.heytapmobile.com^
 ||ads.heytapmobile.com^
 ||ads-bdapi-my.heytapmobile.com^
 ||ads-bdapi-ph.heytapmobile.com^
@@ -292,18 +315,6 @@
 ||adx-u-sg.heytapmobile.com^
 ||adxu-bigo-sg.heytapmobile.com^
 ||bdapi-ads-sg.heytapmobile.com^
-||cloudi-in.browser.heytapmobile.com^
-||cloudi-sg.browser.heytapmobile.com^
-||cloudi-th.browser.heytapmobile.com^
-||cloudi-vn.browser.heytapmobile.com^
-||i-in.browser.heytapmobile.com^
-||i-sg.browser.heytapmobile.com^
-||i-th.browser.heytapmobile.com^
-||i-vn.browser.heytapmobile.com^
-||iflow-in.browser.heytapmobile.com^
-||iflow-sg.browser.heytapmobile.com^
-||iflow-th.browser.heytapmobile.com^
-||iflow-vn.browser.heytapmobile.com^
 ||browser-api-br.heytapmobile.com^
 ||browser-api-fr.heytapmobile.com^
 ||browser-api-gl.heytapmobile.com^
@@ -321,9 +332,6 @@
 ||browser-sdk-ru.heytapmobile.com^
 ||browserfiles.heytapmobile.com^
 ||bsp-di-in.heytapmobile.com^
-||api-gl.cdo.heytapmobile.com^
-||api-id.cdo.heytapmobile.com^
-||api-in.cdo.heytapmobile.com^
 ||cldata-ads-fr.heytapmobile.com^
 ||cldata-ads-ru.heytapmobile.com^
 ||cloudconf-app-ae.heytapmobile.com^
@@ -421,11 +429,9 @@
 ||cloudconf-app-vn.heytapmobile.com^
 ||cloudconf-app-za.heytapmobile.com^
 ||conf-in-dc.heytapmobile.com^
-||u-id.cpc.heytapmobile.com^
 ||dc.heytapmobile.com^
 ||dc-stat-in.heytapmobile.com^
 ||dragate-in-dc.heytapmobile.com^
-||api-id.game.heytapmobile.com^
 ||mdp-usertrace-in.heytapmobile.com^
 ||mdp-usertrace-sg.heytapmobile.com^
 ||obus-dc-eu.heytapmobile.com^
@@ -446,30 +452,23 @@
 ||obus-jssdk-sg.heytapmobile.com^
 ||obus-jssdk-us.heytapmobile.com^
 ||omes-sec.heytapmobile.com^
-||report-in.opay.heytapmobile.com^
-||report-sg.opay.heytapmobile.com^
-||api-id.play.heytapmobile.com^
 ||push.heytapmobile.com^
 ||push-dc-us.heytapmobile.com^
-||bsf.sc.heytapmobile.com^
 ||slb-apisnd-in.heytapmobile.com^
 ||sms-ads-in.heytapmobile.com^
 ||sms-ads-ru.heytapmobile.com^
 ||stgdata-ads-fr.heytapmobile.com^
-||api-id.theme.heytapmobile.com^
-||report-eu.uc.heytapmobile.com^
-||report-in.uc.heytapmobile.com^
-||report-sg.uc.heytapmobile.com^
-||hizonetech.com^
-||ads.oppomobile.com^
-||adsfs.oppomobile.com^
 ||dragate.dc.oppomobile.com^
 ||dragate-br.dc.oppomobile.com^
 ||dragate-sg.dc.oppomobile.com^
 ||predragate.dc.oppomobile.com^
+||ads.oppomobile.com^
+||adsfs.oppomobile.com^
 ||dhfs-id.oppomobile.com^
 ||dhfs-in.oppomobile.com^
 ||dhfs-th.oppomobile.com^
 ||dhfs-vn.oppomobile.com^
 ||dhfsf.oppomobile.com^
 ||h4g3z1-native.oppo-realme.web.app^
+||finosfin.com^
+||hizonetech.com^
