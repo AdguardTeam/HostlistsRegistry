@@ -5,6 +5,7 @@ const { logger } = require('../helpers/logger');
 const { serviceSchema } = require('./zod-schemas');
 
 const YML_FILE_EXTENSION = '.yml';
+const SERVICE_ID_PATTERN = /^[a-z0-9_-]+$/;
 
 /**
  * @typedef {require('./type-defs').Service} Service
@@ -24,12 +25,26 @@ const restoreRemovedSourceFiles = async (differences, sourceDirPath) => {
     const [removedObject, ...restObjects] = differences;
     serviceSchema.parse(removedObject);
 
+    if (!SERVICE_ID_PATTERN.test(removedObject.id)) {
+        throw new Error(`Invalid service id: ${removedObject.id}`);
+    }
+
+    const resolvedSourceDirPath = path.resolve(sourceDirPath);
+    const outputFilePath = path.resolve(sourceDirPath, `${removedObject.id}${YML_FILE_EXTENSION}`);
+    const sourceDirPrefix = resolvedSourceDirPath.endsWith(path.sep)
+        ? resolvedSourceDirPath
+        : `${resolvedSourceDirPath}${path.sep}`;
+
+    if (!outputFilePath.startsWith(sourceDirPrefix)) {
+        throw new Error(`Invalid service file path: ${outputFilePath}`);
+    }
+
     await fs.writeFile(
-        path.join(`${sourceDirPath}/${removedObject.id}${YML_FILE_EXTENSION}`),
+        outputFilePath,
         yaml.dump(removedObject, { lineWidth: -1 }),
     );
     if (sourceDirPath.length > 1) {
-        await restoreRemovedSourceFiles(restObjects);
+        await restoreRemovedSourceFiles(restObjects, sourceDirPath);
     }
     const removedServices = differences.map((difference) => difference.id);
     logger.warn(`These services have been removed: ${removedServices.join(', ')}, and were restored`);
