@@ -18,7 +18,7 @@ const mergeServicesData = (distServices, sourceServices) => {
     const mergedMap = [...distServices, ...sourceServices].reduce((acc, obj) => {
         acc[obj.id] = obj;
         return acc;
-    }, {});
+    }, Object.create(null));
     return Object.values(mergedMap);
 };
 
