@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Xiaomi Tracker Blocklist
 ! Description: Blocks Xiaomi native broadband trackers that track your activity.
-! Version: 1.0.15.0
+! Version: 1.0.15.1
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-05-22T18:45:57.395Z
+! Last modified: 2026-06-02T21:13:17.115Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -165,8 +165,6 @@
 ||cdn.fds-ssl.api.xiaomi.com^
 ||mibi.api.xiaomi.com^
 ||o2o.api.xiaomi.com^
-||a0.app.xiaomi.com^
-||t.app.xiaomi.com^
 ||shoes.app-xae.xiaomi.com^
 ||mon.be.xiaomi.com^
 ||sentry.be.xiaomi.com^
@@ -196,7 +194,7 @@
 ||static.game.xiaomi.com^
 ||wap.game.xiaomi.com^
 ||idmb.app.chat.global.xiaomi.net^
-||fr.resolver.msg.global.xiaomi.net^
+||resolver.msg.global.xiaomi.net^
 ||fr.feedback.xmpush.global.xiaomi.com^
 ||idmb.feedback.xmpush.global.xiaomi.com^
 ||ru.feedback.xmpush.global.xiaomi.com^
@@ -248,10 +246,8 @@
 ||api.micloud.xiaomi.net^
 ||findapi.micloud.xiaomi.net^
 ||statusapi.micloud.xiaomi.net^
-||tv.app.migc.xiaomi.com^
+||app.migc.xiaomi.com^
 ||invoice.netroam.mihome.xiaomi.net^
-||data.mistat.xiaomi.com^
-||storeconfig.mistat.xiaomi.com^
 ||file.cdn.mvideo.xiaomi.com^
 ||image.cdn.mvideo.xiaomi.com^
 ||staging.appapi.n.xiaomi.com^
@@ -334,16 +330,13 @@
 ||stat.www.xiaomi.com^
 ||console.admin.xmpush.xiaomi.com^
 ||test.admin.xmpush.xiaomi.com^
-||c3.api.xmpush.xiaomi.com^
-||i.api.xmpush.xiaomi.com^
-||lg.api.xmpush.xiaomi.com^
-||mob.api.xmpush.xiaomi.com^
-||vip.api.xmpush.xiaomi.com^
+||api.xmpush.xiaomi.com^
 ||callback.xmpush.xiaomi.com^
 ||emq.xmpush.xiaomi.com^
 ||sandbox.xmpush.xiaomi.com^
 ||vip-api.xmpush.xiaomi.com^
 ||ad.xiaomi.com^
+||app.xiaomi.com^
 ||bugreport.xiaomi.net^
 ||d.xiaomi.com^
 ||hd.xiaomi.com^
@@ -351,6 +344,7 @@
 ||huosai.xiaomi.com^
 ||i.xiaomi.com^
 ||mibi.xiaomi.com^
+||mistat.xiaomi.com^
 ||preload.xiaomi.com^
 ||qiye.xiaomi.com^
 ||ssp.xiaomi.com^
