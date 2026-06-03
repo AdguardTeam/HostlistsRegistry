@@ -260,7 +260,7 @@ The file format is JSON:
 }
 ```
 
-### `exclude`
+**`exclude`**
 
 An array of domain patterns (supports glob-style `*` wildcards) that should be completely excluded from the protected
 domains dataset.
@@ -268,7 +268,7 @@ domains dataset.
 If a domain matches an entry in `exclude`, it will not be sent to the DNS server and will not be checked for
 typosquatting at all.
 
-### `domains`
+**`domains`**
 
 An array of per-domain exception entries. Each entry has:
 
@@ -278,7 +278,7 @@ An array of per-domain exception entries. Each entry has:
 ### How to work with this file
 
 1. Open `typosquatting_allowlist.json`.
-1. To **exclude** a protected domain pattern completely, add it to the `exclude` array.
+1. To exclude a protected domain pattern completely, add it to the `exclude` array.
 1. To add per-domain exceptions, add or update an entry in the `domains` array:
    - Set `domain` to the protected domain.
    - Set `exceptions` to the list of allowed lookalike domains.
