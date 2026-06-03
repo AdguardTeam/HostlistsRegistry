@@ -249,7 +249,8 @@ The file format is JSON:
 ```json
 {
   "exclude": [
-    "example-*.com"
+    "example-*.com",
+    "test.com"
   ],
   "domains": [
     {
