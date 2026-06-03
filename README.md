@@ -260,20 +260,15 @@ The file format is JSON:
 }
 ```
 
-**`exclude`**
+- **`exclude`**
+  - An array of domain patterns (supports glob-style `*` wildcards) that should be completely excluded from the protected domains dataset.  
+    If a domain matches an entry in `exclude`, it will not be sent to the DNS server and will not be checked for typosquatting at all.
 
-An array of domain patterns (supports glob-style `*` wildcards) that should be completely excluded from the protected
-domains dataset.
+- **`domains`**
+  - An array of per-domain exception entries. Each entry has:
 
-If a domain matches an entry in `exclude`, it will not be sent to the DNS server and will not be checked for
-typosquatting at all.
-
-**`domains`**
-
-An array of per-domain exception entries. Each entry has:
-
-- `domain` — the protected domain, preferably in normalized eTLD+1 form.
-- `exceptions` — a list of domains that are explicitly allowed for this protected domain.
+    - `domain` — the protected domain, preferably in normalized eTLD+1 form.
+    - `exceptions` — a list of domains that are explicitly allowed for this protected domain.
 
 ### How to work with this file
 
