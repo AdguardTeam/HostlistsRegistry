@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Pro++ Blocklist
 ! Description: Sweeper - Aggressive cleans the Internet and protects your privacy! Blocks Ads, Affiliate, Tracking, Metrics, Telemetry, Phishing, Malware, Scam, Fake, Coins and other Crap.
-! Version: 1.0.30.3
+! Version: 1.0.30.4
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-06-07T19:36:08.370Z
+! Last modified: 2026-06-07T21:32:32.361Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -45744,7 +45744,6 @@
 ||sentry.nperf.com^
 ||stats.nperf.com^
 ||statscdn.nperf.com^
-||ws.nperf.com^
 ||counter.nplu.org^
 ||sentry.nplus1.ru^
 ||atconnect.npo.nl^
@@ -64349,12 +64348,15 @@
 ||pixel.trafficguard.ai^
 ||iframe.traffichero.net^
 ||analytics.trafficlunar.net^
+||prod.editor.ads.trafficmanager.net^
 ||telemetry.centralus.ame.arcdataservices.trafficmanager.net^
 ||telemetry.eastus.ame.arcdataservices.trafficmanager.net^
 ||telemetry.eastus2.ame.arcdataservices.trafficmanager.net^
 ||telemetry.southafricanorth.ame.arcdataservices.trafficmanager.net^
 ||telemetry.southcentralus.ame.arcdataservices.trafficmanager.net^
 ||telemetry.westeurope.ame.arcdataservices.trafficmanager.net^
+||azure.bcp.bingads.trafficmanager.net^
+||azure.tip.bingads.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^
 ||stats.norton.com.trafficmanager.net^
 ||apac.events.data.trafficmanager.net^
@@ -64393,7 +64395,6 @@
 ||analytics-gateway-fallguys.trafficmanager.net^
 ||analytics-listener.trafficmanager.net^
 ||beacons.trafficmanager.net^
-||bingads.trafficmanager.net^
 ||cas-telemetry-staging.trafficmanager.net^
 ||ch-asimov-leafs-events-data.trafficmanager.net^
 ||collector-main.trafficmanager.net^
@@ -64428,7 +64429,9 @@
 ||tm-clarity-tag.trafficmanager.net^
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
 ||traf-cs-posthog-prod-us-01.trafficmanager.net^
+||us-mesh-events-data-leafs.trafficmanager.net^
 ||vstelemetry.trafficmanager.net^
+||we-events-prod-1.trafficmanager.net^
 ||stats-ivm.trafficon.eu^
 ||analytics.trafficpeak.io^
 ||syndication.trafficreps.com^
@@ -69334,6 +69337,7 @@
 ||d3-pr-cu-sb-ns-primary-err.servicebus.windows.net^
 ||ehtelemetrystaging-alias.servicebus.windows.net^
 ||ffg-analyticsk3nvxfne4dp4s.servicebus.windows.net^
+||hme-live-loganalytics-namespace.servicebus.windows.net^
 ||hme-uat-loganalytics-namespace.servicebus.windows.net^
 ||licensingtelemetry-prod.servicebus.windows.net^
 ||live-metrics-euprod.servicebus.windows.net^
