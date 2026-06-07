@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.1.9
+! Version: 1.0.1.10
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-06-05T18:48:21.095Z
+! Last modified: 2026-06-07T19:36:24.976Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -299,6 +299,9 @@
 ||diagnostics-eudb.office.com^
 ||measure.office.com^
 ||measure.office.net^
+||prod.editor.ads.trafficmanager.net^
+||azure.bcp.bingads.trafficmanager.net^
+||azure.tip.bingads.trafficmanager.net^
 ||tracker.flightview.com.trafficmanager.net^
 ||events.data.trafficmanager.net^
 ||vortex.data.trafficmanager.net^
@@ -318,7 +321,6 @@
 ||analytics.trafficmanager.net^
 ||analytics-listener.trafficmanager.net^
 ||beacons.trafficmanager.net^
-||bingads.trafficmanager.net^
 ||ch-asimov-leafs-events-data.trafficmanager.net^
 ||collector-main.trafficmanager.net^
 ||dsp-ad-cache-tm.trafficmanager.net^
@@ -343,7 +345,9 @@
 ||tenmax-ads.trafficmanager.net^
 ||tm-analytics-pr.trafficmanager.net^
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
+||us-mesh-events-data-leafs.trafficmanager.net^
 ||vstelemetry.trafficmanager.net^
+||we-events-prod-1.trafficmanager.net^
 ||win-global-asimov-leafs-events-data.trafficmanager.net^
 ||dc.services.visualstudio.com^
 ||h4g3z1-native.winoffice.web.app^
@@ -372,6 +376,7 @@
 ||citrixtelemetryeheu-alias.servicebus.windows.net^
 ||ehtelemetrystaging-alias.servicebus.windows.net^
 ||ffg-analyticsk3nvxfne4dp4s.servicebus.windows.net^
+||hme-live-loganalytics-namespace.servicebus.windows.net^
 ||hme-uat-loganalytics-namespace.servicebus.windows.net^
 ||licensingtelemetry-prod.servicebus.windows.net^
 ||nexxtv-events.servicebus.windows.net^
