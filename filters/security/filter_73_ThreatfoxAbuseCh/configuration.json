@@ -1,0 +1,19 @@
+{
+    "name": "ThreatFox IOCs: host file",
+    "description": "Blocklist from threatfox.abuse.ch containing malicious domains",
+    "homepage": "https://threatfox.abuse.ch",
+    "sources": [
+      {
+        "name": "ThreatFox IOCs: host file",
+        "source": "https://threatfox.abuse.ch/downloads/hostfile",
+        "type": "hosts",
+        "transformations": [
+          "Validate"
+        ]
+      }
+    ],
+    "transformations": [
+      "RemoveComments",
+      "Deduplicate"
+    ]
+  }
