@@ -1,0 +1,20 @@
+{
+  "name": "PhishDestroy Destroylist - Primary",
+  "description": "Curated phishing and scam domain blocklist by PhishDestroy",
+  "homepage": "https://github.com/phishdestroy",
+  "sources": [
+    {
+      "name": "PhishDestroy Destroylist - Primary",
+      "source": "https://raw.githubusercontent.com/phishdestroy/destroylist/main/rootlist/formats/primary/adblock.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate"
+  ]
+}
