@@ -1,0 +1,31 @@
+{
+  "name": "HaGeZi's Encrypted DNS Bypass",
+  "description": "Prevent methods to bypass your DNS, blocks encrypted DNS only. Prevention of bypassing is not guaranteed.",
+  "homepage": "https://github.com/hagezi/dns-blocklists#bypass_dns",
+  "sources": [
+    {
+      "name": "HaGeZi's Encrypted DNS Bypass",
+      "source": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/doh.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "exclusions": [
+    "||adguard.io^",
+    "||dns.adguard.com^",
+    "||dns-family.adguard.com^",
+    "||dns-unfiltered.adguard.com^",
+    "||adguard-dns.com^",
+    "||adguard-vpn.com^",
+    "||adguard-vpn.cc^",
+    "||adguard-vpn.online^"
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
