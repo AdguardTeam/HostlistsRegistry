@@ -1,0 +1,21 @@
+{
+  "name": "HaGeZi's LG webOS Tracker Blocklist",
+  "description": "Blocks the LG webOS native trackers baked into devices, services, and operating systems that quietly track what you do.",
+  "homepage": "https://github.com/hagezi/dns-blocklists",
+  "sources": [
+    {
+      "name": "HaGeZi's LG webOS Tracker Blocklist",
+      "source": "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/adblock/native.lgwebos.txt",
+      "type": "adblock",
+      "transformations": [
+        "RemoveModifiers",
+        "Validate"
+      ]
+    }
+  ],
+  "transformations": [
+    "RemoveComments",
+    "Deduplicate",
+    "Compress"
+  ]
+}
