@@ -1,9 +1,9 @@
 !
 ! Title: VNM: ABPVN List
 ! Description: List for blocking ads on Vietnamese websites
-! Version: 1.0.17.72
+! Version: 1.0.17.73
 ! Homepage: http://abpvn.com/
-! Last modified: 2026-09-20T17:13:45.393Z
+! Last modified: 2026-09-23T05:18:16.867Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -1007,6 +1007,8 @@
 0.0.0.0 ads.amazon.dev
 0.0.0.0 advertising.amazon.dev
 0.0.0.0 api.imdb.eu-west-1.prod.paets.advertising.amazon.dev
+0.0.0.0 bdtelemetry.amazon
+0.0.0.0 api.mshop.bdtelemetry.amazon
 0.0.0.0 assoc-amazon.com
 0.0.0.0 wms.assoc-amazon.com
 0.0.0.0 ws-fe.assoc-amazon.com
@@ -1122,6 +1124,9 @@
 0.0.0.0 analytics.s3.amazonaws.com
 0.0.0.0 analyticsengine.s3.amazonaws.com
 0.0.0.0 sprocket-ping.s3.amazonaws.com
+0.0.0.0 ad-host-backup-america.s3.us-west-1.amazonaws.com
+0.0.0.0 ad-host-backup-asia.s3.ap-southeast-1.amazonaws.com
+0.0.0.0 ad-host-backup-europe.s3.eu-central-1.amazonaws.com
 0.0.0.0 prod.cm.publishers.advertising.a2z.com
 0.0.0.0 prod.tahoe-analytics.publishers.advertising.a2z.com
 0.0.0.0 ap-southeast-1.prod.pr.analytics.console.aws.a2z.com
@@ -1229,6 +1234,7 @@
 0.0.0.0 rat.rakuten.co.jp
 0.0.0.0 secure.rat.rakuten.co.jp
 0.0.0.0 an.facebook.com
+0.0.0.0 analytics.facebook.com
 0.0.0.0 pixel.facebook.com
 0.0.0.0 o.update.fbsbx.com
 0.0.0.0 p.update.fbsbx.com
@@ -9469,12 +9475,25 @@
 0.0.0.0 tva-igame-global-ipa-0001.us-east-1.log.aliyuncs.com
 0.0.0.0 videocloud-sgp.ap-southeast-1.log.aliyuncs.com
 0.0.0.0 vod-newplayer-sg.ap-southeast-1.log.aliyuncs.com
+0.0.0.0 cn-hangzhou.log.aliyuncs.com
+0.0.0.0 cbu-offer.cn-shanghai.log.aliyuncs.com
+0.0.0.0 cbu-search-app.cn-shanghai.log.aliyuncs.com
+0.0.0.0 client-upload.cn-shanghai.log.aliyuncs.com
+0.0.0.0 wireless-app-log.cn-hangzhou.log.aliyuncs.com
+0.0.0.0 log-global.aliyuncs.com
+0.0.0.0 adsplusadx-prod.log-global.aliyuncs.com
+0.0.0.0 crown-client.log-global.aliyuncs.com
+0.0.0.0 dcsz-gamelog-yyzdsy-kr.log-global.aliyuncs.com
+0.0.0.0 dida-function-log-hz.log-global.aliyuncs.com
+0.0.0.0 hishort-video.log-global.aliyuncs.com
+0.0.0.0 hoyodesk-app-log.log-global.aliyuncs.com
+0.0.0.0 india-service-log.log-global.aliyuncs.com
+0.0.0.0 oneconsole-blank-log.log-global.aliyuncs.com
+0.0.0.0 room-event.log-global.aliyuncs.com
+0.0.0.0 tva-satanpit-global-ipa-0001.log-global.aliyuncs.com
 0.0.0.0 ad-host-backup-america.oss-us-west-1.aliyuncs.com
 0.0.0.0 ad-host-backup-asia.oss-ap-southeast-1.aliyuncs.com
 0.0.0.0 ad-host-backup-europe.oss-eu-central-1.aliyuncs.com
-0.0.0.0 ad-host-backup-america.s3.us-west-1.amazonaws.com
-0.0.0.0 ad-host-backup-asia.s3.ap-southeast-1.amazonaws.com
-0.0.0.0 ad-host-backup-europe.s3.eu-central-1.amazonaws.com
 0.0.0.0 analytics.userreport.com
 0.0.0.0 bapi.userreport.com
 0.0.0.0 cdn.userreport.com
@@ -11717,6 +11736,8 @@
 0.0.0.0 s3-playable-ads.easybrain.com
 0.0.0.0 orion.bendingspoons.com
 0.0.0.0 storage.orion.bendingspoons.com
+0.0.0.0 bzr.openai.com
+0.0.0.0 bzrcdn.openai.com
 0.0.0.0 adtimaserver.vn
 0.0.0.0 api.adtimaserver.vn
 0.0.0.0 log.adtimaserver.vn
@@ -14300,6 +14321,7 @@
 0.0.0.0 afzotfwramzy.in
 0.0.0.0 agacelebir.com
 0.0.0.0 aggravatingoil.com
+0.0.0.0 agileskincareunrented.com
 0.0.0.0 agle21xe2anfddirite.com
 0.0.0.0 agorahtag.tech
 0.0.0.0 agqoshfujku.com
@@ -14642,6 +14664,7 @@
 0.0.0.0 bg4nxu2u5t.com
 0.0.0.0 bharalhallahs.com
 0.0.0.0 bhcumsc.com
+0.0.0.0 bhjkpnfsgejvo.com
 0.0.0.0 bicolourprepossessstrong.com
 0.0.0.0 bid.glass
 0.0.0.0 bidclickmedia.com
@@ -14747,6 +14770,7 @@
 0.0.0.0 broaddoor.com
 0.0.0.0 broadensilkslush.com
 0.0.0.0 broadlyjukeboxunrevised.com
+0.0.0.0 broadsidedaisysanta.com
 0.0.0.0 bronzecedarleaf.com
 0.0.0.0 browsecoherentunrefined.com
 0.0.0.0 browser-update.org
@@ -15337,6 +15361,7 @@
 0.0.0.0 drubpainch.com
 0.0.0.0 drumcash.com
 0.0.0.0 drydrum.com
+0.0.0.0 dryhachug.in
 0.0.0.0 ds88pc0kw6cvc.cloudfront.net
 0.0.0.0 dsp.wtf
 0.0.0.0 dtv5loup63fac.cloudfront.net
@@ -15593,6 +15618,7 @@
 0.0.0.0 frivolousdrinkloss.com
 0.0.0.0 frs2c.com
 0.0.0.0 fruhujma.in
+0.0.0.0 frykyuoqcto.com
 0.0.0.0 fsavmklplmddsu.com
 0.0.0.0 fsxmidyo.com
 0.0.0.0 ft.budtawney.com
@@ -16122,6 +16148,7 @@
 0.0.0.0 kw3y5otoeuniv7e9rsi.com
 0.0.0.0 kx.upturnsidoist.cyou
 0.0.0.0 kykay.com
+0.0.0.0 kypwvjoni.com
 0.0.0.0 kzuocxorfo.com
 0.0.0.0 laceassumestatic.com
 0.0.0.0 lactolwant.com
