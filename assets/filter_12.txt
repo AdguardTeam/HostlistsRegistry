@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti-Malware List
 ! Description: Dandelion Sprout's Anti-Malware List (DNS filtering in AdGuard Home, AdGuard for Android, and AdGuard for Windows)
-! Version: 1.0.15.33
+! Version: 1.0.15.34
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2026-09-19T18:19:06.567Z
+! Last modified: 2026-10-04T05:39:41.863Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -91,6 +91,12 @@
 ||199.59.243.222^
 ||213.227.149.208^
 ||213.227.149.211^
+||redddit.com^
+||redit.com^
+||reditt.com^
+||reddtt.com^
+||reddtit.com^
+||mirappe.com^
 ||ortrun-adi.com^
 ||paramonos-oha.com^
 ||roamingclicks.com^
@@ -9625,7 +9631,7 @@
 ||43.157.46.83^
 ||43.164.196.209^
 ||88.255.216.16^
-/((https?|tcp|iquic)://)?204\.194\.54\.\d{1,3}([:/].*)?$/
+/^((https?|tcp|iquic)://)?204\.194\.54\.\d{1,3}([:/].*)?$/
 ||adtng.com^
 ||anonymity-guardstation.com^
 ||anonymity-ninjacloud.com^
@@ -9880,6 +9886,7 @@
 ||trustus-eu.uk^
 ||103.29.182.53^
 ||13.140.171.211^
+||koboldcpp.com^
 ||downloadprovider.me^
 ||cash93.com^
 ||a4alig.com^
@@ -12001,7 +12008,6 @@
 ||quickfindresults.com^
 ||smorgasbordet.com^
 ||xdelta.org^
-||23.48.203.140^
 ||3.33.130.190^
 /^(.*://)?204\.11\.56\.\d{1,3}(/.*)?$/
 /^(.*://)?208\.91\.197\.\d{1,3}(/.*)?$/
