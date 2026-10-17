@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's The World's Most Abused TLDs
 ! Description: The Top Most Abused Top Level Domains, merged from HaGeZi, Yokoffing, DandelionSprout and SpamHAUS.
-! Version: 1.0.20.45
+! Version: 1.0.20.46
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-10-15T10:18:09.132Z
+! Last modified: 2026-10-17T00:45:19.528Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -46,7 +46,7 @@
 ||*.center^$denyallow=found.center|mein-kunden.center|oh.center|priv.center|relaxx.center
 ||*.ceo^
 ||*.cf^$denyallow=google.cf
-||*.cfd^
+||*.cfd^$denyallow=freedium.cfd
 ||*.channel^
 ||*.charity^
 ||*.cheap^
@@ -174,7 +174,7 @@
 ||*.mba^
 ||*.men^$denyallow=virgile.men
 ||*.miami^
-||*.ml^$denyallow=aire.ml|amap.ml|google.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|precure.ml|prompt.ml
+||*.ml^$denyallow=aire.ml|amap.ml|google.ml|info-matin.ml|lemmygrad.ml|lemmy.ml|lingva.ml|loma.ml|mastodon.ml|melody.ml|precure.ml|prompt.ml
 ||*.moda^
 ||*.moe^$denyallow=anh.moe|aniya.moe|catbox.moe|cdn.moe|cubari.moe|ddlc.moe|dmn.moe|ewe.moe|honse.moe|mathi.moe|nyarchlinux.moe|sakurajima.moe|save.moe|snug.moe|trace.moe|tzatzikiweeb.moe|uma.moe
 ||*.mom^
@@ -248,7 +248,7 @@
 ||*.space^$denyallow=ariadne.space|azccriminal.space|blinko.space|cslogs.space|dragonscave.space|drgns.space|embed-player.space|filesafe.space|hf.space|httpjames.space|hullseals.space|hyper.space|infosec.space|ippen.space|jetbrains.space|keyboard-test.space|latent.space|link.space|mapstodon.space|melmac.space|mempool.space|metahub.space|momonster.space|nitter.space|nuvioapp.space|ocr.space|oldbytes.space|pod.space|qwik.space|roguecorp.space|scurra.space|searx.space|slashtw.space|takeb1nzyto.space|tapframe.space|telegram.space|truepeople.space|uexcorp.space
 ||*.sport^$denyallow=dyn.sport
 ||*.srl^
-||*.store^$denyallow=adidashardware.store|benz.store|beyondagency.store|bigtimerush.store|bigtimerushuk.store|cleanmasters.store|cnckitchen.store|ergomech.store|ettoresoftware.store|fbits.store|g-h.store|glitchproductions.store|hacksmith.store|heavysaurus.store|hom.store|immich.store|iqunix.store|myexpresscarwash.store|myshopline.store|pbshop.store|peugeot.store|pyrocynical.store|roble.store|rokomari.store|shoplazza.store|shopware.store|sofascore.store|stan.store|tatemcraeeu.store|tatemcrae.store|timberjacks.store|xqc.store
+||*.store^$denyallow=adidashardware.store|benz.store|beyondagency.store|bigtimerush.store|bigtimerushuk.store|cleanmasters.store|cnckitchen.store|ergomech.store|ettoresoftware.store|fbits.store|g-h.store|glitchproductions.store|hacksmith.store|heavysaurus.store|hom.store|immich.store|myexpresscarwash.store|myshopline.store|pbshop.store|peugeot.store|pyrocynical.store|roble.store|rokomari.store|shoplazza.store|shopware.store|sofascore.store|stan.store|tatemcraeeu.store|tatemcrae.store|timberjacks.store|xqc.store
 ||*.studio^$denyallow=affinity.studio|ai.studio|firebase.studio|flourish.studio|starapps.studio|tivio.studio|woodsea.studio|zenn.studio
 ||*.style^$denyallow=nebula.style|primer.style|shiki.style
 ||*.su^$denyallow=encode.su|jpg4.su|jpg5.su|jpg6.su|promportal.su|saint2.su
@@ -266,7 +266,7 @@
 ||*.tk^$denyallow=air.tk|bstweaker.tk|budterence.tk|c-r-t.tk|google.tk|goshujin.tk|kabi.tk|sironi.tk|tokelau-info.tk|zete.tk
 ||*.today^$denyallow=addtocart.today|applefans.today|archive.today|currencyrate.today|eventz.today|futurology.today|lemmy.today|oceanhero.today|oldweb.today|som.today|type.today
 ||*.tokyo^
-||*.top^$denyallow=ambr.top|caitlin.top|chillx.top|cldev.top|corriente.top|cpolar.top|dinsden.top|edgeless.top|magefan.top|mastodon.top|mianbeian.top|nfmirrorcdn.top|noru.top|passt.top|pegelinux.top|polar.top|qwertycxz.top|reminder.top|saltwood.top|shucks.top|strims.top|suiten.top|thedesk.top|vsdb.top
+||*.top^$denyallow=ambr.top|caitlin.top|chillx.top|cldev.top|corriente.top|cpolar.top|dinsden.top|edgeless.top|magefan.top|mastodon.top|mianbeian.top|nfmirrorcdn.top|noru.top|passt.top|pegelinux.top|polar.top|qwertycxz.top|reminder.top|saltwood.top|shucks.top|suiten.top|thedesk.top|vsdb.top
 ||*.town^$denyallow=gather.town|lofi.town|tilde.town
 ||*.trade^$denyallow=composer.trade|dx.trade|kite.trade
 ||*.trading^
