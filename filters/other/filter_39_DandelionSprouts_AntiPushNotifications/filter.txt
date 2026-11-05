@@ -1,9 +1,9 @@
 !
 ! Title: Dandelion Sprout's Anti Push Notifications
 ! Description: Aims to remove push notifications on sites. Combines eligible rules from AdGuard Popups Filter's anti-push sections and Fanboy's Notifications Blocking List.
-! Version: 1.0.14.65
+! Version: 1.0.14.66
 ! Homepage: https://github.com/DandelionSprout/adfilt
-! Last modified: 2026-05-05T05:10:31.411Z
+! Last modified: 2026-11-05T11:10:36.152Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -61,6 +61,7 @@
 ||notif.generation-nt.com^
 |push.smp.
 |amp-user-notification-
+|larapush-popup-
 |push-worker-
 ||api-push.com^
 ||bildirim.com.tr^
@@ -75,6 +76,7 @@
 ||confirmit.com^
 ||conforama-push.com^
 ||controlpush.com^
+||css.xcss.me^
 ||css.xjsx.lol^
 ||digipush.io^
 ||dpns-notifications.com^
@@ -87,6 +89,7 @@
 ||linker.hr^
 ||luravius.com^
 ||my-pu.sh^
+||natom.app^
 ||neopush.io^
 ||news2day.me^
 ||notifee-manager.cz^
@@ -100,6 +103,7 @@
 ||ntvsw.com^
 ||partishion.com^
 ||pathlime.com^
+||poosh.wizzo.media^
 ||popmechanic.ru^
 ||propush.net^
 ||pt.appirits.com^
@@ -107,6 +111,7 @@
 ||push-engage.com^
 ||push-notifications.top^
 ||push.asahiinteractive.com^
+||push.brownbrothers.io^
 ||push.bytesignal.com^
 ||push.daksham.in^
 ||push.delivery.ethinking.de^
@@ -128,6 +133,7 @@
 ||pushchev.info^
 ||pushcrew.com^
 ||pushdealer.com^
+||pushdeploy.estrema.it^
 ||pushe.co^
 ||pusherapp.com^
 ||pushinstruments.com^
@@ -147,6 +153,7 @@
 ||pushprofit.ru^
 ||pushprospush.com^
 ||pushpushgo.com^
+||pushsage.com^
 ||pushstack.it^
 ||pushtide.com^
 ||pushvip.ru^
@@ -255,6 +262,10 @@
 |yorker-push-init.js^
 ||sdk.chirpyweb.com^
 .vafrike.ru^
+||app.notirabbit.com^
+||push.testabcd.top^
+||app.pushaja.com^
+||fontmenice.com^
 ||townrdwarfer.com^
 ||wstpush-mobile.terra.com^
 ||martabackrock.com^
@@ -265,7 +276,6 @@
 ||hotbbawese.cc^
 ||qepolax.com^
 ||tel1mekar.com^
-||d335luupugsy2.cloudfront.net^
 ||kuolkoola.com^
 ||puhyjyf.com^
 ||speraspace.com^
