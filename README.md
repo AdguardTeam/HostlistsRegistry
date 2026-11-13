@@ -248,6 +248,7 @@ contains exclusions and domain-specific exceptions for the Typosquatting protect
 popular domains and therefore must not be treated as suspicious and for excluding protected domains from the check.
 - The protected domains dataset itself is built in a different pipeline. This repository stores only the exception and
 exclusion list maintained for that feature.
+- **Important:** Subdomains are not supported, only eTLD+1 could be added.
 
 The file format is JSON:
 
@@ -267,7 +268,7 @@ The file format is JSON:
 ```
 
 - **`exclude`**
-  - An array of domain patterns (supports glob-style `*` wildcards) that should be completely excluded from the protected domains dataset.  
+  - An array of domain patterns (supports glob-style `*` wildcards) that should be completely excluded from the protected domains dataset.
     If a domain matches an entry in `exclude`, it will not be sent to the DNS server and will not be checked for typosquatting at all.
 
 - **`domains`**
