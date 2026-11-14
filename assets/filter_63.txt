@@ -1,9 +1,9 @@
 !
 ! Title: HaGeZi's Windows/Office Tracker Blocklist
 ! Description: Blocks Windows/Office native broadband trackers that track your activity.
-! Version: 1.0.1.37
+! Version: 1.0.1.38
 ! Homepage: https://github.com/hagezi/dns-blocklists
-! Last modified: 2026-11-07T04:12:17.490Z
+! Last modified: 2026-11-14T00:28:51.622Z
 !
 ! Compiled by @adguard/hostlist-compiler v2.1.0
 !
@@ -45,11 +45,11 @@
 ||raka.bing.com^
 ||c.bingapis.com^
 ||measure.office.net.edgesuite.net^
-||collector.azure.eaglex.ic.gov^
 ||auc-visio-telemetry.officeapps.live.com^
 ||brc-visio-telemetry.officeapps.live.com^
 ||cac-visio-telemetry.officeapps.live.com^
 ||dec-visio-telemetry.officeapps.live.com^
+||esc-visio-telemetry.officeapps.live.com^
 ||euc-excel-telemetry.officeapps.live.com^
 ||euc-onenote-telemetry.officeapps.live.com^
 ||euc-powerpoint-telemetry.officeapps.live.com^
@@ -62,12 +62,12 @@
 ||excel-telemetry.officeapps.live.com^
 ||ffc-excel-telemetry.officeapps.live.com^
 ||ffc-word-telemetry.officeapps.live.com^
-||fgteu1-word-telemetry-vip.officeapps.live.com^
 ||frc-visio-telemetry.officeapps.live.com^
 ||inc-visio-telemetry.officeapps.live.com^
 ||nexus.officeapps.live.com^
 ||nexusrules.officeapps.live.com^
 ||noc-visio-telemetry.officeapps.live.com^
+||pgtbr1-excel-telemetry-vip.officeapps.live.com^
 ||pgtbr2-excel-telemetry-vip.officeapps.live.com^
 ||pgteu1-excel-telemetry-vip.officeapps.live.com^
 ||pgteu1-powerpoint-telemetry-vip.officeapps.live.com^
@@ -80,7 +80,10 @@
 ||pgteu3-word-telemetry-vip.officeapps.live.com^
 ||pgteu4-excel-telemetry-vip.officeapps.live.com^
 ||pgteu4-powerpoint-telemetry-vip.officeapps.live.com^
+||pgteu4-word-telemetry-vip.officeapps.live.com^
+||pgteu5-excel-telemetry-vip.officeapps.live.com^
 ||pgteu5-powerpoint-telemetry-vip.officeapps.live.com^
+||pgteu5-word-telemetry-vip.officeapps.live.com^
 ||pgtus1-excel-telemetry-vip.officeapps.live.com^
 ||pgtus1-powerpoint-telemetry-vip.officeapps.live.com^
 ||pgtus1-word-telemetry-vip.officeapps.live.com^
@@ -112,6 +115,12 @@
 ||tgtus1-word-telemetry-vip.officeapps.live.com^
 ||ukc-onenote-telemetry.officeapps.live.com^
 ||ukc-visio-telemetry.officeapps.live.com^
+||us1-excel-telemetry.officeapps.live.com^
+||us1-powerpoint-telemetry.officeapps.live.com^
+||us1-word-telemetry.officeapps.live.com^
+||us4-excel-telemetry.officeapps.live.com^
+||us5-word-telemetry.officeapps.live.com^
+||us6-excel-telemetry.officeapps.live.com^
 ||usc-onenote-telemetry.officeapps.live.com^
 ||usc-visio-telemetry.officeapps.live.com^
 ||visio-telemetry.officeapps.live.com^
@@ -139,6 +148,7 @@
 ||track.mp.microsoft.com^
 ||inputsuggestions.msdxcdn.microsoft.com^
 ||watson.officeint.microsoft.com^
+||analytics.pstnhub.microsoft.com^
 ||feedback.search.microsoft.com^
 ||telem-edge.smartscreen.microsoft.com^
 ||i1.services.social.microsoft.com^
@@ -146,6 +156,24 @@
 ||telemetry.visualstudio.microsoft.com^
 ||statsfe1.ws.microsoft.com^
 ||statsfe2.ws.microsoft.com^
+||rddiagnostics-g-apac-r1.wvd.microsoft.com^
+||rddiagnostics-g-au-r1.wvd.microsoft.com^
+||rddiagnostics-g-br-r1.wvd.microsoft.com^
+||rddiagnostics-g-ca-r1.wvd.microsoft.com^
+||rddiagnostics-g-ch-r1.wvd.microsoft.com^
+||rddiagnostics-g-de-r1.wvd.microsoft.com^
+||rddiagnostics-g-es-r1.wvd.microsoft.com^
+||rddiagnostics-g-eu-r1.wvd.microsoft.com^
+||rddiagnostics-g-fr-r1.wvd.microsoft.com^
+||rddiagnostics-g-gb-r1.wvd.microsoft.com^
+||rddiagnostics-g-il-r1.wvd.microsoft.com^
+||rddiagnostics-g-in-r1.wvd.microsoft.com^
+||rddiagnostics-g-jp-r1.wvd.microsoft.com^
+||rddiagnostics-g-kr-r1.wvd.microsoft.com^
+||rddiagnostics-g-mx-r1.wvd.microsoft.com^
+||rddiagnostics-g-no-r1.wvd.microsoft.com^
+||rddiagnostics-g-sa-r1.wvd.microsoft.com^
+||rddiagnostics-g-us-r0.wvd.microsoft.com^
 ||ads.microsoft.com^
 ||adsdk.microsoft.com^
 ||advertising.microsoft.com^
@@ -230,7 +258,6 @@
 ||c.ph.msn.com^
 ||c.prodigy.msn.com^
 ||c.pt.msn.com^
-||bat.r.msn.com^
 ||c.ru.msn.com^
 ||c.se.msn.com^
 ||c.sg.msn.com^
@@ -240,20 +267,24 @@
 ||c.uk.msn.com^
 ||c.za.msn.com^
 ||ac2.msn.com^
+||ac3.msn.com^
 ||ad.msn.com^
 ||adevents.msn.com^
 ||ads.msn.com^
 ||ads1.msn.com^
+||ads2.msn.com^
+||adsyndication.msn.com^
+||analytics.msn.com^
 ||arc.msn.com^
 ||arc-emea.msn.com^
 ||arc1.msn.com^
 ||arc2.msn.com^
 ||arc3.msn.com^
 ||arc9.msn.com^
-||arctb53wmig1gagbqjqgolj2ig.msn.com^
 ||confiant.msn.com^
 ||flex.msn.com^
 ||g00.msn.com^
+||h.msn.com^
 ||h1.msn.com^
 ||h2.msn.com^
 ||h6.msn.com^
@@ -261,6 +292,7 @@
 ||mobileleads.msn.com^
 ||popup.msn.com^
 ||preview.msn.com^
+||r.msn.com^
 ||rads.msn.com^
 ||rel.msn.com^
 ||rmads.msn.com^
@@ -270,6 +302,7 @@
 ||toolbar.msn.com^
 ||udc.msn.com^
 ||zmetrics.msn.com^
+||adsyndication.msn.com.nsatc.net^
 ||diagnostics.office.com^
 ||diagnostics-eudb.office.com^
 ||measure.office.com^
@@ -308,7 +341,9 @@
 ||ir-tracking.trafficmanager.net^
 ||irreverselookuptm.trafficmanager.net^
 ||ism-telemetry.trafficmanager.net^
+||keyniusprod-events.trafficmanager.net^
 ||legacywatson.trafficmanager.net^
+||o365diagtelemetry.trafficmanager.net^
 ||office-events-data.trafficmanager.net^
 ||oms-analytics.trafficmanager.net^
 ||partnerfraudevents.trafficmanager.net^
@@ -320,6 +355,7 @@
 ||telemetry-lcp.trafficmanager.net^
 ||tm-analytics-pr.trafficmanager.net^
 ||tm-enrollment-telemetry-datacore.trafficmanager.net^
+||us-mesh-events-data-leafs.trafficmanager.net^
 ||vstelemetry.trafficmanager.net^
 ||watsoncab.trafficmanager.net^
 ||win-global-asimov-leafs-events-data.trafficmanager.net^
@@ -336,7 +372,6 @@
 ||analytics-dev-simpad-events.servicebus.windows.net^
 ||analyticsehnwe.servicebus.windows.net^
 ||analyticsiot-prod-mobileapps-ehn.servicebus.windows.net^
-||audiobible-production-analytics-eh.servicebus.windows.net^
 ||citrixanalyticseh.servicebus.windows.net^
 ||citrixanalyticseh-alias.servicebus.windows.net^
 ||citrixanalyticseh2.servicebus.windows.net^
@@ -351,8 +386,6 @@
 ||citrixtelemetryeh-alias.servicebus.windows.net^
 ||citrixtelemetryeheu.servicebus.windows.net^
 ||citrixtelemetryeheu-alias.servicebus.windows.net^
-||ehtelemetrystaging.servicebus.windows.net^
-||hme-live-loganalytics-namespace.servicebus.windows.net^
 ||hme-uat-loganalytics-namespace.servicebus.windows.net^
 ||kg-legacy-analytics.servicebus.windows.net^
 ||licensingtelemetry-prod.servicebus.windows.net^
