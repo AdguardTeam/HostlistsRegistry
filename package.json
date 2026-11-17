@@ -4,10 +4,10 @@
   "description": "Hostlists Registry",
   "main": "scripts/compose.js",
   "engines": {
-    "node": ">=18"
+    "node": "^22.22.2 || >=24.0.0"
   },
   "dependencies": {
-    "@adguard/hostlist-compiler": "^2.1.0",
+    "@adguard/hostlist-compiler": "^3.0.0",
     "chalk": "^4.0.0",
     "dayjs": "^1.11.11",
     "js-yaml": "^4.1.0",
