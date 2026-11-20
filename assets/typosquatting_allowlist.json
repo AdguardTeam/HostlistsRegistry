@@ -1,9 +1,9 @@
 ﻿{
   "exclude": [
     "aliyunga*.com",
-    "vercel-dns-*.com",
     "kgns1.com",
-    "kgns3.com"
+    "kgns3.com",
+    "vercel-dns-*.com"
   ],
   "domains": [
     {
@@ -371,6 +371,10 @@
       "exceptions": [ "history.com" ]
     },
     {
+      "domain": "tmall.com",
+      "exceptions": [ "hmall.com" ]
+    },
+    {
       "domain": "tuya.com",
       "exceptions": [ "tuta.com" ]
     },
@@ -441,6 +445,6 @@
     {
       "domain": "zoro.com",
       "exceptions": [ "doro.com" ]
-    },{"domain": "tmall.com", "exceptions": ["hmall.com"]}
+    }
   ]
 }
